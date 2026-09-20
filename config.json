@@ -1,0 +1,168 @@
+{
+  "_comment": "Kilder skriptet henter fra. type 'rss' = RSS/Atom-feed. type 'html' = forside uten RSS; skriptet leser artikkelkort med angitte CSS-selektorer.",
+  "news_per_source": 10,
+  "feeds": [
+    {
+      "key": "ilaks",
+      "name": "iLaks",
+      "type": "rss",
+      "url": "https://ilaks.no/feed/"
+    },
+    {
+      "key": "kyst",
+      "name": "Kyst.no",
+      "type": "html",
+      "url": "https://www.kyst.no/",
+      "item": "article",
+      "title": "h2.headline",
+      "link": "a[href]",
+      "time": "time[datetime]",
+      "link_pattern": "/\\d{5,}$"
+    },
+    {
+      "key": "intrafish",
+      "name": "Intrafish",
+      "type": "html",
+      "url": "https://www.intrafish.no/",
+      "item": "a.dn-link",
+      "title": "article.dn-card h3",
+      "link": "self",
+      "link_pattern": "/2-1-\\d+"
+    },
+    {
+      "key": "fiskeribladet",
+      "name": "Fiskeribladet",
+      "type": "html",
+      "url": "https://www.fiskeribladet.no/havbruk/",
+      "item": "a.dn-link",
+      "title": "article.dn-card h3",
+      "link": "self",
+      "link_pattern": "/2-1-\\d+"
+    },
+    {
+      "key": "fdir",
+      "name": "Fiskeridirektoratet",
+      "type": "rss",
+      "url": "https://www.fiskeridir.no/rss/akvakultur"
+    }
+  ],
+  "stock_groups": [
+    {
+      "name": "Norske sjøbaserte – Oslo Børs",
+      "items": [
+        {
+          "name": "Mowi",
+          "ticker": "MOWI",
+          "yahoo": "MOWI.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "SalMar",
+          "ticker": "SALM",
+          "yahoo": "SALM.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Lerøy Seafood Group",
+          "ticker": "LSG",
+          "yahoo": "LSG.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Grieg Seafood",
+          "ticker": "GSF",
+          "yahoo": "GSF.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Austevoll Seafood",
+          "ticker": "AUSS",
+          "yahoo": "AUSS.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Måsøval",
+          "ticker": "MAS",
+          "yahoo": "MAS.OL",
+          "currency": "NOK"
+        }
+      ]
+    },
+    {
+      "name": "Landbaserte",
+      "items": [
+        {
+          "name": "Atlantic Sapphire",
+          "ticker": "ASA",
+          "yahoo": "ASA.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Salmon Evolution",
+          "ticker": "SALME",
+          "yahoo": "SALME.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Andfjord Salmon",
+          "ticker": "ANDF",
+          "yahoo": "ANDF.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Proximar Seafood",
+          "ticker": "PROXI",
+          "yahoo": "PROXI.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Nordic Aqua Partners",
+          "ticker": "NOAP",
+          "yahoo": "NOAP.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Gigante Salmon",
+          "ticker": "GIGA",
+          "yahoo": "GIGA.OL",
+          "currency": "NOK"
+        }
+      ]
+    },
+    {
+      "name": "Internasjonale",
+      "items": [
+        {
+          "name": "Bakkafrost (Færøyene)",
+          "ticker": "BAKKA",
+          "yahoo": "BAKKA.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Arctic Fish (Island)",
+          "ticker": "AFISH",
+          "yahoo": "AFISH.OL",
+          "currency": "NOK"
+        },
+        {
+          "name": "Salmones Camanchaca (Chile)",
+          "ticker": "SALMOCAM",
+          "yahoo": "SALMOCAM.SN",
+          "currency": "CLP"
+        },
+        {
+          "name": "Multi X (Chile)",
+          "ticker": "MULTIFOODS",
+          "yahoo": null,
+          "currency": "CLP",
+          "note": "Ikke tilgjengelig på Yahoo Finance – kilde må finnes (Bolsa de Santiago)"
+        }
+      ]
+    }
+  ],
+  "ssb": {
+    "table": "03024",
+    "api": "https://data.ssb.no/api/v0/no/table/03024",
+    "weeks": 16
+  }
+}
