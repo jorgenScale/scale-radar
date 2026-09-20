@@ -1,159 +1,118 @@
 {
- "generated_at": "2026-09-19T06:00:00Z",
- "mode": "snapshot",
- "sources": [
-  {
-   "key": "ilaks",
-   "name": "iLaks",
-   "status": "ok",
-   "count": 9
-  },
-  {
-   "key": "kyst",
-   "name": "Kyst.no",
-   "status": "pending",
-   "count": 0
-  },
-  {
-   "key": "intrafish",
-   "name": "Intrafish",
-   "status": "pending",
-   "count": 0
-  },
-  {
-   "key": "fiskeribladet",
-   "name": "Fiskeribladet",
-   "status": "pending",
-   "count": 0
-  },
-  {
-   "key": "fdir",
-   "name": "Fiskeridirektoratet",
-   "status": "pending",
-   "count": 0
-  }
- ],
+ "generated_at": "2026-09-20T09:34:01Z",
+ "mode": "live",
  "news": [
   {
    "source_key": "ilaks",
    "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Massiv europeisk innfrysing av fisk holder lakseprisene stabile",
-   "url": "https://ilaks.no/massiv-europeisk-innfrysing-av-fisk-holder-lakseprisene-stabile/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Fiskeri- og havministeren: – Et klart mål å løse rettslige uenigheter på lavest mulig nivå",
-   "url": "https://ilaks.no/havministeren-viktig-at-borgere-og-virksomheter-har-mulighet-til-a-fa-provd-lovligheten-av-statens-myndighetsutovelse-for-en-uavhengig-domstol/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Vestlandet var først med den nye vaksinen",
-   "url": "https://ilaks.no/vestlandet-var-forst-med-den-nye-vaksinen/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "STIM kjøper OCEVA og etablerer nytt rådgivningsselskap",
-   "url": "https://ilaks.no/stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Resultatknekk for Isfjord Norway: – Året har vært krevende for virksomheten",
-   "url": "https://ilaks.no/resultatknekk-for-isfjord-norway-aret-har-vaert-krevende-for-virksomheten/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Forlatte oppdrettsmerder fjernet etter 15 år i sjøen",
-   "url": "https://ilaks.no/forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Statens vegvesen får bøtelegge fiskesøl fra transport",
-   "url": "https://ilaks.no/statens-vegvesen-far-botelegge-fiskesol-fra-transport/"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Samlet 200 studenter: – Det er alltid noen som får jobb i løpet av dagen",
-   "url": "https://ilaks.no/samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen/"
+   "published": "2026-09-19",
+   "title": "– No må ansvaret plasserast der problemet faktisk oppstår",
+   "url": "https://ilaks.no/no-ma-ansvaret-plasserast-der-problemet-faktisk-oppstar/?mtm_campaign=feed_click&mtm_kwd=no-ma-ansvaret-plasserast-der-problemet-faktisk-oppstar&mtm_source=RSS2&mtm_medium=feed"
   },
   {
    "source_key": "ilaks",
    "source": "iLaks",
    "published": "2026-09-18",
    "title": "Nova Sea-arvinger satser tungt på eiendom på Frogner",
-   "url": "https://ilaks.no/nova-sea-arvinger-satser-tungt-pa-eiendom-pa-frogner/"
+   "url": "https://ilaks.no/nova-sea-arvinger-satser-tungt-pa-eiendom-pa-frogner/?mtm_campaign=feed_click&mtm_kwd=nova-sea-arvinger-satser-tungt-pa-eiendom-pa-frogner&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Resultatknekk for Isfjord Norway: – Året har vært krevende for virksomheten",
+   "url": "https://ilaks.no/resultatknekk-for-isfjord-norway-aret-har-vaert-krevende-for-virksomheten/?mtm_campaign=feed_click&mtm_kwd=resultatknekk-for-isfjord-norway-aret-har-vaert-krevende-for-virksomheten&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Samlet 200 studenter: – Det er alltid noen som får jobb i løpet av dagen",
+   "url": "https://ilaks.no/samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen/?mtm_campaign=feed_click&mtm_kwd=samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "STIM kjøper OCEVA og etablerer nytt rådgivningsselskap",
+   "url": "https://ilaks.no/stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap/?mtm_campaign=feed_click&mtm_kwd=stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Massiv europeisk innfrysing av fisk holder lakseprisene stabile",
+   "url": "https://ilaks.no/massiv-europeisk-innfrysing-av-fisk-holder-lakseprisene-stabile/?mtm_campaign=feed_click&mtm_kwd=massiv-europeisk-innfrysing-av-fisk-holder-lakseprisene-stabile&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Politikk må vere krafta til å handle",
+   "url": "https://ilaks.no/politikk-ma-vere-krafta-til-a-handle/?mtm_campaign=feed_click&mtm_kwd=politikk-ma-vere-krafta-til-a-handle&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Statens vegvesen får bøtelegge fiskesøl fra transport",
+   "url": "https://ilaks.no/statens-vegvesen-far-botelegge-fiskesol-fra-transport/?mtm_campaign=feed_click&mtm_kwd=statens-vegvesen-far-botelegge-fiskesol-fra-transport&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Vestlandet var først med den nye vaksinen",
+   "url": "https://ilaks.no/vestlandet-var-forst-med-den-nye-vaksinen/?mtm_campaign=feed_click&mtm_kwd=vestlandet-var-forst-med-den-nye-vaksinen&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Forlatte oppdrettsmerder fjernet etter 15 år i sjøen",
+   "url": "https://ilaks.no/forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen/?mtm_campaign=feed_click&mtm_kwd=forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen&mtm_source=RSS2&mtm_medium=feed"
   }
  ],
- "salmon_price": {
-  "status": "ok",
-  "unit": "kr/kg",
-  "published": "2026-09-16",
-  "source": "SSB tabell 03024",
-  "source_url": "https://www.ssb.no/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks/artikler/laksepris",
-  "note": "Uke 31, 35 og 37 er SSBs publiserte tall. Uke 30, 33, 34 og 36 er avledet fra SSBs oppgitte ukesendringer; uke 32 mangler. Fylles komplett fra SSB-API ved første live-oppdatering.",
-  "series": [
-   {
-    "week": "2026U30",
-    "price": 71.29,
-    "derived": true
-   },
-   {
-    "week": "2026U31",
-    "price": 73.57,
-    "volume": 26958
-   },
-   {
-    "week": "2026U33",
-    "price": 72.63,
-    "derived": true
-   },
-   {
-    "week": "2026U34",
-    "price": 73.49,
-    "derived": true,
-    "volume": 31378
-   },
-   {
-    "week": "2026U35",
-    "price": 71.87,
-    "volume": 30487
-   },
-   {
-    "week": "2026U36",
-    "price": 69.69,
-    "derived": true,
-    "volume": 30798
-   },
-   {
-    "week": "2026U37",
-    "price": 70.18,
-    "volume": 30111
-   }
-  ],
-  "frozen": {
-   "week": "2026U37",
-   "price": 69.77,
-   "volume": 697
+ "sources": [
+  {
+   "key": "ilaks",
+   "name": "iLaks",
+   "status": "ok",
+   "count": 10
+  },
+  {
+   "key": "kyst",
+   "name": "Kyst.no",
+   "status": "error",
+   "count": 0,
+   "error": "tom feed (200)"
+  },
+  {
+   "key": "intrafish",
+   "name": "Intrafish",
+   "status": "error",
+   "count": 0,
+   "error": "tom feed (302)"
+  },
+  {
+   "key": "fiskeribladet",
+   "name": "Fiskeribladet",
+   "status": "error",
+   "count": 0,
+   "error": "tom feed (302)"
+  },
+  {
+   "key": "fdir",
+   "name": "Fiskeridirektoratet",
+   "status": "error",
+   "count": 0,
+   "error": "tom feed (404)"
   }
- },
+ ],
  "stocks": {
   "status": "partial",
   "as_of": "2026-09-18",
-  "note": "Kun Mowi er hentet i dette øyeblikksbildet (siste omsatte kurs, ca. 15 min forsinket). Øvrige kurser fylles fra kursfeed ved første live-oppdatering. Ingen tall er anslått.",
+  "note": "15 av 16 kurser hentet. Manglende tickere er merket med strek – sjekk Yahoo-symbolet i content/config.json.",
   "groups": [
    {
     "name": "Norske sjøbaserte – Oslo Børs",
@@ -162,43 +121,43 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 200.8,
-      "change_pct": null
+      "price": 202.0,
+      "change_pct": -0.39
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 558.5,
+      "change_pct": -0.45
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 41.28,
+      "change_pct": -3.05
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 24.98,
+      "change_pct": -2.65
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 83.3,
+      "change_pct": 0.0
      },
      {
       "name": "Måsøval",
       "ticker": "MAS",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 37.9,
+      "change_pct": 0.0
      }
     ]
    },
@@ -209,43 +168,43 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 0.74,
+      "change_pct": -2.5
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 3.29,
+      "change_pct": 3.96
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 27.9,
+      "change_pct": 1.09
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 0.46,
+      "change_pct": 3.11
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 86.6,
+      "change_pct": 0.7
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 4.9,
+      "change_pct": -1.01
      }
     ]
    },
@@ -256,29 +215,30 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 426.2,
+      "change_pct": -1.98
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": null,
-      "change_pct": null
+      "price": 26.4,
+      "change_pct": 4.76
      },
      {
       "name": "Salmones Camanchaca (Chile)",
       "ticker": "SALMOCAM",
       "currency": "CLP",
-      "price": null,
-      "change_pct": null
+      "price": 5200.0,
+      "change_pct": 0.0
      },
      {
       "name": "Multi X (Chile)",
       "ticker": "MULTIFOODS",
       "currency": "CLP",
       "price": null,
-      "change_pct": null
+      "change_pct": null,
+      "error": "ingen kursdata"
      }
     ]
    }
@@ -296,7 +256,103 @@
     "date": "2026-09-08",
     "text": "Lerøy Seafood Group plasserer nytt grønt obligasjonslån"
    }
-  ]
+  ],
+  "source": "Yahoo Finance (uoffisiell, ca. 15 min forsinket)"
+ },
+ "salmon_price": {
+  "status": "ok",
+  "unit": "kr/kg",
+  "published": "2026-09-20",
+  "source": "SSB tabell 03024",
+  "source_url": "https://www.ssb.no/statbank/table/03024",
+  "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
+  "series": [
+   {
+    "week": "2026U22",
+    "price": 76.29,
+    "volume": 19539
+   },
+   {
+    "week": "2026U23",
+    "price": 72.78,
+    "volume": 22409
+   },
+   {
+    "week": "2026U24",
+    "price": 69.85,
+    "volume": 22593
+   },
+   {
+    "week": "2026U25",
+    "price": 70.31,
+    "volume": 25866
+   },
+   {
+    "week": "2026U26",
+    "price": 68.14,
+    "volume": 26564
+   },
+   {
+    "week": "2026U27",
+    "price": 67.31,
+    "volume": 26491
+   },
+   {
+    "week": "2026U28",
+    "price": 69.54,
+    "volume": 26117
+   },
+   {
+    "week": "2026U29",
+    "price": 69.64,
+    "volume": 28165
+   },
+   {
+    "week": "2026U30",
+    "price": 71.31,
+    "volume": 25822
+   },
+   {
+    "week": "2026U31",
+    "price": 73.57,
+    "volume": 26958
+   },
+   {
+    "week": "2026U32",
+    "price": 74.9,
+    "volume": 28602
+   },
+   {
+    "week": "2026U33",
+    "price": 72.66,
+    "volume": 28762
+   },
+   {
+    "week": "2026U34",
+    "price": 73.52,
+    "volume": 31378
+   },
+   {
+    "week": "2026U35",
+    "price": 71.87,
+    "volume": 30487
+   },
+   {
+    "week": "2026U36",
+    "price": 69.71,
+    "volume": 30798
+   },
+   {
+    "week": "2026U37",
+    "price": 70.18,
+    "volume": 30111
+   }
+  ],
+  "frozen": {
+   "week": "2026U37",
+   "price": 69.77,
+   "volume": 697
+  }
  },
  "licences": {
   "oppdatert": "2026-09-19",
