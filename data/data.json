@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T10:25:38Z",
+ "generated_at": "2026-09-20T14:15:37Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-20T10:25:49Z",
+  "fetched_at": "2026-09-20T14:15:47Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
