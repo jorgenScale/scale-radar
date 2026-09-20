@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T14:15:37Z",
+ "generated_at": "2026-09-20T17:31:10Z",
  "mode": "live",
  "news": [
   {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 198.5,
-      "change_pct": -1.73
+      "price": 202.0,
+      "change_pct": -0.39
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 550.0,
-      "change_pct": -1.52
+      "price": 558.5,
+      "change_pct": -0.45
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.28,
-      "change_pct": -3.05
+      "price": 42.58,
+      "change_pct": -0.47
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 24.98,
-      "change_pct": -2.65
+      "price": 25.66,
+      "change_pct": -1.38
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.5,
-      "change_pct": -0.96
+      "price": 83.3,
+      "change_pct": 0.0
      },
      {
       "name": "Måsøval",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 426.2,
-      "change_pct": -1.98
+      "price": 434.8,
+      "change_pct": 0.83
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-20T14:15:47Z",
+  "fetched_at": "2026-09-20T17:31:23Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
