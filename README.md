@@ -1,7 +1,8 @@
 # Scale Radar
 
 Internt dashbord for ScaleAQ: nyheter fra næringen, laksepris (SSB), børsnoterte oppdrettere,
-konsesjoner/kapasitet og en oversikt over søknadsprosessen for nye lokaliteter.
+konsesjoner/kapasitet, og en egen side med Fiskeridirektoratets lokalitetssøknader (sjø og land) med
+status, kart og filtre – pluss en sammenleggbar beskrivelse av saksgangen.
 
 Siden er én statisk HTML-fil (`index.html`) som leser `data/data.json`. Dataene oppdateres av
 `scripts/fetch_data.py`, som GitHub Actions kjører hver time.
@@ -26,6 +27,7 @@ Deretter kjører oppdateringen selv, 17 minutter over hver hele time (UTC).
 | legge til/fjerne nyhetskilder (RSS)        | `content/config.json` → `feeds` |
 | endre hvilke aksjer som vises              | `content/config.json` → `stock_groups` (Yahoo-symbol, f.eks. `MOWI.OL`) |
 | oppdatere trafikklys, landbasert-status, saker vi følger | `content/konsesjoner.json` |
+| endre kilde for lokalitetssøknader | `content/config.json` → `applications` |
 | endre utseende, tekster, søknadsprosessen  | `index.html`                  |
 
 Skriptet er tolerant: feiler én kilde, beholdes forrige verdi for den kilden og status vises på siden.
@@ -37,8 +39,10 @@ Ingen tall anslås – manglende kurser vises som strek.
   og må bekreftes (feilen vises i nyhetsfanen hvis adressen er gal).
 - Yahoo-symbolene for Euronext Growth-selskaper (NOAP, GIGA) og chilenske selskaper kan avvike; skriptet
   logger hvilke som feiler.
-- Nasdaq Salmon Index og Fiskeridirektoratets Akvakulturregister (nye/endrede tillatelser) er neste
-  kilder å koble på.
+- Lokalitetssøknadene hentes fra Fiskeridirektoratets CSV-eksport (`aqua-download-list`). Eksporten mangler
+  utfall (godkjent/avslått) og produksjonsområde; utfall ligger på detaljsiden per søknad og kan hentes senere.
+- Kartet bruker Kartverkets åpne bakgrunnskart og Leaflet fra cdnjs.
+- Nasdaq Salmon Index og Akvakulturregisteret (nye/endrede tillatelser) er neste kilder å koble på.
 
 ## Lokalt
 
