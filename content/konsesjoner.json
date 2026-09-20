@@ -1,0 +1,40 @@
+{
+  "_comment": "Kuratert innhold om konsesjoner og kapasitet. Redigeres manuelt i repoet. Skriptet kopierer dette inn i data/data.json ved hver oppdatering.",
+  "oppdatert": "2026-09-19",
+  "trafikklys": {
+    "aar": 2026,
+    "besluttet": "2026-06-19",
+    "kilde_url": "https://kommunikasjon.ntb.no/pressemelding/18961828/ny-fargelegging-i-trafikklyssystemet-for-havbruk?lang=no",
+    "vekst_tonn_mtb": 8300,
+    "nedtrekk_tonn_mtb": 5300,
+    "po": [
+      {"nr": 1,  "navn": "Svenskegrensen–Jæren",       "farge": "gronn"},
+      {"nr": 2,  "navn": "Ryfylke",                    "farge": "gul"},
+      {"nr": 3,  "navn": "Karmøy–Sotra",               "farge": "rod",  "merknad": "6 % nedtrekk – tredje gang"},
+      {"nr": 4,  "navn": "Nordhordland–Stad",          "farge": "gul",  "merknad": "Unngikk rødt"},
+      {"nr": 5,  "navn": "Stad–Hustadvika",            "farge": "gul"},
+      {"nr": 6,  "navn": "Nordmøre og Sør-Trøndelag",  "farge": "gul"},
+      {"nr": 7,  "navn": "Nord-Trøndelag med Bindal",  "farge": "gul"},
+      {"nr": 8,  "navn": "Helgeland–Bodø",             "farge": "gul"},
+      {"nr": 9,  "navn": "Vestfjorden og Vesterålen",  "farge": "gul",  "merknad": "Særskilt vurdert av departementet"},
+      {"nr": 10, "navn": "Andøya–Senja",               "farge": "gul"},
+      {"nr": 11, "navn": "Kvaløya–Loppa",              "farge": "gul"},
+      {"nr": 12, "navn": "Vest-Finnmark",              "farge": "gronn"},
+      {"nr": 13, "navn": "Øst-Finnmark",               "farge": "gronn"}
+    ],
+    "fakta": [
+      ["Besluttet", "19. juni 2026, basert på lakseluspåvirkning på villaks i 2024 og 2025."],
+      ["Tildeling", "6 % vekst i grønne områder: 1 % til fastpris på eksisterende tillatelser, resten på auksjon. Unntaksvekst kan søkes uavhengig av farge."],
+      ["Neste steg", "Kapasitetsjusteringsforskriften var på høring til 31. juli. Fastpristilbud kommer fra Fiskeridirektoratet og fylkeskommunene før auksjon. Auksjonsdato ikke annonsert per 19. september."],
+      ["Lukket teknologi", "Nedtrukket kapasitet kan tas i bruk i lukkede merder. Nytt reguleringssystem etter havbruksmeldingen er under oppfølging."]
+    ]
+  },
+  "land": {
+    "status": "Søknader åpnet igjen",
+    "tekst": "Stansen for nye landtillatelser (innført desember 2022 etter Losna-saken) er opphevet med nytt regelverk: tydeligere skille mellom land og sjø, og krav om desinfeksjon av inntaksvann. Søknader om settefisk og matfisk behandles av fylkeskommunen; Fiskeridirektoratet er klageinstans. Landbasert MTB tildeles uten vederlag.",
+    "kilde_url": "https://www.fiskeridir.no/Akvakultur/Tildeling-og-tillatelser/Kommersielle-tillatelser/Laks-oerret-og-regnbueoerret/tillatelse-til-akvakultur-pa-land"
+  },
+  "saker_vi_folger": [
+    {"tittel": "Sirevåg Laks – postsmolt-RAS i Hå, Rogaland", "detalj": "Søknad til Rogaland fylkeskommune nov. 2025", "status": "Status ikke verifisert", "url": "https://ilaks.no/milliardanlegg-i-sirevag-vil-produsere-postsmolt-for-offshore-oppdrett/"}
+  ]
+}

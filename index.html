@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scale Radar – oppdrettsnæringen på ett sted</title>
+<style>
+/* ScaleAQ Style Guide: Scale Deep #021E40, Scale Surface #187CB2, Scale Silver #E6ECF0, Scale Fire #FF5000 (aksent, brukes sparsomt).
+   Sekundær: Golden Yellow #FCA51A, Bright Red #E12727, Sky Blue #95D3FF, Light Blue #53C1E9, Ocean Blue #084875, Darkest Blue #061129.
+   Bærekraft: Bright Green #46B978, Medium Green #008E6F. Nøytral: Silver Grey #7C878E. Font: Proxima Nova, Arial som erstatning. */
+:root{
+  --deep:#021E40; --surface:#187CB2; --silver:#E6ECF0; --fire:#FF5000;
+  --ocean:#084875; --darkest:#061129; --sky:#95D3FF; --lightblue:#53C1E9; --silvergrey:#7C878E;
+  --tl-g:#46B978; --tl-y:#FCA51A; --tl-r:#E12727; --up:#008E6F; --down:#E12727;
+  --bg:#E6ECF0; --panel:#FFFFFF; --ink:#021E40; --ink-2:#5B6B78; --line:#D3DCE3; --head:#021E40; --link:#187CB2; --tint:#EEF5FA;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#061129; --panel:#0B2340; --ink:#E6ECF0; --ink-2:#9FB3C4; --line:#1F3A5A; --head:#E6ECF0; --link:#53C1E9; --tint:#0F2C4E; }
+}
+:root[data-theme="dark"]{ --bg:#061129; --panel:#0B2340; --ink:#E6ECF0; --ink-2:#9FB3C4; --line:#1F3A5A; --head:#E6ECF0; --link:#53C1E9; --tint:#0F2C4E; }
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Proxima Nova",Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{color:var(--head)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lightblue);outline-offset:2px}
+[hidden]{display:none !important}
+
+/* Topp */
+.top{background:#021E40;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1rem 1.25rem;max-width:1240px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:#fff}
+.brand .logo{height:26px;width:auto;display:block}
+.brand .product{display:flex;align-items:baseline;gap:.6rem;padding-left:1.25rem;border-left:1px solid rgba(255,255,255,.25);line-height:1}
+.brand .product b{font-size:1.25rem;font-weight:700;letter-spacing:.02em}
+.brand .product span{font-size:.8rem;opacity:.7}
+.nav{display:flex;gap:.25rem}
+.nav button{background:none;border:0;color:#fff;font:inherit;font-size:.92rem;padding:.55rem .85rem;border-radius:4px;cursor:pointer;opacity:.8}
+.nav button[aria-selected="true"]{opacity:1;background:rgba(255,255,255,.1);box-shadow:inset 0 -2px 0 var(--fire)}
+.stamp{font-size:.8rem;opacity:.85;text-align:right;line-height:1.35}
+.stamp b{font-weight:600}
+.stamp .dot{display:inline-block;width:.55em;height:.55em;border-radius:50%;background:var(--tl-g);margin-right:.35em;vertical-align:1px}
+.stamp .dot.stale{background:var(--tl-y)}
+
+/* Puls */
+.pulse{background:var(--panel);border-bottom:1px solid var(--line)}
+.pulse .wrap{max-width:1240px;margin:0 auto;padding:0 1.25rem;display:grid;grid-template-columns:repeat(4,1fr)}
+.pulse .cell{padding:.9rem 1rem .9rem 0;border-right:1px solid var(--line);margin-right:1rem}
+.pulse .cell:last-child{border-right:0;margin-right:0}
+.pulse .k{font-size:.78rem;color:var(--ink-2)}
+.pulse .v{font-weight:700;font-size:1.5rem;line-height:1.15;margin:.1rem 0;color:var(--head)}
+.pulse .v small{font-size:.6em;font-weight:600}
+.pulse .d{font-size:.8rem;color:var(--ink-2)}
+.up{color:var(--up)} .down{color:var(--down)}
+
+/* Layout */
+main{max-width:1240px;margin:0 auto;padding:1.25rem}
+.grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:1.25rem;align-items:start}
+.col{display:grid;gap:1.25rem}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.panel > header{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.85rem 1rem .6rem;border-bottom:1px solid var(--line)}
+.panel h2{margin:0;font-size:1rem;font-weight:700}
+.panel header .meta{font-size:.78rem;color:var(--ink-2);text-align:right}
+.panel .body{padding:.75rem 1rem 1rem}
+.foot{font-size:.78rem;color:var(--ink-2);margin:.6rem 0 0}
+.status{display:inline-block;font-size:.74rem;padding:.05em .55em;border-radius:999px;background:var(--tint);color:var(--ink);vertical-align:1px}
+.status.warn{background:#FCA51A22;color:#8a5a00}
+:root[data-theme="dark"] .status.warn{color:#FCA51A}
+
+/* Nyheter */
+.tabs{display:flex;gap:.25rem;padding:.6rem 1rem 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tab{background:none;border:0;border-bottom:2px solid transparent;padding:.4rem .6rem;font:inherit;font-size:.86rem;color:var(--ink-2);cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--fire);font-weight:600}
+.tab .n{display:inline-block;min-width:1.4em;text-align:center;font-size:.72rem;background:var(--tint);border-radius:999px;padding:0 .35em;margin-left:.3em;color:var(--ink)}
+.news{list-style:none;margin:0;padding:0}
+.news li{padding:.7rem 0;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:0}
+.news a{text-decoration:none;font-weight:600;display:block;color:var(--head)}
+.news a:hover{text-decoration:underline;text-decoration-color:var(--surface)}
+.news .src{font-size:.78rem;color:var(--ink-2);margin-top:.15rem}
+.empty{padding:1.25rem 0 .5rem;color:var(--ink-2);font-size:.9rem}
+
+/* Kurve */
+.chart{width:100%;height:auto;display:block}
+.chart text{font-family:inherit;font-size:11px;fill:var(--ink-2)}
+.chart .lbl{fill:var(--ink);font-weight:600}
+.chart .line{fill:none;stroke:var(--surface);stroke-width:2}
+.chart .pt{fill:var(--panel);stroke:var(--surface);stroke-width:2}
+.chart .pt.derived{stroke-dasharray:2 2}
+.chart .pt.last{fill:var(--fire);stroke:var(--fire)}
+.chart .area{fill:var(--surface);opacity:.12}
+.chart .grid{stroke:var(--line)}
+.legend{display:flex;justify-content:space-between;gap:1rem;font-size:.78rem;color:var(--ink-2);margin-top:.25rem}
+
+/* Tabell */
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{text-align:left;padding:.45rem .35rem;border-bottom:1px solid var(--line);vertical-align:baseline}
+th{font-weight:600;color:var(--ink-2);font-size:.78rem}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td.tk{color:var(--ink-2);font-size:.8rem}
+tr.group td{padding-top:.75rem;font-weight:700;font-size:.8rem;color:var(--ink-2);border-bottom:0}
+td.missing{color:var(--ink-2)}
+.scroll{overflow-x:auto}
+.co-news{list-style:none;margin:.75rem 0 0;padding:.6rem 0 0;border-top:1px solid var(--line);font-size:.86rem}
+.co-news li{padding:.2rem 0;display:flex;gap:.6rem}
+.co-news time{color:var(--ink-2);flex:none;width:3.8em;font-variant-numeric:tabular-nums}
+
+/* Konsesjoner */
+.tl-sum{display:flex;gap:1rem;flex-wrap:wrap;font-size:.86rem;margin:.2rem 0 .5rem}
+.tl-sum i{display:inline-block;width:.7em;height:.7em;border-radius:2px;margin-right:.35em;vertical-align:-1px}
+.po{display:grid;grid-template-columns:repeat(13,1fr);gap:3px;margin:.5rem 0 .25rem}
+.po .seg{height:38px;border-radius:3px;display:flex;align-items:flex-end;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;padding-bottom:3px}
+.po .gronn{background:var(--tl-g)} .po .gul{background:var(--tl-y);color:#3a2f05} .po .rod{background:var(--tl-r)}
+.po-axis{display:flex;justify-content:space-between;font-size:.74rem;color:var(--ink-2)}
+.facts{margin:.6rem 0 0;padding:0;list-style:none;font-size:.88rem}
+.facts li{padding:.35rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:9.5em 1fr;gap:.75rem}
+.facts li span:first-child{color:var(--ink-2)}
+.land{margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--line)}
+.land h3{margin:0 0 .35rem;font-size:.92rem;font-weight:700}
+.land p{margin:.3rem 0;font-size:.88rem}
+.watch{list-style:none;margin:.5rem 0 0;padding:0;font-size:.86rem}
+.watch li{padding:.35rem 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem}
+.watch .st{color:var(--ink-2);flex:none}
+.watch a{color:var(--head)}
+
+/* Prosess-visning */
+.process{display:grid;gap:1.25rem}
+.process .intro{max-width:70ch;margin:0}
+.process .intro p{margin:.35rem 0}
+.timeline{width:100%;height:auto;display:block;margin:.5rem 0 0}
+.timeline text{font-family:inherit;font-size:11px;fill:var(--ink-2)}
+.timeline .t{fill:#fff;font-weight:700;font-size:12px}
+.timeline .w{fill:var(--ink);font-weight:600}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps > li{display:grid;grid-template-columns:2.4rem 1fr;gap:.9rem;padding:.9rem 0;border-top:1px solid var(--line)}
+.steps > li:first-child{border-top:0}
+.steps .no{width:2.1rem;height:2.1rem;border-radius:50%;background:var(--deep);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem}
+:root[data-theme="dark"] .steps .no{background:var(--surface)}
+.steps h3{margin:0 0 .2rem;font-size:.98rem}
+.steps h3 small{font-weight:400;color:var(--ink-2);font-size:.82rem;margin-left:.5rem}
+.steps p{margin:.25rem 0;font-size:.9rem}
+.steps ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.88rem}
+.steps li li{margin:.15rem 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;align-items:start}
+.actors{width:100%}
+.actors td:first-child{font-weight:600;color:var(--head);white-space:nowrap}
+.actors td{font-size:.86rem}
+.check{list-style:none;margin:0;padding:0;font-size:.88rem}
+.check li{padding:.35rem 0 .35rem 1.5rem;border-top:1px solid var(--line);position:relative}
+.check li:first-child{border-top:0}
+.check li::before{content:"";position:absolute;left:.2rem;top:.75rem;width:.7rem;height:.7rem;border:2px solid var(--surface);border-radius:2px}
+.diff{margin:0;padding:0;list-style:none;font-size:.88rem}
+.diff li{padding:.4rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:10em 1fr;gap:.75rem}
+.diff li:first-child{border-top:0}
+.diff li span:first-child{color:var(--ink-2)}
+.links{list-style:none;margin:0;padding:0;font-size:.88rem}
+.links li{padding:.3rem 0}
+.links a{color:var(--link)}
+.callout{background:var(--tint);border-left:3px solid var(--surface);padding:.7rem .9rem;border-radius:4px;font-size:.88rem;margin:.75rem 0 0}
+
+/* Bunn */
+footer{max-width:1240px;margin:0 auto;padding:.5rem 1.25rem 2.5rem;font-size:.8rem;color:var(--ink-2)}
+footer p{margin:.35rem 0}
+
+@media (max-width: 900px){
+  .grid,.two{grid-template-columns:1fr}
+  .pulse .wrap{grid-template-columns:repeat(2,1fr)}
+  .pulse .cell:nth-child(2){border-right:0}
+  .pulse .cell{margin-right:.75rem}
+  .brand .product span{display:none}
+}
+@media (max-width: 600px){
+  .top .wrap{flex-wrap:wrap;gap:.75rem}
+  .stamp{text-align:left;width:100%}
+  .pulse .wrap{grid-template-columns:1fr}
+  .pulse .cell{border-right:0;margin-right:0;border-bottom:1px solid var(--line)}
+  .pulse .cell:last-child{border-bottom:0}
+  .facts li,.diff li{grid-template-columns:1fr}
+}
+@media print{.top{background:#fff;color:#000}.nav{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Scale Radar – ScaleAQ">
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="1092.76 416.47 342.16 55.16" role="img" aria-label="ScaleAQ"><g id="logo-paths"></g></svg>
+      <span class="product"><b>Radar</b><span>Oppdrettsnæringen på ett sted</span></span>
+    </a>
+    <nav class="nav" role="tablist" aria-label="Sider">
+      <button role="tab" aria-selected="true" data-view="radar">Radar</button>
+      <button role="tab" aria-selected="false" data-view="process">Søknadsprosess</button>
+    </nav>
+    <div class="stamp" id="stamp"></div>
+  </div>
+</header>
+
+<!-- ============================ RADAR ============================ -->
+<div id="view-radar">
+  <section class="pulse" aria-label="Nøkkeltall"><div class="wrap" id="pulse"></div></section>
+
+  <main class="grid">
+    <div class="col">
+      <section class="panel" aria-labelledby="news-h">
+        <header><h2 id="news-h">Nyheter fra næringen</h2><div class="meta" id="news-meta">Overskrifter med lenke til kilden</div></header>
+        <div class="tabs" role="tablist" aria-label="Kilder" id="news-tabs"></div>
+        <div class="body" id="news-body"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="lic-h">
+        <header><h2 id="lic-h">Konsesjoner og kapasitet</h2><div class="meta" id="lic-meta"></div></header>
+        <div class="body" id="lic-body"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel" aria-labelledby="price-h">
+        <header><h2 id="price-h">Laksepris</h2><div class="meta" id="price-meta"></div></header>
+        <div class="body" id="price-body"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="stock-h">
+        <header><h2 id="stock-h">Børsnoterte oppdrettere</h2><div class="meta" id="stock-meta"></div></header>
+        <div class="body" id="stock-body"></div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<!-- ======================== SØKNADSPROSESS ======================== -->
+<div id="view-process" hidden>
+  <main class="process">
+    <section class="panel">
+      <header><h2>Slik klareres en ny lokalitet</h2><div class="meta">Akvakulturloven § 6 · tidsfristforskriften (FOR-2010-05-18-708)</div></header>
+      <div class="body">
+        <div class="intro">
+          <p>En <strong>tillatelse</strong> (konsesjon, MTB på selskapsnivå) gir rett til å drive. En <strong>lokalitet</strong> må klareres separat før tillatelsen kan brukes der. Klareringen er én samordnet søknad til fylkeskommunen, som henter inn vedtak fra fire sektormyndigheter og uttalelse fra kommunen. Sier Mattilsynet, Statsforvalteren eller Kystverket nei, kan fylkeskommunen ikke gi tillatelse. Det kan heller ikke gis tillatelse i strid med kommunens arealplan.</p>
+          <p>Tidsfristforskriften gir en normert saksbehandlingstid på om lag <strong>22 uker</strong> fra komplett søknad. I praksis tar det ofte lenger, særlig når kommunen krever dispensasjon fra arealplanen, når saken skal konsekvensutredes, eller når sektorvedtak påklages.</p>
+        </div>
+
+        <svg class="timeline" viewBox="0 0 900 96" role="img" aria-label="Normert tidslinje: 2 uker videresending, 12 uker kommunal behandling, 4 uker sektorvedtak, 4 uker sluttbehandling. Til sammen om lag 22 uker.">
+          <rect x="20"  y="28" width="72"  height="30" rx="3" fill="#7C878E"/>
+          <rect x="96"  y="28" width="432" height="30" rx="3" fill="#187CB2"/>
+          <rect x="532" y="28" width="144" height="30" rx="3" fill="#084875"/>
+          <rect x="680" y="28" width="144" height="30" rx="3" fill="#021E40"/>
+          <rect x="828" y="28" width="52"  height="30" rx="3" fill="none" stroke="#7C878E" stroke-dasharray="4 3"/>
+          <text class="t" x="56"  y="48" text-anchor="middle">2 u</text>
+          <text class="t" x="312" y="48" text-anchor="middle">12 uker</text>
+          <text class="t" x="604" y="48" text-anchor="middle">4 uker</text>
+          <text class="t" x="752" y="48" text-anchor="middle">4 uker</text>
+          <text x="854" y="48" text-anchor="middle" font-size="10">klage</text>
+          <text x="20"  y="18">Fylkeskommunen videresender</text>
+          <text x="312" y="18" text-anchor="middle">Kommune: utlegging 4 uker + uttalelse</text>
+          <text x="604" y="18" text-anchor="middle">Sektormyndigheter</text>
+          <text x="752" y="18" text-anchor="middle">Fylkeskommunen vedtar</text>
+          <text x="20"  y="82">Uke 0</text>
+          <text x="96"  y="82" text-anchor="middle">2</text>
+          <text x="532" y="82" text-anchor="middle">14</text>
+          <text x="680" y="82" text-anchor="middle">18</text>
+          <text class="w" x="824" y="82" text-anchor="middle">≈ 22</text>
+          <text x="854" y="82" text-anchor="middle" font-size="10">+3 u</text>
+        </svg>
+        <p class="foot">Statsforvalteren kan be om inntil 4 ukers forlengelse i særlige tilfeller. Fristene løper fra komplett søknad – en ufullstendig søknad returneres og starter ikke klokken.</p>
+      </div>
+    </section>
+
+    <div class="two">
+      <section class="panel">
+        <header><h2>Steg for steg – sjø (matfisk laks og ørret)</h2></header>
+        <div class="body">
+          <ol class="steps">
+            <li><span class="no">1</span><div>
+              <h3>Forarbeid og planavklaring <small>søker</small></h3>
+              <p>Sjekk at området er avsatt til akvakultur (A-område eller flerbruk med A) i kommuneplanens arealdel. Er det ikke det, må kommunen enten endre planen eller gi dispensasjon etter plan- og bygningsloven – begge tar lang tid og dispensasjon kan påklages av statlige myndigheter. Tidlig dialog med kommunen, Fiskarlaget og naboer reduserer risikoen for protester i høringen.</p>
+              <ul>
+                <li>Strømmålinger (minimum én måned) på 5 m, 15 m, spredningsdyp og bunn</li>
+                <li>Forundersøkelse av bunnen etter NS 9410 (B-undersøkelse; C-undersøkelse for større anlegg eller sårbare områder)</li>
+                <li>Bunntopografi, anleggsskisse og fortøyningsanalyse, kart i 1:50 000 og 1:5 000</li>
+                <li>Vurdering av avstand til andre anlegg, slakteri, settefisk, nasjonale laksefjorder og verneområder</li>
+              </ul>
+            </div></li>
+            <li><span class="no">2</span><div>
+              <h3>Søknad til fylkeskommunen <small>uke 0</small></h3>
+              <p>Søknaden leveres på Fiskeridirektoratets skjema til fylkeskommunen der lokaliteten ligger, med saksbehandlingsgebyr etter gebyrforskriften. Fylkeskommunen kontrollerer at søknaden er komplett og gjør en foreløpig KU-vurdering (akvakultur står i vedlegg II til KU-forskriften; fylkeskommunen avgjør om tiltaket skal konsekvensutredes). Anlegg med MTB over 3 600 tonn eller i sårbare områder må påregne krav om KU.</p>
+            </div></li>
+            <li><span class="no">3</span><div>
+              <h3>Videresending <small>innen 2 uker</small></h3>
+              <p>Komplett søknad sendes til kommunen, Mattilsynet, Statsforvalteren, Kystverket og Fiskeridirektoratet. Søker får kopi og kan følge saken.</p>
+            </div></li>
+            <li><span class="no">4</span><div>
+              <h3>Kommunal behandling og offentlig utlegging <small>12 uker</small></h3>
+              <p>Kommunen kunngjør søknaden i Norsk lysingsblad og lokalavis og legger den ut til offentlig ettersyn i 4 uker. Naboer, grunneiere, Fiskarlaget og kommunale utvalg uttaler seg. Kommunen bekrefter forholdet til arealplanen og konkluderer med anbefaling eller fraråding. Oversitter kommunen fristen, kan saken behandles uten kommunal uttalelse.</p>
+            </div></li>
+            <li><span class="no">5</span><div>
+              <h3>Sektorvedtak <small>4 uker etter kommunens uttalelse</small></h3>
+              <p>Hver sektormyndighet fatter eget vedtak etter sitt lovverk (se tabellen). Vedtakene kan påklages hver for seg, og en klage stopper fylkeskommunens frist.</p>
+            </div></li>
+            <li><span class="no">6</span><div>
+              <h3>Fylkeskommunen sluttbehandler <small>innen 4 uker</small></h3>
+              <p>Med alle sektorvedtak på plass fatter fylkeskommunen vedtak etter akvakulturloven, veier miljø- og arealhensyn og setter vilkår (MTB på lokaliteten, anleggskonfigurasjon, arter). Lokaliteten får nummer og registreres i Akvakulturregisteret.</p>
+            </div></li>
+            <li><span class="no">7</span><div>
+              <h3>Klage, godkjenning og oppstart <small>3 ukers klagefrist</small></h3>
+              <p>Fylkeskommunens vedtak kan påklages til Fiskeridirektoratet innen 3 uker. Før fisk settes ut må anlegget godkjennes av Mattilsynet (trinn 2), fortøyning og anlegg må ha anleggssertifikat etter NYTEK-forskriften, og driften må dekkes av internkontroll, beredskapsplan og biosikkerhetsplan.</p>
+            </div></li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="col">
+        <section class="panel">
+          <header><h2>Hvem avgjør hva</h2></header>
+          <div class="body scroll">
+            <table class="actors">
+              <thead><tr><th>Myndighet</th><th>Lovverk</th><th>Vurderer</th></tr></thead>
+              <tbody>
+                <tr><td>Fylkeskommunen</td><td>Akvakulturloven</td><td>Tildelingsmyndighet. Samordner, avveier og fatter endelig vedtak. Avgjør KU-plikt.</td></tr>
+                <tr><td>Kommunen</td><td>Plan- og bygningsloven</td><td>Arealplan, dispensasjon, offentlig utlegging, lokal uttalelse. Uttalelse – ikke vedtak.</td></tr>
+                <tr><td>Mattilsynet</td><td>Matloven, dyrevelferdsloven</td><td>Trinn 1: smitterisiko, avstand til andre anlegg (veiledende minst 2,5 km; 5 km til slakteri og settefisk), strøm, biosikkerhet, beredskap. Trinn 2: godkjenning av anlegget før drift.</td></tr>
+                <tr><td>Statsforvalteren</td><td>Forurensningsloven</td><td>Utslippstillatelse: organisk belastning, bunnforhold (B/C-undersøkelse), legemidler, kobber, støy. Uttalelse om naturmangfold, friluftsliv, fisk og vilt.</td></tr>
+                <tr><td>Kystverket</td><td>Havne- og farvannsloven</td><td>Sikker ferdsel, farleder, ankringsområder, merking av anlegget.</td></tr>
+                <tr><td>Fiskeridirektoratet</td><td>Akvakulturloven, havressursloven</td><td>Fiskeriinteresser, gyte- og fiskeområder, marint miljø. Klageinstans for fylkeskommunens vedtak.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <header><h2>Landbasert – det som er annerledes</h2></header>
+          <div class="body">
+            <ul class="diff">
+              <li><span>Tillatelse</span><span>Egen tillatelse for akvakultur på land, tildelt uten vederlag, ikke begrenset av trafikklyssystemet. Søknadsstansen fra desember 2022 er opphevet.</span></li>
+              <li><span>Plassering</span><span>Nye vilkår skiller tydeligere mellom «på land» og «i sjø» – anlegg som i praksis fungerer som sjøanlegg får ikke landtillatelse (etter Losna-saken).</span></li>
+              <li><span>Vann</span><span>Krav om desinfeksjon av inntaksvann. Uttalelse om konsesjonsfritak eller tillatelse etter vannressursloven fra NVE må ligge ved for at søknaden regnes som komplett.</span></li>
+              <li><span>Kommunen</span><span>Reguleringsplan og byggetillatelse etter plan- og bygningsloven, i tillegg til uttalelsen i akvakultursaken. Store anlegg krever normalt KU.</span></li>
+              <li><span>Statsforvalteren</span><span>Utslippstillatelse for avløp og slam. Slamhåndtering og energiforsyning er ofte de tyngste temaene.</span></li>
+              <li><span>Mattilsynet</span><span>Samme totrinnsmodell som i sjø. Smittesikring av inntak og avløp vektlegges.</span></li>
+              <li><span>Settefisk</span><span>RAS-anlegg med minst 95 % gjenbruk av vann har hatt egen åpning for settefisk og stamfisk siden mai 2023.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel">
+          <header><h2>Sjekkliste før innsending</h2></header>
+          <div class="body">
+            <ul class="check">
+              <li>Søknadsskjema (Fiskeridirektoratet) fullstendig utfylt, gebyr betalt</li>
+              <li>Bekreftelse på at tiltaket er i samsvar med arealplan, eller søknad om dispensasjon</li>
+              <li>Strømrapport (5 m, 15 m, spredningsdyp, bunn), minst én måned</li>
+              <li>Forundersøkelse NS 9410 (B eller C) og bunntopografi</li>
+              <li>Sjøkart 1:50 000 med lokalitet og nabolokaliteter; anleggsskisse 1:5 000 med fortøyning</li>
+              <li>Biosikkerhetsplan, beredskapsplan, internkontroll</li>
+              <li>KU-vurdering: begrunnelse for hvorfor tiltaket ikke krever KU, eller KU-program</li>
+              <li>Land: NVE-uttalelse om vannuttak, plan for avløp og slam, energiforsyning</li>
+            </ul>
+            <div class="callout">Beløp, avstander og frister i denne oversikten er hentet fra offentlige veiledere og forskrifter per september 2026. Sjekk alltid gjeldende versjon hos fylkeskommunen før innsending – særlig gebyrsatser og KU-terskler endres jevnlig.</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <header><h2>Kilder</h2></header>
+          <div class="body">
+            <ul class="links">
+              <li><a href="https://www.fiskeridir.no/akvakultur/tildeling-og-tillatelser/akvakultursoknader-hvordan-foregar-tildelingsprosessen" target="_blank" rel="noopener">Fiskeridirektoratet – Tildelingsprosessen for akvakulturtillatelser</a></li>
+              <li><a href="https://www.mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg" target="_blank" rel="noopener">Mattilsynet – Saksgangen i etablering og utvidelse av akvakulturanlegg</a></li>
+              <li><a href="https://lovdata.no/dokument/SF/forskrift/2010-05-18-708" target="_blank" rel="noopener">Lovdata – Forskrift om samordning og tidsfrister i behandlingen av akvakultursøknader</a></li>
+              <li><a href="https://www.fiskeridir.no/Akvakultur/Tildeling-og-tillatelser/Kommersielle-tillatelser/Laks-oerret-og-regnbueoerret/tillatelse-til-akvakultur-pa-land" target="_blank" rel="noopener">Fiskeridirektoratet – Tillatelse til akvakultur på land</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p id="foot-sources">Kilder: iLaks, Statistisk sentralbyrå (tabell 03024), Nærings- og fiskeridepartementet, Fiskeridirektoratet, Mattilsynet, Yahoo Finance. Overskrifter gjengis med lenke til originalkilden.</p>
+  <p>Scale Radar er et internt verktøy for ScaleAQ. Design etter ScaleAQ Style Guide.</p>
+</footer>
+
+<!-- Logo-stier hentet fra ScaleAQ Style Guide (vektor). Hvit + Scale Fire for mørk bakgrunn. -->
+<script id="logo-svg" type="text/plain"><path fill="#FFFFFF" fill-rule="evenodd" d="M1165.02 417.47 C1157.22 417.47 1151.66 423.04 1151.66 430.83 L1151.66 450.88 C1151.66 458.67 1157.22 464.24 1165.02 464.24 L1190.63 464.24 L1190.63 453.10 L1165.02 453.10 L1164.74 453.10 C1163.66 453.10 1162.79 452.23 1162.79 451.15 L1162.79 450.88 L1162.79 430.83 L1162.79 430.56 C1162.79 429.48 1163.66 428.61 1164.74 428.61 L1165.02 428.61 L1182.83 428.61 C1189.51 428.61 1193.97 424.15 1193.97 417.47 L1182.83 417.47 L1165.02 417.47 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1133.84 417.47 L1108.23 417.47 C1101.55 417.47 1097.10 421.93 1097.10 428.61 L1108.23 428.61 L1133.84 428.61 C1140.52 428.61 1144.97 424.15 1144.97 417.47 L1133.84 417.47 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1314.22 417.47 C1307.54 417.47 1303.08 421.93 1303.08 428.61 L1314.22 428.61 L1337.60 428.61 C1344.28 428.61 1348.73 424.15 1348.73 417.47 L1337.60 417.47 L1314.22 417.47 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1224.03 435.29 L1212.89 435.29 L1203.99 435.29 L1203.71 435.29 C1202.63 435.29 1201.76 436.13 1201.76 437.16 L1201.76 437.43 L1201.76 464.24 L1212.89 464.24 L1212.89 446.42 L1224.03 446.42 L1235.16 446.42 C1235.16 439.74 1230.71 435.29 1224.03 435.29 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1237.39 417.47 L1212.89 417.47 C1206.21 417.47 1201.76 421.93 1201.76 428.61 L1212.89 428.61 L1237.39 428.61 L1237.67 428.61 C1238.74 428.61 1239.62 429.48 1239.62 430.56 L1239.62 430.83 L1239.62 455.33 C1239.62 462.01 1244.07 466.46 1250.75 466.46 L1250.75 455.33 L1250.75 430.83 C1250.75 423.04 1245.18 417.47 1237.39 417.47 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1274.97 453.10 C1273.89 453.10 1273.02 452.23 1273.02 451.15 L1273.02 450.88 L1273.02 428.61 C1273.02 421.93 1268.57 417.47 1261.89 417.47 L1261.89 428.61 L1261.89 450.88 C1261.89 458.67 1267.45 464.24 1275.25 464.24 M1275.25 453.10H1297.52V464.24H1275.25Z Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1132.73 435.29 L1108.23 435.29 L1097.10 435.29 C1097.10 441.97 1101.55 446.42 1108.23 446.42 L1132.73 446.42 L1133.00 446.42 C1134.08 446.42 1134.95 447.29 1134.95 448.37 L1134.95 448.65 L1134.95 450.88 L1134.95 451.15 C1134.95 452.23 1134.08 453.10 1133.00 453.10 L1132.73 453.10 L1104.89 453.10 C1098.21 453.10 1093.76 457.56 1093.76 464.24 L1104.89 464.24 L1132.73 464.24 C1140.52 464.24 1146.09 458.67 1146.09 450.88 L1146.09 448.65 C1146.09 440.85 1140.52 435.29 1132.73 435.29 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1316.17 453.10 C1315.09 453.10 1314.22 452.23 1314.22 451.15 L1314.22 450.88 L1314.22 446.42 L1324.80 446.42 C1331.48 446.42 1335.93 441.97 1335.93 435.29 L1324.80 435.29 L1314.22 435.29 L1305.31 435.29 L1305.03 435.29 C1303.96 435.29 1303.08 436.16 1303.08 437.24 L1303.08 437.51 L1303.08 450.88 C1303.08 458.67 1308.65 464.24 1316.44 464.24 M1316.44 453.10H1345.39V464.24H1316.44Z Z"/><path fill="#FF5000" fill-rule="evenodd" d="M1424.56 435.29 L1424.56 435.29 L1411.53 435.29 C1406.08 435.29 1402.18 439.18 1402.18 444.64 L1402.18 454.88 C1402.18 460.34 1406.08 464.24 1411.53 464.24 L1414.82 464.24 L1417.91 467.32 C1421.21 470.63 1425.62 470.63 1428.93 467.32 L1425.77 464.16 C1430.58 463.63 1433.91 459.93 1433.91 454.88 L1433.91 444.64 C1433.91 439.18 1430.02 435.29 1424.56 435.29 M1426.12 454.88 L1426.12 455.08 C1426.12 455.83 1425.51 456.44 1424.76 456.44 L1424.56 456.44 L1424.56 456.44 L1418.05 456.44 L1418.05 456.44 L1418.05 456.44 L1411.53 456.44 L1411.53 456.44 L1411.34 456.44 C1410.59 456.44 1409.97 455.83 1409.97 455.08 L1409.97 454.88 L1409.97 444.64 L1409.97 444.45 C1409.97 443.69 1410.59 443.08 1411.34 443.08 L1411.53 443.08 L1411.53 443.08 L1424.56 443.08 L1424.56 443.08 L1424.76 443.08 C1425.51 443.08 1426.12 443.69 1426.12 444.45 L1426.12 444.64 L1426.12 454.88 Z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1368.78 417.47H1430.02V428.61H1368.78Z Z"/><path fill="#FF5000" fill-rule="evenodd" d="M1396.61 444.64 C1396.61 439.18 1392.72 435.29 1387.26 435.29 L1372.67 435.29 C1368.00 435.29 1364.88 438.40 1364.88 443.08 L1372.67 443.08 L1387.26 443.08 L1387.26 443.08 L1387.45 443.08 C1388.21 443.08 1388.82 443.69 1388.82 444.44 L1388.82 444.64 L1388.82 458.67 C1388.82 463.35 1391.94 466.46 1396.61 466.46 L1396.61 458.67 L1396.61 444.64 Z"/><path fill="#FF5000" fill-rule="evenodd" d="M1377.68 448.65 L1372.67 448.65 L1366.44 448.65 L1366.24 448.65 C1365.49 448.65 1364.88 449.27 1364.88 450.04 L1364.88 450.23 L1364.88 464.24 L1372.67 464.24 L1372.67 456.44 L1377.68 456.44 L1385.48 456.44 C1385.48 451.77 1382.36 448.65 1377.68 448.65 Z"/></script>
+
+<!-- Innebygd øyeblikksbilde. Overstyres av data/data.json når siden hostes med skriptet. -->
+<script id="seed" type="application/json">{"generated_at": "2026-09-19T06:00:00Z", "mode": "snapshot", "sources": [{"key": "ilaks", "name": "iLaks", "status": "ok", "count": 9}, {"key": "kyst", "name": "Kyst.no", "status": "pending", "count": 0}, {"key": "intrafish", "name": "Intrafish", "status": "pending", "count": 0}, {"key": "fiskeribladet", "name": "Fiskeribladet", "status": "pending", "count": 0}, {"key": "fdir", "name": "Fiskeridirektoratet", "status": "pending", "count": 0}], "news": [{"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Massiv europeisk innfrysing av fisk holder lakseprisene stabile", "url": "https://ilaks.no/massiv-europeisk-innfrysing-av-fisk-holder-lakseprisene-stabile/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Fiskeri- og havministeren: – Et klart mål å løse rettslige uenigheter på lavest mulig nivå", "url": "https://ilaks.no/havministeren-viktig-at-borgere-og-virksomheter-har-mulighet-til-a-fa-provd-lovligheten-av-statens-myndighetsutovelse-for-en-uavhengig-domstol/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Vestlandet var først med den nye vaksinen", "url": "https://ilaks.no/vestlandet-var-forst-med-den-nye-vaksinen/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "STIM kjøper OCEVA og etablerer nytt rådgivningsselskap", "url": "https://ilaks.no/stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Resultatknekk for Isfjord Norway: – Året har vært krevende for virksomheten", "url": "https://ilaks.no/resultatknekk-for-isfjord-norway-aret-har-vaert-krevende-for-virksomheten/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Forlatte oppdrettsmerder fjernet etter 15 år i sjøen", "url": "https://ilaks.no/forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Statens vegvesen får bøtelegge fiskesøl fra transport", "url": "https://ilaks.no/statens-vegvesen-far-botelegge-fiskesol-fra-transport/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Samlet 200 studenter: – Det er alltid noen som får jobb i løpet av dagen", "url": "https://ilaks.no/samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen/"}, {"source_key": "ilaks", "source": "iLaks", "published": "2026-09-18", "title": "Nova Sea-arvinger satser tungt på eiendom på Frogner", "url": "https://ilaks.no/nova-sea-arvinger-satser-tungt-pa-eiendom-pa-frogner/"}], "salmon_price": {"status": "ok", "unit": "kr/kg", "published": "2026-09-16", "source": "SSB tabell 03024", "source_url": "https://www.ssb.no/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks/artikler/laksepris", "note": "Uke 31, 35 og 37 er SSBs publiserte tall. Uke 30, 33, 34 og 36 er avledet fra SSBs oppgitte ukesendringer; uke 32 mangler. Fylles komplett fra SSB-API ved første live-oppdatering.", "series": [{"week": "2026U30", "price": 71.29, "derived": true}, {"week": "2026U31", "price": 73.57, "volume": 26958}, {"week": "2026U33", "price": 72.63, "derived": true}, {"week": "2026U34", "price": 73.49, "derived": true, "volume": 31378}, {"week": "2026U35", "price": 71.87, "volume": 30487}, {"week": "2026U36", "price": 69.69, "derived": true, "volume": 30798}, {"week": "2026U37", "price": 70.18, "volume": 30111}], "frozen": {"week": "2026U37", "price": 69.77, "volume": 697}}, "stocks": {"status": "partial", "as_of": "2026-09-18", "note": "Kun Mowi er hentet i dette øyeblikksbildet (siste omsatte kurs, ca. 15 min forsinket). Øvrige kurser fylles fra kursfeed ved første live-oppdatering. Ingen tall er anslått.", "groups": [{"name": "Norske sjøbaserte – Oslo Børs", "items": [{"name": "Mowi", "ticker": "MOWI", "currency": "NOK", "price": 200.8, "change_pct": null}, {"name": "SalMar", "ticker": "SALM", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Lerøy Seafood Group", "ticker": "LSG", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Grieg Seafood", "ticker": "GSF", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Austevoll Seafood", "ticker": "AUSS", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Måsøval", "ticker": "MAS", "currency": "NOK", "price": null, "change_pct": null}]}, {"name": "Landbaserte", "items": [{"name": "Atlantic Sapphire", "ticker": "ASA", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Salmon Evolution", "ticker": "SALME", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Andfjord Salmon", "ticker": "ANDF", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Proximar Seafood", "ticker": "PROXI", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Nordic Aqua Partners", "ticker": "NOAP", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Gigante Salmon", "ticker": "GIGA", "currency": "NOK", "price": null, "change_pct": null}]}, {"name": "Internasjonale", "items": [{"name": "Bakkafrost (Færøyene)", "ticker": "BAKKA", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Arctic Fish (Island)", "ticker": "AFISH", "currency": "NOK", "price": null, "change_pct": null}, {"name": "Salmones Camanchaca (Chile)", "ticker": "SALMOCAM", "currency": "CLP", "price": null, "change_pct": null}, {"name": "Multi X (Chile)", "ticker": "MULTIFOODS", "currency": "CLP", "price": null, "change_pct": null}]}], "company_news": [{"date": "2026-09-18", "text": "Arctic Securities utpeker Mowi som toppvalg, med henvisning til sterk biologi"}, {"date": "2026-09-11", "text": "Bank of America dobbeltoppgraderer SalMar til kjøp"}, {"date": "2026-09-08", "text": "Lerøy Seafood Group plasserer nytt grønt obligasjonslån"}]}, "licences": {"oppdatert": "2026-09-19", "trafikklys": {"aar": 2026, "besluttet": "2026-06-19", "kilde_url": "https://kommunikasjon.ntb.no/pressemelding/18961828/ny-fargelegging-i-trafikklyssystemet-for-havbruk?lang=no", "vekst_tonn_mtb": 8300, "nedtrekk_tonn_mtb": 5300, "po": [{"nr": 1, "navn": "Svenskegrensen–Jæren", "farge": "gronn"}, {"nr": 2, "navn": "Ryfylke", "farge": "gul"}, {"nr": 3, "navn": "Karmøy–Sotra", "farge": "rod", "merknad": "6 % nedtrekk – tredje gang"}, {"nr": 4, "navn": "Nordhordland–Stad", "farge": "gul", "merknad": "Unngikk rødt"}, {"nr": 5, "navn": "Stad–Hustadvika", "farge": "gul"}, {"nr": 6, "navn": "Nordmøre og Sør-Trøndelag", "farge": "gul"}, {"nr": 7, "navn": "Nord-Trøndelag med Bindal", "farge": "gul"}, {"nr": 8, "navn": "Helgeland–Bodø", "farge": "gul"}, {"nr": 9, "navn": "Vestfjorden og Vesterålen", "farge": "gul", "merknad": "Særskilt vurdert av departementet"}, {"nr": 10, "navn": "Andøya–Senja", "farge": "gul"}, {"nr": 11, "navn": "Kvaløya–Loppa", "farge": "gul"}, {"nr": 12, "navn": "Vest-Finnmark", "farge": "gronn"}, {"nr": 13, "navn": "Øst-Finnmark", "farge": "gronn"}], "fakta": [["Besluttet", "19. juni 2026, basert på lakseluspåvirkning på villaks i 2024 og 2025."], ["Tildeling", "6 % vekst i grønne områder: 1 % til fastpris på eksisterende tillatelser, resten på auksjon. Unntaksvekst kan søkes uavhengig av farge."], ["Neste steg", "Kapasitetsjusteringsforskriften var på høring til 31. juli. Fastpristilbud kommer fra Fiskeridirektoratet og fylkeskommunene før auksjon. Auksjonsdato ikke annonsert per 19. september."], ["Lukket teknologi", "Nedtrukket kapasitet kan tas i bruk i lukkede merder. Nytt reguleringssystem etter havbruksmeldingen er under oppfølging."]]}, "land": {"status": "Søknader åpnet igjen", "tekst": "Stansen for nye landtillatelser (innført desember 2022 etter Losna-saken) er opphevet med nytt regelverk: tydeligere skille mellom land og sjø, og krav om desinfeksjon av inntaksvann. Søknader om settefisk og matfisk behandles av fylkeskommunen; Fiskeridirektoratet er klageinstans. Landbasert MTB tildeles uten vederlag.", "kilde_url": "https://www.fiskeridir.no/Akvakultur/Tildeling-og-tillatelser/Kommersielle-tillatelser/Laks-oerret-og-regnbueoerret/tillatelse-til-akvakultur-pa-land"}, "saker_vi_folger": [{"tittel": "Sirevåg Laks – postsmolt-RAS i Hå, Rogaland", "detalj": "Søknad til Rogaland fylkeskommune nov. 2025", "status": "Status ikke verifisert", "url": "https://ilaks.no/milliardanlegg-i-sirevag-vil-produsere-postsmolt-for-offshore-oppdrett/"}]}}</script>
+
+<script>
+(function(){
+  'use strict';
+  // ---------- hjelpere
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  var nf = function(n, d){ if(n == null || isNaN(n)) return '–'; var s = Number(n).toFixed(d == null ? 2 : d); var parts = s.split('.'); parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' '); return parts.join(','); };
+  var pct = function(p){ if(p == null || isNaN(p)) return '<span class="missing">–</span>'; var cls = p > 0 ? 'up' : (p < 0 ? 'down' : ''); var sign = p > 0 ? '+' : (p < 0 ? '−' : ''); return '<span class="'+cls+'">'+sign+nf(Math.abs(p),1)+' %</span>'; };
+  var MND = ['januar','februar','mars','april','mai','juni','juli','august','september','oktober','november','desember'];
+  var DAG = ['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'];
+  var dshort = function(iso){ if(!iso) return ''; var d = new Date(iso); if(isNaN(d)) return iso; return d.getDate()+'. '+MND[d.getMonth()].slice(0,3)+'.'; };
+  var dlong = function(iso){ var d = new Date(iso); if(isNaN(d)) return iso; return DAG[d.getDay()]+' '+d.getDate()+'. '+MND[d.getMonth()]+' '+d.getFullYear(); };
+  var week = function(w){ var m = /U(\d+)$/.exec(w || ''); return m ? 'uke '+parseInt(m[1],10) : w; };
+
+  // ---------- logo
+  try { $('logo-paths').innerHTML = $('logo-svg').textContent; } catch(e){}
+
+  // ---------- visninger
+  var navBtns = document.querySelectorAll('.nav [data-view]');
+  function showView(v){
+    navBtns.forEach(function(b){ b.setAttribute('aria-selected', String(b.dataset.view === v)); });
+    $('view-radar').hidden = v !== 'radar';
+    $('view-process').hidden = v !== 'process';
+    try { localStorage.setItem('scaleradar.view', v); } catch(e){}
+    if(v === 'process') window.scrollTo(0,0);
+  }
+  navBtns.forEach(function(b){ b.addEventListener('click', function(){ showView(b.dataset.view); }); });
+
+  // ---------- rendering
+  function render(d){
+    var gen = d.generated_at ? new Date(d.generated_at) : null;
+    var stale = gen ? (Date.now() - gen.getTime()) > 36*3600*1000 : true;
+    $('stamp').innerHTML = (gen ? '<span class="dot'+(stale?' stale':'')+'"></span>Oppdatert <b>'+esc(dlong(d.generated_at))+'</b>' : 'Ingen data') +
+      '<br>' + (d.mode === 'live' ? 'Hentes automatisk hver time' : 'Øyeblikksbilde – oppdateres manuelt');
+
+    renderPulse(d); renderNews(d); renderPrice(d.salmon_price || {}); renderStocks(d.stocks || {}); renderLicences(d.licences || {});
+  }
+
+  function renderPulse(d){
+    var sp = d.salmon_price || {}; var s = sp.series || []; var last = s[s.length-1]; var prev = s[s.length-2];
+    var chg = (last && prev && prev.price) ? (last.price/prev.price - 1)*100 : null;
+    var volChg = (last && prev && last.volume && prev.volume) ? (last.volume/prev.volume - 1)*100 : null;
+    var tl = (d.licences && d.licences.trafikklys) || {}; var po = tl.po || [];
+    var g = po.filter(function(p){return p.farge==='gronn';}).length, y = po.filter(function(p){return p.farge==='gul';}).length, r = po.filter(function(p){return p.farge==='rod';}).length;
+    $('pulse').innerHTML =
+      '<div class="cell"><div class="k">Laksepris, '+esc(last?week(last.week):'')+' (SSB eksportpris, fersk)</div><div class="v">'+(last?nf(last.price):'–')+' <small>kr/kg</small></div><div class="d">'+(chg==null?'':pct(chg)+' fra '+esc(week(prev.week)))+'</div></div>' +
+      '<div class="cell"><div class="k">Eksportvolum fersk laks, '+esc(last?week(last.week):'')+'</div><div class="v">'+(last&&last.volume?nf(last.volume,0):'–')+' <small>tonn</small></div><div class="d">'+(volChg==null?'':pct(volChg)+' fra '+esc(week(prev.week))+' ('+nf(prev.volume,0)+' t)')+'</div></div>' +
+      '<div class="cell"><div class="k">Trafikklys '+esc(tl.aar||'')+' (13 produksjonsområder)</div><div class="v">'+g+' · '+y+' · '+r+'</div><div class="d">grønne · gule · røde – besluttet '+esc(dshort(tl.besluttet))+'</div></div>' +
+      '<div class="cell"><div class="k">Ny kapasitet i grønne områder</div><div class="v">≈ '+nf(tl.vekst_tonn_mtb,0)+' <small>tonn MTB</small></div><div class="d">1 % fastpris, resten auksjon. PO3 ned ≈ '+nf(tl.nedtrekk_tonn_mtb,0)+' t</div></div>';
+  }
+
+  function renderNews(d){
+    var sources = d.sources || []; var news = d.news || [];
+    var tabs = $('news-tabs'); var body = $('news-body');
+    tabs.innerHTML = sources.map(function(s){
+      var n = news.filter(function(x){return x.source_key===s.key;}).length;
+      return '<button class="tab" role="tab" aria-selected="false" data-src="'+esc(s.key)+'">'+esc(s.name)+' <span class="n">'+n+'</span></button>';
+    }).join('');
+    $('news-meta').textContent = 'Overskrifter med lenke til kilden · hentet '+dshort(d.generated_at);
+    function show(key){
+      tabs.querySelectorAll('.tab').forEach(function(t){ t.setAttribute('aria-selected', String(t.dataset.src===key)); });
+      var s = sources.filter(function(x){return x.key===key;})[0] || {};
+      var items = news.filter(function(x){return x.source_key===key;});
+      if(!items.length){
+        var why = s.status==='error' ? 'Kilden svarte ikke ved siste oppdatering'+(s.error?' ('+esc(s.error)+')':'')+'.' : esc(s.name||'Kilden')+' er ikke koblet på ennå. RSS-adressen ligger klar i content/config.json og aktiveres i første live-kjøring.';
+        body.innerHTML = '<div class="empty">'+why+'</div>';
+      } else {
+        body.innerHTML = '<ul class="news">'+items.map(function(n){
+          return '<li><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a><div class="src">'+esc(n.source)+(n.published?' · '+esc(dshort(n.published)):'')+'</div></li>';
+        }).join('')+'</ul>';
+      }
+      try { localStorage.setItem('scaleradar.newsTab', key); } catch(e){}
+    }
+    tabs.querySelectorAll('.tab').forEach(function(t){ t.addEventListener('click', function(){ show(t.dataset.src); }); });
+    var saved = null; try { saved = localStorage.getItem('scaleradar.newsTab'); } catch(e){}
+    var first = sources.filter(function(s){return s.key===saved;}).length ? saved : (sources[0] && sources[0].key);
+    if(first) show(first);
+  }
+
+  function renderPrice(sp){
+    var s = (sp.series || []).slice().sort(function(a,b){ return a.week < b.week ? -1 : 1; });
+    $('price-meta').textContent = (sp.source || 'SSB') + (sp.published ? ' · publisert '+dshort(sp.published) : '');
+    if(!s.length){ $('price-body').innerHTML = '<div class="empty">Ingen prisdata i denne oppdateringen.</div>'; return; }
+    var W = 440, H = 190, L = 40, R = 14, T = 24, B = 34;
+    var prices = s.map(function(p){return p.price;}); var min = Math.min.apply(null,prices), max = Math.max.apply(null,prices);
+    var lo = Math.floor(min - 1), hi = Math.ceil(max + 1); if(hi-lo < 4){ hi = lo + 4; }
+    var x = function(i){ return s.length===1 ? (L+W-R)/2 : L + i*(W-L-R)/(s.length-1); };
+    var y = function(p){ return T + (hi-p)*(H-T-B)/(hi-lo); };
+    var ticks = []; var step = (hi-lo) <= 6 ? 1 : ((hi-lo) <= 12 ? 2 : 5);
+    for(var v=lo; v<=hi; v+=step) ticks.push(v);
+    var svg = '<svg class="chart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Eksportpris fersk laks per uke, kroner per kilo. Siste: '+nf(s[s.length-1].price)+'">';
+    ticks.forEach(function(v){ svg += '<line class="grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v).toFixed(1)+'" y2="'+y(v).toFixed(1)+'"/><text x="'+(L-6)+'" y="'+(y(v)+4).toFixed(1)+'" text-anchor="end">'+v+'</text>'; });
+    var pts = s.map(function(p,i){ return x(i).toFixed(1)+','+y(p.price).toFixed(1); });
+    svg += '<polygon class="area" points="'+pts.join(' ')+' '+x(s.length-1).toFixed(1)+','+(H-B)+' '+x(0).toFixed(1)+','+(H-B)+'"/>';
+    svg += '<polyline class="line" points="'+pts.join(' ')+'"/>';
+    s.forEach(function(p,i){
+      var last = i===s.length-1;
+      svg += '<circle class="pt'+(p.derived?' derived':'')+(last?' last':'')+'" cx="'+x(i).toFixed(1)+'" cy="'+y(p.price).toFixed(1)+'" r="'+(last?4.5:3.5)+'"/>';
+      svg += '<text x="'+x(i).toFixed(1)+'" y="'+(H-10)+'" text-anchor="middle">u'+(/U(\d+)$/.exec(p.week)||[,p.week])[1]+'</text>';
+      if(last){ svg += '<text class="lbl" x="'+(x(i)-8).toFixed(1)+'" y="'+(y(p.price)-10).toFixed(1)+'" text-anchor="end" font-size="13">'+nf(p.price)+'</text>'; }
+      else if(i===0 || p.price===max || p.price===min){ svg += '<text class="lbl" x="'+(i===0?x(i)+6:x(i)).toFixed(1)+'" y="'+(y(p.price)+(p.price===min?18:-9)).toFixed(1)+'" text-anchor="'+(i===0?'start':'middle')+'">'+nf(p.price)+'</text>'; }
+    });
+    svg += '</svg>';
+    var fz = sp.frozen ? 'Frosen '+esc(week(sp.frozen.week))+': '+nf(sp.frozen.price)+' kr/kg'+(sp.frozen.volume?' ('+nf(sp.frozen.volume,0)+' t)':'') : '';
+    $('price-body').innerHTML = svg + '<div class="legend"><span>Fersk laks, kr/kg, ukesgjennomsnitt</span><span>'+fz+'</span></div>' + (sp.note ? '<p class="foot">'+esc(sp.note)+'</p>' : '') + (sp.status==='error' ? '<p class="foot"><span class="status warn">Siste henting fra SSB feilet – viser forrige verdi</span></p>' : '');
+  }
+
+  function renderStocks(st){
+    $('stock-meta').textContent = (st.as_of ? 'Sluttkurs '+dshort(st.as_of)+' · ' : '') + 'NOK der ikke annet er angitt';
+    var rows = '';
+    (st.groups || []).forEach(function(g){
+      rows += '<tr class="group"><td colspan="4">'+esc(g.name)+'</td></tr>';
+      (g.items || []).forEach(function(it){
+        var cur = it.currency && it.currency !== 'NOK' ? ' · '+esc(it.currency) : '';
+        rows += '<tr><td>'+esc(it.name)+'</td><td class="tk">'+esc(it.ticker)+cur+'</td><td class="num'+(it.price==null?' missing':'')+'">'+(it.price==null?'–':nf(it.price))+'</td><td class="num">'+pct(it.change_pct)+'</td></tr>';
+      });
+    });
+    var news = (st.company_news || []).map(function(n){ return '<li><time>'+esc(dshort(n.date))+'</time><span>'+esc(n.text)+'</span></li>'; }).join('');
+    $('stock-body').innerHTML = '<div class="scroll"><table><thead><tr><th>Selskap</th><th>Ticker</th><th class="num">Kurs</th><th class="num">Endring</th></tr></thead><tbody>'+rows+'</tbody></table></div>' +
+      (st.note ? '<p class="foot">'+esc(st.note)+'</p>' : '') + (st.status==='error' ? '<p class="foot"><span class="status warn">Kursfeed feilet ved siste oppdatering</span></p>' : '') +
+      (news ? '<ul class="co-news" aria-label="Selskapsnytt">'+news+'</ul>' : '');
+  }
+
+  function renderLicences(lc){
+    var tl = lc.trafikklys || {}; var po = tl.po || [];
+    $('lic-meta').textContent = 'Kilde: Nærings- og fiskeridepartementet'+(tl.besluttet?' '+dshort(tl.besluttet)+' '+new Date(tl.besluttet).getFullYear():'')+', Fiskeridirektoratet';
+    var names = function(f){ return po.filter(function(p){return p.farge===f;}).map(function(p){return 'PO'+p.nr;}).join(', '); };
+    var html = '<div class="tl-sum"><span><i style="background:var(--tl-g)"></i>Grønn: '+esc(names('gronn'))+' – inntil 6 % vekst</span><span><i style="background:var(--tl-y)"></i>Gul: '+esc(names('gul'))+' – uendret</span><span><i style="background:var(--tl-r)"></i>Rød: '+esc(names('rod'))+' – 6 % nedtrekk</span></div>';
+    html += '<div class="po" role="img" aria-label="Trafikklysfarger for produksjonsområde 1 til 13, fra Svenskegrensen i sør til Øst-Finnmark i nord">'+po.map(function(p){ return '<div class="seg '+esc(p.farge)+'" title="PO'+p.nr+' '+esc(p.navn)+': '+esc(p.farge)+(p.merknad?' – '+esc(p.merknad):'')+'">'+p.nr+'</div>'; }).join('')+'</div>';
+    html += '<div class="po-axis"><span>Svenskegrensen</span><span>Trøndelag (PO6–7)</span><span>Øst-Finnmark</span></div>';
+    html += '<ul class="facts">'+(tl.fakta||[]).map(function(f){ return '<li><span>'+esc(f[0])+'</span><span>'+esc(f[1])+'</span></li>'; }).join('')+'</ul>';
+    var land = lc.land || {};
+    html += '<div class="land"><h3>Landbasert '+(land.status?'<span class="status">'+esc(land.status)+'</span>':'')+'</h3><p>'+esc(land.tekst||'')+'</p>';
+    html += '<p>Det finnes ingen samlet nasjonal oversikt over søknader under behandling. Scale Radar holder derfor en egen liste over saker vi følger:</p>';
+    html += '<ul class="watch">'+(lc.saker_vi_folger||[]).map(function(s){ return '<li><span>'+(s.url?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.tittel)+'</a>':esc(s.tittel))+(s.detalj?' – '+esc(s.detalj):'')+'</span><span class="st">'+esc(s.status||'')+'</span></li>'; }).join('');
+    html += '<li><span><em>Legg til saker i content/konsesjoner.json</em></span><span class="st">–</span></li></ul></div>';
+    $('lic-body').innerHTML = html;
+  }
+
+  // ---------- last data: data/data.json først, innebygd øyeblikksbilde som reserve
+  var seed = {}; try { seed = JSON.parse($('seed').textContent || '{}'); } catch(e){}
+  function boot(){
+    var v = null; try { v = localStorage.getItem('scaleradar.view'); } catch(e){}
+    showView(v === 'process' ? 'process' : 'radar');
+    fetch('data/data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(render)
+      .catch(function(){ render(seed); });
+  }
+  boot();
+})();
+</script>
+</body>
+</html>

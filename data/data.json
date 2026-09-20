@@ -1,0 +1,412 @@
+{
+ "generated_at": "2026-09-19T06:00:00Z",
+ "mode": "snapshot",
+ "sources": [
+  {
+   "key": "ilaks",
+   "name": "iLaks",
+   "status": "ok",
+   "count": 9
+  },
+  {
+   "key": "kyst",
+   "name": "Kyst.no",
+   "status": "pending",
+   "count": 0
+  },
+  {
+   "key": "intrafish",
+   "name": "Intrafish",
+   "status": "pending",
+   "count": 0
+  },
+  {
+   "key": "fiskeribladet",
+   "name": "Fiskeribladet",
+   "status": "pending",
+   "count": 0
+  },
+  {
+   "key": "fdir",
+   "name": "Fiskeridirektoratet",
+   "status": "pending",
+   "count": 0
+  }
+ ],
+ "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Massiv europeisk innfrysing av fisk holder lakseprisene stabile",
+   "url": "https://ilaks.no/massiv-europeisk-innfrysing-av-fisk-holder-lakseprisene-stabile/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Fiskeri- og havministeren: – Et klart mål å løse rettslige uenigheter på lavest mulig nivå",
+   "url": "https://ilaks.no/havministeren-viktig-at-borgere-og-virksomheter-har-mulighet-til-a-fa-provd-lovligheten-av-statens-myndighetsutovelse-for-en-uavhengig-domstol/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Vestlandet var først med den nye vaksinen",
+   "url": "https://ilaks.no/vestlandet-var-forst-med-den-nye-vaksinen/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "STIM kjøper OCEVA og etablerer nytt rådgivningsselskap",
+   "url": "https://ilaks.no/stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Resultatknekk for Isfjord Norway: – Året har vært krevende for virksomheten",
+   "url": "https://ilaks.no/resultatknekk-for-isfjord-norway-aret-har-vaert-krevende-for-virksomheten/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Forlatte oppdrettsmerder fjernet etter 15 år i sjøen",
+   "url": "https://ilaks.no/forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Statens vegvesen får bøtelegge fiskesøl fra transport",
+   "url": "https://ilaks.no/statens-vegvesen-far-botelegge-fiskesol-fra-transport/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Samlet 200 studenter: – Det er alltid noen som får jobb i løpet av dagen",
+   "url": "https://ilaks.no/samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen/"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-18",
+   "title": "Nova Sea-arvinger satser tungt på eiendom på Frogner",
+   "url": "https://ilaks.no/nova-sea-arvinger-satser-tungt-pa-eiendom-pa-frogner/"
+  }
+ ],
+ "salmon_price": {
+  "status": "ok",
+  "unit": "kr/kg",
+  "published": "2026-09-16",
+  "source": "SSB tabell 03024",
+  "source_url": "https://www.ssb.no/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks/artikler/laksepris",
+  "note": "Uke 31, 35 og 37 er SSBs publiserte tall. Uke 30, 33, 34 og 36 er avledet fra SSBs oppgitte ukesendringer; uke 32 mangler. Fylles komplett fra SSB-API ved første live-oppdatering.",
+  "series": [
+   {
+    "week": "2026U30",
+    "price": 71.29,
+    "derived": true
+   },
+   {
+    "week": "2026U31",
+    "price": 73.57,
+    "volume": 26958
+   },
+   {
+    "week": "2026U33",
+    "price": 72.63,
+    "derived": true
+   },
+   {
+    "week": "2026U34",
+    "price": 73.49,
+    "derived": true,
+    "volume": 31378
+   },
+   {
+    "week": "2026U35",
+    "price": 71.87,
+    "volume": 30487
+   },
+   {
+    "week": "2026U36",
+    "price": 69.69,
+    "derived": true,
+    "volume": 30798
+   },
+   {
+    "week": "2026U37",
+    "price": 70.18,
+    "volume": 30111
+   }
+  ],
+  "frozen": {
+   "week": "2026U37",
+   "price": 69.77,
+   "volume": 697
+  }
+ },
+ "stocks": {
+  "status": "partial",
+  "as_of": "2026-09-18",
+  "note": "Kun Mowi er hentet i dette øyeblikksbildet (siste omsatte kurs, ca. 15 min forsinket). Øvrige kurser fylles fra kursfeed ved første live-oppdatering. Ingen tall er anslått.",
+  "groups": [
+   {
+    "name": "Norske sjøbaserte – Oslo Børs",
+    "items": [
+     {
+      "name": "Mowi",
+      "ticker": "MOWI",
+      "currency": "NOK",
+      "price": 200.8,
+      "change_pct": null
+     },
+     {
+      "name": "SalMar",
+      "ticker": "SALM",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Lerøy Seafood Group",
+      "ticker": "LSG",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Grieg Seafood",
+      "ticker": "GSF",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Austevoll Seafood",
+      "ticker": "AUSS",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Måsøval",
+      "ticker": "MAS",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     }
+    ]
+   },
+   {
+    "name": "Landbaserte",
+    "items": [
+     {
+      "name": "Atlantic Sapphire",
+      "ticker": "ASA",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Salmon Evolution",
+      "ticker": "SALME",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Andfjord Salmon",
+      "ticker": "ANDF",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Proximar Seafood",
+      "ticker": "PROXI",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Nordic Aqua Partners",
+      "ticker": "NOAP",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Gigante Salmon",
+      "ticker": "GIGA",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     }
+    ]
+   },
+   {
+    "name": "Internasjonale",
+    "items": [
+     {
+      "name": "Bakkafrost (Færøyene)",
+      "ticker": "BAKKA",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Arctic Fish (Island)",
+      "ticker": "AFISH",
+      "currency": "NOK",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Salmones Camanchaca (Chile)",
+      "ticker": "SALMOCAM",
+      "currency": "CLP",
+      "price": null,
+      "change_pct": null
+     },
+     {
+      "name": "Multi X (Chile)",
+      "ticker": "MULTIFOODS",
+      "currency": "CLP",
+      "price": null,
+      "change_pct": null
+     }
+    ]
+   }
+  ],
+  "company_news": [
+   {
+    "date": "2026-09-18",
+    "text": "Arctic Securities utpeker Mowi som toppvalg, med henvisning til sterk biologi"
+   },
+   {
+    "date": "2026-09-11",
+    "text": "Bank of America dobbeltoppgraderer SalMar til kjøp"
+   },
+   {
+    "date": "2026-09-08",
+    "text": "Lerøy Seafood Group plasserer nytt grønt obligasjonslån"
+   }
+  ]
+ },
+ "licences": {
+  "oppdatert": "2026-09-19",
+  "trafikklys": {
+   "aar": 2026,
+   "besluttet": "2026-06-19",
+   "kilde_url": "https://kommunikasjon.ntb.no/pressemelding/18961828/ny-fargelegging-i-trafikklyssystemet-for-havbruk?lang=no",
+   "vekst_tonn_mtb": 8300,
+   "nedtrekk_tonn_mtb": 5300,
+   "po": [
+    {
+     "nr": 1,
+     "navn": "Svenskegrensen–Jæren",
+     "farge": "gronn"
+    },
+    {
+     "nr": 2,
+     "navn": "Ryfylke",
+     "farge": "gul"
+    },
+    {
+     "nr": 3,
+     "navn": "Karmøy–Sotra",
+     "farge": "rod",
+     "merknad": "6 % nedtrekk – tredje gang"
+    },
+    {
+     "nr": 4,
+     "navn": "Nordhordland–Stad",
+     "farge": "gul",
+     "merknad": "Unngikk rødt"
+    },
+    {
+     "nr": 5,
+     "navn": "Stad–Hustadvika",
+     "farge": "gul"
+    },
+    {
+     "nr": 6,
+     "navn": "Nordmøre og Sør-Trøndelag",
+     "farge": "gul"
+    },
+    {
+     "nr": 7,
+     "navn": "Nord-Trøndelag med Bindal",
+     "farge": "gul"
+    },
+    {
+     "nr": 8,
+     "navn": "Helgeland–Bodø",
+     "farge": "gul"
+    },
+    {
+     "nr": 9,
+     "navn": "Vestfjorden og Vesterålen",
+     "farge": "gul",
+     "merknad": "Særskilt vurdert av departementet"
+    },
+    {
+     "nr": 10,
+     "navn": "Andøya–Senja",
+     "farge": "gul"
+    },
+    {
+     "nr": 11,
+     "navn": "Kvaløya–Loppa",
+     "farge": "gul"
+    },
+    {
+     "nr": 12,
+     "navn": "Vest-Finnmark",
+     "farge": "gronn"
+    },
+    {
+     "nr": 13,
+     "navn": "Øst-Finnmark",
+     "farge": "gronn"
+    }
+   ],
+   "fakta": [
+    [
+     "Besluttet",
+     "19. juni 2026, basert på lakseluspåvirkning på villaks i 2024 og 2025."
+    ],
+    [
+     "Tildeling",
+     "6 % vekst i grønne områder: 1 % til fastpris på eksisterende tillatelser, resten på auksjon. Unntaksvekst kan søkes uavhengig av farge."
+    ],
+    [
+     "Neste steg",
+     "Kapasitetsjusteringsforskriften var på høring til 31. juli. Fastpristilbud kommer fra Fiskeridirektoratet og fylkeskommunene før auksjon. Auksjonsdato ikke annonsert per 19. september."
+    ],
+    [
+     "Lukket teknologi",
+     "Nedtrukket kapasitet kan tas i bruk i lukkede merder. Nytt reguleringssystem etter havbruksmeldingen er under oppfølging."
+    ]
+   ]
+  },
+  "land": {
+   "status": "Søknader åpnet igjen",
+   "tekst": "Stansen for nye landtillatelser (innført desember 2022 etter Losna-saken) er opphevet med nytt regelverk: tydeligere skille mellom land og sjø, og krav om desinfeksjon av inntaksvann. Søknader om settefisk og matfisk behandles av fylkeskommunen; Fiskeridirektoratet er klageinstans. Landbasert MTB tildeles uten vederlag.",
+   "kilde_url": "https://www.fiskeridir.no/Akvakultur/Tildeling-og-tillatelser/Kommersielle-tillatelser/Laks-oerret-og-regnbueoerret/tillatelse-til-akvakultur-pa-land"
+  },
+  "saker_vi_folger": [
+   {
+    "tittel": "Sirevåg Laks – postsmolt-RAS i Hå, Rogaland",
+    "detalj": "Søknad til Rogaland fylkeskommune nov. 2025",
+    "status": "Status ikke verifisert",
+    "url": "https://ilaks.no/milliardanlegg-i-sirevag-vil-produsere-postsmolt-for-offshore-oppdrett/"
+   }
+  ]
+ }
+}

@@ -1,0 +1,40 @@
+{
+  "_comment": "Kilder skriptet henter fra. Legg til/fjern rader her. 'verify': true betyr at RSS-adressen ikke er bekreftet ennå – skriptet rapporterer status per kilde i data.json.",
+  "news_per_source": 10,
+  "feeds": [
+    {"key": "ilaks",         "name": "iLaks",              "url": "https://ilaks.no/feed/"},
+    {"key": "kyst",          "name": "Kyst.no",            "url": "https://www.kyst.no/?service=rss",        "verify": true},
+    {"key": "intrafish",     "name": "Intrafish",          "url": "https://www.intrafish.no/rss",            "verify": true},
+    {"key": "fiskeribladet", "name": "Fiskeribladet",      "url": "https://www.fiskeribladet.no/rss",        "verify": true},
+    {"key": "fdir",          "name": "Fiskeridirektoratet","url": "https://www.fiskeridir.no/rss",           "verify": true}
+  ],
+  "stock_groups": [
+    {"name": "Norske sjøbaserte – Oslo Børs", "items": [
+      {"name": "Mowi",                 "ticker": "MOWI",  "yahoo": "MOWI.OL",  "currency": "NOK"},
+      {"name": "SalMar",               "ticker": "SALM",  "yahoo": "SALM.OL",  "currency": "NOK"},
+      {"name": "Lerøy Seafood Group",  "ticker": "LSG",   "yahoo": "LSG.OL",   "currency": "NOK"},
+      {"name": "Grieg Seafood",        "ticker": "GSF",   "yahoo": "GSF.OL",   "currency": "NOK"},
+      {"name": "Austevoll Seafood",    "ticker": "AUSS",  "yahoo": "AUSS.OL",  "currency": "NOK"},
+      {"name": "Måsøval",              "ticker": "MAS",   "yahoo": "MAS.OL",   "currency": "NOK"}
+    ]},
+    {"name": "Landbaserte", "items": [
+      {"name": "Atlantic Sapphire",    "ticker": "ASA",   "yahoo": "ASA.OL",   "currency": "NOK"},
+      {"name": "Salmon Evolution",     "ticker": "SALME", "yahoo": "SALME.OL", "currency": "NOK"},
+      {"name": "Andfjord Salmon",      "ticker": "ANDF",  "yahoo": "ANDF.OL",  "currency": "NOK"},
+      {"name": "Proximar Seafood",     "ticker": "PROXI", "yahoo": "PROXI.OL", "currency": "NOK"},
+      {"name": "Nordic Aqua Partners", "ticker": "NOAP",  "yahoo": "NOAP.OL",  "currency": "NOK"},
+      {"name": "Gigante Salmon",       "ticker": "GIGA",  "yahoo": "GIGA.OL",  "currency": "NOK"}
+    ]},
+    {"name": "Internasjonale", "items": [
+      {"name": "Bakkafrost (Færøyene)",         "ticker": "BAKKA",      "yahoo": "BAKKA.OL",       "currency": "NOK"},
+      {"name": "Arctic Fish (Island)",          "ticker": "AFISH",      "yahoo": "AFISH.OL",       "currency": "NOK"},
+      {"name": "Salmones Camanchaca (Chile)",   "ticker": "SALMOCAM",   "yahoo": "SALMOCAM.SN",    "currency": "CLP"},
+      {"name": "Multi X (Chile)",               "ticker": "MULTIFOODS", "yahoo": "MULTIFOODS.SN",  "currency": "CLP"}
+    ]}
+  ],
+  "ssb": {
+    "table": "03024",
+    "api": "https://data.ssb.no/api/v0/no/table/03024",
+    "weeks": 16
+  }
+}
