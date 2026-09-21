@@ -15,6 +15,12 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      MAIL_FROM: ${{ secrets.MAIL_FROM }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,6 +33,10 @@ jobs:
 
       - name: Hent data
         run: python scripts/fetch_data.py
+
+      - name: Send e-postvarsler (kjører bare når SMTP-secrets er satt)
+        if: env.SMTP_HOST != ''
+        run: python scripts/notify.py
 
       - name: Commit hvis endret
         run: |
