@@ -1,7 +1,21 @@
 {
- "generated_at": "2026-09-21T01:14:09Z",
+ "generated_at": "2026-09-21T06:29:25Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-21",
+   "title": "Ny oppgang i biomassen, som nærmer seg 900.000 tonn",
+   "url": "https://ilaks.no/ny-oppgang-i-biomassen-som-naermer-seg-900-000-tonn/?mtm_campaign=feed_click&mtm_kwd=ny-oppgang-i-biomassen-som-naermer-seg-900-000-tonn&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "title": "Ser tydelig skifte i markedet",
+   "url": "https://www.kyst.no/abyss-fartoy/ser-tydelig-skifte-i-markedet/2183759",
+   "published": "2026-09-21",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -66,14 +80,7 @@
    "url": "https://ilaks.no/vestlandet-var-forst-med-den-nye-vaksinen/?mtm_campaign=feed_click&mtm_kwd=vestlandet-var-forst-med-den-nye-vaksinen&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "Forlatte oppdrettsmerder fjernet etter 15 år i sjøen",
-   "url": "https://ilaks.no/forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen/?mtm_campaign=feed_click&mtm_kwd=forlatte-oppdrettsmerder-fjernet-etter-15-ar-i-sjoen&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "title": "Coho-volumet mer enn tredoblet",
+   "title": "Volumet er mer enn tredoblet",
    "url": "https://www.kyst.no/coho-volumet-mer-enn-tredoblet/2183593",
    "published": "2026-09-18",
    "source_key": "kyst",
@@ -143,13 +150,6 @@
    "source": "Kyst.no"
   },
   {
-   "title": "Offshoreoppdrett vokser, men ikke miljøgevinstene",
-   "url": "https://www.kyst.no/forskningsartikler-kina-offshore-havbruk/offshoreoppdrett-vokser-men-ikke-miljogevinstene/2182826",
-   "published": "2026-09-17",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
    "source_key": "fdir",
    "source": "Fiskeridirektoratet",
    "published": "2026-09-15",
@@ -213,6 +213,13 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
+   "title": "– Jobben er en livsstil",
+   "url": "https://www.intrafish.no/samfunn/tredje-generasjon-fiskerijournalist-jobben-er-en-livsstil/2-1-2041957",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "– I år kjenner vi presset fra at prisene på mel og olje er så høye",
    "url": "https://www.intrafish.no/okonomi/-i-ar-kjenner-vi-presset-fra-at-prisene-pa-mel-og-olje-er-sa-hoye/2-1-2045978",
    "published": null,
@@ -220,7 +227,7 @@
    "source": "Intrafish"
   },
   {
-   "title": "Disse merdene kan ha ligget forlatt i 15 år – nå har Fiskeridirektoratet tatt grep",
+   "title": "Kan ha ligget forlatt i 15 år – myndighetene måtte gripe inn",
    "url": "https://www.intrafish.no/miljo/disse-merdene-kan-ha-ligget-forlatt-i-15-ar-na-har-fiskeridirektoratet-tatt-grep/2-1-2045745",
    "published": null,
    "source_key": "intrafish",
@@ -276,11 +283,11 @@
    "source": "Intrafish"
   },
   {
-   "title": "Akva Group selger industrieiendom på Hitra",
-   "url": "https://www.intrafish.no/okonomi/akva-group-selger-industrieiendom-pa-hitra/2-1-2045485",
+   "title": "Kan ha ligget forlatt i 15 år",
+   "url": "https://www.fiskeribladet.no/havbruk/disse-merdene-kan-ha-ligget-forlatt-i-15-ar-na-har-fiskeridirektoratet-tatt-grep/2-1-2045763",
    "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
+   "source_key": "fiskeribladet",
+   "source": "Fiskeribladet"
   },
   {
    "title": "– Her er det tiden som teller",
@@ -344,13 +351,6 @@
    "published": null,
    "source_key": "fiskeribladet",
    "source": "Fiskeribladet"
-  },
-  {
-   "title": "Først i Norge : Torskeoppdretter gikk i pluss",
-   "url": "https://www.fiskeribladet.no/havbruk/forst-i-norge-torskeoppdretteren-ode-gikk-i-pluss/2-1-2022864",
-   "published": null,
-   "source_key": "fiskeribladet",
-   "source": "Fiskeribladet"
   }
  ],
  "sources": [
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 198.5,
-      "change_pct": -1.73
+      "price": 202.0,
+      "change_pct": -0.39
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 550.0,
-      "change_pct": -1.52
+      "price": 558.5,
+      "change_pct": -0.45
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.28,
-      "change_pct": -3.05
+      "price": 42.58,
+      "change_pct": -0.47
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 24.98,
-      "change_pct": -2.65
+      "price": 25.66,
+      "change_pct": -1.38
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.5,
-      "change_pct": -0.96
+      "price": 83.3,
+      "change_pct": 0.0
      },
      {
       "name": "Måsøval",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 426.2,
-      "change_pct": -1.98
+      "price": 434.8,
+      "change_pct": 0.83
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-21T01:14:17Z",
+  "fetched_at": "2026-09-21T06:29:35Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
