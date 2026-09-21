@@ -28,6 +28,7 @@ Deretter kjører oppdateringen selv, 17 minutter over hver hele time (UTC).
 | endre hvilke aksjer som vises              | `content/config.json` → `stock_groups` (Yahoo-symbol, f.eks. `MOWI.OL`) |
 | oppdatere trafikklys, landbasert-status, saker vi følger | `content/konsesjoner.json` |
 | endre kilde/søknadstyper for lokalitetssøknader | `content/config.json` → `applications` (`apptypes` per fane) |
+| e-postabonnement på søkere (sentral utsending) | `content/subscriptions.json` + SMTP-secrets (se under) |
 | justere henting av detaljsider (antall per kjøring, oppfrisking) | `content/config.json` → `applications.details` |
 | endre utseende, tekster, søknadsprosessen  | `index.html`                  |
 
@@ -45,6 +46,22 @@ Ingen tall anslås – manglende kurser vises som strek.
   først, inntil 60 sider per kjøring. Eksporten mangler produksjonsområde.
 - Kartet bruker Kartverkets åpne bakgrunnskart og Leaflet fra cdnjs.
 - Nasdaq Salmon Index og Akvakulturregisteret (nye/endrede tillatelser) er neste kilder å koble på.
+
+## Følg en søker (abonnement)
+
+Skriptet sporer endringer (ny søknad, statusendring, utfall, endret MTB) og publiserer dem som RSS:
+
+- alle endringer: `data/feeds/alle.xml`
+- per søker: `data/feeds/soker/<slug>.xml` – lenken vises på siden når du filtrerer på en søker
+
+Tre måter å få det som e-post:
+
+1. **Outlook:** «RSS-feeder» → «Legg til ny RSS-feed» → lim inn lenken. Personlig, ingen oppsett.
+2. **Power Automate:** utløser «Når et feedelement publiseres» → «Send en e-post (V2)». Kan sende til flere.
+3. **Sentralt fra repoet:** legg søkeren i `content/subscriptions.json` og sett disse secrets i
+   Settings → Secrets and variables → Actions: `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_FROM`.
+   `scripts/notify.py` kjører da etter hver datahenting og sender bare det som er nytt siden sist
+   (tilstand i `data/notify_state.json`). Uten secrets hopper steget over.
 
 ## Lokalt
 

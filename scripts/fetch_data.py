@@ -465,6 +465,156 @@ def enrich_details(apps: dict) -> None:
         "fetched_now": fetched,
     }
 
+
+# --------------------------------------------------------------------------- endringssporing + RSS
+CHANGES_PATH = ROOT / "data" / "changes.json"
+FEEDS_DIR = ROOT / "data" / "feeds"
+
+
+def slugify(name: str) -> str:
+    import re
+    import unicodedata
+
+    s = (name or "").lower().replace("æ", "ae").replace("ø", "oe").replace("å", "aa")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s or "ukjent"
+
+
+def eff_status(it: dict) -> str:
+    d = it.get("details") or {}
+    if it.get("status") == "Ferdigbehandlet" and d.get("result"):
+        r = d["result"]
+        return "Godkjent" if "godkjent" in r.lower() or "innvilget" in r.lower() else ("Avslått" if "avsl" in r.lower() else r)
+    return it.get("status") or ""
+
+
+def track_changes(apps: dict) -> dict:
+    """Sammenligner med forrige data.json og logger hendelser per søknad.
+
+    Hendelser: ny søknad, statusendring, utfall (innen result_window_days), endret MTB.
+    Første kjøring for en fane setter bare baseline. Skriver data/changes.json og RSS-feeder
+    (alle hendelser + én per søker) til data/feeds/.
+    """
+    ccfg = CONFIG["applications"].get("changes", {})
+    keep_days = float(ccfg.get("keep_days", 90))
+    window = float(ccfg.get("result_window_days", 60))
+    recent_days = float(ccfg.get("recent_days_on_page", 30))
+    now = datetime.now(timezone.utc)
+    now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    try:
+        logd = json.loads(CHANGES_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        logd = {"baselines": {}, "events": []}
+    logd.setdefault("baselines", {})
+    logd.setdefault("events", [])
+
+    prev_types = PREVIOUS.get("applications", {}).get("types", {})
+
+    def parse_iso(v: str | None):
+        try:
+            return datetime.strptime(v[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc) if v else None
+        except ValueError:
+            return None
+
+    def ev(it: dict, key: str, kind: str, text: str) -> dict:
+        d = it.get("details") or {}
+        return {
+            "at": now_iso, "kind": kind, "text": text,
+            "id": it["id"], "type_key": key, "type": it.get("type"),
+            "applicant": it.get("applicant"), "title": it.get("title") or it.get("site") or it["id"],
+            "municipality": it.get("municipality"), "county": it.get("county"),
+            "status": eff_status(it), "mtb_tonn": d.get("mtb_tonn"), "url": it.get("url"),
+        }
+
+    new_events: list[dict] = []
+    for key, t in apps["types"].items():
+        prev_items = {i["id"]: i for i in prev_types.get(key, {}).get("items", [])}
+        if key not in logd["baselines"] or not prev_items:
+            logd["baselines"][key] = now_iso          # første gang vi ser denne fanen – ingen hendelser
+            continue
+        for it in t["items"]:
+            p = prev_items.get(it["id"])
+            d = it.get("details") or {}
+            if p is None:
+                new_events.append(ev(it, key, "ny", f"Ny søknad – {it.get('status')}"))
+                continue
+            pd = p.get("details") or {}
+            if p.get("status") != it.get("status"):
+                new_events.append(ev(it, key, "status", f"Status: {p.get('status')} → {it.get('status')}"))
+            decided = parse_iso(d.get("decided"))
+            if d.get("result") and not pd.get("result") and (decided is None or (now - decided).days <= window):
+                new_events.append(ev(it, key, "utfall", f"Utfall: {d['result']}"))
+            if pd.get("mtb_tonn") and d.get("mtb_tonn") and pd["mtb_tonn"] != d["mtb_tonn"]:
+                new_events.append(ev(it, key, "mtb", f"MTB endret: {pd['mtb_tonn']} → {d['mtb_tonn']} tonn"))
+
+    events = new_events + logd["events"]
+    cutoff = now.timestamp() - keep_days * 86400
+    events = [e for e in events if (parse_iso(e.get("at")) or now).timestamp() >= cutoff]
+    events.sort(key=lambda e: e.get("at") or "", reverse=True)
+    logd["events"] = events
+    logd["updated_at"] = now_iso
+    CHANGES_PATH.write_text(json.dumps(logd, ensure_ascii=False, indent=0), encoding="utf-8")
+    log(f"endringer: {len(new_events)} nye hendelser, {len(events)} i loggen")
+
+    # ---- RSS
+    site = CONFIG.get("site", {}).get("url", "https://jorgenscale.github.io/scale-radar/").rstrip("/") + "/"
+    FEEDS_DIR.mkdir(parents=True, exist_ok=True)
+    (FEEDS_DIR / "soker").mkdir(exist_ok=True)
+
+    def rfc822(iso: str) -> str:
+        dt = datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        return dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+    def x(v) -> str:
+        from xml.sax.saxutils import escape
+        return escape(str(v if v is not None else ""))
+
+    def rss(title: str, desc: str, link: str, evs: list[dict]) -> str:
+        items = []
+        for e in evs[:200]:
+            body = f"{x(e.get('text'))}<br>Søker: {x(e.get('applicant'))}<br>Kommune: {x(e.get('municipality'))}{', ' + x(e.get('county')) if e.get('county') else ''}<br>Søknadstype: {x(e.get('type'))}"
+            if e.get("mtb_tonn"):
+                body += f"<br>MTB: {x(e['mtb_tonn'])} tonn"
+            items.append(
+                "<item>"
+                f"<title>{x(e.get('applicant'))} – {x(e.get('title'))}: {x(e.get('text'))}</title>"
+                f"<link>{x(e.get('url') or site)}</link>"
+                f"<guid isPermaLink=\"false\">{x(e['id'])}-{x(e['kind'])}-{x(e['at'])}</guid>"
+                f"<pubDate>{rfc822(e['at'])}</pubDate>"
+                f"<description><![CDATA[{body}]]></description>"
+                "</item>"
+            )
+        return (
+            '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+            f"<title>{x(title)}</title><link>{x(link)}</link><description>{x(desc)}</description>"
+            f"<language>nb</language><lastBuildDate>{rfc822(now_iso)}</lastBuildDate>"
+            + "".join(items) + "</channel></rss>\n"
+        )
+
+    (FEEDS_DIR / "alle.xml").write_text(
+        rss("Scale Radar – alle endringer i lokalitetssøknader", "Nye søknader, statusendringer og utfall fra Fiskeridirektoratet", site + "#apps", events),
+        encoding="utf-8")
+
+    slugs: dict[str, str] = {}
+    all_items = [i for t in apps["types"].values() for i in t["items"]]
+    for name in sorted({i.get("applicant") for i in all_items if i.get("applicant")}):
+        slug = slugify(name)
+        slugs[name] = slug
+        mine = [e for e in events if e.get("applicant") == name]
+        (FEEDS_DIR / "soker" / f"{slug}.xml").write_text(
+            rss(f"Scale Radar – {name}", f"Endringer i lokalitetssøknader fra {name}", site + "#apps", mine), encoding="utf-8")
+    log(f"rss: alle.xml + {len(slugs)} søkerfeeder")
+
+    recent_cut = now.timestamp() - recent_days * 86400
+    return {
+        "updated_at": now_iso,
+        "baselines": logd["baselines"],
+        "feeds": {"all": site + "data/feeds/alle.xml", "applicant_base": site + "data/feeds/soker/", "slugs": slugs},
+        "events": [e for e in events if (parse_iso(e.get("at")) or now).timestamp() >= recent_cut][:300],
+    }
+
 # --------------------------------------------------------------------------- main
 def main() -> int:
     data: dict = {
@@ -497,6 +647,13 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001
         log(f"søknader: FEIL {exc}")
         data["applications"] = dict(PREVIOUS.get("applications", {}), status="error", error=str(exc)[:160])
+
+    try:
+        if data["applications"].get("types"):
+            data["changes"] = track_changes(data["applications"])
+    except Exception as exc:  # noqa: BLE001
+        log(f"endringer: FEIL {exc}")
+        data["changes"] = dict(PREVIOUS.get("changes", {}), error=str(exc)[:160])
 
     licences = {k: v for k, v in KONSESJONER.items() if not k.startswith("_")}
     data["licences"] = licences

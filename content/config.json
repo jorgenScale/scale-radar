@@ -179,6 +179,13 @@
         "label": "Nye lokaliteter – sjø"
       },
       {
+        "key": "change_site",
+        "apptypes": [
+          "CHANGE_SITE"
+        ],
+        "label": "Endring av lokalitet"
+      },
+      {
         "key": "land_based",
         "apptypes": [
           "LAND_BASED_AQUACULTURE"
@@ -189,9 +196,19 @@
     "details": {
       "_comment": "Detaljsider hentes for nye søknader, ved statusendring, og på nytt for saker under behandling eldre enn refresh_days. max_per_run begrenser antall sider per kjøring.",
       "enabled": true,
-      "max_per_run": 60,
+      "max_per_run": 80,
       "refresh_days": 3,
       "pause_seconds": 0.4
+    },
+    "changes": {
+      "_comment": "Endringssporing: hendelser lagres i data/changes.json og publiseres som RSS i data/feeds/. result_window_days hindrer støy når gamle saker får detaljer hentet i ettertid.",
+      "keep_days": 90,
+      "result_window_days": 60,
+      "recent_days_on_page": 30
     }
+  },
+  "site": {
+    "url": "https://jorgenscale.github.io/scale-radar/",
+    "repo": "https://github.com/jorgenScale/scale-radar"
   }
 }

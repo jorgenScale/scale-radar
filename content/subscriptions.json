@@ -1,0 +1,28 @@
+{
+  "_comment": "E-postabonnement på søkere. Brukes av scripts/notify.py – som bare kjører når SMTP-secrets er satt i GitHub (se README). match = tekst som skal finnes i søkers navn (uavhengig av store/små bokstaver). types kan utelates (= alle faner).",
+  "subscriptions": [
+    {
+      "name": "SalMar",
+      "match": [
+        "SalMar"
+      ],
+      "emails": [
+        "salg@scaleaq.com"
+      ],
+      "types": [
+        "new_site",
+        "change_site",
+        "land_based"
+      ]
+    },
+    {
+      "name": "Norcod",
+      "match": [
+        "Norcod"
+      ],
+      "emails": [
+        "salg@scaleaq.com"
+      ]
+    }
+  ]
+}
