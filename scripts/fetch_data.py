@@ -292,15 +292,24 @@ def fetch_applications() -> dict:
             return None
 
     for t in acfg["types"]:
-        r = requests.get(acfg["url"], params={"apptype": t["apptype"], "format": "csv"}, timeout=60,
-                         headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
-        r.raise_for_status()
-        text = r.content.decode("utf-8-sig")
-        rows = list(csv.DictReader(io.StringIO(text), delimiter=";"))
+        apptypes = t.get("apptypes") or [t.get("apptype")]
+        rows: list[dict] = []
+        for apptype in apptypes:
+            r = requests.get(acfg["url"], params={"apptype": apptype, "format": "csv"}, timeout=60,
+                             headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
+            r.raise_for_status()
+            text = r.content.decode("utf-8-sig")
+            part = list(csv.DictReader(io.StringIO(text), delimiter=";"))
+            log(f"søknader {apptype}: {len(part)} rader")
+            rows.extend(part)
         if not rows:
-            raise RuntimeError(f"tom eksport for {t['apptype']}")
+            raise RuntimeError(f"tom eksport for {apptypes}")
         items = []
+        seen: set[str] = set()
         for row in rows:
+            if (row.get("Søknadsnummer") or "") in seen:
+                continue
+            seen.add(row.get("Søknadsnummer") or "")
             g = lambda k: (row.get(k) or "").strip()  # noqa: E731
             app_id = g("Søknadsnummer")
             items.append({
@@ -323,9 +332,138 @@ def fetch_applications() -> dict:
                 "url": acfg["detail_base"] + app_id.lower() if app_id else None,
             })
         items.sort(key=lambda x: x["submitted"] or "", reverse=True)
-        out["types"][t["key"]] = {"apptype": t["apptype"], "label": t["label"], "count": len(items), "items": items}
-        log(f"søknader {t['label']}: {len(items)} rader")
+        out["types"][t["key"]] = {"apptype": apptypes[0], "apptypes": apptypes, "label": t["label"], "count": len(items), "items": items}
+        log(f"søknader {t['label']}: {len(items)} rader totalt")
+
+    if acfg.get("details", {}).get("enabled", True):
+        try:
+            enrich_details(out)
+        except Exception as exc:  # noqa: BLE001
+            log(f"detaljer: FEIL {exc}")
+            out["details_error"] = str(exc)[:160]
     return out
+
+
+DETAILS_PATH = ROOT / "data" / "details.json"
+
+
+def enrich_details(apps: dict) -> None:
+    """Henter detaljsiden per søknad (MTB, planlagt produksjon, utfall, saksbehandler …) med cache.
+
+    Cache i data/details.json: {søknadsnummer: {status, fetched_at, title, fields, norm}}.
+    Hentes på nytt når søknaden er ny, når status i eksporten har endret seg, eller når en sak
+    under behandling er eldre enn refresh_days. Antall sider per kjøring er begrenset.
+    """
+    import re
+    import time as _time
+
+    import requests  # type: ignore
+    from bs4 import BeautifulSoup  # type: ignore
+
+    dcfg = CONFIG["applications"].get("details", {})
+    max_per_run = int(dcfg.get("max_per_run", 60))
+    refresh_days = float(dcfg.get("refresh_days", 3))
+    pause = float(dcfg.get("pause_seconds", 0.4))
+
+    try:
+        cache: dict = json.loads(DETAILS_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+
+    now = datetime.now(timezone.utc)
+
+    def age_days(iso: str | None) -> float:
+        if not iso:
+            return 1e9
+        try:
+            return (now - datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)).total_seconds() / 86400
+        except ValueError:
+            return 1e9
+
+    all_items = [i for t in apps["types"].values() for i in t["items"]]
+    todo: list[tuple[int, dict]] = []
+    for it in all_items:
+        c = cache.get(it["id"])
+        if not it.get("url"):
+            continue
+        if c is None:
+            todo.append((0, it))                                   # ny søknad – høyest prioritet
+        elif c.get("status") != it["status"]:
+            todo.append((1, it))                                   # status endret
+        elif it["status"] == "Under behandling" and age_days(c.get("fetched_at")) > refresh_days:
+            todo.append((2, it))                                   # gammel sak under behandling
+    # prioritet først, deretter nyeste innsendt først
+    todo.sort(key=lambda x: (x[0], -(int((x[1].get("submitted") or "0000-00-00").replace("-", "") or 0))))
+    batch = [it for _, it in todo[:max_per_run]]
+    log(f"detaljer: {len(cache)} i cache, {len(todo)} å hente, tar {len(batch)} nå")
+
+    def to_int(v: str) -> int | None:
+        m = re.search(r"-?[\d\s]+", v.replace("\xa0", " "))
+        if not m:
+            return None
+        digits = re.sub(r"\D", "", m.group(0))
+        return int(digits) if digits else None
+
+    def to_date(v: str) -> str | None:
+        m = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", v.strip())
+        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else None
+
+    skip = {"Søknadsnummer", "Søknadstype", "Status", "Søkers navn", "Organisasjonsnummer"}
+    fetched = 0
+    for it in batch:
+        try:
+            r = requests.get(it["url"], timeout=30, headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+            main = soup.find("main") or soup
+            fields: dict[str, str] = {}
+            for dt in main.select("dl dt"):
+                dd = dt.find_next_sibling("dd")
+                if dd is None:
+                    continue
+                k = dt.get_text(" ", strip=True)
+                v = dd.get_text(" ", strip=True)
+                if k and k not in skip:
+                    fields[k] = v
+            h1 = main.find("h1")
+            norm = {
+                "mtb_tonn": to_int(fields.get("Maksimal tillatt biomasse (MTB)", "")) if "Maksimal tillatt biomasse (MTB)" in fields else None,
+                "planned_production_tonn": to_int(fields.get("Planlagt produksjon per produksjonssyklus", "")) if "Planlagt produksjon per produksjonssyklus" in fields else None,
+                "cycle_months": to_int(fields.get("Produksjonssykluslengde", "")) if "Produksjonssykluslengde" in fields else None,
+                "feed_per_cycle_tonn": to_int(fields.get("Planlagt fôrforbruk per produksjonssyklus", "")) if "Planlagt fôrforbruk per produksjonssyklus" in fields else None,
+                "max_monthly_feed_tonn": to_int(fields.get("Maksimal månedlig fôring", "")) if "Maksimal månedlig fôring" in fields else None,
+                "species": fields.get("Art"),
+                "decided": to_date(fields.get("Ferdigbehandlet", "")),
+                "withdrawn": to_date(fields.get("Trukket", "")),
+                "result": fields.get("Resultat"),
+                "case_handler": fields.get("Ansvarlig saksbehandler"),
+            }
+            cache[it["id"]] = {
+                "status": it["status"],
+                "fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "title": h1.get_text(" ", strip=True) if h1 else None,
+                "fields": fields,
+                "norm": {k: v for k, v in norm.items() if v is not None},
+            }
+            fetched += 1
+        except Exception as exc:  # noqa: BLE001
+            log(f"detaljer {it['id']}: FEIL {exc}")
+        _time.sleep(pause)
+
+    DETAILS_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    log(f"detaljer: hentet {fetched}, cache nå {len(cache)}")
+
+    known = {i["id"] for i in all_items}
+    for it in all_items:
+        c = cache.get(it["id"])
+        if c:
+            it["details"] = dict(c.get("norm", {}), fetched_at=c.get("fetched_at"))
+            it["fields"] = c.get("fields", {})
+    apps["details_summary"] = {
+        "cached": sum(1 for k in cache if k in known),
+        "pending": max(0, len(todo) - len(batch)),
+        "fetched_now": fetched,
+    }
 
 # --------------------------------------------------------------------------- main
 def main() -> int:

@@ -166,20 +166,32 @@
     "weeks": 16
   },
   "applications": {
-    "_comment": "Fiskeridirektoratets CSV-eksport av akvakultursøknader (samme data som fiskeridir.no/akvakultur/akvakultursoknader).",
+    "_comment": "Fiskeridirektoratets CSV-eksport av akvakultursøknader + detaljsider. Én fane kan slå sammen flere søknadstyper (apptypes).",
     "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/_/service/no.fiskeridir/aqua-download-list",
     "detail_base": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/",
     "types": [
       {
         "key": "new_site",
-        "apptype": "NEW_SITE",
-        "label": "Ny lokalitet – sjø"
+        "apptypes": [
+          "NEW_SITE",
+          "OTHER_FISH_SPECIES"
+        ],
+        "label": "Nye lokaliteter – sjø"
       },
       {
         "key": "land_based",
-        "apptype": "LAND_BASED_AQUACULTURE",
+        "apptypes": [
+          "LAND_BASED_AQUACULTURE"
+        ],
         "label": "Landbasert akvakultur"
       }
-    ]
+    ],
+    "details": {
+      "_comment": "Detaljsider hentes for nye søknader, ved statusendring, og på nytt for saker under behandling eldre enn refresh_days. max_per_run begrenser antall sider per kjøring.",
+      "enabled": true,
+      "max_per_run": 60,
+      "refresh_days": 3,
+      "pause_seconds": 0.4
+    }
   }
 }
