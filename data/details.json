@@ -1,4 +1,212 @@
 {
+"SP-2023-000002": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "16.02.2023",
+"Kommune": "Alstahaug",
+"Maksimal månedlig fôring": "600 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 600 tonn",
+"Produksjonssykluslengde": "20 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"feed_per_cycle_tonn": 5200,
+"max_monthly_feed_tonn": 600,
+"mtb_tonn": 3599,
+"planned_production_tonn": 4600,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Returnert",
+"title": "Segløygrunna"
+},
+"SP-2023-000042": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "02.12.2024",
+"Innsendt": "27.03.2023",
+"Maksimal månedlig fôring": "800 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 300 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 20,
+"decided": "2024-12-02",
+"feed_per_cycle_tonn": 3300,
+"max_monthly_feed_tonn": 800,
+"mtb_tonn": 3900,
+"planned_production_tonn": 3000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Langtaren"
+},
+"SP-2023-000043": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "30.10.2025",
+"Innsendt": "31.03.2023",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 20,
+"decided": "2025-10-30",
+"feed_per_cycle_tonn": 5000,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3599,
+"planned_production_tonn": 5000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Slapøyværet"
+},
+"SP-2023-000052": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "29.04.2025",
+"Innsendt": "22.05.2023",
+"Maksimal månedlig fôring": "800 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-04-29",
+"feed_per_cycle_tonn": 5200,
+"max_monthly_feed_tonn": 800,
+"mtb_tonn": 3900,
+"planned_production_tonn": 4500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Flagskallen"
+},
+"SP-2023-000125": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "11.08.2025",
+"Innsendt": "14.06.2023",
+"Maksimal månedlig fôring": "900 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 500 tonn",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"decided": "2025-08-11",
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 900,
+"mtb_tonn": 5460,
+"planned_production_tonn": 7500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Blikvær"
+},
+"SP-2023-000163": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "22.06.2023",
+"Kommune": "Dønna",
+"Maksimal månedlig fôring": "450 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 450,
+"mtb_tonn": 3120,
+"planned_production_tonn": 4000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Lammøya"
+},
+"SP-2023-000199": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "30.06.2023",
+"Kommune": "Rødøy",
+"Maksimal månedlig fôring": "350 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 3450,
+"max_monthly_feed_tonn": 350,
+"mtb_tonn": 2340,
+"planned_production_tonn": 3000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Prestvika"
+},
+"SP-2023-000303": {
+"fetched_at": "2026-09-21T09:24:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "21.08.2025",
+"Innsendt": "10.07.2023",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-08-21",
+"feed_per_cycle_tonn": 7800,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 5000,
+"planned_production_tonn": 6500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Hoholmen"
+},
 "SP-2023-000317": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {

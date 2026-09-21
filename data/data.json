@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-09-21T08:49:04Z",
+ "generated_at": "2026-09-21T09:24:28Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-21",
+   "title": "Antibiotikasalget til norske dyr var nær ni ganger høyere enn salget til oppdrettsfisk i fjor",
+   "url": "https://ilaks.no/antibiotikasalget-til-norske-dyr-var-naer-ni-ganger-hoyere-enn-salget-til-oppdrettsfisk-i-fjor/?mtm_campaign=feed_click&mtm_kwd=antibiotikasalget-til-norske-dyr-var-naer-ni-ganger-hoyere-enn-salget-til-oppdrettsfisk-i-fjor&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -36,6 +43,13 @@
    "published": "2026-09-21",
    "title": "Ny oppgang i biomassen, som nærmer seg 900.000 tonn",
    "url": "https://ilaks.no/ny-oppgang-i-biomassen-som-naermer-seg-900-000-tonn/?mtm_campaign=feed_click&mtm_kwd=ny-oppgang-i-biomassen-som-naermer-seg-900-000-tonn&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "title": "Ny torskelokalitet åpner for 1,5 millioner fisk",
+   "url": "https://www.kyst.no/finnmark-hammerfest-kime-akva/ny-torskelokalitet-apner-for-15-millioner-fisk/2184028",
+   "published": "2026-09-21",
+   "source_key": "kyst",
+   "source": "Kyst.no"
   },
   {
    "title": "Ser tydelig skifte i markedet",
@@ -87,13 +101,6 @@
    "url": "https://ilaks.no/samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen/?mtm_campaign=feed_click&mtm_kwd=samlet-200-studenter-det-er-alltid-noen-som-far-jobb-i-lopet-av-dagen&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-18",
-   "title": "STIM kjøper OCEVA og etablerer nytt rådgivningsselskap",
-   "url": "https://ilaks.no/stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap/?mtm_campaign=feed_click&mtm_kwd=stim-kjoper-oceva-og-etablerer-nytt-radgivningsselskap&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "title": "Volumet er mer enn tredoblet",
    "url": "https://www.kyst.no/coho-volumet-mer-enn-tredoblet/2183593",
    "published": "2026-09-18",
@@ -141,13 +148,6 @@
    "published": "2026-09-18",
    "title": "Forlatte oppdrettsmerder ryddet på miljøtokt",
    "url": "https://www.fiskeridir.no/nyheter/forlatte-oppdrettsmerder-ryddet-pa-miljotokt"
-  },
-  {
-   "title": "ILA påvist på Salmar-lokalitet",
-   "url": "https://www.kyst.no/ila-salmar/ila-pavist-pa-salmar-lokalitet/2183271",
-   "published": "2026-09-17",
-   "source_key": "kyst",
-   "source": "Kyst.no"
   },
   {
    "source_key": "fdir",
@@ -213,8 +213,15 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
-   "title": "Antibiotikabruken falt med over 30 prosent",
-   "url": "https://www.intrafish.no/fiskehelse/antibiotikabruken-falt-med-over-30-prosent/2-1-2046329",
+   "title": "Det skjer på færre lokaliteter",
+   "url": "https://www.intrafish.no/fiskehelse/biomassen-oker-det-skjer-pa-farre-lokaliteter/2-1-2046311",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "– At vi ikke får utslippstillatelse oppleves uforståelig",
+   "url": "https://www.intrafish.no/landbasert/-at-vi-ikke-far-utslippstillatelse-oppleves-uforstaelig/2-1-2046389",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -236,6 +243,13 @@
   {
    "title": "Kan ha ligget forlatt i 15 år – myndighetene måtte gripe inn",
    "url": "https://www.intrafish.no/miljo/disse-merdene-kan-ha-ligget-forlatt-i-15-ar-na-har-fiskeridirektoratet-tatt-grep/2-1-2045745",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Falt med over 30 prosent",
+   "url": "https://www.intrafish.no/fiskehelse/antibiotikabruken-falt-med-over-30-prosent/2-1-2046329",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -264,20 +278,6 @@
   {
    "title": "Nå kan laksetransportørene få bøter på 20.000 kroner for avrenning",
    "url": "https://www.intrafish.no/arbeidsliv/na-kan-laksetransportorene-fa-boter-pa-20-000-kroner-for-avrenning/2-1-2045806",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Går av med pensjon etter 40 år med fiskehelse",
-   "url": "https://www.intrafish.no/forskning/gar-av-med-pensjon-etter-40-ar-med-fiskehelse/2-1-2045675",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Savner forutsigbarhet etter oppdrettsavslag: – Frustrerende",
-   "url": "https://www.intrafish.no/landbasert/savner-forutsigbarhet-etter-oppdrettsavslag-frustrerende/2-1-2043829",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 196.2,
-      "change_pct": -1.16
+      "price": 196.0,
+      "change_pct": -2.97
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
       "price": 540.5,
-      "change_pct": -1.73
+      "change_pct": -3.22
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.12,
-      "change_pct": -0.39
+      "price": 41.1,
+      "change_pct": -3.48
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 24.66,
-      "change_pct": -1.28
+      "price": 24.68,
+      "change_pct": -3.82
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.1,
-      "change_pct": -0.48
+      "price": 82.2,
+      "change_pct": -1.32
      },
      {
       "name": "Måsøval",
@@ -444,22 +444,22 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": 0.74,
-      "change_pct": 0.4
+      "price": 0.75,
+      "change_pct": 0.54
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.29,
-      "change_pct": 0.0
+      "price": 3.3,
+      "change_pct": 0.46
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.5,
-      "change_pct": -1.43
+      "price": 27.8,
+      "change_pct": -0.36
      },
      {
       "name": "Proximar Seafood",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 422.4,
-      "change_pct": -0.89
+      "price": 422.6,
+      "change_pct": -2.81
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-21T08:49:11Z",
+  "fetched_at": "2026-09-21T09:24:52Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -3642,26 +3642,26 @@
       "lon": 8.56557,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001787",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2400,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 60,
        "feed_per_cycle_tonn": 3000,
        "max_monthly_feed_tonn": 190,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2400,
        "species": "Kveite",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Kommune": "Aure",
        "Fylke": "Møre og Romsdal",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "60 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
-       "Maksimal månedlig fôring": "190 tonn",
        "Innsendt": "04.02.2025",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Kommune": "Aure",
+       "Maksimal månedlig fôring": "190 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
+       "Produksjonssykluslengde": "60 mnd"
       }
      },
      {
@@ -3683,31 +3683,31 @@
       "lon": 17.02471,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001718",
       "details": {
-       "mtb_tonn": 5460,
-       "planned_production_tonn": 6000,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 24,
        "feed_per_cycle_tonn": 6600,
        "max_monthly_feed_tonn": 1100,
+       "mtb_tonn": 5460,
+       "planned_production_tonn": 6000,
        "species": "Torsk",
-       "case_handler": "Troms fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Art": "Torsk",
-       "Kommune": "Ibestad",
-       "Fylke": "Troms",
-       "Lokalitetsnummer": "45098",
-       "Lokalitet": "Forså",
-       "Plassering": "Sjø",
-       "Kapasitet": "3 600 tonn",
        "Aktive tillatelser": "TF-I-0005 , TF-I-0007 , TF-I-0004 , TF-I-0008 , TF-I-0006",
-       "Maksimal tillatt biomasse (MTB)": "5 460 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
-       "Produksjonssykluslengde": "24 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
-       "Maksimal månedlig fôring": "1 100 tonn",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
+       "Art": "Torsk",
+       "Fylke": "Troms",
        "Innsendt": "16.01.2025",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Kapasitet": "3 600 tonn",
+       "Kommune": "Ibestad",
+       "Lokalitet": "Forså",
+       "Lokalitetsnummer": "45098",
+       "Maksimal månedlig fôring": "1 100 tonn",
+       "Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Plassering": "Sjø",
+       "Produksjonssykluslengde": "24 mnd"
       }
      },
      {
@@ -3729,26 +3729,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001715",
       "details": {
-       "mtb_tonn": 5460,
-       "planned_production_tonn": 7000,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 18,
+       "decided": "2026-02-09",
        "feed_per_cycle_tonn": 7700,
        "max_monthly_feed_tonn": 1000,
-       "decided": "2026-02-09",
+       "mtb_tonn": 5460,
+       "planned_production_tonn": 7000,
        "result": "Avslått",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Ferdigbehandlet": "09.02.2026",
+       "Innsendt": "14.01.2025",
+       "Maksimal månedlig fôring": "1 000 tonn",
        "Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
        "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
        "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
-       "Maksimal månedlig fôring": "1 000 tonn",
-       "Innsendt": "14.01.2025",
-       "Ferdigbehandlet": "09.02.2026",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -3770,26 +3770,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001702",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3120,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 18,
+       "decided": "2025-04-29",
        "feed_per_cycle_tonn": 3800,
        "max_monthly_feed_tonn": 950,
-       "decided": "2025-04-29",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3120,
        "result": "Innvilget",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Ferdigbehandlet": "29.04.2025",
+       "Innsendt": "19.12.2024",
+       "Maksimal månedlig fôring": "950 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 120 tonn",
        "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Innsendt": "19.12.2024",
-       "Ferdigbehandlet": "29.04.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -3811,26 +3811,26 @@
       "lon": 5.1882,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001701",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 6800,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 48,
        "feed_per_cycle_tonn": 8840,
        "max_monthly_feed_tonn": 250,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 6800,
        "species": "Kveite",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Kveite",
-       "Kommune": "Fitjar",
        "Fylke": "Vestland",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 800 tonn",
-       "Produksjonssykluslengde": "48 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 840 tonn",
-       "Maksimal månedlig fôring": "250 tonn",
        "Innsendt": "19.12.2024",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Kommune": "Fitjar",
+       "Maksimal månedlig fôring": "250 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 840 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 800 tonn",
+       "Produksjonssykluslengde": "48 mnd"
       }
      },
      {
@@ -3852,26 +3852,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001699",
       "details": {
-       "mtb_tonn": 2433,
-       "planned_production_tonn": 4000,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 14,
+       "decided": "2026-02-09",
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 700,
-       "decided": "2026-02-09",
+       "mtb_tonn": 2433,
+       "planned_production_tonn": 4000,
        "result": "Avslått",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Ferdigbehandlet": "09.02.2026",
+       "Innsendt": "17.12.2024",
+       "Maksimal månedlig fôring": "700 tonn",
        "Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
        "Produksjonssykluslengde": "14 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
-       "Maksimal månedlig fôring": "700 tonn",
-       "Innsendt": "17.12.2024",
-       "Ferdigbehandlet": "09.02.2026",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -3893,26 +3893,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001697",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 4000,
+       "case_handler": "Trøndelag fylkeskommune",
        "cycle_months": 12,
+       "decided": "2025-05-07",
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 100,
-       "decided": "2025-05-07",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4000,
        "result": "Avslått",
-       "case_handler": "Trøndelag fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+       "Ferdigbehandlet": "07.05.2025",
+       "Innsendt": "17.12.2024",
+       "Maksimal månedlig fôring": "100 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
        "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
-       "Maksimal månedlig fôring": "100 tonn",
-       "Innsendt": "17.12.2024",
-       "Ferdigbehandlet": "07.05.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -3934,22 +3934,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001640",
       "details": {
-       "mtb_tonn": 1660,
-       "planned_production_tonn": 1660,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 2000,
        "max_monthly_feed_tonn": 277,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 1660,
+       "planned_production_tonn": 1660,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "1 660 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 660 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
-       "Maksimal månedlig fôring": "277 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "15.10.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "277 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 660 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "1 660 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -3971,22 +3971,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001639",
       "details": {
-       "mtb_tonn": 2652,
-       "planned_production_tonn": 3800,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4500,
        "max_monthly_feed_tonn": 400,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 2652,
+       "planned_production_tonn": 3800,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "2 652 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 800 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
-       "Maksimal månedlig fôring": "400 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "14.10.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "400 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 652 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 800 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -4008,22 +4008,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001624",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2400,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 60,
        "feed_per_cycle_tonn": 3000,
        "max_monthly_feed_tonn": 190,
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2400,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "60 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
-       "Maksimal månedlig fôring": "190 tonn",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Innsendt": "29.09.2024",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Maksimal månedlig fôring": "190 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
+       "Produksjonssykluslengde": "60 mnd"
       }
      },
      {
@@ -4045,30 +4045,30 @@
       "lon": 6.21292,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001623",
       "details": {
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 5000,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 15,
+       "decided": "2026-06-18",
        "feed_per_cycle_tonn": 5500,
        "max_monthly_feed_tonn": 800,
-       "species": "Laks, Ørret, Regnbueørret",
-       "decided": "2026-06-18",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 5000,
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "species": "Laks, Ørret, Regnbueørret",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Haram",
+       "Ferdigbehandlet": "18.06.2026",
        "Fylke": "Møre og Romsdal",
+       "Innsendt": "26.09.2024",
+       "Kommune": "Haram",
+       "Maksimal månedlig fôring": "800 tonn",
        "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
-       "Maksimal månedlig fôring": "800 tonn",
-       "Innsendt": "26.09.2024",
-       "Ferdigbehandlet": "18.06.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -4090,26 +4090,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001622",
       "details": {
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 5000,
+       "case_handler": "Trøndelag fylkeskommune",
        "cycle_months": 15,
+       "decided": "2025-09-14",
        "feed_per_cycle_tonn": 5500,
        "max_monthly_feed_tonn": 800,
-       "decided": "2025-09-14",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 5000,
        "result": "Avslått",
-       "case_handler": "Trøndelag fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+       "Ferdigbehandlet": "14.09.2025",
+       "Innsendt": "26.09.2024",
+       "Maksimal månedlig fôring": "800 tonn",
        "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
-       "Maksimal månedlig fôring": "800 tonn",
-       "Innsendt": "26.09.2024",
-       "Ferdigbehandlet": "14.09.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4131,26 +4131,26 @@
       "lon": 13.02347,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001553",
       "details": {
-       "mtb_tonn": 1660,
-       "planned_production_tonn": 1660,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 2000,
        "max_monthly_feed_tonn": 277,
+       "mtb_tonn": 1660,
+       "planned_production_tonn": 1660,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Moskenes",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "1 660 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 660 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
-       "Maksimal månedlig fôring": "277 tonn",
        "Innsendt": "24.09.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Moskenes",
+       "Maksimal månedlig fôring": "277 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 660 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "1 660 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4172,26 +4172,26 @@
       "lon": 29.46686,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001549",
       "details": {
-       "mtb_tonn": 5400,
-       "planned_production_tonn": 5400,
+       "case_handler": "Finnmark fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5940,
        "max_monthly_feed_tonn": 990,
+       "mtb_tonn": 5400,
+       "planned_production_tonn": 5400,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Finnmark fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Vadsø",
        "Fylke": "Finnmark",
-       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 400 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
-       "Maksimal månedlig fôring": "990 tonn",
        "Innsendt": "20.09.2024",
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
+       "Kommune": "Vadsø",
+       "Maksimal månedlig fôring": "990 tonn",
+       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 400 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -4213,22 +4213,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001548",
       "details": {
-       "mtb_tonn": 5400,
-       "planned_production_tonn": 5400,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5940,
        "max_monthly_feed_tonn": 990,
-       "case_handler": "Troms fylkeskommune",
+       "mtb_tonn": 5400,
+       "planned_production_tonn": 5400,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 400 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
-       "Maksimal månedlig fôring": "990 tonn",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Innsendt": "20.09.2024",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Maksimal månedlig fôring": "990 tonn",
+       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 400 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -4250,26 +4250,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001433",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 5000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
+       "decided": "2025-10-27",
        "feed_per_cycle_tonn": 5500,
        "max_monthly_feed_tonn": 1200,
-       "decided": "2025-10-27",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 5000,
        "result": "Avslått",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
+       "Ferdigbehandlet": "27.10.2025",
+       "Innsendt": "16.08.2024",
+       "Maksimal månedlig fôring": "1 200 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
-       "Maksimal månedlig fôring": "1 200 tonn",
-       "Innsendt": "16.08.2024",
-       "Ferdigbehandlet": "27.10.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4291,26 +4291,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001430",
       "details": {
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 3500,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 18,
+       "decided": "2025-06-18",
        "feed_per_cycle_tonn": 4500,
        "max_monthly_feed_tonn": 500,
-       "decided": "2025-06-18",
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 3500,
        "result": "Avslått",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Ferdigbehandlet": "18.06.2025",
+       "Innsendt": "13.08.2024",
+       "Maksimal månedlig fôring": "500 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
        "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Innsendt": "13.08.2024",
-       "Ferdigbehandlet": "18.06.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4332,22 +4332,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001429",
       "details": {
-       "mtb_tonn": 3000,
-       "planned_production_tonn": 4200,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5040,
        "max_monthly_feed_tonn": 400,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3000,
+       "planned_production_tonn": 4200,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "3 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 040 tonn",
-       "Maksimal månedlig fôring": "400 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "09.08.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "400 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 000 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 040 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -4369,22 +4369,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001428",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 3599,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4318,
        "max_monthly_feed_tonn": 300,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 3599,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
-       "Produksjonssykluslengde": "22 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
-       "Maksimal månedlig fôring": "300 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "09.08.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "300 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+       "Produksjonssykluslengde": "22 mnd"
       }
      },
      {
@@ -4406,26 +4406,26 @@
       "lon": 13.18065,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001425",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 3599,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4318,
        "max_monthly_feed_tonn": 300,
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 3599,
        "species": "Torsk",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Torsk",
-       "Kommune": "Flakstad",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
-       "Produksjonssykluslengde": "22 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
-       "Maksimal månedlig fôring": "300 tonn",
        "Innsendt": "07.08.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Flakstad",
+       "Maksimal månedlig fôring": "300 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+       "Produksjonssykluslengde": "22 mnd"
       }
      },
      {
@@ -4447,26 +4447,26 @@
       "lon": 20.5,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001378",
       "details": {
-       "mtb_tonn": 1,
-       "planned_production_tonn": 1,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 12,
        "feed_per_cycle_tonn": 0,
        "max_monthly_feed_tonn": 0,
+       "mtb_tonn": 1,
+       "planned_production_tonn": 1,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Troms fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Gáivuotna",
        "Fylke": "Troms",
-       "Maksimal tillatt biomasse (MTB)": "1 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 tonn",
-       "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
-       "Maksimal månedlig fôring": "0 tonn",
        "Innsendt": "05.07.2024",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Kommune": "Gáivuotna",
+       "Maksimal månedlig fôring": "0 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
+       "Planlagt produksjon per produksjonssyklus": "1 tonn",
+       "Produksjonssykluslengde": "12 mnd"
       }
      },
      {
@@ -4488,31 +4488,31 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001370",
       "details": {
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 1600,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 50,
+       "decided": "2025-06-04",
        "feed_per_cycle_tonn": 2000,
        "max_monthly_feed_tonn": 125,
-       "decided": "2025-06-04",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 1600,
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Lokalitetsnummer": "12919",
-       "Lokalitet": "Ørjavik",
-       "Plassering": "Sjø",
-       "Kapasitet": "1 560 tonn",
        "Aktive tillatelser": "M-EE-0006 , M-EE-0010",
-       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 600 tonn",
-       "Produksjonssykluslengde": "50 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
-       "Maksimal månedlig fôring": "125 tonn",
-       "Innsendt": "25.06.2024",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Ferdigbehandlet": "04.06.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Innsendt": "25.06.2024",
+       "Kapasitet": "1 560 tonn",
+       "Lokalitet": "Ørjavik",
+       "Lokalitetsnummer": "12919",
+       "Maksimal månedlig fôring": "125 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "1 600 tonn",
+       "Plassering": "Sjø",
+       "Produksjonssykluslengde": "50 mnd",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -4534,26 +4534,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001364",
       "details": {
-       "mtb_tonn": 2433,
-       "planned_production_tonn": 4000,
+       "case_handler": "Trøndelag fylkeskommune",
        "cycle_months": 14,
+       "decided": "2025-07-08",
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 700,
-       "decided": "2025-07-08",
+       "mtb_tonn": 2433,
+       "planned_production_tonn": 4000,
        "result": "Avslått",
-       "case_handler": "Trøndelag fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+       "Ferdigbehandlet": "08.07.2025",
+       "Innsendt": "19.06.2024",
+       "Maksimal månedlig fôring": "700 tonn",
        "Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
        "Produksjonssykluslengde": "14 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
-       "Maksimal månedlig fôring": "700 tonn",
-       "Innsendt": "19.06.2024",
-       "Ferdigbehandlet": "08.07.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4575,26 +4575,26 @@
       "lon": 17.30966,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001281",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2331,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 2564,
        "max_monthly_feed_tonn": 253,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2331,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Troms fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Gratangen",
        "Fylke": "Troms",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 331 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 564 tonn",
-       "Maksimal månedlig fôring": "253 tonn",
        "Innsendt": "31.05.2024",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Kommune": "Gratangen",
+       "Maksimal månedlig fôring": "253 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 564 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 331 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4616,26 +4616,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001199",
       "details": {
-       "mtb_tonn": 2433,
-       "planned_production_tonn": 4000,
+       "case_handler": "Trøndelag fylkeskommune",
        "cycle_months": 14,
+       "decided": "2024-08-20",
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 700,
-       "decided": "2024-08-20",
+       "mtb_tonn": 2433,
+       "planned_production_tonn": 4000,
        "result": "Avslått",
-       "case_handler": "Trøndelag fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+       "Ferdigbehandlet": "20.08.2024",
+       "Innsendt": "15.05.2024",
+       "Maksimal månedlig fôring": "700 tonn",
        "Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
        "Produksjonssykluslengde": "14 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
-       "Maksimal månedlig fôring": "700 tonn",
-       "Innsendt": "15.05.2024",
-       "Ferdigbehandlet": "20.08.2024",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4657,26 +4657,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001195",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 3599,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
+       "decided": "2026-02-12",
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 500,
-       "decided": "2026-02-12",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 3599,
        "result": "Avslått",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
+       "Ferdigbehandlet": "12.02.2026",
+       "Innsendt": "13.05.2024",
+       "Maksimal månedlig fôring": "500 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Innsendt": "13.05.2024",
-       "Ferdigbehandlet": "12.02.2026",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -4698,18 +4698,18 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001127",
       "details": {
+       "case_handler": "Oslo kommune",
        "cycle_months": 12,
        "decided": "2025-12-09",
        "result": "Innvilget",
-       "case_handler": "Oslo kommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Produksjonssykluslengde": "12 mnd",
-       "Innsendt": "06.05.2024",
+       "Ansvarlig saksbehandler": "Oslo kommune",
        "Ferdigbehandlet": "09.12.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Oslo kommune"
+       "Innsendt": "06.05.2024",
+       "Produksjonssykluslengde": "12 mnd",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -4731,27 +4731,27 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001121",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3100,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 42,
        "feed_per_cycle_tonn": 3900,
        "max_monthly_feed_tonn": 250,
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3100,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Lokalitetsnummer": "12919",
-       "Lokalitet": "Ørjavik",
-       "Plassering": "Sjø",
-       "Kapasitet": "1 560 tonn",
        "Aktive tillatelser": "M-EE-0006 , M-EE-0010",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 100 tonn",
-       "Produksjonssykluslengde": "42 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 900 tonn",
-       "Maksimal månedlig fôring": "250 tonn",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Innsendt": "30.04.2024",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Kapasitet": "1 560 tonn",
+       "Lokalitet": "Ørjavik",
+       "Lokalitetsnummer": "12919",
+       "Maksimal månedlig fôring": "250 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 900 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 100 tonn",
+       "Plassering": "Sjø",
+       "Produksjonssykluslengde": "42 mnd"
       }
      },
      {
@@ -4773,26 +4773,26 @@
       "lon": 13.50002,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001069",
       "details": {
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 6000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 7200,
        "max_monthly_feed_tonn": 1000,
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 6000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Meløy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
-       "Maksimal månedlig fôring": "1 000 tonn",
        "Innsendt": "11.04.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Meløy",
+       "Maksimal månedlig fôring": "1 000 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4814,22 +4814,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001065",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4056,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 4461,
        "max_monthly_feed_tonn": 350,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4056,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 056 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "05.04.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 056 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4851,22 +4851,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001064",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4056,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 4461,
        "max_monthly_feed_tonn": 350,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4056,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 056 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "05.04.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 056 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4888,26 +4888,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000844",
       "details": {
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 94,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 12,
+       "decided": "2024-02-26",
        "feed_per_cycle_tonn": 94,
        "max_monthly_feed_tonn": 1,
-       "decided": "2024-02-26",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 94,
        "result": "Innvilget",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Ferdigbehandlet": "26.02.2024",
+       "Innsendt": "13.02.2024",
+       "Maksimal månedlig fôring": "1 tonn",
        "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "94 tonn",
        "Planlagt produksjon per produksjonssyklus": "94 tonn",
        "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "94 tonn",
-       "Maksimal månedlig fôring": "1 tonn",
-       "Innsendt": "13.02.2024",
-       "Ferdigbehandlet": "26.02.2024",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -4929,22 +4929,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000741",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 3599,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 500,
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 3599,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Innsendt": "05.02.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Maksimal månedlig fôring": "500 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -4966,30 +4966,30 @@
       "lon": 12.04648,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000740",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 3599,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
+       "decided": "2026-06-18",
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 500,
-       "species": "Laks, Ørret, Regnbueørret",
-       "decided": "2026-06-18",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 3599,
        "result": "Innvilget",
-       "case_handler": "Nordland fylkeskommune",
+       "species": "Laks, Ørret, Regnbueørret",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Herøy",
+       "Ferdigbehandlet": "18.06.2026",
        "Fylke": "Nordland",
+       "Innsendt": "05.02.2024",
+       "Kommune": "Herøy",
+       "Maksimal månedlig fôring": "500 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 599 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Innsendt": "05.02.2024",
-       "Ferdigbehandlet": "18.06.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -5011,26 +5011,26 @@
       "lon": 12.13,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000739",
       "details": {
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 5000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5750,
        "max_monthly_feed_tonn": 500,
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 5000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Sømna",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 750 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
        "Innsendt": "05.02.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Sømna",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 750 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -5052,26 +5052,26 @@
       "lon": 12.46122,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000697",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3450,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 3800,
        "max_monthly_feed_tonn": 550,
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3450,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Alstahaug",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 450 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
-       "Maksimal månedlig fôring": "550 tonn",
        "Innsendt": "16.01.2024",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Alstahaug",
+       "Maksimal månedlig fôring": "550 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 450 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -5093,22 +5093,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000692",
       "details": {
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 2000,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 2290,
        "max_monthly_feed_tonn": 224,
-       "case_handler": "Troms fylkeskommune",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 2000,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 290 tonn",
-       "Maksimal månedlig fôring": "224 tonn",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Innsendt": "08.01.2024",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Maksimal månedlig fôring": "224 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 290 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -5130,30 +5130,30 @@
       "lon": 15.9614,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000686",
       "details": {
-       "mtb_tonn": 4000,
-       "planned_production_tonn": 5000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 20,
+       "decided": "2026-09-03",
        "feed_per_cycle_tonn": 5700,
        "max_monthly_feed_tonn": 700,
-       "species": "Laks, Ørret, Regnbueørret",
-       "decided": "2026-09-03",
+       "mtb_tonn": 4000,
+       "planned_production_tonn": 5000,
        "result": "Innvilget",
-       "case_handler": "Nordland fylkeskommune",
+       "species": "Laks, Ørret, Regnbueørret",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Sortland",
+       "Ferdigbehandlet": "03.09.2026",
        "Fylke": "Nordland",
+       "Innsendt": "18.12.2023",
+       "Kommune": "Sortland",
+       "Maksimal månedlig fôring": "700 tonn",
        "Maksimal tillatt biomasse (MTB)": "4 000 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
        "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
        "Produksjonssykluslengde": "20 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
-       "Maksimal månedlig fôring": "700 tonn",
-       "Innsendt": "18.12.2023",
-       "Ferdigbehandlet": "03.09.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -5175,26 +5175,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000651",
       "details": {
-       "mtb_tonn": 6240,
-       "planned_production_tonn": 7000,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 17,
+       "decided": "2025-04-09",
        "feed_per_cycle_tonn": 8000,
        "max_monthly_feed_tonn": 850,
-       "decided": "2025-04-09",
+       "mtb_tonn": 6240,
+       "planned_production_tonn": 7000,
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Ferdigbehandlet": "09.04.2025",
+       "Innsendt": "07.12.2023",
+       "Maksimal månedlig fôring": "850 tonn",
        "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
        "Produksjonssykluslengde": "17 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
-       "Maksimal månedlig fôring": "850 tonn",
-       "Innsendt": "07.12.2023",
-       "Ferdigbehandlet": "09.04.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -5216,26 +5216,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000648",
       "details": {
-       "mtb_tonn": 3600,
-       "planned_production_tonn": 4300,
+       "case_handler": "Rogaland fylkeskommune",
        "cycle_months": 18,
+       "decided": "2025-01-06",
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 650,
-       "decided": "2025-01-06",
+       "mtb_tonn": 3600,
+       "planned_production_tonn": 4300,
        "result": "Avslått",
-       "case_handler": "Rogaland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+       "Ferdigbehandlet": "06.01.2025",
+       "Innsendt": "21.11.2023",
+       "Maksimal månedlig fôring": "650 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 300 tonn",
        "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Maksimal månedlig fôring": "650 tonn",
-       "Innsendt": "21.11.2023",
-       "Ferdigbehandlet": "06.01.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -5257,26 +5257,26 @@
       "lon": 5.84856,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000647",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2340,
+       "case_handler": "Rogaland fylkeskommune",
        "cycle_months": 12,
        "feed_per_cycle_tonn": 2800,
        "max_monthly_feed_tonn": 400,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2340,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Rogaland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Stavanger",
        "Fylke": "Rogaland",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 340 tonn",
-       "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 800 tonn",
-       "Maksimal månedlig fôring": "400 tonn",
        "Innsendt": "17.11.2023",
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
+       "Kommune": "Stavanger",
+       "Maksimal månedlig fôring": "400 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 800 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 340 tonn",
+       "Produksjonssykluslengde": "12 mnd"
       }
      },
      {
@@ -5298,26 +5298,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000608",
       "details": {
-       "mtb_tonn": 6240,
-       "planned_production_tonn": 7000,
+       "case_handler": "Trøndelag fylkeskommune",
        "cycle_months": 17,
+       "decided": "2024-08-13",
        "feed_per_cycle_tonn": 8000,
        "max_monthly_feed_tonn": 850,
-       "decided": "2024-08-13",
+       "mtb_tonn": 6240,
+       "planned_production_tonn": 7000,
        "result": "Avslått",
-       "case_handler": "Trøndelag fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+       "Ferdigbehandlet": "13.08.2024",
+       "Innsendt": "07.11.2023",
+       "Maksimal månedlig fôring": "850 tonn",
        "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
        "Produksjonssykluslengde": "17 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
-       "Maksimal månedlig fôring": "850 tonn",
-       "Innsendt": "07.11.2023",
-       "Ferdigbehandlet": "13.08.2024",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -5339,26 +5339,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000605",
       "details": {
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 4600,
+       "case_handler": "Finnmark fylkeskommune",
        "cycle_months": 18,
+       "decided": "2025-10-29",
        "feed_per_cycle_tonn": 5290,
        "max_monthly_feed_tonn": 500,
-       "decided": "2025-10-29",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4600,
        "result": "Avslått",
-       "case_handler": "Finnmark fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+       "Ferdigbehandlet": "29.10.2025",
+       "Innsendt": "02.11.2023",
+       "Maksimal månedlig fôring": "500 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 290 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 600 tonn",
        "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 290 tonn",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Innsendt": "02.11.2023",
-       "Ferdigbehandlet": "29.10.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -5380,26 +5380,26 @@
       "lon": 13.22307,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000364",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 3000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 3450,
        "max_monthly_feed_tonn": 350,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 3000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Rødøy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
        "Innsendt": "14.09.2023",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Rødøy",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -5421,30 +5421,30 @@
       "lon": 12.16818,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000360",
       "details": {
-       "mtb_tonn": 3600,
-       "planned_production_tonn": 5300,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 15,
+       "decided": "2026-07-20",
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 750,
-       "species": "Laks, Ørret, Regnbueørret",
-       "decided": "2026-07-20",
+       "mtb_tonn": 3600,
+       "planned_production_tonn": 5300,
        "result": "Avslått",
-       "case_handler": "Nordland fylkeskommune",
+       "species": "Laks, Ørret, Regnbueørret",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Brønnøy",
+       "Ferdigbehandlet": "20.07.2026",
        "Fylke": "Nordland",
+       "Innsendt": "07.09.2023",
+       "Kommune": "Brønnøy",
+       "Maksimal månedlig fôring": "750 tonn",
        "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "5 300 tonn",
        "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Maksimal månedlig fôring": "750 tonn",
-       "Innsendt": "07.09.2023",
-       "Ferdigbehandlet": "20.07.2026",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Resultat": "Avslått"
       }
      },
      {
@@ -5466,26 +5466,26 @@
       "lon": 20.69277,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000323",
       "details": {
-       "mtb_tonn": 7200,
-       "planned_production_tonn": 8000,
+       "case_handler": "Troms fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 8800,
        "max_monthly_feed_tonn": 1320,
+       "mtb_tonn": 7200,
+       "planned_production_tonn": 8000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Troms fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Skjervøy",
        "Fylke": "Troms",
-       "Maksimal tillatt biomasse (MTB)": "7 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "8 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
-       "Maksimal månedlig fôring": "1 320 tonn",
        "Innsendt": "25.08.2023",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+       "Kommune": "Skjervøy",
+       "Maksimal månedlig fôring": "1 320 tonn",
+       "Maksimal tillatt biomasse (MTB)": "7 200 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
+       "Planlagt produksjon per produksjonssyklus": "8 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       }
      },
      {
@@ -5507,22 +5507,22 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000319",
       "details": {
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 2000,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 15,
        "feed_per_cycle_tonn": 2500,
        "max_monthly_feed_tonn": 300,
-       "case_handler": "Vestland fylkeskommune",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 2000,
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
-       "Produksjonssykluslengde": "15 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 500 tonn",
-       "Maksimal månedlig fôring": "300 tonn",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Innsendt": "11.08.2023",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Maksimal månedlig fôring": "300 tonn",
+       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 500 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+       "Produksjonssykluslengde": "15 mnd"
       }
      },
      {
@@ -5544,26 +5544,26 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000317",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 3500,
+       "case_handler": "Vestland fylkeskommune",
        "cycle_months": 12,
+       "decided": "2024-03-21",
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 750,
-       "decided": "2024-03-21",
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 3500,
        "result": "Innvilget",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Ferdigbehandlet": "21.03.2024",
+       "Innsendt": "09.08.2023",
+       "Maksimal månedlig fôring": "750 tonn",
        "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
        "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
-       "Maksimal månedlig fôring": "750 tonn",
-       "Innsendt": "09.08.2023",
-       "Ferdigbehandlet": "21.03.2024",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -5583,7 +5583,29 @@
       "species": null,
       "lat": null,
       "lon": null,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000303"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000303",
+      "details": {
+       "mtb_tonn": 5000,
+       "planned_production_tonn": 6500,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 7800,
+       "max_monthly_feed_tonn": 1200,
+       "decided": "2025-08-21",
+       "result": "Innvilget",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 800 tonn",
+       "Maksimal månedlig fôring": "1 200 tonn",
+       "Innsendt": "10.07.2023",
+       "Ferdigbehandlet": "21.08.2025",
+       "Resultat": "Innvilget",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000199",
@@ -5602,7 +5624,29 @@
       "species": "Laks, Ørret, Regnbueørret",
       "lat": 66.60359,
       "lon": 13.13746,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000199"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000199",
+      "details": {
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 3000,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 3450,
+       "max_monthly_feed_tonn": 350,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Rødøy",
+       "Fylke": "Nordland",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Innsendt": "30.06.2023",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000163",
@@ -5621,7 +5665,29 @@
       "species": "Laks, Ørret, Regnbueørret",
       "lat": 66.11134,
       "lon": 12.24134,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000163"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000163",
+      "details": {
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 4600,
+       "max_monthly_feed_tonn": 450,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Dønna",
+       "Fylke": "Nordland",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+       "Maksimal månedlig fôring": "450 tonn",
+       "Innsendt": "22.06.2023",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000125",
@@ -5640,7 +5706,29 @@
       "species": null,
       "lat": null,
       "lon": null,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000125"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000125",
+      "details": {
+       "mtb_tonn": 5460,
+       "planned_production_tonn": 7500,
+       "cycle_months": 20,
+       "feed_per_cycle_tonn": 8000,
+       "max_monthly_feed_tonn": 900,
+       "decided": "2025-08-11",
+       "result": "Avslått",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 500 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "14.06.2023",
+       "Ferdigbehandlet": "11.08.2025",
+       "Resultat": "Avslått",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000052",
@@ -5659,7 +5747,29 @@
       "species": null,
       "lat": null,
       "lon": null,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000052"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000052",
+      "details": {
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 4500,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 5200,
+       "max_monthly_feed_tonn": 800,
+       "decided": "2025-04-29",
+       "result": "Avslått",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+       "Maksimal månedlig fôring": "800 tonn",
+       "Innsendt": "22.05.2023",
+       "Ferdigbehandlet": "29.04.2025",
+       "Resultat": "Avslått",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000043",
@@ -5678,7 +5788,29 @@
       "species": null,
       "lat": null,
       "lon": null,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000043"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000043",
+      "details": {
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 5000,
+       "cycle_months": 20,
+       "feed_per_cycle_tonn": 5000,
+       "max_monthly_feed_tonn": 500,
+       "decided": "2025-10-30",
+       "result": "Avslått",
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "31.03.2023",
+       "Ferdigbehandlet": "30.10.2025",
+       "Resultat": "Avslått",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000042",
@@ -5697,7 +5829,29 @@
       "species": null,
       "lat": null,
       "lon": null,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000042"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000042",
+      "details": {
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 3000,
+       "cycle_months": 20,
+       "feed_per_cycle_tonn": 3300,
+       "max_monthly_feed_tonn": 800,
+       "decided": "2024-12-02",
+       "result": "Innvilget",
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 300 tonn",
+       "Maksimal månedlig fôring": "800 tonn",
+       "Innsendt": "27.03.2023",
+       "Ferdigbehandlet": "02.12.2024",
+       "Resultat": "Innvilget",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+      }
      },
      {
       "id": "SP-2023-000002",
@@ -5716,7 +5870,29 @@
       "species": "Laks, Ørret, Regnbueørret",
       "lat": 65.81142,
       "lon": 12.26196,
-      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000002"
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000002",
+      "details": {
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4600,
+       "cycle_months": 20,
+       "feed_per_cycle_tonn": 5200,
+       "max_monthly_feed_tonn": 600,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-21T09:24:53Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Alstahaug",
+       "Fylke": "Nordland",
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 600 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "16.02.2023",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      }
      }
     ]
    },
@@ -7217,16 +7393,16 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001685",
       "details": {
+       "case_handler": "Vestland fylkeskommune",
        "decided": "2025-02-27",
        "result": "Avslått",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "09.12.2024",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Ferdigbehandlet": "27.02.2025",
-       "Resultat": "Avslått",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Innsendt": "09.12.2024",
+       "Resultat": "Avslått"
       }
      },
      {
@@ -7248,16 +7424,16 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001675",
       "details": {
+       "case_handler": "Vestland fylkeskommune",
        "decided": "2025-07-02",
        "result": "Innvilget",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "27.11.2024",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Ferdigbehandlet": "02.07.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Innsendt": "27.11.2024",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -7283,10 +7459,10 @@
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Kommune": "Steinkjer",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Fylke": "Trøndelag",
        "Innsendt": "22.11.2024",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Kommune": "Steinkjer"
       }
      },
      {
@@ -7308,16 +7484,16 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001661",
       "details": {
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "decided": "2025-11-12",
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "08.11.2024",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Ferdigbehandlet": "12.11.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Innsendt": "08.11.2024",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -7339,16 +7515,16 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001659",
       "details": {
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "decided": "2025-10-02",
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "06.11.2024",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Ferdigbehandlet": "02.10.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Innsendt": "06.11.2024",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -7374,8 +7550,8 @@
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "01.11.2024",
-       "Ansvarlig saksbehandler": "Innlandet fylkeskommune"
+       "Ansvarlig saksbehandler": "Innlandet fylkeskommune",
+       "Innsendt": "01.11.2024"
       }
      },
      {
@@ -7401,10 +7577,10 @@
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Kommune": "Indre Fosen",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Fylke": "Trøndelag",
        "Innsendt": "01.10.2024",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+       "Kommune": "Indre Fosen"
       }
      },
      {
@@ -7426,18 +7602,18 @@
       "lon": 5.31158,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001379",
       "details": {
+       "case_handler": "Vestland fylkeskommune",
        "decided": "2026-09-11",
        "result": "Innvilget",
-       "case_handler": "Vestland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Kommune": "Bergen",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Ferdigbehandlet": "11.09.2026",
        "Fylke": "Vestland",
        "Innsendt": "05.07.2024",
-       "Ferdigbehandlet": "11.09.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
+       "Kommune": "Bergen",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -7459,16 +7635,16 @@
       "lon": null,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001368",
       "details": {
+       "case_handler": "Nordland fylkeskommune",
        "decided": "2025-08-21",
        "result": "Innvilget",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "21.06.2024",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Ferdigbehandlet": "21.08.2025",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Innsendt": "21.06.2024",
+       "Resultat": "Innvilget"
       }
      },
      {
@@ -7494,8 +7670,8 @@
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "16.05.2024",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Innsendt": "16.05.2024"
       }
      },
      {
@@ -7521,8 +7697,8 @@
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "16.05.2024",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Innsendt": "16.05.2024"
       }
      },
      {
@@ -7544,25 +7720,25 @@
       "lon": 12.37827,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001198",
       "details": {
+       "case_handler": "Nordland fylkeskommune",
        "decided": "2026-09-03",
        "result": "Innvilget",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-21T08:49:12Z"
       },
       "fields": {
-       "Innsendt": "15.05.2024",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Ferdigbehandlet": "03.09.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Innsendt": "15.05.2024",
+       "Resultat": "Innvilget"
       }
      }
     ]
    }
   },
   "details_summary": {
-   "cached": 180,
-   "pending": 8,
-   "fetched_now": 60
+   "cached": 188,
+   "pending": 0,
+   "fetched_now": 8
   }
  },
  "licences": {
