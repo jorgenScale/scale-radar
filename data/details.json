@@ -255,6 +255,70 @@
 "status": "Trukket",
 "title": "Lelandsholmen"
 },
+"SP-2023-000321": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-TN-0001 , T-D-0009 , T-D-0012 , T-D-0010 , T-G-0008 , T-D-0011 , T-LK-0034 , T-TN-0005 , T-D-0013",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "12.06.2025",
+"Innsendt": "15.08.2023",
+"Kapasitet": "8 500 tonn",
+"Lokalitet": "Skårliodden",
+"Lokalitetsnummer": "34137",
+"Maksimal månedlig fôring": "1 050 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-06-12",
+"feed_per_cycle_tonn": 8500,
+"max_monthly_feed_tonn": 1050,
+"mtb_tonn": 8500,
+"planned_production_tonn": 8500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Skårliodden"
+},
+"SP-2023-000322": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-G-0062 , N-VV-0074 , N-VV-0070 , N-VV-0066 , N-VV-0003 , N-VV-0071",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "24.08.2023",
+"Kapasitet": "1 560 tonn",
+"Kommune": "Vestvågøy",
+"Lokalitet": "Æsøya",
+"Lokalitetsnummer": "30977",
+"Maksimal månedlig fôring": "515 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 432 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 120 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 3432,
+"max_monthly_feed_tonn": 515,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3120,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Æsøya"
+},
 "SP-2023-000323": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -280,6 +344,134 @@
 },
 "status": "Under behandling",
 "title": "Bjørnvika"
+},
+"SP-2023-000324": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-TK-0014 , T-N-0016 , T-TK-0006",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "06.06.2025",
+"Innsendt": "28.08.2023",
+"Kapasitet": "3 600 tonn",
+"Lokalitet": "Hagebergan",
+"Lokalitetsnummer": "13949",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-06-06",
+"feed_per_cycle_tonn": 6700,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 4600,
+"planned_production_tonn": 5700,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Hagebergan"
+},
+"SP-2023-000325": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-G-0007 , T-T-0005",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "22.11.2023",
+"Innsendt": "30.08.2023",
+"Kapasitet": "1 200 tonn",
+"Lokalitet": "Hilderkleiva",
+"Lokalitetsnummer": "31177",
+"Maksimal månedlig fôring": "350 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 960 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 15,
+"decided": "2023-11-22",
+"feed_per_cycle_tonn": 3960,
+"max_monthly_feed_tonn": 350,
+"planned_production_tonn": 3600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Hilderkleiva"
+},
+"SP-2023-000326": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-LN-0018 , N-LN-0001 , N-LN-0016",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "05.09.2023",
+"Kapasitet": "2 608 tonn",
+"Kommune": "Lødingen",
+"Lokalitet": "Rinøyvåg Ø",
+"Lokalitetsnummer": "14795",
+"Maksimal månedlig fôring": "650 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 608 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "19 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 19,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 650,
+"mtb_tonn": 2608,
+"planned_production_tonn": 4700,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Rinøyvåg Ø"
+},
+"SP-2023-000359": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-TN-0001 , N-TN-0004 , N-TN-0005 , N-G-0067 , N-ME-0010 , N-TN-0003 , N-G-0066",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "07.09.2023",
+"Kapasitet": "3 600 tonn",
+"Kommune": "Meløy",
+"Lokalitet": "Skålsvika",
+"Lokalitetsnummer": "11138",
+"Maksimal månedlig fôring": "750 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 100 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 5700,
+"max_monthly_feed_tonn": 750,
+"planned_production_tonn": 6100,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Skålsvika"
 },
 "SP-2023-000360": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -311,6 +503,98 @@
 "status": "Ferdigbehandlet",
 "title": "Lyngøy Øst"
 },
+"SP-2023-000361": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-SO-0010 , H-KM-0014 , H-J-0007",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "13.02.2024",
+"Innsendt": "08.09.2023",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Straumneset",
+"Lokalitetsnummer": "12081",
+"Maksimal månedlig fôring": "300 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 22,
+"decided": "2024-02-13",
+"feed_per_cycle_tonn": 1700,
+"max_monthly_feed_tonn": 300,
+"planned_production_tonn": 1500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Straumneset"
+},
+"SP-2023-000362": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-TK-0014 , T-TK-0006 , T-N-0016",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "13.03.2025",
+"Innsendt": "08.09.2023",
+"Kapasitet": "3 500 tonn",
+"Lokalitet": "Russelva",
+"Lokalitetsnummer": "16015",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 20,
+"decided": "2025-03-13",
+"feed_per_cycle_tonn": 6600,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 4500,
+"planned_production_tonn": 5600,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Russelva"
+},
+"SP-2023-000363": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-SM-0013 , M-AV-0006 , M-SM-0010 , M-AV-0018 , M-SM-0009 , M-SM-0017 , M-SM-0002 , M-AV-0007 , M-SM-0006 , M-AV-0004",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "29.05.2024",
+"Innsendt": "08.09.2023",
+"Kapasitet": "7 020 tonn",
+"Lokalitet": "Bremnessvaet",
+"Lokalitetsnummer": "10223",
+"Maksimal månedlig fôring": "1 100 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "9 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-05-29",
+"feed_per_cycle_tonn": 9700,
+"max_monthly_feed_tonn": 1100,
+"planned_production_tonn": 9000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Bremnessvaet"
+},
 "SP-2023-000364": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -336,6 +620,512 @@
 },
 "status": "Under behandling",
 "title": "Langstranda"
+},
+"SP-2023-000365": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-LA-0006 , NT-LA-0005 , NT-LA-0003 , NT-LA-0002",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "15.01.2024",
+"Fylke": "Nordland",
+"Innsendt": "15.09.2023",
+"Kapasitet": "2 340 tonn",
+"Kommune": "Brønnøy",
+"Lokalitet": "Klubben",
+"Lokalitetsnummer": "19755",
+"Maksimal månedlig fôring": "400 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-01-15",
+"feed_per_cycle_tonn": 4500,
+"max_monthly_feed_tonn": 400,
+"planned_production_tonn": 3000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Klubben"
+},
+"SP-2023-000398": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-BG-0008 , N-BG-0009 , N-BG-0010 , N-Ø-0018 , N-N-0009 , N-Ø-0021 , N-N-0010",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "21.09.2023",
+"Kapasitet": "6 000 tonn",
+"Kommune": "Evenes",
+"Lokalitet": "Tjukkeneset",
+"Lokalitetsnummer": "31077",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "9 300 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 400 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 9300,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 6000,
+"planned_production_tonn": 8400,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Tjukkeneset"
+},
+"SP-2023-000431": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-F-0028 , NT-F-0033 , NT-F-0029",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "05.08.2025",
+"Innsendt": "25.09.2023",
+"Kapasitet": "5 460 tonn",
+"Lokalitet": "Hellerflesa",
+"Lokalitetsnummer": "45127",
+"Maksimal månedlig fôring": "900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "9 350 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-08-05",
+"feed_per_cycle_tonn": 9350,
+"max_monthly_feed_tonn": 900,
+"planned_production_tonn": 8500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Hellerflesa"
+},
+"SP-2023-000464": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-M-0001 , F-A-0036 , F-L-0004 , F-H-0020 , F-A-0054 , F-H-0021 , TF-A-0006 , TF-A-0010 , TF-A-0009 , F-M-0022 , F-KD-0008 , F-H-0022 , TF-A-0008 , F-L-0021 , F-HV-0011 , TF-A-0007 , F-A-0061",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "28.04.2025",
+"Innsendt": "05.10.2023",
+"Kapasitet": "7 560 tonn",
+"Lokalitet": "Husfjord",
+"Lokalitetsnummer": "21016",
+"Maksimal månedlig fôring": "1 300 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 505 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "12 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-04-28",
+"feed_per_cycle_tonn": 12500,
+"max_monthly_feed_tonn": 1300,
+"mtb_tonn": 8505,
+"planned_production_tonn": 10500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Husfjord"
+},
+"SP-2023-000465": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-B-0048 , N-B-0029 , N-FE-0005 , N-B-0049 , N-FE-0002 , N-SL-0003",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "06.10.2023",
+"Kapasitet": "2 200 tonn",
+"Kommune": "Fauske",
+"Lokalitet": "Skysselvika V",
+"Lokalitetsnummer": "11273",
+"Maksimal månedlig fôring": "197 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 291 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 752 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "14 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 14,
+"feed_per_cycle_tonn": 2291,
+"max_monthly_feed_tonn": 197,
+"planned_production_tonn": 1752,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Returnert",
+"title": "Skysselvika V"
+},
+"SP-2023-000466": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-L-0021 , F-L-0001 , F-L-0004 , F-A-0042 , F-A-0039 , F-A-0040 , F-L-0035 , F-HV-0011",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "14.03.2025",
+"Innsendt": "06.10.2023",
+"Kapasitet": "3 600 tonn",
+"Lokalitet": "Geitelva",
+"Lokalitetsnummer": "32237",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "7 425 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-03-14",
+"feed_per_cycle_tonn": 10800,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 7425,
+"planned_production_tonn": 9000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Sloppegrunn"
+},
+"SP-2023-000499": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-AV-0003 , H-AV-0008 , H-AV-0004 , H-AV-0009",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "19.01.2024",
+"Innsendt": "12.10.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Trælsøyosen",
+"Lokalitetsnummer": "29336",
+"Maksimal månedlig fôring": "600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-01-19",
+"feed_per_cycle_tonn": 4200,
+"max_monthly_feed_tonn": 600,
+"planned_production_tonn": 3600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Trælsøyosen"
+},
+"SP-2023-000500": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "TF-A-0009 , F-KD-0008 , TF-A-0006 , F-M-0046 , F-A-0041 , F-H-0020 , TF-A-0007 , F-M-0048 , F-H-0022 , F-L-0035 , F-HV-0009 , F-KD-0029 , F-M-0047 , TF-A-0010 , F-HV-0003 , F-M-0045 , F-KD-0027 , TF-A-0008",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "28.05.2025",
+"Innsendt": "13.10.2023",
+"Kapasitet": "7 560 tonn",
+"Lokalitet": "Slettnesfjord",
+"Lokalitetsnummer": "10838",
+"Maksimal månedlig fôring": "1 300 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 505 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "12 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-05-28",
+"feed_per_cycle_tonn": 12500,
+"max_monthly_feed_tonn": 1300,
+"mtb_tonn": 8505,
+"planned_production_tonn": 10500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Slettnesfjord"
+},
+"SP-2023-000501": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "R-V-0031 , H-B-0005 , R-V-0030",
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Ferdigbehandlet": "12.12.2023",
+"Innsendt": "13.10.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Svollandsneset",
+"Lokalitetsnummer": "22955",
+"Maksimal månedlig fôring": "600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 22,
+"decided": "2023-12-12",
+"feed_per_cycle_tonn": 3600,
+"max_monthly_feed_tonn": 600,
+"planned_production_tonn": 3600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Svollandsneset"
+},
+"SP-2023-000502": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-HS-0011 , M-SM-0007 , M-SM-0035 , M-SM-0043 , M-AE-0022 , M-HS-0005 , M-SM-0034 , M-SM-0003 , M-SØ-0003 , M-AV-0001 , M-AE-0014 , M-AV-0009 , M-SM-0036",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "22.08.2024",
+"Innsendt": "20.10.2023",
+"Kapasitet": "8 580 tonn",
+"Lokalitet": "Solværet",
+"Lokalitetsnummer": "27436",
+"Maksimal månedlig fôring": "1 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 900 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-08-22",
+"feed_per_cycle_tonn": 11200,
+"max_monthly_feed_tonn": 1680,
+"planned_production_tonn": 9900,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Solværet"
+},
+"SP-2023-000535": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0006 , T-T-0076 , T-T-0060 , TF-T-0005",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "13.02.2025",
+"Innsendt": "23.10.2023",
+"Kapasitet": "3 599 tonn",
+"Lokalitet": "Rogndalen",
+"Lokalitetsnummer": "13804",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 100 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 920 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-02-13",
+"feed_per_cycle_tonn": 3920,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 3100,
+"planned_production_tonn": 3500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Rogndalen"
+},
+"SP-2023-000568": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-Ø-0017 , N-Ø-0004 , N-SG-0018 , N-HM-0005 , N-SG-0029 , N-Ø-0007",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "24.10.2023",
+"Kapasitet": "2 340 tonn",
+"Kommune": "Øksnes",
+"Lokalitet": "Dypeidet",
+"Lokalitetsnummer": "13412",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 200 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 22,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 3120,
+"planned_production_tonn": 4200,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Dypeidet"
+},
+"SP-2023-000569": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0083 , T-TN-0008 , T-N-0003 , T-T-0079 , T-K-0038 , T-N-0005 , T-T-0078 , T-N-0014 , T-K-0033 , T-T-0084 , T-N-0010 , T-T-0080 , T-T-0081 , T-T-0085 , T-T-0082 , T-TN-0015",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "07.02.2025",
+"Innsendt": "25.10.2023",
+"Kapasitet": "5 670 tonn",
+"Lokalitet": "Finnvik",
+"Lokalitetsnummer": "31398",
+"Maksimal månedlig fôring": "829 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "9 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-02-07",
+"feed_per_cycle_tonn": 9700,
+"max_monthly_feed_tonn": 829,
+"mtb_tonn": 8500,
+"planned_production_tonn": 8500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Finnvik"
+},
+"SP-2023-000570": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-SM-0041 , M-MD-0002 , M-VS-0025 , M-SJ-0003 , M-SJ-0005",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "20.01.2025",
+"Innsendt": "25.10.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Gudmundset",
+"Lokalitetsnummer": "12265",
+"Maksimal månedlig fôring": "540 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Stadt til Hustadvika (Gul)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 20,
+"decided": "2025-01-20",
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 540,
+"mtb_tonn": 3120,
+"planned_production_tonn": 5000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Gudmundset"
+},
+"SP-2023-000571": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-ME-0001 , N-G-0067 , N-G-0066",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "28.10.2024",
+"Innsendt": "25.10.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Nordskaftet",
+"Lokalitetsnummer": "45140",
+"Maksimal månedlig fôring": "700 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 370 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 120 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-10-28",
+"feed_per_cycle_tonn": 3370,
+"max_monthly_feed_tonn": 700,
+"planned_production_tonn": 3120,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Nordskaftet"
+},
+"SP-2023-000604": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "R-R-0010 , R-B-0013 , R-S-0001 , R-KV-0002 , R-R-0002 , R-S-0002 , R-KV-0001",
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Ferdigbehandlet": "28.07.2025",
+"Innsendt": "01.11.2023",
+"Kapasitet": "780 tonn",
+"Lokalitet": "Dale II",
+"Lokalitetsnummer": "12007",
+"Maksimal månedlig fôring": "400 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Ryfylket (Gul)",
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 12,
+"decided": "2025-07-28",
+"feed_per_cycle_tonn": 1700,
+"max_monthly_feed_tonn": 400,
+"planned_production_tonn": 1500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Dale II"
 },
 "SP-2023-000605": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -363,6 +1153,70 @@
 "status": "Ferdigbehandlet",
 "title": "Store Svartholet"
 },
+"SP-2023-000606": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-K-0036 , T-T-0079 , T-T-0082 , T-T-0083 , F-A-0067 , F-HV-0015 , T-T-0084 , T-T-0078 , T-K-0037 , T-K-0033 , T-T-0080 , T-T-0085 , T-K-0038 , F-KD-0034 , F-M-0043 , T-T-0081 , F-HV-0014",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "21.05.2025",
+"Innsendt": "06.11.2023",
+"Kapasitet": "7 200 tonn",
+"Lokalitet": "Korsnes",
+"Lokalitetsnummer": "36797",
+"Maksimal månedlig fôring": "1 300 tonn",
+"Maksimal tillatt biomasse (MTB)": "10 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "19 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 19,
+"decided": "2025-05-21",
+"feed_per_cycle_tonn": 11000,
+"max_monthly_feed_tonn": 1300,
+"mtb_tonn": 10000,
+"planned_production_tonn": 10000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Korsnes"
+},
+"SP-2023-000607": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-Ø-0007 , N-Ø-0017 , N-SG-0029 , N-Ø-0004 , N-HM-0018 , N-HM-0019 , N-HM-0020 , N-HM-0005 , N-SG-0018",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "28.10.2024",
+"Innsendt": "06.11.2023",
+"Kapasitet": "2 340 tonn",
+"Lokalitet": "Horsvågen",
+"Lokalitetsnummer": "10518",
+"Maksimal månedlig fôring": "300 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 750 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "10 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 10,
+"decided": "2024-10-28",
+"feed_per_cycle_tonn": 2750,
+"max_monthly_feed_tonn": 300,
+"mtb_tonn": 2500,
+"planned_production_tonn": 2500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Horsvågen"
+},
 "SP-2023-000608": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -388,6 +1242,200 @@
 },
 "status": "Ferdigbehandlet",
 "title": "Kya"
+},
+"SP-2023-000641": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SF-0009 , N-HR-0020 , N-SF-0008 , N-SF-0013 , N-SF-0011 , N-SF-0014 , N-HR-0018 , N-SF-0012",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "08.11.2023",
+"Kapasitet": "5 400 tonn",
+"Kommune": "Sørfold",
+"Lokalitet": "Nedre Kvarv",
+"Lokalitetsnummer": "10513",
+"Maksimal månedlig fôring": "550 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 550,
+"planned_production_tonn": 7000,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Nedre Kvarv"
+},
+"SP-2023-000642": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "SF-G-0009 , SF-G-0022 , SF-G-0038 , SF-FL-0014 , H-ØN-0004 , H-FE-0013 , SF-SU-0023 , SF-G-0002 , SF-G-0006 , SF-A-0031 , H-ØN-0001 , SF-H-0003 , SF-H-0008 , SF-FL-0008 , SF-H-0001 , SF-A-0030 , SF-G-0011 , SF-FL-0016 , SF-G-0005 , SF-N-0001 , SF-G-0010",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "29.02.2024",
+"Innsendt": "09.11.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Hardbakkeneset",
+"Lokalitetsnummer": "38217",
+"Maksimal månedlig fôring": "1 500 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "14 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 14,
+"decided": "2024-02-29",
+"feed_per_cycle_tonn": 8800,
+"max_monthly_feed_tonn": 1500,
+"mtb_tonn": 4680,
+"planned_production_tonn": 6500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Hardbakkeneset"
+},
+"SP-2023-000643": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "SF-A-0031 , SF-G-0005 , SF-G-0010 , SF-A-0026 , SF-H-0003 , SF-A-0006 , SF-G-0006 , SF-G-0011 , SF-G-0051 , SF-A-0032 , SF-G-0002 , SF-G-0022 , SF-G-0009 , SF-A-0030 , SF-H-0001 , SF-N-0001 , SF-G-0038",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "29.02.2024",
+"Innsendt": "10.11.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Kuøyna",
+"Lokalitetsnummer": "32518",
+"Maksimal månedlig fôring": "1 500 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "14 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 14,
+"decided": "2024-02-29",
+"feed_per_cycle_tonn": 8800,
+"max_monthly_feed_tonn": 1500,
+"mtb_tonn": 4680,
+"planned_production_tonn": 6500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Kuøyna"
+},
+"SP-2023-000644": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "TR-F-0033 , TR-AA-0007 , TR-O-0002 , TR-F-0031 , TR-F-0032 , ST-F-0062 , TR-O-0003 , ST-HE-0014 , TR-F-0010 , TR-F-0011 , TR-F-0035 , TR-O-0001 , ST-HE-0006 , TR-F-0034 , M-AV-0027 , ST-F-0014",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "12.02.2025",
+"Innsendt": "14.11.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Ilsøya 2",
+"Lokalitetsnummer": "38997",
+"Maksimal månedlig fôring": "530 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-02-12",
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 530,
+"planned_production_tonn": 3800,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Ilsøya 2"
+},
+"SP-2023-000645": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "SF-A-0009 , SF-FL-0008 , SF-FL-0016 , SF-A-0029 , SF-FL-0014",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "12.03.2024",
+"Innsendt": "15.11.2023",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Storevik",
+"Lokalitetsnummer": "13568",
+"Maksimal månedlig fôring": "550 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "16 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 16,
+"decided": "2024-03-12",
+"feed_per_cycle_tonn": 4200,
+"max_monthly_feed_tonn": 550,
+"planned_production_tonn": 3500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Storevik"
+},
+"SP-2023-000646": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-VV-0059 , N-VV-0069 , N-VV-0005 , N-VV-0006 , N-VV-0065 , N-VV-0068 , N-VV-0073",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "16.11.2023",
+"Kapasitet": "2 340 tonn",
+"Kommune": "Bodø",
+"Lokalitet": "Kariskjæret",
+"Lokalitetsnummer": "36817",
+"Maksimal månedlig fôring": "360 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 517 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 7200,
+"max_monthly_feed_tonn": 360,
+"mtb_tonn": 4517,
+"planned_production_tonn": 6000,
+"result": "Avslått",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Kariskjæret"
 },
 "SP-2023-000647": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -441,6 +1489,72 @@
 "status": "Ferdigbehandlet",
 "title": "Breivik"
 },
+"SP-2023-000649": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-R-0003 , H-FS-0006 , H-O-0012 , H-FS-0001 , H-FS-0026 , H-FS-0017 , H-FS-0037 , H-FS-0004 , H-O-0013 , H-FS-0040 , H-FS-0010 , H-FS-0014",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Vestland",
+"Innsendt": "23.11.2023",
+"Kapasitet": "1 560 tonn",
+"Kommune": "Bjørnafjorden",
+"Lokalitet": "Aldalen",
+"Lokalitetsnummer": "12067",
+"Maksimal månedlig fôring": "220 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 650 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 560 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "10 mnd"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 10,
+"feed_per_cycle_tonn": 1650,
+"max_monthly_feed_tonn": 220,
+"planned_production_tonn": 1560,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Aldalen"
+},
+"SP-2023-000650": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-L-0019 , H-ØN-0004 , H-R-0011 , H-R-0004 , H-ML-0001 , H-R-0008 , H-ØN-0001",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Vestland",
+"Innsendt": "30.11.2023",
+"Kapasitet": "2 340 tonn",
+"Kommune": "Kinn",
+"Lokalitet": "Silda",
+"Lokalitetsnummer": "39577",
+"Maksimal månedlig fôring": "530 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 499 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 900 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "16 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 16,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 4499,
+"max_monthly_feed_tonn": 530,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3900,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Silda"
+},
 "SP-2023-000651": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -466,6 +1580,72 @@
 },
 "status": "Ferdigbehandlet",
 "title": "Plomma"
+},
+"SP-2023-000652": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-L-0022 , F-NK-0023 , F-NK-0019 , F-NK-0020 , F-L-0025 , F-NK-0024 , F-KD-0001 , F-L-0026 , F-H-0003 , F-H-0019 , F-H-0032 , F-H-0009 , F-H-0017 , F-H-0033 , F-H-0023 , F-HV-0006 , F-NK-0022 , F-H-0018 , F-L-0033",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "05.08.2024",
+"Innsendt": "11.12.2023",
+"Kapasitet": "2 700 tonn",
+"Lokalitet": "Bergsnes V",
+"Lokalitetsnummer": "20396",
+"Maksimal månedlig fôring": "500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 970 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-08-05",
+"feed_per_cycle_tonn": 2970,
+"max_monthly_feed_tonn": 500,
+"planned_production_tonn": 2700,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Bergsnes V"
+},
+"SP-2023-000685": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-VV-0073 , N-VV-0006 , N-VV-0069 , N-VV-0005 , N-VV-0065 , N-VV-0068 , N-VV-0059",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "15.12.2023",
+"Kapasitet": "2 340 tonn",
+"Kommune": "Bodø",
+"Lokalitet": "Bjørnøya",
+"Lokalitetsnummer": "34997",
+"Maksimal månedlig fôring": "600 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 517 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "24 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 24,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 7200,
+"max_monthly_feed_tonn": 600,
+"mtb_tonn": 4517,
+"planned_production_tonn": 6000,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Bjørnøya"
 },
 "SP-2023-000686": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -497,6 +1677,164 @@
 "status": "Ferdigbehandlet",
 "title": "Kinnholmen"
 },
+"SP-2023-000687": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-F-0028 , NT-F-0033 , NT-F-0029",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "22.12.2023",
+"Kapasitet": "4 680 tonn",
+"Kommune": "Bindal",
+"Lokalitet": "Gåsflestaren",
+"Lokalitetsnummer": "39597",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 17,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 6700,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 4680,
+"planned_production_tonn": 6000,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Gåsflestaren"
+},
+"SP-2023-000688": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-A-0013 , M-FD-0006 , M-ST-0002 , M-SK-0001 , M-VD-0006 , M-NL-0004 , M-FD-0005 , M-A-0010 , M-NL-0003",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Møre og Romsdal",
+"Innsendt": "22.12.2023",
+"Kapasitet": "3 120 tonn",
+"Kommune": "Stranda",
+"Lokalitet": "Urdaneset",
+"Lokalitetsnummer": "45058",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Stadt til Hustadvika (Gul)",
+"Produksjonssykluslengde": "16 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 16,
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 1000,
+"planned_production_tonn": 6500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Returnert",
+"title": "Urdaneset"
+},
+"SP-2024-000689": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "R-SD-0033 , R-TV-0001 , R-SD-0003 , R-FD-0005 , R-R-0009 , R-SS-0017 , R-SD-0005 , R-SD-0011 , R-SD-0021 , R-SD-0001",
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Ferdigbehandlet": "06.08.2024",
+"Innsendt": "02.01.2024",
+"Kapasitet": "4 680 tonn",
+"Lokalitet": "Borgarliflot",
+"Lokalitetsnummer": "15796",
+"Maksimal månedlig fôring": "600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Ryfylket (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-08-06",
+"feed_per_cycle_tonn": 4200,
+"max_monthly_feed_tonn": 600,
+"planned_production_tonn": 3500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Borgarliflot"
+},
+"SP-2024-000690": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-T-0003 , H-K-0035 , H-E-0001 , H-T-0016 , H-B-0029 , H-T-0006 , H-B-0006 , H-K-0013 , H-T-0020",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "19.04.2024",
+"Innsendt": "02.01.2024",
+"Kapasitet": "780 tonn",
+"Lokalitet": "Dyrnes",
+"Lokalitetsnummer": "12128",
+"Maksimal månedlig fôring": "125 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "850 tonn",
+"Planlagt produksjon per produksjonssyklus": "700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-04-19",
+"feed_per_cycle_tonn": 850,
+"max_monthly_feed_tonn": 125,
+"planned_production_tonn": 700,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Dyrnes"
+},
+"SP-2024-000691": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-NR-0002 , NT-V-0001 , NT-V-0013 , NT-V-0027 , NT-V-0010",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "08.04.2026",
+"Innsendt": "05.01.2024",
+"Kapasitet": "4 500 tonn",
+"Lokalitet": "Kvingra",
+"Lokalitetsnummer": "36457",
+"Maksimal månedlig fôring": "1 300 tonn",
+"Maksimal tillatt biomasse (MTB)": "7 020 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 944 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 120 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"decided": "2026-04-08",
+"feed_per_cycle_tonn": 10944,
+"max_monthly_feed_tonn": 1300,
+"mtb_tonn": 7020,
+"planned_production_tonn": 9120,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Kvingra"
+},
 "SP-2024-000692": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -518,6 +1856,128 @@
 },
 "status": "Trukket",
 "title": "Leikvika"
+},
+"SP-2024-000693": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-H-0033 , F-NK-0020 , F-H-0019 , F-L-0022 , F-H-0032 , F-L-0026 , F-NK-0019 , F-NK-0024 , F-L-0025 , F-H-0009 , F-H-0017 , F-KD-0001 , F-NK-0023 , F-L-0033 , F-NK-0022 , F-HV-0006 , F-H-0003 , F-H-0023 , F-H-0018",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "18.10.2024",
+"Innsendt": "09.01.2024",
+"Kapasitet": "5 400 tonn",
+"Lokalitet": "Kleppenes N",
+"Lokalitetsnummer": "10828",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 400 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-10-18",
+"feed_per_cycle_tonn": 5940,
+"max_monthly_feed_tonn": 1000,
+"planned_production_tonn": 5400,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kleppenes N"
+},
+"SP-2024-000694": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-NK-0019 , F-L-0033 , F-H-0017 , F-NK-0023 , F-H-0018 , F-NK-0022 , F-HV-0006 , F-H-0019 , F-H-0023 , F-H-0032 , F-H-0033 , F-KD-0001 , F-H-0003 , F-H-0009 , F-L-0022 , F-NK-0024 , F-L-0025 , F-L-0026 , F-NK-0020",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "14.02.2025",
+"Innsendt": "09.01.2024",
+"Kapasitet": "1 800 tonn",
+"Lokalitet": "Storvika",
+"Lokalitetsnummer": "15461",
+"Maksimal månedlig fôring": "330 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 15,
+"decided": "2025-02-14",
+"feed_per_cycle_tonn": 2000,
+"max_monthly_feed_tonn": 330,
+"planned_production_tonn": 1800,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Storvika"
+},
+"SP-2024-000695": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-HR-0006 , N-HR-0010 , N-HR-0004 , N-HR-0003 , N-HR-0002 , N-HR-0012",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "15.01.2024",
+"Kapasitet": "4 680 tonn",
+"Kommune": "Alstahaug",
+"Lokalitet": "Bukkholmen",
+"Lokalitetsnummer": "27976",
+"Maksimal månedlig fôring": "500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 900 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 6900,
+"max_monthly_feed_tonn": 500,
+"planned_production_tonn": 6000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Bukkholmen"
+},
+"SP-2024-000696": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-H-0019 , M-AK-0002 , M-SM-0015 , M-G-0001 , M-SM-0001 , M-VD-0001",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "12.03.2025",
+"Innsendt": "15.01.2024",
+"Kapasitet": "4 680 tonn",
+"Lokalitet": "Røysa",
+"Lokalitetsnummer": "12298",
+"Maksimal månedlig fôring": "750 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Stadt til Hustadvika (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-03-12",
+"feed_per_cycle_tonn": 7000,
+"max_monthly_feed_tonn": 750,
+"mtb_tonn": 4680,
+"planned_production_tonn": 5800,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Røysa"
 },
 "SP-2024-000697": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -544,6 +2004,166 @@
 },
 "status": "Under behandling",
 "title": "Mindland"
+},
+"SP-2024-000698": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-L-0002 , N-L-0001 , N-R-0006 , N-DA-0077 , N-R-0001 , N-R-0008 , N-AH-0002 , N-AH-0001 , N-R-0030",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "11.07.2024",
+"Innsendt": "25.01.2024",
+"Kapasitet": "6 240 tonn",
+"Lokalitet": "Kokvika",
+"Lokalitetsnummer": "13764",
+"Maksimal månedlig fôring": "1 450 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-07-11",
+"feed_per_cycle_tonn": 10000,
+"max_monthly_feed_tonn": 1450,
+"planned_production_tonn": 8600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kokvika"
+},
+"SP-2024-000731": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-KF-0008 , T-KF-0007 , T-KF-0001 , T-BK-0001 , T-T-0019 , T-BK-0003 , T-H-0012 , T-SK-0004",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "20.05.2025",
+"Innsendt": "26.01.2024",
+"Kapasitet": "3 900 tonn",
+"Lokalitet": "Vestnes",
+"Lokalitetsnummer": "11385",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 280 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "9 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-05-20",
+"feed_per_cycle_tonn": 9000,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 6280,
+"planned_production_tonn": 7500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Vestnes"
+},
+"SP-2024-000732": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-F-0006 , NT-F-0026 , TR-F-0011 , ST-HE-0014 , TR-O-0002 , NT-F-0009 , TR-O-0001 , TR-O-0003 , M-FI-0002 , TR-AA-0007",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "07.06.2024",
+"Innsendt": "31.01.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Drevflesa",
+"Lokalitetsnummer": "36917",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 900 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 100 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "21 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 21,
+"decided": "2024-06-07",
+"feed_per_cycle_tonn": 8900,
+"max_monthly_feed_tonn": 1200,
+"planned_production_tonn": 8100,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Drevflesa"
+},
+"SP-2024-000735": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-Ø-0006 , N-H-0032 , N-VV-0007 , N-SO-0029 , N-H-0020",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "02.07.2025",
+"Innsendt": "31.01.2024",
+"Kapasitet": "4 680 tonn",
+"Lokalitet": "Langholmen N",
+"Lokalitetsnummer": "34637",
+"Maksimal månedlig fôring": "800 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 300 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-07-02",
+"feed_per_cycle_tonn": 6300,
+"max_monthly_feed_tonn": 800,
+"mtb_tonn": 4680,
+"planned_production_tonn": 5500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Langholmen N"
+},
+"SP-2024-000737": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SG-0037 , N-SG-0050 , N-SG-0005 , N-Ø-0018 , N-SG-0014 , N-SG-0049 , N-SG-0039 , N-SG-0003 , N-SG-0038 , N-Ø-0021",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "02.02.2024",
+"Kapasitet": "3 600 tonn",
+"Kommune": "Steigen",
+"Lokalitet": "Mulen",
+"Lokalitetsnummer": "45004",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "7 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 10500,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 7000,
+"planned_production_tonn": 9000,
+"result": "Avslått",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Mulen"
 },
 "SP-2024-000739": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -623,6 +2243,160 @@
 "status": "Trukket",
 "title": "Nord-Dønna"
 },
+"SP-2024-000742": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "R-V-0004 , R-F-0030 , R-ST-0001 , R-F-0001",
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Ferdigbehandlet": "10.12.2024",
+"Innsendt": "06.02.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Hettaneset",
+"Lokalitetsnummer": "26955",
+"Maksimal månedlig fôring": "67 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 060 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Ryfylket (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-12-10",
+"feed_per_cycle_tonn": 4060,
+"max_monthly_feed_tonn": 67,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3800,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Hettaneset"
+},
+"SP-2024-000775": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-H-0033 , F-A-0005 , F-HV-0006 , F-H-0003 , F-H-0023 , F-A-0038 , F-KD-0001 , F-L-0026 , F-NK-0024 , F-NK-0023 , F-L-0025 , F-H-0018 , F-L-0033 , F-H-0019 , F-L-0022 , TF-LA-0002 , F-H-0032 , F-NK-0019 , F-A-0009 , F-A-0060 , F-NK-0020 , F-L-0034 , F-NK-0042 , F-H-0017 , F-A-0032 , F-H-0009 , F-NK-0022",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "05.08.2024",
+"Innsendt": "07.02.2024",
+"Kapasitet": "2 700 tonn",
+"Lokalitet": "Mårsanjarga",
+"Lokalitetsnummer": "10814",
+"Maksimal månedlig fôring": "500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 970 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-08-05",
+"feed_per_cycle_tonn": 2970,
+"max_monthly_feed_tonn": 500,
+"planned_production_tonn": 2700,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Mårsanjarga"
+},
+"SP-2024-000808": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SO-0027 , N-SO-0022 , N-SO-0010 , N-SO-0004",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "12.05.2026",
+"Innsendt": "08.02.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Stretarneset",
+"Lokalitetsnummer": "22435",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 22,
+"decided": "2026-05-12",
+"feed_per_cycle_tonn": 5200,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3900,
+"planned_production_tonn": 4500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Stretarneset"
+},
+"SP-2024-000842": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SO-0004 , N-H-0032 , N-SO-0022 , N-SO-0027 , N-SO-0010",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "09.02.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Daljorda",
+"Lokalitetsnummer": "32497",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "20 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"feed_per_cycle_tonn": 5700,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 4000,
+"planned_production_tonn": 5000
+},
+"status": "Trukket",
+"title": "Daljorda"
+},
+"SP-2024-000843": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SO-0004 , N-H-0032 , N-SO-0022 , N-SO-0027 , N-SO-0010",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "22.04.2026",
+"Innsendt": "09.02.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Daljorda",
+"Lokalitetsnummer": "32497",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 20,
+"decided": "2026-04-22",
+"feed_per_cycle_tonn": 5700,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 4000,
+"planned_production_tonn": 5000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Daljorda"
+},
 "SP-2024-000844": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -648,6 +2422,404 @@
 },
 "status": "Ferdigbehandlet",
 "title": "21335 Floteneset"
+},
+"SP-2024-000845": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-G-0004 , T-G-0012 , T-G-0007 , T-T-0005",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "16.07.2024",
+"Innsendt": "14.02.2024",
+"Kapasitet": "5 500 tonn",
+"Lokalitet": "Kjøtta V",
+"Lokalitetsnummer": "32257",
+"Maksimal månedlig fôring": "600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 380 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 15,
+"decided": "2024-07-16",
+"feed_per_cycle_tonn": 6380,
+"max_monthly_feed_tonn": 600,
+"planned_production_tonn": 5800,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kjøtta V"
+},
+"SP-2024-000846": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0076 , T-T-0006 , T-T-0060 , TF-T-0005",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "02.09.2024",
+"Innsendt": "14.02.2024",
+"Kapasitet": "3 599 tonn",
+"Lokalitet": "Vengsøy",
+"Lokalitetsnummer": "35838",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-09-02",
+"feed_per_cycle_tonn": 4500,
+"max_monthly_feed_tonn": 1200,
+"planned_production_tonn": 3500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Vengsøy"
+},
+"SP-2024-000847": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-TN-0005 , T-D-0011 , T-G-0008 , T-D-0012 , T-D-0009 , T-D-0010 , T-D-0013 , T-TN-0001",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "24.09.2024",
+"Innsendt": "15.02.2024",
+"Kapasitet": "10 000 tonn",
+"Lokalitet": "Trettevik",
+"Lokalitetsnummer": "17077",
+"Maksimal månedlig fôring": "1 400 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-09-24",
+"feed_per_cycle_tonn": 11500,
+"max_monthly_feed_tonn": 1400,
+"planned_production_tonn": 10000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Trettevik"
+},
+"SP-2024-000884": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "M-A-0013 , M-FD-0006 , M-ST-0002 , M-SK-0001 , M-VD-0006 , M-NL-0004 , M-FD-0005 , M-A-0010 , M-NL-0003",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "08.04.2025",
+"Innsendt": "26.02.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Urdaneset",
+"Lokalitetsnummer": "45058",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 300 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Stadt til Hustadvika (Gul)",
+"Produksjonssykluslengde": "16 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 16,
+"decided": "2025-04-08",
+"feed_per_cycle_tonn": 7300,
+"max_monthly_feed_tonn": 1000,
+"planned_production_tonn": 5600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Urdaneset"
+},
+"SP-2024-000951": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "ST-H-0019 , ST-H-0045 , ST-H-0010 , ST-H-0046 , ST-H-0027 , ST-H-0018 , ST-H-0011 , ST-H-0003 , ST-H-0002 , ST-H-0022",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "07.11.2024",
+"Innsendt": "06.03.2024",
+"Kapasitet": "7 020 tonn",
+"Lokalitet": "Kjørsvikgrunn",
+"Lokalitetsnummer": "26135",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "12 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"decided": "2024-11-07",
+"feed_per_cycle_tonn": 12500,
+"max_monthly_feed_tonn": 1200,
+"planned_production_tonn": 10000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kjørsvikgrunn"
+},
+"SP-2024-000952": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-O-0010 , H-AV-0020 , H-O-0002 , H-AV-0024",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "06.02.2025",
+"Innsendt": "06.03.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Gulholmen",
+"Lokalitetsnummer": "24735",
+"Maksimal månedlig fôring": "540 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 400 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 20,
+"decided": "2025-02-06",
+"feed_per_cycle_tonn": 4000,
+"max_monthly_feed_tonn": 540,
+"planned_production_tonn": 3400,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Gulholmen"
+},
+"SP-2024-000953": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-VR-0001 , N-V-0016 , N-V-0010 , N-V-0023 , N-V-0001",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "13.02.2026",
+"Innsendt": "07.03.2024",
+"Kapasitet": "4 990 tonn",
+"Lokalitet": "Kalvhodet",
+"Lokalitetsnummer": "27996",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 990 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 17,
+"decided": "2026-02-13",
+"feed_per_cycle_tonn": 6500,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 4990,
+"planned_production_tonn": 5800,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kalvhodet"
+},
+"SP-2024-000954": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-L-0005 , T-S-0004 , T-KD-0003 , T-KN-0016 , T-L-0002 , T-S-0002 , T-KD-0001",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "11.03.2024",
+"Kapasitet": "3 600 tonn",
+"Kommune": "Gáivuotna",
+"Lokalitet": "Gourtesjouka",
+"Lokalitetsnummer": "10734",
+"Maksimal månedlig fôring": "660 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 600 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 4000,
+"max_monthly_feed_tonn": 660,
+"planned_production_tonn": 3600,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Gourtesjouka"
+},
+"SP-2024-001027": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-HV-0009 , F-HV-0003 , F-A-0011 , F-H-0020 , F-M-0046 , F-M-0047 , TF-A-0006 , F-H-0021 , TF-A-0008 , F-KD-0008 , F-M-0023 , F-L-0001 , TF-A-0007 , F-M-0048 , F-H-0022 , TF-A-0009 , F-KD-0032 , TF-A-0010 , F-M-0045",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "28.05.2025",
+"Innsendt": "21.03.2024",
+"Kapasitet": "8 505 tonn",
+"Lokalitet": "Bakfjorden",
+"Lokalitetsnummer": "45017",
+"Maksimal månedlig fôring": "2 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "12 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"decided": "2025-05-28",
+"feed_per_cycle_tonn": 12500,
+"max_monthly_feed_tonn": 2000,
+"planned_production_tonn": 10500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Bakfjorden"
+},
+"SP-2024-001060": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0065 , T-T-0008 , T-K-0002 , T-T-0001 , T-K-0004 , T-G-0010 , T-T-0015 , T-T-0010",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "28.04.2025",
+"Innsendt": "22.03.2024",
+"Kapasitet": "7 200 tonn",
+"Lokalitet": "Solheim",
+"Lokalitetsnummer": "27476",
+"Maksimal månedlig fôring": "1 870 tonn",
+"Maksimal tillatt biomasse (MTB)": "10 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 220 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 200 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-04-28",
+"feed_per_cycle_tonn": 11220,
+"max_monthly_feed_tonn": 1870,
+"mtb_tonn": 10200,
+"planned_production_tonn": 10200,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Solheim"
+},
+"SP-2024-001061": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0010 , T-K-0002 , T-T-0001 , T-K-0001 , T-T-0065 , T-T-0015 , T-T-0008 , T-TN-0017 , T-G-0010 , T-K-0004",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "08.05.2025",
+"Innsendt": "22.03.2024",
+"Kapasitet": "7 200 tonn",
+"Lokalitet": "Langås",
+"Lokalitetsnummer": "34457",
+"Maksimal månedlig fôring": "1 870 tonn",
+"Maksimal tillatt biomasse (MTB)": "10 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 220 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 200 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-05-08",
+"feed_per_cycle_tonn": 11220,
+"max_monthly_feed_tonn": 1870,
+"mtb_tonn": 10200,
+"planned_production_tonn": 10200,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Langås"
+},
+"SP-2024-001062": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-F-0010 , H-K-0039 , H-F-0007 , H-E-0005 , H-F-0011 , H-J-0005 , H-K-0037 , H-K-0028 , H-F-0008 , H-F-0009 , H-J-0004",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "06.02.2025",
+"Innsendt": "22.03.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Åkre",
+"Lokalitetsnummer": "10331",
+"Maksimal månedlig fôring": "550 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-02-06",
+"feed_per_cycle_tonn": 5600,
+"max_monthly_feed_tonn": 550,
+"planned_production_tonn": 5000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Åkre"
+},
+"SP-2024-001063": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-LN-0001 , N-LN-0018 , N-LN-0016",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "02.04.2024",
+"Kapasitet": "1 560 tonn",
+"Kommune": "Lødingen",
+"Lokalitet": "Fiskefjorden",
+"Lokalitetsnummer": "14796",
+"Maksimal månedlig fôring": "650 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 608 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 700 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "19 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 19,
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 650,
+"mtb_tonn": 2608,
+"planned_production_tonn": 4700,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Fiskefjorden"
 },
 "SP-2024-001064": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -693,6 +2865,98 @@
 "status": "Trukket",
 "title": "Ytre Djupvik"
 },
+"SP-2024-001066": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "H-R-0003 , H-FS-0006 , H-O-0012 , H-FS-0001 , H-FS-0026 , H-FS-0017 , H-FS-0037 , H-FS-0004 , H-O-0013 , H-FS-0040 , H-FS-0010 , H-FS-0014",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "06.02.2025",
+"Innsendt": "08.04.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Aldalen",
+"Lokalitetsnummer": "12067",
+"Maksimal månedlig fôring": "220 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 650 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 560 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Karmøy til Sotra (Rød)",
+"Produksjonssykluslengde": "10 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 10,
+"decided": "2025-02-06",
+"feed_per_cycle_tonn": 1650,
+"max_monthly_feed_tonn": 220,
+"planned_production_tonn": 1560,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Aldalen"
+},
+"SP-2024-001067": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "NT-F-0028 , NT-F-0033 , NT-F-0029",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "09.04.2025",
+"Innsendt": "10.04.2024",
+"Kapasitet": "3 120 tonn",
+"Lokalitet": "Djuptaren",
+"Lokalitetsnummer": "37177",
+"Maksimal månedlig fôring": "1 300 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-04-09",
+"feed_per_cycle_tonn": 8800,
+"max_monthly_feed_tonn": 1300,
+"planned_production_tonn": 8000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Djuptaren"
+},
+"SP-2024-001068": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-G-0066 , N-G-0067 , N-L-0060 , N-HR-0069 , N-L-0011 , N-L-0061 , N-L-0071 , N-G-0064 , N-G-0063 , N-R-0048 , N-L-0045 , N-BØ-0002 , N-L-0072 , N-L-0059 , N-L-0069 , N-R-0002 , N-L-0008 , N-R-0013",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "19.02.2026",
+"Innsendt": "10.04.2024",
+"Kapasitet": "4 850 tonn",
+"Lokalitet": "Måvær",
+"Lokalitetsnummer": "38517",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 250 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2026-02-19",
+"feed_per_cycle_tonn": 11250,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 6240,
+"planned_production_tonn": 10000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Måvær"
+},
 "SP-2024-001069": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -718,6 +2982,98 @@
 },
 "status": "Returnert",
 "title": "Tømmerhella"
+},
+"SP-2024-001077": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "F-LB-0011 , F-LB-0010",
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "10.04.2026",
+"Innsendt": "18.04.2024",
+"Kapasitet": "6 000 tonn",
+"Lokalitet": "Hovdenakken",
+"Lokalitetsnummer": "13337",
+"Maksimal månedlig fôring": "1 100 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 900 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vest-Finnmark (Grønn)",
+"Produksjonssykluslengde": "19 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 19,
+"decided": "2026-04-10",
+"feed_per_cycle_tonn": 6900,
+"max_monthly_feed_tonn": 1100,
+"mtb_tonn": 6000,
+"planned_production_tonn": 6000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Hovdenakken"
+},
+"SP-2024-001118": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "T-T-0081 , T-TN-0015 , T-N-0010 , T-T-0078 , T-T-0085 , T-TN-0008 , T-N-0005 , T-T-0080 , T-T-0079 , T-N-0014 , T-T-0084 , T-N-0003 , T-T-0083 , T-T-0082",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Ferdigbehandlet": "13.02.2025",
+"Innsendt": "26.04.2024",
+"Kapasitet": "10 000 tonn",
+"Lokalitet": "Larstangen",
+"Lokalitetsnummer": "37297",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 200 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-02-13",
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 1000,
+"planned_production_tonn": 7200,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Larstangen"
+},
+"SP-2024-001119": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-SG-0038 , N-V-0005 , N-H-0015 , N-V-0058 , N-SG-0037 , N-SG-0039",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "06.09.2024",
+"Innsendt": "29.04.2024",
+"Kapasitet": "4 680 tonn",
+"Lokalitet": "Hallvardøy",
+"Lokalitetsnummer": "11318",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 17,
+"decided": "2024-09-06",
+"feed_per_cycle_tonn": 7500,
+"max_monthly_feed_tonn": 1000,
+"planned_production_tonn": 6500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Hallvardøy"
 },
 "SP-2024-001121": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -746,6 +3102,42 @@
 "status": "Trukket",
 "title": "Ørjavik"
 },
+"SP-2024-001126": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "ST-H-0025 , ST-F-0032 , ST-F-0029 , ST-H-0020 , ST-H-0014 , ST-H-0005",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "01.07.2026",
+"Fylke": "Trøndelag",
+"Innsendt": "06.05.2024",
+"Kapasitet": "4 680 tonn",
+"Kommune": "Hitra",
+"Lokalitet": "Heggvika",
+"Lokalitetsnummer": "13503",
+"Maksimal månedlig fôring": "652 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 255 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 203 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 22,
+"decided": "2026-07-01",
+"feed_per_cycle_tonn": 6255,
+"max_monthly_feed_tonn": 652,
+"mtb_tonn": 4680,
+"planned_production_tonn": 5203,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Heggvika"
+},
 "SP-2024-001127": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -763,6 +3155,68 @@
 },
 "status": "Ferdigbehandlet",
 "title": "Økernveien 94"
+},
+"SP-2024-001160": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-VV-0071 , N-VV-0074 , N-VV-0003 , N-VV-0070",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "10.05.2024",
+"Kapasitet": "780 tonn",
+"Kommune": "Vestvågøy",
+"Lokalitet": "Sandholman",
+"Lokalitetsnummer": "20096",
+"Maksimal månedlig fôring": "258 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 716 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 560 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 1716,
+"max_monthly_feed_tonn": 258,
+"mtb_tonn": 1560,
+"planned_production_tonn": 1560,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Sandholman"
+},
+"SP-2024-001193": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-VV-0074 , N-VV-0071 , N-VV-0003 , N-VV-0070",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "02.01.2025",
+"Innsendt": "10.05.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Geiterøya i",
+"Lokalitetsnummer": "11198",
+"Maksimal månedlig fôring": "258 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "1 716 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 560 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2025-01-02",
+"feed_per_cycle_tonn": 1716,
+"max_monthly_feed_tonn": 258,
+"planned_production_tonn": 1560,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Geiterøya i"
 },
 "SP-2024-001195": {
 "fetched_at": "2026-09-21T08:49:12Z",
@@ -832,6 +3286,36 @@
 "status": "Ferdigbehandlet",
 "title": "Klovningen"
 },
+"SP-2024-001200": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "SF-V-0017 , SF-GP-0006",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "27.01.2025",
+"Innsendt": "16.05.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Haneholmen",
+"Lokalitetsnummer": "31577",
+"Maksimal månedlig fôring": "380 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 17,
+"decided": "2025-01-27",
+"feed_per_cycle_tonn": 3500,
+"max_monthly_feed_tonn": 380,
+"planned_production_tonn": 3000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Haneholmen"
+},
 "SP-2024-001202": {
 "fetched_at": "2026-09-21T08:49:12Z",
 "fields": {
@@ -855,6 +3339,38 @@
 },
 "status": "Trukket",
 "title": "Myklebust"
+},
+"SP-2024-001280": {
+"fetched_at": "2026-09-21T14:15:26Z",
+"fields": {
+"Aktive tillatelser": "N-HM-0009 , N-SG-0066 , N-SG-0041 , N-SG-0003 , N-SG-0049 , N-SG-0014 , N-SG-0064 , N-SG-0044 , N-SG-0039 , N-SG-0065 , N-SG-0037 , N-SG-0042 , N-SG-0043 , N-SG-0005 , N-SG-0063 , N-SG-0038 , N-SG-0045 , N-SG-0050",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "31.05.2024",
+"Kapasitet": "5 460 tonn",
+"Kommune": "Steigen",
+"Lokalitet": "Hjartøy Ø",
+"Lokalitetsnummer": "13931",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "7 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 10500,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 7000,
+"planned_production_tonn": 9000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Hjartøy Ø"
 },
 "SP-2024-001281": {
 "fetched_at": "2026-09-21T08:49:12Z",
