@@ -1,4 +1,1405 @@
 {
+"SP-2023-000317": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "21.03.2024",
+"Innsendt": "09.08.2023",
+"Maksimal månedlig fôring": "750 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 12,
+"decided": "2024-03-21",
+"feed_per_cycle_tonn": 4000,
+"max_monthly_feed_tonn": 750,
+"mtb_tonn": 2340,
+"planned_production_tonn": 3500,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Brandaskuta"
+},
+"SP-2023-000319": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Innsendt": "11.08.2023",
+"Maksimal månedlig fôring": "300 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 2500,
+"max_monthly_feed_tonn": 300,
+"mtb_tonn": 1560,
+"planned_production_tonn": 2000
+},
+"status": "Trukket",
+"title": "Lelandsholmen"
+},
+"SP-2023-000323": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "25.08.2023",
+"Kommune": "Skjervøy",
+"Maksimal månedlig fôring": "1 320 tonn",
+"Maksimal tillatt biomasse (MTB)": "7 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 8800,
+"max_monthly_feed_tonn": 1320,
+"mtb_tonn": 7200,
+"planned_production_tonn": 8000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Bjørnvika"
+},
+"SP-2023-000360": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "20.07.2026",
+"Fylke": "Nordland",
+"Innsendt": "07.09.2023",
+"Kommune": "Brønnøy",
+"Maksimal månedlig fôring": "750 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 300 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2026-07-20",
+"feed_per_cycle_tonn": 6000,
+"max_monthly_feed_tonn": 750,
+"mtb_tonn": 3600,
+"planned_production_tonn": 5300,
+"result": "Avslått",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Lyngøy Øst"
+},
+"SP-2023-000364": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "14.09.2023",
+"Kommune": "Rødøy",
+"Maksimal månedlig fôring": "350 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 3450,
+"max_monthly_feed_tonn": 350,
+"mtb_tonn": 2340,
+"planned_production_tonn": 3000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Langstranda"
+},
+"SP-2023-000605": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Ferdigbehandlet": "29.10.2025",
+"Innsendt": "02.11.2023",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 290 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 600 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-10-29",
+"feed_per_cycle_tonn": 5290,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3599,
+"planned_production_tonn": 4600,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Store Svartholet"
+},
+"SP-2023-000608": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "13.08.2024",
+"Innsendt": "07.11.2023",
+"Maksimal månedlig fôring": "850 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 17,
+"decided": "2024-08-13",
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 850,
+"mtb_tonn": 6240,
+"planned_production_tonn": 7000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Kya"
+},
+"SP-2023-000647": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Rogaland",
+"Innsendt": "17.11.2023",
+"Kommune": "Stavanger",
+"Maksimal månedlig fôring": "400 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 340 tonn",
+"Produksjonssykluslengde": "12 mnd"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 12,
+"feed_per_cycle_tonn": 2800,
+"max_monthly_feed_tonn": 400,
+"mtb_tonn": 2340,
+"planned_production_tonn": 2340,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Langholmen"
+},
+"SP-2023-000648": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Ferdigbehandlet": "06.01.2025",
+"Innsendt": "21.11.2023",
+"Maksimal månedlig fôring": "650 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 300 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-01-06",
+"feed_per_cycle_tonn": 5000,
+"max_monthly_feed_tonn": 650,
+"mtb_tonn": 3600,
+"planned_production_tonn": 4300,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Breivik"
+},
+"SP-2023-000651": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "09.04.2025",
+"Innsendt": "07.12.2023",
+"Maksimal månedlig fôring": "850 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 17,
+"decided": "2025-04-09",
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 850,
+"mtb_tonn": 6240,
+"planned_production_tonn": 7000,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Plomma"
+},
+"SP-2023-000686": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "03.09.2026",
+"Fylke": "Nordland",
+"Innsendt": "18.12.2023",
+"Kommune": "Sortland",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 20,
+"decided": "2026-09-03",
+"feed_per_cycle_tonn": 5700,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 4000,
+"planned_production_tonn": 5000,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Kinnholmen"
+},
+"SP-2024-000692": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Innsendt": "08.01.2024",
+"Maksimal månedlig fôring": "224 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 290 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 2290,
+"max_monthly_feed_tonn": 224,
+"mtb_tonn": 1560,
+"planned_production_tonn": 2000
+},
+"status": "Trukket",
+"title": "Leikvika"
+},
+"SP-2024-000697": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "16.01.2024",
+"Kommune": "Alstahaug",
+"Maksimal månedlig fôring": "550 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 450 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 3800,
+"max_monthly_feed_tonn": 550,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3450,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Mindland"
+},
+"SP-2024-000739": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "05.02.2024",
+"Kommune": "Sømna",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 750 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 5750,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3900,
+"planned_production_tonn": 5000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Sømnesøya"
+},
+"SP-2024-000740": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "18.06.2026",
+"Fylke": "Nordland",
+"Innsendt": "05.02.2024",
+"Kommune": "Herøy",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2026-06-18",
+"feed_per_cycle_tonn": 5000,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3599,
+"planned_production_tonn": 3599,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Skipbåtsvær"
+},
+"SP-2024-000741": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "05.02.2024",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 5000,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3599,
+"planned_production_tonn": 3599
+},
+"status": "Trukket",
+"title": "Nord-Dønna"
+},
+"SP-2024-000844": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "26.02.2024",
+"Innsendt": "13.02.2024",
+"Maksimal månedlig fôring": "1 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "94 tonn",
+"Planlagt produksjon per produksjonssyklus": "94 tonn",
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 12,
+"decided": "2024-02-26",
+"feed_per_cycle_tonn": 94,
+"max_monthly_feed_tonn": 1,
+"mtb_tonn": 1560,
+"planned_production_tonn": 94,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "21335 Floteneset"
+},
+"SP-2024-001064": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "05.04.2024",
+"Maksimal månedlig fôring": "350 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 056 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 4461,
+"max_monthly_feed_tonn": 350,
+"mtb_tonn": 3120,
+"planned_production_tonn": 4056
+},
+"status": "Trukket",
+"title": "Skjellnes"
+},
+"SP-2024-001065": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "05.04.2024",
+"Maksimal månedlig fôring": "350 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 056 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 4461,
+"max_monthly_feed_tonn": 350,
+"mtb_tonn": 3120,
+"planned_production_tonn": 4056
+},
+"status": "Trukket",
+"title": "Ytre Djupvik"
+},
+"SP-2024-001069": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "11.04.2024",
+"Kommune": "Meløy",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 7200,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 3900,
+"planned_production_tonn": 6000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Returnert",
+"title": "Tømmerhella"
+},
+"SP-2024-001121": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Aktive tillatelser": "M-EE-0006 , M-EE-0010",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Innsendt": "30.04.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Ørjavik",
+"Lokalitetsnummer": "12919",
+"Maksimal månedlig fôring": "250 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 900 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 100 tonn",
+"Plassering": "Sjø",
+"Produksjonssykluslengde": "42 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 42,
+"feed_per_cycle_tonn": 3900,
+"max_monthly_feed_tonn": 250,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3100
+},
+"status": "Trukket",
+"title": "Ørjavik"
+},
+"SP-2024-001127": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Oslo kommune",
+"Ferdigbehandlet": "09.12.2025",
+"Innsendt": "06.05.2024",
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Oslo kommune",
+"cycle_months": 12,
+"decided": "2025-12-09",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Økernveien 94"
+},
+"SP-2024-001195": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "12.02.2026",
+"Innsendt": "13.05.2024",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2026-02-12",
+"feed_per_cycle_tonn": 5000,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3599,
+"planned_production_tonn": 3599,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Nord-Dønna"
+},
+"SP-2024-001198": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "03.09.2026",
+"Innsendt": "15.05.2024",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"decided": "2026-09-03",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Eksisterende Lokalitet - Naustholmen Ø"
+},
+"SP-2024-001199": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "20.08.2024",
+"Innsendt": "15.05.2024",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "14 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 14,
+"decided": "2024-08-20",
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 2433,
+"planned_production_tonn": 4000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Klovningen"
+},
+"SP-2024-001202": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Innsendt": "16.05.2024"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune"
+},
+"status": "Trukket",
+"title": "Myklebust"
+},
+"SP-2024-001203": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Innsendt": "16.05.2024"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune"
+},
+"status": "Trukket",
+"title": "Myklebust"
+},
+"SP-2024-001281": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "31.05.2024",
+"Kommune": "Gratangen",
+"Maksimal månedlig fôring": "253 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 564 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 331 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 2564,
+"max_monthly_feed_tonn": 253,
+"mtb_tonn": 2340,
+"planned_production_tonn": 2331,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Ikke Relevant DA det Søkes om Forlengelse av Fou Tillatelser"
+},
+"SP-2024-001364": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "08.07.2025",
+"Innsendt": "19.06.2024",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "14 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 14,
+"decided": "2025-07-08",
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 2433,
+"planned_production_tonn": 4000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Tuvaodden"
+},
+"SP-2024-001368": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "21.08.2025",
+"Innsendt": "21.06.2024",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"decided": "2025-08-21",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kvalnes"
+},
+"SP-2024-001370": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Aktive tillatelser": "M-EE-0006 , M-EE-0010",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "04.06.2025",
+"Innsendt": "25.06.2024",
+"Kapasitet": "1 560 tonn",
+"Lokalitet": "Ørjavik",
+"Lokalitetsnummer": "12919",
+"Maksimal månedlig fôring": "125 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 600 tonn",
+"Plassering": "Sjø",
+"Produksjonssykluslengde": "50 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 50,
+"decided": "2025-06-04",
+"feed_per_cycle_tonn": 2000,
+"max_monthly_feed_tonn": 125,
+"mtb_tonn": 1560,
+"planned_production_tonn": 1600,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Ørjavik"
+},
+"SP-2024-001378": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "05.07.2024",
+"Kommune": "Gáivuotna",
+"Maksimal månedlig fôring": "0 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 tonn",
+"Produksjonssykluslengde": "12 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 12,
+"feed_per_cycle_tonn": 0,
+"max_monthly_feed_tonn": 0,
+"mtb_tonn": 1,
+"planned_production_tonn": 1,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Returnert",
+"title": "Gambukta"
+},
+"SP-2024-001379": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "11.09.2026",
+"Fylke": "Vestland",
+"Innsendt": "05.07.2024",
+"Kommune": "Bergen",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"decided": "2026-09-11",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Dokken"
+},
+"SP-2024-001425": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Torsk",
+"Fylke": "Nordland",
+"Innsendt": "07.08.2024",
+"Kommune": "Flakstad",
+"Maksimal månedlig fôring": "300 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 4318,
+"max_monthly_feed_tonn": 300,
+"mtb_tonn": 3599,
+"planned_production_tonn": 3599,
+"species": "Torsk"
+},
+"status": "Under behandling",
+"title": "Veggen"
+},
+"SP-2024-001428": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "09.08.2024",
+"Maksimal månedlig fôring": "300 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 318 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 599 tonn",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 4318,
+"max_monthly_feed_tonn": 300,
+"mtb_tonn": 3599,
+"planned_production_tonn": 3599
+},
+"status": "Trukket",
+"title": "Selfjord"
+},
+"SP-2024-001429": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "09.08.2024",
+"Maksimal månedlig fôring": "400 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 040 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 200 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 5040,
+"max_monthly_feed_tonn": 400,
+"mtb_tonn": 3000,
+"planned_production_tonn": 4200
+},
+"status": "Trukket",
+"title": "Fransvika"
+},
+"SP-2024-001430": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "18.06.2025",
+"Innsendt": "13.08.2024",
+"Maksimal månedlig fôring": "500 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-06-18",
+"feed_per_cycle_tonn": 4500,
+"max_monthly_feed_tonn": 500,
+"mtb_tonn": 3900,
+"planned_production_tonn": 3500,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Senoksen"
+},
+"SP-2024-001433": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "27.10.2025",
+"Innsendt": "16.08.2024",
+"Maksimal månedlig fôring": "1 200 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"decided": "2025-10-27",
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 1200,
+"mtb_tonn": 3120,
+"planned_production_tonn": 5000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Gjesværet"
+},
+"SP-2024-001548": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Innsendt": "20.09.2024",
+"Maksimal månedlig fôring": "990 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 400 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 5940,
+"max_monthly_feed_tonn": 990,
+"mtb_tonn": 5400,
+"planned_production_tonn": 5400
+},
+"status": "Trukket",
+"title": "Salttjern"
+},
+"SP-2024-001549": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Finnmark",
+"Innsendt": "20.09.2024",
+"Kommune": "Vadsø",
+"Maksimal månedlig fôring": "990 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 940 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 400 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 5940,
+"max_monthly_feed_tonn": 990,
+"mtb_tonn": 5400,
+"planned_production_tonn": 5400,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Sandskjæret"
+},
+"SP-2024-001553": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "24.09.2024",
+"Kommune": "Moskenes",
+"Maksimal månedlig fôring": "277 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 660 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 660 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 2000,
+"max_monthly_feed_tonn": 277,
+"mtb_tonn": 1660,
+"planned_production_tonn": 1660,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Torshaugen"
+},
+"SP-2024-001622": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "14.09.2025",
+"Innsendt": "26.09.2024",
+"Maksimal månedlig fôring": "800 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 15,
+"decided": "2025-09-14",
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 800,
+"mtb_tonn": 4680,
+"planned_production_tonn": 5000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Buskjæret"
+},
+"SP-2024-001623": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "18.06.2026",
+"Fylke": "Møre og Romsdal",
+"Innsendt": "26.09.2024",
+"Kommune": "Haram",
+"Maksimal månedlig fôring": "800 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 15,
+"decided": "2026-06-18",
+"feed_per_cycle_tonn": 5500,
+"max_monthly_feed_tonn": 800,
+"mtb_tonn": 4680,
+"planned_production_tonn": 5000,
+"result": "Innvilget",
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Ferdigbehandlet",
+"title": "Haram"
+},
+"SP-2024-001624": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Innsendt": "29.09.2024",
+"Maksimal månedlig fôring": "190 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 400 tonn",
+"Produksjonssykluslengde": "60 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 60,
+"feed_per_cycle_tonn": 3000,
+"max_monthly_feed_tonn": 190,
+"mtb_tonn": 2340,
+"planned_production_tonn": 2400
+},
+"status": "Trukket",
+"title": "Storvika"
+},
+"SP-2024-001628": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Fylke": "Trøndelag",
+"Innsendt": "01.10.2024",
+"Kommune": "Indre Fosen"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune"
+},
+"status": "Returnert",
+"title": "Vanvikan"
+},
+"SP-2024-001639": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "14.10.2024",
+"Maksimal månedlig fôring": "400 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 652 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 800 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 4500,
+"max_monthly_feed_tonn": 400,
+"mtb_tonn": 2652,
+"planned_production_tonn": 3800
+},
+"status": "Trukket",
+"title": "Fransvika"
+},
+"SP-2024-001640": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Innsendt": "15.10.2024",
+"Maksimal månedlig fôring": "277 tonn",
+"Maksimal tillatt biomasse (MTB)": "1 660 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "1 660 tonn",
+"Produksjonssykluslengde": "15 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 15,
+"feed_per_cycle_tonn": 2000,
+"max_monthly_feed_tonn": 277,
+"mtb_tonn": 1660,
+"planned_production_tonn": 1660
+},
+"status": "Trukket",
+"title": "Torshaugen"
+},
+"SP-2024-001655": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Innlandet fylkeskommune",
+"Innsendt": "01.11.2024"
+},
+"norm": {
+"case_handler": "Innlandet fylkeskommune"
+},
+"status": "Trukket",
+"title": "Kleivi Biopark"
+},
+"SP-2024-001659": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "02.10.2025",
+"Innsendt": "06.11.2024",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"decided": "2025-10-02",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Smedvågen II"
+},
+"SP-2024-001661": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "12.11.2025",
+"Innsendt": "08.11.2024",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"decided": "2025-11-12",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Videild"
+},
+"SP-2024-001673": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Fylke": "Trøndelag",
+"Innsendt": "22.11.2024",
+"Kommune": "Steinkjer"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune"
+},
+"status": "Under behandling",
+"title": "45116 Tjuin"
+},
+"SP-2024-001675": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "02.07.2025",
+"Innsendt": "27.11.2024",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"decided": "2025-07-02",
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Storevatn"
+},
+"SP-2024-001685": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "27.02.2025",
+"Innsendt": "09.12.2024",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"decided": "2025-02-27",
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Strømsnes"
+},
+"SP-2024-001697": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "07.05.2025",
+"Innsendt": "17.12.2024",
+"Maksimal månedlig fôring": "100 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 12,
+"decided": "2025-05-07",
+"feed_per_cycle_tonn": 4000,
+"max_monthly_feed_tonn": 100,
+"mtb_tonn": 3599,
+"planned_production_tonn": 4000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Sandholmtaren"
+},
+"SP-2024-001699": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "09.02.2026",
+"Innsendt": "17.12.2024",
+"Maksimal månedlig fôring": "700 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 433 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "14 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 14,
+"decided": "2026-02-09",
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 700,
+"mtb_tonn": 2433,
+"planned_production_tonn": 4000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Lyngtaren"
+},
+"SP-2024-001701": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Art": "Kveite",
+"Fylke": "Vestland",
+"Innsendt": "19.12.2024",
+"Kommune": "Fitjar",
+"Maksimal månedlig fôring": "250 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 840 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 800 tonn",
+"Produksjonssykluslengde": "48 mnd"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 48,
+"feed_per_cycle_tonn": 8840,
+"max_monthly_feed_tonn": 250,
+"mtb_tonn": 2340,
+"planned_production_tonn": 6800,
+"species": "Kveite"
+},
+"status": "Under behandling",
+"title": "Natterøy"
+},
+"SP-2024-001702": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Ferdigbehandlet": "29.04.2025",
+"Innsendt": "19.12.2024",
+"Maksimal månedlig fôring": "950 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 120 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 18,
+"decided": "2025-04-29",
+"feed_per_cycle_tonn": 3800,
+"max_monthly_feed_tonn": 950,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3120,
+"result": "Innvilget"
+},
+"status": "Ferdigbehandlet",
+"title": "Kjeringeholmen"
+},
+"SP-2025-001715": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Ferdigbehandlet": "09.02.2026",
+"Innsendt": "14.01.2025",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 18,
+"decided": "2026-02-09",
+"feed_per_cycle_tonn": 7700,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 5460,
+"planned_production_tonn": 7000,
+"result": "Avslått"
+},
+"status": "Ferdigbehandlet",
+"title": "Lyngtaren"
+},
+"SP-2025-001718": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Aktive tillatelser": "TF-I-0005 , TF-I-0007 , TF-I-0004 , TF-I-0008 , TF-I-0006",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Torsk",
+"Fylke": "Troms",
+"Innsendt": "16.01.2025",
+"Kapasitet": "3 600 tonn",
+"Kommune": "Ibestad",
+"Lokalitet": "Forså",
+"Lokalitetsnummer": "45098",
+"Maksimal månedlig fôring": "1 100 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+"Plassering": "Sjø",
+"Produksjonssykluslengde": "24 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 24,
+"feed_per_cycle_tonn": 6600,
+"max_monthly_feed_tonn": 1100,
+"mtb_tonn": 5460,
+"planned_production_tonn": 6000,
+"species": "Torsk"
+},
+"status": "Under behandling",
+"title": "Forså"
+},
+"SP-2025-001787": {
+"fetched_at": "2026-09-21T08:49:12Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Art": "Kveite",
+"Fylke": "Møre og Romsdal",
+"Innsendt": "04.02.2025",
+"Kommune": "Aure",
+"Maksimal månedlig fôring": "190 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 400 tonn",
+"Produksjonssykluslengde": "60 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 60,
+"feed_per_cycle_tonn": 3000,
+"max_monthly_feed_tonn": 190,
+"mtb_tonn": 2340,
+"planned_production_tonn": 2400,
+"species": "Kveite"
+},
+"status": "Under behandling",
+"title": "Storvika"
+},
 "SP-2025-001824": {
 "fetched_at": "2026-09-21T07:44:53Z",
 "fields": {
