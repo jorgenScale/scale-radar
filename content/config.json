@@ -205,6 +205,19 @@
       "keep_days": 90,
       "result_window_days": 60,
       "recent_days_on_page": 30
+    },
+    "einnsyn": {
+      "_comment": "Saksgang fra eInnsyn (api.einnsyn.no, åpent for lesing). Én spørring per søknad, cache i data/einnsyn.json, én fil per søknad i data/einnsyn/<id>.json for tidslinjen på siden.",
+      "enabled": true,
+      "api": "https://api.einnsyn.no/search",
+      "web": "https://einnsyn.no",
+      "max_per_run": 100,
+      "refresh_days_active": 1,
+      "refresh_days_closed": 30,
+      "pause_seconds": 0.3,
+      "limit": 100,
+      "days_before_submitted": 60,
+      "max_posts_per_application": 60
     }
   },
   "site": {

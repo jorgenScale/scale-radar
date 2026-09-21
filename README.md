@@ -30,6 +30,7 @@ Deretter kjører oppdateringen selv, 17 minutter over hver hele time (UTC).
 | endre kilde/søknadstyper for lokalitetssøknader | `content/config.json` → `applications` (`apptypes` per fane) |
 | e-postabonnement på søkere (sentral utsending) | `content/subscriptions.json` + SMTP-secrets (se under) |
 | justere henting av detaljsider (antall per kjøring, oppfrisking) | `content/config.json` → `applications.details` |
+| justere saksgang fra eInnsyn (antall per kjøring, oppfrisking) | `content/config.json` → `applications.einnsyn` |
 | endre utseende, tekster, søknadsprosessen  | `index.html`                  |
 
 Skriptet er tolerant: feiler én kilde, beholdes forrige verdi for den kilden og status vises på siden.
@@ -46,6 +47,18 @@ Ingen tall anslås – manglende kurser vises som strek.
   først, inntil 60 sider per kjøring. Eksporten mangler produksjonsområde.
 - Kartet bruker Kartverkets åpne bakgrunnskart og Leaflet fra cdnjs.
 - Nasdaq Salmon Index og Akvakulturregisteret (nye/endrede tillatelser) er neste kilder å koble på.
+
+## Saksgang fra eInnsyn
+
+For hver søknad søker skriptet i eInnsyns åpne API (`api.einnsyn.no/search`) på lokalitetsnavn og søker,
+avgrenset til perioden etter innsendt dato. Treff krever at lokalitetsnavnet står i tittelen; øvrige
+journalposter i samme saksmappe tas også med. Resultatet lagres i `data/einnsyn.json` (cache) og én fil per
+søknad i `data/einnsyn/<søknadsnummer>.json`, som siden laster når raden åpnes. Saker under behandling
+friskes opp daglig, avsluttede hver 30. dag, inntil 100 spørringer per kjøring.
+
+Journalpostene klassifiseres regelbasert til saksgangssteg (kommune, Mattilsynet, Statsforvalteren,
+Kystverket, Fiskeridirektoratet, vedtak fylkeskommune, klage). Kommunene er i hovedsak ikke på eInnsyn,
+så det kommunale steget ses stort sett via fylkeskommunens post.
 
 ## Følg en søker (abonnement)
 

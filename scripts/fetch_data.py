@@ -14,7 +14,7 @@ from __future__ import annotations
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -341,6 +341,12 @@ def fetch_applications() -> dict:
         except Exception as exc:  # noqa: BLE001
             log(f"detaljer: FEIL {exc}")
             out["details_error"] = str(exc)[:160]
+    if acfg.get("einnsyn", {}).get("enabled", False):
+        try:
+            enrich_einnsyn(out)
+        except Exception as exc:  # noqa: BLE001
+            log(f"einnsyn: FEIL {exc}")
+            out["einnsyn_error"] = str(exc)[:160]
     return out
 
 
@@ -465,6 +471,210 @@ def enrich_details(apps: dict) -> None:
         "fetched_now": fetched,
     }
 
+
+
+# --------------------------------------------------------------------------- saksgang fra eInnsyn
+EINNSYN_CACHE = ROOT / "data" / "einnsyn.json"
+EINNSYN_DIR = ROOT / "data" / "einnsyn"
+
+STEP_RULES = [
+    # (nøkkel, etikett, regex på etat/avsender/mottaker, regex på tittel) – første regel som treffer gjelder
+    ("klage",          "Klage",                  None,                                  r"\bklage"),
+    ("mattilsynet",    "Mattilsynet",            r"mattilsynet",                         None),
+    ("statsforvalter", "Statsforvalteren",       r"statsforvalter|fylkesmann",           None),
+    ("kystverket",     "Kystverket",             r"kystverket",                          None),
+    ("fiskeridir",     "Fiskeridirektoratet",    r"fiskeridirektoratet",                 None),
+    ("kommune",        "Kommunen",               r"(?<!fylkes)kommune",                  r"offentlig ettersyn|høring|utlegging|kunngjøring|kommunal uttalelse|kommunen"),
+    ("vedtak",         "Vedtak fylkeskommune",   r"fylkeskommune",                       r"vedtak|tillatelse|godkjenn|avslag|avslår|innvilg|klarering"),
+]
+
+
+def applicant_core(name: str) -> str:
+    """'Måsøval Lisens AS' -> 'Måsøval'. Første betydningsfulle ord, uten selskapsform."""
+    import re
+    words = [w for w in re.split(r"\s+", (name or "").strip()) if w]
+    stop = {"as", "asa", "sa", "da", "ans", "ba", "holding", "group", "norway", "aquaculture", "seafood", "farming", "havbruk", "oppdrett", "sjø", "lisens", "salmon"}
+    for w in words:
+        if w.lower().strip("().,") not in stop and len(w) > 2:
+            return w.strip("().,")
+    return words[0] if words else ""
+
+
+def classify_steps(posts: list[dict]) -> dict:
+    import re
+    steps: dict[str, dict] = {}
+    for p in sorted(posts, key=lambda x: x.get("date") or ""):
+        who = " ".join(filter(None, [p.get("enhet")] + p.get("from", []) + p.get("to", []))).lower()
+        title = (p.get("title") or "").lower()
+        for key, label, who_rx, title_rx in STEP_RULES:
+            hit = False
+            if key == "klage":
+                hit = bool(re.search(title_rx, title))
+            elif key == "kommune":
+                hit = bool(re.search(who_rx, who)) or bool(re.search(title_rx, title))
+            elif key == "vedtak":
+                hit = bool(re.search(who_rx, who)) and bool(re.search(title_rx, title)) and p.get("type") == "ut"
+            else:
+                hit = bool(re.search(who_rx, who))
+            if hit:
+                st = steps.setdefault(key, {"label": label, "first": p.get("date"), "count": 0})
+                st["count"] += 1
+                st["last"] = p.get("date")
+                st["last_title"] = p.get("title")
+                break
+    return steps
+
+
+def enrich_einnsyn(apps: dict) -> None:
+    """Søker eInnsyn per søknad (lokalitetsnavn + søker) og lagrer journalposter med cache."""
+    import re
+    import time as _time
+    from urllib.parse import quote
+
+    import requests  # type: ignore
+
+    ecfg = CONFIG["applications"].get("einnsyn", {})
+    api = ecfg.get("api", "https://api.einnsyn.no/search")
+    web = ecfg.get("web", "https://einnsyn.no").rstrip("/")
+    max_per_run = int(ecfg.get("max_per_run", 100))
+    ref_active = float(ecfg.get("refresh_days_active", 1))
+    ref_closed = float(ecfg.get("refresh_days_closed", 30))
+    pause = float(ecfg.get("pause_seconds", 0.3))
+    limit = int(ecfg.get("limit", 100))
+    before_days = int(ecfg.get("days_before_submitted", 60))
+    max_posts = int(ecfg.get("max_posts_per_application", 60))
+
+    try:
+        cache: dict = json.loads(EINNSYN_CACHE.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+    EINNSYN_DIR.mkdir(parents=True, exist_ok=True)
+    now = datetime.now(timezone.utc)
+
+    def age_days(iso: str | None) -> float:
+        try:
+            return (now - datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)).total_seconds() / 86400 if iso else 1e9
+        except ValueError:
+            return 1e9
+
+    all_items = [i for t in apps["types"].values() for i in t["items"]]
+    todo: list[tuple[int, dict]] = []
+    for it in all_items:
+        name = (it.get("title") or it.get("site") or "").strip()
+        if not name:
+            continue
+        c = cache.get(it["id"])
+        active = it.get("status") == "Under behandling"
+        if c is None:
+            todo.append((0, it))
+        elif active and age_days(c.get("fetched_at")) > ref_active:
+            todo.append((1, it))
+        elif not active and age_days(c.get("fetched_at")) > ref_closed:
+            todo.append((2, it))
+    todo.sort(key=lambda x: (x[0], -(int((x[1].get("submitted") or "0000-00-00").replace("-", "") or 0))))
+    batch = [it for _, it in todo[:max_per_run]]
+    log(f"einnsyn: {len(cache)} i cache, {len(todo)} å hente, tar {len(batch)} nå")
+
+    def names(parts: list, kind_rx: str) -> list[str]:
+        out = []
+        for k in parts or []:
+            if re.search(kind_rx, k.get("korrespondanseparttype") or ""):
+                n = k.get("korrespondansepartNavnSensitiv") or k.get("korrespondansepartNavn")
+                if n:
+                    out.append(n)
+        return out
+
+    fetched = 0
+    for it in batch:
+        name = (it.get("title") or it.get("site") or "").strip()
+        core = applicant_core(it.get("applicant") or "")
+        query = f'"{name}" {core}'.strip()
+        params = [("query", query), ("entity", "Journalpost"), ("expand", "korrespondansepart"), ("expand", "journalenhet"),
+                  ("expand", "saksmappe"), ("limit", str(limit)), ("sortBy", "journaldato"), ("sortOrder", "desc")]
+        if it.get("submitted"):
+            try:
+                frm = datetime.strptime(it["submitted"], "%Y-%m-%d") - timedelta(days=before_days)
+                params.append(("journaldatoFrom", frm.strftime("%Y-%m-%d")))
+            except ValueError:
+                pass
+        try:
+            r = requests.get(api, params=params, timeout=30, headers={"User-Agent": "ScaleRadar/1.0", "Accept": "application/json"})
+            r.raise_for_status()
+            items = r.json().get("items", [])
+            posts = []
+            name_rx = re.compile(re.escape(name.lower()))
+            core_rx = re.compile(re.escape(core.lower())) if core else None
+
+            def parsed(jp: dict) -> tuple[str, list[str], list[str], dict, str]:
+                title = jp.get("offentligTittelSensitiv") or jp.get("offentligTittel") or ""
+                frm_ = names(jp.get("korrespondansepart"), r"^avsender|^intern_avsender")
+                to_ = names(jp.get("korrespondansepart"), r"^mottaker|^intern_mottaker")
+                sm = jp.get("saksmappe") if isinstance(jp.get("saksmappe"), dict) else {}
+                enhet = (jp.get("journalenhet") or {}).get("navn") if isinstance(jp.get("journalenhet"), dict) else None
+                return title, frm_, to_, sm, enhet or ""
+
+            # Pass 1: strenge treff – lokalitetsnavn i tittel + søker eller akvakulturkontekst
+            strict: set[int] = set()
+            cases: set[tuple[str, str]] = set()
+            for idx, jp in enumerate(items):
+                title, frm_, to_, sm, enhet = parsed(jp)
+                hay = (title + " " + " ".join(frm_ + to_)).lower()
+                if not name_rx.search(title.lower()):
+                    continue
+                if core_rx and not core_rx.search(hay) and not re.search(r"akvakultur|lokalitet|oppdrett", title.lower()):
+                    continue
+                strict.add(idx)
+                if sm.get("saksnummer"):
+                    cases.add((enhet, sm["saksnummer"]))
+            # Pass 2: ta med øvrige journalposter i de samme saksmappene (samme etat + saksnummer)
+            for idx, jp in enumerate(items):
+                title, frm_, to_, sm, enhet = parsed(jp)
+                if idx not in strict and not (sm.get("saksnummer") and (enhet, sm["saksnummer"]) in cases):
+                    continue
+                jt = jp.get("journalposttype") or ""
+                url = None
+                if sm.get("externalId") and jp.get("externalId"):
+                    url = f"{web}/saksmappe?id={quote(sm['externalId'], safe='')}&jid={quote(jp['externalId'], safe='')}"
+                posts.append({
+                    "date": jp.get("journaldato") or jp.get("publisertDato"),
+                    "type": "inn" if jt.startswith("inng") else ("ut" if jt.startswith("utg") else "intern"),
+                    "enhet": enhet or None,
+                    "same_case": idx not in strict,
+                    "from": [n for n in frm_ if not n.lower().startswith("intern")][:3],
+                    "to": to_[:3],
+                    "title": title,
+                    "saksnummer": sm.get("saksnummer"),
+                    "url": url,
+                })
+            posts.sort(key=lambda x: x.get("date") or "", reverse=True)
+            posts = posts[:max_posts]
+            entry = {
+                "fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "status": it.get("status"),
+                "query": query,
+                "search_url": f"{web}/sok?searchTerm={quote(query)}",
+                "count": len(posts),
+                "last": posts[0]["date"] if posts else None,
+                "steps": classify_steps(posts),
+                "posts": posts,
+            }
+            cache[it["id"]] = entry
+            (EINNSYN_DIR / f"{it['id']}.json").write_text(json.dumps(entry, ensure_ascii=False), encoding="utf-8")
+            fetched += 1
+        except Exception as exc:  # noqa: BLE001
+            log(f"einnsyn {it['id']}: FEIL {exc}")
+        _time.sleep(pause)
+
+    EINNSYN_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    log(f"einnsyn: hentet {fetched}, cache nå {len(cache)}")
+
+    known = {i["id"] for i in all_items}
+    for it in all_items:
+        c = cache.get(it["id"])
+        if c:
+            it["einnsyn"] = {"count": c.get("count", 0), "last": c.get("last"), "steps": c.get("steps", {}),
+                             "fetched_at": c.get("fetched_at"), "search_url": c.get("search_url")}
+    apps["einnsyn_summary"] = {"cached": sum(1 for k in cache if k in known), "pending": max(0, len(todo) - len(batch)), "fetched_now": fetched}
 
 # --------------------------------------------------------------------------- endringssporing + RSS
 CHANGES_PATH = ROOT / "data" / "changes.json"
