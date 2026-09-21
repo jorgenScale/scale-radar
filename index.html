@@ -1428,10 +1428,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
           stepsHtml += '<ul class="tl" id="tl-'+esc(i.id)+'"><li><span></span><span></span><span style="color:var(--ink-2)">Laster journalposter …</span></li></ul>';
         }
         row += '<tr class="det" data-for="'+esc(i.id)+'"><td colspan="8">'+body+stepsHtml+'<div class="det-foot"><span>'+(d.fetched_at?'Detaljer hentet '+esc(dyear(d.fetched_at)):'')+(e&&e.fetched_at?' · eInnsyn hentet '+esc(dyear(e.fetched_at)):'')+'</span>'+(i.url?'<a href="'+esc(i.url)+'" target="_blank" rel="noopener">Åpne søknaden hos Fiskeridirektoratet ↗</a>':'')+'</div></td></tr>';
-        if(e) loadTimeline(i);
       }
       return row;
     }).join('') || '<tr><td colspan="8" class="empty">Ingen søknader matcher filtrene.</td></tr>';
+    var expandedItem = shown.filter(function(i){ return i.id === APPS.expanded; })[0];
+    if(expandedItem && expandedItem.einnsyn) loadTimeline(expandedItem);
     tb.querySelectorAll('tr[data-id]').forEach(function(tr){ tr.addEventListener('click', function(e){ if(e.target.closest('a')) return; var id = tr.dataset.id; APPS.expanded = (APPS.expanded === id) ? null : id; focusApp(id); applyFilters(); }); });
     tb.querySelectorAll('.who-link').forEach(function(a){ a.addEventListener('click', function(e){ e.preventDefault(); $('f-applicant').value = a.dataset.applicant; applyFilters(); window.scrollTo({top: $('apps-h').getBoundingClientRect().top + window.scrollY - 20, behavior:'smooth'}); }); });
 
