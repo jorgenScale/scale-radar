@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-09-23T23:46:59Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002729",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Nordic Halibut AS",
+"title": "Laupsneset",
+"municipality": "Hareid",
+"county": "Møre og Romsdal",
+"status": "Returnert",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002729"
+},
+{
 "at": "2026-09-23T00:41:38Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -21,5 +36,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-09-23T20:28:48Z"
+"updated_at": "2026-09-23T23:46:59Z"
 }
