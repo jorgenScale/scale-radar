@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T22:14:16Z",
+ "generated_at": "2026-09-23T00:40:27Z",
  "mode": "live",
  "news": [
   {
@@ -506,7 +506,7 @@
       "ticker": "SALMOCAM",
       "currency": "CLP",
       "price": 5100.0,
-      "change_pct": -1.92
+      "change_pct": 0.0
      },
      {
       "name": "Multi X (Chile)",
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-09-22",
+  "published": "2026-09-23",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-22T22:14:26Z",
+  "fetched_at": "2026-09-23T00:40:40Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -642,8 +642,56 @@
      "OTHER_FISH_SPECIES"
     ],
     "label": "Nye lokaliteter – sjø",
-    "count": 128,
+    "count": 129,
     "items": [
+     {
+      "id": "SP-2026-002780",
+      "type": "Ny lokalitet",
+      "status": "Under behandling",
+      "title": "Seiongultaren",
+      "applicant": "Lovundlaks Sjø AS",
+      "orgnr": "929601610",
+      "submitted": "2026-09-22",
+      "withdrawn": null,
+      "county": "Nordland",
+      "municipality": "Lurøy",
+      "po": null,
+      "site_no": null,
+      "site": "Seiongultaren",
+      "species": "Laks, Ørret, Regnbueørret",
+      "lat": 66.40666,
+      "lon": 12.47566,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
+      "details": {
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
+       "cycle_months": 12,
+       "feed_per_cycle_tonn": 8400,
+       "max_monthly_feed_tonn": 1800,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-23T00:40:43Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Lurøy",
+       "Fylke": "Nordland",
+       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Innsendt": "22.09.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-09-23T00:40:44Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22Seiongultaren%22%20Lovundlaks"
+      }
+     },
      {
       "id": "SP-2026-002770",
       "type": "Andre fiskearter",
@@ -5493,7 +5541,7 @@
          "last_title": "Svar på oversendelse ifm. søknad akvakulturlokalitet Buarøya - Ode AS - Høring av supplerende opplysninger, offentlig ettersyn og kommunal behandling"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Buar%C3%B8ya%22%20Ode"
       }
      },
@@ -5829,7 +5877,7 @@
          "last_title": "Kopi - orientering om oversendelse av klagesak - lokalitet Apalvika-Vinnes - Austevoll kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Apalvika-Vinnes%22%20Elska"
       }
      },
@@ -6104,7 +6152,7 @@
          "last_title": "Vedtak - akvakultur - Hjelmeland - Sterling White Halibut AS - lokalitet 10126 Vassvik - tillatelse utvidelse anlegg og økning produksjon"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vassvik%22%20Sterling"
       }
      },
@@ -6188,7 +6236,7 @@
          "last_title": "Korrespondanse feil i forsendelse - klage - akvakultur - Hjelmeland - Sterling White Halibut AS - lokalitet 45293 Sigmundstadneset - ny lokalitet og tillatelse oppdrett"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sigmundstadneset%22%20Sterling"
       }
      },
@@ -6265,7 +6313,7 @@
          "last_title": "Supplerende klagegrunner til klage - akvakultur - Aure - Nordic Halibut AS - Storvika - oppdrett av kveite - SP-2025-001787"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Storvika%22%20Nordic"
       }
      },
@@ -6340,7 +6388,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse - SP-2025-001718 - 45098 Forså - Kime Akva AS - Ibestad kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fors%C3%A5%22%20Kime"
       }
      },
@@ -6571,7 +6619,7 @@
          "last_title": "Bekreftelse på mottatt klage"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Natter%C3%B8y%22%20Tubilah"
       }
      },
@@ -7172,7 +7220,7 @@
          "last_title": "Nordly Innovation AS - vedtak i klagesak vedrørende avvisning av søknad om etablering av akvakulturanlegg Torshaugen i Moskenes kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Torshaugen%22%20Nordly"
       }
      },
@@ -7263,7 +7311,7 @@
          "last_title": "Orientering om mottatt klage på avslag - akvakultur - Vadsø - Lerøy Aurora AS - Sandskjæret"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandskj%C3%A6ret%22%20Ler%C3%B8y"
       }
      },
@@ -7727,7 +7775,7 @@
          "last_title": "Høringsuttalelse - Organic Seafarm AS - Søknad om ny akvakulturlokalitet Veggen for torsk"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Veggen%22%20Organic"
       }
      },
@@ -19572,7 +19620,7 @@
          "last_title": "KOPI - Løyve til arealendring av akvakulturanlegg for laksefisk - Hofseth Sea Farming AS - Lokalitet 37797 Skjortneset II - Fjord kommune - Møre og Romsdal fylke"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skjortneset%20II%22%20Hofseth"
       }
      },
@@ -19660,7 +19708,7 @@
          "last_title": "Wenberg Fiskeoppdrett AS - Uttalelse om arealendring for lokalitet for akvakultur - Skysselvika, Fauske"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skysselvika%20V%22%20Wenberg"
       }
      },
@@ -20132,7 +20180,7 @@
          "last_title": "Orientering om oversendelse til Klagesaksenheten - Opprettholdelse av vedtak om avslag om økt biomasse (MTB) på lokalitet 33097 Skjervøy Vest"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skjerv%C3%B8y%20V%22%20Arn%C3%B8y"
       }
      },
@@ -20512,7 +20560,7 @@
          "last_title": "KOPI - Vedtak om at løyve etter forureiningslova ikkje fell bort 020226 - Akvakultur - Sjøtroll Havbruk Sjø AS - Skaftå - lok 18898 - Osterøy - 930181528"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skaft%C3%A5%22%20Sj%C3%B8troll"
       }
      },
@@ -20595,7 +20643,7 @@
          "last_title": "Klage - lokalitet Blom - tilsvar fra søker"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Blom%22%20Sj%C3%B8troll"
       }
      },
@@ -20882,7 +20930,7 @@
          "last_title": "Sjøtroll Havbruk Sjø AS og Lerøy Vest Sjø AS lokalitet 18015 Hestabyneset - Kopi av vedtak om at løyve etter forureiningslova ikkje fell bort 02.02.2026"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestabyneset%22%20Sj%C3%B8troll"
       }
      },
@@ -21549,7 +21597,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921 668 236 - Tillatelse til arealendring ved lokaliteten Olderbakken i Sømna kommune - SP-2024-001631"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Olderbakken%22%20Mowi"
       }
      },
@@ -21972,7 +22020,7 @@
          "last_title": "KOPI - Grieg Seafood Rogaland AS - Vedtak om tilbaketrekking av utslippstillatelse - Lokalitet 34817 Eime - Kvitsøy kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Eime%22%20Grieg"
       }
      },
@@ -22876,7 +22924,7 @@
          "last_title": "Analysebevis 2026-1031"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Nordnes%22%20Cermaq"
       }
      },
@@ -36409,7 +36457,7 @@
          "last_title": "Kopi av tillatelse til utvidelse av antall arter ved eksisterende tillatelser AG-F-1, VA-F-20 og VA-F-211 ved lokalitet 31937 Abelsnes, Norsk Oppdrettsservice AS"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Abelsnes%22%20Norsk"
       }
      },
@@ -36617,7 +36665,7 @@
          "last_title": "Tillegg til uttale - utvida produksjon ved Hyen Fisk - lokalitet Åreneset - Gloppen kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%85reneset%22%20Hyen"
       }
      },
@@ -36696,7 +36744,7 @@
          "last_title": "Uttalelse - søknad om tillatelse til matfisk - lokalitet Meøypollen - Vestvågøy"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%2210492%20Me%C3%B8ypollen%22%20Lofotyngel"
       }
      },
@@ -36782,7 +36830,7 @@
          "last_title": "Kopi - Ål kommune - Reguleringsplan - Gbnr 125/3 og 125/8 - 126/1 og 126/10 - 128/1 - Upstream - Kleivi - Detaljregulering - Ett-trinns løyve for nytt anlegg - Omlegging av eksisterende bekker i kombinasjon med etablering av flom og overvannsgrøft"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kleivi%22%20Upstream"
       }
      },
@@ -37002,7 +37050,7 @@
          "last_title": "Endret tillatelse etter forurensningsloven for SalMar Settefisk AS ved Tjuin i Steinkjer kommune"
         }
        },
-       "fetched_at": "2026-09-21T23:20:32Z",
+       "fetched_at": "2026-09-23T00:40:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%2245116%20Tjuin%22%20Salmar"
       }
      },
@@ -37500,18 +37548,18 @@
    }
   },
   "details_summary": {
-   "cached": 482,
+   "cached": 483,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 1
   },
   "einnsyn_summary": {
-   "cached": 482,
+   "cached": 483,
    "pending": 0,
-   "fetched_now": 42
+   "fetched_now": 25
   }
  },
  "changes": {
-  "updated_at": "2026-09-22T22:16:07Z",
+  "updated_at": "2026-09-23T00:41:38Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37672,7 +37720,23 @@
     "Øyfisk AS": "oeyfisk-as"
    }
   },
-  "events": []
+  "events": [
+   {
+    "at": "2026-09-23T00:41:38Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002780",
+    "type_key": "new_site",
+    "type": "Ny lokalitet",
+    "applicant": "Lovundlaks Sjø AS",
+    "title": "Seiongultaren",
+    "municipality": "Lurøy",
+    "county": "Nordland",
+    "status": "Under behandling",
+    "mtb_tonn": 4200,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
+   }
+  ]
  },
  "licences": {
   "oppdatert": "2026-09-19",

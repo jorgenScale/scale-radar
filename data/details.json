@@ -13337,5 +13337,31 @@
 },
 "status": "Under behandling",
 "title": "Tamtodden"
+},
+"SP-2026-002780": {
+"fetched_at": "2026-09-23T00:40:43Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "22.09.2026",
+"Kommune": "Lurøy",
+"Maksimal månedlig fôring": "1 800 tonn",
+"Maksimal tillatt biomasse (MTB)": "4 200 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "12 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 12,
+"feed_per_cycle_tonn": 8400,
+"max_monthly_feed_tonn": 1800,
+"mtb_tonn": 4200,
+"planned_production_tonn": 7000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Seiongultaren"
 }
 }

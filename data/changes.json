@@ -4,6 +4,22 @@
 "change_site": "2026-09-21T12:31:20Z",
 "land_based": "2026-09-21T12:31:20Z"
 },
-"events": [],
-"updated_at": "2026-09-22T22:16:07Z"
+"events": [
+{
+"at": "2026-09-23T00:41:38Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002780",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Lovundlaks Sjø AS",
+"title": "Seiongultaren",
+"municipality": "Lurøy",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 4200,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
+}
+],
+"updated_at": "2026-09-23T00:41:38Z"
 }
