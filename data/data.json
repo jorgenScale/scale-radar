@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-09-23T00:40:27Z",
+ "generated_at": "2026-09-23T06:02:19Z",
  "mode": "live",
  "news": [
+  {
+   "title": "Peker på den største risikoen ved oppskaleringen",
+   "url": "https://www.kyst.no/aktuelt-andfjord-salmon-aquanext/peker-pa-den-storste-risikoen-ved-oppskaleringen/2184208",
+   "published": "2026-09-23",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -73,8 +80,22 @@
    "url": "https://ilaks.no/gjeldstunge-kvaroy-gikk-pa-resultatsmell-pa-foredling/?mtm_campaign=feed_click&mtm_kwd=gjeldstunge-kvaroy-gikk-pa-resultatsmell-pa-foredling&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "title": "Dette tror Nesse mest på",
+   "title": "Mener dette bør få økt oppmerksomhet",
+   "url": "https://www.kyst.no/aktuelt-aquanext/mener-dette-bor-fa-okt-oppmerksomhet/2184680",
+   "published": "2026-09-22",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Dette tror Nesse mest på i sjø",
    "url": "https://www.kyst.no/akva-group-aquanext-knut-nesse/okonomien-vil-lofte-frem-dypdrift/2184904",
+   "published": "2026-09-22",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "og på land",
+   "url": "https://www.kyst.no/aktuelt-akva-group-island/den-mest-lonnsomme-veien-til-vekst/2184981",
    "published": "2026-09-22",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -117,27 +138,6 @@
   {
    "title": "Ubetalt sluttoppgjør påvirket betydelig",
    "url": "https://www.kyst.no/aktuelt-landbasert-regnskap/ubetalt-sluttoppgjor-pavirket-betydelig/2183937",
-   "published": "2026-09-21",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Nær doblet omsetningen",
-   "url": "https://www.kyst.no/aquabyte-naer-doblet-omsetningen/2183991",
-   "published": "2026-09-21",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Ny torskelokalitet åpner for 1,5 millioner fisk",
-   "url": "https://www.kyst.no/finnmark-hammerfest-kime-akva/ny-torskelokalitet-apner-for-15-millioner-fisk/2184028",
-   "published": "2026-09-21",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Ser tydelig skifte i markedet",
-   "url": "https://www.kyst.no/abyss-fartoy/ser-tydelig-skifte-i-markedet/2183759",
    "published": "2026-09-21",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -213,6 +213,34 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
+   "title": "Hodejakten ved verftet er over",
+   "url": "https://www.intrafish.no/bater/hodejakten-ved-verftet-er-over/2-1-2047655",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "– Det har vært blytungt",
+   "url": "https://www.intrafish.no/arbeidsliv/-det-har-vart-blytungt/2-1-2030076",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "– Gleder meg hver dag til å gå på jobb",
+   "url": "https://www.intrafish.no/arbeidsliv/-gleder-meg-hver-dag-til-a-ga-pa-jobb/2-1-2029983",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Kraftsmellen stopper alle lakse-planer i nord",
+   "url": "https://www.intrafish.no/kommentarer/det-storste-hinderet-for-sjomatvekst-ligger-i-stikkontakten/2-1-2044121",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Oppdrettsselskapet klaget på millionbot – fikk ikke medhold",
    "url": "https://www.intrafish.no/fiskehelse/oppdrettsselskapet-klaget-pa-millionbot-fikk-ikke-medhold/2-1-2046906",
    "published": null,
@@ -250,34 +278,6 @@
   {
    "title": "– At vi ikke får utslipps­tillatelse opp­leves uforståelig",
    "url": "https://www.intrafish.no/landbasert/-at-vi-ikke-far-utslippstillatelse-oppleves-uforstaelig/2-1-2046389",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Nå blir det omfattende endringer i NOx-støtten",
-   "url": "https://www.intrafish.no/miljo/na-blir-det-omfattende-endringer-i-nox-stotten/2-1-2046983",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Marine Donut: – En viktig milepæl",
-   "url": "https://www.intrafish.no/okonomi/canadisk-investering-i-marine-donut-dette-er-en-viktig-milepal/2-1-2046820",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Slik havnet hun likevel som leder i familie­bedriten",
-   "url": "https://www.intrafish.no/samfunn/tredje-generasjon-fiskerijournalist-jobben-er-en-livsstil/2-1-2041957",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Dieselopprøret handler om avmakt",
-   "url": "https://www.intrafish.no/debatt/avmakten-ved-dieselpumpa/2-1-2046632",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -544,11 +544,6 @@
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
   "series": [
    {
-    "week": "2026U22",
-    "price": 76.29,
-    "volume": 19539
-   },
-   {
     "week": "2026U23",
     "price": 72.78,
     "volume": 22409
@@ -622,18 +617,23 @@
     "week": "2026U37",
     "price": 70.18,
     "volume": 30111
+   },
+   {
+    "week": "2026U38",
+    "price": 71.41,
+    "volume": 31087
    }
   ],
   "frozen": {
-   "week": "2026U37",
-   "price": 69.77,
-   "volume": 697
+   "week": "2026U38",
+   "price": 73.09,
+   "volume": 860
   }
  },
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-23T00:40:40Z",
+  "fetched_at": "2026-09-23T06:02:31Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -663,26 +663,26 @@
       "lon": 12.47566,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
       "details": {
-       "mtb_tonn": 4200,
-       "planned_production_tonn": 7000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 12,
        "feed_per_cycle_tonn": 8400,
        "max_monthly_feed_tonn": 1800,
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-23T00:40:43Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Lurøy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
-       "Maksimal månedlig fôring": "1 800 tonn",
        "Innsendt": "22.09.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Lurøy",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "12 mnd"
       },
       "einnsyn": {
        "count": 0,
@@ -8030,7 +8030,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ikke%20Relevant%20DA%20det%20S%C3%B8kes%20om%20Forlengelse%20av%20Fou%20Tillatelser%22%20Seacalx"
       }
      },
@@ -8904,7 +8904,7 @@
          "last_title": "Akvakultursøknad SP-2024-000739 - Mowi Seawater Norway AS 921668236 - Uttalelse fra Fiskeridirektoratet 971203420"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22S%C3%B8mnes%C3%B8ya%22%20Mowi"
       }
      },
@@ -8995,7 +8995,7 @@
          "last_title": "Klagesak - vedlegg ang. partsstilling - anmodning om dokumentasjon av møte"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Mindland%22%20Akvafuture"
       }
      },
@@ -9422,7 +9422,7 @@
          "last_title": "Tilbakemelding - Akvakultur - Stavanger - Seashore Sjø AS - lokalitet 24715 Langholmen - ny lokalitet"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Langholmen%22%20Seashore"
       }
      },
@@ -23531,7 +23531,7 @@
          "last_title": "Hardangerfjorden - informasjon om at klager på avslag etter forureiningslova er mottatt"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sl%C3%A5ttenes%22%20Mowi"
       }
      },
@@ -23873,7 +23873,7 @@
          "last_title": "Oversendelse av klage på vedtak om avslag på biomasseøking - Settestatsforvalter - akvakultur - Steigen - Nordland - Cermaq Norway Salmon AS - lokalitet Hjartøy Ø - biomasseutvidelse"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hjart%C3%B8y%20%C3%98%22%20Cermaq"
       }
      },
@@ -24125,7 +24125,7 @@
          "last_title": "Dispensasjonsvedtak - akvakulturlokalitet Isqueen - Sandholman 20096 - kopi"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandholman%22%20Isqueen"
       }
      },
@@ -24799,7 +24799,7 @@
          "last_title": "Holmøy Havbruk AS org. nr. 929 535 081 - Søknad om endring av lokalitet 14796 Fiskefjorden i Lødingen kommune - Tillatelse til arealendring og avslag på biomasseutvidelse"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fiskefjorden%22%20Holm%C3%B8y"
       }
      },
@@ -25144,7 +25144,7 @@
          "last_title": "Klage på kommunalt vedtak for økning av lokalitet - akvakulturlokalitet - Lerøy Aurora AS - lokalitet 10734 Gourtesjouka - Kåfjord kommune"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gourtesjouka%22%20Ler%C3%B8y"
       }
      },
@@ -26532,7 +26532,7 @@
          "last_title": "Mowi Seawater Norway AS- Org. Nr. 921 668 236 - Tillatelse til endring ved lokalitet Bukkholmen i Alstahaug kommune."
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bukkholmen%22%20Mowi"
       }
      },
@@ -27378,7 +27378,7 @@
          "last_title": "Uttale - søknad om auka arealbruk for anlegg Aldalen - Bjørnafjorden kommune"
         }
        },
-       "fetched_at": "2026-09-22T05:04:11Z",
+       "fetched_at": "2026-09-23T06:02:33Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Aldalen%22%20Bolaks"
       }
      },
@@ -37550,16 +37550,16 @@
   "details_summary": {
    "cached": 483,
    "pending": 0,
-   "fetched_now": 1
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 483,
    "pending": 0,
-   "fetched_now": 25
+   "fetched_now": 11
   }
  },
  "changes": {
-  "updated_at": "2026-09-23T00:41:38Z",
+  "updated_at": "2026-09-23T06:03:04Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
