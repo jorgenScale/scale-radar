@@ -1,9 +1,30 @@
 {
- "generated_at": "2026-09-23T06:02:19Z",
+ "generated_at": "2026-09-23T11:44:18Z",
  "mode": "live",
  "news": [
   {
-   "title": "Peker på den største risikoen ved oppskaleringen",
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-23",
+   "title": "Arctic Securities tror Mowi slakter vesentlig mer laks enn guidet for tredje kvartal",
+   "url": "https://ilaks.no/arctic-securities-tror-mowi-slakter-vesentlig-mer-laks-enn-guidet-for-tredje-kvartal/?mtm_campaign=feed_click&mtm_kwd=arctic-securities-tror-mowi-slakter-vesentlig-mer-laks-enn-guidet-for-tredje-kvartal&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "title": "Se bilder fra IceFish på Island",
+   "url": "https://www.kyst.no/icefish-island/se-bilder-fra-icefish-pa-island/2185365",
+   "published": "2026-09-23",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Vil vokse på Island: – Et marked i utvikling",
+   "url": "https://www.kyst.no/icefish-island-overhalla-betongbygg/vil-vokse-pa-island-et-marked-i-utvikling/2185446",
+   "published": "2026-09-23",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Største risiko ved oppskaleringen",
    "url": "https://www.kyst.no/aktuelt-andfjord-salmon-aquanext/peker-pa-den-storste-risikoen-ved-oppskaleringen/2184208",
    "published": "2026-09-23",
    "source_key": "kyst",
@@ -73,14 +94,7 @@
    "url": "https://ilaks.no/aquagen-topp-trekker-seg/?mtm_campaign=feed_click&mtm_kwd=aquagen-topp-trekker-seg&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-22",
-   "title": "Gjeldstunge Kvarøy gikk på resultatsmell på foredling",
-   "url": "https://ilaks.no/gjeldstunge-kvaroy-gikk-pa-resultatsmell-pa-foredling/?mtm_campaign=feed_click&mtm_kwd=gjeldstunge-kvaroy-gikk-pa-resultatsmell-pa-foredling&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "title": "Mener dette bør få økt oppmerksomhet",
+   "title": "Bør få økt oppmerksomhet",
    "url": "https://www.kyst.no/aktuelt-aquanext/mener-dette-bor-fa-okt-oppmerksomhet/2184680",
    "published": "2026-09-22",
    "source_key": "kyst",
@@ -94,7 +108,7 @@
    "source": "Kyst.no"
   },
   {
-   "title": "og på land",
+   "title": ".....og dette tror han på land",
    "url": "https://www.kyst.no/aktuelt-akva-group-island/den-mest-lonnsomme-veien-til-vekst/2184981",
    "published": "2026-09-22",
    "source_key": "kyst",
@@ -125,20 +139,6 @@
    "title": "Den skjulte kostnaden ved mangelfull degassing",
    "url": "https://www.kyst.no/den-skjulte-kostnaden-ved-mangelfull-degassing/2184050",
    "published": "2026-09-22",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Tar lukket merd-teknologi til Canada",
-   "url": "https://www.kyst.no/bluegreen-lukket/tar-lukket-merd-teknologi-til-canada/2184572",
-   "published": "2026-09-22",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Ubetalt sluttoppgjør påvirket betydelig",
-   "url": "https://www.kyst.no/aktuelt-landbasert-regnskap/ubetalt-sluttoppgjor-pavirket-betydelig/2183937",
-   "published": "2026-09-21",
    "source_key": "kyst",
    "source": "Kyst.no"
   },
@@ -213,15 +213,22 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
-   "title": "Hodejakten ved verftet er over",
-   "url": "https://www.intrafish.no/bater/hodejakten-ved-verftet-er-over/2-1-2047655",
+   "title": "Pareto oppjusterer lakseprisanslag",
+   "url": "https://www.intrafish.no/okonomi/pareto-oppjusterer-lakseprisanslag/2-1-2047648",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Etatene får ofte pepper fra bransjen – slik har de rigget om",
+   "url": "https://www.intrafish.no/samfunn/etatene-far-ofte-pepper-fra-bransjen-slik-har-de-rigget-om/2-1-2047654",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
    "title": "– Det har vært blytungt",
-   "url": "https://www.intrafish.no/arbeidsliv/-det-har-vart-blytungt/2-1-2030076",
+   "url": "https://www.intrafish.no/2-1-2030076",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -241,6 +248,27 @@
    "source": "Intrafish"
   },
   {
+   "title": "Dette er vinnerne av nesten en halv milliard kroner",
+   "url": "https://www.intrafish.no/samfunn/dette-er-vinnerne-av-nesten-en-halv-milliard-kroner/2-1-2047680",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Hodejakten ved verftet er over",
+   "url": "https://www.intrafish.no/bater/hodejakten-ved-verftet-er-over/2-1-2047655",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Nå blir det omfattende endringer i NOx-støtten",
+   "url": "https://www.intrafish.no/miljo/na-blir-det-omfattende-endringer-i-nox-stotten/2-1-2046983",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Oppdrettsselskapet klaget på millionbot – fikk ikke medhold",
    "url": "https://www.intrafish.no/fiskehelse/oppdrettsselskapet-klaget-pa-millionbot-fikk-ikke-medhold/2-1-2046906",
    "published": null,
@@ -250,34 +278,6 @@
   {
    "title": "Nina Grieg på AquaNext: – Vi må vokse",
    "url": "https://www.intrafish.no/politikk/nina-grieg-pa-aquanext-vi-ma-vokse/2-1-2046938",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Skotsk laksetopp om norsk volumvekst: – Ser det definitivt ikke som en trussel",
-   "url": "https://www.intrafish.no/marked/derfor-mener-den-skotske-laksetoppen-norsk-volumvekst-kan-styrke-andre/2-1-2047155",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Tredje uke i retten – slik argumenterer oppdretterne i innspurten",
-   "url": "https://www.intrafish.no/samfunn/-det-er-ingen-grunn-til-a-behandle-tral-som-en-hellige-gral/2-1-2046270",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Aquagen-exit for Knut Røflo",
-   "url": "https://www.intrafish.no/arbeidsliv/aquagen-exit-for-knut-roflo/2-1-2046913",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "– At vi ikke får utslipps­tillatelse opp­leves uforståelig",
-   "url": "https://www.intrafish.no/landbasert/-at-vi-ikke-far-utslippstillatelse-oppleves-uforstaelig/2-1-2046389",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -375,8 +375,9 @@
   {
    "key": "fiskeribladet",
    "name": "Fiskeribladet",
-   "status": "ok",
-   "count": 10
+   "status": "error",
+   "count": 10,
+   "error": "fant ingen artikler på siden – selektorene i config.json må sjekkes"
   },
   {
    "key": "fdir",
@@ -387,7 +388,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-09-21",
+  "as_of": "2026-09-23",
   "note": null,
   "groups": [
    {
@@ -397,36 +398,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 193.7,
-      "change_pct": -2.42
+      "price": 201.6,
+      "change_pct": 2.49
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 530.0,
-      "change_pct": -3.64
+      "price": 557.5,
+      "change_pct": 2.39
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 40.72,
-      "change_pct": -1.36
+      "price": 42.28,
+      "change_pct": 2.13
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 24.64,
-      "change_pct": -1.36
+      "price": 25.88,
+      "change_pct": 3.11
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 81.2,
-      "change_pct": -1.58
+      "price": 83.1,
+      "change_pct": 1.22
      },
      {
       "name": "Måsøval",
@@ -444,43 +445,43 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": 0.71,
-      "change_pct": -4.32
+      "price": 0.74,
+      "change_pct": -5.38
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.3,
-      "change_pct": 0.46
+      "price": 3.39,
+      "change_pct": 2.26
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
       "price": 27.4,
-      "change_pct": -1.79
+      "change_pct": 0.0
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
       "price": 0.43,
-      "change_pct": -7.97
+      "change_pct": 4.12
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 84.8,
-      "change_pct": -2.08
+      "price": 85.0,
+      "change_pct": -0.93
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 4.82,
-      "change_pct": -1.63
+      "price": 4.99,
+      "change_pct": -0.2
      }
     ]
    },
@@ -491,15 +492,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 421.6,
-      "change_pct": -1.08
+      "price": 444.0,
+      "change_pct": 2.21
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 27.0,
-      "change_pct": 2.27
+      "price": 23.4,
+      "change_pct": -12.69
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +634,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-23T06:02:31Z",
+  "fetched_at": "2026-09-23T11:44:53Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -9702,7 +9703,7 @@
          "last_title": "Begjæring om innsyn i sak 2023/687-20"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Langstranda%22%20Mowi"
       }
      },
@@ -9881,7 +9882,7 @@
          "last_title": "Kopi - Mattilsynet endrer vedtak etter klage"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bj%C3%B8rnvika%22%20Ler%C3%B8y"
       }
      },
@@ -10185,7 +10186,7 @@
          "last_title": "Avslag på søknad om etablering av ny lokalitet Prestvika i Rødøy kommune - Mowi Seawater Norway AS 921668236"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Prestvika%22%20Mowi"
       }
      },
@@ -10276,7 +10277,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921 668 236 - Søknad om ny lokalitet Lammøya i Dønna kommune - Avslag på søknad"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lamm%C3%B8ya%22%20Mowi"
       }
      },
@@ -29181,7 +29182,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921668236 - Akvakulturtillatelse til arealendring av fortøyninger på lokaliteten Klubben i Brønnøy og Sømna kommuner."
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Klubben%22%20Mowi"
       }
      },
@@ -29513,7 +29514,7 @@
          "last_title": "Ber om eventuelle kommetarer på klage fra Nord Fiskarlag på tillatelse til arealendringer ved lokaliteten Skålsvika i Meøy kommune - Nova Sea Havbruk AS Org. Nr. 827 248 312"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sk%C3%A5lsvika%22%20Nova"
       }
      },
@@ -29847,7 +29848,7 @@
          "last_title": "Dispensasjonsvedtak - akvakulturlokalitet Isqueen - Æsøya 30977 - kopi"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%86s%C3%B8ya%22%20Isqueen"
       }
      },
@@ -30538,7 +30539,7 @@
          "last_title": "Klage i sak 2023/165123 - Vedtak om avslag på søknad om biomasseutviding – 19655 Ospeneset - Oppstart av klagebehandling"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ospeneset%22%20Eide"
       }
      },
@@ -31104,7 +31105,7 @@
          "last_title": "Tillatelse til søknad om arealendring på lokalitet 29096 Grøttøy - Hadsel kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gr%C3%B8tt%C3%B8y%22%20Nordlaks"
       }
      },
@@ -33383,7 +33384,7 @@
          "last_title": "Status på klage på avslag lokalitet Hundholmen - Wenberg Fiskeoppdrett AS"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hundholmen%22%20Wenberg"
       }
      },
@@ -33815,7 +33816,7 @@
          "last_title": "Oversendelse av klagesak - akvakultur - Sinkaberg AS - lokalitet Varholmen - utvidelse av biomasse - kopi"
         }
        },
-       "fetched_at": "2026-09-22T10:02:57Z",
+       "fetched_at": "2026-09-23T11:44:55Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Varholmen%22%20Sinkaberghansen"
       }
      },
@@ -37559,7 +37560,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-09-23T06:03:04Z",
+  "updated_at": "2026-09-23T11:45:31Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
