@@ -6829,7 +6829,7 @@
 "title": "Skaftå"
 },
 "SP-2024-001673": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Fylke": "Trøndelag",
@@ -7199,7 +7199,7 @@
 "title": "Storvika i Skjerstadfjorden"
 },
 "SP-2024-001701": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Kveite",
@@ -7369,7 +7369,7 @@
 "title": "Lyngtaren"
 },
 "SP-2025-001718": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "TF-I-0005 , TF-I-0007 , TF-I-0004 , TF-I-0008 , TF-I-0006",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -7522,7 +7522,7 @@
 "title": "Fureneset"
 },
 "SP-2025-001787": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -7636,7 +7636,7 @@
 "title": "Løypingneset"
 },
 "SP-2025-001824": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Kveite",
@@ -7662,7 +7662,7 @@
 "title": "Sigmundstadneset"
 },
 "SP-2025-001825": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Buskerud fylkeskommune",
 "Fylke": "Buskerud",
@@ -7676,7 +7676,7 @@
 "title": "Kleivi"
 },
 "SP-2025-001826": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "R-HM-0035 , R-HM-0031 , R-HM-0018",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -7737,21 +7737,25 @@
 "title": "Skøyen"
 },
 "SP-2025-001829": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Ferdigbehandlet": "24.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "18.02.2025",
-"Kommune": "Vestvågøy"
+"Kommune": "Vestvågøy",
+"Resultat": "Innvilget"
 },
 "norm": {
-"case_handler": "Nordland fylkeskommune"
+"case_handler": "Nordland fylkeskommune",
+"decided": "2026-09-24",
+"result": "Innvilget"
 },
 "status": "Under behandling",
 "title": "10492 Meøypollen"
 },
 "SP-2025-001830": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Fylke": "Vestland",
@@ -7880,7 +7884,7 @@
 "title": "Fornes II"
 },
 "SP-2025-001849": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Torsk",
@@ -8050,7 +8054,7 @@
 "title": "Tjeldbergodden Biopark Vest 29616"
 },
 "SP-2025-001864": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
 "Fylke": "Vestland",
@@ -8064,7 +8068,7 @@
 "title": "Abelsnes"
 },
 "SP-2025-001865": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -8374,7 +8378,7 @@
 "title": "Vindsvik"
 },
 "SP-2025-001881": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Fylke": "Nordland",
@@ -8470,7 +8474,7 @@
 "title": "Ørnøya"
 },
 "SP-2025-001890": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -8628,7 +8632,7 @@
 "title": "Rogne"
 },
 "SP-2025-001897": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -8680,7 +8684,7 @@
 "title": "Buøya Øst"
 },
 "SP-2025-001899": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -9024,10 +9028,11 @@
 "title": "Litleøya"
 },
 "SP-2025-001924": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Torsk",
+"Ferdigbehandlet": "21.09.2026",
 "Fylke": "Finnmark",
 "Innsendt": "19.05.2025",
 "Kommune": "Hammerfest",
@@ -9035,15 +9040,18 @@
 "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
 "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-"Produksjonssykluslengde": "22 mnd"
+"Produksjonssykluslengde": "22 mnd",
+"Resultat": "Avslått"
 },
 "norm": {
 "case_handler": "Finnmark fylkeskommune",
 "cycle_months": 22,
+"decided": "2026-09-21",
 "feed_per_cycle_tonn": 4400,
 "max_monthly_feed_tonn": 75,
 "mtb_tonn": 3600,
 "planned_production_tonn": 4000,
+"result": "Avslått",
 "species": "Torsk"
 },
 "status": "Under behandling",
@@ -9296,7 +9304,7 @@
 "title": "Brennholmen"
 },
 "SP-2025-001973": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -9368,7 +9376,7 @@
 "title": "Straumneset"
 },
 "SP-2025-001981": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -9426,7 +9434,7 @@
 "title": "Båsen"
 },
 "SP-2025-001984": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -9509,7 +9517,7 @@
 "title": "Dromnessundet"
 },
 "SP-2025-001988": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Fylke": "Møre og Romsdal",
@@ -9523,7 +9531,7 @@
 "title": "Sjølseng"
 },
 "SP-2025-002023": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -9655,7 +9663,7 @@
 "title": "Skjellnes"
 },
 "SP-2025-002042": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks",
@@ -9671,7 +9679,7 @@
 "title": "Myklebust"
 },
 "SP-2025-002043": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks",
@@ -9687,7 +9695,7 @@
 "title": "Myklebust"
 },
 "SP-2025-002057": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -9805,7 +9813,7 @@
 "title": "Djupevik"
 },
 "SP-2025-002070": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks",
@@ -9821,7 +9829,7 @@
 "title": "Røyklibotn"
 },
 "SP-2025-002071": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -9847,7 +9855,7 @@
 "title": "Korsfura"
 },
 "SP-2025-002072": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -9899,7 +9907,7 @@
 "title": "Isane"
 },
 "SP-2025-002074": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -9925,7 +9933,7 @@
 "title": "Bolværet"
 },
 "SP-2025-002076": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks",
@@ -9971,7 +9979,7 @@
 "title": "Oksøy"
 },
 "SP-2025-002080": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -10219,7 +10227,7 @@
 "title": "Kolvikodden Ø"
 },
 "SP-2025-002103": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -10245,7 +10253,7 @@
 "title": "Esøya"
 },
 "SP-2025-002106": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -10271,7 +10279,7 @@
 "title": "Breivik"
 },
 "SP-2025-002107": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Laks",
@@ -10317,7 +10325,7 @@
 "title": "Høydalsvika"
 },
 "SP-2025-002143": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "M-AV-0034 , M-AV-0024 , M-AV-0037",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -10348,7 +10356,7 @@
 "title": "Hendneset"
 },
 "SP-2025-002145": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -10374,7 +10382,7 @@
 "title": "45128 Røneset"
 },
 "SP-2025-002150": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -10464,7 +10472,7 @@
 "title": "Kalvøya"
 },
 "SP-2025-002158": {
-"fetched_at": "2026-09-21T07:44:53Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -10626,7 +10634,7 @@
 "title": "Toftekalven"
 },
 "SP-2025-002288": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
 "Art": "Laks",
@@ -10642,11 +10650,12 @@
 "title": "Fjellsæ i"
 },
 "SP-2025-002291": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "N-BR-0030 , N-BR-0050 , N-BL-0001 , N-BR-0052",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
+"Ferdigbehandlet": "24.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "24.11.2025",
 "Kapasitet": "1 560 tonn",
@@ -10658,21 +10667,24 @@
 "Planlagt produksjon per produksjonssyklus": "10 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Helgeland til Bodø (Gul)",
-"Produksjonssykluslengde": "36 mnd"
+"Produksjonssykluslengde": "36 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 36,
+"decided": "2026-09-24",
 "feed_per_cycle_tonn": 7,
 "mtb_tonn": 100,
 "planned_production_tonn": 10,
+"result": "Innvilget",
 "species": "Torsk"
 },
 "status": "Under behandling",
 "title": "Lamholmen"
 },
 "SP-2025-002293": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Laks",
@@ -10735,7 +10747,7 @@
 "title": "Kastevika"
 },
 "SP-2025-002298": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -10791,7 +10803,7 @@
 "title": "Elvevika"
 },
 "SP-2025-002334": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Drøbaksjøpiggsvin",
@@ -10853,7 +10865,7 @@
 "title": "Onarheim"
 },
 "SP-2025-002347": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "N-ME-0064 , N-ME-0065 , N-ME-0067 , N-ME-0063 , N-ME-0066",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10936,7 +10948,7 @@
 "title": "Mattisnes"
 },
 "SP-2026-002351": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11021,7 +11033,7 @@
 "title": "Austvika"
 },
 "SP-2026-002393": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11131,7 +11143,7 @@
 "title": "Skarvberget"
 },
 "SP-2026-002404": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11285,7 +11297,7 @@
 "title": "Movikodden N"
 },
 "SP-2026-002445": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Ukjent",
@@ -11301,7 +11313,7 @@
 "title": "Kråkøysundet"
 },
 "SP-2026-002446": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11357,7 +11369,7 @@
 "title": "Brudevika"
 },
 "SP-2026-002451": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11445,7 +11457,7 @@
 "title": "Ørnes"
 },
 "SP-2026-002456": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Kongekrabbe",
@@ -11461,7 +11473,7 @@
 "title": "Svartnes"
 },
 "SP-2026-002458": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11581,7 +11593,7 @@
 "title": "Selsøyvær"
 },
 "SP-2026-002463": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11607,7 +11619,7 @@
 "title": "Gannflesa"
 },
 "SP-2026-002464": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11665,7 +11677,7 @@
 "title": "Børøya"
 },
 "SP-2026-002471": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -11755,7 +11767,7 @@
 "title": "Grunneneset"
 },
 "SP-2026-002476": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Søl",
@@ -11787,7 +11799,7 @@
 "title": "Ytre Harøy"
 },
 "SP-2026-002478": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks",
@@ -11833,7 +11845,7 @@
 "title": "Bleket"
 },
 "SP-2026-002481": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Torsk",
@@ -11895,7 +11907,7 @@
 "title": "Botnaneset II"
 },
 "SP-2026-002484": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11951,7 +11963,7 @@
 "title": "Djupestallen"
 },
 "SP-2026-002488": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Kveite",
@@ -11989,7 +12001,7 @@
 "title": "Hestvika"
 },
 "SP-2026-002492": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -12199,7 +12211,7 @@
 "title": "Sighaug"
 },
 "SP-2026-002516": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -12251,7 +12263,7 @@
 "title": "Rakvikodden"
 },
 "SP-2026-002519": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -12323,7 +12335,7 @@
 "title": "Rakkenes"
 },
 "SP-2026-002523": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -12367,7 +12379,7 @@
 "title": "Uio In Vivo Fisk Akvatisk Komparativ Medisin"
 },
 "SP-2026-002525": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -12393,7 +12405,7 @@
 "title": "Fauskan"
 },
 "SP-2026-002526": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Fylke": "Vestland",
@@ -12407,7 +12419,7 @@
 "title": "Lutelandet"
 },
 "SP-2026-002527": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
 "Art": "Flekksteinbit",
@@ -12453,7 +12465,7 @@
 "title": "Brattholmen"
 },
 "SP-2026-002529": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
 "Art": "Kveite",
@@ -12469,7 +12481,7 @@
 "title": "Hausvik III"
 },
 "SP-2026-002530": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -12485,7 +12497,7 @@
 "title": "Trollbukta"
 },
 "SP-2026-002531": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Ukjent",
@@ -12531,7 +12543,7 @@
 "title": "Rundreimstranda"
 },
 "SP-2026-002533": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Oslo kommune",
 "Art": "Gullfisk",
@@ -12579,7 +12591,7 @@
 "title": "Holmskallen"
 },
 "SP-2026-002538": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -12605,7 +12617,7 @@
 "title": "Vardholmen"
 },
 "SP-2026-002571": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -12741,7 +12753,7 @@
 "title": "Gjerdeviksflua"
 },
 "SP-2026-002616": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Berggylte",
@@ -12839,7 +12851,7 @@
 "title": "Ilsøya 2"
 },
 "SP-2026-002635": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -12865,7 +12877,7 @@
 "title": "Hasvåg"
 },
 "SP-2026-002636": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "TR-H-0003 , TR-H-0006 , TR-H-0005 , TR-H-0004 , TR-H-0002",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -12896,7 +12908,7 @@
 "title": "Helsøya II"
 },
 "SP-2026-002637": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Aktive tillatelser": "M-EE-0009 , M-EE-0008",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -13083,7 +13095,7 @@
 "title": "Nordre Skokkeløy"
 },
 "SP-2026-002720": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13139,7 +13151,7 @@
 "title": "Tollaksholmen"
 },
 "SP-2026-002726": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13313,7 +13325,7 @@
 "title": "Vedvika"
 },
 "SP-2026-002770": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-09-24T10:06:10Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",

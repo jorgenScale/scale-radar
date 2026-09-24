@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-09-24T10:08:13Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-002291",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Codfarm AS",
+"title": "Lamholmen",
+"municipality": "Brønnøy",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 100,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002291"
+},
+{
+"at": "2026-09-24T10:08:13Z",
+"kind": "utfall",
+"text": "Utfall: Avslått",
+"id": "SP-2025-001924",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Kime Akva AS",
+"title": "Segelnes",
+"municipality": "Hammerfest",
+"county": "Finnmark",
+"status": "Under behandling",
+"mtb_tonn": 3600,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001924"
+},
+{
+"at": "2026-09-24T10:08:13Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-001829",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Lofotyngel AS",
+"title": "10492 Meøypollen",
+"municipality": "Vestvågøy",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001829"
+},
+{
 "at": "2026-09-23T23:46:59Z",
 "kind": "status",
 "text": "Status: Under behandling → Returnert",
@@ -36,5 +81,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-09-24T04:59:04Z"
+"updated_at": "2026-09-24T10:08:13Z"
 }
