@@ -1591,7 +1591,7 @@
 "title": "Slåttvika"
 },
 "SP-2023-000310": {
-"fetched_at": "2026-09-21T15:11:04Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-L-0024 , H-L-0025 , H-K-0063 , H-L-0003 , H-L-0027 , H-L-0026",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -1947,7 +1947,7 @@
 "title": "Skårliodden"
 },
 "SP-2023-000322": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-G-0062 , N-VV-0074 , N-VV-0070 , N-VV-0066 , N-VV-0003 , N-VV-0071",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -1979,7 +1979,7 @@
 "title": "Æsøya"
 },
 "SP-2023-000323": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -2103,7 +2103,7 @@
 "title": "Rinøyvåg Ø"
 },
 "SP-2023-000359": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-TN-0001 , N-TN-0004 , N-TN-0005 , N-G-0067 , N-ME-0010 , N-TN-0003 , N-G-0066",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -2255,7 +2255,7 @@
 "title": "Bremnessvaet"
 },
 "SP-2023-000364": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -2281,7 +2281,7 @@
 "title": "Langstranda"
 },
 "SP-2023-000365": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "NT-LA-0006 , NT-LA-0005 , NT-LA-0003 , NT-LA-0002",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -3097,7 +3097,7 @@
 "title": "Kariskjæret"
 },
 "SP-2023-000647": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -3149,7 +3149,7 @@
 "title": "Breivik"
 },
 "SP-2023-000649": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-R-0003 , H-FS-0006 , H-O-0012 , H-FS-0001 , H-FS-0026 , H-FS-0017 , H-FS-0037 , H-FS-0004 , H-O-0013 , H-FS-0040 , H-FS-0010 , H-FS-0014",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -3577,7 +3577,7 @@
 "title": "Storvika"
 },
 "SP-2024-000695": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-HR-0006 , N-HR-0010 , N-HR-0004 , N-HR-0003 , N-HR-0002 , N-HR-0012",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -3639,7 +3639,7 @@
 "title": "Røysa"
 },
 "SP-2024-000697": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -3825,7 +3825,7 @@
 "title": "Mulen"
 },
 "SP-2024-000739": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -4295,7 +4295,7 @@
 "title": "Kalvhodet"
 },
 "SP-2024-000954": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-L-0005 , T-S-0004 , T-KD-0003 , T-KN-0016 , T-L-0002 , T-S-0002 , T-KD-0001",
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
@@ -4449,7 +4449,7 @@
 "title": "Åkre"
 },
 "SP-2024-001063": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-LN-0001 , N-LN-0018 , N-LN-0016",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -4816,7 +4816,7 @@
 "title": "Økernveien 94"
 },
 "SP-2024-001160": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-VV-0071 , N-VV-0074 , N-VV-0003 , N-VV-0070",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -5000,7 +5000,7 @@
 "title": "Myklebust"
 },
 "SP-2024-001280": {
-"fetched_at": "2026-09-21T14:15:26Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-HM-0009 , N-SG-0066 , N-SG-0041 , N-SG-0003 , N-SG-0049 , N-SG-0014 , N-SG-0064 , N-SG-0044 , N-SG-0039 , N-SG-0065 , N-SG-0037 , N-SG-0042 , N-SG-0043 , N-SG-0005 , N-SG-0063 , N-SG-0038 , N-SG-0045 , N-SG-0050",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -5032,7 +5032,7 @@
 "title": "Hjartøy Ø"
 },
 "SP-2024-001281": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -5150,7 +5150,7 @@
 "title": "Knubben"
 },
 "SP-2024-001293": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-K-0039 , H-F-0008 , H-F-0007 , H-K-0028 , H-E-0029 , H-F-0010 , H-J-0004 , H-F-0009 , H-J-0005 , H-K-0037 , H-F-0011",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -5515,7 +5515,7 @@
 "title": "Rennaren"
 },
 "SP-2024-001419": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "F-M-0022 , F-M-0021 , F-L-0035 , F-A-0034",
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
@@ -5611,7 +5611,7 @@
 "title": "Renga S"
 },
 "SP-2024-001425": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Torsk",
@@ -5917,7 +5917,7 @@
 "title": "Salttjern"
 },
 "SP-2024-001549": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -6035,7 +6035,7 @@
 "title": "Vindsnes"
 },
 "SP-2024-001553": {
-"fetched_at": "2026-09-21T08:49:12Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -6061,7 +6061,7 @@
 "title": "Torshaugen"
 },
 "SP-2024-001554": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "R-B-0005 , R-F-0002 , R-B-0003 , R-SD-0002 , R-R-0002",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -6307,7 +6307,7 @@
 "title": "Hjellberget"
 },
 "SP-2024-001632": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "NT-LA-0002 , NT-LA-0006 , NT-LA-0005 , NT-LA-0003",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -6608,7 +6608,7 @@
 "title": "Kleivi Biopark"
 },
 "SP-2024-001658": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-AV-0021 , H-T-0007 , H-T-0010 , H-AV-0011 , H-K-0036 , H-AV-0003 , H-AV-0014 , H-T-0015 , H-AV-0004 , H-T-0005 , H-AV-0040 , H-L-0016",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -6765,7 +6765,7 @@
 "title": "Vengsøy"
 },
 "SP-2024-001671": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-OR-0006 , H-OR-0003 , H-OR-0005 , H-OR-0007",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -6797,7 +6797,7 @@
 "title": "Blom"
 },
 "SP-2024-001672": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-OR-0005 , H-OR-0007 , H-OR-0006 , H-OR-0003",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -6997,7 +6997,7 @@
 "title": "Nebbo"
 },
 "SP-2024-001687": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-S-0003 , T-S-0011 , T-S-0007 , T-S-0017",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -7281,7 +7281,7 @@
 "title": "Hosenøyan"
 },
 "SP-2025-001711": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-B-0048 , N-B-0029 , N-FE-0005 , N-B-0049 , N-FE-0002 , N-SL-0003",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -7311,7 +7311,7 @@
 "title": "Skysselvika V"
 },
 "SP-2025-001714": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "M-NL-0004 , M-FD-0005 , M-A-0010 , M-A-0013 , M-FD-0006 , M-ST-0002 , M-VD-0006 , M-NL-0003",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -8255,7 +8255,7 @@
 "title": "Tjeldbergodden Biopark Vest 29616"
 },
 "SP-2025-001873": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "R-F-0004 , R-B-0005 , R-B-0013 , R-S-0001 , R-B-0003 , R-SS-0010 , R-B-0001 , R-R-0002 , R-S-0002 , R-SS-0005 , R-K-0001",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -8516,7 +8516,7 @@
 "title": "28517 Kalvehagen"
 },
 "SP-2025-001893": {
-"fetched_at": "2026-09-21T13:46:39Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-TN-0017 , T-K-0001 , T-K-0028 , T-K-0004 , T-K-0020 , T-K-0022",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -8970,7 +8970,7 @@
 "title": "Svåsandneset"
 },
 "SP-2025-001922": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-B-0049 , N-FE-0005 , N-B-0029 , N-SL-0006 , N-SL-0007 , N-B-0048 , N-SL-0005 , N-FE-0002 , N-SL-0003",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -9188,7 +9188,7 @@
 "title": "Ræstad"
 },
 "SP-2025-001968": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "M-SJ-0003 , M-SJ-0005 , M-VS-0017 , M-VS-0018 , M-MD-0003",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -9402,7 +9402,7 @@
 "title": "Stortorgnes"
 },
 "SP-2025-001983": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "NT-V-0009 , TR-NR-0009 , NT-V-0008 , N-BR-0050 , NT-NR-0005 , TR-NR-0006 , NT-NR-0012 , NT-NR-0047",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -9783,7 +9783,7 @@
 "title": "Daumannsvika"
 },
 "SP-2025-002063": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "R-F-0003 , R-F-0005 , R-HM-0001 , R-F-0001 , R-F-0030 , R-V-0011",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -9871,7 +9871,7 @@
 "title": "Utkast 4101"
 },
 "SP-2025-002073": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-L-0003",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -9949,7 +9949,7 @@
 "title": "Lauvsnes"
 },
 "SP-2025-002079": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-HM-0018 , N-SG-0044 , N-HM-0020 , N-HM-0019 , N-HM-0009 , N-SG-0003 , N-SG-0043 , N-SG-0014 , N-SG-0042 , N-SG-0041 , N-SG-0005 , N-SG-0045",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10135,7 +10135,7 @@
 "title": "Storvika III"
 },
 "SP-2025-002090": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-SG-0016 , N-HM-0002 , N-SG-0028 , N-SG-0027 , N-SG-0007",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10295,7 +10295,7 @@
 "title": "Utsira Kvalvikvågen"
 },
 "SP-2025-002108": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-Ø-0001 , N-Ø-0042 , N-Ø-0046 , N-Ø-0009 , N-Ø-0040 , N-Ø-0049 , N-Ø-0047",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10442,7 +10442,7 @@
 "title": "Kalvhylla"
 },
 "SP-2025-002155": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-L-0070 , N-L-0005 , N-ME-0001 , N-L-0003 , N-L-0006 , N-L-0051",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10514,7 +10514,7 @@
 "title": "Segelnes"
 },
 "SP-2025-002213": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-H-0004 , N-H-0062 , N-H-0014 , N-V-0033",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10716,7 +10716,7 @@
 "title": "Brukstomta"
 },
 "SP-2025-002296": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-B-0040",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -10773,7 +10773,7 @@
 "title": "Sandholmtaren"
 },
 "SP-2025-002333": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "F-HV-0009 , F-M-0001 , F-HV-0011 , F-M-0022",
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
@@ -10974,7 +10974,7 @@
 "title": "Smørvika"
 },
 "SP-2026-002386": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -11003,7 +11003,7 @@
 "title": "Floteneset"
 },
 "SP-2026-002392": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "NT-F-0013 , NT-F-0007 , NT-F-0001 , NT-F-0005 , NT-F-0008",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -11113,7 +11113,7 @@
 "title": "Adamselv"
 },
 "SP-2026-002400": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-BG-0003 , T-TK-0001 , T-TN-0002 , T-BG-0002 , T-TK-0007 , T-TK-0019",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -11169,7 +11169,7 @@
 "title": "Skjellnes"
 },
 "SP-2026-002405": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-H-0004 , N-V-0010 , N-SO-0026 , N-H-0001 , N-V-0005 , N-H-0015 , N-V-0001 , N-H-0032 , N-V-0033",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11201,7 +11201,7 @@
 "title": "Litleøya"
 },
 "SP-2026-002407": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "R-S-0002 , R-SD-0032 , R-B-0001 , R-KV-0002 , R-SD-0002 , R-K-0001 , R-S-0001 , R-SD-0023 , R-KV-0001 , R-B-0005 , R-B-0013 , R-B-0003 , R-SD-0031 , R-SD-0025",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -11233,7 +11233,7 @@
 "title": "Hestholmen Ø"
 },
 "SP-2026-002443": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-H-0015 , N-H-0001 , N-H-0004 , N-V-0010 , N-H-0032 , N-SO-0026 , N-V-0001 , N-V-0005 , N-V-0033",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11265,7 +11265,7 @@
 "title": "Djupvik"
 },
 "SP-2026-002444": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-L-0003 , N-L-0070 , N-SF-0021 , N-L-0005 , N-L-0006 , N-L-0051 , N-SF-0023 , N-L-0069",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11339,7 +11339,7 @@
 "title": "Kalvøya Midt"
 },
 "SP-2026-002450": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -11395,7 +11395,7 @@
 "title": "Kalvøya"
 },
 "SP-2026-002453": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-L-0011 , N-HR-0069 , N-L-0061 , N-L-0071 , N-G-0063 , N-L-0069 , N-L-0074 , N-R-0048 , N-L-0059 , N-L-0072 , N-R-0013 , N-L-0060 , N-L-0075 , N-G-0064 , N-L-0045 , N-R-0002 , N-L-0008",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11425,7 +11425,7 @@
 "title": "Store Bukkøy N"
 },
 "SP-2026-002454": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-R-0013 , N-R-0049 , N-R-0002 , N-L-0006 , N-SF-0021 , N-L-0051 , N-L-0003 , N-L-0069 , N-L-0005 , N-L-0070 , N-SF-0023 , N-R-0048",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11561,7 +11561,7 @@
 "title": "Breiviken"
 },
 "SP-2026-002462": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-L-0061 , N-L-0003 , N-L-0060 , N-L-0070 , N-L-0059 , N-L-0005 , N-SF-0021 , N-R-0049 , N-L-0006 , N-L-0051 , N-R-0013 , N-R-0048 , N-L-0069 , N-R-0002",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11645,7 +11645,7 @@
 "title": "Langøy"
 },
 "SP-2026-002465": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-SG-0029 , N-Ø-0004 , N-SG-0039 , N-SG-0038 , N-Ø-0007 , N-HM-0005 , N-SG-0018 , N-Ø-0017 , N-SG-0037",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -11703,7 +11703,7 @@
 "title": "Flatskjæret"
 },
 "SP-2026-002473": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-S-0023 , SF-B-0028 , SF-B-0009 , SF-B-0015 , SF-S-0022 , SF-B-0003 , SF-F-0005",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -11815,7 +11815,7 @@
 "title": "Røyklibotn"
 },
 "SP-2026-002480": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-AV-0093 , H-AV-0094 , H-AV-0096",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -11861,7 +11861,7 @@
 "title": "Botnaneset"
 },
 "SP-2026-002482": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "M-AK-0003 , M-H-0004 , M-MD-0004 , M-AK-0002 , M-F-0005 , M-SØ-0004 , M-AK-0009",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -11933,7 +11933,7 @@
 "title": "Lille Bjørnøya"
 },
 "SP-2026-002487": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-T-0018 , H-T-0015 , H-T-0005",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -12027,7 +12027,7 @@
 "title": "Hestvika"
 },
 "SP-2026-002494": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-AH-0041 , N-R-0013 , N-R-0049 , N-R-0048 , N-DA-0036 , N-AH-0043 , N-DA-0077 , N-AH-0042 , N-R-0002",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -12059,7 +12059,7 @@
 "title": "Ystøya"
 },
 "SP-2026-002496": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "F-A-0039 , F-A-0011 , F-A-0036 , F-A-0040",
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
@@ -12089,7 +12089,7 @@
 "title": "Rivarbukt"
 },
 "SP-2026-002499": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "F-A-0069 , F-A-0034 , F-KD-0031 , F-M-0045 , F-A-0055 , F-A-0070 , F-M-0048 , F-A-0041 , F-M-0047 , F-A-0042 , F-M-0046 , F-KD-0027",
 "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
@@ -12161,7 +12161,7 @@
 "title": "Sørvær"
 },
 "SP-2026-002511": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-O-0012 , H-FS-0001 , H-FS-0017 , H-FS-0006 , H-FS-0026 , H-R-0003 , H-FS-0037 , H-O-0013 , H-FS-0010 , H-FS-0040 , H-FS-0014 , H-FS-0004",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -12305,7 +12305,7 @@
 "title": "Uio In Vivo Fisk_akvatisk Komparativ Medisin"
 },
 "SP-2026-002521": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0019 , T-KN-0005 , T-KN-0015 , T-KN-0012 , T-KN-0006",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -12435,7 +12435,7 @@
 "title": "Hausvik II"
 },
 "SP-2026-002528": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-HR-0003 , N-HR-0004 , N-HR-0012 , N-HR-0002 , N-DA-0077 , N-HR-0016 , N-HR-0006 , N-HR-0010 , N-HR-0014",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -12513,7 +12513,7 @@
 "title": "Berg N"
 },
 "SP-2026-002532": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "SF-B-0028 , SF-B-0003 , SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-B-0015",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -12643,7 +12643,7 @@
 "title": "Skardsteinane"
 },
 "SP-2026-002577": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-R-0029 , N-L-0007 , N-ME-0028 , N-L-0010 , N-R-0004 , N-R-0009 , N-R-0030 , N-ME-0005 , N-R-0006 , N-R-0001 , N-R-0008",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -12691,7 +12691,7 @@
 "title": "Måløy Vgs"
 },
 "SP-2026-002582": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-G-0063 , N-L-0006 , N-L-0070 , N-G-0064 , N-L-0069",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -12723,7 +12723,7 @@
 "title": "Kjølvika i"
 },
 "SP-2026-002583": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-FS-0026 , H-FS-0001 , H-FS-0017 , H-O-0012 , H-FS-0010 , H-FS-0040 , H-R-0003 , H-FS-0006 , H-FS-0004 , H-FS-0014 , H-FS-0037 , H-O-0013",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -12767,7 +12767,7 @@
 "title": "Hinderåvåg"
 },
 "SP-2026-002619": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -12819,7 +12819,7 @@
 "title": "Risøya"
 },
 "SP-2026-002629": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "TR-F-0033 , TR-AA-0007 , TR-O-0002 , TR-F-0031 , TR-F-0032 , ST-F-0062 , TR-O-0003 , ST-HE-0014 , TR-F-0010 , TR-F-0011 , TR-F-0035 , TR-O-0001 , ST-HE-0006 , TR-F-0034 , M-AV-0027 , ST-F-0014",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -12971,7 +12971,7 @@
 "title": "Vindvika"
 },
 "SP-2026-002645": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-L-0010 , N-R-0009 , N-R-0029 , N-R-0004 , N-L-0007 , N-BR-0002",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13001,7 +13001,7 @@
 "title": "Lian"
 },
 "SP-2026-002684": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0015 , T-KN-0012 , T-KN-0006",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13033,7 +13033,7 @@
 "title": "Karvika"
 },
 "SP-2026-002718": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-D-0002 , T-BK-0002 , T-SK-0002 , T-KF-0008 , T-T-0009 , T-SK-0004",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13065,7 +13065,7 @@
 "title": "Litjevika"
 },
 "SP-2026-002719": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "NT-F-0006 , TR-O-0002 , TR-O-0001 , NT-F-0026 , ST-HE-0014 , TR-F-0011 , TR-O-0003 , TR-AA-0007 , M-FI-0002 , NT-F-0009",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -13121,7 +13121,7 @@
 "title": "Valløya"
 },
 "SP-2026-002722": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "R-S-0001 , R-B-0001 , R-SD-0032 , R-SS-0005 , R-S-0002 , R-SD-0002 , R-SD-0023 , R-SS-0010 , R-B-0013 , R-SD-0025 , R-K-0001 , R-SD-0031",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -13203,7 +13203,7 @@
 "title": "Laupsneset"
 },
 "SP-2026-002731": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "H-T-0003 , H-E-0001 , H-K-0035 , H-T-0006 , H-T-0016 , H-B-0029 , H-K-0013 , H-B-0006 , H-T-0020",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -13233,7 +13233,7 @@
 "title": "Ihlholmen"
 },
 "SP-2026-002733": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "T-KF-0001 , T-BK-0003 , T-T-0019 , T-KF-0008 , T-SK-0004",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13265,7 +13265,7 @@
 "title": "Holandselv"
 },
 "SP-2026-002734": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "ST-H-0020 , ST-H-0014 , ST-H-0005 , ST-H-0001",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -13295,7 +13295,7 @@
 "title": "Kåholmen"
 },
 "SP-2026-002737": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-09-24T15:11:17Z",
 "fields": {
 "Aktive tillatelser": "N-BØ-0016 , N-BØ-0009",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
