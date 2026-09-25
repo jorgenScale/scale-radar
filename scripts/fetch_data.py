@@ -744,6 +744,43 @@ def parse_auction_page(html: str, url: str) -> dict:
         header = rows[0]
         hjoined = " ".join(header).lower()
         body = [r for r in rows[1:] if len(r) >= 2 and not re.match(r"^\s*\**\s*(sum|totalt|total)\b", r[0], re.I)]
+        if "tillatelsesnummer" in hjoined and len(header) < 5:
+            continue                                        # fordelingsliste uten bud – ikke relevant
+        if "tillatelsesnummer" in hjoined and len(header) >= 5:
+            # lukket budrunde: Tillatelsesnummer | PO | tonn | (bud og budgiver – rekkefølgen varierer)
+            for r in body:
+                if len(r) < 5:
+                    continue
+                po = _num(r[1]); tonn = _num(r[2])
+                rest = [r[3], r[4]]
+                nums = [_num(x) for x in rest]
+                name = rest[0] if nums[0] is None else rest[1]
+                nok = nums[1] if nums[0] is None else nums[0]
+                if po is None or tonn is None or not name:
+                    continue
+                out["companies"].append({"name": name.strip(), "tonn": int(round(tonn)), "nok": int(round(nok)) if nok is not None else None})
+                out["areas"].append({"po": int(po), "name": "", "tonn": int(round(tonn)), "nok": int(round(nok)) if nok is not None else None})
+            continue
+        if "budgiver" in hjoined and "pris" in hjoined and len(header) >= 4:
+            # budliste med rowspan: PO | Budgiver | tonn | pris per tonn – PO-cellen mangler på påfølgende rader
+            cur_po, cur_name = None, ""
+            for r in body:
+                if len(r) >= 4:
+                    m = po_rx.match(r[0].strip())
+                    if m:
+                        cur_po, cur_name = int(m.group(1)), m.group(2).strip(" -–:")
+                    name, tonn, price = r[1], _num(r[2]), _num(r[3])
+                elif len(r) == 3:
+                    name, tonn, price = r[0], _num(r[1]), _num(r[2])
+                else:
+                    continue
+                if tonn is None or not name.strip():
+                    continue
+                nok = int(round(tonn * price)) if price is not None else None
+                out["companies"].append({"name": name.strip(), "tonn": int(round(tonn)), "nok": nok})
+                if cur_po is not None:
+                    out["areas"].append({"po": cur_po, "name": cur_name, "tonn": int(round(tonn)), "nok": nok})
+            continue
         if "selskap" in hjoined or "budgiver" in hjoined or "kjøper" in hjoined:
             ti = col(header, "tonn", "kapasitet", "mtb", default=1)
             ni = col(header, "vederlag", "nok", "kr", "pris", default=2)
@@ -765,6 +802,8 @@ def parse_auction_page(html: str, url: str) -> dict:
                 avail = _num(r[ai]) if ai is not None and ai < len(r) else None
                 if price is not None:
                     out["min_prices"].append({"po": int(m.group(1)), "name": m.group(2).strip(" -–:"), "min_price_per_tonn": int(round(price)), "available_tonn": int(round(avail)) if avail is not None else None})
+        elif ("tilgjengelig" in hjoined and "vederlag" not in hjoined) or len(header) < 3:
+            continue                                        # oversikt over tilbudt kapasitet – ikke resultat
         elif "produksjonsområde" in hjoined or "tonn mtb" in hjoined or (body and po_rx.match(body[0][0].strip().strip("*")) and any(ch.isdigit() for ch in body[0][0][:3])):
             ti = col(header, "tonn", "tildelt", "kapasitet", default=1)
             ni = col(header, "vederlag", "nok", default=2)
@@ -782,6 +821,26 @@ def parse_auction_page(html: str, url: str) -> dict:
                 if ui is not None and ui < len(r) and _num(r[ui]) is not None:
                     area["unsold_tonn"] = int(round(_num(r[ui])))
                 out["areas"].append(area)
+    # slå sammen gjentatte selskap (flere bud / flere områder) og gjentatte områder
+    def aggregate(items: list[dict], key_fn, keep: list[str]) -> list[dict]:
+        acc: dict = {}
+        order: list = []
+        for it in items:
+            k = key_fn(it)
+            if k not in acc:
+                acc[k] = dict(it); order.append(k)
+            else:
+                a = acc[k]
+                a["tonn"] += it["tonn"]
+                a["nok"] = (a["nok"] + it["nok"]) if (a.get("nok") is not None and it.get("nok") is not None) else None
+                if "unsold_tonn" in it:
+                    a["unsold_tonn"] = a.get("unsold_tonn", 0) + it["unsold_tonn"]
+                for f in keep:
+                    if not a.get(f) and it.get(f):
+                        a[f] = it[f]
+        return [acc[k] for k in order]
+    out["companies"] = aggregate(out["companies"], lambda c: re.sub(r"\s+", " ", c["name"].strip().lower()), [])
+    out["areas"] = sorted(aggregate(out["areas"], lambda a: a["po"], ["name"]), key=lambda a: a["po"])
     for a in main.find_all("a", href=True):
         if re.search(r"\.(xlsx|pdf|csv)(\?|$)", a["href"], re.I):
             out["files"].append({"title": a.get_text(" ", strip=True)[:120], "url": a["href"] if a["href"].startswith("http") else "https://www.fiskeridir.no" + a["href"]})
