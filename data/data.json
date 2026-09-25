@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T11:42:06Z",
+ "generated_at": "2026-09-25T11:47:11Z",
  "mode": "live",
  "news": [
   {
@@ -397,15 +397,15 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 203.8,
-      "change_pct": 1.6
+      "price": 204.2,
+      "change_pct": 1.79
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 564.0,
-      "change_pct": 0.8
+      "price": 564.5,
+      "change_pct": 0.89
      },
      {
       "name": "Lerøy Seafood Group",
@@ -418,8 +418,8 @@
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 25.8,
-      "change_pct": 1.26
+      "price": 25.84,
+      "change_pct": 1.41
      },
      {
       "name": "Austevoll Seafood",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-25T11:42:16Z",
+  "fetched_at": "2026-09-25T11:47:20Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37599,7 +37599,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-09-25T11:42:17Z",
+  "updated_at": "2026-09-25T11:47:22Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37869,7 +37869,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-25T11:42:17Z",
+  "updated_at": "2026-09-25T11:47:22Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38060,7 +38060,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38081,7 +38081,7 @@
     "totals": {
      "tonn": 8243,
      "nok": 1513857234,
-     "buyers": 8,
+     "buyers": 5,
      "offered_tonn": 8243,
      "avg_price_per_tonn": 183654
     },
@@ -38100,14 +38100,14 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": []
     },
     "companies": [
      {
       "name": "Mowi Seawater AS",
-      "tonn": 1249,
-      "nok": 124900000
+      "tonn": 2207,
+      "nok": 302992200
      },
      {
       "name": "Nova Sea Havbruk AS",
@@ -38120,24 +38120,9 @@
       "nok": 18590000
      },
      {
-      "name": "Mowi Seawater AS",
-      "tonn": 48,
-      "nok": 8923200
-     },
-     {
       "name": "Cermaq Norway Salmon AS",
-      "tonn": 4262,
-      "nok": 792305800
-     },
-     {
-      "name": "Mowi Seawater AS",
-      "tonn": 910,
-      "nok": 169169000
-     },
-     {
-      "name": "Cermaq Norway Salmon AS",
-      "tonn": 861,
-      "nok": 133541961
+      "tonn": 5123,
+      "nok": 925847761
      },
      {
       "name": "Salmar Oppdrett AS",
@@ -38440,7 +38425,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -38744,7 +38729,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -38773,9 +38758,8 @@
     "page_match": "lukket budrunde",
     "totals": {
      "tonn": 414,
-     "nok": 414,
-     "buyers": 8,
-     "avg_price_per_tonn": 1
+     "nok": null,
+     "buyers": 5
     },
     "fixed_price": null,
     "notes": "Restkapasitet fordelt på åtte tillatelser; høyeste bud per tillatelse vant.",
@@ -38788,7 +38772,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -38802,44 +38786,29 @@
     },
     "companies": [
      {
-      "name": "1",
+      "name": "Eide Fjordbruk AS",
       "tonn": 16,
-      "nok": 16
+      "nok": 2120000
      },
      {
-      "name": "2",
-      "tonn": 100,
-      "nok": 100
+      "name": "Midt-Norsk Havbruk AS",
+      "tonn": 145,
+      "nok": 29870000
      },
      {
-      "name": "3",
-      "tonn": 45,
-      "nok": 45
+      "name": "Selsøyvik Havbruk AS",
+      "tonn": 200,
+      "nok": 49137035
      },
      {
-      "name": "4",
-      "tonn": 100,
-      "nok": 100
+      "name": "-",
+      "tonn": 51,
+      "nok": null
      },
      {
-      "name": "5",
-      "tonn": 100,
-      "nok": 100
-     },
-     {
-      "name": "6",
-      "tonn": 40,
-      "nok": 40
-     },
-     {
-      "name": "7",
+      "name": "Marine Harvest Norway AS",
       "tonn": 2,
-      "nok": 2
-     },
-     {
-      "name": "8",
-      "tonn": 11,
-      "nok": 11
+      "nok": 258000
      }
     ],
     "areas": [
@@ -38847,49 +38816,37 @@
       "po": 1,
       "name": "",
       "tonn": 16,
-      "nok": 16
-     },
-     {
-      "po": 2,
-      "name": "",
-      "tonn": 100,
-      "nok": 100
-     },
-     {
-      "po": 3,
-      "name": "",
-      "tonn": 45,
-      "nok": 45
-     },
-     {
-      "po": 4,
-      "name": "",
-      "tonn": 100,
-      "nok": 100
-     },
-     {
-      "po": 5,
-      "name": "",
-      "tonn": 100,
-      "nok": 100
-     },
-     {
-      "po": 6,
-      "name": "",
-      "tonn": 40,
-      "nok": 40
+      "nok": 2120000
      },
      {
       "po": 7,
       "name": "",
-      "tonn": 2,
-      "nok": 2
+      "tonn": 145,
+      "nok": 29870000
      },
      {
       "po": 8,
       "name": "",
+      "tonn": 200,
+      "nok": 49137035
+     },
+     {
+      "po": 10,
+      "name": "",
+      "tonn": 40,
+      "nok": null
+     },
+     {
+      "po": 11,
+      "name": "",
+      "tonn": 2,
+      "nok": 258000
+     },
+     {
+      "po": 12,
+      "name": "",
       "tonn": 11,
-      "nok": 11
+      "nok": null
      }
     ]
    },
@@ -38899,9 +38856,10 @@
     "auction_label": "Simultan klokkeauksjon 18.–20. juni 2018. 414 tonn forble usolgt og gikk til lukket budrunde i september.",
     "page_match": "2018",
     "totals": {
-     "tonn": 5761940,
-     "nok": null,
-     "buyers": 39
+     "tonn": 14945,
+     "nok": 2915343000,
+     "buyers": 14,
+     "avg_price_per_tonn": 195071
     },
     "fixed_price": {
      "price_per_tonn": 120000,
@@ -38923,7 +38881,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-09-25T11:31:38Z",
+     "fetched_at": "2026-09-25T11:47:22Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
@@ -38941,249 +38899,124 @@
     },
     "companies": [
      {
-      "name": "1: Svenskegrensen til Jæren",
+      "name": "EIDE FJORDBRUK AS",
       "tonn": 100,
-      "nok": 132000
+      "nok": 13200000
      },
      {
       "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 132000,
-      "nok": null
+      "tonn": 2930,
+      "nok": 466183000
      },
      {
-      "name": "7: Nord-Trøndelag med Bindal",
+      "name": "EMILSEN FISK AS",
       "tonn": 400,
-      "nok": 226000
+      "nok": 90400000
      },
      {
       "name": "NORSK HAVBRUKSSENTER OPPDRETT AS",
-      "tonn": 226000,
-      "nok": null
+      "tonn": 265,
+      "nok": 59890000
      },
      {
       "name": "MIDT NORSK HAVBRUK AS",
-      "tonn": 210000,
-      "nok": null
-     },
-     {
-      "name": "MIDT NORSK HAVBRUK AS",
-      "tonn": 208000,
-      "nok": null
+      "tonn": 780,
+      "nok": 163440000
      },
      {
       "name": "SALMAR FARMING AS",
-      "tonn": 210000,
-      "nok": null
+      "tonn": 2132,
+      "nok": 363111000
      },
      {
-      "name": "SALMAR FARMING AS",
-      "tonn": 208000,
-      "nok": null
-     },
-     {
-      "name": "8: Helgeland til Bodø",
+      "name": "LOVUNDLAKS AS",
       "tonn": 1850,
-      "nok": 252000
+      "nok": 466200000
      },
      {
-      "name": "9: Vestfjorden og Vesterålen",
-      "tonn": 200,
-      "nok": 232000
+      "name": "EDELFARM AS",
+      "tonn": 604,
+      "nok": 149188000
      },
      {
       "name": "BALLANGEN SJØFARM AS",
-      "tonn": 227000,
-      "nok": null
+      "tonn": 250,
+      "nok": 57750000
      },
      {
       "name": "CERMAQ NORWAY AS",
-      "tonn": 232000,
-      "nok": null
-     },
-     {
-      "name": "CERMAQ NORWAY AS",
-      "tonn": 227000,
-      "nok": null
+      "tonn": 3230,
+      "nok": 670010000
      },
      {
       "name": "EIDSFJORD SJØFARM AS",
-      "tonn": 232000,
-      "nok": null
+      "tonn": 1474,
+      "nok": 255779000
      },
      {
       "name": "LOFOTEN SJØPRODUKTER AS",
-      "tonn": 232000,
-      "nok": null
-     },
-     {
-      "name": "LOFOTEN SJØPRODUKTER AS",
-      "tonn": 227000,
-      "nok": null
-     },
-     {
-      "name": "LOFOTEN SJØPRODUKTER AS",
-      "tonn": 233000,
-      "nok": null
-     },
-     {
-      "name": "10: Andøya til Senja",
-      "tonn": 517,
-      "nok": 164000
-     },
-     {
-      "name": "EIDSFJORD SJØFARM AS",
-      "tonn": 166000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 164000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 166000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 164000,
-      "nok": null
-     },
-     {
-      "name": "SALMAR FARMING AS",
-      "tonn": 164000,
-      "nok": null
+      "tonn": 105,
+      "nok": 24292000
      },
      {
       "name": "STINGRAY MARINE SOLUTIONS AS",
-      "tonn": 164000,
-      "nok": null
-     },
-     {
-      "name": "11: Kvaløya til Loppa",
-      "tonn": 357,
-      "nok": 163000
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 163000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 161000,
-      "nok": null
+      "tonn": 25,
+      "nok": 4100000
      },
      {
       "name": "NRS FINNMARK AS",
-      "tonn": 163000,
-      "nok": null
-     },
-     {
-      "name": "SALMAR FARMING AS",
-      "tonn": 163000,
-      "nok": null
-     },
-     {
-      "name": "SALMAR FARMING AS",
-      "tonn": 161000,
-      "nok": null
-     },
-     {
-      "name": "12: Vest-Finnmark",
-      "tonn": 1200,
-      "nok": 166000
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 166000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 165000,
-      "nok": null
-     },
-     {
-      "name": "MARINE HARVEST NORWAY AS",
-      "tonn": 163000,
-      "nok": null
-     },
-     {
-      "name": "NRS FINNMARK AS",
-      "tonn": 166000,
-      "nok": null
-     },
-     {
-      "name": "NRS FINNMARK AS",
-      "tonn": 165000,
-      "nok": null
-     },
-     {
-      "name": "SALMAR FARMING AS",
-      "tonn": 166000,
-      "nok": null
-     },
-     {
-      "name": "SALMAR FARMING AS",
-      "tonn": 163000,
-      "nok": null
-     },
-     {
-      "name": "13: Øst-Finnmark",
-      "tonn": 316,
-      "nok": 158000
+      "tonn": 800,
+      "nok": 131800000
      }
     ],
     "areas": [
      {
       "po": 1,
       "name": "Svenskegrensen til Jæren",
-      "tonn": 609,
-      "nok": null
+      "tonn": 593,
+      "nok": 78276000
      },
      {
       "po": 7,
       "name": "Nord-Trøndelag med Bindal",
-      "tonn": 2033,
-      "nok": null
+      "tonn": 1888,
+      "nok": 406240000
      },
      {
       "po": 8,
       "name": "Helgeland til Bodø",
-      "tonn": 2654,
-      "nok": null
+      "tonn": 2454,
+      "nok": 615388000
      },
      {
       "po": 9,
       "name": "Vestfjorden og Vesterålen",
       "tonn": 2585,
-      "nok": null
+      "nok": 599252000
      },
      {
       "po": 10,
       "name": "Andøya til Senja",
-      "tonn": 2303,
-      "nok": null
+      "tonn": 2263,
+      "nok": 372272000
      },
      {
       "po": 11,
       "name": "Kvaløya til Loppa",
-      "tonn": 1572,
-      "nok": null
+      "tonn": 1570,
+      "nok": 255882000
      },
      {
       "po": 12,
       "name": "Vest-Finnmark",
-      "tonn": 2970,
-      "nok": null
+      "tonn": 2959,
+      "nok": 490872000
      },
      {
       "po": 13,
       "name": "Øst-Finnmark",
       "tonn": 633,
-      "nok": null
+      "nok": 97161000
      }
     ]
    }
