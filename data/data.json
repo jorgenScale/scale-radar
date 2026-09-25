@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T11:47:11Z",
+ "generated_at": "2026-09-25T11:52:29Z",
  "mode": "live",
  "news": [
   {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 204.2,
-      "change_pct": 1.79
+      "price": 204.4,
+      "change_pct": 1.89
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 564.5,
-      "change_pct": 0.89
+      "price": 565.5,
+      "change_pct": 1.07
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.68,
-      "change_pct": 1.19
+      "price": 42.72,
+      "change_pct": 1.28
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 25.84,
-      "change_pct": 1.41
+      "price": 25.92,
+      "change_pct": 1.73
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 83.2,
-      "change_pct": 0.73
+      "price": 83.5,
+      "change_pct": 1.09
      },
      {
       "name": "Måsøval",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 445.8,
-      "change_pct": 1.04
+      "price": 447.4,
+      "change_pct": 1.41
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-25T11:47:20Z",
+  "fetched_at": "2026-09-25T11:52:39Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37599,7 +37599,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-09-25T11:47:22Z",
+  "updated_at": "2026-09-25T11:52:42Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37869,7 +37869,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-25T11:47:22Z",
+  "updated_at": "2026-09-25T11:52:42Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38060,7 +38060,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38100,7 +38100,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": []
     },
     "companies": [
@@ -38425,7 +38425,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -38729,7 +38729,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -38758,8 +38758,9 @@
     "page_match": "lukket budrunde",
     "totals": {
      "tonn": 414,
-     "nok": null,
-     "buyers": 5
+     "nok": 81385035,
+     "buyers": 4,
+     "avg_price_per_tonn": 196582
     },
     "fixed_price": null,
     "notes": "Restkapasitet fordelt på åtte tillatelser; høyeste bud per tillatelse vant.",
@@ -38772,7 +38773,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -38801,11 +38802,6 @@
       "nok": 49137035
      },
      {
-      "name": "-",
-      "tonn": 51,
-      "nok": null
-     },
-     {
       "name": "Marine Harvest Norway AS",
       "tonn": 2,
       "nok": 258000
@@ -38831,22 +38827,10 @@
       "nok": 49137035
      },
      {
-      "po": 10,
-      "name": "",
-      "tonn": 40,
-      "nok": null
-     },
-     {
       "po": 11,
       "name": "",
       "tonn": 2,
       "nok": 258000
-     },
-     {
-      "po": 12,
-      "name": "",
-      "tonn": 11,
-      "nok": null
      }
     ]
    },
@@ -38881,7 +38865,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-09-25T11:47:22Z",
+     "fetched_at": "2026-09-25T11:52:42Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
