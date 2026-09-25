@@ -692,6 +692,7 @@ def enrich_einnsyn(apps: dict) -> None:
 
 # --------------------------------------------------------------------------- kapasitetsauksjoner (Fiskeridirektoratet)
 AUCTION_CACHE = ROOT / "data" / "auctions_cache.json"
+AUCTION_PARSER_VERSION = 2   # bump når parse_auction_page endres, så cachede sider leses på nytt
 
 
 def _num(v: str) -> float | None:
@@ -908,13 +909,14 @@ def fetch_auctions() -> dict:
 
     for sp in subpages:
         c = cache.get(sp["url"])
-        if c and age_h(c.get("fetched_at")) < refresh_h:
+        if c and c.get("v") == AUCTION_PARSER_VERSION and age_h(c.get("fetched_at")) < refresh_h:
             continue
         try:
             r = requests.get(sp["url"], timeout=30, headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
             r.raise_for_status()
             parsed = parse_auction_page(r.text, sp["url"])
             parsed["title"] = sp["title"]
+            parsed["v"] = AUCTION_PARSER_VERSION
             parsed["fetched_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
             cache[sp["url"]] = parsed
             log(f"auksjoner: {sp['title']}: {len(parsed['companies'])} selskaper, {len(parsed['areas'])} områder")
