@@ -4,8 +4,8 @@
   "rounds": [
     {
       "key": "2018",
-      "label": "Tildelingsrunden 2018",
-      "auction_label": "Klokkeauksjon 18.–20. juni 2018 + lukket budrunde september 2018",
+      "label": "Tildelingsrunden 2018 – klokkeauksjon juni",
+      "auction_label": "Simultan klokkeauksjon 18.–20. juni 2018. 414 tonn forble usolgt og gikk til lukket budrunde i september.",
       "page_match": "2018",
       "totals": {
         "tonn": null,
@@ -18,7 +18,7 @@
         "nok": 750000000,
         "note": "Fastpris vinteren 2018 (1 % vekst på eksisterende tillatelser)"
       },
-      "notes": "Første auksjon under trafikklyssystemet. Lovundlaks betalte høyeste enhetspris, 252 000 kr/tonn.",
+      "notes": "Første auksjon under trafikklyssystemet. Selskapslisten er summert fra budlisten per produksjonsområde (tonn × pris per tonn). Lovundlaks betalte høyeste enhetspris, 252 000 kr/tonn.",
       "sources": [
         {
           "title": "Fiskeridirektoratet: Auksjon juni 2018",
@@ -771,6 +771,26 @@
         {
           "title": "Regjeringen: Forslag til forskrift om auksjon 2026 (høring)",
           "url": "https://www.regjeringen.no/no/dokumenter/forslag-til-forskrift-om-auksjon-av-tillatelser-til-lakseoppdrett-i-2026/id3168004/"
+        }
+      ]
+    },
+    {
+      "key": "2018r",
+      "short": "2018 rest",
+      "label": "Restauksjon 2018 – lukket budrunde september",
+      "auction_label": "Lukket budrunde september 2018 for 414 tonn som ikke ble solgt i juni",
+      "page_match": "lukket budrunde",
+      "totals": {
+        "tonn": 414,
+        "nok": null,
+        "buyers": null
+      },
+      "fixed_price": null,
+      "notes": "Restkapasitet fordelt på åtte tillatelser; høyeste bud per tillatelse vant.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon, lukket budrunde 2018",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018"
         }
       ]
     }
