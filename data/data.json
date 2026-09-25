@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T18:40:49Z",
+ "generated_at": "2026-09-25T22:25:23Z",
  "mode": "live",
  "news": [
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-09-25",
+  "as_of": "2026-09-24",
   "note": null,
   "groups": [
    {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 205.6,
-      "change_pct": 2.49
+      "price": 200.6,
+      "change_pct": -0.69
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 580.5,
-      "change_pct": 3.75
+      "price": 559.5,
+      "change_pct": -0.27
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.9,
-      "change_pct": 1.71
+      "price": 42.18,
+      "change_pct": -0.71
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 25.74,
-      "change_pct": 1.02
+      "price": 25.48,
+      "change_pct": -0.62
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 84.0,
-      "change_pct": 1.69
+      "price": 82.6,
+      "change_pct": -0.84
      },
      {
       "name": "Måsøval",
@@ -445,42 +445,42 @@
       "ticker": "ASA",
       "currency": "NOK",
       "price": 0.78,
-      "change_pct": 0.64
+      "change_pct": 3.73
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.35,
-      "change_pct": -1.62
+      "price": 3.4,
+      "change_pct": 1.49
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.1,
-      "change_pct": -0.73
+      "price": 27.3,
+      "change_pct": 0.37
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.41,
-      "change_pct": -4.83
+      "price": 0.44,
+      "change_pct": 1.16
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.6,
-      "change_pct": 2.36
+      "price": 84.6,
+      "change_pct": -0.7
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 5.06,
-      "change_pct": -2.69
+      "price": 5.2,
+      "change_pct": 5.05
      }
     ]
    },
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 450.0,
-      "change_pct": 1.99
+      "price": 441.2,
+      "change_pct": -1.78
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-25T18:40:59Z",
+  "fetched_at": "2026-09-25T22:25:34Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37595,11 +37595,11 @@
   "einnsyn_summary": {
    "cached": 483,
    "pending": 0,
-   "fetched_now": 11
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-09-25T18:41:33Z",
+  "updated_at": "2026-09-25T22:25:36Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37869,7 +37869,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-25T18:41:33Z",
+  "updated_at": "2026-09-25T22:25:36Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
