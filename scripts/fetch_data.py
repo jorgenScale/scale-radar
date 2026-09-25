@@ -689,6 +689,237 @@ def enrich_einnsyn(apps: dict) -> None:
                              "fetched_at": c.get("fetched_at"), "search_url": c.get("search_url")}
     apps["einnsyn_summary"] = {"cached": sum(1 for k in cache if k in known), "pending": max(0, len(todo) - len(batch)), "fetched_now": fetched}
 
+
+# --------------------------------------------------------------------------- kapasitetsauksjoner (Fiskeridirektoratet)
+AUCTION_CACHE = ROOT / "data" / "auctions_cache.json"
+
+
+def _num(v: str) -> float | None:
+    import re
+    t = (v or "").replace("\xa0", " ").strip()
+    t = re.sub(r"(kr|nok|tonn|mtb|,-)", "", t, flags=re.I).strip()
+    if not t or not re.search(r"\d", t):
+        return None
+    t = t.replace(" ", "").replace(".", "").replace(",", ".")
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def parse_auction_page(html: str, url: str) -> dict:
+    """Finner selskapstabell, områdetabell og minstepristabell på en auksjonsside.
+
+    Tåler ulike formater: områdenavn som «1. X», «1: X» og «1 - X», vederlag i NOK eller mill. NOK,
+    ekstra kolonner (usolgt kapasitet) og sum-/totalt-rader.
+    """
+    import re
+
+    from bs4 import BeautifulSoup  # type: ignore
+
+    soup = BeautifulSoup(html, "html.parser")
+    main = soup.find("main") or soup
+    out: dict = {"url": url, "companies": [], "areas": [], "min_prices": [], "files": [], "text_totals": {}}
+
+    def col(header: list[str], *keys: str, default: int | None = None) -> int | None:
+        for i, h in enumerate(header):
+            hl = h.lower()
+            if any(k in hl for k in keys):
+                return i
+        return default
+
+    def unit(h: str) -> float:
+        hl = (h or "").lower()
+        return 1e9 if ("mrd" in hl or "milliard" in hl) else (1e6 if "mill" in hl else 1.0)
+
+    po_rx = re.compile(r"^(\d{1,2})\s*[.:\-–]?\s*(.*)$")
+    for table in main.find_all("table"):
+        rows = []
+        for tr in table.find_all("tr"):
+            cells = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+            if cells:
+                rows.append(cells)
+        if len(rows) < 2:
+            continue
+        header = rows[0]
+        hjoined = " ".join(header).lower()
+        body = [r for r in rows[1:] if len(r) >= 2 and not re.match(r"^\s*\**\s*(sum|totalt|total)\b", r[0], re.I)]
+        if "selskap" in hjoined or "budgiver" in hjoined or "kjøper" in hjoined:
+            ti = col(header, "tonn", "kapasitet", "mtb", default=1)
+            ni = col(header, "vederlag", "nok", "kr", "pris", default=2)
+            mult = unit(header[ni] if ni is not None and ni < len(header) else "")
+            for r in body:
+                name = r[0].strip().strip("*")
+                tonn = _num(r[ti]) if ti is not None and ti < len(r) else None
+                nok = _num(r[ni]) if ni is not None and ni < len(r) else None
+                if name and tonn is not None:
+                    out["companies"].append({"name": name, "tonn": int(round(tonn)), "nok": int(round(nok * mult)) if nok is not None else None})
+        elif "minstepris" in hjoined:
+            pi = col(header, "minstepris", "pris", default=None)
+            ai = col(header, "tilgjengelig", default=None)
+            for r in body:
+                m = po_rx.match(r[0].strip().strip("*"))
+                if not m:
+                    continue
+                price = _num(r[pi]) if pi is not None and pi < len(r) else None
+                avail = _num(r[ai]) if ai is not None and ai < len(r) else None
+                if price is not None:
+                    out["min_prices"].append({"po": int(m.group(1)), "name": m.group(2).strip(" -–:"), "min_price_per_tonn": int(round(price)), "available_tonn": int(round(avail)) if avail is not None else None})
+        elif "produksjonsområde" in hjoined or "tonn mtb" in hjoined or (body and po_rx.match(body[0][0].strip().strip("*")) and any(ch.isdigit() for ch in body[0][0][:3])):
+            ti = col(header, "tonn", "tildelt", "kapasitet", default=1)
+            ni = col(header, "vederlag", "nok", default=2)
+            ui = col(header, "usolgt", default=None)
+            mult = unit(header[ni] if ni is not None and ni < len(header) else "")
+            for r in body:
+                m = po_rx.match(r[0].strip().strip("*"))
+                if not m:
+                    continue
+                tonn = _num(r[ti]) if ti is not None and ti < len(r) else None
+                nok = _num(r[ni]) if ni is not None and ni < len(r) else None
+                if tonn is None:
+                    continue
+                area = {"po": int(m.group(1)), "name": m.group(2).strip(" -–:"), "tonn": int(round(tonn)), "nok": int(round(nok * mult)) if nok is not None else None}
+                if ui is not None and ui < len(r) and _num(r[ui]) is not None:
+                    area["unsold_tonn"] = int(round(_num(r[ui])))
+                out["areas"].append(area)
+    for a in main.find_all("a", href=True):
+        if re.search(r"\.(xlsx|pdf|csv)(\?|$)", a["href"], re.I):
+            out["files"].append({"title": a.get_text(" ", strip=True)[:120], "url": a["href"] if a["href"].startswith("http") else "https://www.fiskeridir.no" + a["href"]})
+    text = main.get_text(" ", strip=True)
+    m = re.search(r"samlede? (?:vederlag|inntekt)[^0-9]{0,40}([\d\s.,]+)\s*(milliard|million|mrd|mill)", text, re.I)
+    if m and _num(m.group(1)) is not None:
+        out["text_totals"]["nok"] = int(_num(m.group(1)) * (1e9 if m.group(2).lower().startswith(("milliard", "mrd")) else 1e6))
+    m = re.search(r"ble (?:det )?(?:tilbudt|solgt)\s*([\d\s]+)\s*tonn", text, re.I)
+    if m and _num(m.group(1)) is not None:
+        out["text_totals"]["tonn"] = int(_num(m.group(1)))
+    m = re.search(r"minstepris(?:en)? (?:var |ble )?(?:fastsatt )?til\s*([\d\s]+)\s*kr", text, re.I)
+    if m and _num(m.group(1)) is not None:
+        out["text_totals"]["min_price_per_tonn"] = int(_num(m.group(1)))
+    m = re.search(r"Auksjonen (?:ble|blir) holdt ([^.]{3,60})\.", text)
+    if m:
+        out["text_totals"]["held"] = m.group(1).strip()
+    m = re.search(r"(\d+)\s*(?:aktører|selskap(?:er)?) kjøpte", text, re.I)
+    if m:
+        out["text_totals"]["buyers"] = int(m.group(1))
+    return out
+
+
+def fetch_auctions() -> dict:
+    import requests  # type: ignore
+    from bs4 import BeautifulSoup  # type: ignore
+
+    acfg = CONFIG.get("auctions", {})
+    curated = json.loads((ROOT / "content" / "auksjoner.json").read_text(encoding="utf-8"))
+    index_url = acfg.get("index_url") or curated.get("index_url")
+    refresh_h = float(acfg.get("refresh_hours", 6))
+    now = datetime.now(timezone.utc)
+    try:
+        cache = json.loads(AUCTION_CACHE.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+
+    # 1) indeks-siden: finn undersider
+    subpages: list[dict] = []
+    try:
+        r = requests.get(index_url, timeout=30, headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        main = soup.find("main") or soup
+        seen = set()
+        for a in main.find_all("a", href=True):
+            href = a["href"]
+            if "/auksjon-av-produksjonskapasitet/" in href.lower():
+                full = href if href.startswith("http") else "https://www.fiskeridir.no" + href
+                full = full.split("#")[0]
+                if full.rstrip("/") == index_url.rstrip("/") or full in seen:
+                    continue
+                seen.add(full)
+                subpages.append({"title": a.get_text(" ", strip=True), "url": full})
+        log(f"auksjoner: {len(subpages)} undersider på indeksen")
+    except Exception as exc:  # noqa: BLE001
+        log(f"auksjoner: indeks FEIL {exc}")
+        subpages = [{"title": k, "url": v.get("url")} for k, v in cache.items() if v.get("url")]
+
+    # 2) undersider med cache
+    def age_h(iso: str | None) -> float:
+        try:
+            return (now - datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)).total_seconds() / 3600 if iso else 1e9
+        except ValueError:
+            return 1e9
+
+    for sp in subpages:
+        c = cache.get(sp["url"])
+        if c and age_h(c.get("fetched_at")) < refresh_h:
+            continue
+        try:
+            r = requests.get(sp["url"], timeout=30, headers={"User-Agent": "Mozilla/5.0 ScaleRadar/1.0"})
+            r.raise_for_status()
+            parsed = parse_auction_page(r.text, sp["url"])
+            parsed["title"] = sp["title"]
+            parsed["fetched_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+            cache[sp["url"]] = parsed
+            log(f"auksjoner: {sp['title']}: {len(parsed['companies'])} selskaper, {len(parsed['areas'])} områder")
+        except Exception as exc:  # noqa: BLE001
+            log(f"auksjoner: {sp['url']} FEIL {exc}")
+    AUCTION_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+
+    # 3) slå sammen kuratert + skrapet per runde (match på årstall i tittel/URL)
+    rounds = []
+    used_pages: set[str] = set()
+    for rd in curated.get("rounds", []):
+        rd = dict(rd)
+        key = rd.get("page_match") or rd["key"]
+        pages = [p for u, p in cache.items() if key in (p.get("title") or "") or key in u]
+        # prioriter side med selskapstabell
+        pages.sort(key=lambda p: (-len(p.get("companies") or []), -len(p.get("areas") or [])))
+        if pages:
+            pg = pages[0]
+            used_pages.add(pg["url"])
+            rd["page"] = {"title": pg.get("title"), "url": pg["url"], "fetched_at": pg.get("fetched_at"), "files": pg.get("files", [])}
+            if pg.get("companies"):
+                rd["companies"] = pg["companies"]
+            if pg.get("areas"):
+                rd["areas"] = pg["areas"]
+            if pg.get("min_prices"):
+                rd["min_prices"] = pg["min_prices"]
+            tt = pg.get("text_totals") or {}
+            totals = dict(rd.get("totals") or {})
+            for k in ("nok", "tonn", "min_price_per_tonn", "buyers"):
+                if totals.get(k) is None and tt.get(k) is not None:
+                    totals[k] = tt[k]
+            if tt.get("held"):
+                totals.setdefault("held", tt["held"])
+            rd["totals"] = totals
+        # avledede tall
+        comps = rd.get("companies") or []
+        totals = dict(rd.get("totals") or {})
+        if comps:
+            if totals.get("buyers") is None:
+                totals["buyers"] = len(comps)
+            if rd.get("upcoming"):
+                rd["upcoming"] = False           # resultater foreligger – runden er gjennomført
+            if totals.get("tonn") is None:
+                totals["tonn"] = sum(c["tonn"] for c in comps)
+            if totals.get("nok") is None and all(c.get("nok") is not None for c in comps):
+                totals["nok"] = sum(c["nok"] for c in comps)
+        if totals.get("tonn") and totals.get("nok") and not totals.get("avg_price_per_tonn"):
+            totals["avg_price_per_tonn"] = round(totals["nok"] / totals["tonn"])
+        rd["totals"] = totals
+        rounds.append(rd)
+    # sider på indeksen som ikke matcher noen kuratert runde (f.eks. ny 2026-side) – legg til rå
+    for u, pg in cache.items():
+        if u in used_pages:
+            continue
+        if not any((rd.get("page_match") or rd["key"]) in (pg.get("title") or "") or (rd.get("page_match") or rd["key"]) in u for rd in curated.get("rounds", [])):
+            comps = pg.get("companies") or []
+            rounds.append({"key": pg.get("title") or u, "label": pg.get("title") or u, "auction_label": pg.get("text_totals", {}).get("held"),
+                           "page": {"title": pg.get("title"), "url": u, "fetched_at": pg.get("fetched_at"), "files": pg.get("files", [])},
+                           "companies": comps, "areas": pg.get("areas") or [],
+                           "totals": {"tonn": sum(c["tonn"] for c in comps) if comps else pg.get("text_totals", {}).get("tonn"), "nok": pg.get("text_totals", {}).get("nok"), "buyers": len(comps) or None},
+                           "sources": [{"title": "Fiskeridirektoratet", "url": u}], "auto": True})
+    rounds.sort(key=lambda r: str(r.get("key")), reverse=True)
+    return {"updated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "index_url": index_url, "rounds": rounds}
+
 # --------------------------------------------------------------------------- endringssporing + RSS
 CHANGES_PATH = ROOT / "data" / "changes.json"
 FEEDS_DIR = ROOT / "data" / "feeds"
@@ -877,6 +1108,13 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001
         log(f"endringer: FEIL {exc}")
         data["changes"] = dict(PREVIOUS.get("changes", {}), error=str(exc)[:160])
+
+    if CONFIG.get("auctions", {}).get("enabled", True):
+        try:
+            data["auctions"] = fetch_auctions()
+        except Exception as exc:  # noqa: BLE001
+            log(f"auksjoner: FEIL {exc}")
+            data["auctions"] = dict(PREVIOUS.get("auctions", {}), error=str(exc)[:160])
 
     licences = {k: v for k, v in KONSESJONER.items() if not k.startswith("_")}
     data["licences"] = licences

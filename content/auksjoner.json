@@ -1,0 +1,778 @@
+{
+  "_comment": "Kuratert grunnlag for tildelingsrundene (trafikklyssystemet). Skriptet leser Fiskeridirektoratets auksjonssider og legger selskaps- og områdetabeller oppå dette. Tall her kommer fra pressemeldinger (NFD) og fagpresse; null = ikke verifisert. Rediger manuelt når nye tall bekreftes. Selskaps- og områdetabeller for 2020, 2022 og 2024 er lagt inn fra Fiskeridirektoratets sider 25.9.2026 som fallback; skriptet overskriver med ferske tall når sidene leses.",
+  "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
+  "rounds": [
+    {
+      "key": "2018",
+      "label": "Tildelingsrunden 2018",
+      "auction_label": "Klokkeauksjon 18.–20. juni 2018 + lukket budrunde september 2018",
+      "page_match": "2018",
+      "totals": {
+        "tonn": null,
+        "nok": null,
+        "buyers": null
+      },
+      "fixed_price": {
+        "price_per_tonn": 120000,
+        "tonn": null,
+        "nok": 750000000,
+        "note": "Fastpris vinteren 2018 (1 % vekst på eksisterende tillatelser)"
+      },
+      "notes": "Første auksjon under trafikklyssystemet. Lovundlaks betalte høyeste enhetspris, 252 000 kr/tonn.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon juni 2018",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018"
+        },
+        {
+          "title": "Intrafish: Liste – priser og kjøpere i auksjonene (juni 2018)",
+          "url": "https://www.intrafish.no/pressemeldinger/liste-priser-og-kjopere-i-auksjonene/2-1-362342"
+        }
+      ]
+    },
+    {
+      "key": "2020",
+      "label": "Tildelingsrunden 2020",
+      "auction_label": "Klokkeauksjon 18.–19. august 2020",
+      "page_match": "2020",
+      "totals": {
+        "tonn": 27189,
+        "nok": 5975046552,
+        "buyers": 30,
+        "avg_price_per_tonn": 219758
+      },
+      "fixed_price": {
+        "price_per_tonn": null,
+        "tonn": null,
+        "nok": null,
+        "note": "Fastpristall for 2020 ikke verifisert – legg inn når bekreftet"
+      },
+      "notes": "42 selskaper påmeldt, 30 kjøpte. SalMar kjøpte mest.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon august 2020 (selskaps- og områdetabeller)",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020"
+        },
+        {
+          "title": "Intrafish: Her er listen – solgte produksjonskapasitet for nær 6 milliarder",
+          "url": "https://www.intrafish.no/nyheter/her-er-listen-solgte-produksjonskapasitet-for-nar-6-milliarder-kroner/2-1-860112"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Ballangen Sjøfarm AS",
+          "tonn": 292,
+          "nok": 75067068
+        },
+        {
+          "name": "Bremnes Seashore AS",
+          "tonn": 527,
+          "nok": 99929740
+        },
+        {
+          "name": "Cermaq Norway AS",
+          "tonn": 1774,
+          "nok": 451346521
+        },
+        {
+          "name": "Eidesvik Laks AS",
+          "tonn": 386,
+          "nok": 73193320
+        },
+        {
+          "name": "Eidsfjord Sjøfarm AS",
+          "tonn": 1984,
+          "nok": 462895641
+        },
+        {
+          "name": "Emilsen Fisk AS",
+          "tonn": 400,
+          "nok": 86277600
+        },
+        {
+          "name": "Erviks Laks og Ørret AS",
+          "tonn": 455,
+          "nok": 110115005
+        },
+        {
+          "name": "Finnøy Fisk AS",
+          "tonn": 115,
+          "nok": 21806300
+        },
+        {
+          "name": "Gratanglaks AS",
+          "tonn": 130,
+          "nok": 33420270
+        },
+        {
+          "name": "Grieg Seafood ASA",
+          "tonn": 527,
+          "nok": 99929740
+        },
+        {
+          "name": "Knutshaugfisk AS",
+          "tonn": 780,
+          "nok": 188768580
+        },
+        {
+          "name": "Kobbvåglaks AS",
+          "tonn": 1000,
+          "nok": 218792000
+        },
+        {
+          "name": "Kvarøy Fiskeoppdrett AS",
+          "tonn": 1000,
+          "nok": 218792000
+        },
+        {
+          "name": "Lerøy Seafood Group ASA",
+          "tonn": 355,
+          "nok": 70680855
+        },
+        {
+          "name": "Lofoten Sjøprodukter AS",
+          "tonn": 5,
+          "nok": 1285395
+        },
+        {
+          "name": "Lovundlaks AS",
+          "tonn": 623,
+          "nok": 136307406
+        },
+        {
+          "name": "Midt-Norsk Havbruk AS",
+          "tonn": 1101,
+          "nok": 237479094
+        },
+        {
+          "name": "Mowi ASA",
+          "tonn": 1758,
+          "nok": 300505220
+        },
+        {
+          "name": "Måsøval Fiskeoppdrett AS",
+          "tonn": 2000,
+          "nok": 484022000
+        },
+        {
+          "name": "Nordlaks Oppdrett AS",
+          "tonn": 200,
+          "nok": 50240400
+        },
+        {
+          "name": "Norway Royal Salmon ASA - NRS Farming AS",
+          "tonn": 1050,
+          "nok": 199101000
+        },
+        {
+          "name": "Rogaland Fjordbruk AS",
+          "tonn": 527,
+          "nok": 99929740
+        },
+        {
+          "name": "Salaks AS",
+          "tonn": 100,
+          "nok": 25707900
+        },
+        {
+          "name": "Salmar Farming AS",
+          "tonn": 8057,
+          "nok": 1760276652
+        },
+        {
+          "name": "Seløy Sjøfarm AS",
+          "tonn": 650,
+          "nok": 142214800
+        },
+        {
+          "name": "Sinkaberg-Hansen",
+          "tonn": 300,
+          "nok": 64708200
+        },
+        {
+          "name": "Sjurelv Fiskeoppdrett AS",
+          "tonn": 93,
+          "nok": 20414430
+        },
+        {
+          "name": "Vega Sjøfarm AS",
+          "tonn": 183,
+          "nok": 40038936
+        },
+        {
+          "name": "Wenberg Fiskeoppdrett AS",
+          "tonn": 192,
+          "nok": 42008064
+        },
+        {
+          "name": "Øyfisk AS",
+          "tonn": 625,
+          "nok": 159792675
+        }
+      ],
+      "areas": [
+        {
+          "po": 1,
+          "name": "Svenskegrensen til Jæren",
+          "tonn": 977,
+          "nok": 152000000
+        },
+        {
+          "po": 2,
+          "name": "Ryfylke",
+          "tonn": 2082,
+          "nok": 95000000
+        },
+        {
+          "po": 6,
+          "name": "Nordmøre og Sør-Trøndelag",
+          "tonn": 6384,
+          "nok": 1545000000
+        },
+        {
+          "po": 7,
+          "name": "Nord-Trøndelag med Bindal",
+          "tonn": 2915,
+          "nok": 629000000
+        },
+        {
+          "po": 8,
+          "name": "Helgeland til Bodø",
+          "tonn": 3648,
+          "nok": 798000000
+        },
+        {
+          "po": 9,
+          "name": "Vestfjorden og Vesterålen",
+          "tonn": 3855,
+          "nok": 984000000
+        },
+        {
+          "po": 11,
+          "name": "Kvaløya til Loppa",
+          "tonn": 2481,
+          "nok": 545000000
+        },
+        {
+          "po": 12,
+          "name": "Vest-Finnmark",
+          "tonn": 4005,
+          "nok": 759000000
+        },
+        {
+          "po": 13,
+          "name": "Øst-Finnmark",
+          "tonn": 842,
+          "nok": 168000000
+        }
+      ],
+      "min_prices": [
+        {
+          "po": 1,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 977
+        },
+        {
+          "po": 2,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 2082
+        },
+        {
+          "po": 6,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 6384
+        },
+        {
+          "po": 7,
+          "min_price_per_tonn": 169000,
+          "available_tonn": 2915
+        },
+        {
+          "po": 8,
+          "min_price_per_tonn": 189000,
+          "available_tonn": 3648
+        },
+        {
+          "po": 9,
+          "min_price_per_tonn": 174000,
+          "available_tonn": 3855
+        },
+        {
+          "po": 11,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 2481
+        },
+        {
+          "po": 12,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 4005
+        },
+        {
+          "po": 13,
+          "min_price_per_tonn": 156000,
+          "available_tonn": 842
+        }
+      ]
+    },
+    {
+      "key": "2022",
+      "label": "Tildelingsrunden 2022",
+      "auction_label": "Klokkeauksjon 12.–13. oktober 2022",
+      "page_match": "2022",
+      "totals": {
+        "tonn": 24644,
+        "nok": 3799061618,
+        "buyers": 22,
+        "offered_tonn": 32887,
+        "unsold_tonn": 8243
+      },
+      "fixed_price": {
+        "price_per_tonn": 200000,
+        "tonn": 5011,
+        "nok": 1000000000,
+        "companies": 66,
+        "note": "Søknadsfrist 28. juni 2022; ca. 90 % av tilbudt kapasitet solgt"
+      },
+      "notes": "Auksjonen ble holdt rett etter grunnrenteforslaget: en fjerdedel usolgt, ingen børsnoterte selskaper kjøpte. 5 172 tonn usolgt i Vest-Finnmark.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon av tillatelser 2022 (selskaps- og områdetabeller)",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022"
+        },
+        {
+          "title": "Regjeringen: Resultater fra lakseauksjonen 2022",
+          "url": "https://www.regjeringen.no/no/aktuelt/xxx/id2934564/"
+        },
+        {
+          "title": "Regjeringen: Auksjon av laksevekst skjer 27. september (fastpristall)",
+          "url": "https://www.regjeringen.no/no/aktuelt/laksevekst/id2923152/"
+        },
+        {
+          "title": "Fisk.no: Her er kjøperne i lakseauksjonen 2022",
+          "url": "https://fisk.no/oppdrett/7642-her-er-kjoperne-i-lakseauksjonen-2022"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Akvafuture AS",
+          "tonn": 500,
+          "nok": 60000000
+        },
+        {
+          "name": "Aquanorth Farm AS",
+          "tonn": 200,
+          "nok": 20000000
+        },
+        {
+          "name": "Bewi Invest AS",
+          "tonn": 918,
+          "nok": 143808000
+        },
+        {
+          "name": "Bjørøya AS",
+          "tonn": 3800,
+          "nok": 597739900
+        },
+        {
+          "name": "Eidsfjord Sjøfarm AS",
+          "tonn": 3520,
+          "nok": 496099000
+        },
+        {
+          "name": "Erviks Laks og ørret AS",
+          "tonn": 96,
+          "nok": 15100800
+        },
+        {
+          "name": "Flakstadvåg Laks AS",
+          "tonn": 223,
+          "nok": 30105000
+        },
+        {
+          "name": "Frøy Kapital AS",
+          "tonn": 2265,
+          "nok": 377284500
+        },
+        {
+          "name": "Grundvågen AS",
+          "tonn": 4,
+          "nok": 629200
+        },
+        {
+          "name": "Isqueen AS",
+          "tonn": 1300,
+          "nok": 199680000
+        },
+        {
+          "name": "Kleiva Fiskefarm AS",
+          "tonn": 250,
+          "nok": 36305300
+        },
+        {
+          "name": "Knutshaugfisk AS",
+          "tonn": 318,
+          "nok": 50021400
+        },
+        {
+          "name": "Lofoten Sjøprodukter AS",
+          "tonn": 2000,
+          "nok": 307200000
+        },
+        {
+          "name": "Lovundlaks AS",
+          "tonn": 49,
+          "nok": 7526400
+        },
+        {
+          "name": "Mortenlaks AS",
+          "tonn": 1000,
+          "nok": 153600000
+        },
+        {
+          "name": "Norsk Havbrukssenter AS",
+          "tonn": 800,
+          "nok": 147869468
+        },
+        {
+          "name": "Organic Seafarm AS",
+          "tonn": 1755,
+          "nok": 325065250
+        },
+        {
+          "name": "Prophylaxia AS",
+          "tonn": 1538,
+          "nok": 241927400
+        },
+        {
+          "name": "Salaks AS",
+          "tonn": 2258,
+          "nok": 304830000
+        },
+        {
+          "name": "Seløy Sjøfarm AS",
+          "tonn": 500,
+          "nok": 90000000
+        },
+        {
+          "name": "Sjurelv Fiskeoppdrett AS",
+          "tonn": 1100,
+          "nok": 155870000
+        },
+        {
+          "name": "Øyfisk AS",
+          "tonn": 250,
+          "nok": 38400000
+        }
+      ],
+      "areas": [
+        {
+          "po": 1,
+          "name": "Svenskegrensen til Jæren",
+          "tonn": 0,
+          "nok": 0,
+          "unsold_tonn": 1249
+        },
+        {
+          "po": 6,
+          "name": "Nordmøre og Sør-Trøndelag",
+          "tonn": 8189,
+          "nok": 1287536200,
+          "unsold_tonn": 0
+        },
+        {
+          "po": 8,
+          "name": "Helgeland til Bodø",
+          "tonn": 4305,
+          "nok": 761909718,
+          "unsold_tonn": 603
+        },
+        {
+          "po": 9,
+          "name": "Vestfjorden og Vesterålen",
+          "tonn": 5150,
+          "nok": 791040000,
+          "unsold_tonn": 0
+        },
+        {
+          "po": 10,
+          "name": "Andøya til Senja",
+          "tonn": 3729,
+          "nok": 503415000,
+          "unsold_tonn": 0
+        },
+        {
+          "po": 11,
+          "name": "Kvaløya til Loppa",
+          "tonn": 3071,
+          "nok": 435160700,
+          "unsold_tonn": 148
+        },
+        {
+          "po": 12,
+          "name": "Vest-Finnmark",
+          "tonn": 200,
+          "nok": 20000000,
+          "unsold_tonn": 5172
+        },
+        {
+          "po": 13,
+          "name": "Øst-Finnmark",
+          "tonn": 0,
+          "nok": 0,
+          "unsold_tonn": 1071
+        }
+      ],
+      "min_prices": [
+        {
+          "po": 1,
+          "min_price_per_tonn": 100000,
+          "available_tonn": 1249
+        },
+        {
+          "po": 6,
+          "min_price_per_tonn": 121000,
+          "available_tonn": 8189
+        },
+        {
+          "po": 8,
+          "min_price_per_tonn": 109000,
+          "available_tonn": 4908
+        },
+        {
+          "po": 9,
+          "min_price_per_tonn": 128000,
+          "available_tonn": 5150
+        },
+        {
+          "po": 10,
+          "min_price_per_tonn": 100000,
+          "available_tonn": 3729
+        },
+        {
+          "po": 11,
+          "min_price_per_tonn": 109000,
+          "available_tonn": 3219
+        },
+        {
+          "po": 12,
+          "min_price_per_tonn": 100000,
+          "available_tonn": 5372
+        },
+        {
+          "po": 13,
+          "min_price_per_tonn": 100000,
+          "available_tonn": 1071
+        }
+      ]
+    },
+    {
+      "key": "2023",
+      "label": "Restauksjon 2023",
+      "auction_label": "Lukket budrunde, oktober 2023 – usolgt kapasitet fra 2022",
+      "page_match": "2023",
+      "totals": {
+        "tonn": null,
+        "nok": null,
+        "buyers": null,
+        "offered_tonn": 8243
+      },
+      "fixed_price": null,
+      "notes": "Andrepris lukket budrunde med mulighet for avkortning, fem produksjonsområder.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Restauksjon tillatelser 2023",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023"
+        },
+        {
+          "title": "Regjeringen: Restauksjon av oppdrettstillatelser er fullført",
+          "url": "https://www.regjeringen.no/no/aktuelt/restauksjon-av-oppdrettstillatelser-er-fullfort/id2999163/"
+        }
+      ]
+    },
+    {
+      "key": "2024",
+      "label": "Tildelingsrunden 2024",
+      "auction_label": "Klokkeauksjon 24.–25. juni 2024",
+      "page_match": "2024",
+      "totals": {
+        "tonn": 17330,
+        "nok": 5288602600,
+        "buyers": 16,
+        "min_price_per_tonn": 170000,
+        "areas": "PO 1, 9, 10, 11, 12, 13"
+      },
+      "fixed_price": {
+        "price_per_tonn": 170000,
+        "tonn": 2893,
+        "nok": 476000000,
+        "note": "81 % av tilbudt fastpriskapasitet solgt"
+      },
+      "notes": "Alt ble solgt. 55 % av inntektene går til kommuner og fylkeskommuner via Havbruksfondet.",
+      "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon av nye tillatelser 2024 (selskaps- og områdetabeller)",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024"
+        },
+        {
+          "title": "Regjeringen: Auksjon av oppdrettstillatelser holdes 24. juni (fastpristall)",
+          "url": "https://www.regjeringen.no/no/aktuelt/auksjon-av-oppdrettstillatelser-holdes-24.-juni/id3043772/"
+        },
+        {
+          "title": "iLaks: Auksjonen ga 5,3 milliarder",
+          "url": "https://ilaks.no/nyavsluttet-auksjon-av-nye-oppdrettstillatelser-ga-53-milliarder-i-statskassen/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Arnøy Laks AS",
+          "tonn": 314,
+          "nok": 98812000
+        },
+        {
+          "name": "Cermaq Norway Salmon AS",
+          "tonn": 3360,
+          "nok": 1063600000
+        },
+        {
+          "name": "Edelfarm AS",
+          "tonn": 202,
+          "nok": 70498000
+        },
+        {
+          "name": "Gratanglaks AS",
+          "tonn": 502,
+          "nok": 156530000
+        },
+        {
+          "name": "Holmøy Havbruk AS",
+          "tonn": 2770,
+          "nok": 905910000
+        },
+        {
+          "name": "Isqueen AS",
+          "tonn": 400,
+          "nok": 137700000
+        },
+        {
+          "name": "Kleiva Fiskefarm AS",
+          "tonn": 302,
+          "nok": 93922000
+        },
+        {
+          "name": "Lofoten Sjøprodukter AS",
+          "tonn": 780,
+          "nok": 272220000
+        },
+        {
+          "name": "Lovundlaks Sjø AS",
+          "tonn": 500,
+          "nok": 173800000
+        },
+        {
+          "name": "Mowi Seawater Norway AS",
+          "tonn": 2704,
+          "nok": 664596400
+        },
+        {
+          "name": "Nordlaks Havbruk AS",
+          "tonn": 1032,
+          "nok": 323823200
+        },
+        {
+          "name": "Nordly Innovation AS",
+          "tonn": 100,
+          "nok": 34900000
+        },
+        {
+          "name": "Salaks AS",
+          "tonn": 1290,
+          "nok": 400970000
+        },
+        {
+          "name": "Salmar Oppdrett AS",
+          "tonn": 2274,
+          "nok": 632921000
+        },
+        {
+          "name": "Sjurelv Fiskeoppdrett AS",
+          "tonn": 500,
+          "nok": 157500000
+        },
+        {
+          "name": "Øyfisk AS",
+          "tonn": 300,
+          "nok": 100900000
+        }
+      ],
+      "areas": [
+        {
+          "po": 1,
+          "name": "Svenskegrensa til Jæren",
+          "tonn": 1125,
+          "nok": 191250000
+        },
+        {
+          "po": 9,
+          "name": "Vestfjorden til Vesterålen",
+          "tonn": 4861,
+          "nok": 1693444400
+        },
+        {
+          "po": 10,
+          "name": "Andøya til Senja",
+          "tonn": 3319,
+          "nok": 1031280200
+        },
+        {
+          "po": 11,
+          "name": "Kvaløya til Loppa",
+          "tonn": 2761,
+          "nok": 869617000
+        },
+        {
+          "po": 12,
+          "name": "Vest-Finnmark",
+          "tonn": 4765,
+          "nok": 1385247000
+        },
+        {
+          "po": 13,
+          "name": "Øst-Finnmark",
+          "tonn": 499,
+          "nok": 117764000
+        }
+      ]
+    },
+    {
+      "key": "2026",
+      "label": "Tildelingsrunden 2026",
+      "auction_label": "Auksjon senere i høst 2026 – dato ikke fastsatt",
+      "page_match": "2026",
+      "upcoming": true,
+      "totals": {
+        "tonn": null,
+        "nok": null,
+        "buyers": null,
+        "growth_tonn": 8200
+      },
+      "fixed_price": {
+        "price_per_tonn": 270000,
+        "tonn": null,
+        "nok": null,
+        "deadline": "2026-09-28",
+        "note": "1 % vekst til fastpris og unntaksvekst – søknadsfrist 28. september 2026"
+      },
+      "notes": "Forskrift om kapasitetsjustering fastsatt 10. september 2026. Grønne områder: PO1, PO12, PO13. Usolgt fastpriskapasitet går til auksjonen.",
+      "sources": [
+        {
+          "title": "Regjeringen: Nå er forskriften som regulerer produksjonskapasitet fastsatt (10.9.2026)",
+          "url": "https://www.regjeringen.no/no/aktuelt/ny-side8/id3172358/"
+        },
+        {
+          "title": "Regjeringen: Forslag til forskrift om auksjon 2026 (høring)",
+          "url": "https://www.regjeringen.no/no/dokumenter/forslag-til-forskrift-om-auksjon-av-tillatelser-til-lakseoppdrett-i-2026/id3168004/"
+        }
+      ]
+    }
+  ]
+}

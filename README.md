@@ -29,6 +29,7 @@ Deretter kjører oppdateringen selv, 17 minutter over hver hele time (UTC).
 | oppdatere trafikklys, landbasert-status, saker vi følger | `content/konsesjoner.json` |
 | endre kilde/søknadstyper for lokalitetssøknader | `content/config.json` → `applications` (`apptypes` per fane) |
 | e-postabonnement på søkere (sentral utsending) | `content/subscriptions.json` + SMTP-secrets (se under) |
+| auksjoner og fastpris – eldre runder, 2026-status, kilder | `content/auksjoner.json` (skriptet legger Fiskeridirektoratets tabeller oppå) |
 | justere henting av detaljsider (antall per kjøring, oppfrisking) | `content/config.json` → `applications.details` |
 | justere saksgang fra eInnsyn (antall per kjøring, oppfrisking) | `content/config.json` → `applications.einnsyn` |
 | endre utseende, tekster, søknadsprosessen  | `index.html`                  |
@@ -59,6 +60,15 @@ friskes opp daglig, avsluttede hver 30. dag, inntil 100 spørringer per kjøring
 Journalpostene klassifiseres regelbasert til saksgangssteg (kommune, Mattilsynet, Statsforvalteren,
 Kystverket, Fiskeridirektoratet, vedtak fylkeskommune, klage). Kommunene er i hovedsak ikke på eInnsyn,
 så det kommunale steget ses stort sett via fylkeskommunens post.
+
+## Kapasitetsauksjoner
+
+Skriptet leser indeks-siden «Auksjon av produksjonskapasitet» hos Fiskeridirektoratet hver kjøring og undersidene
+hver 6. time. Tabeller med selskap/tonn/vederlag og per produksjonsområde parses generisk og legges oppå
+`content/auksjoner.json`, som holder totaler, fastpris og kilder for eldre runder samt status for kommende runde.
+Når Fiskeridirektoratet publiserer 2026-resultatene, fanges de automatisk og runden merkes som gjennomført.
+Søkere i Lokalitetssøknader som matcher en auksjonskjøper på navn får merket «kjøpte X t»; usikre treff (bare
+første navneledd matcher) vises med «~».
 
 ## Følg en søker (abonnement)
 

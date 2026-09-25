@@ -223,5 +223,11 @@
   "site": {
     "url": "https://jorgenscale.github.io/scale-radar/",
     "repo": "https://github.com/jorgenScale/scale-radar"
+  },
+  "auctions": {
+    "_comment": "Kapasitetsauksjoner: indeks-siden leses hver kjøring (fanger nye runder), undersidene hver refresh_hours. Selskaps- og områdetabeller legges oppå content/auksjoner.json.",
+    "enabled": true,
+    "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
+    "refresh_hours": 6
   }
 }
