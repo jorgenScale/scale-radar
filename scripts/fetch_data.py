@@ -692,7 +692,7 @@ def enrich_einnsyn(apps: dict) -> None:
 
 # --------------------------------------------------------------------------- kapasitetsauksjoner (Fiskeridirektoratet)
 AUCTION_CACHE = ROOT / "data" / "auctions_cache.json"
-AUCTION_PARSER_VERSION = 2   # bump når parse_auction_page endres, så cachede sider leses på nytt
+AUCTION_PARSER_VERSION = 3   # bump når parse_auction_page endres, så cachede sider leses på nytt
 
 
 def _num(v: str) -> float | None:
@@ -757,8 +757,8 @@ def parse_auction_page(html: str, url: str) -> dict:
                 nums = [_num(x) for x in rest]
                 name = rest[0] if nums[0] is None else rest[1]
                 nok = nums[1] if nums[0] is None else nums[0]
-                if po is None or tonn is None or not name:
-                    continue
+                if po is None or tonn is None or not name or name.strip() in {"-", "–", "—"}:
+                    continue                                    # tillatelse uten bud
                 out["companies"].append({"name": name.strip(), "tonn": int(round(tonn)), "nok": int(round(nok)) if nok is not None else None})
                 out["areas"].append({"po": int(po), "name": "", "tonn": int(round(tonn)), "nok": int(round(nok)) if nok is not None else None})
             continue
