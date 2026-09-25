@@ -1,7 +1,21 @@
 {
- "generated_at": "2026-09-25T13:52:46Z",
+ "generated_at": "2026-09-25T18:40:49Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-25",
+   "title": "Leverte sitt første overskudd etter oppstarten",
+   "url": "https://ilaks.no/leverte-sitt-forste-overskudd-etter-oppstarten/?mtm_campaign=feed_click&mtm_kwd=leverte-sitt-forste-overskudd-etter-oppstarten&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-25",
+   "title": "Slik benytter Andfjord Salmon lys for å styrke tilveksten",
+   "url": "https://ilaks.no/slik-benytter-andfjord-salmon-lys-for-a-styrke-tilveksten/?mtm_campaign=feed_click&mtm_kwd=slik-benytter-andfjord-salmon-lys-for-a-styrke-tilveksten&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -129,20 +143,6 @@
    "url": "https://ilaks.no/laner-mer-penger-til-kredittkortrente/?mtm_campaign=feed_click&mtm_kwd=laner-mer-penger-til-kredittkortrente&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-24",
-   "title": "Ønsker omfattende skatteendringer: – Vi står nå i en helt annen verdenssituasjon",
-   "url": "https://ilaks.no/onsker-omfattende-skatteendringer-norsk-sjomatnaering-star-na-i-en-helt-annen-verdenssituasjon/?mtm_campaign=feed_click&mtm_kwd=onsker-omfattende-skatteendringer-norsk-sjomatnaering-star-na-i-en-helt-annen-verdenssituasjon&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-24",
-   "title": "Avsluttet arbeidet med soningsoverføring for SalMars superselger: – Kina har satt ned foten",
-   "url": "https://ilaks.no/avsluttet-arbeidet-med-soningsoverforing-for-salmars-superselger-kina-har-satt-ned-foten/?mtm_campaign=feed_click&mtm_kwd=avsluttet-arbeidet-med-soningsoverforing-for-salmars-superselger-kina-har-satt-ned-foten&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "source_key": "fdir",
    "source": "Fiskeridirektoratet",
    "published": "2026-09-18",
@@ -213,15 +213,22 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
-   "title": "Denne uken skjer det noe uvanlig når vi ringer rundt om lakseprisen",
-   "url": "https://www.intrafish.no/priser/lakseprisene-loftes-av-friuke-i-kina/2-1-2049700",
+   "title": "Dette krever de av hverandre: – Vi vet det er mye penger",
+   "url": "https://www.intrafish.no/finans/dette-krever-de-av-hverandre-vi-vet-det-er-mye-penger/2-1-2049761",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "Kjøpte avdeling fra egen arbeidsgiver og bygget seg opp – disse rådene har milliardæren til havbruksnæringen",
-   "url": "https://www.intrafish.no/okonomi/kjopte-avdeling-fra-egen-arbeidsgiver-og-bygget-seg-opp-disse-radene-har-milliardaren-til-havbruksnaringen/2-1-2049543",
+   "title": "Dommen kommer tidligst i november",
+   "url": "https://www.intrafish.no/samfunn/lange-uker-i-retten-er-over-dommen-kommer-tidligst-i-november/2-1-2048760",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Denne uken skjer det noe uvanlig når vi ringer rundt om lakseprisen",
+   "url": "https://www.intrafish.no/priser/lakseprisene-loftes-av-friuke-i-kina/2-1-2049700",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -236,6 +243,13 @@
   {
    "title": "Kjære statsråd: Her er matrapporten du slipper å vente på",
    "url": "https://www.intrafish.no/kommentarer/du-trenger-ingen-ekspertgruppe-statsrad-her-har-du-ti-gode-rad-/2-1-2049581",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Kjøpte avdeling fra egen arbeidsgiver og bygget seg opp – disse rådene har milliardæren til havbruksnæringen",
+   "url": "https://www.intrafish.no/okonomi/kjopte-avdeling-fra-egen-arbeidsgiver-og-bygget-seg-opp-disse-radene-har-milliardaren-til-havbruksnaringen/2-1-2049543",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -264,20 +278,6 @@
   {
    "title": "– Vi gjør en betydelig investering for å dekke behovet til oppdretterne.",
    "url": "https://www.intrafish.no/bater/milliardinvestering-i-nord-rederiet-bestiller-nytt-fartoy-fra-spansk-verft/2-1-2048252",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "I 15 år antas merdene å ha vært forlatt i strandsonen. Men hvem eier dem?",
-   "url": "https://www.intrafish.no/2-1-2046412",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "I år er det dyrt å vokse – for én oppdretter er det uaktuelt å kjøpe",
-   "url": "https://www.intrafish.no/okonomi/vekst-til-fastpris-kun-seks-aktorer-i-gronne-omrader/2-1-2048001",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 205.8,
-      "change_pct": 2.59
+      "price": 205.6,
+      "change_pct": 2.49
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 583.5,
-      "change_pct": 4.29
+      "price": 580.5,
+      "change_pct": 3.75
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.2,
-      "change_pct": 2.42
+      "price": 42.9,
+      "change_pct": 1.71
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 26.12,
-      "change_pct": 2.51
+      "price": 25.74,
+      "change_pct": 1.02
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 84.5,
-      "change_pct": 2.3
+      "price": 84.0,
+      "change_pct": 1.69
      },
      {
       "name": "Måsøval",
@@ -445,21 +445,21 @@
       "ticker": "ASA",
       "currency": "NOK",
       "price": 0.78,
-      "change_pct": 0.51
+      "change_pct": 0.64
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.38,
-      "change_pct": -0.59
+      "price": 3.35,
+      "change_pct": -1.62
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.2,
-      "change_pct": -0.37
+      "price": 27.1,
+      "change_pct": -0.73
      },
      {
       "name": "Proximar Seafood",
@@ -472,8 +472,8 @@
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.8,
-      "change_pct": 2.6
+      "price": 86.6,
+      "change_pct": 2.36
      },
      {
       "name": "Gigante Salmon",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 450.8,
-      "change_pct": 2.18
+      "price": 450.0,
+      "change_pct": 1.99
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-25T13:52:58Z",
+  "fetched_at": "2026-09-25T18:40:59Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -9731,7 +9731,7 @@
          "last_title": "Begjæring om innsyn i sak 2023/687-20"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Langstranda%22%20Mowi"
       }
      },
@@ -9910,7 +9910,7 @@
          "last_title": "Kopi - Mattilsynet endrer vedtak etter klage"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bj%C3%B8rnvika%22%20Ler%C3%B8y"
       }
      },
@@ -10214,7 +10214,7 @@
          "last_title": "Avslag på søknad om etablering av ny lokalitet Prestvika i Rødøy kommune - Mowi Seawater Norway AS 921668236"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Prestvika%22%20Mowi"
       }
      },
@@ -10305,7 +10305,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921 668 236 - Søknad om ny lokalitet Lammøya i Dønna kommune - Avslag på søknad"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lamm%C3%B8ya%22%20Mowi"
       }
      },
@@ -29217,7 +29217,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921668236 - Akvakulturtillatelse til arealendring av fortøyninger på lokaliteten Klubben i Brønnøy og Sømna kommuner."
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Klubben%22%20Mowi"
       }
      },
@@ -29496,16 +29496,9 @@
        "Produksjonssykluslengde": "15 mnd"
       },
       "einnsyn": {
-       "count": 48,
+       "count": 47,
        "last": "2026-09-09",
        "steps": {
-        "fiskeridir": {
-         "label": "Fiskeridirektoratet",
-         "first": "2026-01-26",
-         "count": 5,
-         "last": "2026-05-22",
-         "last_title": "Kopi av tillatelse til arealendring på lokalitet Skålsvika i Meløy kommune"
-        },
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2026-01-30",
@@ -29527,6 +29520,13 @@
          "last": "2026-05-22",
          "last_title": "Kopi - Tillatelse til arealendring på lokalitet 11138 - Skålsvika - Meløy kommune - Nordland fylke"
         },
+        "fiskeridir": {
+         "label": "Fiskeridirektoratet",
+         "first": "2026-02-10",
+         "count": 4,
+         "last": "2026-05-22",
+         "last_title": "Kopi av tillatelse til arealendring på lokalitet Skålsvika i Meløy kommune"
+        },
         "vedtak": {
          "label": "Vedtak fylkeskommune",
          "first": "2026-05-22",
@@ -29542,7 +29542,7 @@
          "last_title": "Ber om eventuelle kommetarer på klage fra Nord Fiskarlag på tillatelse til arealendringer ved lokaliteten Skålsvika i Meøy kommune - Nova Sea Havbruk AS Org. Nr. 827 248 312"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sk%C3%A5lsvika%22%20Nova"
       }
      },
@@ -29876,7 +29876,7 @@
          "last_title": "Dispensasjonsvedtak - akvakulturlokalitet Isqueen - Æsøya 30977 - kopi"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%86s%C3%B8ya%22%20Isqueen"
       }
      },
@@ -30567,7 +30567,7 @@
          "last_title": "Klage i sak 2023/165123 - Vedtak om avslag på søknad om biomasseutviding – 19655 Ospeneset - Oppstart av klagebehandling"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ospeneset%22%20Eide"
       }
      },
@@ -31133,7 +31133,7 @@
          "last_title": "Tillatelse til søknad om arealendring på lokalitet 29096 Grøttøy - Hadsel kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gr%C3%B8tt%C3%B8y%22%20Nordlaks"
       }
      },
@@ -33412,7 +33412,7 @@
          "last_title": "Status på klage på avslag lokalitet Hundholmen - Wenberg Fiskeoppdrett AS"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hundholmen%22%20Wenberg"
       }
      },
@@ -33844,7 +33844,7 @@
          "last_title": "Oversendelse av klagesak - akvakultur - Sinkaberg AS - lokalitet Varholmen - utvidelse av biomasse - kopi"
         }
        },
-       "fetched_at": "2026-09-24T15:13:03Z",
+       "fetched_at": "2026-09-25T18:41:01Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Varholmen%22%20Sinkaberghansen"
       }
      },
@@ -37595,11 +37595,11 @@
   "einnsyn_summary": {
    "cached": 483,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 11
   }
  },
  "changes": {
-  "updated_at": "2026-09-25T13:53:01Z",
+  "updated_at": "2026-09-25T18:41:33Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37869,7 +37869,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-25T13:53:01Z",
+  "updated_at": "2026-09-25T18:41:33Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38060,7 +38060,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38100,7 +38100,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": []
     },
     "companies": [
@@ -38425,7 +38425,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -38729,7 +38729,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -38773,7 +38773,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -38865,7 +38865,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-09-25T11:52:42Z",
+     "fetched_at": "2026-09-25T18:41:33Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
