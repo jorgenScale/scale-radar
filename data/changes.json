@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-09-25T01:36:27Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-002291",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Codfarm AS",
+"title": "Lamholmen",
+"municipality": "Brønnøy",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 100,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002291"
+},
+{
+"at": "2026-09-25T01:36:27Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-001829",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Lofotyngel AS",
+"title": "10492 Meøypollen",
+"municipality": "Vestvågøy",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001829"
+},
+{
 "at": "2026-09-24T10:08:13Z",
 "kind": "utfall",
 "text": "Utfall: Innvilget",
@@ -81,5 +111,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-09-24T22:32:36Z"
+"updated_at": "2026-09-25T01:36:27Z"
 }

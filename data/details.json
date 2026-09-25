@@ -7737,7 +7737,7 @@
 "title": "Skøyen"
 },
 "SP-2025-001829": {
-"fetched_at": "2026-09-24T10:06:10Z",
+"fetched_at": "2026-09-25T01:34:51Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Ferdigbehandlet": "24.09.2026",
@@ -7751,7 +7751,7 @@
 "decided": "2026-09-24",
 "result": "Innvilget"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "10492 Meøypollen"
 },
 "SP-2025-001830": {
@@ -10650,7 +10650,7 @@
 "title": "Fjellsæ i"
 },
 "SP-2025-002291": {
-"fetched_at": "2026-09-24T10:06:10Z",
+"fetched_at": "2026-09-25T01:34:51Z",
 "fields": {
 "Aktive tillatelser": "N-BR-0030 , N-BR-0050 , N-BL-0001 , N-BR-0052",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -10680,7 +10680,7 @@
 "result": "Innvilget",
 "species": "Torsk"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Lamholmen"
 },
 "SP-2025-002293": {
