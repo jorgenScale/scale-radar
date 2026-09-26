@@ -6,6 +6,111 @@
 },
 "events": [
 {
+"at": "2026-09-26T01:40:30Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2023-000163",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Lammøya",
+"municipality": "Dønna",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000163"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2023-000163",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Lammøya",
+"municipality": "Dønna",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000163"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2023-000041",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Wenberg Fiskeoppdrett AS",
+"title": "Hundholmen",
+"municipality": "Fauske",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000041"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2023-000041",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Wenberg Fiskeoppdrett AS",
+"title": "Hundholmen",
+"municipality": "Fauske",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000041"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2023-000036",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sinkaberghansen AS",
+"title": "Varholmen",
+"municipality": "Brønnøy",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 7020,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000036"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2023-000036",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sinkaberghansen AS",
+"title": "Varholmen",
+"municipality": "Brønnøy",
+"county": "Nordland",
+"status": "Godkjent",
+"mtb_tonn": 7020,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000036"
+},
+{
+"at": "2026-09-26T01:40:30Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002783",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Silver Seed AS",
+"title": "Mølnarodden",
+"municipality": "Flakstad",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783"
+},
+{
 "at": "2026-09-25T01:36:27Z",
 "kind": "status",
 "text": "Status: Under behandling → Ferdigbehandlet",
@@ -111,5 +216,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-09-25T22:25:36Z"
+"updated_at": "2026-09-26T01:40:30Z"
 }
