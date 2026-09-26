@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T17:14:11Z",
+ "generated_at": "2026-09-26T19:55:26Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-26T17:14:22Z",
+  "fetched_at": "2026-09-26T19:55:35Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -9731,7 +9731,7 @@
          "last_title": "Begjæring om innsyn i sak 2023/687-20"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Langstranda%22%20Mowi"
       }
      },
@@ -9910,7 +9910,7 @@
          "last_title": "Kopi - Mattilsynet endrer vedtak etter klage"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bj%C3%B8rnvika%22%20Ler%C3%B8y"
       }
      },
@@ -10214,7 +10214,7 @@
          "last_title": "Avslag på søknad om etablering av ny lokalitet Prestvika i Rødøy kommune - Mowi Seawater Norway AS 921668236"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Prestvika%22%20Mowi"
       }
      },
@@ -29221,7 +29221,7 @@
          "last_title": "Mowi Seawater Norway AS org.nr. 921668236 - Akvakulturtillatelse til arealendring av fortøyninger på lokaliteten Klubben i Brønnøy og Sømna kommuner."
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Klubben%22%20Mowi"
       }
      },
@@ -29546,7 +29546,7 @@
          "last_title": "Ber om eventuelle kommetarer på klage fra Nord Fiskarlag på tillatelse til arealendringer ved lokaliteten Skålsvika i Meøy kommune - Nova Sea Havbruk AS Org. Nr. 827 248 312"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sk%C3%A5lsvika%22%20Nova"
       }
      },
@@ -29880,7 +29880,7 @@
          "last_title": "Dispensasjonsvedtak - akvakulturlokalitet Isqueen - Æsøya 30977 - kopi"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%86s%C3%B8ya%22%20Isqueen"
       }
      },
@@ -30571,7 +30571,7 @@
          "last_title": "Klage i sak 2023/165123 - Vedtak om avslag på søknad om biomasseutviding – 19655 Ospeneset - Oppstart av klagebehandling"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ospeneset%22%20Eide"
       }
      },
@@ -31137,7 +31137,7 @@
          "last_title": "Tillatelse til søknad om arealendring på lokalitet 29096 Grøttøy - Hadsel kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-25T18:41:01Z",
+       "fetched_at": "2026-09-26T19:55:36Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gr%C3%B8tt%C3%B8y%22%20Nordlaks"
       }
      },
@@ -37674,11 +37674,11 @@
   "einnsyn_summary": {
    "cached": 484,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 8
   }
  },
  "changes": {
-  "updated_at": "2026-09-26T17:14:24Z",
+  "updated_at": "2026-09-26T19:55:56Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38054,7 +38054,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-26T17:14:24Z",
+  "updated_at": "2026-09-26T19:55:56Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
