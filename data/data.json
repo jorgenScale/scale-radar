@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-09-28T00:53:55Z",
+ "generated_at": "2026-09-28T07:00:15Z",
  "mode": "live",
  "news": [
+  {
+   "title": "Fiskeridirektoratet avviser sammenheng",
+   "url": "https://www.kyst.no/fiskeridirektoratet-forsopling-in-the-same-boat/fiskeridirektoratet-avviser-sammenheng/2187294",
+   "published": "2026-09-28",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -129,13 +136,6 @@
    "source": "Kyst.no"
   },
   {
-   "title": "Låner tre millioner dollar til",
-   "url": "https://www.kyst.no/aktuelt-atlantic-sapphire/laner-tre-millioner-usd-til/2186637",
-   "published": "2026-09-25",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
    "source_key": "ilaks",
    "source": "iLaks",
    "published": "2026-09-24",
@@ -213,6 +213,41 @@
    "url": "https://www.fiskeridir.no/nyheter/onsker-innspill-til-kompetansekrav-for-havbruk-til-havs"
   },
   {
+   "title": "Cermaq: – Lønnsomheten i 2027 kan falle drastisk",
+   "url": "https://www.intrafish.no/okonomi/cermaq-lonnsomheten-i-2027-kan-falle-drastisk/2-1-2049877",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Risikerte permanent reduksjon – Foreslo selv midlertidig halvering av kapasiteten",
+   "url": "https://www.intrafish.no/fiskehelse/risikerte-permanent-reduksjon-foreslo-selv-midlertidig-halvering-av-kapasiteten/2-1-2048648",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Dette krever de av hverandre: – Vi vet det er mye penger",
+   "url": "https://www.intrafish.no/finans/dette-krever-de-av-hverandre-vi-vet-det-er-mye-penger/2-1-2049761",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Mener skatte­kommisjonens forslag truer lokalt eierskap i havbruk",
+   "url": "https://www.intrafish.no/politikk/mener-skattekommisjonens-forslag-truer-lokalt-eierskap-i-havbruk/2-1-2049991",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Havets bereds ­kapslager kan ikke fylles opp igjen når krisen rammer",
+   "url": "https://www.intrafish.no/debatt/slik-kan-teknologi-gjore-havet-til-norges-viktigste-beredskapslager/2-1-2044129",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Selv små forbedringer i hvordan disse ressursene brukes kan gi betydelig verd",
    "url": "https://www.intrafish.no/debatt/selv-sma-forbedringer-i-hvordan-disse-ressursene-brukes-kan-gi-betydelig-verd/2-1-2048637",
    "published": null,
@@ -227,22 +262,15 @@
    "source": "Intrafish"
   },
   {
-   "title": "Mener skattekommisjonens forslag truer lokalt eierskap i havbruk",
-   "url": "https://www.intrafish.no/politikk/mener-skattekommisjonens-forslag-truer-lokalt-eierskap-i-havbruk/2-1-2049991",
+   "title": "Mindre biomasse i Chile: – Positiv for prisene",
+   "url": "https://www.intrafish.no/finans/mindre-biomasse-i-chile-positiv-for-prisene/2-1-2050150",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "Dette krever de av hverandre: – Vi vet det er mye penger",
-   "url": "https://www.intrafish.no/finans/dette-krever-de-av-hverandre-vi-vet-det-er-mye-penger/2-1-2049761",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Havets beredskapslager kan ikke fylles opp igjen når krisen rammer",
-   "url": "https://www.intrafish.no/debatt/slik-kan-teknologi-gjore-havet-til-norges-viktigste-beredskapslager/2-1-2044129",
+   "title": "Kverva laster opp med aksjer i Endúr",
+   "url": "https://www.intrafish.no/finans/kverva-laster-opp-med-aksjer-i-end-r/2-1-2050132",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -250,34 +278,6 @@
   {
    "title": "Dommen kommer tidligst i november",
    "url": "https://www.intrafish.no/samfunn/lange-uker-i-retten-er-over-dommen-kommer-tidligst-i-november/2-1-2048760",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Denne uken skjer det noe uvanlig når vi ringer rundt om lakseprisen",
-   "url": "https://www.intrafish.no/priser/lakseprisene-loftes-av-friuke-i-kina/2-1-2049700",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Han har en tollfordel Norge ikke har: - Forventer ikke at det skal vare",
-   "url": "https://www.intrafish.no/landbasert/han-har-en-tollfordel-norge-ikke-har-forventer-ikke-at-det-skal-vare/2-1-2046663",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Kjære statsråd: Her er matrapporten du slipper å vente på",
-   "url": "https://www.intrafish.no/kommentarer/du-trenger-ingen-ekspertgruppe-statsrad-her-har-du-ti-gode-rad-/2-1-2049581",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Kjøpte avdeling fra egen arbeidsgiver og bygget seg opp – disse rådene har milliardæren til havbruksnæringen",
-   "url": "https://www.intrafish.no/okonomi/kjopte-avdeling-fra-egen-arbeidsgiver-og-bygget-seg-opp-disse-radene-har-milliardaren-til-havbruksnaringen/2-1-2049543",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-28T00:54:06Z",
+  "fetched_at": "2026-09-28T07:00:24Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37678,7 +37678,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-09-28T00:54:09Z",
+  "updated_at": "2026-09-28T07:00:26Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38054,7 +38054,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-28T00:54:09Z",
+  "updated_at": "2026-09-28T07:00:26Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38245,7 +38245,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38285,7 +38285,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": []
     },
     "companies": [
@@ -38610,7 +38610,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -38914,7 +38914,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -38958,7 +38958,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39050,7 +39050,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-09-28T00:54:09Z",
+     "fetched_at": "2026-09-28T07:00:26Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
