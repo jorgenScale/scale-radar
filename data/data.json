@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-27T22:16:01Z",
+ "generated_at": "2026-09-28T00:53:55Z",
  "mode": "live",
  "news": [
   {
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-09-27",
+  "published": "2026-09-28",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-27T22:16:12Z",
+  "fetched_at": "2026-09-28T00:54:06Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -10139,26 +10139,26 @@
       "lon": 13.13746,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000199",
       "details": {
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 3000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 3450,
        "max_monthly_feed_tonn": 350,
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 3000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-27T22:16:13Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Rødøy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
        "Innsendt": "30.06.2023",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Rødøy",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 450 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
        "count": 60,
@@ -31070,32 +31070,32 @@
       "lon": 14.81984,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000301",
       "details": {
-       "mtb_tonn": 4700,
-       "planned_production_tonn": 5500,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 17,
        "feed_per_cycle_tonn": 6500,
        "max_monthly_feed_tonn": 900,
+       "mtb_tonn": 4700,
+       "planned_production_tonn": 5500,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-09-27T22:16:13Z"
       },
       "fields": {
-       "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Hadsel",
-       "Fylke": "Nordland",
-       "Lokalitetsnummer": "29096",
-       "Lokalitet": "Grøttøy",
-       "Plassering": "Sjø",
-       "Kapasitet": "3 120 tonn",
-       "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
        "Aktive tillatelser": "N-LN-0004 , N-SG-0037 , N-H-0001 , N-SG-0038 , N-SG-0039",
-       "Maksimal tillatt biomasse (MTB)": "4 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
-       "Produksjonssykluslengde": "17 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 500 tonn",
-       "Maksimal månedlig fôring": "900 tonn",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Fylke": "Nordland",
        "Innsendt": "10.07.2023",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kapasitet": "3 120 tonn",
+       "Kommune": "Hadsel",
+       "Lokalitet": "Grøttøy",
+       "Lokalitetsnummer": "29096",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Maksimal tillatt biomasse (MTB)": "4 700 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 500 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Plassering": "Sjø",
+       "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
+       "Produksjonssykluslengde": "17 mnd"
       },
       "einnsyn": {
        "count": 44,
@@ -37669,16 +37669,16 @@
   "details_summary": {
    "cached": 484,
    "pending": 0,
-   "fetched_now": 2
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 484,
    "pending": 0,
-   "fetched_now": 8
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-09-27T22:16:37Z",
+  "updated_at": "2026-09-28T00:54:09Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38054,7 +38054,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-27T22:16:37Z",
+  "updated_at": "2026-09-28T00:54:09Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38245,7 +38245,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38285,7 +38285,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": []
     },
     "companies": [
@@ -38610,7 +38610,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -38914,7 +38914,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -38958,7 +38958,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39050,7 +39050,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-09-27T18:30:21Z",
+     "fetched_at": "2026-09-28T00:54:09Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
