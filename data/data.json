@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T15:56:40Z",
+ "generated_at": "2026-09-29T20:51:46Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-29T15:56:50Z",
+  "fetched_at": "2026-09-29T20:51:56Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37757,11 +37757,11 @@
   "einnsyn_summary": {
    "cached": 484,
    "pending": 0,
-   "fetched_now": 100
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-09-29T15:59:17Z",
+  "updated_at": "2026-09-29T20:51:57Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38287,7 +38287,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-29T15:59:17Z",
+  "updated_at": "2026-09-29T20:51:57Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
