@@ -1,7 +1,21 @@
 {
- "generated_at": "2026-09-30T13:49:07Z",
+ "generated_at": "2026-09-30T19:25:37Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-30",
+   "title": "– Skal vi få ned dødeligheten, må vi redusere håndteringen av fisken",
+   "url": "https://ilaks.no/skal-vi-fa-ned-dodeligheten-ma-vi-redusere-handteringen-av-fisken/?mtm_campaign=feed_click&mtm_kwd=skal-vi-fa-ned-dodeligheten-ma-vi-redusere-handteringen-av-fisken&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-09-30",
+   "title": "Miljøministeren gir Nordic Mining grønt lys til å dumpe 4,5 millioner tonn gruveavfall i Førdefjorden",
+   "url": "https://ilaks.no/miljoministeren-gir-nordic-mining-gront-lys-til-a-dumpe-45-millioner-gruveavfall-i-fordefjorden/?mtm_campaign=feed_click&mtm_kwd=miljoministeren-gir-nordic-mining-gront-lys-til-a-dumpe-45-millioner-gruveavfall-i-fordefjorden&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -108,20 +122,6 @@
    "url": "https://ilaks.no/rykket-ut-til-brann-i-servicebat-i-austevoll/?mtm_campaign=feed_click&mtm_kwd=rykket-ut-til-brann-i-servicebat-i-austevoll&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-29",
-   "title": "Tunge nedskrivinger i Danmark ryster Biomega",
-   "url": "https://ilaks.no/tunge-nedskrivinger-i-danmark-ryster-biomega/?mtm_campaign=feed_click&mtm_kwd=tunge-nedskrivinger-i-danmark-ryster-biomega&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-09-29",
-   "title": "Bluefront kjøper aksjemajoriteten i Alvestad Marin",
-   "url": "https://ilaks.no/bluefront-kjoper-aksjemajoriteten-i-alvestad-marin/?mtm_campaign=feed_click&mtm_kwd=bluefront-kjoper-aksjemajoriteten-i-alvestad-marin&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "title": "Bedre varsling og tiltak mot alger og maneter",
    "url": "https://www.kyst.no/alger-fhf-maneter/et-kunnskapsloft-for-bedre-varsling-og-tiltak-mot-alger-og-maneter/2188142",
    "published": "2026-09-29",
@@ -213,7 +213,7 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
-   "title": "Fôr: Laveste pris trenger ikke være billigst, mener Biomar-topp",
+   "title": "– Å bruke for billig fôr kan bli dyrt",
    "url": "https://www.intrafish.no/okonomi/f-r-laveste-pris-trenger-ikke-vare-billigst-mener-biomar-topp/2-1-2051094",
    "published": null,
    "source_key": "intrafish",
@@ -227,21 +227,14 @@
    "source": "Intrafish"
   },
   {
-   "title": "Dette svarer Finans­­- departementet om tapsavgift",
+   "title": "– En klokkeklar forventning om at avgiften legges bort",
    "url": "https://www.intrafish.no/politikk/dette-svarer-finansdepartementet-om-tapsavgift/2-1-2051139",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "Slik jobber Alsaker med å stoppe lusa på denne lokaliteten",
-   "url": "https://www.intrafish.no/fiskehelse/pa-denne-lokaliteten-har-det-skjedd-noe/2-1-2050078",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Fiskeridirektoratet og Mattilsynet med felles tilsynsaksjon hos oppdretterne i vest",
+   "title": "Felles tilsynsaksjon hos oppdretterne i vest",
    "url": "https://www.intrafish.no/hendelser/fiskeridirektoratet-og-mattilsynet-med-fellesaksjon-hos-oppdretterne-i-vest/2-1-2051517",
    "published": null,
    "source_key": "intrafish",
@@ -250,6 +243,13 @@
   {
    "title": "Når sannheten er nok",
    "url": "https://www.intrafish.no/debatt/nar-sannheten-er-nok/2-1-2051428",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Slik jobber Alsaker med å stoppe lusa på denne lokaliteten",
+   "url": "https://www.intrafish.no/fiskehelse/pa-denne-lokaliteten-har-det-skjedd-noe/2-1-2050078",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,29 +397,29 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 204.4,
-      "change_pct": 0.49
+      "price": 203.4,
+      "change_pct": 0.0
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 575.0,
-      "change_pct": -1.2
+      "price": 572.0,
+      "change_pct": -1.72
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.12,
-      "change_pct": 0.98
+      "price": 43.06,
+      "change_pct": 0.84
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 25.8,
-      "change_pct": 1.34
+      "price": 25.78,
+      "change_pct": 1.26
      },
      {
       "name": "Austevoll Seafood",
@@ -451,8 +451,8 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.37,
-      "change_pct": 0.3
+      "price": 3.36,
+      "change_pct": -0.15
      },
      {
       "name": "Andfjord Salmon",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 441.8,
-      "change_pct": -1.47
+      "price": 438.0,
+      "change_pct": -2.32
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-09-30T13:49:15Z",
+  "fetched_at": "2026-09-30T19:25:45Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -696,7 +696,7 @@
          "last_title": "Akvakultursøknad SP-2026-002780 - Lovundlaks Sjø AS 929601610 - Søknad om etablering av ny lokalitet Seiongultaren i Lurøy kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Seiongultaren%22%20Lovundlaks"
       }
      },
@@ -767,26 +767,26 @@
       "lon": 14.69031,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002726",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 4500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5200,
        "max_monthly_feed_tonn": 800,
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 4500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "19.08.2026",
        "Kommune": "Bø",
-       "Maksimal månedlig fôring": "800 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
-       "Produksjonssykluslengde": "18 mnd"
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 200 tonn",
+       "Maksimal månedlig fôring": "800 tonn",
+       "Innsendt": "19.08.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 12,
@@ -828,7 +828,7 @@
          "last_title": "Kopi - Egil Kristoffersen & Sønner AS - Søknad om ny lokalitet Flagskallen i Bø kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Flagskallen%22%20Egil"
       }
      },
@@ -899,26 +899,26 @@
       "lon": 12.3851,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002720",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 2608,
+       "planned_production_tonn": 2828,
        "cycle_months": 20,
        "feed_per_cycle_tonn": 3394,
        "max_monthly_feed_tonn": 630,
-       "mtb_tonn": 2608,
-       "planned_production_tonn": 2828,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "10.08.2026",
        "Kommune": "Alstahaug",
-       "Maksimal månedlig fôring": "630 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "2 608 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 394 tonn",
        "Planlagt produksjon per produksjonssyklus": "2 828 tonn",
-       "Produksjonssykluslengde": "20 mnd"
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 394 tonn",
+       "Maksimal månedlig fôring": "630 tonn",
+       "Innsendt": "10.08.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 9,
@@ -960,7 +960,7 @@
          "last_title": "Kobbvåglaks AS - Søknad om ny lokalitet Valløya i Alstahaug kommune - Oversendelse av søknad for offentlig utlysning og kommunal behandling, og til sektor til orientering"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vall%C3%B8ya%22%20Kobbv%C3%A5glaks"
       }
      },
@@ -983,31 +983,31 @@
       "lon": 7.57936,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002637",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 1600,
        "cycle_months": 60,
        "feed_per_cycle_tonn": 2000,
        "max_monthly_feed_tonn": 126,
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 1600,
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "M-EE-0009 , M-EE-0008",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "10.07.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Hustadvika",
-       "Lokalitet": "Krekvikbogen",
+       "Fylke": "Møre og Romsdal",
        "Lokalitetsnummer": "28776",
-       "Maksimal månedlig fôring": "126 tonn",
-       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 600 tonn",
+       "Lokalitet": "Krekvikbogen",
        "Plassering": "Sjø",
-       "Produksjonssykluslengde": "60 mnd"
+       "Kapasitet": "1 560 tonn",
+       "Aktive tillatelser": "M-EE-0009 , M-EE-0008",
+       "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
+       "Planlagt produksjon per produksjonssyklus": "1 600 tonn",
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+       "Maksimal månedlig fôring": "126 tonn",
+       "Innsendt": "10.07.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 6,
@@ -1035,7 +1035,7 @@
          "last_title": "Nordic Halibut AS - Endring av lokalitet 28776 Krekvikbogen - Oversendelse for høring av behov for supplerende opplysninger samt til orientering"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Krekvikbogen%22%20Nordic"
       }
      },
@@ -1058,31 +1058,31 @@
       "lon": 8.3772,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002636",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 2250,
        "cycle_months": 30,
        "feed_per_cycle_tonn": 3150,
        "max_monthly_feed_tonn": 91,
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 2250,
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "TR-H-0003 , TR-H-0006 , TR-H-0005 , TR-H-0004 , TR-H-0002",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Trøndelag",
-       "Innsendt": "09.07.2026",
-       "Kapasitet": "3 900 tonn",
        "Kommune": "Hitra",
-       "Lokalitet": "Helsøya II",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "45287",
-       "Maksimal månedlig fôring": "91 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 150 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 250 tonn",
+       "Lokalitet": "Helsøya II",
        "Plassering": "Sjø",
-       "Produksjonssykluslengde": "30 mnd"
+       "Kapasitet": "3 900 tonn",
+       "Aktive tillatelser": "TR-H-0003 , TR-H-0006 , TR-H-0005 , TR-H-0004 , TR-H-0002",
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt produksjon per produksjonssyklus": "2 250 tonn",
+       "Produksjonssykluslengde": "30 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 150 tonn",
+       "Maksimal månedlig fôring": "91 tonn",
+       "Innsendt": "09.07.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 8,
@@ -1110,7 +1110,7 @@
          "last_title": "Amar Seafood AS - Søknad om arealendring på lokalitet 45287 Helsøya II Hitra kommune SP-2026-002636 - oversendelse for offentlig ettersyn og kommunal behandling (samt høring av behovet for supplerende opplysninger)"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hels%C3%B8ya%20II%22%20Amar"
       }
      },
@@ -1133,26 +1133,26 @@
       "lon": 10.53018,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002635",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 5780,
+       "planned_production_tonn": 6117,
        "cycle_months": 24,
        "feed_per_cycle_tonn": 7040,
        "max_monthly_feed_tonn": 386,
-       "mtb_tonn": 5780,
-       "planned_production_tonn": 6117,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Trøndelag",
-       "Innsendt": "09.07.2026",
        "Kommune": "Flatanger",
-       "Maksimal månedlig fôring": "386 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "5 780 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 040 tonn",
        "Planlagt produksjon per produksjonssyklus": "6 117 tonn",
-       "Produksjonssykluslengde": "24 mnd"
+       "Produksjonssykluslengde": "24 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 040 tonn",
+       "Maksimal månedlig fôring": "386 tonn",
+       "Innsendt": "09.07.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 18,
@@ -1194,7 +1194,7 @@
          "last_title": "Håsvåg - klage på planlagt etablering av torskeoppdrett ved Leirskiæret-Skårungen - akvakultur - Flatanger - Ode AS"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hasv%C3%A5g%22%20Ode"
       }
      },
@@ -1273,26 +1273,26 @@
       "lon": 6.11523,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002571",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2400,
        "cycle_months": 60,
        "feed_per_cycle_tonn": 3000,
        "max_monthly_feed_tonn": 60,
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2400,
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "25.06.2026",
        "Kommune": "Volda",
-       "Maksimal månedlig fôring": "60 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "60 mnd"
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+       "Maksimal månedlig fôring": "60 tonn",
+       "Innsendt": "25.06.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 5,
@@ -1320,7 +1320,7 @@
          "last_title": "Nordic Halibut AS - Akvakultursøknad for etablering av ny sjølokalitet for kveite - Skardsteinane - Oversendelse for høring av behov for supplerende opplysninger samt til orientering - SP-2026-002571"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skardsteinane%22%20Nordic"
       }
      },
@@ -1343,26 +1343,26 @@
       "lon": 10.95153,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002538",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 6240,
+       "planned_production_tonn": 6500,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 900,
-       "mtb_tonn": 6240,
-       "planned_production_tonn": 6500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "24.06.2026",
        "Kommune": "Nærøysund",
-       "Maksimal månedlig fôring": "900 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
-       "Produksjonssykluslengde": "17 mnd"
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "24.06.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 13,
@@ -1404,7 +1404,7 @@
          "last_title": "Oversendelse for behandling - Salmar oppdrett AS - Ny lokalitet Vardholmen - SP-2026-002538 - Nærøysund kommune - Trøndelag fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vardholmen%22%20Salmar"
       }
      },
@@ -1481,26 +1481,26 @@
       "lon": 10.62281,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002525",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 5780,
+       "planned_production_tonn": 6117,
        "cycle_months": 24,
        "feed_per_cycle_tonn": 7040,
        "max_monthly_feed_tonn": 386,
-       "mtb_tonn": 5780,
-       "planned_production_tonn": 6117,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Trøndelag",
-       "Innsendt": "07.06.2026",
        "Kommune": "Flatanger",
-       "Maksimal månedlig fôring": "386 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "5 780 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 040 tonn",
        "Planlagt produksjon per produksjonssyklus": "6 117 tonn",
-       "Produksjonssykluslengde": "24 mnd"
+       "Produksjonssykluslengde": "24 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 040 tonn",
+       "Maksimal månedlig fôring": "386 tonn",
+       "Innsendt": "07.06.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 26,
@@ -1542,7 +1542,7 @@
          "last_title": "Vedrørende 202623039-4 - Ode AS - Søknad om akvakulturtillatelse Fauskan i Flatanger"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fauskan%22%20Ode"
       }
      },
@@ -1613,26 +1613,26 @@
       "lon": 12.77755,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002523",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3510,
+       "planned_production_tonn": 4200,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4650,
        "max_monthly_feed_tonn": 420,
-       "mtb_tonn": 3510,
-       "planned_production_tonn": 4200,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Nordland",
-       "Innsendt": "03.06.2026",
        "Kommune": "Lurøy",
-       "Maksimal månedlig fôring": "420 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 510 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "420 tonn",
+       "Innsendt": "03.06.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 34,
@@ -1674,7 +1674,7 @@
          "last_title": "Tilleggsopplysninger - søknad - rapport Akvaplan-niva AS - akvakultur - Lurøy - Morhua AS - Sørvær"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22S%C3%B8rv%C3%A6r%22%20Morhua"
       }
      },
@@ -1697,26 +1697,26 @@
       "lon": 5.67191,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002519",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 2400,
        "cycle_months": 60,
        "feed_per_cycle_tonn": 3000,
        "max_monthly_feed_tonn": 190,
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 2400,
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "01.06.2026",
        "Kommune": "Vanylven",
-       "Maksimal månedlig fôring": "190 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "60 mnd"
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+       "Maksimal månedlig fôring": "190 tonn",
+       "Innsendt": "01.06.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 16,
@@ -1744,7 +1744,7 @@
          "last_title": "KOPI - Løyve til etablering av akvakulturanlegg for kveite - Nordic Halibut AS - Lokalitet Litlebø - Vanylven kommune - Møre og Romsdal fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litleb%C3%B8%22%20Nordic"
       }
      },
@@ -1823,26 +1823,26 @@
       "lon": 12.1877,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002516",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 6000,
+       "planned_production_tonn": 6900,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 1100,
-       "mtb_tonn": 6000,
-       "planned_production_tonn": 6900,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "29.05.2026",
        "Kommune": "Vega",
-       "Maksimal månedlig fôring": "1 100 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "6 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
        "Planlagt produksjon per produksjonssyklus": "6 900 tonn",
-       "Produksjonssykluslengde": "18 mnd"
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "1 100 tonn",
+       "Innsendt": "29.05.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 21,
@@ -1884,7 +1884,7 @@
          "last_title": "Høringsuttalelse - søknad om ny akvakulturlokalitet Rokneset i Vega kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rokneset%22%20Sinkaberg"
       }
      },
@@ -1991,26 +1991,26 @@
       "lon": 11.91194,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002492",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 6550,
        "cycle_months": 21,
        "feed_per_cycle_tonn": 7200,
        "max_monthly_feed_tonn": 700,
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 6550,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "20.04.2026",
        "Kommune": "Leka",
-       "Maksimal månedlig fôring": "700 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
        "Planlagt produksjon per produksjonssyklus": "6 550 tonn",
-       "Produksjonssykluslengde": "21 mnd"
+       "Produksjonssykluslengde": "21 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 200 tonn",
+       "Maksimal månedlig fôring": "700 tonn",
+       "Innsendt": "20.04.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 16,
@@ -2052,7 +2052,7 @@
          "last_title": "SP-2026-002492. Bjørøya AS. Akvakultur av laks - Søknad om ny lokalitet Hestvika i Leka kommune. Oversendelse for høring av behov for supplerende opplysninger samt til orientering."
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestvika%22%20Bj%C3%B8r%C3%B8ya"
       }
      },
@@ -2243,26 +2243,26 @@
       "lon": 12.52092,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002471",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3600,
+       "planned_production_tonn": 4000,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4400,
        "max_monthly_feed_tonn": 300,
-       "mtb_tonn": 3600,
-       "planned_production_tonn": 4000,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Nordland",
-       "Innsendt": "17.03.2026",
        "Kommune": "Lurøy",
-       "Maksimal månedlig fôring": "300 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
+       "Maksimal månedlig fôring": "300 tonn",
+       "Innsendt": "17.03.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 28,
@@ -2304,7 +2304,7 @@
          "last_title": "Vedtak Ny lokalitet for matfiskoppdrett av torsk i Lurøy kommune ved lokaliteten Flatskjæret ved Sørnesøy- Kime Akva AS"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Flatskj%C3%A6ret%22%20Kime"
       }
      },
@@ -2327,30 +2327,30 @@
       "lon": 14.87344,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002464",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4300,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 450,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4300,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "13.03.2026",
        "Kommune": "Øksnes",
-       "Maksimal månedlig fôring": "450 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 300 tonn",
-       "Produksjonssykluslengde": "16 mnd"
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+       "Maksimal månedlig fôring": "450 tonn",
+       "Innsendt": "13.03.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
-       "count": 36,
-       "last": "2026-09-14",
+       "count": 37,
+       "last": "2026-09-16",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -2362,9 +2362,9 @@
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2026-05-05",
-         "count": 17,
-         "last": "2026-09-10",
-         "last_title": "Uttalelse - ny lokalietet - SP-2026-002464 - akvakultur - Øksnes - Cermaq Norway Salmon AS - lokalitet Langøy"
+         "count": 18,
+         "last": "2026-09-16",
+         "last_title": "Supplerende dokumentasjon til søknad - akvakultur - Øksnes - Cermaq Salmon Norway AS - lokalitet Langøy"
         },
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -2388,7 +2388,7 @@
          "last_title": "Cermaq Salmon Norway AS - Søknad om etablering av ny lokalitet Langøy i Øksnes kommune - Nordland fylke - søknad klar til behandling"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lang%C3%B8y%22%20Cermaq"
       }
      },
@@ -2411,26 +2411,26 @@
       "lon": 12.73652,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002463",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
        "cycle_months": 10,
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 450,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "09.03.2026",
        "Kommune": "Rødøy",
-       "Maksimal månedlig fôring": "450 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-       "Produksjonssykluslengde": "10 mnd"
+       "Produksjonssykluslengde": "10 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+       "Maksimal månedlig fôring": "450 tonn",
+       "Innsendt": "09.03.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 14,
@@ -2465,7 +2465,7 @@
          "last_title": "Avslag - søknad om etablering av akvakulturanlegg - Gannflæsa - kopi"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gannflesa%22%20Viewpoint"
       }
      },
@@ -2488,26 +2488,26 @@
       "lon": 12.03215,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002458",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 2184,
+       "planned_production_tonn": 2400,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 2700,
        "max_monthly_feed_tonn": 460,
-       "mtb_tonn": 2184,
-       "planned_production_tonn": 2400,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "27.02.2026",
        "Kommune": "Sømna",
-       "Maksimal månedlig fôring": "460 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "2 184 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 700 tonn",
        "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "18 mnd"
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 700 tonn",
+       "Maksimal månedlig fôring": "460 tonn",
+       "Innsendt": "27.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 31,
@@ -2549,7 +2549,7 @@
          "last_title": "Angående Rossvika"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rossvika%22%20Akvafuture"
       }
      },
@@ -2572,26 +2572,26 @@
       "lon": 12.19131,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002451",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 2184,
+       "planned_production_tonn": 2400,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 2700,
        "max_monthly_feed_tonn": 460,
-       "mtb_tonn": 2184,
-       "planned_production_tonn": 2400,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "19.02.2026",
        "Kommune": "Alstahaug",
-       "Maksimal månedlig fôring": "460 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "2 184 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 700 tonn",
        "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
-       "Produksjonssykluslengde": "18 mnd"
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 700 tonn",
+       "Maksimal månedlig fôring": "460 tonn",
+       "Innsendt": "19.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 29,
@@ -2633,7 +2633,7 @@
          "last_title": "Kopi - Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse - SP-2026-002451 - Akvafuture AS - Ny lokalitet Kalvøya - Alstahaug kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kalv%C3%B8ya%22%20Akvafuture"
       }
      },
@@ -2656,29 +2656,29 @@
       "lon": 14.41836,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002446",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 2340,
+       "planned_production_tonn": 3500,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4200,
        "max_monthly_feed_tonn": 900,
-       "mtb_tonn": 2340,
-       "planned_production_tonn": 3500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "17.02.2026",
        "Kommune": "Bodø",
-       "Maksimal månedlig fôring": "900 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "2 340 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "17.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
-       "count": 47,
+       "count": 50,
        "last": "2026-09-28",
        "steps": {
         "fiskeridir": {
@@ -2691,7 +2691,7 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-03-04",
-         "count": 7,
+         "count": 8,
          "last": "2026-07-27",
          "last_title": "Løyve til etablering av akvakulturanlegg for laksefisk - Lofoten Sjøprodukter AS - Lokalitet Kalvøya Midt - Bodø kommune - Nordland fylke"
         },
@@ -2705,7 +2705,7 @@
         "mattilsynet": {
          "label": "Mattilsynet",
          "first": "2026-03-05",
-         "count": 7,
+         "count": 9,
          "last": "2026-09-28",
          "last_title": "Lofoten sjøprodukter AS – Mattilsynet avslår søknad om nytt akvakulturanlegg Kalvøya midt"
         },
@@ -2724,7 +2724,7 @@
          "last_title": "Klage på fiskeoppdrettsanlegg"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kalv%C3%B8ya%20Midt%22%20Lofoten"
       }
      },
@@ -2747,26 +2747,26 @@
       "lon": 16.30588,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002404",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4056,
        "cycle_months": 15,
        "feed_per_cycle_tonn": 4461,
        "max_monthly_feed_tonn": 350,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4056,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "05.02.2026",
        "Kommune": "Narvik",
-       "Maksimal månedlig fôring": "350 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 056 tonn",
-       "Produksjonssykluslengde": "15 mnd"
+       "Produksjonssykluslengde": "15 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 461 tonn",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Innsendt": "05.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 33,
@@ -2808,7 +2808,7 @@
          "last_title": "Oversendelse av Narvik kommunes uttalelse - innkommende uttalelser og kunngjøringer i forbindelse med søknad om akvakulturlokalitet Skjellnes"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skjellnes%22%20Gratanglaks"
       }
      },
@@ -2831,26 +2831,26 @@
       "lon": 5.80126,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002393",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "mtb_tonn": 1560,
+       "planned_production_tonn": 1200,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 1440,
        "max_monthly_feed_tonn": 200,
-       "mtb_tonn": 1560,
-       "planned_production_tonn": 1200,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "21.01.2026",
        "Kommune": "Høyanger",
-       "Maksimal månedlig fôring": "200 tonn",
+       "Fylke": "Vestland",
        "Maksimal tillatt biomasse (MTB)": "1 560 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "1 440 tonn",
        "Planlagt produksjon per produksjonssyklus": "1 200 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "1 440 tonn",
+       "Maksimal månedlig fôring": "200 tonn",
+       "Innsendt": "21.01.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 32,
@@ -2885,7 +2885,7 @@
          "last_title": "Tillatelse etter havne- og farvannsloven - Osland Seafood AS - SP-2026-002393 ny akvakulturlokalitet Floteneset i Høyanger kommune - Vestland fylke - Kopi"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Floteneset%22%20Osland"
       }
      },
@@ -2908,32 +2908,32 @@
       "lon": 29.56847,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002351",
       "details": {
-       "case_handler": "Finnmark fylkeskommune",
+       "mtb_tonn": 3600,
+       "planned_production_tonn": 4000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4400,
        "max_monthly_feed_tonn": 660,
-       "mtb_tonn": 3600,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Finnmark fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Finnmark",
-       "Innsendt": "06.01.2026",
        "Kommune": "Sør-Varanger",
-       "Maksimal månedlig fôring": "660 tonn",
+       "Fylke": "Finnmark",
        "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-       "Produksjonssykluslengde": "18 mnd"
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
+       "Maksimal månedlig fôring": "660 tonn",
+       "Innsendt": "06.01.2026",
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sm%C3%B8rvika%22%20Ler%C3%B8y"
       }
      },
@@ -3052,31 +3052,31 @@
       "lon": 13.26257,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002347",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 5160,
+       "planned_production_tonn": 6700,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 7900,
        "max_monthly_feed_tonn": 670,
-       "mtb_tonn": 5160,
-       "planned_production_tonn": 6700,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-ME-0064 , N-ME-0065 , N-ME-0067 , N-ME-0063 , N-ME-0066",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Nordland",
-       "Innsendt": "23.12.2025",
-       "Kapasitet": "3 600 tonn",
        "Kommune": "Meløy",
-       "Lokalitet": "Frosvika",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "45073",
-       "Maksimal månedlig fôring": "670 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 160 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 900 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 700 tonn",
+       "Lokalitet": "Frosvika",
        "Plassering": "Sjø",
-       "Produksjonssykluslengde": "22 mnd"
+       "Kapasitet": "3 600 tonn",
+       "Aktive tillatelser": "N-ME-0064 , N-ME-0065 , N-ME-0067 , N-ME-0063 , N-ME-0066",
+       "Maksimal tillatt biomasse (MTB)": "5 160 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 700 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 900 tonn",
+       "Maksimal månedlig fôring": "670 tonn",
+       "Innsendt": "23.12.2025",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 40,
@@ -3125,7 +3125,7 @@
          "last_title": "Norcod AS - lokalitet 45073 Frosvika - Mattilsynet avslår søknad om utvidelse"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Frosvika%22%20Norcod"
       }
      },
@@ -3148,26 +3148,26 @@
       "lon": 10.42591,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002298",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4200,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4650,
        "max_monthly_feed_tonn": 418,
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 4200,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Trøndelag",
-       "Innsendt": "30.11.2025",
        "Kommune": "Osen",
-       "Maksimal månedlig fôring": "418 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "418 tonn",
+       "Innsendt": "30.11.2025",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 31,
@@ -3209,7 +3209,7 @@
          "last_title": "Tilbakemelding SP-2025-002298 - Norcod AS 821489962 - Sandholmtaren - Osen kommune - Vedrørende avklaring knyttet til bestemmelser i kommuneplanens arealdel"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandholmtaren%22%20Norcod"
       }
      },
@@ -3435,26 +3435,26 @@
       "lon": 12.88577,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002150",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4200,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4650,
        "max_monthly_feed_tonn": 418,
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 4200,
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Nordland",
-       "Innsendt": "21.10.2025",
        "Kommune": "Nesna",
-       "Maksimal månedlig fôring": "418 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "418 tonn",
+       "Innsendt": "21.10.2025",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 51,
@@ -3503,7 +3503,7 @@
          "last_title": "ORIENTERING OM OVERSENDELSE AV KLAGESAK TIL HOVEDKONTORET"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22B%C3%A5thella%22%20Norcod"
       }
      },
@@ -3526,26 +3526,26 @@
       "lon": 6.73675,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002145",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4500,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 5400,
        "max_monthly_feed_tonn": 800,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "15.10.2025",
        "Kommune": "Sykkylven",
-       "Maksimal månedlig fôring": "800 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 400 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
-       "Produksjonssykluslengde": "12 mnd"
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 400 tonn",
+       "Maksimal månedlig fôring": "800 tonn",
+       "Innsendt": "15.10.2025",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 37,
@@ -3573,7 +3573,7 @@
          "last_title": "Hofseth Sea Farming AS – Mattilsynet avslår søknad om endring av art på akvakulturanlegg Røneset"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%2245128%20R%C3%B8neset%22%20Hofseth"
       }
      },
@@ -3596,31 +3596,31 @@
       "lon": 7.51513,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002143",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 150,
+       "planned_production_tonn": 0,
        "cycle_months": 0,
        "feed_per_cycle_tonn": 0,
        "max_monthly_feed_tonn": 0,
-       "mtb_tonn": 150,
-       "planned_production_tonn": 0,
        "species": "Ukjent",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "M-AV-0034 , M-AV-0024 , M-AV-0037",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Ukjent",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "14.10.2025",
-       "Kapasitet": "910 tonn",
        "Kommune": "Averøy",
-       "Lokalitet": "Hendneset",
+       "Fylke": "Møre og Romsdal",
        "Lokalitetsnummer": "27376",
-       "Maksimal månedlig fôring": "0 tonn",
-       "Maksimal tillatt biomasse (MTB)": "150 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
-       "Planlagt produksjon per produksjonssyklus": "0 tonn",
+       "Lokalitet": "Hendneset",
        "Plassering": "Sjø",
-       "Produksjonssykluslengde": "0 mnd"
+       "Kapasitet": "910 tonn",
+       "Aktive tillatelser": "M-AV-0034 , M-AV-0024 , M-AV-0037",
+       "Maksimal tillatt biomasse (MTB)": "150 tonn",
+       "Planlagt produksjon per produksjonssyklus": "0 tonn",
+       "Produksjonssykluslengde": "0 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
+       "Maksimal månedlig fôring": "0 tonn",
+       "Innsendt": "14.10.2025",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 41,
@@ -3655,7 +3655,7 @@
          "last_title": "Orientering om oversendelse av klagesak til klagesaksenheten"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hendneset%22%20Pure"
       }
      },
@@ -3739,7 +3739,7 @@
          "last_title": "VEDR. OVERSENDELSE AV SAK TIL KLAGESAKSENHETEN - AKVAKULTURSØKNAD - SP-2025-002106 - MOWI SEAWATER NORWAY AS - NY LOKALITET BREIVIK I HJELMELAND KOMMUNE."
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Breivik%22%20Mowi"
       }
      },
@@ -3918,7 +3918,7 @@
          "last_title": "Klage på avslag om ny lokalitet Øyfjorden"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%98yfjorden%22%20Mowi"
       }
      },
@@ -3963,7 +3963,7 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 54,
+       "count": 55,
        "last": "2026-09-28",
        "steps": {
         "fiskeridir": {
@@ -3976,7 +3976,7 @@
         "mattilsynet": {
          "label": "Mattilsynet",
          "first": "2025-10-20",
-         "count": 8,
+         "count": 9,
          "last": "2026-09-28",
          "last_title": "Brønnøy Farming AS - Vedtak om klarering av nytt akvakulturanlegg - Bolværet"
         },
@@ -4009,7 +4009,7 @@
          "last_title": "Mottatt klage på akvakulturvedtak etter havne- og farvannsloven - SP-2025-002074 - Bolværet - Brønnøy kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bolv%C3%A6ret%22%20Torghatten"
       }
      },
@@ -4086,7 +4086,7 @@
          "last_title": "Kopi av klagebehandling"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Korsfura%22%20Nordic"
       }
      },
@@ -10842,30 +10842,30 @@
       "lon": 14.61597,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002737",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "planned_production_tonn": 1800,
        "cycle_months": 10,
        "feed_per_cycle_tonn": 2000,
        "max_monthly_feed_tonn": 400,
-       "planned_production_tonn": 1800,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-BØ-0016 , N-BØ-0009",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "09.09.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Bø",
-       "Lokalitet": "Vedvika",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "10504",
-       "Maksimal månedlig fôring": "400 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 800 tonn",
+       "Lokalitet": "Vedvika",
        "Plassering": "Sjø",
+       "Kapasitet": "1 560 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "10 mnd"
+       "Aktive tillatelser": "N-BØ-0016 , N-BØ-0009",
+       "Planlagt produksjon per produksjonssyklus": "1 800 tonn",
+       "Produksjonssykluslengde": "10 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
+       "Maksimal månedlig fôring": "400 tonn",
+       "Innsendt": "09.09.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 1,
@@ -10879,7 +10879,7 @@
          "last_title": "Akvakultursøknad SP-2026-002737 - Egil Kristoffersen & Sønner AS 913601963 - Søknad om endring av lokalitet 10504 Vedvika i Bø kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vedvika%22%20Egil"
       }
      },
@@ -10902,30 +10902,30 @@
       "lon": 8.99372,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002734",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "planned_production_tonn": 4000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4500,
        "max_monthly_feed_tonn": 570,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "ST-H-0020 , ST-H-0014 , ST-H-0005 , ST-H-0001",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "01.09.2026",
-       "Kapasitet": "3 900 tonn",
        "Kommune": "Hitra",
-       "Lokalitet": "Kåholmen",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "12348",
-       "Maksimal månedlig fôring": "570 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Lokalitet": "Kåholmen",
        "Plassering": "Sjø",
+       "Kapasitet": "3 900 tonn",
        "Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "ST-H-0020 , ST-H-0014 , ST-H-0005 , ST-H-0001",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+       "Maksimal månedlig fôring": "570 tonn",
+       "Innsendt": "01.09.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 4,
@@ -10953,7 +10953,7 @@
          "last_title": "MOWI SEAWATER NORWAY AS - SP-2026-002734 - Søknad om arealendring på lokaliteten 12348 Kåholmen Hitra kommune - oversendelse til orientering samt høring av behovet for supplerende opplysninger"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22K%C3%A5holmen%22%20Mowi"
       }
      },
@@ -10976,32 +10976,32 @@
       "lon": 15.97943,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002733",
       "details": {
-       "case_handler": "Troms fylkeskommune",
+       "mtb_tonn": 5999,
+       "planned_production_tonn": 6500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 1000,
-       "mtb_tonn": 5999,
-       "planned_production_tonn": 6500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "T-KF-0001 , T-BK-0003 , T-T-0019 , T-KF-0008 , T-SK-0004",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Troms",
-       "Innsendt": "01.09.2026",
-       "Kapasitet": "4 395 tonn",
        "Kommune": "Kvæfjord",
-       "Lokalitet": "Holandselv",
+       "Fylke": "Troms",
        "Lokalitetsnummer": "17176",
-       "Maksimal månedlig fôring": "1 000 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 999 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Lokalitet": "Holandselv",
        "Plassering": "Sjø",
+       "Kapasitet": "4 395 tonn",
        "Produksjonsområde": "Andøya til Senja (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "T-KF-0001 , T-BK-0003 , T-T-0019 , T-KF-0008 , T-SK-0004",
+       "Maksimal tillatt biomasse (MTB)": "5 999 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "1 000 tonn",
+       "Innsendt": "01.09.2026",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
       },
       "einnsyn": {
        "count": 6,
@@ -11043,7 +11043,7 @@
          "last_title": "Marinarkeologisk vurdering: Nordlaks Havbruk AS - Søknad om akvakulturtillatelse for matfisk av laks og ørret på lokalitet 17176 Holandselv i Kvæfjord kommune – Vurdering av konsekvensutredning"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Holandselv%22%20Nordlaks"
       }
      },
@@ -11066,36 +11066,36 @@
       "lon": 5.58627,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002731",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
+       "planned_production_tonn": 3000,
        "cycle_months": 15,
        "feed_per_cycle_tonn": 3600,
        "max_monthly_feed_tonn": 450,
-       "planned_production_tonn": 3000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-T-0003 , H-E-0001 , H-K-0035 , H-T-0006 , H-T-0016 , H-B-0029 , H-K-0013 , H-B-0006 , H-T-0020",
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Rogaland",
-       "Innsendt": "26.08.2026",
-       "Kapasitet": "2 340 tonn",
        "Kommune": "Vindafjord",
-       "Lokalitet": "Ihlholmen",
+       "Fylke": "Rogaland",
        "Lokalitetsnummer": "27095",
-       "Maksimal månedlig fôring": "450 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 600 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Lokalitet": "Ihlholmen",
        "Plassering": "Sjø",
+       "Kapasitet": "2 340 tonn",
        "Produksjonsområde": "Karmøy til Sotra (Rød)",
-       "Produksjonssykluslengde": "15 mnd"
+       "Aktive tillatelser": "H-T-0003 , H-E-0001 , H-K-0035 , H-T-0006 , H-T-0016 , H-B-0029 , H-K-0013 , H-B-0006 , H-T-0020",
+       "Planlagt produksjon per produksjonssyklus": "3 000 tonn",
+       "Produksjonssykluslengde": "15 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 600 tonn",
+       "Maksimal månedlig fôring": "450 tonn",
+       "Innsendt": "26.08.2026",
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ihlholmen%22%20Nordsj%C3%B8"
       }
      },
@@ -11118,34 +11118,34 @@
       "lon": 5.39034,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002722",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
+       "planned_production_tonn": 5680,
        "cycle_months": 10,
        "feed_per_cycle_tonn": 7100,
        "max_monthly_feed_tonn": 950,
-       "planned_production_tonn": 5680,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "R-S-0001 , R-B-0001 , R-SD-0032 , R-SS-0005 , R-S-0002 , R-SD-0002 , R-SD-0023 , R-SS-0010 , R-B-0013 , R-SD-0025 , R-K-0001 , R-SD-0031",
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Rogaland",
-       "Innsendt": "14.08.2026",
-       "Kapasitet": "5 680 tonn",
        "Kommune": "Bokn",
-       "Lokalitet": "Tollaksholmen",
+       "Fylke": "Rogaland",
        "Lokalitetsnummer": "17575",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 100 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 680 tonn",
+       "Lokalitet": "Tollaksholmen",
        "Plassering": "Sjø",
+       "Kapasitet": "5 680 tonn",
        "Produksjonsområde": "Ryfylket (Gul)",
-       "Produksjonssykluslengde": "10 mnd"
+       "Aktive tillatelser": "R-S-0001 , R-B-0001 , R-SD-0032 , R-SS-0005 , R-S-0002 , R-SD-0002 , R-SD-0023 , R-SS-0010 , R-B-0013 , R-SD-0025 , R-K-0001 , R-SD-0031",
+       "Planlagt produksjon per produksjonssyklus": "5 680 tonn",
+       "Produksjonssykluslengde": "10 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 100 tonn",
+       "Maksimal månedlig fôring": "950 tonn",
+       "Innsendt": "14.08.2026",
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
-       "count": 13,
-       "last": "2026-09-15",
+       "count": 14,
+       "last": "2026-09-16",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -11171,12 +11171,12 @@
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2026-08-21",
-         "count": 2,
-         "last": "2026-09-14",
-         "last_title": "Uttalelse - akvakultur - Bokn - Grieg Seafood Rogaland AS - lokalitet 17575 Tollaksholmen - mindre anleggsendring"
+         "count": 3,
+         "last": "2026-09-16",
+         "last_title": "Uttalelse - Akvakultur - Bokn - Grieg Seafood Rogaland AS - lokalitet 17575 Tollaksholmen - mindre anleggsendring"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tollaksholmen%22%20Grieg"
       }
      },
@@ -11199,30 +11199,30 @@
       "lon": 10.42497,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002719",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "planned_production_tonn": 4000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4700,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "NT-F-0006 , TR-O-0002 , TR-O-0001 , NT-F-0026 , ST-HE-0014 , TR-F-0011 , TR-O-0003 , TR-AA-0007 , M-FI-0002 , NT-F-0009",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "05.08.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Osen",
-       "Lokalitet": "Nordre Skokkeløy",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "38277",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Lokalitet": "Nordre Skokkeløy",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "NT-F-0006 , TR-O-0002 , TR-O-0001 , NT-F-0026 , ST-HE-0014 , TR-F-0011 , TR-O-0003 , TR-AA-0007 , M-FI-0002 , NT-F-0009",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 700 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "05.08.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 9,
@@ -11243,7 +11243,7 @@
          "last_title": "Kvittering på kompletthetsvurdering - Akvakultursøknad SP-2026-002719 - Bjørøya AS 932186497 - Søknad vurdert som komplett"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Nordre%20Skokkel%C3%B8y%22%20Bj%C3%B8r%C3%B8ya"
       }
      },
@@ -11266,32 +11266,32 @@
       "lon": 17.44057,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002718",
       "details": {
-       "case_handler": "Troms fylkeskommune",
+       "mtb_tonn": 5400,
+       "planned_production_tonn": 6000,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 6700,
        "max_monthly_feed_tonn": 900,
-       "mtb_tonn": 5400,
-       "planned_production_tonn": 6000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "T-D-0002 , T-BK-0002 , T-SK-0002 , T-KF-0008 , T-T-0009 , T-SK-0004",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Troms",
-       "Innsendt": "04.08.2026",
-       "Kapasitet": "3 600 tonn",
        "Kommune": "Dyrøy",
-       "Lokalitet": "Litjevika",
+       "Fylke": "Troms",
        "Lokalitetsnummer": "35317",
-       "Maksimal månedlig fôring": "900 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Lokalitet": "Litjevika",
        "Plassering": "Sjø",
+       "Kapasitet": "3 600 tonn",
        "Produksjonsområde": "Andøya til Senja (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "T-D-0002 , T-BK-0002 , T-SK-0002 , T-KF-0008 , T-T-0009 , T-SK-0004",
+       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 700 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "04.08.2026",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
       },
       "einnsyn": {
        "count": 7,
@@ -11333,7 +11333,7 @@
          "last_title": "Marinarkeologisk vurdering: Nordlaks Havbruk AS - Søknad om akvakulturtillatelse for matfisk av laks og ørret på lokalitet 35317 Litjevika i Dyrøy kommune – Vurdering av konsekvensutredning"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litjevika%22%20Nordlaks"
       }
      },
@@ -11356,32 +11356,32 @@
       "lon": 21.82988,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002684",
       "details": {
-       "case_handler": "Troms fylkeskommune",
+       "mtb_tonn": 3900,
+       "planned_production_tonn": 4500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 500,
-       "mtb_tonn": 3900,
-       "planned_production_tonn": 4500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "T-KN-0015 , T-KN-0012 , T-KN-0006",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Troms",
-       "Innsendt": "29.07.2026",
-       "Kapasitet": "2 700 tonn",
        "Kommune": "Kvænangen",
-       "Lokalitet": "Karvika",
+       "Fylke": "Troms",
        "Lokalitetsnummer": "10804",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Lokalitet": "Karvika",
        "Plassering": "Sjø",
+       "Kapasitet": "2 700 tonn",
        "Produksjonsområde": "Kvaløya til Loppa (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "T-KN-0015 , T-KN-0012 , T-KN-0006",
+       "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "29.07.2026",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
       },
       "einnsyn": {
        "count": 6,
@@ -11423,7 +11423,7 @@
          "last_title": "Marinarkeologisk vurdering: Mowi Seawater Norway AS – Søknad om endring av akvakulturtillatelse for matfisk av laks, ørret og regnbueørret på lokalitet 10804 Karvika i Kvænangen kommune – Vurdering av konsekvensutredning - UM"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Karvika%22%20Mowi"
       }
      },
@@ -11446,30 +11446,30 @@
       "lon": 13.52446,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002645",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "planned_production_tonn": 4500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5000,
        "max_monthly_feed_tonn": 500,
-       "planned_production_tonn": 4500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-L-0010 , N-R-0009 , N-R-0029 , N-R-0004 , N-L-0007 , N-BR-0002",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "17.07.2026",
-       "Kapasitet": "3 900 tonn",
        "Kommune": "Rødøy",
-       "Lokalitet": "Lian",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "35977",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Lokalitet": "Lian",
        "Plassering": "Sjø",
+       "Kapasitet": "3 900 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-L-0010 , N-R-0009 , N-R-0029 , N-R-0004 , N-L-0007 , N-BR-0002",
+       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 000 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "17.07.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 21,
@@ -11511,7 +11511,7 @@
          "last_title": "KOPI - Oversendelse av tilleggsinformasjon fra søker - Mowi Seawater Norway AS - Søknad om arealendring på lokaliteten Lian i Rødøy kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lian%22%20Mowi"
       }
      },
@@ -11596,32 +11596,32 @@
       "lon": 8.44783,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002629",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 5000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 5500,
        "max_monthly_feed_tonn": 800,
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 5000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "TR-F-0033 , TR-AA-0007 , TR-O-0002 , TR-F-0031 , TR-F-0032 , ST-F-0062 , TR-O-0003 , ST-HE-0014 , TR-F-0010 , TR-F-0011 , TR-F-0035 , TR-O-0001 , ST-HE-0006 , TR-F-0034 , M-AV-0027 , ST-F-0014",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "06.07.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Frøya",
-       "Lokalitet": "Ilsøya 2",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "38997",
-       "Maksimal månedlig fôring": "800 tonn",
-       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Lokalitet": "Ilsøya 2",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Nordmøre og Sør-Trøndelag (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "TR-F-0033 , TR-AA-0007 , TR-O-0002 , TR-F-0031 , TR-F-0032 , ST-F-0062 , TR-O-0003 , ST-HE-0014 , TR-F-0010 , TR-F-0011 , TR-F-0035 , TR-O-0001 , ST-HE-0006 , TR-F-0034 , M-AV-0027 , ST-F-0014",
+       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
+       "Maksimal månedlig fôring": "800 tonn",
+       "Innsendt": "06.07.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 3,
@@ -11635,7 +11635,7 @@
          "last_title": "Oversendelse for høring av behov for supplerende opplysninger samt til orientering - Akvakultur - Frøya - Måsøval - Ilsøya 2"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ils%C3%B8ya%202%22%20M%C3%A5s%C3%B8val"
       }
      },
@@ -11658,26 +11658,26 @@
       "lon": 6.69775,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002619",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3120,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 3900,
        "max_monthly_feed_tonn": 400,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3120,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "30.06.2026",
        "Kommune": "Molde",
-       "Maksimal månedlig fôring": "400 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 900 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 120 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 900 tonn",
+       "Maksimal månedlig fôring": "400 tonn",
+       "Innsendt": "30.06.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 10,
@@ -11705,7 +11705,7 @@
          "last_title": "Kopi av vedtak - Øylaks MTB AS og Prophylaxia AS - klage på vedtak om tilbaketrekking av lokalitet 12260 Juvika"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Juvika%22%20Prophylaxia"
       }
      },
@@ -11728,30 +11728,30 @@
       "lon": 5.63729,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002583",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 2000,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 2200,
        "max_monthly_feed_tonn": 200,
-       "planned_production_tonn": 2000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-FS-0026 , H-FS-0001 , H-FS-0017 , H-O-0012 , H-FS-0010 , H-FS-0040 , H-R-0003 , H-FS-0006 , H-FS-0004 , H-FS-0014 , H-FS-0037 , H-O-0013",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "30.06.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Bjørnafjorden",
-       "Lokalitet": "Gjerdeviksflua",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "10324",
-       "Maksimal månedlig fôring": "200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "2 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+       "Lokalitet": "Gjerdeviksflua",
        "Plassering": "Sjø",
+       "Kapasitet": "1 560 tonn",
        "Produksjonsområde": "Karmøy til Sotra (Rød)",
-       "Produksjonssykluslengde": "16 mnd"
+       "Aktive tillatelser": "H-FS-0026 , H-FS-0001 , H-FS-0017 , H-O-0012 , H-FS-0010 , H-FS-0040 , H-R-0003 , H-FS-0006 , H-FS-0004 , H-FS-0014 , H-FS-0037 , H-O-0013",
+       "Planlagt produksjon per produksjonssyklus": "2 000 tonn",
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "2 200 tonn",
+       "Maksimal månedlig fôring": "200 tonn",
+       "Innsendt": "30.06.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 12,
@@ -11779,7 +11779,7 @@
          "last_title": "Bolaks Sjø AS - Søknad om auka arealbruk i anlegg for oppdrett av matfisk av laks og aure på lokalitet 10324 Gjerdeviksflua i Bjørnafjorden kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gjerdeviksflua%22%20Bolaks"
       }
      },
@@ -11896,32 +11896,32 @@
       "lon": 13.20658,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002577",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 5400,
+       "planned_production_tonn": 6000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 6500,
        "max_monthly_feed_tonn": 650,
-       "mtb_tonn": 5400,
-       "planned_production_tonn": 6000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-R-0029 , N-L-0007 , N-ME-0028 , N-L-0010 , N-R-0004 , N-R-0009 , N-R-0030 , N-ME-0005 , N-R-0006 , N-R-0001 , N-R-0008",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "26.06.2026",
-       "Kapasitet": "3 600 tonn",
        "Kommune": "Rødøy",
-       "Lokalitet": "Hestvik",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "45080",
-       "Maksimal månedlig fôring": "650 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Lokalitet": "Hestvik",
        "Plassering": "Sjø",
+       "Kapasitet": "3 600 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-R-0029 , N-L-0007 , N-ME-0028 , N-L-0010 , N-R-0004 , N-R-0009 , N-R-0030 , N-ME-0005 , N-R-0006 , N-R-0001 , N-R-0008",
+       "Maksimal tillatt biomasse (MTB)": "5 400 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 500 tonn",
+       "Maksimal månedlig fôring": "650 tonn",
+       "Innsendt": "26.06.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 14,
@@ -11956,7 +11956,7 @@
          "last_title": "Kopibrev: Marinarkeologisk vurdering: Mowi Seawater Norway AS Org. nr. 921668236 - Søknad om arealendring ved lokaliteten Lian i Rødøy kommune - Søknad til behandling i Rødøy kommune og til orientering til sektoretater - SP-2026-002645"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestvik%22%20Mowi"
       }
      },
@@ -11979,34 +11979,34 @@
       "lon": 5.33025,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002532",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 2900,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 3100,
        "max_monthly_feed_tonn": 200,
-       "planned_production_tonn": 2900,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "SF-B-0028 , SF-B-0003 , SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-B-0015",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "12.06.2026",
-       "Kapasitet": "4 680 tonn",
        "Kommune": "Stad",
-       "Lokalitet": "Rundreimstranda",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "13612",
-       "Maksimal månedlig fôring": "200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 100 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 900 tonn",
+       "Lokalitet": "Rundreimstranda",
        "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
        "Produksjonsområde": "Nordhordland til Stadt (Gul)",
-       "Produksjonssykluslengde": "22 mnd"
+       "Aktive tillatelser": "SF-B-0028 , SF-B-0003 , SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-B-0015",
+       "Planlagt produksjon per produksjonssyklus": "2 900 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 100 tonn",
+       "Maksimal månedlig fôring": "200 tonn",
+       "Innsendt": "12.06.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
-       "count": 28,
-       "last": "2026-09-17",
+       "count": 29,
+       "last": "2026-09-22",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -12032,12 +12032,12 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-09-08",
-         "count": 2,
-         "last": "2026-09-14",
-         "last_title": "Kopi - Fiskeridirektoratets fråsegn til søknad om arealendring ved lokalitet 13612 Rundreimstranda - Stad kommune - Vestland fylke - Mowi Seawater Norway AS - SP-2026-002532"
+         "count": 3,
+         "last": "2026-09-22",
+         "last_title": "Akvakultursøknad SP-2026-002532 - akvakulturanlegg 13612 Rundreimstranda – Barmsundet - Stad kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rundreimstranda%22%20Mowi"
       }
      },
@@ -12060,30 +12060,30 @@
       "lon": 12.22197,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002528",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "planned_production_tonn": 6000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 6600,
        "max_monthly_feed_tonn": 700,
-       "planned_production_tonn": 6000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-HR-0003 , N-HR-0004 , N-HR-0012 , N-HR-0002 , N-DA-0077 , N-HR-0016 , N-HR-0006 , N-HR-0010 , N-HR-0014",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "09.06.2026",
-       "Kapasitet": "4 680 tonn",
        "Kommune": "Alstahaug",
-       "Lokalitet": "Brattholmen",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "11015",
-       "Maksimal månedlig fôring": "700 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Lokalitet": "Brattholmen",
        "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-HR-0003 , N-HR-0004 , N-HR-0012 , N-HR-0002 , N-DA-0077 , N-HR-0016 , N-HR-0006 , N-HR-0010 , N-HR-0014",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 600 tonn",
+       "Maksimal månedlig fôring": "700 tonn",
+       "Innsendt": "09.06.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 47,
@@ -12111,7 +12111,7 @@
          "last_title": "Kopi - Mowi Seawater Norway AS - Søknad om arealendring ved lokalitet 11015 - Brattholmen - Alstahaug og Herøy kommuner - Nordland fylke - SP-2026-002528"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Brattholmen%22%20Mowi"
       }
      },
@@ -12134,30 +12134,30 @@
       "lon": 21.72711,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002521",
       "details": {
-       "case_handler": "Troms fylkeskommune",
+       "planned_production_tonn": 7020,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 7020,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "T-KN-0019 , T-KN-0005 , T-KN-0015 , T-KN-0012 , T-KN-0006",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Troms",
-       "Innsendt": "03.06.2026",
-       "Kapasitet": "5 400 tonn",
        "Kommune": "Kvænangen",
-       "Lokalitet": "Rakkenes",
+       "Fylke": "Troms",
        "Lokalitetsnummer": "10806",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Lokalitet": "Rakkenes",
        "Plassering": "Sjø",
+       "Kapasitet": "5 400 tonn",
        "Produksjonsområde": "Kvaløya til Loppa (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "T-KN-0019 , T-KN-0005 , T-KN-0015 , T-KN-0012 , T-KN-0006",
+       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "03.06.2026",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
       },
       "einnsyn": {
        "count": 13,
@@ -12192,7 +12192,7 @@
          "last_title": "Marinarkeologisk vurdering: Mowi Seawater Norway AS – Søknad om endring av akvakulturtillatelse for matfisk av laks, ørret og regnbueørret på lokalitet 10806 Rakkenes i Kvænangen kommune – Vurdering av konsekvensutredning"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rakkenes%22%20Mowi"
       }
      },
@@ -12215,30 +12215,30 @@
       "lon": 5.61457,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002511",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 4500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4650,
        "max_monthly_feed_tonn": 450,
-       "planned_production_tonn": 4500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-O-0012 , H-FS-0001 , H-FS-0017 , H-FS-0006 , H-FS-0026 , H-R-0003 , H-FS-0037 , H-O-0013 , H-FS-0010 , H-FS-0040 , H-FS-0014 , H-FS-0004",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "21.05.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Bjørnafjorden",
-       "Lokalitet": "Fusavika",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "13058",
-       "Maksimal månedlig fôring": "450 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Lokalitet": "Fusavika",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Karmøy til Sotra (Rød)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "H-O-0012 , H-FS-0001 , H-FS-0017 , H-FS-0006 , H-FS-0026 , H-R-0003 , H-FS-0037 , H-O-0013 , H-FS-0010 , H-FS-0040 , H-FS-0014 , H-FS-0004",
+       "Planlagt produksjon per produksjonssyklus": "4 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "450 tonn",
+       "Innsendt": "21.05.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 8,
@@ -12266,7 +12266,7 @@
          "last_title": "Bolaks Sjø AS - Søknad om endra anleggskonfigurasjon på lokalitet 13058 Fusavika i Bjørnafjorden kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fusavika%22%20Bolaks"
       }
      },
@@ -12289,30 +12289,30 @@
       "lon": 22.89608,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002499",
       "details": {
-       "case_handler": "Finnmark fylkeskommune",
+       "planned_production_tonn": 7400,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 10400,
        "max_monthly_feed_tonn": 1000,
-       "planned_production_tonn": 7400,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Finnmark fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "F-A-0069 , F-A-0034 , F-KD-0031 , F-M-0045 , F-A-0055 , F-A-0070 , F-M-0048 , F-A-0041 , F-M-0047 , F-A-0042 , F-M-0046 , F-KD-0027",
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Finnmark",
-       "Innsendt": "08.05.2026",
-       "Kapasitet": "5 670 tonn",
        "Kommune": "Alta",
-       "Lokalitet": "Ytre Koven",
+       "Fylke": "Finnmark",
        "Lokalitetsnummer": "32617",
-       "Maksimal månedlig fôring": "1 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "10 400 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 400 tonn",
+       "Lokalitet": "Ytre Koven",
        "Plassering": "Sjø",
+       "Kapasitet": "5 670 tonn",
        "Produksjonsområde": "Vest-Finnmark (Grønn)",
-       "Produksjonssykluslengde": "22 mnd"
+       "Aktive tillatelser": "F-A-0069 , F-A-0034 , F-KD-0031 , F-M-0045 , F-A-0055 , F-A-0070 , F-M-0048 , F-A-0041 , F-M-0047 , F-A-0042 , F-M-0046 , F-KD-0027",
+       "Planlagt produksjon per produksjonssyklus": "7 400 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "10 400 tonn",
+       "Maksimal månedlig fôring": "1 000 tonn",
+       "Innsendt": "08.05.2026",
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
       },
       "einnsyn": {
        "count": 6,
@@ -12340,7 +12340,7 @@
          "last_title": "Akvakultursøknad om endring - søknad for vurdering etter sektorlover - akvakultur - lokalitet 32617 - Cermaq Norway AS tidligere Mainstream Norway AS - Ytre Koven - Alta kommune - FMFI 14/2496"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ytre%20Koven%22%20Cermaq"
       }
      },
@@ -12363,30 +12363,30 @@
       "lon": 22.65858,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002496",
       "details": {
-       "case_handler": "Finnmark fylkeskommune",
+       "planned_production_tonn": 5800,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4200,
        "max_monthly_feed_tonn": 420,
-       "planned_production_tonn": 5800,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Finnmark fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "F-A-0039 , F-A-0011 , F-A-0036 , F-A-0040",
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Finnmark",
-       "Innsendt": "30.04.2026",
-       "Kapasitet": "3 480 tonn",
        "Kommune": "Alta",
-       "Lokalitet": "Rivarbukt",
+       "Fylke": "Finnmark",
        "Lokalitetsnummer": "10822",
-       "Maksimal månedlig fôring": "420 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 800 tonn",
+       "Lokalitet": "Rivarbukt",
        "Plassering": "Sjø",
+       "Kapasitet": "3 480 tonn",
        "Produksjonsområde": "Vest-Finnmark (Grønn)",
-       "Produksjonssykluslengde": "22 mnd"
+       "Aktive tillatelser": "F-A-0039 , F-A-0011 , F-A-0036 , F-A-0040",
+       "Planlagt produksjon per produksjonssyklus": "5 800 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+       "Maksimal månedlig fôring": "420 tonn",
+       "Innsendt": "30.04.2026",
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
       },
       "einnsyn": {
        "count": 14,
@@ -12428,7 +12428,7 @@
          "last_title": "Cermaq Norway Salmon AS - akvakultursøknad til endring på lokalitet 10822 Rivarbukt"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rivarbukt%22%20Cermaq"
       }
      },
@@ -12451,32 +12451,32 @@
       "lon": 12.24583,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002494",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 5000,
+       "planned_production_tonn": 5500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 900,
-       "mtb_tonn": 5000,
-       "planned_production_tonn": 5500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-AH-0041 , N-R-0013 , N-R-0049 , N-R-0048 , N-DA-0036 , N-AH-0043 , N-DA-0077 , N-AH-0042 , N-R-0002",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "24.04.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Alstahaug",
-       "Lokalitet": "Ystøya",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "45003",
-       "Maksimal månedlig fôring": "900 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Lokalitet": "Ystøya",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-AH-0041 , N-R-0013 , N-R-0049 , N-R-0048 , N-DA-0036 , N-AH-0043 , N-DA-0077 , N-AH-0042 , N-R-0002",
+       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "24.04.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 46,
@@ -12518,7 +12518,7 @@
          "last_title": "Biomar AS - lokalitet 45003 Ystøya - Mattilsynet avslår søknad om utvidelse"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Yst%C3%B8ya%22%20Biomar"
       }
      },
@@ -12541,30 +12541,30 @@
       "lon": 5.45368,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002487",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 2500,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 3000,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 2500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-T-0018 , H-T-0015 , H-T-0005",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "10.04.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Tysnes",
-       "Lokalitet": "Djupestallen",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "14799",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "2 500 tonn",
+       "Lokalitet": "Djupestallen",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Karmøy til Sotra (Rød)",
-       "Produksjonssykluslengde": "12 mnd"
+       "Aktive tillatelser": "H-T-0018 , H-T-0015 , H-T-0005",
+       "Planlagt produksjon per produksjonssyklus": "2 500 tonn",
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "10.04.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 34,
@@ -12599,7 +12599,7 @@
          "last_title": "Høyringssvar - endra arealbruk og anleggstype - lokalitet 14799 Djupestallen"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Djupestallen%22%20Ler%C3%B8y"
       }
      },
@@ -12622,30 +12622,30 @@
       "lon": 6.92713,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002482",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "planned_production_tonn": 6500,
        "cycle_months": 24,
        "feed_per_cycle_tonn": 7000,
        "max_monthly_feed_tonn": 740,
-       "planned_production_tonn": 6500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "M-AK-0003 , M-H-0004 , M-MD-0004 , M-AK-0002 , M-F-0005 , M-SØ-0004 , M-AK-0009",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "01.04.2026",
-       "Kapasitet": "5 460 tonn",
        "Kommune": "Aukra",
-       "Lokalitet": "Aukrasanden",
+       "Fylke": "Møre og Romsdal",
        "Lokalitetsnummer": "12988",
-       "Maksimal månedlig fôring": "740 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Lokalitet": "Aukrasanden",
        "Plassering": "Sjø",
+       "Kapasitet": "5 460 tonn",
        "Produksjonsområde": "Stadt til Hustadvika (Gul)",
-       "Produksjonssykluslengde": "24 mnd"
+       "Aktive tillatelser": "M-AK-0003 , M-H-0004 , M-MD-0004 , M-AK-0002 , M-F-0005 , M-SØ-0004 , M-AK-0009",
+       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Produksjonssykluslengde": "24 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 000 tonn",
+       "Maksimal månedlig fôring": "740 tonn",
+       "Innsendt": "01.04.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 40,
@@ -12673,7 +12673,7 @@
          "last_title": "Tilleggsinformasjon fra søker - Akvakultursøknad SP-2026-002482 - Mowi Seawater Norway AS - Lokalitet 12988 - Aukrasanden - Aukra kommune - Møre og Romsdal fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Aukrasanden%22%20Mowi"
       }
      },
@@ -12696,30 +12696,30 @@
       "lon": 5.09222,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002480",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 5000,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 5000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-AV-0093 , H-AV-0094 , H-AV-0096",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "27.03.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Kinn",
-       "Lokalitet": "Bleket",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "45072",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Lokalitet": "Bleket",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Nordhordland til Stadt (Gul)",
-       "Produksjonssykluslengde": "16 mnd"
+       "Aktive tillatelser": "H-AV-0093 , H-AV-0094 , H-AV-0096",
+       "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "27.03.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 27,
@@ -12761,7 +12761,7 @@
          "last_title": "Langøylaks AS, Austevoll Melaks AS og Troland Fiskeoppdrett AS - søknad om permanent løyve for oppdrett av matfisk av laks, aure og regnbogeaure - lokalitet 45072 Bleket - Kinn kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bleket%22%20Lang%C3%B8ylaks"
       }
      },
@@ -12869,30 +12869,30 @@
       "lon": 5.63425,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002473",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 7000,
        "cycle_months": 20,
        "feed_per_cycle_tonn": 7700,
        "max_monthly_feed_tonn": 950,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-S-0023 , SF-B-0028 , SF-B-0009 , SF-B-0015 , SF-S-0022 , SF-B-0003 , SF-F-0005",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "20.03.2026",
-       "Kapasitet": "5 460 tonn",
        "Kommune": "Bremanger",
-       "Lokalitet": "Juvika B",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "13242",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Lokalitet": "Juvika B",
        "Plassering": "Sjø",
+       "Kapasitet": "5 460 tonn",
        "Produksjonsområde": "Nordhordland til Stadt (Gul)",
-       "Produksjonssykluslengde": "20 mnd"
+       "Aktive tillatelser": "SF-B-0004 , SF-S-0031 , SF-B-0024 , SF-S-0023 , SF-B-0028 , SF-B-0009 , SF-B-0015 , SF-S-0022 , SF-B-0003 , SF-F-0005",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
+       "Maksimal månedlig fôring": "950 tonn",
+       "Innsendt": "20.03.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 42,
@@ -12927,7 +12927,7 @@
          "last_title": "Uttalelse vedrørende lokalitet Juvika B - Bremanger kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Juvika%20B%22%20Mowi"
       }
      },
@@ -12950,35 +12950,35 @@
       "lon": 14.85638,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002465",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3600,
+       "planned_production_tonn": 4900,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 5600,
        "max_monthly_feed_tonn": 525,
-       "mtb_tonn": 3600,
-       "planned_production_tonn": 4900,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-SG-0029 , N-Ø-0004 , N-SG-0039 , N-SG-0038 , N-Ø-0007 , N-HM-0005 , N-SG-0018 , N-Ø-0017 , N-SG-0037",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "13.03.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Øksnes",
-       "Lokalitet": "Børøya",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "20876",
-       "Maksimal månedlig fôring": "525 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "5 600 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 900 tonn",
+       "Lokalitet": "Børøya",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "16 mnd"
+       "Aktive tillatelser": "N-SG-0029 , N-Ø-0004 , N-SG-0039 , N-SG-0038 , N-Ø-0007 , N-HM-0005 , N-SG-0018 , N-Ø-0017 , N-SG-0037",
+       "Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 900 tonn",
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "5 600 tonn",
+       "Maksimal månedlig fôring": "525 tonn",
+       "Innsendt": "13.03.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
-       "count": 36,
+       "count": 37,
        "last": "2026-09-22",
        "steps": {
         "statsforvalter": {
@@ -13012,12 +13012,12 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-05-11",
-         "count": 5,
-         "last": "2026-09-16",
-         "last_title": "Tillatelse etter havne- og farvannsloven § 14 – Søknad om endret plassering av akvakulturanlegg – Lokalitet 20876 Børøya – Øksnes kommune – Nordland fylke"
+         "count": 6,
+         "last": "2026-09-22",
+         "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – SP-2026-002465 – Lokalitet 20876 - Børøya – Øksnes kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22B%C3%B8r%C3%B8ya%22%20Cermaq"
       }
      },
@@ -13040,32 +13040,32 @@
       "lon": 12.84965,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002462",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4850,
+       "planned_production_tonn": 6500,
        "cycle_months": 20,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 1200,
-       "mtb_tonn": 4850,
-       "planned_production_tonn": 6500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-L-0061 , N-L-0003 , N-L-0060 , N-L-0070 , N-L-0059 , N-L-0005 , N-SF-0021 , N-R-0049 , N-L-0006 , N-L-0051 , N-R-0013 , N-R-0048 , N-L-0069 , N-R-0002",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "06.03.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Rødøy",
-       "Lokalitet": "Selsøyvær",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "36517",
-       "Maksimal månedlig fôring": "1 200 tonn",
-       "Maksimal tillatt biomasse (MTB)": "4 850 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Lokalitet": "Selsøyvær",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "20 mnd"
+       "Aktive tillatelser": "N-L-0061 , N-L-0003 , N-L-0060 , N-L-0070 , N-L-0059 , N-L-0005 , N-SF-0021 , N-R-0049 , N-L-0006 , N-L-0051 , N-R-0013 , N-R-0048 , N-L-0069 , N-R-0002",
+       "Maksimal tillatt biomasse (MTB)": "4 850 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "1 200 tonn",
+       "Innsendt": "06.03.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 19,
@@ -13107,7 +13107,7 @@
          "last_title": "Mangler i søknad om biomasseendring - akvakultur - Rødøy - Lovundlaks Sjø AS - lokalitet Selsøyvær - 36517"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sels%C3%B8yv%C3%A6r%22%20Sels%C3%B8yvik"
       }
      },
@@ -13273,36 +13273,36 @@
       "lon": 13.01832,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002454",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 7020,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 7722,
        "max_monthly_feed_tonn": 600,
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 7020,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-R-0013 , N-R-0049 , N-R-0002 , N-L-0006 , N-SF-0021 , N-L-0051 , N-L-0003 , N-L-0069 , N-L-0005 , N-L-0070 , N-SF-0023 , N-R-0048",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "23.02.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Lurøy",
-       "Lokalitet": "Ørnes",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "17235",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 722 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Lokalitet": "Ørnes",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "16 mnd"
+       "Aktive tillatelser": "N-R-0013 , N-R-0049 , N-R-0002 , N-L-0006 , N-SF-0021 , N-L-0051 , N-L-0003 , N-L-0069 , N-L-0005 , N-L-0070 , N-SF-0023 , N-R-0048",
+       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 722 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "23.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
-       "count": 30,
-       "last": "2026-09-11",
+       "count": 32,
+       "last": "2026-09-29",
        "steps": {
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -13314,16 +13314,16 @@
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-02-27",
-         "count": 5,
-         "last": "2026-09-11",
-         "last_title": "Kvarøy Fiskeoppdrett AS - Søknad til behandling om utvidelse av biomasse ved lokalitet 17235 Ørnes"
+         "count": 6,
+         "last": "2026-09-29",
+         "last_title": "Akvakultursøknad SP-2026-002454 - Kvarøy Fiskeoppdrett A/s 947672134 - Vedtak fra Kystverket 874783242"
         },
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-04-24",
-         "count": 2,
-         "last": "2026-04-24",
-         "last_title": "Oversendelse av søknad til offentlig utlysning og kommunal behandling, og til orientering til sektor - Kvarøy Fiskeoppdrett A/S - Akvakultursøknad SP-2026-002454 - Lokalitet 17235 - Ørnes i Lurøy kommune - Nordland fylke"
+         "count": 3,
+         "last": "2026-09-29",
+         "last_title": "Kvarøy Fiskeoppdrett AS sin søknad SP-2026-002454 om utviding av biomasse - Lokalitet 17235 Ørnes - Lurøy kommune - Nordland fylke"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
@@ -13340,7 +13340,7 @@
          "last_title": "Uttalelse: Kvarøy Fiskeoppdrett A/S - Akvakultursøknad ved lokalitet 17235 Ørnes"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%98rnes%22%20Kvar%C3%B8y"
       }
      },
@@ -13462,30 +13462,30 @@
       "lon": 5.4173,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "planned_production_tonn": 7000,
        "cycle_months": 20,
        "feed_per_cycle_tonn": 7700,
        "max_monthly_feed_tonn": 950,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "19.02.2026",
-       "Kapasitet": "5 460 tonn",
        "Kommune": "Vanylven",
-       "Lokalitet": "Brudevika",
+       "Fylke": "Møre og Romsdal",
        "Lokalitetsnummer": "12237",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Lokalitet": "Brudevika",
        "Plassering": "Sjø",
+       "Kapasitet": "5 460 tonn",
        "Produksjonsområde": "Stadt til Hustadvika (Gul)",
-       "Produksjonssykluslengde": "20 mnd"
+       "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
+       "Maksimal månedlig fôring": "950 tonn",
+       "Innsendt": "19.02.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 26,
@@ -13513,7 +13513,7 @@
          "last_title": "Lokalitet 12237 Brudevika - Bekreftelse på etterkommet varsel om vedtak - Forsvarlig fiskevelferd"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Brudevika%22%20Mowi"
       }
      },
@@ -13536,32 +13536,32 @@
       "lon": 12.88843,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002444",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4680,
+       "planned_production_tonn": 7020,
        "cycle_months": 16,
        "feed_per_cycle_tonn": 7722,
        "max_monthly_feed_tonn": 600,
-       "mtb_tonn": 4680,
-       "planned_production_tonn": 7020,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-L-0003 , N-L-0070 , N-SF-0021 , N-L-0005 , N-L-0006 , N-L-0051 , N-SF-0023 , N-L-0069",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "17.02.2026",
-       "Kapasitet": "3 120 tonn",
        "Kommune": "Lurøy",
-       "Lokalitet": "Movikodden N",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "33657",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 722 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Lokalitet": "Movikodden N",
        "Plassering": "Sjø",
+       "Kapasitet": "3 120 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "16 mnd"
+       "Aktive tillatelser": "N-L-0003 , N-L-0070 , N-SF-0021 , N-L-0005 , N-L-0006 , N-L-0051 , N-SF-0023 , N-L-0069",
+       "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 020 tonn",
+       "Produksjonssykluslengde": "16 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 722 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "17.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 50,
@@ -13603,7 +13603,7 @@
          "last_title": "Uttalelse til søknad om biomasseendring ved lokalitet 33657 Movikodden N"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Movikodden%20N%22%20Kvar%C3%B8y"
       }
      },
@@ -13626,32 +13626,32 @@
       "lon": 15.34845,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002443",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 5000,
+       "planned_production_tonn": 5500,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 650,
-       "mtb_tonn": 5000,
-       "planned_production_tonn": 5500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-H-0015 , N-H-0001 , N-H-0004 , N-V-0010 , N-H-0032 , N-SO-0026 , N-V-0001 , N-V-0005 , N-V-0033",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "12.02.2026",
-       "Kapasitet": "1 280 tonn",
        "Kommune": "Sortland",
-       "Lokalitet": "Djupvik",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "33117",
-       "Maksimal månedlig fôring": "650 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Lokalitet": "Djupvik",
        "Plassering": "Sjø",
+       "Kapasitet": "1 280 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "N-H-0015 , N-H-0001 , N-H-0004 , N-V-0010 , N-H-0032 , N-SO-0026 , N-V-0001 , N-V-0005 , N-V-0033",
+       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+       "Maksimal månedlig fôring": "650 tonn",
+       "Innsendt": "12.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 60,
@@ -13693,7 +13693,7 @@
          "last_title": "Svar på høringsuttalelse - lokalitet 33117 Djupvik"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Djupvik%22%20Nordlaks"
       }
      },
@@ -13716,32 +13716,32 @@
       "lon": 5.44587,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002407",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
+       "mtb_tonn": 5999,
+       "planned_production_tonn": 6000,
        "cycle_months": 10,
        "feed_per_cycle_tonn": 7500,
        "max_monthly_feed_tonn": 1000,
-       "mtb_tonn": 5999,
-       "planned_production_tonn": 6000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "R-S-0002 , R-SD-0032 , R-B-0001 , R-KV-0002 , R-SD-0002 , R-K-0001 , R-S-0001 , R-SD-0023 , R-KV-0001 , R-B-0005 , R-B-0013 , R-B-0003 , R-SD-0031 , R-SD-0025",
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Rogaland",
-       "Innsendt": "06.02.2026",
-       "Kapasitet": "4 680 tonn",
        "Kommune": "Kvitsøy",
-       "Lokalitet": "Hestholmen Ø",
+       "Fylke": "Rogaland",
        "Lokalitetsnummer": "14136",
-       "Maksimal månedlig fôring": "1 000 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 999 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Lokalitet": "Hestholmen Ø",
        "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
        "Produksjonsområde": "Ryfylket (Gul)",
-       "Produksjonssykluslengde": "10 mnd"
+       "Aktive tillatelser": "R-S-0002 , R-SD-0032 , R-B-0001 , R-KV-0002 , R-SD-0002 , R-K-0001 , R-S-0001 , R-SD-0023 , R-KV-0001 , R-B-0005 , R-B-0013 , R-B-0003 , R-SD-0031 , R-SD-0025",
+       "Maksimal tillatt biomasse (MTB)": "5 999 tonn",
+       "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
+       "Produksjonssykluslengde": "10 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+       "Maksimal månedlig fôring": "1 000 tonn",
+       "Innsendt": "06.02.2026",
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
        "count": 29,
@@ -13776,7 +13776,7 @@
          "last_title": "Vedtak om gebyr - Akvakultur - Kvitsøy - Grieg Seafood Farming AS - lokalitet 14136 Hestholmen Ø - utvidelse maksimal tillatt biomasse"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestholmen%20%C3%98%22%20Grieg"
       }
      },
@@ -13799,32 +13799,32 @@
       "lon": 15.3703,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002405",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 5000,
+       "planned_production_tonn": 5500,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 750,
-       "mtb_tonn": 5000,
-       "planned_production_tonn": 5500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-H-0004 , N-V-0010 , N-SO-0026 , N-H-0001 , N-V-0005 , N-H-0015 , N-V-0001 , N-H-0032 , N-V-0033",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "06.02.2026",
-       "Kapasitet": "1 280 tonn",
        "Kommune": "Sortland",
-       "Lokalitet": "Litleøya",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "11410",
-       "Maksimal månedlig fôring": "750 tonn",
-       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Lokalitet": "Litleøya",
        "Plassering": "Sjø",
+       "Kapasitet": "1 280 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "N-H-0004 , N-V-0010 , N-SO-0026 , N-H-0001 , N-V-0005 , N-H-0015 , N-V-0001 , N-H-0032 , N-V-0033",
+       "Maksimal tillatt biomasse (MTB)": "5 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+       "Maksimal månedlig fôring": "750 tonn",
+       "Innsendt": "06.02.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 60,
@@ -13866,7 +13866,7 @@
          "last_title": "Vedtak – tillatelse etter forurensningsloven – akvakultur – Sortland – Nordlaks Havbruk AS – lokalitet Litleøya - SP-2026-002405"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litle%C3%B8ya%22%20Nordlaks"
       }
      },
@@ -13889,30 +13889,30 @@
       "lon": 17.01402,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002400",
       "details": {
-       "case_handler": "Troms fylkeskommune",
+       "planned_production_tonn": 6500,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 8000,
        "max_monthly_feed_tonn": 1200,
-       "planned_production_tonn": 6500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Troms fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "T-BG-0003 , T-TK-0001 , T-TN-0002 , T-BG-0002 , T-TK-0007 , T-TK-0019",
-       "Ansvarlig saksbehandler": "Troms fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Troms",
-       "Innsendt": "03.02.2026",
-       "Kapasitet": "4 500 tonn",
        "Kommune": "Senja",
-       "Lokalitet": "Skarvberget",
+       "Fylke": "Troms",
        "Lokalitetsnummer": "11357",
-       "Maksimal månedlig fôring": "1 200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Lokalitet": "Skarvberget",
        "Plassering": "Sjø",
+       "Kapasitet": "4 500 tonn",
        "Produksjonsområde": "Andøya til Senja (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "T-BG-0003 , T-TK-0001 , T-TN-0002 , T-BG-0002 , T-TK-0007 , T-TK-0019",
+       "Planlagt produksjon per produksjonssyklus": "6 500 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+       "Maksimal månedlig fôring": "1 200 tonn",
+       "Innsendt": "03.02.2026",
+       "Ansvarlig saksbehandler": "Troms fylkeskommune"
       },
       "einnsyn": {
        "count": 26,
@@ -13947,7 +13947,7 @@
          "last_title": "Kartleggingsforslag for tilleggsundersøkelse - visuell kartlegging med ROV 2025/14739 - akvakultur - Flakstadvåg Laks AS - lokalitet 11357 - Skarvberget - Tranøy kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skarvberget%22%20Flakstadv%C3%A5g"
       }
      },
@@ -14069,30 +14069,30 @@
       "lon": 10.69651,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002392",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "planned_production_tonn": 7500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 8000,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 7500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "NT-F-0013 , NT-F-0007 , NT-F-0001 , NT-F-0005 , NT-F-0008",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "20.01.2026",
-       "Kapasitet": "5 460 tonn",
        "Kommune": "Flatanger",
-       "Lokalitet": "Austvika",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "26795",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 500 tonn",
+       "Lokalitet": "Austvika",
        "Plassering": "Sjø",
+       "Kapasitet": "5 460 tonn",
        "Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "NT-F-0013 , NT-F-0007 , NT-F-0001 , NT-F-0005 , NT-F-0008",
+       "Planlagt produksjon per produksjonssyklus": "7 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "20.01.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 42,
@@ -14134,7 +14134,7 @@
          "last_title": "KOPI - Løyve til arealendring av akvakulturanlegg for laksefisk - Mowi Seawater Norway AS - Lokalitet 26795 Austvika - Flatanger kommune - Trøndelag fylke"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Austvika%22%20Mowi"
       }
      },
@@ -14157,29 +14157,29 @@
       "lon": 5.80162,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002386",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "planned_production_tonn": 1500,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 1900,
        "max_monthly_feed_tonn": 225,
-       "planned_production_tonn": 1500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "12.01.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Høyanger",
-       "Lokalitet": "Floteneset",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "21335",
-       "Maksimal månedlig fôring": "225 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "1 900 tonn",
-       "Planlagt produksjon per produksjonssyklus": "1 500 tonn",
+       "Lokalitet": "Floteneset",
        "Plassering": "Sjø",
+       "Kapasitet": "1 560 tonn",
        "Produksjonsområde": "Nordhordland til Stadt (Gul)",
-       "Produksjonssykluslengde": "12 mnd"
+       "Planlagt produksjon per produksjonssyklus": "1 500 tonn",
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "1 900 tonn",
+       "Maksimal månedlig fôring": "225 tonn",
+       "Innsendt": "12.01.2026",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 38,
@@ -14214,7 +14214,7 @@
          "last_title": "Svar - Bekymring for sakshandsaming - Lokalitet Floteneset Høyanger kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Floteneset%22%20Austevoll"
       }
      },
@@ -14318,30 +14318,30 @@
       "lon": 25.00596,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002333",
       "details": {
-       "case_handler": "Finnmark fylkeskommune",
+       "planned_production_tonn": 5580,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 6630,
        "max_monthly_feed_tonn": 600,
-       "planned_production_tonn": 5580,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Finnmark fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "F-HV-0009 , F-M-0001 , F-HV-0011 , F-M-0022",
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Finnmark",
-       "Innsendt": "12.12.2025",
-       "Kapasitet": "3 599 tonn",
        "Kommune": "Måsøy",
-       "Lokalitet": "Elvevika",
+       "Fylke": "Finnmark",
        "Lokalitetsnummer": "32797",
-       "Maksimal månedlig fôring": "600 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 630 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 580 tonn",
+       "Lokalitet": "Elvevika",
        "Plassering": "Sjø",
+       "Kapasitet": "3 599 tonn",
        "Produksjonsområde": "Vest-Finnmark (Grønn)",
-       "Produksjonssykluslengde": "22 mnd"
+       "Aktive tillatelser": "F-HV-0009 , F-M-0001 , F-HV-0011 , F-M-0022",
+       "Planlagt produksjon per produksjonssyklus": "5 580 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 630 tonn",
+       "Maksimal månedlig fôring": "600 tonn",
+       "Innsendt": "12.12.2025",
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
       },
       "einnsyn": {
        "count": 5,
@@ -14369,7 +14369,7 @@
          "last_title": "Cermaq Norway Salmon AS - Akvakultursøknad om endring på lokalitet Elvevika 32797 i Måsøy kommune - Oversendelse av søknad for offentlig ettersyn og kommunal behandling"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Elvevika%22%20Cermaq"
       }
      },
@@ -14392,31 +14392,31 @@
       "lon": 5.10478,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002296",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
+       "mtb_tonn": 1200,
+       "planned_production_tonn": 0,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 0,
        "max_monthly_feed_tonn": 0,
-       "mtb_tonn": 1200,
-       "planned_production_tonn": 0,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "H-B-0040",
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Vestland",
-       "Innsendt": "26.11.2025",
-       "Kapasitet": "780 tonn",
        "Kommune": "Bømlo",
-       "Lokalitet": "Kastevika",
+       "Fylke": "Vestland",
        "Lokalitetsnummer": "16281",
-       "Maksimal månedlig fôring": "0 tonn",
-       "Maksimal tillatt biomasse (MTB)": "1 200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
-       "Planlagt produksjon per produksjonssyklus": "0 tonn",
+       "Lokalitet": "Kastevika",
        "Plassering": "Sjø",
-       "Produksjonssykluslengde": "12 mnd"
+       "Kapasitet": "780 tonn",
+       "Aktive tillatelser": "VL-B-0015 , H-B-0040",
+       "Maksimal tillatt biomasse (MTB)": "1 200 tonn",
+       "Planlagt produksjon per produksjonssyklus": "0 tonn",
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
+       "Maksimal månedlig fôring": "0 tonn",
+       "Innsendt": "26.11.2025",
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 33,
@@ -14451,7 +14451,7 @@
          "last_title": "Eide Brandasund AS - 16281 Kastevika - Mattilsynet godkjenner biomasseutvidelse"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kastevika%22%20Eide"
       }
      },
@@ -14576,32 +14576,32 @@
       "lon": 15.2339,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002213",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3500,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 650,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-27T18:28:34Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-H-0004 , N-H-0062 , N-H-0014 , N-V-0033",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "31.10.2025",
-       "Kapasitet": "2 340 tonn",
        "Kommune": "Hadsel",
-       "Lokalitet": "Helgeneshamn",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "13782",
-       "Maksimal månedlig fôring": "650 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+       "Lokalitet": "Helgeneshamn",
        "Plassering": "Sjø",
+       "Kapasitet": "2 340 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "N-H-0004 , N-H-0062 , N-H-0014 , N-V-0033",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+       "Maksimal månedlig fôring": "650 tonn",
+       "Innsendt": "31.10.2025",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 39,
@@ -14643,7 +14643,7 @@
          "last_title": "Vedrørende søknad om biomasseendring på lokalitet Helgeneshamn i Hadsel kommune, Nordlaks Havbruk AS - uttalelse fra Hadsel kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Helgeneshamn%22%20Nordlaks"
       }
      },
@@ -14929,7 +14929,7 @@
          "last_title": "Øksnes kommunes høringssvar - Øyfisk AS - org.nr 945 095 016 - Søknad om arealendring ved lokaliteten Høydalsvika i Øksnes kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22H%C3%B8ydalsvika%22%20%C3%98yfisk"
       }
      },
@@ -15670,7 +15670,7 @@
          "last_title": "Vedtak - søknad om arealendring ved lokalitet Oksøy - Cermaq Norway Salmon AS"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Oks%C3%B8y%22%20Cermaq"
       }
      },
@@ -15757,7 +15757,7 @@
          "last_title": "Tilbaketrekking av klage"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Isane%22%20Eide"
       }
      },
@@ -34181,7 +34181,7 @@
        "count": 1,
        "last": "2026-09-28",
        "steps": {},
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22M%C3%B8lnarodden%22%20Silver"
       }
      },
@@ -34204,14 +34204,14 @@
       "lon": 5.80225,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002616",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
        "species": "Berggylte",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Berggylte",
-       "Innsendt": "30.06.2026"
+       "Innsendt": "30.06.2026",
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
        "count": 11,
@@ -34246,7 +34246,7 @@
          "last_title": "Kopi - Fiskeridirektoratets uttalelse til akvakultursøknad fra Ryfylke Rensefisk AS om endring av art på lokalitet 11976 Hinderåvåg i Tysvær kommune - Rogaland fylke - SP-2026-002616"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hinder%C3%A5v%C3%A5g%22%20Ryfylke"
       }
      },
@@ -34315,22 +34315,22 @@
       "lon": 10.72033,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002533",
       "details": {
-       "case_handler": "Oslo kommune",
        "species": "Gullfisk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Oslo kommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Oslo kommune",
        "Art": "Gullfisk",
+       "Kommune": "Oslo",
        "Fylke": "Oslo",
        "Innsendt": "14.06.2026",
-       "Kommune": "Oslo"
+       "Ansvarlig saksbehandler": "Oslo kommune"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Uio%20Lvb%20Fisk%22%20Universitetet"
       }
      },
@@ -34353,16 +34353,16 @@
       "lon": 12.19735,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002531",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
        "species": "Ukjent",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Ukjent",
+       "Kommune": "Sømna",
        "Fylke": "Nordland",
        "Innsendt": "12.06.2026",
-       "Kommune": "Sømna"
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 22,
@@ -34397,7 +34397,7 @@
          "last_title": "CapiPro AS - søknad om ny landlokalitet Berg N i Sømna kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Berg%20N%22%20Capipro"
       }
      },
@@ -34420,16 +34420,16 @@
       "lon": 15.58383,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002530",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Sørfold",
        "Fylke": "Nordland",
        "Innsendt": "11.06.2026",
-       "Kommune": "Sørfold"
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 17,
@@ -34471,7 +34471,7 @@
          "last_title": "Kommunens tilbakemelding på søknad om biomasseutvidelse ved lokalitet Trollbukta, tilhørende Sisomar AS"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Trollbukta%22%20Sisomar"
       }
      },
@@ -34494,16 +34494,16 @@
       "lon": 6.98472,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002529",
       "details": {
-       "case_handler": "Agder fylkeskommune",
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Agder fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Agder fylkeskommune",
        "Art": "Kveite",
+       "Kommune": "Lyngdal",
        "Fylke": "Agder",
        "Innsendt": "09.06.2026",
-       "Kommune": "Lyngdal"
+       "Ansvarlig saksbehandler": "Agder fylkeskommune"
       },
       "einnsyn": {
        "count": 2,
@@ -34524,7 +34524,7 @@
          "last_title": "KOPI - Halinor AS - Søknad om hold av stamfisk kveite - Lyngdal kommune - lokalitet 45115 Hausvik III - 23-17581-22"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hausvik%20III%22%20Halinor"
       }
      },
@@ -34547,20 +34547,20 @@
       "lon": 6.98345,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002527",
       "details": {
-       "case_handler": "Agder fylkeskommune",
        "species": "Flekksteinbit",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Agder fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Agder fylkeskommune",
        "Art": "Flekksteinbit",
+       "Kommune": "Lyngdal",
        "Fylke": "Agder",
        "Innsendt": "08.06.2026",
-       "Kommune": "Lyngdal"
+       "Ansvarlig saksbehandler": "Agder fylkeskommune"
       },
       "einnsyn": {
-       "count": 5,
-       "last": "2026-09-22",
+       "count": 7,
+       "last": "2026-09-25",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -34572,12 +34572,12 @@
         "kommune": {
          "label": "Kommunen",
          "first": "2026-09-22",
-         "count": 1,
-         "last": "2026-09-22",
-         "last_title": "Halinor AS - søknad om hold av stamfisk kveite, Lyngdal kommune, lokalitet 45115 Hausvik III"
+         "count": 3,
+         "last": "2026-09-25",
+         "last_title": "Tilbakemelding på forespørsel om behov for høring ved behandling av søknad om stamfiskhold på Hausvik industriområde"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hausvik%20II%22%20Hausvik"
       }
      },
@@ -34601,13 +34601,13 @@
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002526",
       "details": {
        "case_handler": "Vestland fylkeskommune",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
+       "Kommune": "Fjaler",
        "Fylke": "Vestland",
        "Innsendt": "08.06.2026",
-       "Kommune": "Fjaler"
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 13,
@@ -34628,7 +34628,7 @@
          "last_title": "KOPI - Endret tillatelse etter forurensningsloven til utslipp fra anleggsarbeid i forbindelse med bygging av landbasert matfiskanlegg - Lutelandet i Fjaøler kommune for Bue Salmon AS"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lutelandet%22%20Bue"
       }
      },
@@ -34799,16 +34799,16 @@
       "lon": 11.14977,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002488",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
        "species": "Kveite",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Kveite",
+       "Kommune": "Nærøysund",
        "Fylke": "Trøndelag",
        "Innsendt": "14.04.2026",
-       "Kommune": "Nærøysund"
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 8,
@@ -34836,7 +34836,7 @@
          "last_title": "KOPI - Sterling White Halibut AS - Oppdatering av tillatelser på lokalitet 13681 Ryumsjøen Reipholmen - SP-2026-002488 - Nærøysund kommune"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ryumsj%C3%B8en%20Reipholmen%22%20Sterling"
       }
      },
@@ -34897,16 +34897,16 @@
       "lon": 5.08408,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002481",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
        "species": "Torsk",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Torsk",
+       "Kommune": "Kinn",
        "Fylke": "Vestland",
        "Innsendt": "31.03.2026",
-       "Kommune": "Kinn"
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 35,
@@ -34934,7 +34934,7 @@
          "last_title": "Kopi - Akvakultursøknad SP-2026-002481 - Havlandet Marin Yngel AS - Vedtak fra Kystverket"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Botnaneset%22%20Havlandet"
       }
      },
@@ -34957,16 +34957,16 @@
       "lon": 11.62717,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002478",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Namsos",
        "Fylke": "Trøndelag",
        "Innsendt": "27.03.2026",
-       "Kommune": "Namsos"
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 36,
@@ -35015,7 +35015,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – SP–2026–002478 – 10412 Røyklibotn – Neptun Salmo AS – Namsos kommune - Kopi"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22R%C3%B8yklibotn%22%20Neptun"
       }
      },
@@ -35084,16 +35084,16 @@
       "lon": 8.5254,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002476",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "species": "Søl",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Søl",
+       "Kommune": "Sunndal",
        "Fylke": "Møre og Romsdal",
        "Innsendt": "24.03.2026",
-       "Kommune": "Sunndal"
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 22,
@@ -35121,7 +35121,7 @@
          "last_title": "Kopi - M-SU-0019 Nofima AS - Tillatelse til å dyrke makroalger på land - lokalitet 12917 Sjølseng i Sunndal kommune - Møre og Romsdal fylke - SP-2026-002476"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sj%C3%B8lseng%22%20Nofima"
       }
      },
@@ -35144,16 +35144,16 @@
       "lon": 31.03759,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002456",
       "details": {
-       "case_handler": "Finnmark fylkeskommune",
        "species": "Kongekrabbe",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Finnmark fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Finnmark fylkeskommune",
        "Art": "Kongekrabbe",
+       "Kommune": "Vardø",
        "Fylke": "Finnmark",
        "Innsendt": "25.02.2026",
-       "Kommune": "Vardø"
+       "Ansvarlig saksbehandler": "Finnmark fylkeskommune"
       },
       "einnsyn": {
        "count": 24,
@@ -35188,7 +35188,7 @@
          "last_title": "Vedtak - endring av akvakulturtillatelse - akvakultur - Vardø - Gamst Shilova AS - Svartnes - lokalitet 18076"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Svartnes%22%20Gamst"
       }
      },
@@ -35211,16 +35211,16 @@
       "lon": 11.29002,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002445",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
        "species": "Ukjent",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Ukjent",
+       "Kommune": "Nærøysund",
        "Fylke": "Trøndelag",
        "Innsendt": "17.02.2026",
-       "Kommune": "Nærøysund"
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 24,
@@ -35269,7 +35269,7 @@
          "last_title": "Kopi av tillatelse etter havne- og farvannsloven - Etablering av sjøledning fra landbasert akvakulturanlegg for varmtvannsreker"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kr%C3%A5k%C3%B8ysundet%22%20Polar"
       }
      },
@@ -35401,16 +35401,16 @@
       "lon": 5.31667,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002334",
       "details": {
-       "case_handler": "Vestland fylkeskommune",
        "species": "Drøbaksjøpiggsvin",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Vestland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Vestland fylkeskommune",
        "Art": "Drøbaksjøpiggsvin",
+       "Kommune": "Sveio",
        "Fylke": "Vestland",
        "Innsendt": "12.12.2025",
-       "Kommune": "Sveio"
+       "Ansvarlig saksbehandler": "Vestland fylkeskommune"
       },
       "einnsyn": {
        "count": 22,
@@ -35445,7 +35445,7 @@
          "last_title": "KOPI - Søknad frå Nasjonalt Senter For Utvikling Av Nye Marine Oppdrettsarter Num AS om etablering av anlegg for dyrking av marine artar på ny lokalitet Tjernagel i Sveio kommune - SP-2025-002334"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tjernagel%22%20Nasjonalt"
       }
      },
@@ -35542,28 +35542,21 @@
       "lon": 5.7915,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002293",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Hå",
        "Fylke": "Rogaland",
        "Innsendt": "24.11.2025",
-       "Kommune": "Hå"
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
        "count": 60,
        "last": "2026-09-16",
        "steps": {
-        "mattilsynet": {
-         "label": "Mattilsynet",
-         "first": "2025-12-18",
-         "count": 15,
-         "last": "2026-09-15",
-         "last_title": "SIREVÅG LAKS AS – VEDTAK OM KLARERING AV NY LOKALITET SIREVÅG LAKS"
-        },
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2025-12-19",
@@ -35584,9 +35577,16 @@
          "count": 10,
          "last": "2026-09-07",
          "last_title": "Fiskeridirektoratets uttalelse til søknad om etablering av smolt- og postsmolt i produksjon i Hå kommune - Sirevåg Laks AS"
+        },
+        "mattilsynet": {
+         "label": "Mattilsynet",
+         "first": "2026-02-19",
+         "count": 15,
+         "last": "2026-09-16",
+         "last_title": "Vedtak - klarering ny lokalitet - akvakultur - Hå - Sirevåg Laks AS - etablering av landbasert akvakulturanlegg på Sirevåg"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sirev%C3%A5g%20Laks%22%20Sirev%C3%A5g"
       }
      },
@@ -35609,16 +35609,16 @@
       "lon": 6.64389,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002288",
       "details": {
-       "case_handler": "Agder fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-09-27T14:05:39Z"
+       "case_handler": "Agder fylkeskommune",
+       "fetched_at": "2026-09-30T19:25:47Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Agder fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Flekkefjord",
        "Fylke": "Agder",
        "Innsendt": "20.11.2025",
-       "Kommune": "Flekkefjord"
+       "Ansvarlig saksbehandler": "Agder fylkeskommune"
       },
       "einnsyn": {
        "count": 36,
@@ -35660,7 +35660,7 @@
          "last_title": "Vedrørende søknad MOWI ASA om utvidelse av produksjon samt etablering av produksjon av postsmolt i RAS-anlegg ved lokalitet Fjellsæ I - VA-F-0007 - Flekkefjord kommune - Komplett søknad med alle vedlegg."
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fjells%C3%A6%20i%22%20Mowi"
       }
      },
@@ -35908,7 +35908,7 @@
          "last_title": "Norwegian Mountain Salmon AS – Mattilsynet omgjør vedtak etter klage og gir klarering til nytt landanlegg - Kvalvikvågen"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Utsira%20Kvalvikv%C3%A5gen%22%20Norwegian"
       }
      },
@@ -35982,7 +35982,7 @@
          "last_title": "Vedrørende SP-2025-002076 Flatanger settefisk AS vår ref 2026-10949"
         }
        },
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lauvsnes%22%20Flatanger"
       }
      },
@@ -36020,7 +36020,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-09-29T15:56:52Z",
+       "fetched_at": "2026-09-30T19:27:16Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Utkast%204101%22%20Nordlaks"
       }
      },
@@ -37781,17 +37781,17 @@
   },
   "details_summary": {
    "cached": 484,
-   "pending": 0,
-   "fetched_now": 0
+   "pending": 64,
+   "fetched_now": 80
   },
   "einnsyn_summary": {
    "cached": 484,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 92
   }
  },
  "changes": {
-  "updated_at": "2026-09-30T13:49:17Z",
+  "updated_at": "2026-09-30T19:29:45Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38617,7 +38617,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-09-30T13:49:17Z",
+  "updated_at": "2026-09-30T19:29:45Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
