@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-09-30T23:56:02Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002787",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sørrollnesfisk AS",
+"title": "Svartskjær",
+"municipality": "Ibestad",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": 6800,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
+},
+{
+"at": "2026-09-30T23:56:02Z",
+"kind": "status",
+"text": "Status: Under behandling → Trukket",
+"id": "SP-2024-001160",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Isqueen AS",
+"title": "Sandholman",
+"municipality": "Vestvågøy",
+"county": "Nordland",
+"status": "Trukket",
+"mtb_tonn": 1560,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001160"
+},
+{
+"at": "2026-09-30T23:56:02Z",
+"kind": "status",
+"text": "Status: Under behandling → Trukket",
+"id": "SP-2023-000322",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Isqueen AS",
+"title": "Æsøya",
+"municipality": "Vestvågøy",
+"county": "Nordland",
+"status": "Trukket",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000322"
+},
+{
 "at": "2026-09-30T00:33:40Z",
 "kind": "status",
 "text": "Status: Under behandling → Returnert",
@@ -666,5 +711,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-09-30T19:29:45Z"
+"updated_at": "2026-09-30T23:56:02Z"
 }
