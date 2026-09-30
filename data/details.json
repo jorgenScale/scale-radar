@@ -3607,11 +3607,12 @@
 "title": "Storvika"
 },
 "SP-2024-000695": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-HR-0006 , N-HR-0010 , N-HR-0004 , N-HR-0003 , N-HR-0002 , N-HR-0012",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "15.01.2024",
 "Kapasitet": "4 680 tonn",
@@ -3623,17 +3624,20 @@
 "Planlagt produksjon per produksjonssyklus": "6 000 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Helgeland til Bodø (Gul)",
-"Produksjonssykluslengde": "18 mnd"
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 18,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 6900,
 "max_monthly_feed_tonn": 500,
 "planned_production_tonn": 6000,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Bukkholmen"
 },
 "SP-2024-000696": {
@@ -4479,11 +4483,12 @@
 "title": "Åkre"
 },
 "SP-2024-001063": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-LN-0001 , N-LN-0018 , N-LN-0016",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "02.04.2024",
 "Kapasitet": "1 560 tonn",
@@ -4496,18 +4501,21 @@
 "Planlagt produksjon per produksjonssyklus": "4 700 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-"Produksjonssykluslengde": "19 mnd"
+"Produksjonssykluslengde": "19 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 19,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 5500,
 "max_monthly_feed_tonn": 650,
 "mtb_tonn": 2608,
 "planned_production_tonn": 4700,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Fiskefjorden"
 },
 "SP-2024-001064": {
@@ -6337,11 +6345,12 @@
 "title": "Hjellberget"
 },
 "SP-2024-001632": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "NT-LA-0002 , NT-LA-0006 , NT-LA-0005 , NT-LA-0003",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "07.10.2024",
 "Kapasitet": "3 120 tonn",
@@ -6353,17 +6362,20 @@
 "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
-"Produksjonssykluslengde": "18 mnd"
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 18,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 4300,
 "max_monthly_feed_tonn": 550,
 "planned_production_tonn": 4000,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Olderbakken"
 },
 "SP-2024-001633": {
@@ -10165,11 +10177,12 @@
 "title": "Storvika III"
 },
 "SP-2025-002090": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-SG-0016 , N-HM-0002 , N-SG-0028 , N-SG-0027 , N-SG-0007",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "26.09.2025",
 "Kapasitet": "3 600 tonn",
@@ -10182,18 +10195,21 @@
 "Planlagt produksjon per produksjonssyklus": "4 700 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-"Produksjonssykluslengde": "18 mnd"
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 18,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 5300,
 "max_monthly_feed_tonn": 690,
 "mtb_tonn": 3600,
 "planned_production_tonn": 4700,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Gisløy S"
 },
 "SP-2025-002091": {
@@ -10257,10 +10273,11 @@
 "title": "Kolvikodden Ø"
 },
 "SP-2025-002103": {
-"fetched_at": "2026-09-27T14:05:39Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "06.10.2025",
 "Kommune": "Vevelstad",
@@ -10268,18 +10285,21 @@
 "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "5 003 tonn",
 "Planlagt produksjon per produksjonssyklus": "4 407 tonn",
-"Produksjonssykluslengde": "18 mnd"
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 18,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 5003,
 "max_monthly_feed_tonn": 464,
 "mtb_tonn": 3599,
 "planned_production_tonn": 4407,
+"result": "Avslått",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Esøya"
 },
 "SP-2025-002106": {
@@ -10472,11 +10492,12 @@
 "title": "Kalvhylla"
 },
 "SP-2025-002155": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-L-0070 , N-L-0005 , N-ME-0001 , N-L-0003 , N-L-0006 , N-L-0051",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "28.10.2025",
 "Kapasitet": "3 120 tonn",
@@ -10488,33 +10509,38 @@
 "Planlagt produksjon per produksjonssyklus": "4 670 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Helgeland til Bodø (Gul)",
-"Produksjonssykluslengde": "15 mnd"
+"Produksjonssykluslengde": "15 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 15,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 5350,
 "max_monthly_feed_tonn": 600,
 "planned_production_tonn": 4670,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Kalvøya"
 },
 "SP-2025-002158": {
-"fetched_at": "2026-09-27T14:05:39Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
 "Fylke": "Nordland",
 "Innsendt": "29.10.2025",
-"Kommune": "Leirfjord"
+"Kommune": "Leirfjord",
+"Trukket": "29.09.2026"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
-"species": "Laks"
+"species": "Laks",
+"withdrawn": "2026-09-29"
 },
-"status": "Under behandling",
+"status": "Trukket",
 "title": "Leines"
 },
 "SP-2025-002160": {
@@ -11425,11 +11451,12 @@
 "title": "Kalvøya"
 },
 "SP-2026-002453": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-L-0011 , N-HR-0069 , N-L-0061 , N-L-0071 , N-G-0063 , N-L-0069 , N-L-0074 , N-R-0048 , N-L-0059 , N-L-0072 , N-R-0013 , N-L-0060 , N-L-0075 , N-G-0064 , N-L-0045 , N-R-0002 , N-L-0008",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "23.02.2026",
 "Kapasitet": "3 120 tonn",
@@ -11441,17 +11468,20 @@
 "Planlagt produksjon per produksjonssyklus": "3 500 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Helgeland til Bodø (Gul)",
-"Produksjonssykluslengde": "10 mnd"
+"Produksjonssykluslengde": "10 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 10,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 4200,
 "max_monthly_feed_tonn": 900,
 "planned_production_tonn": 3500,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Store Bukkøy N"
 },
 "SP-2026-002454": {
@@ -11937,10 +11967,11 @@
 "title": "Botnaneset II"
 },
 "SP-2026-002484": {
-"fetched_at": "2026-09-27T14:05:39Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "08.04.2026",
 "Kommune": "Rødøy",
@@ -11948,18 +11979,21 @@
 "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "5 850 tonn",
 "Planlagt produksjon per produksjonssyklus": "5 300 tonn",
-"Produksjonssykluslengde": "16 mnd"
+"Produksjonssykluslengde": "16 mnd",
+"Resultat": "Avslått"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 16,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 5850,
 "max_monthly_feed_tonn": 400,
 "mtb_tonn": 3120,
 "planned_production_tonn": 5300,
+"result": "Avslått",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Lille Bjørnøya"
 },
 "SP-2026-002487": {
@@ -12721,11 +12755,12 @@
 "title": "Måløy Vgs"
 },
 "SP-2026-002582": {
-"fetched_at": "2026-09-27T18:28:34Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Aktive tillatelser": "N-G-0063 , N-L-0006 , N-L-0070 , N-G-0064 , N-L-0069",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "29.09.2026",
 "Fylke": "Nordland",
 "Innsendt": "29.06.2026",
 "Kapasitet": "2 576 tonn",
@@ -12738,18 +12773,21 @@
 "Planlagt produksjon per produksjonssyklus": "3 700 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Helgeland til Bodø (Gul)",
-"Produksjonssykluslengde": "17 mnd"
+"Produksjonssykluslengde": "17 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
 "cycle_months": 17,
+"decided": "2026-09-29",
 "feed_per_cycle_tonn": 4200,
 "max_monthly_feed_tonn": 418,
 "mtb_tonn": 2576,
 "planned_production_tonn": 3700,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Kjølvika i"
 },
 "SP-2026-002583": {
@@ -13355,7 +13393,7 @@
 "title": "Vedvika"
 },
 "SP-2026-002770": {
-"fetched_at": "2026-09-27T14:05:39Z",
+"fetched_at": "2026-09-30T00:31:32Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -13377,7 +13415,7 @@
 "planned_production_tonn": 4200,
 "species": "Torsk"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Tamtodden"
 },
 "SP-2026-002780": {
