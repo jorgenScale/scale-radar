@@ -1,7 +1,21 @@
 {
- "generated_at": "2026-10-02T12:43:23Z",
+ "generated_at": "2026-10-02T18:28:15Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-02",
+   "title": "Grieg tapte 1.000 tonn biomasse av gjelleskader fra algeangrep",
+   "url": "https://ilaks.no/grieg-tapte-1-000-tonn-biomasse-av-gjelleskader-fra-algeangrep/?mtm_campaign=feed_click&mtm_kwd=grieg-tapte-1-000-tonn-biomasse-av-gjelleskader-fra-algeangrep&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-02",
+   "title": "AKVA-sjefen ser mot Asia etter milliardoppkjøpet",
+   "url": "https://ilaks.no/akva-sjefen-ser-mot-asia-etter-milliardoppkjopet/?mtm_campaign=feed_click&mtm_kwd=akva-sjefen-ser-mot-asia-etter-milliardoppkjopet&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -59,15 +73,22 @@
    "url": "https://ilaks.no/lanserer-investeringsplan-til-over-100-millioner-kroner-for-viknaslipen/?mtm_campaign=feed_click&mtm_kwd=lanserer-investeringsplan-til-over-100-millioner-kroner-for-viknaslipen&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
+   "title": "1000 tonn døde etter algehendelse",
+   "url": "https://www.kyst.no/alger-dodelighet-grieg-seafood/mistet-1000-tonn-etter-algehendelse/2190417",
    "published": "2026-10-02",
-   "title": "Konkursbo hyrer Artec Aqua VAQ for å ferdigstille RAS-anlegg på Træna",
-   "url": "https://ilaks.no/konkursbo-hyrer-artec-aqua-vaq-for-a-ferdigstille-ras-anlegg-pa-traena/?mtm_campaign=feed_click&mtm_kwd=konkursbo-hyrer-artec-aqua-vaq-for-a-ferdigstille-ras-anlegg-pa-traena&mtm_source=RSS2&mtm_medium=feed"
+   "source_key": "kyst",
+   "source": "Kyst.no"
   },
   {
    "title": "Japansk selskap vil kjøpe Akva Group",
    "url": "https://www.kyst.no/japansk-selskap-vil-kjope-akva-group/2190175",
+   "published": "2026-10-02",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Samba Marins nybygg er sjøsatt",
+   "url": "https://www.kyst.no/fox-elektra-nybygg-oppdrettsfartoy/samba-marins-nybygg-er-sjosatt/2190281",
    "published": "2026-10-02",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -108,29 +129,8 @@
    "source": "Kyst.no"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-01",
-   "title": "Kolmulen kan snart forsvinne fra fiskefôret. Dette er Cargills plan B.",
-   "url": "https://ilaks.no/kolmulen-kan-snart-forsvinne-fra-fiskeforet-dette-er-cargills-plan-b/?mtm_campaign=feed_click&mtm_kwd=kolmulen-kan-snart-forsvinne-fra-fiskeforet-dette-er-cargills-plan-b&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "title": "Milliardfond kjøper fire havbruksleverandører",
    "url": "https://www.kyst.no/ambienta-biomarine-fls-avluser/milliardfond-kjoper-fire-havbruksleverandorer/2189431",
-   "published": "2026-10-01",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Sjå fiskevelferds­seminaret i opptak",
-   "url": "https://www.kyst.no/fiskevelferd-havforskningsinstituttet-veterinaerinstituttet/sja-fiskevelferdsseminaret-i-opptak/2189246",
-   "published": "2026-10-01",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Nå starter arbeidet ved Stad skipstunnel",
-   "url": "https://www.kyst.no/stad-skipstunnel/na-starter-arbeidet-ved-stad-skipstunnel/2189074",
    "published": "2026-10-01",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -213,7 +213,14 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
-   "title": "Analytiker om Akva Group-salget: – En god pris",
+   "title": "Lakseprisen ned igjen: – Stooore volum overalt",
+   "url": "https://www.intrafish.no/okonomi/lakseprisen-ned-igjen-stooore-volum-overalt/2-1-2052973",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Derfor mener analytikeren at Akva Group-salget har en god pris",
    "url": "https://www.intrafish.no/okonomi/analytiker-om-akva-group-salget-en-god-pris/2-1-2053236",
    "published": null,
    "source_key": "intrafish",
@@ -271,13 +278,6 @@
   {
    "title": "Mista livet etter eksplosjon: – Fekk ikkje kjennskap eller åtvaring",
    "url": "https://www.intrafish.no/arbeidsliv/-fekk-ikkje-kjennskap-eller-atvaring-om-at-omradet-han-oppheldt-seg-i-var-potensielt-eksplosjonsfarleg/2-1-1603385",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Ny generasjon på veg inn: – Me har stor tru på framtida",
-   "url": "https://www.intrafish.no/samfunn/ny-generasjon-pa-veg-inn-me-har-stor-tru-pa-framtida/2-1-1970138",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 202.6,
-      "change_pct": 0.6
+      "price": 201.4,
+      "change_pct": 0.0
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 579.0,
-      "change_pct": 2.66
+      "price": 577.5,
+      "change_pct": 2.39
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.36,
-      "change_pct": 0.33
+      "price": 42.12,
+      "change_pct": -0.24
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 25.2,
-      "change_pct": 0.0
+      "price": 24.94,
+      "change_pct": -1.03
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.9,
-      "change_pct": 0.97
+      "price": 82.5,
+      "change_pct": 0.49
      },
      {
       "name": "Måsøval",
@@ -444,43 +444,43 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": 0.72,
-      "change_pct": 0.84
+      "price": 0.78,
+      "change_pct": 8.66
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.19,
-      "change_pct": -0.16
+      "price": 3.17,
+      "change_pct": -0.94
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 26.7,
-      "change_pct": -2.2
+      "price": 27.4,
+      "change_pct": 0.37
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
       "price": 0.44,
-      "change_pct": -1.11
+      "change_pct": -0.89
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.8,
-      "change_pct": 0.0
+      "price": 86.6,
+      "change_pct": -0.23
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 4.88,
-      "change_pct": 0.21
+      "price": 4.77,
+      "change_pct": -2.05
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 436.4,
-      "change_pct": 1.21
+      "price": 434.8,
+      "change_pct": 0.83
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 22.8,
-      "change_pct": -5.79
+      "price": 24.0,
+      "change_pct": -0.83
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-02T12:43:52Z",
+  "fetched_at": "2026-10-02T18:28:24Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -9881,7 +9881,7 @@
          "last_title": "Kopi - Mattilsynet endrer vedtak etter klage"
         }
        },
-       "fetched_at": "2026-10-01T13:25:21Z",
+       "fetched_at": "2026-10-02T18:28:26Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bj%C3%B8rnvika%22%20Ler%C3%B8y"
       }
      },
@@ -30613,13 +30613,13 @@
        "Produksjonssykluslengde": "21 mnd"
       },
       "einnsyn": {
-       "count": 43,
+       "count": 42,
        "last": "2026-09-08",
        "steps": {
         "mattilsynet": {
          "label": "Mattilsynet",
-         "first": "2025-12-16",
-         "count": 26,
+         "first": "2025-12-17",
+         "count": 25,
          "last": "2026-09-08",
          "last_title": "Hovudkontoret opprettheld vedtak om avslag på søknad om utviding av anlegget på lokalitet 19655 Ospeneset"
         },
@@ -30638,7 +30638,7 @@
          "last_title": "Klage i sak 2023/165123 - Vedtak om avslag på søknad om biomasseutviding – 19655 Ospeneset - Oppstart av klagebehandling"
         }
        },
-       "fetched_at": "2026-10-01T13:25:21Z",
+       "fetched_at": "2026-10-02T18:28:26Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ospeneset%22%20Eide"
       }
      },
@@ -37747,11 +37747,11 @@
   "einnsyn_summary": {
    "cached": 485,
    "pending": 0,
-   "fetched_now": 50
+   "fetched_now": 2
   }
  },
  "changes": {
-  "updated_at": "2026-10-02T12:46:14Z",
+  "updated_at": "2026-10-02T18:28:32Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38623,7 +38623,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-02T12:46:14Z",
+  "updated_at": "2026-10-02T18:28:32Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
