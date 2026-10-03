@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T02:02:30Z",
+ "generated_at": "2026-10-03T08:12:23Z",
  "mode": "live",
  "news": [
   {
@@ -213,6 +213,13 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
+   "title": "Salmon Evolution-sjefen om fotballdrømmer, sashimi til frokost og sin hemmelige feriehobby",
+   "url": "https://www.intrafish.no/samfunn/salmon-evolution-sjefen-om-fotballdrommer-sashimi-til-frokost-og-sin-hemmelige-feriehobby/2-1-2050465",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Grieg anslår tap på 1000 tonn etter uventet algehendelse",
    "url": "https://www.intrafish.no/hendelser/grieg-anslar-tap-pa-1000-tonn-etter-uventet-algehendelse/2-1-2053409",
    "published": null,
@@ -271,13 +278,6 @@
   {
    "title": "Advarte om at det kom til å skje en ulykke i selskapet",
    "url": "https://www.intrafish.no/arbeidsliv/advarte-om-at-det-kom-til-a-skje-en-ulykke-i-selskapet-na-forlanger-de-etterlatte-rettferdighet-etter-vegards-25-dod/2-1-1995226",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Dette svarte Kb-Gruppen etter Intrafish’ omtale",
-   "url": "https://www.intrafish.no/debatt/kb-gruppen-nodvendige-presiseringer-etter-intrafish-omtale/2-1-2013713",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-03T02:02:39Z",
+  "fetched_at": "2026-10-03T08:12:35Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -663,26 +663,26 @@
       "lon": 12.19001,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 350,
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Vega",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
        "Innsendt": "02.10.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Vega",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
        "count": 0,
@@ -711,26 +711,26 @@
       "lon": 8.3281,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3200,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 60,
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 252,
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3200,
        "species": "Kveite",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Kommune": "Aure",
        "Fylke": "Møre og Romsdal",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
-       "Produksjonssykluslengde": "60 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
-       "Maksimal månedlig fôring": "252 tonn",
        "Innsendt": "02.10.2026",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Kommune": "Aure",
+       "Maksimal månedlig fôring": "252 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
+       "Produksjonssykluslengde": "60 mnd"
       },
       "einnsyn": {
        "count": 0,
@@ -10793,7 +10793,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-02T05:46:06Z",
+       "fetched_at": "2026-10-03T08:12:38Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Svartskj%C3%A6r%22%20S%C3%B8rrollnesfisk"
       }
      },
@@ -13372,34 +13372,34 @@
       "lon": 5.4173,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450",
       "details": {
-       "planned_production_tonn": 7000,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 20,
+       "decided": "2026-10-02",
        "feed_per_cycle_tonn": 7700,
        "max_monthly_feed_tonn": 950,
-       "species": "Laks, Ørret, Regnbueørret",
-       "decided": "2026-10-02",
+       "planned_production_tonn": 7000,
        "result": "Innvilget",
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "species": "Laks, Ørret, Regnbueørret",
        "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
-       "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Vanylven",
-       "Fylke": "Møre og Romsdal",
-       "Lokalitetsnummer": "12237",
-       "Lokalitet": "Brudevika",
-       "Plassering": "Sjø",
-       "Kapasitet": "5 460 tonn",
-       "Produksjonsområde": "Stadt til Hustadvika (Gul)",
        "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "20 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Innsendt": "19.02.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+       "Art": "Laks, Ørret, Regnbueørret",
        "Ferdigbehandlet": "02.10.2026",
-       "Resultat": "Innvilget",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Fylke": "Møre og Romsdal",
+       "Innsendt": "19.02.2026",
+       "Kapasitet": "5 460 tonn",
+       "Kommune": "Vanylven",
+       "Lokalitet": "Brudevika",
+       "Lokalitetsnummer": "12237",
+       "Maksimal månedlig fôring": "950 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Plassering": "Sjø",
+       "Produksjonsområde": "Stadt til Hustadvika (Gul)",
+       "Produksjonssykluslengde": "20 mnd",
+       "Resultat": "Innvilget"
       },
       "einnsyn": {
        "count": 26,
@@ -34042,16 +34042,16 @@
       "lon": 13.16877,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783",
       "details": {
-       "species": "Laks",
        "case_handler": "Nordland fylkeskommune",
+       "species": "Laks",
        "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks",
-       "Kommune": "Flakstad",
        "Fylke": "Nordland",
        "Innsendt": "25.09.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Flakstad"
       },
       "einnsyn": {
        "count": 0,
@@ -37637,16 +37637,16 @@
   "details_summary": {
    "cached": 487,
    "pending": 0,
-   "fetched_now": 4
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 487,
    "pending": 0,
-   "fetched_now": 2
+   "fetched_now": 1
   }
  },
  "changes": {
-  "updated_at": "2026-10-03T02:02:49Z",
+  "updated_at": "2026-10-03T08:12:39Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38594,7 +38594,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-03T02:02:49Z",
+  "updated_at": "2026-10-03T08:12:39Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38785,7 +38785,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38825,7 +38825,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": []
     },
     "companies": [
@@ -39150,7 +39150,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -39454,7 +39454,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -39498,7 +39498,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39590,7 +39590,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-02T23:02:50Z",
+     "fetched_at": "2026-10-03T08:12:39Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
