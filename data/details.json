@@ -11399,11 +11399,12 @@
 "title": "Kalvøya Midt"
 },
 "SP-2026-002450": {
-"fetched_at": "2026-09-30T19:25:47Z",
+"fetched_at": "2026-10-03T02:02:40Z",
 "fields": {
 "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "02.10.2026",
 "Fylke": "Møre og Romsdal",
 "Innsendt": "19.02.2026",
 "Kapasitet": "5 460 tonn",
@@ -11415,17 +11416,20 @@
 "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
 "Plassering": "Sjø",
 "Produksjonsområde": "Stadt til Hustadvika (Gul)",
-"Produksjonssykluslengde": "20 mnd"
+"Produksjonssykluslengde": "20 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Møre og Romsdal fylkeskommune",
 "cycle_months": 20,
+"decided": "2026-10-02",
 "feed_per_cycle_tonn": 7700,
 "max_monthly_feed_tonn": 950,
 "planned_production_tonn": 7000,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Brudevika"
 },
 "SP-2026-002451": {
@@ -13449,7 +13453,7 @@
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
-"fetched_at": "2026-10-02T05:46:03Z",
+"fetched_at": "2026-10-03T02:02:40Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -13461,7 +13465,7 @@
 "case_handler": "Nordland fylkeskommune",
 "species": "Laks"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
@@ -13495,5 +13499,57 @@
 },
 "status": "Under behandling",
 "title": "Svartskjær"
+},
+"SP-2026-002790": {
+"fetched_at": "2026-10-03T02:02:40Z",
+"fields": {
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Art": "Kveite",
+"Fylke": "Møre og Romsdal",
+"Innsendt": "02.10.2026",
+"Kommune": "Aure",
+"Maksimal månedlig fôring": "252 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 200 tonn",
+"Produksjonssykluslengde": "60 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 60,
+"feed_per_cycle_tonn": 4000,
+"max_monthly_feed_tonn": 252,
+"mtb_tonn": 3120,
+"planned_production_tonn": 3200,
+"species": "Kveite"
+},
+"status": "Under behandling",
+"title": "Steinholmen"
+},
+"SP-2026-002791": {
+"fetched_at": "2026-10-03T02:02:40Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "02.10.2026",
+"Kommune": "Vega",
+"Maksimal månedlig fôring": "350 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 4600,
+"max_monthly_feed_tonn": 350,
+"mtb_tonn": 3120,
+"planned_production_tonn": 4000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Målvika"
 }
 }

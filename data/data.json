@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T23:00:25Z",
+ "generated_at": "2026-10-03T02:02:30Z",
  "mode": "live",
  "news": [
   {
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-02",
+  "published": "2026-10-03",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-02T23:00:34Z",
+  "fetched_at": "2026-10-03T02:02:39Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -642,8 +642,104 @@
      "OTHER_FISH_SPECIES"
     ],
     "label": "Nye lokaliteter – sjø",
-    "count": 129,
+    "count": 131,
     "items": [
+     {
+      "id": "SP-2026-002791",
+      "type": "Ny lokalitet",
+      "status": "Under behandling",
+      "title": "Målvika",
+      "applicant": "Vega Sjøfarm Drift AS",
+      "orgnr": "934649389",
+      "submitted": "2026-10-02",
+      "withdrawn": null,
+      "county": "Nordland",
+      "municipality": "Vega",
+      "po": null,
+      "site_no": null,
+      "site": "Målvika",
+      "species": "Laks, Ørret, Regnbueørret",
+      "lat": 65.63284,
+      "lon": 12.19001,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791",
+      "details": {
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 4600,
+       "max_monthly_feed_tonn": 350,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-03T02:02:40Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Vega",
+       "Fylke": "Nordland",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Innsendt": "02.10.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-03T02:02:44Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22M%C3%A5lvika%22%20Vega"
+      }
+     },
+     {
+      "id": "SP-2026-002790",
+      "type": "Andre fiskearter",
+      "status": "Under behandling",
+      "title": "Steinholmen",
+      "applicant": "Nordic Halibut AS",
+      "orgnr": "974526441",
+      "submitted": "2026-10-02",
+      "withdrawn": null,
+      "county": "Møre og Romsdal",
+      "municipality": "Aure",
+      "po": null,
+      "site_no": null,
+      "site": "Steinholmen",
+      "species": "Kveite",
+      "lat": 63.28071,
+      "lon": 8.3281,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790",
+      "details": {
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3200,
+       "cycle_months": 60,
+       "feed_per_cycle_tonn": 4000,
+       "max_monthly_feed_tonn": 252,
+       "species": "Kveite",
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-10-03T02:02:40Z"
+      },
+      "fields": {
+       "Art": "Kveite",
+       "Kommune": "Aure",
+       "Fylke": "Møre og Romsdal",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+       "Maksimal månedlig fôring": "252 tonn",
+       "Innsendt": "02.10.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-03T02:02:44Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
+      }
+     },
      {
       "id": "SP-2026-002780",
       "type": "Ny lokalitet",
@@ -13260,7 +13356,7 @@
      {
       "id": "SP-2026-002450",
       "type": "Endring av lokalitet",
-      "status": "Under behandling",
+      "status": "Ferdigbehandlet",
       "title": "Brudevika",
       "applicant": "Mowi Seawater Norway AS",
       "orgnr": "921668236",
@@ -13276,30 +13372,34 @@
       "lon": 5.4173,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "planned_production_tonn": 7000,
        "cycle_months": 20,
        "feed_per_cycle_tonn": 7700,
        "max_monthly_feed_tonn": 950,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-30T19:25:47Z"
+       "decided": "2026-10-02",
+       "result": "Innvilget",
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
-       "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "19.02.2026",
-       "Kapasitet": "5 460 tonn",
        "Kommune": "Vanylven",
-       "Lokalitet": "Brudevika",
+       "Fylke": "Møre og Romsdal",
        "Lokalitetsnummer": "12237",
-       "Maksimal månedlig fôring": "950 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Lokalitet": "Brudevika",
        "Plassering": "Sjø",
+       "Kapasitet": "5 460 tonn",
        "Produksjonsområde": "Stadt til Hustadvika (Gul)",
-       "Produksjonssykluslengde": "20 mnd"
+       "Aktive tillatelser": "M-HØ-0005 , M-RA-0001 , M-MD-0004 , M-S-0001 , M-HØ-0003 , M-VN-0013 , M-S-0003 , M-SM-0012 , M-VN-0014 , M-ØG-0003",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "20 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "7 700 tonn",
+       "Maksimal månedlig fôring": "950 tonn",
+       "Innsendt": "19.02.2026",
+       "Ferdigbehandlet": "02.10.2026",
+       "Resultat": "Innvilget",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 26,
@@ -33926,7 +34026,7 @@
      {
       "id": "SP-2026-002783",
       "type": "Landbasert akvakultur",
-      "status": "Under behandling",
+      "status": "Returnert",
       "title": "Mølnarodden",
       "applicant": "Silver Seed AS",
       "orgnr": "971129735",
@@ -33942,16 +34042,16 @@
       "lon": 13.16877,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-10-02T05:46:03Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-03T02:02:40Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Flakstad",
        "Fylke": "Nordland",
        "Innsendt": "25.09.2026",
-       "Kommune": "Flakstad"
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -37535,18 +37635,18 @@
    }
   },
   "details_summary": {
-   "cached": 485,
+   "cached": 487,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 4
   },
   "einnsyn_summary": {
-   "cached": 485,
+   "cached": 487,
    "pending": 0,
-   "fetched_now": 92
+   "fetched_now": 2
   }
  },
  "changes": {
-  "updated_at": "2026-10-02T23:02:50Z",
+  "updated_at": "2026-10-03T02:02:49Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37701,6 +37801,7 @@
     "Universitetet i Oslo": "universitetet-i-oslo",
     "Upstream Aqua AS": "upstream-aqua-as",
     "Varde Fiskeoppdrett AS": "varde-fiskeoppdrett-as",
+    "Vega Sjøfarm Drift AS": "vega-sjoefarm-drift-as",
     "Vesterålen Havbruk AS": "vesteraalen-havbruk-as",
     "Vestland Fylkeskommune": "vestland-fylkeskommune",
     "Viewpoint Spidercage AS": "viewpoint-spidercage-as",
@@ -37710,6 +37811,81 @@
    }
   },
   "events": [
+   {
+    "at": "2026-10-03T02:02:49Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002791",
+    "type_key": "new_site",
+    "type": "Ny lokalitet",
+    "applicant": "Vega Sjøfarm Drift AS",
+    "title": "Målvika",
+    "municipality": "Vega",
+    "county": "Nordland",
+    "status": "Under behandling",
+    "mtb_tonn": 3120,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791"
+   },
+   {
+    "at": "2026-10-03T02:02:49Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002790",
+    "type_key": "new_site",
+    "type": "Andre fiskearter",
+    "applicant": "Nordic Halibut AS",
+    "title": "Steinholmen",
+    "municipality": "Aure",
+    "county": "Møre og Romsdal",
+    "status": "Under behandling",
+    "mtb_tonn": 3120,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790"
+   },
+   {
+    "at": "2026-10-03T02:02:49Z",
+    "kind": "status",
+    "text": "Status: Under behandling → Ferdigbehandlet",
+    "id": "SP-2026-002450",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Mowi Seawater Norway AS",
+    "title": "Brudevika",
+    "municipality": "Vanylven",
+    "county": "Møre og Romsdal",
+    "status": "Godkjent",
+    "mtb_tonn": null,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450"
+   },
+   {
+    "at": "2026-10-03T02:02:49Z",
+    "kind": "utfall",
+    "text": "Utfall: Innvilget",
+    "id": "SP-2026-002450",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Mowi Seawater Norway AS",
+    "title": "Brudevika",
+    "municipality": "Vanylven",
+    "county": "Møre og Romsdal",
+    "status": "Godkjent",
+    "mtb_tonn": null,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450"
+   },
+   {
+    "at": "2026-10-03T02:02:49Z",
+    "kind": "status",
+    "text": "Status: Under behandling → Returnert",
+    "id": "SP-2026-002783",
+    "type_key": "land_based",
+    "type": "Landbasert akvakultur",
+    "applicant": "Silver Seed AS",
+    "title": "Mølnarodden",
+    "municipality": "Flakstad",
+    "county": "Nordland",
+    "status": "Returnert",
+    "mtb_tonn": null,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783"
+   },
    {
     "at": "2026-09-30T23:56:02Z",
     "kind": "ny",
@@ -38418,7 +38594,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-02T23:02:50Z",
+  "updated_at": "2026-10-03T02:02:49Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {

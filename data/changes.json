@@ -6,6 +6,81 @@
 },
 "events": [
 {
+"at": "2026-10-03T02:02:49Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002791",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Vega Sjøfarm Drift AS",
+"title": "Målvika",
+"municipality": "Vega",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791"
+},
+{
+"at": "2026-10-03T02:02:49Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002790",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Nordic Halibut AS",
+"title": "Steinholmen",
+"municipality": "Aure",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790"
+},
+{
+"at": "2026-10-03T02:02:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2026-002450",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Brudevika",
+"municipality": "Vanylven",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450"
+},
+{
+"at": "2026-10-03T02:02:49Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2026-002450",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Brudevika",
+"municipality": "Vanylven",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002450"
+},
+{
+"at": "2026-10-03T02:02:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002783",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Silver Seed AS",
+"title": "Mølnarodden",
+"municipality": "Flakstad",
+"county": "Nordland",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783"
+},
+{
 "at": "2026-09-30T23:56:02Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -711,5 +786,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-02T23:02:50Z"
+"updated_at": "2026-10-03T02:02:49Z"
 }
