@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-10-06T03:05:01Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002783",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Silver Seed AS",
+"title": "Mølnarodden",
+"municipality": "Flakstad",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783"
+},
+{
 "at": "2026-10-03T02:02:49Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -786,5 +801,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-05T22:44:05Z"
+"updated_at": "2026-10-06T03:05:01Z"
 }

@@ -13453,7 +13453,7 @@
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
-"fetched_at": "2026-10-03T02:02:40Z",
+"fetched_at": "2026-10-06T03:03:03Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -13465,7 +13465,7 @@
 "case_handler": "Nordland fylkeskommune",
 "species": "Laks"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
@@ -13501,7 +13501,7 @@
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
-"fetched_at": "2026-10-03T02:02:40Z",
+"fetched_at": "2026-10-06T03:03:03Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -13527,7 +13527,7 @@
 "title": "Steinholmen"
 },
 "SP-2026-002791": {
-"fetched_at": "2026-10-03T02:02:40Z",
+"fetched_at": "2026-10-06T03:03:03Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
