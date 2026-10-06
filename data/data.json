@@ -1,7 +1,56 @@
 {
- "generated_at": "2026-10-06T03:02:54Z",
+ "generated_at": "2026-10-06T10:25:25Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-06",
+   "title": "Sjømatbedriftene vil fjerne matmomsen på sjømat: – Gi folk råd til å velge maten  som myndighetene anbefaler",
+   "url": "https://ilaks.no/fjern-momsen-pa-sjomat-gi-folk-rad-til-a-velge-maten-som-myndighetene-anbefaler/?mtm_campaign=feed_click&mtm_kwd=fjern-momsen-pa-sjomat-gi-folk-rad-til-a-velge-maten-som-myndighetene-anbefaler&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-06",
+   "title": "Fant selvdød laks på vei til slakt og mangelfull avlivning under uanmeldt tilsyn: – To alvorlige forhold",
+   "url": "https://ilaks.no/fant-selvdod-laks-pa-vei-til-slakt-og-mangelfull-avlivning-under-uanmeldt-tilsyn-to-alvorlige-forhold/?mtm_campaign=feed_click&mtm_kwd=fant-selvdod-laks-pa-vei-til-slakt-og-mangelfull-avlivning-under-uanmeldt-tilsyn-to-alvorlige-forhold&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-06",
+   "title": "Landet storkontrakt for leveranser til ny brønnbåt",
+   "url": "https://ilaks.no/landet-storkontrakt-for-leveranser-til-ny-bronnbat/?mtm_campaign=feed_click&mtm_kwd=landet-storkontrakt-for-leveranser-til-ny-bronnbat&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-06",
+   "title": "Bakkafrost gikk på ny smell i Skottland",
+   "url": "https://ilaks.no/bakkafrost-gikk-pa-ny-smell-i-skottland/?mtm_campaign=feed_click&mtm_kwd=bakkafrost-gikk-pa-ny-smell-i-skottland&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "title": "Vil bane vei for fiskeslam i EU",
+   "url": "https://www.kyst.no/circular-economy-fiskeslam-politikk/vil-bane-vei-for-fiskeslam-i-eu/2191031",
+   "published": "2026-10-06",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Lerøy slaktet mindre i tredje kvartal",
+   "url": "https://www.kyst.no/leroy-q3/leroy-slaktet-mindre-i-tredje-kvartal/2191283",
+   "published": "2026-10-06",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Styrkjer vaksinearbeidet med to nytilsetjingar",
+   "url": "https://www.kyst.no/fiskehelse-vaksine-vaxxinova/styrkjer-vaksinearbeidet-med-to-nytilsetjingar/2190110",
+   "published": "2026-10-06",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -45,15 +94,15 @@
    "url": "https://ilaks.no/dnb-carnegie-halverer-resultatestimat-i-grieg-seafood/?mtm_campaign=feed_click&mtm_kwd=dnb-carnegie-halverer-resultatestimat-i-grieg-seafood&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-05",
-   "title": "Rekordvolumer løftet lakseeksporten til nye høyder i september",
-   "url": "https://ilaks.no/rekordvolumer-loftet-lakseeksporten-til-nye-hoyder-i-september/?mtm_campaign=feed_click&mtm_kwd=rekordvolumer-loftet-lakseeksporten-til-nye-hoyder-i-september&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "title": "Mister viktig råvare til laksefôret",
    "url": "https://www.kyst.no/fr-kolmule-msc/mister-viktig-ravare-til-laksefret/2190871",
+   "published": "2026-10-05",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Oppdrettere bytter til denne programvaren",
+   "url": "https://www.kyst.no/fluctus/oppdrettere-bytter-til-denne-programvaren/2190213",
    "published": "2026-10-05",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -80,13 +129,6 @@
    "source": "Kyst.no"
   },
   {
-   "title": "Oppdrettere bytter til denne programvaren",
-   "url": "https://www.kyst.no/fluctus/oppdrettere-bytter-til-denne-programvaren/2190213",
-   "published": "2026-10-05",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
    "title": "Lusepress stopper nytt oppdrettsanlegg",
    "url": "https://www.kyst.no/bodo-lakselus-lofoten-sjoprodukter/sier-nei-til-nytt-anlegg-pa-grunn-av-lusepress/2190678",
    "published": "2026-10-05",
@@ -97,48 +139,6 @@
    "title": "Rekordvolum for laks – kraftig fall for ørret",
    "url": "https://www.kyst.no/eksport-norges-sjomatrad-paul-aandahl/rekordvolum-for-laks-kraftig-fall-for-orret/2190577",
    "published": "2026-10-05",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Første del av anlegget er overlevert",
-   "url": "https://www.kyst.no/aktuelt-arctic-seafarm-eyvi/forste-del-av-anlegget-er-overlevert/2190540",
-   "published": "2026-10-05",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-04",
-   "title": "Her bygges Frøys nye «drømmeskip»",
-   "url": "https://ilaks.no/her-bygges-froys-nye-drommeskip/?mtm_campaign=feed_click&mtm_kwd=her-bygges-froys-nye-drommeskip&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-03",
-   "title": "Henter “Zorro” for tunge slep på Helgeland",
-   "url": "https://ilaks.no/henter-zorro-for-tunge-slep-pa-helgeland/?mtm_campaign=feed_click&mtm_kwd=henter-zorro-for-tunge-slep-pa-helgeland&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-02",
-   "title": "Grieg tapte 1.000 tonn biomasse av gjelleskader fra algeangrep",
-   "url": "https://ilaks.no/grieg-tapte-1-000-tonn-biomasse-av-gjelleskader-fra-algeangrep/?mtm_campaign=feed_click&mtm_kwd=grieg-tapte-1-000-tonn-biomasse-av-gjelleskader-fra-algeangrep&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "title": "Tusen tonn laks døde",
-   "url": "https://www.kyst.no/alger-dodelighet-grieg-seafood/mistet-1000-tonn-etter-algehendelse/2190417",
-   "published": "2026-10-02",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Japansk selskap vil kjøpe Akva Group",
-   "url": "https://www.kyst.no/japansk-selskap-vil-kjope-akva-group/2190175",
-   "published": "2026-10-02",
    "source_key": "kyst",
    "source": "Kyst.no"
   },
@@ -213,71 +213,71 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
-   "title": "– Et gammelt triks i business å fokusere for mye på marginer",
-   "url": "https://www.intrafish.no/okonomi/-det-er-et-gammelt-triks/2-1-2050254",
+   "title": "Tester 18 meter dypt skjørt mot lakselus",
+   "url": "https://www.intrafish.no/2-1-2052407",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "– Fascinerende å se all lidenskapen og drivkraften som finnes i denne næringen",
-   "url": "https://www.intrafish.no/samfunn/salmon-evolution-sjefen-om-fotballdrommer-sashimi-til-frokost-og-sin-hemmelige-feriehobby/2-1-2050465",
+   "title": "Lavere dødelighet krever mer enn en ny avgift",
+   "url": "https://www.intrafish.no/debatt/lavere-dodelighet-krever-mer-enn-en-ny-avgift/2-1-2053859",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "Produserer rundt 40 prosent av verdens laks \t– dette sier de om framtiden",
+   "title": "Forventer energipakke fra regjeringen",
+   "url": "https://www.intrafish.no/debatt/sjomatbedriftene-forventer-energipakke-fra-regjeringen/2-1-2054141",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Verdifult oppdrag om bord på Brønnbåt Nords nye fartøy",
+   "url": "https://www.intrafish.no/okonomi/flaggskipet-gir-millionkontrakt-til-hav-datter/2-1-2054082",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Lerøy skuffet litt – dette sier analytikerne",
+   "url": "https://www.intrafish.no/okonomi/leroy-skuffet-litt-dette-sier-analytikerne/2-1-2054089",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Lavere slaktevolum for Lerøy",
+   "url": "https://www.intrafish.no/fiskehelse/lavere-slaktevolum-for-leroy-i-tredje-kvartal/2-1-2054059",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Nedgang for Måsøval",
+   "url": "https://www.intrafish.no/fiskehelse/nedgang-for-masoval-i-tredje-kvartal/2-1-2054068",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Skotsk dødelighet til 60 millioner kroner for Bakkafrost",
+   "url": "https://www.intrafish.no/fiskehelse/skotsk-dodelighet-til-60-millioner-kroner-for-bakkafrost/2-1-2054050",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Dette sier laksetoppene om vekst i næringen",
    "url": "https://www.intrafish.no/okonomi/fire-topper-fire-ord-om-bransjen-ti-ar-frem-i-tid/2-1-2050359",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
   },
   {
-   "title": "– Spesielt flaut for Norge",
-   "url": "https://www.intrafish.no/teknologi/slar-f-ralarm-det-er-spesielt-flaut-for-norge/2-1-2050168",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Over og ut for kolmule i fôrmiksen til norsk laks",
-   "url": "https://www.intrafish.no/arbeidsliv/over-og-ut-for-kolmule-i-f-rmiksen-til-norsk-laks/2-1-2053135",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Utfordrer Witzøe-selskap",
-   "url": "https://www.intrafish.no/teknologi/derfor-bygger-verftet-batene-for-kundene-bestiller/2-1-2049854",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "– Et tapt år for Grieg Seafood, sier analytiker",
-   "url": "https://www.intrafish.no/okonomi/analytiker-et-tapt-ar-for-grieg-seafood/2-1-2053550",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Her sjøsettes rederiet nyeste servicebåt",
-   "url": "https://www.intrafish.no/2-1-2053545",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Salmar får forlenget visnings­tillatelse",
-   "url": "https://www.intrafish.no/samfunn/salmar-far-forlenget-visningstillatelse/2-1-2052517",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Sleneset Aqua Service med ombygget offshore­fartøy",
-   "url": "https://www.intrafish.no/bater/sleneset-aqua-service-far-bygget-om-offshorefartoy/2-1-2053538",
+   "title": "– Et gammelt triks i business å fokusere for mye på marginer",
+   "url": "https://www.intrafish.no/okonomi/-det-er-et-gammelt-triks/2-1-2050254",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-06",
   "note": null,
   "groups": [
    {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 201.4,
-      "change_pct": 0.0
+      "price": 205.0,
+      "change_pct": 1.79
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 577.5,
-      "change_pct": 2.39
+      "price": 581.0,
+      "change_pct": 2.47
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.12,
-      "change_pct": -0.24
+      "price": 42.2,
+      "change_pct": 1.3
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 24.94,
-      "change_pct": -1.03
+      "price": 23.4,
+      "change_pct": 1.65
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.5,
-      "change_pct": 0.49
+      "price": 83.0,
+      "change_pct": 0.85
      },
      {
       "name": "Måsøval",
@@ -444,43 +444,43 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": 0.78,
-      "change_pct": 8.66
+      "price": 0.76,
+      "change_pct": 1.33
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.17,
-      "change_pct": -0.94
+      "price": 3.19,
+      "change_pct": 3.06
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.4,
-      "change_pct": 0.37
+      "price": 27.5,
+      "change_pct": 0.0
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.44,
-      "change_pct": -0.89
+      "price": 0.45,
+      "change_pct": 0.67
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.6,
-      "change_pct": -0.23
+      "price": 85.6,
+      "change_pct": 0.23
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 4.77,
-      "change_pct": -2.05
+      "price": 4.95,
+      "change_pct": -1.0
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 434.8,
-      "change_pct": 0.83
+      "price": 434.6,
+      "change_pct": 0.7
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 24.0,
-      "change_pct": -0.83
+      "price": 26.2,
+      "change_pct": -2.24
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -536,9 +536,9 @@
   "source": "Yahoo Finance (uoffisiell, ca. 15 min forsinket)"
  },
  "salmon_price": {
-  "status": "error",
+  "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-05",
+  "published": "2026-10-06",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-06T03:03:02Z",
+  "fetched_at": "2026-10-06T10:25:39Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -663,32 +663,32 @@
       "lon": 12.19001,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4600,
        "max_monthly_feed_tonn": 350,
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-10-06T03:03:03Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Vega",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
-       "Produksjonssykluslengde": "18 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
-       "Maksimal månedlig fôring": "350 tonn",
        "Innsendt": "02.10.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Vega",
+       "Maksimal månedlig fôring": "350 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 600 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-05T07:08:11Z",
+       "fetched_at": "2026-10-06T10:25:41Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22M%C3%A5lvika%22%20Vega"
       }
      },
@@ -711,32 +711,32 @@
       "lon": 8.3281,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790",
       "details": {
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3200,
+       "case_handler": "Møre og Romsdal fylkeskommune",
        "cycle_months": 60,
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 252,
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3200,
        "species": "Kveite",
-       "case_handler": "Møre og Romsdal fylkeskommune",
        "fetched_at": "2026-10-06T03:03:03Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Kommune": "Aure",
        "Fylke": "Møre og Romsdal",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
-       "Produksjonssykluslengde": "60 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
-       "Maksimal månedlig fôring": "252 tonn",
        "Innsendt": "02.10.2026",
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
+       "Kommune": "Aure",
+       "Maksimal månedlig fôring": "252 tonn",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
+       "Produksjonssykluslengde": "60 mnd"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-05T07:08:11Z",
+       "fetched_at": "2026-10-06T10:25:41Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
       }
      },
@@ -34057,16 +34057,16 @@
       "lon": 13.16877,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783",
       "details": {
-       "species": "Laks",
        "case_handler": "Nordland fylkeskommune",
+       "species": "Laks",
        "fetched_at": "2026-10-06T03:03:03Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks",
-       "Kommune": "Flakstad",
        "Fylke": "Nordland",
        "Innsendt": "25.09.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Flakstad"
       },
       "einnsyn": {
        "count": 0,
@@ -37666,16 +37666,16 @@
   "details_summary": {
    "cached": 487,
    "pending": 0,
-   "fetched_now": 3
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 487,
    "pending": 0,
-   "fetched_now": 91
+   "fetched_now": 2
   }
  },
  "changes": {
-  "updated_at": "2026-10-06T03:05:01Z",
+  "updated_at": "2026-10-06T10:25:44Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38638,7 +38638,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-06T03:05:01Z",
+  "updated_at": "2026-10-06T10:25:45Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -38829,7 +38829,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -38869,7 +38869,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": []
     },
     "companies": [
@@ -39194,7 +39194,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -39498,7 +39498,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -39542,7 +39542,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39634,7 +39634,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-05T22:44:05Z",
+     "fetched_at": "2026-10-06T10:25:45Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
