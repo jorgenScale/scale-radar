@@ -6,6 +6,66 @@
 },
 "events": [
 {
+"at": "2026-10-07T01:39:46Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002795",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Cermaq Norway Salmon AS",
+"title": "Hammer",
+"municipality": "Steigen",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 4000,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795"
+},
+{
+"at": "2026-10-07T01:39:46Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-001714",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Hofseth Sea Farming AS",
+"title": "Skjortneset II",
+"municipality": "Fjord",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001714"
+},
+{
+"at": "2026-10-07T01:39:46Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-001714",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Hofseth Sea Farming AS",
+"title": "Skjortneset II",
+"municipality": "Fjord",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001714"
+},
+{
+"at": "2026-10-07T01:39:46Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2026-002478",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Neptun Salmo AS",
+"title": "Røyklibotn",
+"municipality": "Namsos",
+"county": "Trøndelag",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002478"
+},
+{
 "at": "2026-10-06T21:44:11Z",
 "kind": "utfall",
 "text": "Utfall: Innvilget",
@@ -816,5 +876,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-06T21:44:11Z"
+"updated_at": "2026-10-07T01:39:46Z"
 }
