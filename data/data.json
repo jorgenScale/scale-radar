@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-10-08T16:33:15Z",
+ "generated_at": "2026-10-08T22:08:22Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-08",
+   "title": "– Jeg ville blitt røkter, uten tvil. Egentlig er det å være vaktmester.",
+   "url": "https://ilaks.no/jeg-ville-blitt-rokter-uten-tvil-egentlig-er-det-a-vaere-vaktmester/?mtm_campaign=feed_click&mtm_kwd=jeg-ville-blitt-rokter-uten-tvil-egentlig-er-det-a-vaere-vaktmester&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -113,13 +120,6 @@
    "published": "2026-10-07",
    "title": "Makrellstørje tok seg inn i nedsenket Lerøy-merd",
    "url": "https://ilaks.no/makrellstorje-tok-seg-inn-i-nedsenket-leroy-merd/?mtm_campaign=feed_click&mtm_kwd=makrellstorje-tok-seg-inn-i-nedsenket-leroy-merd&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-07",
-   "title": "Får sekssifret beløp etter lønnstvist med Nordlaks: – Det ble ikke som de hadde håpet på",
-   "url": "https://ilaks.no/sekssifret-etter-lonnstvist-med-nordlaks-det-ble-ikke-som-de-hadde-hapet-pa/?mtm_campaign=feed_click&mtm_kwd=sekssifret-etter-lonnstvist-med-nordlaks-det-ble-ikke-som-de-hadde-hapet-pa&mtm_source=RSS2&mtm_medium=feed"
   },
   {
    "title": "Fikk makrellstørje i nedsenket merd",
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-08",
+  "as_of": "2026-10-07",
   "note": null,
   "groups": [
    {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 201.4,
-      "change_pct": 0.4
+      "price": 200.6,
+      "change_pct": -1.18
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 550.5,
-      "change_pct": -0.72
+      "price": 554.5,
+      "change_pct": -3.65
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.34,
-      "change_pct": -0.48
+      "price": 41.54,
+      "change_pct": -0.67
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.2,
-      "change_pct": -0.34
+      "price": 23.28,
+      "change_pct": -1.1
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 81.1,
-      "change_pct": -0.12
+      "price": 81.2,
+      "change_pct": -1.46
      },
      {
       "name": "Måsøval",
@@ -444,43 +444,43 @@
       "name": "Atlantic Sapphire",
       "ticker": "ASA",
       "currency": "NOK",
-      "price": 0.76,
-      "change_pct": -2.31
+      "price": 0.78,
+      "change_pct": 2.37
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.03,
-      "change_pct": -3.51
+      "price": 3.13,
+      "change_pct": -2.94
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.9,
-      "change_pct": 1.45
+      "price": 27.5,
+      "change_pct": 1.1
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
       "price": 0.43,
-      "change_pct": -0.92
+      "change_pct": -1.36
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.2,
-      "change_pct": -0.23
+      "price": 86.4,
+      "change_pct": 0.93
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 4.94,
-      "change_pct": -0.6
+      "price": 4.97,
+      "change_pct": -0.4
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 433.8,
-      "change_pct": 0.32
+      "price": 432.4,
+      "change_pct": -1.01
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 24.4,
-      "change_pct": -6.87
+      "price": 26.2,
+      "change_pct": 0.0
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-08T16:33:26Z",
+  "fetched_at": "2026-10-08T22:08:33Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -688,7 +688,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-07T16:34:57Z",
+       "fetched_at": "2026-10-08T22:08:34Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22M%C3%A5lvika%22%20Vega"
       }
      },
@@ -736,7 +736,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-07T16:34:57Z",
+       "fetched_at": "2026-10-08T22:08:34Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
       }
      },
@@ -10862,7 +10862,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-07T22:02:08Z",
+       "fetched_at": "2026-10-08T22:08:34Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Svartskj%C3%A6r%22%20S%C3%B8rrollnesfisk"
       }
      },
@@ -37762,11 +37762,11 @@
   "einnsyn_summary": {
    "cached": 488,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 3
   }
  },
  "changes": {
-  "updated_at": "2026-10-08T16:33:29Z",
+  "updated_at": "2026-10-08T22:08:39Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38804,7 +38804,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-08T16:33:29Z",
+  "updated_at": "2026-10-08T22:08:39Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
