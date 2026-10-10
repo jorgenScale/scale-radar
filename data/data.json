@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T08:34:15Z",
+ "generated_at": "2026-10-10T15:25:02Z",
  "mode": "live",
  "news": [
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-08",
+  "as_of": "2026-10-09",
   "note": null,
   "groups": [
    {
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 201.4,
-      "change_pct": 0.4
+      "price": 203.8,
+      "change_pct": 1.19
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 550.5,
-      "change_pct": -0.72
+      "price": 551.0,
+      "change_pct": 0.09
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.34,
-      "change_pct": -0.48
+      "price": 41.64,
+      "change_pct": 0.73
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.2,
-      "change_pct": -0.34
+      "price": 23.08,
+      "change_pct": -0.52
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 81.1,
-      "change_pct": -0.12
+      "price": 81.7,
+      "change_pct": 0.74
      },
      {
       "name": "Måsøval",
@@ -445,42 +445,42 @@
       "ticker": "ASA",
       "currency": "NOK",
       "price": 0.76,
-      "change_pct": -2.31
+      "change_pct": 0.0
      },
      {
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.03,
-      "change_pct": -3.51
+      "price": 3.08,
+      "change_pct": 1.82
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 27.9,
-      "change_pct": 1.45
+      "price": 28.1,
+      "change_pct": 0.72
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.43,
-      "change_pct": -0.92
+      "price": 0.45,
+      "change_pct": 4.42
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 86.2,
-      "change_pct": -0.23
+      "price": 88.0,
+      "change_pct": 2.09
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 4.94,
-      "change_pct": -0.6
+      "price": 4.98,
+      "change_pct": 0.81
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 433.8,
-      "change_pct": 0.32
+      "price": 434.8,
+      "change_pct": 0.23
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
       "price": 24.4,
-      "change_pct": -6.87
+      "change_pct": 0.0
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-10T08:34:27Z",
+  "fetched_at": "2026-10-10T15:25:14Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -784,7 +784,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Seiongultaren%22%20Lovundlaks"
       }
      },
@@ -909,7 +909,7 @@
          "last_title": "Kopi - Egil Kristoffersen & Sønner AS - Søknad om ny lokalitet Flagskallen i Bø kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Flagskallen%22%20Egil"
       }
      },
@@ -1034,7 +1034,7 @@
          "last_title": "Høringsuttalelse fra Nord Fiskarlag - Søknad om ny akvakulturlokalitet Valløya"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vall%C3%B8ya%22%20Kobbv%C3%A5glaks"
       }
      },
@@ -1109,7 +1109,7 @@
          "last_title": "Nordic Halibut AS - Endring av lokalitet 28776 Krekvikbogen - Oversendelse for høring av behov for supplerende opplysninger samt til orientering"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Krekvikbogen%22%20Nordic"
       }
      },
@@ -1184,7 +1184,7 @@
          "last_title": "Amar Seafood AS - Søknad om arealendring på lokalitet 45287 Helsøya II Hitra kommune SP-2026-002636 - oversendelse for offentlig ettersyn og kommunal behandling (samt høring av behovet for supplerende opplysninger)"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hels%C3%B8ya%20II%22%20Amar"
       }
      },
@@ -1229,15 +1229,15 @@
        "Produksjonssykluslengde": "24 mnd"
       },
       "einnsyn": {
-       "count": 19,
-       "last": "2026-09-30",
+       "count": 20,
+       "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-07-10",
-         "count": 8,
-         "last": "2026-09-15",
-         "last_title": "Kopi av høringsuttalelse til søknad om ny akvakulturlokalitet - Hasvåg i Flatanger kommune"
+         "count": 9,
+         "last": "2026-10-01",
+         "last_title": "Akvakultursøknad SP-2026-002635 - Ode AS  - Tilleggsinformasjon fra søker"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
@@ -1268,7 +1268,7 @@
          "last_title": "Håsvåg - klage på planlagt etablering av torskeoppdrett ved Leirskiæret-Skårungen - akvakultur - Flatanger - Ode AS"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hasv%C3%A5g%22%20Ode"
       }
      },
@@ -1394,7 +1394,7 @@
          "last_title": "Nordic Halibut AS - Akvakultursøknad for etablering av ny sjølokalitet for kveite - Skardsteinane - Oversendelse for høring av behov for supplerende opplysninger samt til orientering - SP-2026-002571"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skardsteinane%22%20Nordic"
       }
      },
@@ -1439,8 +1439,8 @@
        "Produksjonssykluslengde": "17 mnd"
       },
       "einnsyn": {
-       "count": 17,
-       "last": "2026-09-30",
+       "count": 18,
+       "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -1473,12 +1473,12 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-09-15",
-         "count": 2,
-         "last": "2026-09-30",
-         "last_title": "Løyve til etablering av akvakulturanlegg for laksefisk - Salmar Oppdrett AS - Lokalitet Vardholmen - Nærøysund kommune - Trøndelag fylke"
+         "count": 3,
+         "last": "2026-10-01",
+         "last_title": "Kopi av løyve til etablering av akvakulturanlegg for laksefisk - Lokalitet Vardholmen"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vardholmen%22%20Salmar"
       }
      },
@@ -1577,15 +1577,15 @@
        "Produksjonssykluslengde": "24 mnd"
       },
       "einnsyn": {
-       "count": 28,
+       "count": 29,
        "last": "2026-10-05",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-06-09",
-         "count": 9,
-         "last": "2026-09-07",
-         "last_title": "Forespørsel om spredningssimulering"
+         "count": 10,
+         "last": "2026-10-02",
+         "last_title": "Tilleggsinformasjon fra søker"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
@@ -1616,7 +1616,7 @@
          "last_title": "Vedrørende 202623039-4 - Ode AS - Søknad om akvakulturtillatelse Fauskan i Flatanger"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fauskan%22%20Ode"
       }
      },
@@ -1741,7 +1741,7 @@
          "last_title": "Søknad klar til behandling - ny akvakulturlokalitet - Lurøy - Morhua AS - Sørvær"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22S%C3%B8rv%C3%A6r%22%20Morhua"
       }
      },
@@ -1811,7 +1811,7 @@
          "last_title": "KOPI - Løyve til etablering av akvakulturanlegg for kveite - Nordic Halibut AS - Lokalitet Litlebø - Vanylven kommune - Møre og Romsdal fylke"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litleb%C3%B8%22%20Nordic"
       }
      },
@@ -1944,7 +1944,7 @@
          "last_title": "Høringsinnspill - Søknad om akvalokalitet ved Rokneset i Vega kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rokneset%22%20Sinkaberg"
       }
      },
@@ -2112,7 +2112,7 @@
          "last_title": "SP-2026-002492. Bjørøya AS. Akvakultur av laks - Søknad om ny lokalitet Hestvika i Leka kommune. Oversendelse for høring av behov for supplerende opplysninger samt til orientering."
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestvika%22%20Bj%C3%B8r%C3%B8ya"
       }
      },
@@ -2364,7 +2364,7 @@
          "last_title": "Ny utsendelse av søknad fra Kime Akva AS org.nr. 925155784 - Ny lokalitet for matfiskoppdrett av torsk i Lurøy kommune ved lokaliteten Flatskjæret - Oversendelse av søknad til behandling i Lurøy kommune og til orientering til sektoretater"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Flatskj%C3%A6ret%22%20Kime"
       }
      },
@@ -2441,7 +2441,7 @@
          "last_title": "Cermaq Salmon Norway AS - Søknad om etablering av ny lokalitet Langøy i Øksnes kommune - Nordland fylke - søknad klar til behandling"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lang%C3%B8y%22%20Cermaq"
       }
      },
@@ -2504,7 +2504,7 @@
          "last_title": "Kopi av avslag etter havne- og farvannsloven - Ny akvakulturlokalitet Gannflæsa"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gannflesa%22%20Viewpoint"
       }
      },
@@ -2549,8 +2549,8 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 18,
-       "last": "2026-09-30",
+       "count": 19,
+       "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -2569,9 +2569,9 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-03-20",
-         "count": 3,
-         "last": "2026-09-30",
-         "last_title": "Løyve til etablering av akvakulturanlegg for laksefisk - Akvafuture AS - Lokalitet Rossvika - Sømna kommune - Nordland fylke"
+         "count": 4,
+         "last": "2026-10-01",
+         "last_title": "Kopi av løyve til etablering av akvakulturanlegg for laksefisk - Lokalitet Rossvika"
         },
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -2581,7 +2581,7 @@
          "last_title": "KOPI - Løyve til etablering av akvakulturanlegg for laksefisk - Akvafuture AS - Lokalitet Rossvika - Sømna kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rossvika%22%20Akvafuture"
       }
      },
@@ -2658,7 +2658,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse - SP-2026-002451 - Ny lokalitet Kalvøya - Akvafuture AS - Alstahaug kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kalv%C3%B8ya%22%20Akvafuture"
       }
      },
@@ -2749,7 +2749,7 @@
          "last_title": "Klage på fiskeoppdrettsanlegg"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kalv%C3%B8ya%20Midt%22%20Lofoten"
       }
      },
@@ -2819,7 +2819,7 @@
          "last_title": "KOPI - Mangler i søknad - Akvakultur - Narvik - Gratanglaks AS - Lokalitet Skjellnes"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skjellnes%22%20Gratanglaks"
       }
      },
@@ -2896,7 +2896,7 @@
          "last_title": "Tillatelse etter havne- og farvannsloven - Osland Seafood AS - SP-2026-002393 ny akvakulturlokalitet Floteneset i Høyanger kommune - Vestland fylke - Kopi"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Floteneset%22%20Osland"
       }
      },
@@ -2944,7 +2944,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sm%C3%B8rvika%22%20Ler%C3%B8y"
       }
      },
@@ -3129,7 +3129,7 @@
          "last_title": "Avslag - utvidelse - akvakultur - Meløy - Norcod AS - lokalitet Frosvika - 45073"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Frosvika%22%20Norcod"
       }
      },
@@ -3213,7 +3213,7 @@
          "last_title": "Tilbakemelding SP-2025-002298 - Norcod AS 821489962 - Sandholmtaren - Osen kommune - Vedrørende avklaring knyttet til bestemmelser i kommuneplanens arealdel"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandholmtaren%22%20Norcod"
       }
      },
@@ -3500,7 +3500,7 @@
          "last_title": "ORIENTERING OM OVERSENDELSE AV KLAGESAK TIL HOVEDKONTORET"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22B%C3%A5thella%22%20Norcod"
       }
      },
@@ -3577,7 +3577,7 @@
          "last_title": "Klage på vedtak om avslag om endring av art på lokalitet Røneset"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%2245128%20R%C3%B8neset%22%20Hofseth"
       }
      },
@@ -3659,7 +3659,7 @@
          "last_title": "Orientering om oversendelse av klagesak til klagesaksenheten"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hendneset%22%20Pure"
       }
      },
@@ -3743,7 +3743,7 @@
          "last_title": "VEDR. OVERSENDELSE AV SAK TIL KLAGESAKSENHETEN - AKVAKULTURSØKNAD - SP-2025-002106 - MOWI SEAWATER NORWAY AS - NY LOKALITET BREIVIK I HJELMELAND KOMMUNE."
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Breivik%22%20Mowi"
       }
      },
@@ -3922,7 +3922,7 @@
          "last_title": "Orientering om oversendelse av klagesak til klagesaksenheten"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%98yfjorden%22%20Mowi"
       }
      },
@@ -4006,7 +4006,7 @@
          "last_title": "Ettersending til settestatsforvalter - klage på Kystverket sitt avslag - akvakultur - Brønnøy - Torghatten Farming AS - lokalitet Bolværet"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bolv%C3%A6ret%22%20Torghatten"
       }
      },
@@ -4083,7 +4083,7 @@
          "last_title": "Kopi av klagebehandling"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Korsfura%22%20Nordic"
       }
      },
@@ -10922,7 +10922,7 @@
          "last_title": "KOPI - Egil Kristoffersen & sønner AS - Søknad om arealendring på lokaliteten Vedvika i Bø kommune - Søknad til behandling i kommune og til orientering for sektoretater"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vedvika%22%20Egil"
       }
      },
@@ -10996,7 +10996,7 @@
          "last_title": "MOWI SEAWATER NORWAY AS - SP-2026-002734 - Søknad om arealendring på lokaliteten 12348 Kåholmen Hitra kommune - oversendelse til orientering samt høring av behovet for supplerende opplysninger"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22K%C3%A5holmen%22%20Mowi"
       }
      },
@@ -11079,7 +11079,7 @@
          "last_title": "Nordlaks Havbruk AS - Søknad om akvakulturtillatelse for matfisk av laks og ørret på lokalitet 17176 Holandselv i Kvæfjord kommune – Oversendelse av søknad for vurdering etter sektorlover"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Holandselv%22%20Nordlaks"
       }
      },
@@ -11131,7 +11131,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ihlholmen%22%20Nordsj%C3%B8"
       }
      },
@@ -11212,7 +11212,7 @@
          "last_title": "Uttalelse - Akvakultur - Bokn - Grieg Seafood Rogaland AS - lokalitet 17575 Tollaksholmen - mindre anleggsendring"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tollaksholmen%22%20Grieg"
       }
      },
@@ -11279,7 +11279,7 @@
          "last_title": "Kvittering på kompletthetsvurdering - Akvakultursøknad SP-2026-002719 - Bjørøya AS 932186497 - Søknad vurdert som komplett"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Nordre%20Skokkel%C3%B8y%22%20Bj%C3%B8r%C3%B8ya"
       }
      },
@@ -11330,7 +11330,7 @@
        "Produksjonssykluslengde": "17 mnd"
       },
       "einnsyn": {
-       "count": 6,
+       "count": 7,
        "last": "2026-10-02",
        "steps": {
         "statsforvalter": {
@@ -11350,9 +11350,9 @@
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-09-07",
-         "count": 1,
-         "last": "2026-09-07",
-         "last_title": "Nordlaks Havbruk AS - Søknad til vurdering om akvakulturtillatelse for matfisk av laks og ørret på lokalitet 35317 Litjevika"
+         "count": 2,
+         "last": "2026-10-01",
+         "last_title": "Høringsuttalelse til søknad om økt MTB ved lokalitet 35317 Litjevika"
         },
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -11362,7 +11362,7 @@
          "last_title": "Høringsuttalelse – Søknad om økt MTB ved lokalitet 35317 Litjevika"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litjevika%22%20Nordlaks"
       }
      },
@@ -11445,7 +11445,7 @@
          "last_title": "Søknad om endring av akvakulturtillatelse for matfisk av laks, ørret og regnbueørret på lokalitet 10804 Karvika i Kvænangen – Oversendelse av søknad for vurdering etter sektorlover"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Karvika%22%20Mowi"
       }
      },
@@ -11533,7 +11533,7 @@
          "last_title": "KOPI - Oversendelse av tilleggsinformasjon fra søker - Mowi Seawater Norway AS - Søknad om arealendring på lokaliteten Lian i Rødøy kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lian%22%20Mowi"
       }
      },
@@ -11646,8 +11646,8 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 6,
-       "last": "2026-09-24",
+       "count": 7,
+       "last": "2026-10-02",
        "steps": {
         "statsforvalter": {
          "label": "Statsforvalteren",
@@ -11659,12 +11659,12 @@
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-08-05",
-         "count": 3,
-         "last": "2026-09-24",
-         "last_title": "Akvakultursøknad SP-2026-002629 - Måsøval Lisens AS - Tilleggsinformasjon fra søker"
+         "count": 4,
+         "last": "2026-10-02",
+         "last_title": "Måsøval Lisens AS 994300474 - Tilbakebetaling av gebyr for akvakultursøknad"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ils%C3%B8ya%202%22%20M%C3%A5s%C3%B8val"
       }
      },
@@ -11734,7 +11734,7 @@
          "last_title": "Kopi av vedtak - Øylaks MTB AS og Prophylaxia AS - klage på vedtak om tilbaketrekking av lokalitet 12260 Juvika"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Juvika%22%20Prophylaxia"
       }
      },
@@ -11808,7 +11808,7 @@
          "last_title": "Bolaks Sjø AS - Søknad om auka arealbruk i anlegg for oppdrett av matfisk av laks og aure på lokalitet 10324 Gjerdeviksflua i Bjørnafjorden kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gjerdeviksflua%22%20Bolaks"
       }
      },
@@ -11985,7 +11985,7 @@
          "last_title": "Kopibrev: Marinarkeologisk vurdering: Mowi Seawater Norway AS Org. nr. 921668236 - Søknad om arealendring ved lokaliteten Lian i Rødøy kommune - Søknad til behandling i Rødøy kommune og til orientering til sektoretater - SP-2026-002645"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestvik%22%20Mowi"
       }
      },
@@ -12034,7 +12034,7 @@
        "Produksjonssykluslengde": "22 mnd"
       },
       "einnsyn": {
-       "count": 31,
+       "count": 32,
        "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
@@ -12061,12 +12061,12 @@
         "kystverket": {
          "label": "Kystverket",
          "first": "2026-09-08",
-         "count": 5,
+         "count": 6,
          "last": "2026-10-01",
          "last_title": "Kopi - tillatelse til endret anleggsutforming av akvakulturanlegg - 13612 Rundreimstranda - Barmsundet - Stad kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rundreimstranda%22%20Mowi"
       }
      },
@@ -12133,7 +12133,7 @@
          "last_title": "Kopi - Mowi Seawater Norway AS - Søknad om arealendring ved lokalitet 11015 - Brattholmen - Alstahaug og Herøy kommuner - Nordland fylke - SP-2026-002528"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Brattholmen%22%20Mowi"
       }
      },
@@ -12182,22 +12182,22 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 13,
+       "count": 15,
        "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-04-10",
-         "count": 6,
-         "last": "2026-09-15",
-         "last_title": "Søknad til behandling om endring av akvakulturtillatelse på lokalitet 10806 Rakkenes"
+         "count": 7,
+         "last": "2026-10-01",
+         "last_title": "Fiskeridirektoratets uttalelse til søknad om endring av akvakulturlokalitet 10806 Rakkenes i Kvænangen kommune - Mowi Seawater Norway AS - SP-2026-002521"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2026-05-19",
-         "count": 3,
-         "last": "2026-09-15",
-         "last_title": "Søknad til behandling - endring av akvakulturtillatelse - akvakultur - Mowi Norway AS - lokalitet Rakkenes AKVA - Kvænangen kommune"
+         "count": 4,
+         "last": "2026-10-01",
+         "last_title": "Kopi av tilbakemelding på søknad"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -12214,7 +12214,7 @@
          "last_title": "KOPI - Fiskeridirektoratets uttalelse til søknad om endring av akvakulturlokalitet 10806 Rakkenes i Kvænangen kommune - Mowi Seawater Norway AS - SP-2026-002521"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rakkenes%22%20Mowi"
       }
      },
@@ -12288,7 +12288,7 @@
          "last_title": "Bolaks Sjø AS - Søknad om endra anleggskonfigurasjon på lokalitet 13058 Fusavika i Bjørnafjorden kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fusavika%22%20Bolaks"
       }
      },
@@ -12362,7 +12362,7 @@
          "last_title": "Akvakultursøknad om endring - søknad for vurdering etter sektorlover - akvakultur - lokalitet 32617 - Cermaq Norway AS tidligere Mainstream Norway AS - Ytre Koven - Alta kommune - FMFI 14/2496"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ytre%20Koven%22%20Cermaq"
       }
      },
@@ -12450,7 +12450,7 @@
          "last_title": "Cermaq Norway Salmon AS - akvakultursøknad til endring på lokalitet 10822 Rivarbukt"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rivarbukt%22%20Cermaq"
       }
      },
@@ -12533,7 +12533,7 @@
          "last_title": "Biomar AS - Lokalitet 45003 Ystøya - Mattilsynet avslår søknad om utvidelse"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Yst%C3%B8ya%22%20Biomar"
       }
      },
@@ -12582,7 +12582,7 @@
        "Produksjonssykluslengde": "12 mnd"
       },
       "einnsyn": {
-       "count": 35,
+       "count": 36,
        "last": "2026-10-02",
        "steps": {
         "fiskeridir": {
@@ -12602,7 +12602,7 @@
         "mattilsynet": {
          "label": "Mattilsynet",
          "first": "2026-04-21",
-         "count": 8,
+         "count": 9,
          "last": "2026-10-02",
          "last_title": "Lerøy Vest AS - Lokalitet 14799 Djupestallen - Mattilsynet godkjenner søknad om drift med semilukkede enheter"
         },
@@ -12614,7 +12614,7 @@
          "last_title": "Høyringssvar - endra arealbruk og anleggstype - lokalitet 14799 Djupestallen"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Djupestallen%22%20Ler%C3%B8y"
       }
      },
@@ -12688,7 +12688,7 @@
          "last_title": "Tilleggsinformasjon fra søker - Akvakultursøknad SP-2026-002482 - Mowi Seawater Norway AS - Lokalitet 12988 - Aukrasanden - Aukra kommune - Møre og Romsdal fylke"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Aukrasanden%22%20Mowi"
       }
      },
@@ -12776,7 +12776,7 @@
          "last_title": "Langøylaks AS, Austevoll Melaks AS og Troland Fiskeoppdrett AS - søknad om permanent løyve for oppdrett av matfisk av laks, aure og regnbogeaure - lokalitet 45072 Bleket - Kinn kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bleket%22%20Lang%C3%B8ylaks"
       }
      },
@@ -12942,7 +12942,7 @@
          "last_title": "Uttalelse vedrørende lokalitet Juvika B - Bremanger kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Juvika%20B%22%20Mowi"
       }
      },
@@ -13025,7 +13025,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – SP-2026-002465 – Lokalitet 20876 - Børøya – Øksnes kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22B%C3%B8r%C3%B8ya%22%20Cermaq"
       }
      },
@@ -13115,7 +13115,7 @@
          "last_title": "Mangler i søknad om biomasseendring - akvakultur - Rødøy - Lovundlaks Sjø AS - lokalitet Selsøyvær - 36517"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sels%C3%B8yv%C3%A6r%22%20Sels%C3%B8yvik"
       }
      },
@@ -13341,7 +13341,7 @@
          "last_title": "Akvakultursøknad SP-2026-002454 - Vedtak fra Kystverket"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%98rnes%22%20Kvar%C3%B8y"
       }
      },
@@ -13601,7 +13601,7 @@
          "last_title": "Kopi - Uttalelse til søknad om biomasseendring ved lokalitet 33657 Movikodden N i Lurøy kommune - Kvarøy Fiskeoppdrett AS - SP-2026-002444"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Movikodden%20N%22%20Kvar%C3%B8y"
       }
      },
@@ -13684,7 +13684,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om endring av areal og økt biomasse ved akvakulturlokalitet 33117 Djupvik i Sortland kommune - Nordlaks Havbruk AS - SP-2026-002443"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Djupvik%22%20Nordlaks"
       }
      },
@@ -13767,7 +13767,7 @@
          "last_title": "Vedtak om gebyr - Akvakultur - Kvitsøy - Grieg Seafood Farming AS - lokalitet 14136 Hestholmen Ø - utvidelse maksimal tillatt biomasse"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestholmen%20%C3%98%22%20Grieg"
       }
      },
@@ -13850,7 +13850,7 @@
          "last_title": "Vedtak – tillatelse etter forurensningsloven – akvakultur – Sortland – Nordlaks Havbruk AS – lokalitet Litleøya - SP-2026-002405"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Litle%C3%B8ya%22%20Nordlaks"
       }
      },
@@ -13931,7 +13931,7 @@
          "last_title": "Søknad til behandling - arealendring - oversendelse av kommunal behandling - akvakultur - Flakstadvåg Laks AS - lokalitet 11357 - Skarvberget - Tranøy kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skarvberget%22%20Flakstadv%C3%A5g"
       }
      },
@@ -14118,7 +14118,7 @@
          "last_title": "KOPI - Løyve til arealendring av akvakulturanlegg for laksefisk - Mowi Seawater Norway AS - Lokalitet 26795 Austvika - Flatanger kommune - Trøndelag fylke"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Austvika%22%20Mowi"
       }
      },
@@ -14198,7 +14198,7 @@
          "last_title": "Svar - Bekymring for sakshandsaming - Lokalitet Floteneset Høyanger kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Floteneset%22%20Austevoll"
       }
      },
@@ -14353,7 +14353,7 @@
          "last_title": "Cermaq Norway Salmon AS - Akvakultursøknad om endring på lokalitet Elvevika 32797 i Måsøy kommune - Oversendelse av søknad for offentlig ettersyn og kommunal behandling"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Elvevika%22%20Cermaq"
       }
      },
@@ -14403,15 +14403,15 @@
        "Produksjonssykluslengde": "12 mnd"
       },
       "einnsyn": {
-       "count": 36,
-       "last": "2026-09-30",
+       "count": 37,
+       "last": "2026-10-01",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2025-12-02",
-         "count": 14,
-         "last": "2026-06-30",
-         "last_title": "Eide Brandasund AS - Ettersending av kommunal uttale til søknad"
+         "count": 15,
+         "last": "2026-10-01",
+         "last_title": "Eide Brandasund AS - Kopi av løyve til å utvide anlegg for slaktemerdar for laks og aure på lokalitet 16281 Kastevika i Bømlo kommune"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -14435,7 +14435,7 @@
          "last_title": "KOPI - Eide Brandasund AS - Løyve til å utvide anlegg for slaktemerdar for laks og aure på lokalitet 16281 Kastevika i Bømlo kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kastevika%22%20Eide"
       }
      },
@@ -14588,15 +14588,15 @@
        "Produksjonssykluslengde": "17 mnd"
       },
       "einnsyn": {
-       "count": 30,
+       "count": 31,
        "last": "2026-10-05",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2025-12-17",
-         "count": 3,
-         "last": "2026-03-02",
-         "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – SP-2025-002213 – 13782 Helgeneshamn – Nordlaks havbruk AS – Hadsel kommune"
+         "count": 4,
+         "last": "2026-10-02",
+         "last_title": "Kopi - Vedtak om avslag - Endring biomasse MTB"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -14620,7 +14620,7 @@
          "last_title": "Vedtak om avslag - Settestatsforvalter - Akvakultur - Nordland - Hadsel - Lokalitet 13782 Helgeneshamn - Endring biomasse MTB - 2026/8493"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Helgeneshamn%22%20Nordlaks"
       }
      },
@@ -14899,7 +14899,7 @@
          "last_title": "KOPI - Drift etter forskrift - arealendring - akvakultur - Øksnes - Øyfisk AS - lokalitet Høydalsvika"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22H%C3%B8ydalsvika%22%20%C3%98yfisk"
       }
      },
@@ -15626,7 +15626,7 @@
          "last_title": "KOPI - Cermaq Norway AS - Vedtak om at tillatelse ikke faller bort 02.02.2026 - Lokalitet 11320 Oksøy i Steigen kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Oks%C3%B8y%22%20Cermaq"
       }
      },
@@ -15720,7 +15720,7 @@
          "last_title": "Høyringsuttale - SP-2025-002073 - endring av akvakulturlokalitet 1224 Isane - Eide Fjordbruk - Bremanger kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Isane%22%20Eide"
       }
      },
@@ -34167,7 +34167,7 @@
          "last_title": "KOPI - Silver Seed AS - Søknad om produksjonsøkning og nytt utslippspunkt for settefisklokalitet Mølnarodden i Flakstad kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22M%C3%B8lnarodden%22%20Silver"
       }
      },
@@ -34232,7 +34232,7 @@
          "last_title": "Kopi - Fiskeridirektoratets uttalelse til akvakultursøknad fra Ryfylke Rensefisk AS om endring av art på lokalitet 11976 Hinderåvåg i Tysvær kommune - Rogaland fylke - SP-2026-002616"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hinder%C3%A5v%C3%A5g%22%20Ryfylke"
       }
      },
@@ -34316,7 +34316,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Uio%20Lvb%20Fisk%22%20Universitetet"
       }
      },
@@ -34376,7 +34376,7 @@
          "last_title": "CapiPro AS - Kopi av søknad om ny landlokalitet Berg N i Sømna kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Berg%20N%22%20Capipro"
       }
      },
@@ -34411,8 +34411,8 @@
        "Kommune": "Sørfold"
       },
       "einnsyn": {
-       "count": 12,
-       "last": "2026-09-30",
+       "count": 13,
+       "last": "2026-10-01",
        "steps": {
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -34431,9 +34431,9 @@
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-07-03",
-         "count": 1,
-         "last": "2026-07-03",
-         "last_title": "Sisomar AS - Søknad til orientering om biomasseutvidelse ved lokalitet 11264 Trollbukta i Sørfold kommune"
+         "count": 2,
+         "last": "2026-10-01",
+         "last_title": "Sisomar AS - søknad til behandling om biomasseutvidelse ved lokalitet Trollbukta i Sørfold kommune"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -34443,7 +34443,7 @@
          "last_title": "Sisomar AS - søknad om biomasseutvidelse ved lokalitet Trollbukta i Sørfold kommune - oversendelse av søknad til offentlig utlysning og kommunal behandling og til sektor til orientering - Kopi"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Trollbukta%22%20Sisomar"
       }
      },
@@ -34510,7 +34510,7 @@
          "last_title": "KOPI - Halinor AS - Søknad om hold av stamfisk kveite - Lyngdal kommune - lokalitet 45115 Hausvik III - 23-17581-22"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hausvik%20III%22%20Halinor"
       }
      },
@@ -34563,7 +34563,7 @@
          "last_title": "Tilbakemelding på forespørsel om behov for høring ved behandling av søknad om stamfiskhold på Hausvik industriområde"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hausvik%20II%22%20Hausvik"
       }
      },
@@ -34614,7 +34614,7 @@
          "last_title": "KOPI - Endret tillatelse etter forurensningsloven til utslipp fra anleggsarbeid i forbindelse med bygging av landbasert matfiskanlegg - Lutelandet i Fjaøler kommune for Bue Salmon AS"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lutelandet%22%20Bue"
       }
      },
@@ -34822,7 +34822,7 @@
          "last_title": "KOPI - Sterling White Halibut AS - Oppdatering av tillatelser på lokalitet 13681 Ryumsjøen Reipholmen - SP-2026-002488 - Nærøysund kommune"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ryumsj%C3%B8en%20Reipholmen%22%20Sterling"
       }
      },
@@ -34920,7 +34920,7 @@
          "last_title": "Kopi - Akvakultursøknad SP-2026-002481 - Havlandet Marin Yngel AS - Vedtak fra Kystverket"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Botnaneset%22%20Havlandet"
       }
      },
@@ -35111,7 +35111,7 @@
          "last_title": "Kopi - M-SU-0019 Nofima AS - Tillatelse til å dyrke makroalger på land - lokalitet 12917 Sjølseng i Sunndal kommune - Møre og Romsdal fylke - SP-2026-002476"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sj%C3%B8lseng%22%20Nofima"
       }
      },
@@ -35146,15 +35146,15 @@
        "Kommune": "Vardø"
       },
       "einnsyn": {
-       "count": 24,
-       "last": "2026-08-17",
+       "count": 25,
+       "last": "2026-10-02",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2026-03-17",
-         "count": 6,
-         "last": "2026-08-17",
-         "last_title": "Ber om offentlighetsvurdering etter innsynsbegjæring"
+         "count": 7,
+         "last": "2026-10-02",
+         "last_title": "Saksbehandlers arbeidsnotat"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -35178,7 +35178,7 @@
          "last_title": "Vedtak - endring av akvakulturtillatelse - akvakultur - Vardø - Gamst Shilova AS - Svartnes - lokalitet 18076"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Svartnes%22%20Gamst"
       }
      },
@@ -35259,7 +35259,7 @@
          "last_title": "Kopi av tillatelse etter havne- og farvannsloven - Etablering av sjøledning fra landbasert akvakulturanlegg for varmtvannsreker"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kr%C3%A5k%C3%B8ysundet%22%20Polar"
       }
      },
@@ -35435,7 +35435,7 @@
          "last_title": "KOPI - Søknad frå Nasjonalt Senter For Utvikling Av Nye Marine Oppdrettsarter Num AS om etablering av anlegg for dyrking av marine artar på ny lokalitet Tjernagel i Sveio kommune - SP-2025-002334"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tjernagel%22%20Nasjonalt"
       }
      },
@@ -35576,7 +35576,7 @@
          "last_title": "Vedtak - klarering ny lokalitet - akvakultur - Hå - Sirevåg Laks AS - etablering av landbasert akvakulturanlegg på Sirevåg"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sirev%C3%A5g%20Laks%22%20Sirev%C3%A5g"
       }
      },
@@ -35650,7 +35650,7 @@
          "last_title": "Vedrørende søknad MOWI ASA om utvidelse av produksjon samt etablering av produksjon av postsmolt i RAS-anlegg ved lokalitet Fjellsæ I - VA-F-0007 - Flekkefjord kommune - Komplett søknad med alle vedlegg."
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fjells%C3%A6%20i%22%20Mowi"
       }
      },
@@ -35898,7 +35898,7 @@
          "last_title": "Norwegian Mountain Salmon AS – Mattilsynet omgjør vedtak etter klage og gir klarering til nytt landanlegg - Kvalvikvågen"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Utsira%20Kvalvikv%C3%A5gen%22%20Norwegian"
       }
      },
@@ -35972,7 +35972,7 @@
          "last_title": "Vedrørende SP-2025-002076 Flatanger settefisk AS vår ref 2026-10949"
         }
        },
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Lauvsnes%22%20Flatanger"
       }
      },
@@ -36010,7 +36010,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-09T09:13:52Z",
+       "fetched_at": "2026-10-10T15:25:15Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Utkast%204101%22%20Nordlaks"
       }
      },
@@ -37770,11 +37770,11 @@
   "einnsyn_summary": {
    "cached": 488,
    "pending": 0,
-   "fetched_now": 52
+   "fetched_now": 90
   }
  },
  "changes": {
-  "updated_at": "2026-10-10T08:36:11Z",
+  "updated_at": "2026-10-10T15:27:29Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38812,7 +38812,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-10T08:36:11Z",
+  "updated_at": "2026-10-10T15:27:29Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -39003,7 +39003,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -39043,7 +39043,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": []
     },
     "companies": [
@@ -39368,7 +39368,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -39672,7 +39672,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -39716,7 +39716,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39808,7 +39808,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-10T08:36:11Z",
+     "fetched_at": "2026-10-10T15:27:29Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
