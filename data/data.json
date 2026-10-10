@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T15:25:02Z",
+ "generated_at": "2026-10-10T20:06:36Z",
  "mode": "live",
  "news": [
   {
@@ -536,7 +536,7 @@
   "source": "Yahoo Finance (uoffisiell, ca. 15 min forsinket)"
  },
  "salmon_price": {
-  "status": "ok",
+  "status": "error",
   "unit": "kr/kg",
   "published": "2026-10-10",
   "source": "SSB tabell 03024",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-10T15:25:14Z",
+  "fetched_at": "2026-10-10T20:06:55Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37770,11 +37770,11 @@
   "einnsyn_summary": {
    "cached": 488,
    "pending": 0,
-   "fetched_now": 90
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-10T15:27:29Z",
+  "updated_at": "2026-10-10T20:06:57Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38812,7 +38812,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-10T15:27:29Z",
+  "updated_at": "2026-10-10T20:06:57Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
