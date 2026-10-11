@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T18:07:28Z",
+ "generated_at": "2026-10-11T22:02:29Z",
  "mode": "live",
  "news": [
   {
@@ -369,9 +369,8 @@
   {
    "key": "intrafish",
    "name": "Intrafish",
-   "status": "error",
-   "count": 10,
-   "error": "fant ingen artikler på siden – selektorene i config.json må sjekkes"
+   "status": "ok",
+   "count": 10
   },
   {
    "key": "fiskeribladet",
@@ -634,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-11T18:07:38Z",
+  "fetched_at": "2026-10-11T22:02:45Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37771,11 +37770,11 @@
   "einnsyn_summary": {
    "cached": 488,
    "pending": 0,
-   "fetched_now": 90
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-11T18:10:03Z",
+  "updated_at": "2026-10-11T22:02:47Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38813,7 +38812,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-11T18:10:03Z",
+  "updated_at": "2026-10-11T22:02:47Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -39004,7 +39003,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -39044,7 +39043,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": []
     },
     "companies": [
@@ -39369,7 +39368,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -39673,7 +39672,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -39717,7 +39716,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -39809,7 +39808,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-11T12:59:51Z",
+     "fetched_at": "2026-10-11T22:02:47Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
