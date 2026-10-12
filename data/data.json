@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T22:02:29Z",
+ "generated_at": "2026-10-12T01:22:30Z",
  "mode": "live",
  "news": [
   {
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-11",
+  "published": "2026-10-12",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-11T22:02:45Z",
+  "fetched_at": "2026-10-12T01:22:40Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37774,7 +37774,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-10-11T22:02:47Z",
+  "updated_at": "2026-10-12T01:22:43Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38812,7 +38812,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-11T22:02:47Z",
+  "updated_at": "2026-10-12T01:22:43Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
