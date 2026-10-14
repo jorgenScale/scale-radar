@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-10-14T13:46:35Z",
+ "generated_at": "2026-10-14T18:40:09Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-14",
+   "title": "Omdømmeekspert om oppdrett: – Næringen må være åpen om utfordringene",
+   "url": "https://ilaks.no/omdommeekspert-om-oppdrett-naeringen-ma-vaere-apen-om-utfordringene/?mtm_campaign=feed_click&mtm_kwd=omdommeekspert-om-oppdrett-naeringen-ma-vaere-apen-om-utfordringene&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -106,13 +113,6 @@
    "published": "2026-10-13",
    "title": "Abyss-gevinst reddet Frøy-resultatet",
    "url": "https://ilaks.no/abyss-gevinst-reddet-froy-resultatet/?mtm_campaign=feed_click&mtm_kwd=abyss-gevinst-reddet-froy-resultatet&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-13",
-   "title": "Nyansettelser styrker salg og utvikling i Turing",
-   "url": "https://ilaks.no/nyansettelser-styrker-salg-og-utvikling-i-turing/?mtm_campaign=feed_click&mtm_kwd=nyansettelser-styrker-salg-og-utvikling-i-turing&mtm_source=RSS2&mtm_medium=feed"
   },
   {
    "title": "Første fisk skal inn i april",
@@ -221,7 +221,7 @@
   },
   {
    "title": "Høyre om ordning: – Tålmodigheten er brukt opp",
-   "url": "https://www.intrafish.no/politikk/hoyre-om-nullslippsordning-talmodigheten-er-brukt-opp/2-1-2058757",
+   "url": "https://www.intrafish.no/politikk/hoyre-om-nullutslippsordning-talmodigheten-er-brukt-opp/2-1-2058757",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -234,6 +234,13 @@
    "source": "Intrafish"
   },
   {
+   "title": "Advarer mot hastearbeid med havbruks­meldingen",
+   "url": "https://www.intrafish.no/politikk/sjomat-norge-og-sjomatbedriftene-advarer-mot-hastearbeid-med-havbruksmeldingen/2-1-2058498",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Stoltenberg: Dette er problemet med å fjerne prisrådet",
    "url": "https://www.intrafish.no/okonomi/stoltenberg-forsvarer-prisradet/2-1-2058464",
    "published": null,
@@ -241,8 +248,8 @@
    "source": "Intrafish"
   },
   {
-   "title": "Advarer mot hastearbeid med havbruks­meldingen",
-   "url": "https://www.intrafish.no/politikk/sjomat-norge-og-sjomatbedriftene-advarer-mot-hastearbeid-med-havbruksmeldingen/2-1-2058498",
+   "title": "Nå er denne overlevert rederiet",
+   "url": "https://www.intrafish.no/bater/na-er-denne-overlevert-rederiet/2-1-2058892",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -271,13 +278,6 @@
   {
    "title": "DNV kjøper seg opp i dette lakselandet",
    "url": "https://www.intrafish.no/fiskehelse/dnv-kjoper-seg-opp-i-chile/2-1-2058298",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "1000 tonn tapt etter algeangrep i Chile",
-   "url": "https://www.intrafish.no/fiskehelse/1000-tonn-tapt-etter-algeangrep-hos-chilensk-oppdretter/2-1-2058320",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 208.2,
-      "change_pct": 0.77
+      "price": 207.4,
+      "change_pct": 0.39
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 551.0,
-      "change_pct": -0.54
+      "price": 552.0,
+      "change_pct": -0.36
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.48,
-      "change_pct": 0.76
+      "price": 42.18,
+      "change_pct": 0.05
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.02,
-      "change_pct": 0.79
+      "price": 23.28,
+      "change_pct": 1.93
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.8,
-      "change_pct": 0.24
+      "price": 83.0,
+      "change_pct": 0.48
      },
      {
       "name": "Måsøval",
@@ -451,8 +451,8 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.12,
-      "change_pct": 0.81
+      "price": 3.1,
+      "change_pct": 0.0
      },
      {
       "name": "Andfjord Salmon",
@@ -465,15 +465,15 @@
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.42,
-      "change_pct": -1.86
+      "price": 0.44,
+      "change_pct": 1.63
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 87.0,
-      "change_pct": -2.25
+      "price": 88.2,
+      "change_pct": -0.9
      },
      {
       "name": "Gigante Salmon",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 441.6,
-      "change_pct": 0.05
+      "price": 442.2,
+      "change_pct": 0.18
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-14T13:46:48Z",
+  "fetched_at": "2026-10-14T18:40:20Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -759,26 +759,26 @@
       "lon": 12.47566,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
       "details": {
-       "mtb_tonn": 4200,
-       "planned_production_tonn": 7000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 12,
        "feed_per_cycle_tonn": 8400,
        "max_monthly_feed_tonn": 1800,
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-10-14T13:46:50Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Lurøy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
-       "Maksimal månedlig fôring": "1 800 tonn",
        "Innsendt": "22.09.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Lurøy",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "12 mnd"
       },
       "einnsyn": {
        "count": 0,
@@ -37883,16 +37883,16 @@
   "details_summary": {
    "cached": 490,
    "pending": 0,
-   "fetched_now": 1
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 490,
    "pending": 0,
-   "fetched_now": 2
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-14T13:46:56Z",
+  "updated_at": "2026-10-14T18:40:22Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38975,7 +38975,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-14T13:46:56Z",
+  "updated_at": "2026-10-14T18:40:22Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
