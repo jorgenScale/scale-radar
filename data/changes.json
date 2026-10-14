@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-10-14T01:57:04Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002791",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Vega Sjøfarm Drift AS",
+"title": "Målvika",
+"municipality": "Vega",
+"county": "Nordland",
+"status": "Returnert",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791"
+},
+{
+"at": "2026-10-14T01:57:04Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002797",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Nova Sea Havbruk AS",
+"title": "Storvika",
+"municipality": "Meløy",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002797"
+},
+{
+"at": "2026-10-14T01:57:04Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002796",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Salvågvika",
+"municipality": "Flekkefjord",
+"county": "Agder",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002796"
+},
+{
 "at": "2026-10-07T01:39:46Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -876,5 +921,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-13T22:53:12Z"
+"updated_at": "2026-10-14T01:57:04Z"
 }

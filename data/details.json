@@ -13535,7 +13535,7 @@
 "title": "Steinholmen"
 },
 "SP-2026-002791": {
-"fetched_at": "2026-10-12T09:18:48Z",
+"fetched_at": "2026-10-14T01:56:56Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13557,7 +13557,7 @@
 "planned_production_tonn": 4000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Målvika"
 },
 "SP-2026-002795": {
@@ -13591,5 +13591,65 @@
 },
 "status": "Under behandling",
 "title": "Hammer"
+},
+"SP-2026-002796": {
+"fetched_at": "2026-10-14T01:56:56Z",
+"fields": {
+"Aktive tillatelser": "VA-F-0013 , VA-F-0014 , R-V-0016 , VA-F-0010 , R-V-0018 , R-HM-0005 , R-V-0017 , AG-F-0006 , R-HM-0007 , VA-F-0015",
+"Ansvarlig saksbehandler": "Agder fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Agder",
+"Innsendt": "13.10.2026",
+"Kapasitet": "7 020 tonn",
+"Kommune": "Flekkefjord",
+"Lokalitet": "Salvågvika",
+"Lokalitetsnummer": "11856",
+"Maksimal månedlig fôring": "760 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 200 tonn",
+"Planlagt produksjon per produksjonssyklus": "3 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Svenskegrensen til Jæren (Grønn)",
+"Produksjonssykluslengde": "10 mnd"
+},
+"norm": {
+"case_handler": "Agder fylkeskommune",
+"cycle_months": 10,
+"feed_per_cycle_tonn": 4200,
+"max_monthly_feed_tonn": 760,
+"planned_production_tonn": 3500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Salvågvika"
+},
+"SP-2026-002797": {
+"fetched_at": "2026-10-14T01:56:56Z",
+"fields": {
+"Aktive tillatelser": "N-HR-0013 , N-SA-0007 , N-ME-0008 , N-SA-0006",
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "13.10.2026",
+"Kapasitet": "4 680 tonn",
+"Kommune": "Meløy",
+"Lokalitet": "Storvika",
+"Lokalitetsnummer": "13125",
+"Maksimal månedlig fôring": "500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Helgeland til Bodø (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 6000,
+"max_monthly_feed_tonn": 500,
+"planned_production_tonn": 5500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Storvika"
 }
 }
