@@ -984,6 +984,7 @@ def fetch_auctions() -> dict:
 
 # --------------------------------------------------------------------------- biomassestatistikk (Fiskeridirektoratet)
 BIOMASS_PATH = ROOT / "data" / "biomass.json"
+BIOMASS_VERSION = 2   # bump når aggregeringen endres, så cachen bygges på nytt
 
 
 def fetch_biomass() -> dict:
@@ -1002,7 +1003,7 @@ def fetch_biomass() -> dict:
     try:
         prev = json.loads(BIOMASS_PATH.read_text(encoding="utf-8"))
         fetched = datetime.strptime(prev["fetched_at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        if (now - fetched).total_seconds() < refresh_h * 3600:
+        if prev.get("v") == BIOMASS_VERSION and (now - fetched).total_seconds() < refresh_h * 3600:
             log("biomasse: cache er fersk")
             return prev
     except Exception:  # noqa: BLE001
@@ -1034,7 +1035,7 @@ def fetch_biomass() -> dict:
         a = monthly.setdefault(key, {"beh_stk": 0.0, "biomasse_kg": 0.0, "utsett_smolt": 0.0, "utsett_u500": 0.0, "for_kg": 0.0, "uttak_stk": 0.0, "uttak_kg": 0.0, "dod_stk": 0.0, "romming_stk": 0.0})
         a["beh_stk"] += g(row, "BEHFISK_STK"); a["biomasse_kg"] += g(row, "BIOMASSE_KG")
         a["utsett_smolt"] += g(row, "UTSETT_SMOLT_STK"); a["utsett_u500"] += g(row, "UTSETT_SMOLT_STK_MINDRE_ENN_500G")
-        a["for_kg"] += g(row, "FORFORBRUK_KG"); a["uttak_stk"] += g(row, "UTTAK_STK"); a["uttak_kg"] += g(row, "UTTAK_RUNDVEKT_KG")
+        a["for_kg"] += g(row, "FORFORBRUK_KG"); a["uttak_stk"] += g(row, "UTTAK_STK"); a["uttak_kg"] += g(row, "UTTAK_KG")   # UTTAK_KG er fylt ut; RUNDVEKT-feltet er nesten tomt
         a["dod_stk"] += g(row, "DØDFISK_STK"); a["romming_stk"] += g(row, "RØMMING_STK")
         ym = (y, m)
         if latest_ym is None or ym > latest_ym:
@@ -1066,7 +1067,7 @@ def fetch_biomass() -> dict:
     for row in rows:
         if str(row.get("PO_KODE")).isdigit():
             po_names[int(row["PO_KODE"])] = row.get("PO_NAVN")
-    out = {"fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "source_updated": meta.get("Oppdatert"), "source_url": url,
+    out = {"v": BIOMASS_VERSION, "fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "source_updated": meta.get("Oppdatert"), "source_url": url,
            "page_url": bcfg.get("page_url"), "latest": {"y": latest_ym[0], "m": latest_ym[1]} if latest_ym else None,
            "po_names": po_names, "rows": out_rows, "cohorts": out_cohorts,
            "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."}
