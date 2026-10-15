@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T08:52:10Z",
+ "generated_at": "2026-10-15T08:58:38Z",
  "mode": "live",
  "news": [
   {
@@ -227,8 +227,22 @@
    "source": "Intrafish"
   },
   {
+   "title": "Hentet inn fra Aker Solutions som ny teknisk leder på lakseslakteri",
+   "url": "https://www.intrafish.no/arbeidsliv/hentet-inn-fra-aker-solutions-som-ny-teknisk-leder-pa-lakseslakteri/2-1-2059267",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Andfjord Salmon med første dedikerte postsmolt-syklus",
    "url": "https://www.intrafish.no/landbasert/andfjord-salmon-med-forste-dedikerte-postsmolt-syklus/2-1-2059075",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
+   "title": "Ny arbeidsbåt til Freyja",
+   "url": "https://www.intrafish.no/bater/na-er-denne-overlevert-rederiet/2-1-2058892",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -264,20 +278,6 @@
   {
    "title": "Stoltenberg: Dette er problemet med å fjerne prisrådet",
    "url": "https://www.intrafish.no/okonomi/stoltenberg-forsvarer-prisradet/2-1-2058464",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Nå er denne overlevert rederiet",
-   "url": "https://www.intrafish.no/bater/na-er-denne-overlevert-rederiet/2-1-2058892",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "– Alle som jobber i havbruks­næringen skal komme trygt hjem fra jobb",
-   "url": "https://www.intrafish.no/arbeidsliv/-alle-som-jobber-i-havbruksnaringen-skal-komme-trygt-hjem-fra-jobb/2-1-2057995",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 207.2,
-      "change_pct": -0.1
+      "price": 206.6,
+      "change_pct": -0.39
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 552.5,
-      "change_pct": 0.09
+      "price": 552.0,
+      "change_pct": 0.0
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.24,
-      "change_pct": 0.14
+      "price": 42.16,
+      "change_pct": -0.05
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.4,
-      "change_pct": 0.52
+      "price": 23.34,
+      "change_pct": 0.26
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.8,
-      "change_pct": -0.24
+      "price": 82.6,
+      "change_pct": -0.48
      },
      {
       "name": "Måsøval",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 443.0,
-      "change_pct": 0.18
+      "price": 442.2,
+      "change_pct": 0.0
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-15T08:52:21Z",
+  "fetched_at": "2026-10-15T08:58:48Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37906,11 +37906,11 @@
   "einnsyn_summary": {
    "cached": 490,
    "pending": 0,
-   "fetched_now": 41
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-15T08:54:15Z",
+  "updated_at": "2026-10-15T08:58:50Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -39038,7 +39038,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-15T08:54:15Z",
+  "updated_at": "2026-10-15T08:58:50Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
