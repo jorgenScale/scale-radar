@@ -1,7 +1,14 @@
 {
- "generated_at": "2026-10-15T08:58:38Z",
+ "generated_at": "2026-10-15T10:10:56Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-15",
+   "title": "Trøndelag ønsker seg havbruksdirektorat: – En sak av nasjonal betydning",
+   "url": "https://ilaks.no/trondelag-onsker-a-vaere-havbrukshovedstad-en-sak-av-nasjonal-betydning/?mtm_campaign=feed_click&mtm_kwd=trondelag-onsker-a-vaere-havbrukshovedstad-en-sak-av-nasjonal-betydning&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -38,7 +45,7 @@
    "url": "https://ilaks.no/det-finnes-per-i-dag-ingen-notstrategi-uten-ulemper/?mtm_campaign=feed_click&mtm_kwd=det-finnes-per-i-dag-ingen-notstrategi-uten-ulemper&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "title": "Mowi-topp solgte alle aksjene ved en feil",
+   "title": "En feil utløste millionsalg hos Mowi-topp",
    "url": "https://www.kyst.no/aksje-mowi/mowi-topp-solgte-alle-aksjene-ved-en-feil/2196239",
    "published": "2026-10-15",
    "source_key": "kyst",
@@ -92,13 +99,6 @@
    "published": "2026-10-14",
    "title": "Nytt tungt år for Austevoll Melaks",
    "url": "https://ilaks.no/nytt-tungt-ar-for-austevoll-melaks/?mtm_campaign=feed_click&mtm_kwd=nytt-tungt-ar-for-austevoll-melaks&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-14",
-   "title": "Abyss satser på flerbruksfartøy: – Vi investerer i fremtidens flåte",
-   "url": "https://ilaks.no/abyss-satser-pa-flerbruksfartoy-vi-investerer-i-fremtidens-flate/?mtm_campaign=feed_click&mtm_kwd=abyss-satser-pa-flerbruksfartoy-vi-investerer-i-fremtidens-flate&mtm_source=RSS2&mtm_medium=feed"
   },
   {
    "title": "Varsler ny ordning for hele oppdretts-Norge",
@@ -227,6 +227,13 @@
    "source": "Intrafish"
   },
   {
+   "title": "Rapport: Store utslipp og store geografiske forskjeller",
+   "url": "https://www.intrafish.no/miljo/rapport-store-utslipp-og-store-geografiske-forskjeller/2-1-2059261",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Hentet inn fra Aker Solutions som ny teknisk leder på lakseslakteri",
    "url": "https://www.intrafish.no/arbeidsliv/hentet-inn-fra-aker-solutions-som-ny-teknisk-leder-pa-lakseslakteri/2-1-2059267",
    "published": null,
@@ -271,13 +278,6 @@
   {
    "title": "Advarer mot hastearbeid med havbruks­meldingen",
    "url": "https://www.intrafish.no/politikk/sjomat-norge-og-sjomatbedriftene-advarer-mot-hastearbeid-med-havbruksmeldingen/2-1-2058498",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Stoltenberg: Dette er problemet med å fjerne prisrådet",
-   "url": "https://www.intrafish.no/okonomi/stoltenberg-forsvarer-prisradet/2-1-2058464",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 206.6,
-      "change_pct": -0.39
+      "price": 205.8,
+      "change_pct": -0.77
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 552.0,
-      "change_pct": 0.0
+      "price": 549.0,
+      "change_pct": -0.54
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.16,
-      "change_pct": -0.05
+      "price": 41.7,
+      "change_pct": -1.14
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.34,
-      "change_pct": 0.26
+      "price": 23.32,
+      "change_pct": 0.17
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.6,
-      "change_pct": -0.48
+      "price": 81.7,
+      "change_pct": -1.57
      },
      {
       "name": "Måsøval",
@@ -451,22 +451,22 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.14,
-      "change_pct": 1.29
+      "price": 3.1,
+      "change_pct": 0.0
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 28.3,
-      "change_pct": -2.41
+      "price": 28.2,
+      "change_pct": -2.76
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.44,
-      "change_pct": 1.63
+      "price": 0.43,
+      "change_pct": -1.38
      },
      {
       "name": "Nordic Aqua Partners",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 442.2,
-      "change_pct": 0.0
+      "price": 438.0,
+      "change_pct": -0.95
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-15T08:58:48Z",
+  "fetched_at": "2026-10-15T10:11:09Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -711,26 +711,26 @@
       "lon": 8.3281,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002790",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3200,
        "cycle_months": 60,
        "feed_per_cycle_tonn": 4000,
        "max_monthly_feed_tonn": 252,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3200,
        "species": "Kveite",
-       "fetched_at": "2026-10-12T09:18:48Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-10-15T10:11:12Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "02.10.2026",
        "Kommune": "Aure",
-       "Maksimal månedlig fôring": "252 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
-       "Produksjonssykluslengde": "60 mnd"
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 000 tonn",
+       "Maksimal månedlig fôring": "252 tonn",
+       "Innsendt": "02.10.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -34262,16 +34262,16 @@
       "lon": 13.16877,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
        "species": "Laks",
-       "fetched_at": "2026-10-12T09:18:48Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-15T10:11:12Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks",
+       "Kommune": "Flakstad",
        "Fylke": "Nordland",
        "Innsendt": "25.09.2026",
-       "Kommune": "Flakstad"
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 3,
@@ -37901,7 +37901,7 @@
   "details_summary": {
    "cached": 490,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 2
   },
   "einnsyn_summary": {
    "cached": 490,
@@ -37910,7 +37910,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-10-15T08:58:50Z",
+  "updated_at": "2026-10-15T10:11:16Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -39037,8 +39037,34 @@
    }
   ]
  },
+ "biomass": {
+  "fetched_at": "2026-10-15T10:11:16Z",
+  "source_updated": "20.09.2026",
+  "source_url": "https://register.fiskeridir.no/biomassestatistikk/BIOSTAT-LAKS-OMR/biostat-total-omr.json",
+  "page_url": "https://www.fiskeridir.no/statistikk-tall-og-analyse/data-og-statistikk-om-akvakultur/biomassestatistikk-etter-produksjonsomrade",
+  "latest": {
+   "y": 2026,
+   "m": 8
+  },
+  "po_names": {
+   "1": "Svenskegrensen til Jæren",
+   "2": "Ryfylket",
+   "3": "Karmøy til Sotra",
+   "4": "Nordhordland til Stadt",
+   "5": "Stadt til Hustadvika",
+   "6": "Nordmøre til Sør-Trøndelag",
+   "7": "Nord-Trøndelag med Bindal",
+   "8": "Helgeland til Bodø",
+   "9": "Vestfjorden og Vesterålen",
+   "10": "Andøya til Senja",
+   "11": "Kvaløy til Loppa",
+   "12": "Vest-Finnmark",
+   "13": "Øst-Finnmark"
+  },
+  "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
+ },
  "auctions": {
-  "updated_at": "2026-10-15T08:58:50Z",
+  "updated_at": "2026-10-15T10:11:19Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
