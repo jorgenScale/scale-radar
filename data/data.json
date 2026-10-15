@@ -1,7 +1,28 @@
 {
- "generated_at": "2026-10-15T07:30:44Z",
+ "generated_at": "2026-10-15T08:52:10Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-15",
+   "title": "Rune Wannebo er ny teknisk leder hos Salten N950",
+   "url": "https://ilaks.no/rune-wannebo-er-ny-teknisk-leder-hos-salten-n950/?mtm_campaign=feed_click&mtm_kwd=rune-wannebo-er-ny-teknisk-leder-hos-salten-n950&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-15",
+   "title": "Oaland solgte Mowi-aksjer for 1,2 millioner kroner ved en tabbe",
+   "url": "https://ilaks.no/oaland-solgte-mowi-aksjer-for-12-millioner-kroner-ved-en-tabbe/?mtm_campaign=feed_click&mtm_kwd=oaland-solgte-mowi-aksjer-for-12-millioner-kroner-ved-en-tabbe&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-15",
+   "title": "Financial Times: Lerøy, SalMar, Mowi og Grieg putter biprodukter fra kylling i fôret",
+   "url": "https://ilaks.no/financial-times-leroy-salmar-mowi-og-grieg-putter-biprodukter-fra-kylling-i-foret/?mtm_campaign=feed_click&mtm_kwd=financial-times-leroy-salmar-mowi-og-grieg-putter-biprodukter-fra-kylling-i-foret&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -17,8 +38,22 @@
    "url": "https://ilaks.no/det-finnes-per-i-dag-ingen-notstrategi-uten-ulemper/?mtm_campaign=feed_click&mtm_kwd=det-finnes-per-i-dag-ingen-notstrategi-uten-ulemper&mtm_source=RSS2&mtm_medium=feed"
   },
   {
+   "title": "Mowi-topp solgte alle aksjene ved en feil",
+   "url": "https://www.kyst.no/aksje-mowi/mowi-topp-solgte-alle-aksjene-ved-en-feil/2196239",
+   "published": "2026-10-15",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
    "title": "Ville bytte torsk med laks – får blankt nei",
    "url": "https://www.kyst.no/hofseth-lakselus-mattilsynet/ville-bytte-torsk-med-laks-far-blankt-nei/2195436",
+   "published": "2026-10-15",
+   "source_key": "kyst",
+   "source": "Kyst.no"
+  },
+  {
+   "title": "Resultatene ble helt ulike i sjøen",
+   "url": "https://www.kyst.no/aktuelt-lys/smolttestene-viste-liten-forskjell-men-i-sjoen-ble-resultatene-helt-ulike/2196134",
    "published": "2026-10-15",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -66,27 +101,6 @@
    "url": "https://ilaks.no/abyss-satser-pa-flerbruksfartoy-vi-investerer-i-fremtidens-flate/?mtm_campaign=feed_click&mtm_kwd=abyss-satser-pa-flerbruksfartoy-vi-investerer-i-fremtidens-flate&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-14",
-   "title": "– Dette er viktige forutsetninger for at næringsstoffene i fiskeslam skal kunne tas i bruk",
-   "url": "https://ilaks.no/dette-er-viktige-forutsetninger-for-at-naeringsstoffene-i-fiskeslam-skal-kunne-tas-i-bruk/?mtm_campaign=feed_click&mtm_kwd=dette-er-viktige-forutsetninger-for-at-naeringsstoffene-i-fiskeslam-skal-kunne-tas-i-bruk&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-14",
-   "title": "– Ikke innfør nytt reguleringssystem før kunnskapen er oppdatert",
-   "url": "https://ilaks.no/ikke-innfor-nytt-reguleringssystem-for-kunnskapen-er-oppdatert/?mtm_campaign=feed_click&mtm_kwd=ikke-innfor-nytt-reguleringssystem-for-kunnskapen-er-oppdatert&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-14",
-   "title": "– Mattilsynet utfordrer fortsatt grunnleggende rettssikkerhet",
-   "url": "https://ilaks.no/mattilsynet-utfordrer-fortsatt-grunnleggende-rettssikkerhet/?mtm_campaign=feed_click&mtm_kwd=mattilsynet-utfordrer-fortsatt-grunnleggende-rettssikkerhet&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
    "title": "Varsler ny ordning for hele oppdretts-Norge",
    "url": "https://www.kyst.no/havbruksmeldingen-miljofleksibilitet-naerings-og-fiskeridepartementet/sender-nullutslipp-pa-horing/2195737",
    "published": "2026-10-14",
@@ -122,22 +136,8 @@
    "source": "Kyst.no"
   },
   {
-   "title": "Slaktet første laks fra anlegg",
-   "url": "https://www.kyst.no/eco-aquafarm-landbasert-matfiskanlegg/har-slaktet-den-forste-laksen-fra-nytt-landanlegg/2171062",
-   "published": "2026-10-14",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
    "title": "Slik håndteres en av bransjens største utfordringer",
    "url": "https://www.kyst.no/greenbag-hardingsmolt-merdslippen/slik-handteres-en-av-bransjens-storste-utfordringer/2194872",
-   "published": "2026-10-13",
-   "source_key": "kyst",
-   "source": "Kyst.no"
-  },
-  {
-   "title": "Første fisk skal inn i april",
-   "url": "https://www.kyst.no/aktuelt-landbasert-salmon-garden/forste-fisk-skal-inn-i-april/2194696",
    "published": "2026-10-13",
    "source_key": "kyst",
    "source": "Kyst.no"
@@ -213,6 +213,13 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
+   "title": "Mowi-topp solgte alle aksjer ved en feil",
+   "url": "https://www.intrafish.no/bater/mowi-topp-solgte-alle-aksjer-ved-en-feil/2-1-2059185",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "– Brutalt for dem som har investert",
    "url": "https://www.intrafish.no/bater/nye-vedtak-mot-slaktebater-brutalt-for-dem-som-har-investert/2-1-2055640",
    "published": null,
@@ -271,13 +278,6 @@
   {
    "title": "– Alle som jobber i havbruks­næringen skal komme trygt hjem fra jobb",
    "url": "https://www.intrafish.no/arbeidsliv/-alle-som-jobber-i-havbruksnaringen-skal-komme-trygt-hjem-fra-jobb/2-1-2057995",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Slakterier samles: Alvorlige HMS-funn blir tema",
-   "url": "https://www.intrafish.no/samfunn/slakterier-samles-alvorlige-hms-funn-blir-tema/2-1-2056337",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,36 +397,36 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 207.0,
-      "change_pct": 0.19
+      "price": 207.2,
+      "change_pct": -0.1
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 550.0,
-      "change_pct": -0.72
+      "price": 552.5,
+      "change_pct": 0.09
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 42.04,
-      "change_pct": -0.28
+      "price": 42.24,
+      "change_pct": 0.14
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.22,
-      "change_pct": 1.66
+      "price": 23.4,
+      "change_pct": 0.52
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.5,
-      "change_pct": -0.12
+      "price": 82.8,
+      "change_pct": -0.24
      },
      {
       "name": "Måsøval",
@@ -451,36 +451,36 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.07,
-      "change_pct": -0.97
+      "price": 3.14,
+      "change_pct": 1.29
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 29.0,
-      "change_pct": 3.94
+      "price": 28.3,
+      "change_pct": -2.41
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.43,
-      "change_pct": 2.14
+      "price": 0.44,
+      "change_pct": 1.63
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 89.0,
-      "change_pct": 0.45
+      "price": 88.2,
+      "change_pct": 0.0
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 5.1,
-      "change_pct": 3.03
+      "price": 5.36,
+      "change_pct": 0.0
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 443.8,
-      "change_pct": 0.54
+      "price": 443.0,
+      "change_pct": 0.18
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
       "price": 23.2,
-      "change_pct": -3.33
+      "change_pct": 0.0
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-15T07:30:57Z",
+  "fetched_at": "2026-10-15T08:52:21Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -4537,7 +4537,7 @@
          "last_title": "Forespørsel - status i sak - klage på vedtak - ny lokalitet - akvakultur - Brønnøy - Mowi Seawater Norway AS - lokalitet Stortorgnes"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Stortorgnes%22%20Mowi"
       }
      },
@@ -4621,7 +4621,7 @@
          "last_title": "Klage på vedtak - vedlegg del 2 - settestatsforvalter - akvakultur - Nordland - Brønnøy - Codfarm AS - lokalitet Ramnbergvika - ny lokalitet"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ramnbergvika%22%20Codfarm"
       }
      },
@@ -4818,15 +4818,8 @@
       },
       "einnsyn": {
        "count": 60,
-       "last": "2026-10-06",
+       "last": "2026-10-07",
        "steps": {
-        "fiskeridir": {
-         "label": "Fiskeridirektoratet",
-         "first": "2025-08-01",
-         "count": 11,
-         "last": "2026-09-24",
-         "last_title": "Inkurie i oversendt dokument - Kime Akva AS - Akvakulturtillatelse for torsk (Gadus morhua) på ny lokalitet 45306 Segelnes"
-        },
         "kystverket": {
          "label": "Kystverket",
          "first": "2025-08-14",
@@ -4834,12 +4827,12 @@
          "last": "2026-04-22",
          "last_title": "Oversendelse av vedtak - Kime Akva AS - Avslag på søknad om akvakulturtillatelse på ny lokalitet Segelnes i Hammerfest kommune - Finnmark fylke"
         },
-        "mattilsynet": {
-         "label": "Mattilsynet",
+        "fiskeridir": {
+         "label": "Fiskeridirektoratet",
          "first": "2025-08-14",
-         "count": 14,
+         "count": 10,
          "last": "2026-09-24",
-         "last_title": "Inkurie i oversendt dokument - Kime Akva AS 925155748 - Akvakulturtillatelse for torsk (Gadus morhua) på ny lokalitet 45306 Segelnes i Hammerfest kommune"
+         "last_title": "Inkurie i oversendt dokument - Kime Akva AS - Akvakulturtillatelse for torsk (Gadus morhua) på ny lokalitet 45306 Segelnes"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
@@ -4848,15 +4841,22 @@
          "last": "2026-09-24",
          "last_title": "Inkurie i oversendt dokument - akvakulturtillatelse for torsk ( Gadus morhua ) på ny lokalitet 45306 Segelnes - akvakultur - Kime Akva AS - lokalitet 33317 Segelnes - Hammerfest kommune"
         },
+        "mattilsynet": {
+         "label": "Mattilsynet",
+         "first": "2025-10-22",
+         "count": 13,
+         "last": "2026-09-24",
+         "last_title": "Inkurie i oversendt dokument - Kime Akva AS 925155748 - Akvakulturtillatelse for torsk (Gadus morhua) på ny lokalitet 45306 Segelnes i Hammerfest kommune"
+        },
         "klage": {
          "label": "Klage",
          "first": "2026-05-29",
-         "count": 9,
-         "last": "2026-10-06",
-         "last_title": "Nye opplysninger om tralopyril og grunnlaget for miljøvurderingen - klage om Kime Akva AS og torskeoppdrett ved Segelnes i Hammerfest kommune - kopi av e-post til fylkeskommunen"
+         "count": 11,
+         "last": "2026-10-07",
+         "last_title": "Kopi av tilleggsbrev til klage - Nye opplysninger om tralopyril og grunnlaget for miljøvurderingen"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Segelnes%22%20Kime"
       }
      },
@@ -5094,7 +5094,7 @@
          "last_title": "Til klagebehandling - akvakultur - Øksnes - Vesterålen Havbruk AS - lokalitet Oppmyrbogen - SP-2025-001899"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Oppmyrbogen%22%20Vester%C3%A5len"
       }
      },
@@ -5234,7 +5234,7 @@
          "last_title": "Kopi - Løyve - etablering av akvakulturanlegg for laksefisk - lokalitet Apalvik - Austevoll kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Apalvik%22%20Sj%C3%B8troll"
       }
      },
@@ -5380,7 +5380,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Koi%C3%B8ya%22%20Cermaq"
       }
      },
@@ -5562,7 +5562,7 @@
          "last_title": "Svar på oversendelse ifm. søknad akvakulturlokalitet Buarøya - Ode AS - Høring av supplerende opplysninger, offentlig ettersyn og kommunal behandling"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Buar%C3%B8ya%22%20Ode"
       }
      },
@@ -5898,7 +5898,7 @@
          "last_title": "Kopi - orientering om oversendelse av klagesak - lokalitet Apalvika-Vinnes - Austevoll kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Apalvika-Vinnes%22%20Elska"
       }
      },
@@ -6173,7 +6173,7 @@
          "last_title": "Vedtak - akvakultur - Hjelmeland - Sterling White Halibut AS - lokalitet 10126 Vassvik - tillatelse utvidelse anlegg og økning produksjon"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vassvik%22%20Sterling"
       }
      },
@@ -6257,7 +6257,7 @@
          "last_title": "Korrespondanse feil i forsendelse - klage - akvakultur - Hjelmeland - Sterling White Halibut AS - lokalitet 45293 Sigmundstadneset - ny lokalitet og tillatelse oppdrett"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sigmundstadneset%22%20Sterling"
       }
      },
@@ -6334,7 +6334,7 @@
          "last_title": "Oversendelse av klagesak - akvakultur - Aure - Nordic Halibut AS - Storvika - oppdrett av kveite - SP-2025-001787"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Storvika%22%20Nordic"
       }
      },
@@ -6409,7 +6409,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse - SP-2025-001718 - 45098 Forså - Kime Akva AS - Ibestad kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Fors%C3%A5%22%20Kime"
       }
      },
@@ -6640,7 +6640,7 @@
          "last_title": "Bekreftelse på mottatt klage"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Natter%C3%B8y%22%20Tubilah"
       }
      },
@@ -7234,7 +7234,7 @@
          "last_title": "Anmodning om presisering av feil ved fylkeskommunens vedtak"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Torshaugen%22%20Nordly"
       }
      },
@@ -7318,7 +7318,7 @@
          "last_title": "Orientering om mottatt klage på avslag - akvakultur - Vadsø - Lerøy Aurora AS - Sandskjæret"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandskj%C3%A6ret%22%20Ler%C3%B8y"
       }
      },
@@ -7775,7 +7775,7 @@
          "last_title": "Kunnskapsstøtte: Smittemodellering for ny akvakulturtillatelse for torsk – Veggen"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Veggen%22%20Organic"
       }
      },
@@ -8030,7 +8030,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ikke%20Relevant%20DA%20det%20S%C3%B8kes%20om%20Forlengelse%20av%20Fou%20Tillatelser%22%20Seacalx"
       }
      },
@@ -8897,7 +8897,7 @@
          "last_title": "Akvakultursøknad SP-2024-000739 - Mowi Seawater Norway AS 921668236 - Uttalelse fra Fiskeridirektoratet 971203420"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22S%C3%B8mnes%C3%B8ya%22%20Mowi"
       }
      },
@@ -8988,7 +8988,7 @@
          "last_title": "Svar på møteforespørsel - Klagesak om avslag på søknad om tillatelse for akvakultur på ny lokalitet Mindland"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Mindland%22%20Akvafuture"
       }
      },
@@ -9415,7 +9415,7 @@
          "last_title": "Tilbakemelding - Akvakultur - Stavanger - Seashore Sjø AS - lokalitet 24715 Langholmen - ny lokalitet"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Langholmen%22%20Seashore"
       }
      },
@@ -9878,7 +9878,7 @@
          "last_title": "Kopi - Mattilsynet endrer vedtak etter klage"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bj%C3%B8rnvika%22%20Ler%C3%B8y"
       }
      },
@@ -16684,15 +16684,15 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 19,
-       "last": "2026-09-15",
+       "count": 22,
+       "last": "2026-10-07",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2025-12-19",
-         "count": 5,
-         "last": "2026-09-15",
-         "last_title": "Oppdatert søknad for arealendring på lokalitet 13669 Furneset - Salmar Oppdrett AS"
+         "count": 6,
+         "last": "2026-10-07",
+         "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – SP–2025–001968 – 13669 Furneset – Salmar Oppdrett AS – Vestnes kommune"
         },
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -16701,22 +16701,22 @@
          "last": "2026-09-14",
          "last_title": "SP-2025-001968 - lokalitet Furneset"
         },
+        "kystverket": {
+         "label": "Kystverket",
+         "first": "2025-12-19",
+         "count": 3,
+         "last": "2026-10-07",
+         "last_title": "Kopi - Fiskeridirektoratets uttalelse til søknad om akvakulturtillatelse – lokalitet 13669 - Furneset – Salmar Oppdrett AS – Vestnes kommune - Møre og Romsdal fylke - SP-2025-001968"
+        },
         "kommune": {
          "label": "Kommunen",
          "first": "2026-01-21",
          "count": 4,
          "last": "2026-07-22",
          "last_title": "Uttale - dispensasjon - Vestnes - lokalitet Furneset - flytting av akvakulturanlegg"
-        },
-        "kystverket": {
-         "label": "Kystverket",
-         "first": "2026-06-18",
-         "count": 1,
-         "last": "2026-06-18",
-         "last_title": "Uttale - dispensasjon - Vestnes - lokalitet 13669 Furneset - Salmar Oppdrett AS - flytting av akvakulturanlegg"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Furneset%22%20Salmar"
       }
      },
@@ -17087,7 +17087,7 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 24,
+       "count": 25,
        "last": "2026-10-06",
        "steps": {
         "mattilsynet": {
@@ -17121,12 +17121,12 @@
         "statsforvalter": {
          "label": "Statsforvalteren",
          "first": "2026-10-05",
-         "count": 2,
+         "count": 3,
          "last": "2026-10-05",
          "last_title": "Vedtak – avslag på søknad om biomasseøkning – akvakultur - Bodø kommune - Wenberg Fiskeoppdrett AS - lokalitet Storvika i Skjerstadfjorden"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Storvika%20i%20Skjerstadfjorden%22%20Wenberg"
       }
      },
@@ -17920,7 +17920,7 @@
          "last_title": "Akvakultursøknad SP-2025-001893 - Lerøy Aurora Sjø AS - Vurdering av behov for tilleggsutredning av Statsforvalteren i Troms og Finnmark - Lokalitet 10753 - Strandmo - Karlsøy kommune - Troms fylke"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Strandmo%22%20Ler%C3%B8y"
       }
      },
@@ -18447,7 +18447,7 @@
          "last_title": "Orientering om oversendelse av klagesak til klagesaksenheten"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22L%C3%A5derskjera%22%20Grieg"
       }
      },
@@ -19922,7 +19922,7 @@
          "last_title": "Tillatelse til arealendring - Wenberg Fiskeoppdrett AS - SP-2025-001711 - Lokalitet 11273 - Skysselvika V - Fauske kommune - Nordland fylke"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skysselvika%20V%22%20Wenberg"
       }
      },
@@ -20401,7 +20401,7 @@
          "last_title": "Vedtak om tillatelse til arealendring - Akvakultur for matfisk av laks, ørret og regnbueørret på lokalitet 33097 Skjervøy V - Skjervøy kommune – Troms fylke"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skjerv%C3%B8y%20V%22%20Arn%C3%B8y"
       }
      },
@@ -20781,7 +20781,7 @@
          "last_title": "KOPI - Avslag - Søknad om utviding og produksjonsauke - Akvakultur - lok 18898 Skaftå - Osterøy"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Skaft%C3%A5%22%20Sj%C3%B8troll"
       }
      },
@@ -20864,7 +20864,7 @@
          "last_title": "Klage - lokalitet Blom - tilsvar fra søker"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Blom%22%20Sj%C3%B8troll"
       }
      },
@@ -21151,7 +21151,7 @@
          "last_title": "Sjøtroll Havbruk Sjø AS og Lerøy Vest Sjø AS lokalitet 18015 Hestabyneset - Kopi av vedtak om at løyve etter forureiningslova ikkje fell bort 02.02.2026"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hestabyneset%22%20Sj%C3%B8troll"
       }
      },
@@ -22245,7 +22245,7 @@
          "last_title": "KOPI - Grieg Seafood Rogaland AS - Vedtak om tilbaketrekking av utslippstillatelse - Lokalitet 34817 Eime - Kvitsøy kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Eime%22%20Grieg"
       }
      },
@@ -23149,7 +23149,7 @@
          "last_title": "Analysebevis 2026-1031"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Nordnes%22%20Cermaq"
       }
      },
@@ -23725,7 +23725,7 @@
       },
       "einnsyn": {
        "count": 44,
-       "last": "2026-09-22",
+       "last": "2026-10-12",
        "steps": {
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
@@ -23744,12 +23744,12 @@
         "klage": {
          "label": "Klage",
          "first": "2026-04-07",
-         "count": 5,
-         "last": "2026-05-19",
-         "last_title": "Hardangerfjorden - informasjon om at klager på avslag etter forureiningslova er mottatt"
+         "count": 6,
+         "last": "2026-10-12",
+         "last_title": "Klage - Anmodning om ny vurdering på avslag om flytting av fiks mellom Slåttenes og Hetteneset"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sl%C3%A5ttenes%22%20Mowi"
       }
      },
@@ -24091,7 +24091,7 @@
          "last_title": "Oversendelse av klage på vedtak om avslag på biomasseøking - Settestatsforvalter - akvakultur - Steigen - Nordland - Cermaq Norway Salmon AS - lokalitet Hjartøy Ø - biomasseutvidelse - underinstans"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Hjart%C3%B8y%20%C3%98%22%20Cermaq"
       }
      },
@@ -25368,7 +25368,7 @@
          "last_title": "Klage på kommunalt vedtak for økning av lokalitet - akvakulturlokalitet - Lerøy Aurora AS - lokalitet 10734 Gourtesjouka - Kåfjord kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Gourtesjouka%22%20Ler%C3%B8y"
       }
      },
@@ -27567,16 +27567,9 @@
        "Produksjonssykluslengde": "10 mnd"
       },
       "einnsyn": {
-       "count": 44,
-       "last": "2026-09-16",
+       "count": 43,
+       "last": "2026-10-12",
        "steps": {
-        "mattilsynet": {
-         "label": "Mattilsynet",
-         "first": "2024-12-23",
-         "count": 7,
-         "last": "2026-09-16",
-         "last_title": "Lokalitet 12067 Aldalen - Bekreftelse på etterkommet vedtak"
-        },
         "fiskeridir": {
          "label": "Fiskeridirektoratet",
          "first": "2025-01-13",
@@ -27604,9 +27597,16 @@
          "count": 1,
          "last": "2025-03-18",
          "last_title": "Uttale - søknad om auka arealbruk for anlegg Aldalen - Bjørnafjorden kommune"
+        },
+        "mattilsynet": {
+         "label": "Mattilsynet",
+         "first": "2025-04-22",
+         "count": 7,
+         "last": "2026-10-12",
+         "last_title": "Akvakultursøknad SP-2023-000649 - AS Bolaks 930391328 - Tilleggsinformasjon fra søker"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Aldalen%22%20Bolaks"
       }
      },
@@ -30767,7 +30767,7 @@
          "last_title": "Klage i sak 2023/165123 - Vedtak om avslag på søknad om biomasseutviding – 19655 Ospeneset - Oppstart av klagebehandling"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ospeneset%22%20Eide"
       }
      },
@@ -36704,7 +36704,7 @@
          "last_title": "Fiskeridirektoratets uttalelse til søknad om akvakultur - SP-2025-001881- 10503 Bogen i Steigen kommune - Aquagen AS"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Bogen%22%20Aquagen"
       }
      },
@@ -36800,7 +36800,7 @@
          "last_title": "Kopi av tillatelse til utvidelse av antall arter ved eksisterende tillatelser AG-F-1, VA-F-20 og VA-F-211 ved lokalitet 31937 Abelsnes, Norsk Oppdrettsservice AS"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Abelsnes%22%20Norsk"
       }
      },
@@ -37008,7 +37008,7 @@
          "last_title": "Tillegg til uttale - utvida produksjon ved Hyen Fisk - lokalitet Åreneset - Gloppen kommune"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22%C3%85reneset%22%20Hyen"
       }
      },
@@ -37177,7 +37177,7 @@
          "last_title": "Kopi - Ål kommune - Reguleringsplan - Gbnr 125/3 og 125/8 - 126/1 og 126/10 - 128/1 - Upstream - Kleivi - Detaljregulering - Ett-trinns løyve for nytt anlegg - Omlegging av eksisterende bekker i kombinasjon med etablering av flom og overvannsgrøft"
         }
        },
-       "fetched_at": "2026-10-14T07:42:53Z",
+       "fetched_at": "2026-10-15T08:52:22Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Kleivi%22%20Upstream"
       }
      },
@@ -37906,11 +37906,11 @@
   "einnsyn_summary": {
    "cached": 490,
    "pending": 0,
-   "fetched_now": 3
+   "fetched_now": 41
   }
  },
  "changes": {
-  "updated_at": "2026-10-15T07:31:06Z",
+  "updated_at": "2026-10-15T08:54:15Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -39038,7 +39038,7 @@
   ]
  },
  "auctions": {
-  "updated_at": "2026-10-15T07:31:06Z",
+  "updated_at": "2026-10-15T08:54:15Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
