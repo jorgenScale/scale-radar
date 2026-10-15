@@ -1976,7 +1976,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     body.innerHTML = '<div class="k" style="font-size:.78rem;color:var(--ink-2)">Laks · siste måned i statistikken: '+MND_K[L.m-1]+' '+L.y+'</div>' +
       '<div class="auc-card"><div><div class="v">'+fmtM(u(ytd),0)+' mill.</div><div class="k">smolt satt i sjø hittil i '+L.y+(u(ytdPrev)?' ('+(u(ytd)>=u(ytdPrev)?'+':'')+nf(100*(u(ytd)/u(ytdPrev)-1),0)+' % mot samme periode '+(L.y-1)+')':'')+'</div></div>' +
       '<div><div class="v">'+nf(bio/1000,0)+' kt</div><div class="k">stående biomasse'+(bioPrev?' ('+(bio>=bioPrev?'+':'')+nf(100*(bio/bioPrev-1),1)+' % mot i fjor)':'')+'</div></div>' +
-      '<div><div class="v">'+nf(uttak12/1000,0)+' kt</div><div class="k">slaktet siste 12 måneder (rundvekt)</div></div></div>' +
+      '<div><div class="v">'+nf(uttak12/1000,0)+' kt</div><div class="k">slaktet siste 12 måneder</div></div></div>' +
       '<button type="button" class="chip" data-goto="bio" style="opacity:1">Se utsett per område og trender →</button>';
     var go = body.querySelector('[data-goto]'); if(go) go.addEventListener('click', function(){ showView('bio'); });
   }
@@ -2001,7 +2001,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('bio-pulse').innerHTML =
       '<div class="cell"><div class="k">Smolt satt i sjø siste 12 måneder</div><div class="v">'+fmtM(u12,0)+' <small>mill.</small></div><div class="d">'+(u12p?'<span class="'+(u12>=u12p?'up':'down')+'">'+(u12>=u12p?'+':'')+nf(100*(u12/u12p-1),1)+' %</span> mot forrige 12 måneder ('+fmtM(u12p,0)+' mill.)':'')+'</div></div>' +
       '<div class="cell"><div class="k">Stående biomasse '+MND_K[L.m-1]+' '+L.y+'</div><div class="v">'+nf(bio/1000,0)+' <small>kt</small></div><div class="d">'+fmtM(beh,0)+' mill. fisk i sjøen · snitt '+(beh?nf(bio*1000/beh,2):'–')+' kg</div></div>' +
-      '<div class="cell"><div class="k">Slaktet siste 12 måneder</div><div class="v">'+nf(uttak12/1000,0)+' <small>kt</small></div><div class="d">rundvekt · fôrforbruk '+nf(for12/1000,0)+' kt</div></div>' +
+      '<div class="cell"><div class="k">Slaktet siste 12 måneder</div><div class="v">'+nf(uttak12/1000,0)+' <small>kt</small></div><div class="d">'+fmtM(uttakStk12,0)+' mill. fisk · fôrforbruk '+nf(for12/1000,0)+' kt</div></div>' +
       '<div class="cell"><div class="k">Dødfisk siste 12 måneder</div><div class="v">'+fmtM(dod12,0)+' <small>mill.</small></div><div class="d">'+((beh+uttakStk12+dod12)?nf(100*dod12/(beh+uttakStk12+dod12),1)+' % av fisk i sjø, slaktet og død':'')+' · registrert dødfisk i sjø</div></div>';
     // månedlig (3 år)
     var years = [L.y-2, L.y-1, L.y]; var monthly = {};
