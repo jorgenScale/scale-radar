@@ -34,6 +34,12 @@ jobs:
       - name: Hent data
         run: python scripts/fetch_data.py
 
+      - name: Hent fiskehelse fra BarentsWatch (daglig, krever BW-secrets)
+        env:
+          BW_CLIENT_ID: ${{ secrets.BW_CLIENT_ID }}
+          BW_CLIENT_SECRET: ${{ secrets.BW_CLIENT_SECRET }}
+        run: python scripts/fetch_fishhealth.py
+
       - name: Send e-postvarsler (kjører bare når SMTP-secrets er satt)
         if: env.SMTP_HOST != ''
         run: python scripts/notify.py
