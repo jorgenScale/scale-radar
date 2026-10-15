@@ -1715,6 +1715,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
   // ---------- fiskehelse (BarentsWatch)
   var FISH = { loaded:false, idx:null, agg:null, status:null, map:null, layer:null, bounds:null, markers:{}, selected:null, expanded:null, chips:{}, range:52 };
   var PO_NAMES = {1:'Svenskegrensen–Jæren',2:'Ryfylke',3:'Karmøy–Sotra',4:'Nordhordland–Stad',5:'Stad–Hustadvika',6:'Nordmøre og Sør-Trøndelag',7:'Nord-Trøndelag med Bindal',8:'Helgeland–Bodø',9:'Vestfjorden og Vesterålen',10:'Andøya–Senja',11:'Kvaløya–Loppa',12:'Vest-Finnmark',13:'Øst-Finnmark'};
+  var DIS_LABEL = {'PANKREASSYKDOM':'PD','INFEKSIOES_LAKSEANEMI':'ILA','FRANCISELLOSE':'Francisellose','BAKTERIELL_NYRESYKE':'BKD','INFEKSIOES_PANKREASNEKROSE':'IPN','HJERTE_OG_SKJELETTMUSKELBETENNELSE':'HSMB','KARDIOMYOPATISYNDROM':'CMS','GJELLESYKDOM':'Gjellesykdom','VIRAL_HEMORAGISK_SEPTIKEMI':'VHS','INFEKSIOES_HEMATOPOETISK_NEKROSE':'IHN','FURUNKULOSE':'Furunkulose','YERSINIOSE':'Yersiniose','PASTEURELLOSE':'Pasteurellose'};
+  function disLabel(code){ if(!code) return ''; if(DIS_LABEL[code]) return DIS_LABEL[code]; var t = String(code).replace(/_/g,' ').toLowerCase(); return t.charAt(0).toUpperCase()+t.slice(1); }
+  function disList(l){ return (l.dis||[]).map(disLabel); }
   function liceClass(afl){ if(afl == null) return 'none'; return afl > 0.5 ? 'r' : (afl >= 0.2 ? 'y' : 'g'); }
   function liceColor(l){ var c = l.fallow ? '#7C878E' : (!l.reported || l.afl == null ? '#B8C2CA' : (l.afl > 0.5 ? '#C23B3B' : (l.afl >= 0.2 ? '#FCA51A' : '#46B978'))); return c; }
   function weekLabel(w){ if(!w) return ''; var m = /^(\d{4})-(\d{2})$/.exec(w); return m ? 'uke '+parseInt(m[2],10)+' '+m[1] : w; }
@@ -1760,7 +1763,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   var FISH_ORDER = ['Over 0,5','0,2–0,5','Under 0,2','Ikke rapportert','Brakklagt'];
   var FISH_COL = {'Over 0,5':'#C23B3B','0,2–0,5':'#FCA51A','Under 0,2':'#46B978','Ikke rapportert':'#B8C2CA','Brakklagt':'#7C878E'};
   function renderFish(){
-    var idx = FISH.idx; var all = (idx.localities || []).filter(function(l){ return !l.land && !l.slaughter; });
+    var idx = FISH.idx; var all = (idx.localities || []).filter(function(l){ return !l.land && !l.slaughter && l.salmonoid; });
     $('fish-meta').textContent = 'Kilde: BarentsWatch (Mattilsynet, Fiskeridirektoratet, Veterinærinstituttet) · '+esc(weekLabel(idx.latest_week))+' · oppdatert '+dshort(idx.updated_at);
     FISH_ORDER.forEach(function(k){ if(!(k in FISH.chips)) FISH.chips[k] = true; });
     ['PD','ILA','Behandlet 12 uker'].forEach(function(k){ if(!(k in FISH.chips)) FISH.chips[k] = false; });
@@ -1782,16 +1785,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
     renderFishAgg();
   }
   function applyFish(){
-    var all = (FISH.idx.localities || []).filter(function(l){ return !l.land && !l.slaughter; });
+    var all = (FISH.idx.localities || []).filter(function(l){ return !l.land && !l.slaughter && l.salmonoid; });
     var q = ($('fh-q').value||'').trim().toLowerCase(), po = $('fh-po').value, org = $('fh-org').value, mun = $('fh-mun').value, sort = $('fh-sort').value;
     // chips
     var chips = $('fish-status'); chips.innerHTML = '';
     FISH_ORDER.forEach(function(k){ var n = all.filter(function(l){ return fishStatusOf(l)===k; }).length; var b = document.createElement('button'); b.type='button'; b.className='chip'; b.setAttribute('aria-pressed', String(FISH.chips[k])); b.style.setProperty('--c', FISH_COL[k]); b.innerHTML='<i></i>'+esc(k)+' <b>'+n+'</b>'; b.addEventListener('click', function(){ FISH.chips[k]=!FISH.chips[k]; applyFish(); }); chips.appendChild(b); });
-    [['PD','#8E44AD','Lokaliteter med aktiv PD-registrering'],['ILA','#5B2C6F','Lokaliteter med aktiv ILA-registrering'],['Behandlet 12 uker','#0E7C9E','Minst én avlusing siste 12 uker']].forEach(function(d){ var k=d[0]; var n = all.filter(function(l){ return k==='Behandlet 12 uker' ? l.treat12>0 : (l.dis||[]).indexOf(k)>=0; }).length; var b=document.createElement('button'); b.type='button'; b.className='chip opt'; b.title=d[2]; b.setAttribute('aria-pressed', String(FISH.chips[k])); b.style.setProperty('--c', d[1]); b.innerHTML='<i></i>'+esc(k)+' <b>'+n+'</b>'; b.addEventListener('click', function(){ FISH.chips[k]=!FISH.chips[k]; applyFish(); }); chips.appendChild(b); });
+    [['PD','#8E44AD','Lokaliteter med aktiv PD-registrering'],['ILA','#5B2C6F','Lokaliteter med aktiv ILA-registrering'],['Behandlet 12 uker','#0E7C9E','Minst én avlusing siste 12 uker']].forEach(function(d){ var k=d[0]; var n = all.filter(function(l){ return k==='Behandlet 12 uker' ? l.treat12>0 : disList(l).indexOf(k)>=0; }).length; var b=document.createElement('button'); b.type='button'; b.className='chip opt'; b.title=d[2]; b.setAttribute('aria-pressed', String(FISH.chips[k])); b.style.setProperty('--c', d[1]); b.innerHTML='<i></i>'+esc(k)+' <b>'+n+'</b>'; b.addEventListener('click', function(){ FISH.chips[k]=!FISH.chips[k]; applyFish(); }); chips.appendChild(b); });
     var shown = all.filter(function(l){
       if(!FISH.chips[fishStatusOf(l)]) return false;
-      if(FISH.chips['PD'] && (l.dis||[]).indexOf('PD')<0) return false;
-      if(FISH.chips['ILA'] && (l.dis||[]).indexOf('ILA')<0) return false;
+      if(FISH.chips['PD'] && disList(l).indexOf('PD')<0) return false;
+      if(FISH.chips['ILA'] && disList(l).indexOf('ILA')<0) return false;
       if(FISH.chips['Behandlet 12 uker'] && !(l.treat12>0)) return false;
       if(po && String(l.po)!==po) return false;
       if(org && l.org!==org) return false;
@@ -1806,7 +1809,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     var tb = $('fish-table').querySelector('tbody');
     tb.innerHTML = shown.slice(0, 400).map(function(l){
       var st = fishStatusOf(l); var tr = (l.afl!=null && l.afl_prev4!=null) ? (l.afl>l.afl_prev4+0.05?'↑':(l.afl<l.afl_prev4-0.05?'↓':'→')) : '';
-      var dis = (l.dis||[]).map(function(d){ return '<span class="badge" style="--c:'+(d==='PD'?'#8E44AD':(d==='ILA'?'#5B2C6F':'#5B6B78'))+'">'+esc(d)+'</span>'; }).join(' ');
+      var dis = disList(l).map(function(d){ return '<span class="badge" style="--c:'+(d==='PD'?'#8E44AD':(d==='ILA'?'#5B2C6F':'#5B6B78'))+'">'+esc(d)+'</span>'; }).join(' ');
       var row = '<tr data-no="'+l.no+'" aria-selected="'+(FISH.selected===l.no)+'"><td class="t">'+esc(l.name||l.no)+'<small>'+esc(l.org||'–')+' · lok. '+l.no+'</small></td><td>'+esc(l.mun||'–')+(l.po?'<br><span style="color:var(--ink-2);font-size:.78rem">PO'+l.po+'</span>':'')+'</td><td class="num"><span class="dot" style="background:'+liceColor(l)+'"></span>'+(l.afl!=null?nf(l.afl,2):'–')+'<span class="trend">'+tr+'</span></td><td class="num">'+(l.temp!=null?nf(l.temp,1):'–')+'</td><td><span class="badge" style="--c:'+FISH_COL[st]+(st==='Ikke rapportert'?';color:#333':'')+'">'+esc(st)+'</span> '+dis+'</td><td class="num">'+(l.treat12||0)+'</td><td class="num">'+(l.cap!=null?nf(l.cap,0):'–')+'</td></tr>';
       if(FISH.expanded===l.no) row += '<tr class="det" data-for="'+l.no+'"><td colspan="7" id="fish-det-'+l.no+'"><div style="color:var(--ink-2);font-size:.85rem">Laster lokalitetsdata …</div></td></tr>';
       return row;
@@ -1823,7 +1826,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     if(!FISH.map){ FISH.map = L.map(el, {scrollWheelZoom:false}).setView([65.5,13],4); L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topograatone/default/webmercator/{z}/{y}/{x}.png',{maxZoom:18,attribution:'© Kartverket'}).addTo(FISH.map); FISH.layer = L.layerGroup().addTo(FISH.map); }
     FISH.layer.clearLayers(); FISH.markers = {}; var pts = [];
     shown.forEach(function(l){ if(l.lat==null||l.lon==null) return; var m = L.circleMarker([l.lat,l.lon],{radius: l.afl!=null && l.afl>0.5 ? 7 : 5, color:'#fff', weight:1, fillColor: liceColor(l), fillOpacity:.9});
-      m.bindPopup('<b>'+esc(l.name||l.no)+'</b><br>'+esc(l.org||'')+'<br>'+esc(l.mun||'')+(l.po?' · PO'+l.po:'')+'<br>'+(l.afl!=null?'Voksne hunnlus: <b>'+nf(l.afl,2)+'</b> ('+esc(weekLabel(l.afl_week))+')':(l.fallow?'Brakklagt':'Ikke rapportert'))+(l.temp!=null?' · '+nf(l.temp,1)+' °C':'')+((l.dis||[]).length?'<br>Sykdom: '+esc(l.dis.join(', ')):'')+(l.cap!=null?'<br>MTB '+nf(l.cap,0)+' tonn':'')+'<br><a href="https://www.barentswatch.no/fiskehelse/locality/'+l.no+'" target="_blank" rel="noopener">BarentsWatch ↗</a>');
+      m.bindPopup('<b>'+esc(l.name||l.no)+'</b><br>'+esc(l.org||'')+'<br>'+esc(l.mun||'')+(l.po?' · PO'+l.po:'')+'<br>'+(l.afl!=null?'Voksne hunnlus: <b>'+nf(l.afl,2)+'</b> ('+esc(weekLabel(l.afl_week))+')':(l.fallow?'Brakklagt':'Ikke rapportert'))+(l.temp!=null?' · '+nf(l.temp,1)+' °C':'')+(disList(l).length?'<br>Sykdom: '+esc(disList(l).join(', ')):'')+(l.cap!=null?'<br>MTB '+nf(l.cap,0)+' tonn':'')+'<br><a href="https://www.barentswatch.no/fiskehelse/locality/'+l.no+'" target="_blank" rel="noopener">BarentsWatch ↗</a>');
       m.on('click', function(){ FISH.expanded = l.no; FISH.selected = l.no; applyFish(); var row = document.querySelector('#fish-table tr[data-no="'+l.no+'"]'); if(row) row.scrollIntoView({block:'nearest'}); });
       m.addTo(FISH.layer); FISH.markers[l.no] = m; pts.push([l.lat,l.lon]); });
     empty.hidden = pts.length>0; if(!pts.length) empty.textContent = 'Ingen av de viste lokalitetene har posisjon.';
@@ -1844,7 +1847,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     h += '<div class="sec-h"><span>Lus og behandlinger <span class="range">'+[52,104,260].map(function(w){ return '<button type="button" data-w="'+w+'" aria-pressed="'+(FISH.range===w)+'">'+(w===52?'1 år':(w===104?'2 år':'5 år'))+'</button>'; }).join('')+'</span></span><small>Linje: voksne hunnlus · stiplet: bevegelige · grå: sjøtemperatur · oransje: behandling · grått felt: brakklagt</small></div>';
     h += liceChart(series, det.po);
     var dis = (doc.diseases||[]).slice().sort(function(a,b){ return (b.diagnosisDate||b.suspicionDate||'') > (a.diagnosisDate||a.suspicionDate||'') ? 1 : -1; });
-    if(dis.length){ h += '<div class="sec-h"><span>Sykdomshistorikk</span><small>fra Mattilsynet/Veterinærinstituttet</small></div><table class="dis-tbl"><thead><tr><th>Sykdom</th><th>Subtype</th><th>Status</th><th>Mistanke</th><th>Påvist</th><th>Tømt</th><th>Avsluttet</th></tr></thead><tbody>'+dis.map(function(d){ return '<tr><td>'+esc(d.name||'')+'</td><td>'+esc(d.subType||'')+'</td><td>'+esc(d.status||'')+'</td><td>'+esc(dyear(d.suspicionDate))+'</td><td>'+esc(dyear(d.diagnosisDate))+'</td><td>'+esc(dyear(d.emptiedDate))+'</td><td>'+esc(dyear(d.closureDate))+'</td></tr>'; }).join('')+'</tbody></table>'; }
+    if(dis.length){ h += '<div class="sec-h"><span>Sykdomshistorikk</span><small>fra Mattilsynet/Veterinærinstituttet</small></div><table class="dis-tbl"><thead><tr><th>Sykdom</th><th>Subtype</th><th>Status</th><th>Mistanke</th><th>Påvist</th><th>Tømt</th><th>Avsluttet</th></tr></thead><tbody>'+dis.map(function(d){ return '<tr><td>'+esc(disLabel(d.name))+'</td><td>'+esc(d.subType||'')+'</td><td>'+esc(d.status||'')+'</td><td>'+esc(dyear(d.suspicionDate))+'</td><td>'+esc(dyear(d.diagnosisDate))+'</td><td>'+esc(dyear(d.emptiedDate))+'</td><td>'+esc(dyear(d.closureDate))+'</td></tr>'; }).join('')+'</tbody></table>'; }
     if((det.escapes||[]).length){ h += '<div class="sec-h"><span>Rømminger</span></div><ul class="tl" style="max-height:140px">'+(det.escapes||[]).map(function(e){ return '<li><time>'+esc(dyear(e.date))+'</time><span></span><span>'+esc(e.species||'')+(e.count!=null?' · '+nf(e.count,0)+' fisk':'')+(e.estimated!=null&&e.estimated!==e.count?' (estimert '+nf(e.estimated,0)+')':'')+(e.size?' · '+esc(e.size):'')+'</span></li>'; }).join('')+'</ul>'; }
     h += '<div class="det-foot"><span>'+(det.fetched_at?'Detaljer hentet '+esc(dyear(det.fetched_at)):'Detaljer (PO, MTB, selskap) ikke hentet ennå')+'</span><span><a href="#" data-apps style="color:var(--link)">Søknader for lokalitet '+l.no+' →</a> · <a href="https://www.barentswatch.no/fiskehelse/locality/'+l.no+'" target="_blank" rel="noopener">BarentsWatch ↗</a></span></div>';
     return h;
