@@ -151,13 +151,47 @@ def num(v):
         return None
 
 
-def treat_flags(t: dict | None) -> list[int]:
+_TREAT_SAMPLE_LOGGED = False
+
+
+def treat_flags(t) -> list[int]:
+    """Flagg [medikamentell, ikke-medikamentell, bad, mekanisk, rensefisk, fôr].
+
+    Ukesbildet gir liceTreatments som liste (ett element per behandling); detaljkallet som objekt med
+    booleans/lister per type. Begge håndteres, og ukjente elementer klassifiseres på nøkkelord.
+    """
+    global _TREAT_SAMPLE_LOGGED
+    flags = [0, 0, 0, 0, 0, 0]
     if not t:
-        return [0, 0, 0, 0, 0, 0]
-    def f(k):
-        v = t.get(k)
-        return 1 if (v is True or (isinstance(v, (int, float)) and v > 0) or (isinstance(v, list) and len(v) > 0)) else 0
-    return [f("medicinalTreatments"), f("nonMedicinalTreatments"), f("bathTreatments"), f("mechanicalRemovalTreatment"), f("cleanerFishTreatment"), f("inFeedTreatments")]
+        return flags
+    if isinstance(t, dict):
+        def f(k):
+            v = t.get(k)
+            return 1 if (v is True or (isinstance(v, (int, float)) and v > 0) or (isinstance(v, list) and len(v) > 0)) else 0
+        return [f("medicinalTreatments"), f("nonMedicinalTreatments"), f("bathTreatments"), f("mechanicalRemovalTreatment"), f("cleanerFishTreatment"), f("inFeedTreatments")]
+    if isinstance(t, list):
+        if not _TREAT_SAMPLE_LOGGED:
+            log(f"eksempel på liceTreatments-liste: {json.dumps(t, ensure_ascii=False)[:400]}")
+            _TREAT_SAMPLE_LOGGED = True
+        for e in t:
+            txt = json.dumps(e, ensure_ascii=False).lower() if not isinstance(e, str) else e.lower()
+            hit = False
+            if any(k in txt for k in ("medik", "medic", "legemid", "kjemisk")):
+                flags[0] = 1; hit = True
+            if any(k in txt for k in ("bad", "bath")):
+                flags[2] = 1; hit = True
+            if any(k in txt for k in ("mekan", "mechan", "spyl", "børst", "termisk", "thermal", "ferskvann", "freshwater", "hydrolicer", "thermolicer", "optilicer")):
+                flags[3] = 1; hit = True
+            if any(k in txt for k in ("rensefisk", "cleaner", "rognkjeks", "leppefisk")):
+                flags[4] = 1; hit = True
+            if any(k in txt for k in ("fôr", "for", "feed", "slice", "emamectin")) and "ferskvann" not in txt:
+                flags[5] = 1; hit = True
+            if flags[3] or flags[2] and not flags[0]:
+                flags[1] = 1
+            if not hit:
+                flags[1] = 1
+        return flags
+    return flags
 
 
 def ingest_week(items: list[dict], y: int, w: int, docs: dict) -> int:
@@ -234,7 +268,7 @@ def main() -> int:
         state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
         state = {"weeks_done": [], "details": {}, "last_run": None}
-    if state.get("last_run"):
+    if state.get("last_run") and state.get("weeks_done"):
         try:
             last = datetime.strptime(state["last_run"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
             if (datetime.now(timezone.utc) - last).total_seconds() < MIN_HOURS_BETWEEN_RUNS * 3600 and not os.environ.get("BW_FORCE"):
