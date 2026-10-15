@@ -42,6 +42,7 @@ DETAIL_REFRESH_DAYS = float(CONFIG.get("details_refresh_days", 30))
 PAUSE = float(CONFIG.get("pause_seconds", 0.6))
 MIN_HOURS_BETWEEN_RUNS = float(CONFIG.get("min_hours_between_runs", 20))
 LIMIT = 0.5          # grense for voksne hunnlus per fisk
+INDEX_VERSION = 2    # bump når indeksens felt endres (2 = syklusdata per lokalitet)
 SPRING_LIMIT = 0.2   # vårgrense (uke 16–21 sør for PO8, uke 21–26 fra PO8 og nordover)
 
 
@@ -273,6 +274,11 @@ def main() -> int:
             last = datetime.strptime(state["last_run"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
             if (datetime.now(timezone.utc) - last).total_seconds() < MIN_HOURS_BETWEEN_RUNS * 3600 and not os.environ.get("BW_FORCE"):
                 log(f"sist kjørt {state['last_run']} – venter (min {MIN_HOURS_BETWEEN_RUNS} t mellom kjøringer)")
+                try:
+                    if json.loads(INDEX_PATH.read_text(encoding="utf-8")).get("v") != INDEX_VERSION:
+                        build_index_and_agg(iso_weeks_back(HISTORY_WEEKS))   # ny indeksstruktur – bygg uten API-kall
+                except Exception as exc:  # noqa: BLE001
+                    log(f"indeks-ombygging feilet: {exc}")
                 return 0
         except ValueError:
             pass
@@ -400,6 +406,46 @@ def main() -> int:
     return 0
 
 
+def cycle_stats(series: list[list]) -> dict | None:
+    """Produksjonssyklus fra brakkleggingsflagget: nåværende tilstand (aktiv/brakklagt), hvor lenge,
+    og medianlengder for tidligere sykluser og brakkleggingsperioder. Korte brakkleggingsrunder (< 3 uker)
+    regnes som rapporteringshull, ikke tømming."""
+    if not series:
+        return None
+    flags = [1 if s[6] else 0 for s in series]
+    # glatt korte brakkleggingsrunder
+    runs: list[list] = []   # [flag, start_idx, length]
+    for i, f in enumerate(flags):
+        if runs and runs[-1][0] == f:
+            runs[-1][2] += 1
+        else:
+            runs.append([f, i, 1])
+    merged: list[list] = []
+    for r in runs:
+        if r[0] == 1 and r[2] < 3 and merged and merged[-1][0] == 0:
+            merged[-1][2] += r[2]           # kort brakklegging slås inn i aktiv periode
+        elif merged and merged[-1][0] == r[0]:
+            merged[-1][2] += r[2]
+        else:
+            merged.append(list(r))
+    cur = merged[-1]
+    state = "fallow" if cur[0] == 1 else "active"
+    since = series[cur[1]]
+    truncated = cur[1] == 0                 # perioden startet før historikken vi har
+    past = [r for r in merged[:-1] if r[1] != 0]     # første periode er avkortet av historikkvinduet
+    past_fallow = [r[2] for r in past if r[0] == 1]
+    past_active = [r[2] for r in past if r[0] == 0]
+    def med(v):
+        v = sorted(v)
+        return v[len(v) // 2] if v else None
+    prev = merged[-2] if len(merged) >= 2 else None
+    return {
+        "state": state, "since": f"{since[0]}-{since[1]:02d}", "weeks": cur[2], "trunc": truncated,
+        "prev_len": prev[2] if prev else None, "prev_trunc": bool(prev and prev[1] == 0),
+        "med_fallow": med(past_fallow), "med_active": med(past_active), "n_cycles": len(past_active),
+    }
+
+
 def build_index_and_agg(wanted: list[tuple[int, int]]) -> None:
     latest = wanted[0]
     index = []
@@ -425,7 +471,9 @@ def build_index_and_agg(wanted: list[tuple[int, int]]) -> None:
             idx = series.index(last_rep)
             prev = series[idx - 4] if idx >= 4 else None
         afl = last_rep[2] if last_rep else None
+        cyc = cycle_stats(series)
         index.append({
+            "cyc": cyc,
             "no": doc["no"], "name": doc.get("name"), "mun": doc.get("municipality"), "lat": doc.get("lat"), "lon": doc.get("lon"),
             "land": doc.get("isOnLand", False), "slaughter": doc.get("isSlaughterHoldingCage", False), "salmonoid": doc.get("hasSalmonoidLicense", False),
             "po": po, "org": (det.get("organizations") or [{}])[0].get("name") if det.get("organizations") else None,
@@ -472,7 +520,7 @@ def build_index_and_agg(wanted: list[tuple[int, int]]) -> None:
                "avg_temp": round(a["temp_sum"] / a["temp_n"], 1) if a["temp_n"] else None,
                "po": {k: {"n": v["n"], "reported": v["rep"], "avg_afl": round(v["afl_sum"] / v["afl_n"], 3) if v["afl_n"] else None, "over": v["over"], "fallow": v["fallow"], "treat_any": v["treat_any"]} for k, v in a["po"].items()}}
         weeks_out.append(row)
-    INDEX_PATH.write_text(json.dumps({"updated_at": now_iso(), "latest_week": wk(*latest), "localities": index}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    INDEX_PATH.write_text(json.dumps({"v": INDEX_VERSION, "updated_at": now_iso(), "latest_week": wk(*latest), "localities": index}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     AGG_PATH.write_text(json.dumps({"updated_at": now_iso(), "limit": LIMIT, "spring_limit": SPRING_LIMIT, "weeks": weeks_out}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     log(f"indeks: {len(index)} lokaliteter, aggregat: {len(weeks_out)} uker")
 
