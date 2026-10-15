@@ -981,6 +981,99 @@ def fetch_auctions() -> dict:
     rounds.sort(key=lambda r: str(r.get("key")), reverse=True)
     return {"updated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "index_url": index_url, "rounds": rounds}
 
+
+# --------------------------------------------------------------------------- biomassestatistikk (Fiskeridirektoratet)
+BIOMASS_PATH = ROOT / "data" / "biomass.json"
+
+
+def fetch_biomass() -> dict:
+    """Henter biomassestatistikk per produksjonsområde og aggregerer til måned × PO × art.
+
+    Kildefelt (per rad = år, måned, PO, art, utsettsår): BEHFISK_STK, BIOMASSE_KG, UTSETT_SMOLT_STK,
+    UTSETT_SMOLT_STK_MINDRE_ENN_500G, FORFORBRUK_KG, UTTAK_STK, UTTAK_RUNDVEKT_KG, DØDFISK_STK, RØMMING_STK.
+    Rader uten PO (PO_KODE "(null)") holdes utenfor PO-tallene men med i nasjonale summer.
+    """
+    import requests  # type: ignore
+
+    bcfg = CONFIG.get("biomass", {})
+    url = bcfg["url"]
+    refresh_h = float(bcfg.get("refresh_hours", 12))
+    now = datetime.now(timezone.utc)
+    try:
+        prev = json.loads(BIOMASS_PATH.read_text(encoding="utf-8"))
+        fetched = datetime.strptime(prev["fetched_at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        if (now - fetched).total_seconds() < refresh_h * 3600:
+            log("biomasse: cache er fersk")
+            return prev
+    except Exception:  # noqa: BLE001
+        prev = None
+
+    r = requests.get(url, timeout=120, headers={"User-Agent": "ScaleRadar/1.0"})
+    r.raise_for_status()
+    j = r.json()
+    rows = j.get("Data") if isinstance(j, dict) else j
+    meta = j.get("Metadata", {}) if isinstance(j, dict) else {}
+
+    def g(row, k):
+        v = row.get(k)
+        try:
+            return float(v) if v not in (None, "", "(null)") else 0.0
+        except (TypeError, ValueError):
+            return 0.0
+
+    # måned × po × art
+    monthly: dict[tuple, dict] = {}
+    cohorts: dict[tuple, dict] = {}       # (po, art, utsettsår) -> beholdning i siste måned
+    latest_ym = None
+    for row in rows:
+        y, m = int(row["ÅR"]), int(row["MÅNED_KODE"])
+        po_raw = row.get("PO_KODE")
+        po = int(po_raw) if str(po_raw).isdigit() else 0
+        art = "laks" if str(row.get("ARTSID", "")).upper().startswith("LAKS") else "orret"
+        key = (y, m, po, art)
+        a = monthly.setdefault(key, {"beh_stk": 0.0, "biomasse_kg": 0.0, "utsett_smolt": 0.0, "utsett_u500": 0.0, "for_kg": 0.0, "uttak_stk": 0.0, "uttak_kg": 0.0, "dod_stk": 0.0, "romming_stk": 0.0})
+        a["beh_stk"] += g(row, "BEHFISK_STK"); a["biomasse_kg"] += g(row, "BIOMASSE_KG")
+        a["utsett_smolt"] += g(row, "UTSETT_SMOLT_STK"); a["utsett_u500"] += g(row, "UTSETT_SMOLT_STK_MINDRE_ENN_500G")
+        a["for_kg"] += g(row, "FORFORBRUK_KG"); a["uttak_stk"] += g(row, "UTTAK_STK"); a["uttak_kg"] += g(row, "UTTAK_RUNDVEKT_KG")
+        a["dod_stk"] += g(row, "DØDFISK_STK"); a["romming_stk"] += g(row, "RØMMING_STK")
+        ym = (y, m)
+        if latest_ym is None or ym > latest_ym:
+            latest_ym = ym
+    # kohorter (beholdning per utsettsår) for siste måned
+    for row in rows:
+        if (int(row["ÅR"]), int(row["MÅNED_KODE"])) != latest_ym:
+            continue
+        po_raw = row.get("PO_KODE"); po = int(po_raw) if str(po_raw).isdigit() else 0
+        art = "laks" if str(row.get("ARTSID", "")).upper().startswith("LAKS") else "orret"
+        uy = row.get("UTSETTSÅR")
+        if uy in (None, "", "(null)"):
+            continue
+        c = cohorts.setdefault((po, art, int(uy)), {"beh_stk": 0.0, "biomasse_kg": 0.0})
+        c["beh_stk"] += g(row, "BEHFISK_STK"); c["biomasse_kg"] += g(row, "BIOMASSE_KG")
+
+    def rnd(v, d=0):
+        return round(v, d) if d else int(round(v))
+
+    out_rows = []
+    for (y, m, po, art), a in sorted(monthly.items()):
+        out_rows.append({"y": y, "m": m, "po": po, "art": art,
+                         "beh_stk": rnd(a["beh_stk"]), "biomasse_t": rnd(a["biomasse_kg"] / 1000),
+                         "utsett_smolt": rnd(a["utsett_smolt"]), "utsett_u500": rnd(a["utsett_u500"]),
+                         "for_t": rnd(a["for_kg"] / 1000), "uttak_stk": rnd(a["uttak_stk"]), "uttak_t": rnd(a["uttak_kg"] / 1000),
+                         "dod_stk": rnd(a["dod_stk"]), "romming_stk": rnd(a["romming_stk"])})
+    out_cohorts = [{"po": po, "art": art, "utsettsaar": uy, "beh_stk": rnd(c["beh_stk"]), "biomasse_t": rnd(c["biomasse_kg"] / 1000)} for (po, art, uy), c in sorted(cohorts.items())]
+    po_names = {}
+    for row in rows:
+        if str(row.get("PO_KODE")).isdigit():
+            po_names[int(row["PO_KODE"])] = row.get("PO_NAVN")
+    out = {"fetched_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "source_updated": meta.get("Oppdatert"), "source_url": url,
+           "page_url": bcfg.get("page_url"), "latest": {"y": latest_ym[0], "m": latest_ym[1]} if latest_ym else None,
+           "po_names": po_names, "rows": out_rows, "cohorts": out_cohorts,
+           "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."}
+    BIOMASS_PATH.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    log(f"biomasse: {len(rows)} kilderader -> {len(out_rows)} måned×PO×art, siste måned {latest_ym}, kilde oppdatert {meta.get('Oppdatert')}")
+    return {k: v for k, v in out.items() if k not in ("rows", "cohorts")}
+
 # --------------------------------------------------------------------------- endringssporing + RSS
 CHANGES_PATH = ROOT / "data" / "changes.json"
 FEEDS_DIR = ROOT / "data" / "feeds"
@@ -1169,6 +1262,13 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001
         log(f"endringer: FEIL {exc}")
         data["changes"] = dict(PREVIOUS.get("changes", {}), error=str(exc)[:160])
+
+    if CONFIG.get("biomass", {}).get("enabled", True):
+        try:
+            data["biomass"] = fetch_biomass()
+        except Exception as exc:  # noqa: BLE001
+            log(f"biomasse: FEIL {exc}")
+            data["biomass"] = dict(PREVIOUS.get("biomass", {}), error=str(exc)[:160])
 
     if CONFIG.get("auctions", {}).get("enabled", True):
         try:

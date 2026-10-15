@@ -82,6 +82,14 @@ kjøringer. Detaljer per lokalitet hentes 150 per kjøring og friskes opp måned
 per 20 timer (sett `BW_FORCE=1` for å overstyre). Filer: `data/fishhealth/index.json` (kart/liste),
 `agg.json` (nasjonalt og per PO per uke), `loc/<lokalitetsnr>.json` (serie per lokalitet), `status.json`.
 
+## Smolt og biomasse (Fiskeridirektoratet)
+
+`fetch_biomass()` i `scripts/fetch_data.py` henter Fiskeridirektoratets biomassestatistikk per produksjonsområde
+(register.fiskeridir.no, JSON) og aggregerer til måned × produksjonsområde × art i `data/biomass.json`: utsett
+(to mål: registrert smolt og alle fisk < 500 g), beholdning (antall og tonn), fôrforbruk, uttak til slakt, dødfisk og
+rømming, pluss beholdning per utsettsår (årsklasser) ved siste månedsslutt. Oppdateres hver 12. time; kilden
+oppdateres månedlig. Ingen nøkler nødvendig.
+
 ## Følg en søker (abonnement)
 
 Skriptet sporer endringer (ny søknad, statusendring, utfall, endret MTB) og publiserer dem som RSS:

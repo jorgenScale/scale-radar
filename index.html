@@ -986,6 +986,23 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .range button[aria-pressed="true"]{color:var(--head);border-color:var(--surface);font-weight:600}
 .dis-tbl td{font-size:.82rem}
 .po-tbl td,.po-tbl th{font-size:.82rem}
+/* Smolt og biomasse */
+.bio{display:grid;gap:1.25rem}
+.bchart text{font-family:inherit;font-size:11px;fill:var(--ink-2)}
+.bchart .grid{stroke:var(--line)}
+.bchart .bar{fill:var(--surface)}
+.bchart .bar.prev{fill:var(--sky)}
+.bchart .bar.cur{fill:var(--deep)}
+:root[data-theme="dark"] .bchart .bar.cur{fill:var(--lightblue)}
+.bchart .line{fill:none;stroke:var(--deep);stroke-width:2}
+:root[data-theme="dark"] .bchart .line{stroke:var(--lightblue)}
+.bchart .line2{fill:none;stroke:var(--surface);stroke-width:1.5;stroke-dasharray:4 3}
+.bchart .lbl{fill:var(--ink);font-weight:600}
+.bio-tbl td,.bio-tbl th{font-size:.84rem}
+.bio-tbl td.num .sp{display:inline-block;height:6px;background:var(--surface);border-radius:3px;vertical-align:middle;margin-left:.4rem;opacity:.7}
+.seg{display:inline-flex;gap:.2rem;margin-left:.4rem}
+.seg button{font:inherit;font-size:.78rem;padding:.2rem .6rem;border:1px solid var(--line);background:var(--panel);color:var(--ink-2);border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{color:var(--head);border-color:var(--surface);font-weight:600;background:var(--tint)}
 .process-details{padding:0}
 .process-details > summary{cursor:pointer;padding:.85rem 1rem;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center}
 .process-details > summary::-webkit-details-marker{display:none}
@@ -1014,6 +1031,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <button role="tab" aria-selected="false" data-view="apps">Lokalitetssøknader</button>
       <button role="tab" aria-selected="false" data-view="auctions">Auksjoner</button>
       <button role="tab" aria-selected="false" data-view="fish">Fiskehelse</button>
+      <button role="tab" aria-selected="false" data-view="bio">Smolt og biomasse</button>
     </nav>
     <div class="stamp" id="stamp"></div>
   </div>
@@ -1034,6 +1052,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <section class="panel" aria-labelledby="lic-h">
         <header><h2 id="lic-h">Konsesjoner og kapasitet</h2><div class="meta" id="lic-meta"></div></header>
         <div class="body" id="lic-body"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="bio-card-h">
+        <header><h2 id="bio-card-h">Smolt og biomasse</h2><div class="meta" id="bio-card-meta"></div></header>
+        <div class="body" id="bio-card-body"></div>
       </section>
 
       <section class="panel" aria-labelledby="fish-card-h">
@@ -1268,6 +1291,37 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </main>
 </div>
 
+<!-- ============================ SMOLT OG BIOMASSE ============================ -->
+<div id="view-bio" hidden>
+  <section class="pulse" aria-label="Smolt og biomasse"><div class="wrap" id="bio-pulse"></div></section>
+  <main class="bio">
+    <section class="panel" aria-labelledby="bio-h">
+      <header><h2 id="bio-h">Utsett av smolt</h2><div class="meta" id="bio-meta">Kilde: Fiskeridirektoratets biomassestatistikk per produksjonsområde</div></header>
+      <div class="body">
+        <div class="apps-bar" style="margin-bottom:.6rem"><span>Art <span class="seg" id="bio-art"><button type="button" data-v="laks" aria-pressed="true">Laks</button><button type="button" data-v="orret" aria-pressed="false">Regnbueørret</button><button type="button" data-v="alle" aria-pressed="false">Begge</button></span> &nbsp; Mål <span class="seg" id="bio-measure"><button type="button" data-v="utsett_u500" aria-pressed="true" title="Alle fisk satt ut under 500 g – Fiskeridirektoratets vanligste mål, det Havforskningsinstituttet bruker">Utsett &lt; 500 g</button><button type="button" data-v="utsett_smolt" aria-pressed="false" title="Fisk registrert som smolt ved utsett">Registrert smolt</button></span></span><span id="bio-links"></span></div>
+        <div class="apps-grid" style="grid-template-columns:minmax(0,7fr) minmax(0,5fr)">
+          <div><div class="sec-h" style="margin-top:0"><span>Måned for måned, siste tre år</span><small>mill. fisk · mørk = inneværende år</small></div><div id="bio-monthly"></div></div>
+          <div><div class="sec-h" style="margin-top:0"><span>Per år, hele landet</span><small>mill. fisk</small></div><div id="bio-yearly"></div></div>
+        </div>
+        <div class="sec-h"><span>Per produksjonsområde</span><small id="bio-po-sub">mill. fisk per år · siste år er hittil i år</small></div>
+        <div class="scroll" id="bio-po"></div>
+        <p class="foot" id="bio-foot"></p>
+      </div>
+    </section>
+    <section class="panel" aria-labelledby="bio2-h">
+      <header><h2 id="bio2-h">Stående biomasse, uttak og svinn</h2><div class="meta" id="bio2-meta"></div></header>
+      <div class="body">
+        <div class="apps-grid" style="grid-template-columns:minmax(0,7fr) minmax(0,5fr)">
+          <div><div class="sec-h" style="margin-top:0"><span>Stående biomasse ved månedsslutt</span><small>1 000 tonn · heltrukket laks, stiplet regnbueørret</small></div><div id="bio-biomass"></div></div>
+          <div><div class="sec-h" style="margin-top:0"><span>Siste 12 måneder per produksjonsområde</span><small>biomasse ved siste månedsslutt, uttak og dødfisk</small></div><div class="scroll" id="bio-po2"></div></div>
+        </div>
+        <div class="sec-h"><span>Årsklasser i sjøen nå</span><small>beholdning per utsettsår ved siste månedsslutt – viser hvor mye fisk som nærmer seg slakt og hvor utsettene har skjedd</small></div>
+        <div class="scroll" id="bio-cohort"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
 <!-- ============================ AUKSJONER ============================ -->
 <div id="view-auctions" hidden>
   <main class="auc">
@@ -1321,6 +1375,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('view-apps').hidden = v !== 'apps';
     $('view-auctions').hidden = v !== 'auctions';
     $('view-fish').hidden = v !== 'fish';
+    $('view-bio').hidden = v !== 'bio';
+    if(v === 'bio'){ window.scrollTo(0,0); if(!BIO.loaded) loadBio(); }
     if(v === 'fish'){ window.scrollTo(0,0); if(FISH.map){ setTimeout(function(){ FISH.map.invalidateSize(); if(FISH.bounds) FISH.map.fitBounds(FISH.bounds, {padding:[20,20]}); }, 50); } if(!FISH.loaded) loadFish(); }
     try { localStorage.setItem('scaleradar.view', v); } catch(e){}
     if(v === 'apps'){ window.scrollTo(0,0); if(APPS.map){ setTimeout(function(){ APPS.map.invalidateSize(); if(APPS.bounds) APPS.map.fitBounds(APPS.bounds, {padding:[20,20]}); }, 50); } }
@@ -1334,7 +1390,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('stamp').innerHTML = (gen ? '<span class="dot'+(stale?' stale':'')+'"></span>Oppdatert <b>'+esc(dlong(d.generated_at))+'</b>' : 'Ingen data') +
       '<br>' + (d.mode === 'live' ? 'Hentes automatisk hver time' : 'Øyeblikksbilde – oppdateres manuelt');
 
-    renderPulse(d); renderNews(d); renderPrice(d.salmon_price || {}); renderStocks(d.stocks || {}); renderLicences(d.licences || {}, d.applications || {}); AUC.data = d.auctions || {}; buildPurchaseIndex(AUC.data); renderApplications(Object.assign({}, d.applications || {}, {changes: d.changes || {}})); renderAuctions(AUC.data); renderAuctionCard(AUC.data); loadFishSummary();
+    renderPulse(d); renderNews(d); renderPrice(d.salmon_price || {}); renderStocks(d.stocks || {}); renderLicences(d.licences || {}, d.applications || {}); AUC.data = d.auctions || {}; buildPurchaseIndex(AUC.data); renderApplications(Object.assign({}, d.applications || {}, {changes: d.changes || {}})); renderAuctions(AUC.data); renderAuctionCard(AUC.data); loadFishSummary(); loadBioSummary();
   }
 
   function renderPulse(d){
@@ -1896,6 +1952,109 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
   ['fh-q','fh-po','fh-org','fh-mun','fh-sort'].forEach(function(id){ $(id).addEventListener('input', function(){ if(FISH.idx) applyFish(); }); $(id).addEventListener('change', function(){ if(FISH.idx) applyFish(); }); });
   $('fh-reset').addEventListener('click', function(){ $('fh-q').value=''; $('fh-po').value=''; $('fh-org').value=''; $('fh-mun').value=''; $('fh-sort').value='afl'; FISH.chips={}; FISH.selected=null; FISH.expanded=null; if(FISH.idx) renderFish(); });
+  // ---------- smolt og biomasse (Fiskeridirektoratet)
+  var BIO = { loaded:false, data:null, art:'laks', measure:'utsett_u500' };
+  var MND_K = ['jan','feb','mar','apr','mai','jun','jul','aug','sep','okt','nov','des'];
+  function bioRows(){ var d = BIO.data; return (d && d.rows) || []; }
+  function bioFilterArt(r){ return BIO.art === 'alle' || r.art === BIO.art; }
+  function sumBy(rows, keyFn, field){ var m = {}; rows.forEach(function(r){ var k = keyFn(r); m[k] = (m[k]||0) + (r[field]||0); }); return m; }
+  function fmtM(n, d){ return nf((n||0)/1e6, d==null?1:d); }
+  function loadBioSummary(){ fetchJson('data/biomass.json').then(function(d){ BIO.data = d; renderBioCard(d); }).catch(function(){ renderBioCard(null); }); }
+  function renderBioCard(d){
+    var body = $('bio-card-body'); if(!body) return;
+    if(!d || !d.rows){ $('bio-card-meta').textContent = 'Kilde: Fiskeridirektoratet · ikke hentet ennå'; body.innerHTML = '<div class="empty">Biomassestatistikken hentes ved neste automatiske oppdatering.</div>'; return; }
+    $('bio-card-meta').textContent = 'Kilde: Fiskeridirektoratets biomassestatistikk · oppdatert '+esc(d.source_updated||dshort(d.fetched_at));
+    var rows = d.rows.filter(function(r){ return r.art==='laks'; }); var L = d.latest;
+    var ym = function(r){ return r.y*100+r.m; }; var cur = L.y*100+L.m;
+    var last12 = rows.filter(function(r){ var v=ym(r); return v<=cur && v> (L.m>=12? (L.y)*100+0 : (L.y-1)*100+L.m); });
+    var prev12 = rows.filter(function(r){ var v=ym(r); return v<= (L.y-1)*100+L.m && v> (L.y-2)*100+L.m; });
+    var u = function(rs){ return rs.reduce(function(a,r){ return a+(r.utsett_u500||0); },0); };
+    var ytd = rows.filter(function(r){ return r.y===L.y; }); var ytdPrev = rows.filter(function(r){ return r.y===L.y-1 && r.m<=L.m; });
+    var bio = rows.filter(function(r){ return r.y===L.y && r.m===L.m; }).reduce(function(a,r){ return a+(r.biomasse_t||0); },0);
+    var bioPrev = rows.filter(function(r){ return r.y===L.y-1 && r.m===L.m; }).reduce(function(a,r){ return a+(r.biomasse_t||0); },0);
+    var uttak12 = last12.reduce(function(a,r){ return a+(r.uttak_t||0); },0);
+    body.innerHTML = '<div class="k" style="font-size:.78rem;color:var(--ink-2)">Laks · siste måned i statistikken: '+MND_K[L.m-1]+' '+L.y+'</div>' +
+      '<div class="auc-card"><div><div class="v">'+fmtM(u(ytd),0)+' mill.</div><div class="k">smolt satt i sjø hittil i '+L.y+(u(ytdPrev)?' ('+(u(ytd)>=u(ytdPrev)?'+':'')+nf(100*(u(ytd)/u(ytdPrev)-1),0)+' % mot samme periode '+(L.y-1)+')':'')+'</div></div>' +
+      '<div><div class="v">'+nf(bio/1000,0)+' kt</div><div class="k">stående biomasse'+(bioPrev?' ('+(bio>=bioPrev?'+':'')+nf(100*(bio/bioPrev-1),1)+' % mot i fjor)':'')+'</div></div>' +
+      '<div><div class="v">'+nf(uttak12/1000,0)+' kt</div><div class="k">slaktet siste 12 måneder (rundvekt)</div></div></div>' +
+      '<button type="button" class="chip" data-goto="bio" style="opacity:1">Se utsett per område og trender →</button>';
+    var go = body.querySelector('[data-goto]'); if(go) go.addEventListener('click', function(){ showView('bio'); });
+  }
+  function loadBio(){ BIO.loaded = true; if(BIO.data && BIO.data.rows){ renderBio(); return; } fetchJson('data/biomass.json').then(function(d){ BIO.data = d; renderBio(); }).catch(function(){ $('bio-monthly').innerHTML = '<div class="empty">Biomassestatistikken er ikke hentet ennå – kommer ved neste automatiske oppdatering.</div>'; }); }
+  function renderBio(){
+    var d = BIO.data; var L = d.latest; var rows = d.rows.filter(bioFilterArt); var M = BIO.measure;
+    $('bio-meta').textContent = 'Kilde: Fiskeridirektoratets biomassestatistikk per produksjonsområde · kilde oppdatert '+esc(d.source_updated||'')+' · siste måned '+MND_K[L.m-1]+' '+L.y;
+    $('bio-links').innerHTML = '<a href="'+esc(d.page_url||'#')+'" target="_blank" rel="noopener">Fiskeridirektoratet: biomassestatistikk ↗</a>';
+    document.querySelectorAll('#bio-art button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.v===BIO.art)); });
+    document.querySelectorAll('#bio-measure button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.v===BIO.measure)); });
+    // puls
+    var ym = function(r){ return r.y*100+r.m; }; var cur = L.y*100+L.m;
+    var inWin = function(r, endY, endM){ var v = ym(r), e = endY*100+endM, s0 = (endY-1)*100+endM; return v>s0 && v<=e; };
+    var u12 = rows.filter(function(r){ return inWin(r,L.y,L.m); }).reduce(function(a,r){ return a+(r[M]||0); },0);
+    var u12p = rows.filter(function(r){ return inWin(r,L.y-1,L.m); }).reduce(function(a,r){ return a+(r[M]||0); },0);
+    var bio = rows.filter(function(r){ return r.y===L.y&&r.m===L.m; }).reduce(function(a,r){ return a+(r.biomasse_t||0); },0);
+    var beh = rows.filter(function(r){ return r.y===L.y&&r.m===L.m; }).reduce(function(a,r){ return a+(r.beh_stk||0); },0);
+    var uttak12 = rows.filter(function(r){ return inWin(r,L.y,L.m); }).reduce(function(a,r){ return a+(r.uttak_t||0); },0);
+    var dod12 = rows.filter(function(r){ return inWin(r,L.y,L.m); }).reduce(function(a,r){ return a+(r.dod_stk||0); },0);
+    var uttakStk12 = rows.filter(function(r){ return inWin(r,L.y,L.m); }).reduce(function(a,r){ return a+(r.uttak_stk||0); },0);
+    var for12 = rows.filter(function(r){ return inWin(r,L.y,L.m); }).reduce(function(a,r){ return a+(r.for_t||0); },0);
+    $('bio-pulse').innerHTML =
+      '<div class="cell"><div class="k">Smolt satt i sjø siste 12 måneder</div><div class="v">'+fmtM(u12,0)+' <small>mill.</small></div><div class="d">'+(u12p?'<span class="'+(u12>=u12p?'up':'down')+'">'+(u12>=u12p?'+':'')+nf(100*(u12/u12p-1),1)+' %</span> mot forrige 12 måneder ('+fmtM(u12p,0)+' mill.)':'')+'</div></div>' +
+      '<div class="cell"><div class="k">Stående biomasse '+MND_K[L.m-1]+' '+L.y+'</div><div class="v">'+nf(bio/1000,0)+' <small>kt</small></div><div class="d">'+fmtM(beh,0)+' mill. fisk i sjøen · snitt '+(beh?nf(bio*1000/beh,2):'–')+' kg</div></div>' +
+      '<div class="cell"><div class="k">Slaktet siste 12 måneder</div><div class="v">'+nf(uttak12/1000,0)+' <small>kt</small></div><div class="d">rundvekt · fôrforbruk '+nf(for12/1000,0)+' kt</div></div>' +
+      '<div class="cell"><div class="k">Dødfisk siste 12 måneder</div><div class="v">'+fmtM(dod12,0)+' <small>mill.</small></div><div class="d">'+((beh+uttakStk12+dod12)?nf(100*dod12/(beh+uttakStk12+dod12),1)+' % av fisk i sjø, slaktet og død':'')+' · registrert dødfisk i sjø</div></div>';
+    // månedlig (3 år)
+    var years = [L.y-2, L.y-1, L.y]; var monthly = {};
+    rows.forEach(function(r){ if(years.indexOf(r.y)>=0){ monthly[r.y+'-'+r.m] = (monthly[r.y+'-'+r.m]||0) + (r[M]||0); } });
+    var W=760,H=230,Lm=44,R=12,T=14,B=30; var n=36; var vals=[]; years.forEach(function(y){ for(var m=1;m<=12;m++){ vals.push({y:y,m:m,v:(y>L.y||(y===L.y&&m>L.m))?null:(monthly[y+'-'+m]||0)}); } });
+    var max = Math.max(1, Math.max.apply(null, vals.map(function(x){ return x.v||0; }))); var top = Math.ceil(max/1e7)*1e7 || 1e7;
+    var x=function(i){ return Lm + (W-Lm-R)*i/n; }, bw=(W-Lm-R)/n-2; var y=function(v){ return T+(H-T-B)*(1-v/top); };
+    var svg='<svg class="bchart" viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block" role="img" aria-label="Utsett per måned siste tre år">';
+    for(var g=0; g<=top; g+=top/4){ svg+='<line class="grid" x1="'+Lm+'" x2="'+(W-R)+'" y1="'+y(g).toFixed(1)+'" y2="'+y(g).toFixed(1)+'"/><text x="'+(Lm-5)+'" y="'+(y(g)+4).toFixed(1)+'" text-anchor="end">'+nf(g/1e6,0)+'</text>'; }
+    vals.forEach(function(p,i){ if(p.v==null) return; svg+='<rect class="bar '+(p.y===L.y?'cur':(p.y===L.y-1?'':'prev'))+'" x="'+(x(i)+1).toFixed(1)+'" y="'+y(p.v).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(y(0)-y(p.v)).toFixed(1)+'"><title>'+MND_K[p.m-1]+' '+p.y+': '+fmtM(p.v)+' mill.</title></rect>'; if(p.m===1||i===0) svg+='<text x="'+x(i).toFixed(1)+'" y="'+(H-10)+'">'+p.y+'</text>'; });
+    svg+='</svg>';
+    $('bio-monthly').innerHTML = svg;
+    // årlig (nasjonalt)
+    var yearly = sumBy(rows, function(r){ return r.y; }, M); var ys = Object.keys(yearly).map(Number).sort(); ys = ys.filter(function(yy){ return yy>=2018; });
+    var W2=440,H2=230,L2=44,R2=12,T2=14,B2=30; var top2 = Math.ceil(Math.max.apply(null, ys.map(function(yy){ return yearly[yy]; }))/5e7)*5e7 || 5e7; var bw2=(W2-L2-R2)/ys.length-8;
+    var svg2='<svg class="bchart" viewBox="0 0 '+W2+' '+H2+'" style="width:100%;height:auto;display:block" role="img" aria-label="Utsett per år">';
+    for(var g2=0; g2<=top2; g2+=top2/4){ var yy2=T2+(H2-T2-B2)*(1-g2/top2); svg2+='<line class="grid" x1="'+L2+'" x2="'+(W2-R2)+'" y1="'+yy2.toFixed(1)+'" y2="'+yy2.toFixed(1)+'"/><text x="'+(L2-5)+'" y="'+(yy2+4).toFixed(1)+'" text-anchor="end">'+nf(g2/1e6,0)+'</text>'; }
+    ys.forEach(function(yy,i){ var v=yearly[yy]; var xx=L2+(W2-L2-R2)*(i+0.5)/ys.length - bw2/2; var yv=T2+(H2-T2-B2)*(1-v/top2); svg2+='<rect class="bar '+(yy===L.y?'cur':'')+'" x="'+xx.toFixed(1)+'" y="'+yv.toFixed(1)+'" width="'+bw2.toFixed(1)+'" height="'+((T2+(H2-T2-B2))-yv).toFixed(1)+'"'+(yy===L.y?' opacity=".7"':'')+'/><text class="lbl" x="'+(xx+bw2/2).toFixed(1)+'" y="'+(yv-5).toFixed(1)+'" text-anchor="middle">'+fmtM(v,0)+'</text><text x="'+(xx+bw2/2).toFixed(1)+'" y="'+(H2-10)+'" text-anchor="middle">'+yy+(yy===L.y?'*':'')+'</text>'; });
+    svg2+='</svg>';
+    $('bio-yearly').innerHTML = svg2 + '<p class="foot">* hittil i år til og med '+MND_K[L.m-1]+'. Nasjonale tall inkluderer fisk uten produksjonsområde.</p>';
+    // per PO tabell
+    var poYears = ys.slice(-5); var byPo = {};
+    rows.forEach(function(r){ if(r.po && poYears.indexOf(r.y)>=0){ byPo[r.po] = byPo[r.po]||{}; byPo[r.po][r.y] = (byPo[r.po][r.y]||0)+(r[M]||0); } });
+    var pos = Object.keys(byPo).map(Number).sort(function(a,b){ return a-b; }); var maxPo = Math.max.apply(null, pos.map(function(p){ return Math.max.apply(null, poYears.map(function(yy){ return byPo[p][yy]||0; })); }));
+    $('bio-po').innerHTML = '<table class="bio-tbl"><thead><tr><th>Produksjonsområde</th>'+poYears.map(function(yy){ return '<th class="num">'+yy+(yy===L.y?'*':'')+'</th>'; }).join('')+'<th class="num">Endring '+(L.y-1)+' vs '+(L.y-2)+'</th></tr></thead><tbody>'+pos.map(function(p){ var r=byPo[p]; var a=r[L.y-1]||0, b=r[L.y-2]||0; return '<tr><td>PO'+p+' '+esc((d.po_names||{})[p]||PO_NAMES[p]||'')+'</td>'+poYears.map(function(yy){ var v=r[yy]||0; return '<td class="num">'+fmtM(v,1)+(yy===L.y-1?'<span class="sp" style="width:'+Math.round(60*v/maxPo)+'px"></span>':'')+'</td>'; }).join('')+'<td class="num '+(b&&a>=b?'up':(b?'down':''))+'">'+(b?(a>=b?'+':'')+nf(100*(a/b-1),0)+' %':'–')+'</td></tr>'; }).join('')+'</tbody></table>';
+    $('bio-foot').textContent = (d.note||'') + ' Tallene rapporteres månedlig av oppdretterne til Fiskeridirektoratet og kan justeres i ettertid.';
+    renderBio2();
+  }
+  function renderBio2(){
+    var d = BIO.data; var L = d.latest; var rows = d.rows;
+    $('bio2-meta').textContent = 'Siste månedsslutt: '+MND_K[L.m-1]+' '+L.y;
+    // biomasse-serie 5 år, laks og ørret nasjonalt
+    var ser = {}; rows.forEach(function(r){ if(r.y >= L.y-5){ var k=r.y+'-'+r.m; ser[k]=ser[k]||{laks:0,orret:0}; ser[k][r.art]+= (r.biomasse_t||0); } });
+    var keys = Object.keys(ser).sort(function(a,b){ var A=a.split('-').map(Number), B=b.split('-').map(Number); return (A[0]*100+A[1])-(B[0]*100+B[1]); });
+    var W=760,H=230,Lm=48,R=12,T=14,B=30; var max=Math.max.apply(null, keys.map(function(k){ return ser[k].laks; })); var top=Math.ceil(max/100000)*100000||100000;
+    var x=function(i){ return Lm+(W-Lm-R)*(keys.length===1?0.5:i/(keys.length-1)); }, y=function(v){ return T+(H-T-B)*(1-v/top); };
+    var svg='<svg class="bchart" viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block" role="img" aria-label="Stående biomasse per måned">';
+    for(var g=0; g<=top; g+=top/4){ svg+='<line class="grid" x1="'+Lm+'" x2="'+(W-R)+'" y1="'+y(g).toFixed(1)+'" y2="'+y(g).toFixed(1)+'"/><text x="'+(Lm-5)+'" y="'+(y(g)+4).toFixed(1)+'" text-anchor="end">'+nf(g/1000,0)+'</text>'; }
+    svg+='<polyline class="line" points="'+keys.map(function(k,i){ return x(i).toFixed(1)+','+y(ser[k].laks).toFixed(1); }).join(' ')+'"/>';
+    svg+='<polyline class="line2" points="'+keys.map(function(k,i){ return x(i).toFixed(1)+','+y(ser[k].orret).toFixed(1); }).join(' ')+'"/>';
+    keys.forEach(function(k,i){ if(k.split('-')[1]==='1') svg+='<text x="'+x(i).toFixed(1)+'" y="'+(H-10)+'" text-anchor="middle">'+k.split('-')[0]+'</text>'; });
+    svg+='</svg>'; $('bio-biomass').innerHTML = svg;
+    // per PO siste 12 mnd
+    var ym=function(r){ return r.y*100+r.m; }; var cur=L.y*100+L.m, start=(L.y-1)*100+L.m; var byPo={};
+    rows.forEach(function(r){ if(!r.po) return; var v=ym(r); byPo[r.po]=byPo[r.po]||{bio:0,uttak:0,dod:0,beh:0}; if(v===cur){ byPo[r.po].bio+=(r.biomasse_t||0); byPo[r.po].beh+=(r.beh_stk||0); } if(v>start&&v<=cur){ byPo[r.po].uttak+=(r.uttak_t||0); byPo[r.po].dod+=(r.dod_stk||0); } });
+    var pos=Object.keys(byPo).map(Number).sort(function(a,b){ return a-b; });
+    $('bio-po2').innerHTML='<table class="bio-tbl"><thead><tr><th>PO</th><th class="num">Biomasse kt</th><th class="num">Fisk mill.</th><th class="num">Slaktet 12 mnd kt</th><th class="num">Dødfisk 12 mnd mill.</th></tr></thead><tbody>'+pos.map(function(p){ var r=byPo[p]; return '<tr><td>PO'+p+' '+esc((d.po_names||{})[p]||'')+'</td><td class="num">'+nf(r.bio/1000,0)+'</td><td class="num">'+fmtM(r.beh,1)+'</td><td class="num">'+nf(r.uttak/1000,0)+'</td><td class="num">'+fmtM(r.dod,1)+'</td></tr>'; }).join('')+'</tbody></table>';
+    // kohorter
+    var co=(d.cohorts||[]).filter(function(c){ return c.art==='laks' && c.po; }); var yrs=[...new Set(co.map(function(c){ return c.utsettsaar; }))].sort().slice(-4); var pos2=[...new Set(co.map(function(c){ return c.po; }))].sort(function(a,b){ return a-b; });
+    $('bio-cohort').innerHTML='<table class="bio-tbl"><thead><tr><th>PO (laks)</th>'+yrs.map(function(yy){ return '<th class="num">Utsatt '+yy+'<br><span style="font-weight:400">mill. fisk · kt</span></th>'; }).join('')+'</tr></thead><tbody>'+pos2.map(function(p){ return '<tr><td>PO'+p+' '+esc((d.po_names||{})[p]||'')+'</td>'+yrs.map(function(yy){ var c=co.filter(function(x){ return x.po===p && x.utsettsaar===yy; })[0]; return '<td class="num">'+(c?fmtM(c.beh_stk,1)+' · '+nf(c.biomasse_t/1000,0):'–')+'</td>'; }).join('')+'</tr>'; }).join('')+'</tbody></table><p class="foot">Årsklassen fra i fjor er normalt den som slaktes de neste 6–12 månedene; årets utsett viser hvor nye nøter og merder er tatt i bruk.</p>';
+  }
+  document.querySelectorAll('#bio-art button').forEach(function(b){ b.addEventListener('click', function(){ BIO.art = b.dataset.v; if(BIO.data) renderBio(); }); });
+  document.querySelectorAll('#bio-measure button').forEach(function(b){ b.addEventListener('click', function(){ BIO.measure = b.dataset.v; if(BIO.data) renderBio(); }); });
   function renderSubscribe(applicant, feeds){
     var box = $('apps-sub');
     if(!applicant || !feeds.applicant_base){ box.hidden = true; box.innerHTML = ''; return; }
@@ -1936,7 +2095,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   var seed = {}; try { seed = JSON.parse($('seed').textContent || '{}'); } catch(e){}
   function boot(){
     var v = null; try { v = localStorage.getItem('scaleradar.view'); } catch(e){}
-    showView(['apps','auctions','fish'].indexOf(v) >= 0 ? v : 'radar');
+    showView(['apps','auctions','fish','bio'].indexOf(v) >= 0 ? v : 'radar');
     fetch('data/data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(){ render(seed); });

@@ -241,5 +241,12 @@
     "details_refresh_days": 30,
     "pause_seconds": 0.6,
     "min_hours_between_runs": 20
+  },
+  "biomass": {
+    "_comment": "Fiskeridirektoratets biomassestatistikk per produksjonsområde (register.fiskeridir.no). Månedlig: utsett, beholdning, fôr, uttak, dødfisk, rømming per PO, art og utsettsår. Hentes maks hver refresh_hours.",
+    "enabled": true,
+    "url": "https://register.fiskeridir.no/biomassestatistikk/BIOSTAT-LAKS-OMR/biostat-total-omr.json",
+    "page_url": "https://www.fiskeridir.no/statistikk-tall-og-analyse/data-og-statistikk-om-akvakultur/biomassestatistikk-etter-produksjonsomrade",
+    "refresh_hours": 12
   }
 }
