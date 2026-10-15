@@ -36,7 +36,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lightblue);outline-
 .brand .product b{font-size:1.25rem;font-weight:700;letter-spacing:.02em}
 .brand .product span{font-size:.8rem;opacity:.7}
 .nav{display:flex;gap:.25rem}
-.nav button{background:none;border:0;color:#fff;font:inherit;font-size:.92rem;padding:.55rem .85rem;border-radius:4px;cursor:pointer;opacity:.8}
+.nav button{background:none;border:0;color:#fff;font:inherit;font-size:.92rem;padding:.55rem .85rem;border-radius:4px;cursor:pointer;opacity:.8;white-space:nowrap}
+.nav{flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:1280px){.nav button{font-size:.84rem;padding:.5rem .6rem}}
 .nav button[aria-selected="true"]{opacity:1;background:rgba(255,255,255,.1);box-shadow:inset 0 -2px 0 var(--fire)}
 .stamp{font-size:.8rem;opacity:.85;text-align:right;line-height:1.35}
 .stamp b{font-weight:600}
@@ -1003,6 +1005,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .seg{display:inline-flex;gap:.2rem;margin-left:.4rem}
 .seg button{font:inherit;font-size:.78rem;padding:.2rem .6rem;border:1px solid var(--line);background:var(--panel);color:var(--ink-2);border-radius:999px;cursor:pointer}
 .seg button[aria-pressed="true"]{color:var(--head);border-color:var(--surface);font-weight:600;background:var(--tint)}
+/* Salg og service */
+.sales{display:grid;gap:1.25rem}
+.sales-tabs{display:flex;gap:.35rem;flex-wrap:wrap;padding:.6rem 1rem 0;border-bottom:1px solid var(--line)}
+.sales-set{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;font-size:.84rem;color:var(--ink-2);margin:.2rem 0 .6rem}
+.sales-set input{width:4.2rem;font:inherit;padding:.2rem .4rem;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--ink)}
+.sales-set button{font:inherit;font-size:.82rem;padding:.3rem .7rem;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--ink);cursor:pointer}
+.sales-list{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:4px}
+.sales-list th{position:sticky;top:0;background:var(--panel);z-index:1}
+.sales-list tbody tr{cursor:pointer}
+.sales-list tbody tr:hover{background:var(--tint)}
+.sales-list td.t{font-weight:600;color:var(--head)}
+.sales-list td.t small{display:block;font-weight:400;color:var(--ink-2)}
+.due{font-weight:600}
+.due.over{color:#C23B3B}
+.due.soon{color:#B07A00}
+.basis{font-size:.76rem;color:var(--ink-2)}
 .process-details{padding:0}
 .process-details > summary{cursor:pointer;padding:.85rem 1rem;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center}
 .process-details > summary::-webkit-details-marker{display:none}
@@ -1032,6 +1050,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <button role="tab" aria-selected="false" data-view="auctions">Auksjoner</button>
       <button role="tab" aria-selected="false" data-view="fish">Fiskehelse</button>
       <button role="tab" aria-selected="false" data-view="bio">Smolt og biomasse</button>
+      <button role="tab" aria-selected="false" data-view="sales">Salg og service</button>
     </nav>
     <div class="stamp" id="stamp"></div>
   </div>
@@ -1301,9 +1320,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <div class="apps-bar" style="margin-bottom:.6rem"><span>Art <span class="seg" id="bio-art"><button type="button" data-v="laks" aria-pressed="true">Laks</button><button type="button" data-v="orret" aria-pressed="false">Regnbueørret</button><button type="button" data-v="alle" aria-pressed="false">Begge</button></span> &nbsp; Mål <span class="seg" id="bio-measure"><button type="button" data-v="utsett_u500" aria-pressed="true" title="Alle fisk satt ut under 500 g – Fiskeridirektoratets vanligste mål, det Havforskningsinstituttet bruker">Utsett &lt; 500 g</button><button type="button" data-v="utsett_smolt" aria-pressed="false" title="Fisk registrert som smolt ved utsett">Registrert smolt</button></span></span><span id="bio-links"></span></div>
         <div class="apps-grid" style="grid-template-columns:minmax(0,7fr) minmax(0,5fr)">
           <div><div class="sec-h" style="margin-top:0"><span>Måned for måned, siste tre år</span><small>mill. fisk · mørk = inneværende år</small></div><div id="bio-monthly"></div></div>
-          <div><div class="sec-h" style="margin-top:0"><span>Per år, hele landet</span><small>mill. fisk</small></div><div id="bio-yearly"></div></div>
+          <div><div class="sec-h" style="margin-top:0"><span>Per år, hele landet</span><small>mill. fisk · sammenlignbar periode</small></div><div id="bio-yearly"></div></div>
         </div>
-        <div class="sec-h"><span>Per produksjonsområde</span><small id="bio-po-sub">mill. fisk per år · siste år er hittil i år</small></div>
+        <div class="sec-h"><span>Per produksjonsområde</span><small id="bio-po-sub">mill. fisk, sammenlignbar periode hvert år</small></div>
         <div class="scroll" id="bio-po"></div>
         <p class="foot" id="bio-foot"></p>
       </div>
@@ -1317,6 +1336,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
         </div>
         <div class="sec-h"><span>Årsklasser i sjøen nå</span><small>beholdning per utsettsår ved siste månedsslutt – viser hvor mye fisk som nærmer seg slakt og hvor utsettene har skjedd</small></div>
         <div class="scroll" id="bio-cohort"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ============================ SALG OG SERVICE ============================ -->
+<div id="view-sales" hidden>
+  <section class="pulse" aria-label="Salg og service"><div class="wrap" id="sales-pulse"></div></section>
+  <main class="sales">
+    <section class="panel" aria-labelledby="sales-h">
+      <header><h2 id="sales-h">Anlegg i bevegelse</h2><div class="meta" id="sales-meta">Beregnet fra brakklegging i ukentlige luserapporter (BarentsWatch) og Akvakulturregisteret</div></header>
+      <div class="sales-tabs" role="tablist" id="sales-tabs"></div>
+      <div class="body">
+        <div class="sales-set"><span>Standard sjøfase <input type="number" id="ss-sea" min="8" max="30" step="1" value="18"> mnd</span><span>Standard brakklegging <input type="number" id="ss-fallow" min="8" max="52" step="1" value="12"> uker</span><span>Vindu framover <input type="number" id="ss-win" min="2" max="26" step="1" value="8"> uker</span><span class="basis">Lokalitetens egen historikk brukes når den har minst én hel syklus.</span></div>
+        <div class="filters">
+          <input type="search" id="ss-q" placeholder="Søk i lokalitet, selskap eller kommune" aria-label="Søk">
+          <select id="ss-po" aria-label="Produksjonsområde"><option value="">Alle produksjonsområder</option></select>
+          <select id="ss-org" aria-label="Selskap"><option value="">Alle selskap</option></select>
+          <select id="ss-mun" aria-label="Kommune"><option value="">Alle kommuner</option></select>
+          <button type="button" id="ss-csv">Last ned CSV</button>
+          <button type="button" id="ss-reset">Nullstill</button>
+        </div>
+        <div class="apps-bar"><span id="sales-count"></span><span id="sales-links"></span></div>
+        <div class="sales-list scroll"><table id="sales-table"><thead></thead><tbody></tbody></table></div>
+        <p class="foot" id="sales-foot"></p>
       </div>
     </section>
   </main>
@@ -1376,6 +1420,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('view-auctions').hidden = v !== 'auctions';
     $('view-fish').hidden = v !== 'fish';
     $('view-bio').hidden = v !== 'bio';
+    $('view-sales').hidden = v !== 'sales';
+    if(v === 'sales'){ window.scrollTo(0,0); if(!SALES.loaded) loadSales(); }
     if(v === 'bio'){ window.scrollTo(0,0); if(!BIO.loaded) loadBio(); }
     if(v === 'fish'){ window.scrollTo(0,0); if(FISH.map){ setTimeout(function(){ FISH.map.invalidateSize(); if(FISH.bounds) FISH.map.fitBounds(FISH.bounds, {padding:[20,20]}); }, 50); } if(!FISH.loaded) loadFish(); }
     try { localStorage.setItem('scaleradar.view', v); } catch(e){}
@@ -2015,18 +2061,29 @@ svg.leaflet-image-layer.leaflet-interactive path {
     svg+='</svg>';
     $('bio-monthly').innerHTML = svg;
     // årlig (nasjonalt)
-    var yearly = sumBy(rows, function(r){ return r.y; }, M); var ys = Object.keys(yearly).map(Number).sort(); ys = ys.filter(function(yy){ return yy>=2018; });
-    var W2=440,H2=230,L2=44,R2=12,T2=14,B2=30; var top2 = Math.ceil(Math.max.apply(null, ys.map(function(yy){ return yearly[yy]; }))/5e7)*5e7 || 5e7; var bw2=(W2-L2-R2)/ys.length-8;
-    var svg2='<svg class="bchart" viewBox="0 0 '+W2+' '+H2+'" style="width:100%;height:auto;display:block" role="img" aria-label="Utsett per år">';
-    for(var g2=0; g2<=top2; g2+=top2/4){ var yy2=T2+(H2-T2-B2)*(1-g2/top2); svg2+='<line class="grid" x1="'+L2+'" x2="'+(W2-R2)+'" y1="'+yy2.toFixed(1)+'" y2="'+yy2.toFixed(1)+'"/><text x="'+(L2-5)+'" y="'+(yy2+4).toFixed(1)+'" text-anchor="end">'+nf(g2/1e6,0)+'</text>'; }
-    ys.forEach(function(yy,i){ var v=yearly[yy]; var xx=L2+(W2-L2-R2)*(i+0.5)/ys.length - bw2/2; var yv=T2+(H2-T2-B2)*(1-v/top2); svg2+='<rect class="bar '+(yy===L.y?'cur':'')+'" x="'+xx.toFixed(1)+'" y="'+yv.toFixed(1)+'" width="'+bw2.toFixed(1)+'" height="'+((T2+(H2-T2-B2))-yv).toFixed(1)+'"'+(yy===L.y?' opacity=".7"':'')+'/><text class="lbl" x="'+(xx+bw2/2).toFixed(1)+'" y="'+(yv-5).toFixed(1)+'" text-anchor="middle">'+fmtM(v,0)+'</text><text x="'+(xx+bw2/2).toFixed(1)+'" y="'+(H2-10)+'" text-anchor="middle">'+yy+(yy===L.y?'*':'')+'</text>'; });
+    // Sammenlignbar periode: januar til siste måned i statistikken, for alle år (YTD)
+    var ytdLbl = 'jan–'+MND_K[L.m-1];
+    var full = sumBy(rows, function(r){ return r.y; }, M);
+    var ytd = sumBy(rows.filter(function(r){ return r.m <= L.m; }), function(r){ return r.y; }, M);
+    var ys = Object.keys(ytd).map(Number).sort().filter(function(yy){ return yy>=2018; });
+    var W2=440,H2=230,L2=44,R2=12,T2=14,B2=30; var top2 = Math.ceil(Math.max.apply(null, ys.map(function(yy){ return yy<L.y ? full[yy] : ytd[yy]; }))/5e7)*5e7 || 5e7; var bw2=(W2-L2-R2)/ys.length-8;
+    var Y2=function(v){ return T2+(H2-T2-B2)*(1-v/top2); };
+    var svg2='<svg class="bchart" viewBox="0 0 '+W2+' '+H2+'" style="width:100%;height:auto;display:block" role="img" aria-label="Utsett per år, '+ytdLbl+' og helt år">';
+    for(var g2=0; g2<=top2; g2+=top2/4){ svg2+='<line class="grid" x1="'+L2+'" x2="'+(W2-R2)+'" y1="'+Y2(g2).toFixed(1)+'" y2="'+Y2(g2).toFixed(1)+'"/><text x="'+(L2-5)+'" y="'+(Y2(g2)+4).toFixed(1)+'" text-anchor="end">'+nf(g2/1e6,0)+'</text>'; }
+    ys.forEach(function(yy,i){ var v=ytd[yy]||0, f=full[yy]||0; var xx=L2+(W2-L2-R2)*(i+0.5)/ys.length - bw2/2;
+      if(yy<L.y) svg2+='<rect class="bar prev" x="'+xx.toFixed(1)+'" y="'+Y2(f).toFixed(1)+'" width="'+bw2.toFixed(1)+'" height="'+(Y2(0)-Y2(f)).toFixed(1)+'"><title>'+yy+' helt år: '+fmtM(f,0)+' mill.</title></rect>';
+      svg2+='<rect class="bar '+(yy===L.y?'cur':'')+'" x="'+xx.toFixed(1)+'" y="'+Y2(v).toFixed(1)+'" width="'+bw2.toFixed(1)+'" height="'+(Y2(0)-Y2(v)).toFixed(1)+'"><title>'+yy+' '+ytdLbl+': '+fmtM(v,0)+' mill.</title></rect><text class="lbl" x="'+(xx+bw2/2).toFixed(1)+'" y="'+(Y2(v)-5).toFixed(1)+'" text-anchor="middle">'+fmtM(v,0)+'</text><text x="'+(xx+bw2/2).toFixed(1)+'" y="'+(H2-10)+'" text-anchor="middle">'+yy+'</text>'; });
     svg2+='</svg>';
-    $('bio-yearly').innerHTML = svg2 + '<p class="foot">* hittil i år til og med '+MND_K[L.m-1]+'. Nasjonale tall inkluderer fisk uten produksjonsområde.</p>';
-    // per PO tabell
-    var poYears = ys.slice(-5); var byPo = {};
-    rows.forEach(function(r){ if(r.po && poYears.indexOf(r.y)>=0){ byPo[r.po] = byPo[r.po]||{}; byPo[r.po][r.y] = (byPo[r.po][r.y]||0)+(r[M]||0); } });
-    var pos = Object.keys(byPo).map(Number).sort(function(a,b){ return a-b; }); var maxPo = Math.max.apply(null, pos.map(function(p){ return Math.max.apply(null, poYears.map(function(yy){ return byPo[p][yy]||0; })); }));
-    $('bio-po').innerHTML = '<table class="bio-tbl"><thead><tr><th>Produksjonsområde</th>'+poYears.map(function(yy){ return '<th class="num">'+yy+(yy===L.y?'*':'')+'</th>'; }).join('')+'<th class="num">Endring '+(L.y-1)+' vs '+(L.y-2)+'</th></tr></thead><tbody>'+pos.map(function(p){ var r=byPo[p]; var a=r[L.y-1]||0, b=r[L.y-2]||0; return '<tr><td>PO'+p+' '+esc((d.po_names||{})[p]||PO_NAMES[p]||'')+'</td>'+poYears.map(function(yy){ var v=r[yy]||0; return '<td class="num">'+fmtM(v,1)+(yy===L.y-1?'<span class="sp" style="width:'+Math.round(60*v/maxPo)+'px"></span>':'')+'</td>'; }).join('')+'<td class="num '+(b&&a>=b?'up':(b?'down':''))+'">'+(b?(a>=b?'+':'')+nf(100*(a/b-1),0)+' %':'–')+'</td></tr>'; }).join('')+'</tbody></table>';
+    $('bio-yearly').innerHTML = svg2 + '<p class="foot">Mørke søyler og tall: '+ytdLbl+' hvert år, sammenlignbart med '+L.y+'. Lys bakgrunn: helt år. Nasjonale tall inkluderer fisk uten produksjonsområde.</p>';
+    // per PO tabell – samme YTD-periode for alle år
+    var poYears = ys.slice(-6); var byPo = {}, nat = {};
+    rows.forEach(function(r){ if(r.m <= L.m && poYears.indexOf(r.y)>=0){ if(r.po){ byPo[r.po] = byPo[r.po]||{}; byPo[r.po][r.y] = (byPo[r.po][r.y]||0)+(r[M]||0); } nat[r.y] = (nat[r.y]||0)+(r[M]||0); } });
+    var pos = Object.keys(byPo).map(Number).sort(function(a,b){ return a-b; }); var maxPo = Math.max.apply(null, pos.map(function(p){ return byPo[p][L.y]||0; })) || 1;
+    var prev3 = [L.y-3, L.y-2, L.y-1];
+    function chg(a, b){ return b ? '<span class="'+(a>=b?'up':'down')+'">'+(a>=b?'+':'')+nf(100*(a/b-1),0)+' %</span>' : '–'; }
+    function poRow(label, r, strong){ var a=r[L.y]||0, b=r[L.y-1]||0; var avg=prev3.reduce(function(s,yy){ return s+(r[yy]||0); },0)/3; return '<tr'+(strong?' style="font-weight:700;border-top:2px solid var(--line)"':'')+'><td>'+label+'</td>'+poYears.map(function(yy){ var v=r[yy]||0; return '<td class="num">'+fmtM(v,1)+(yy===L.y&&!strong?'<span class="sp" style="width:'+Math.round(60*v/maxPo)+'px"></span>':'')+'</td>'; }).join('')+'<td class="num">'+chg(a,b)+'</td><td class="num">'+chg(a,avg)+'</td></tr>'; }
+    $('bio-po-sub').textContent = 'mill. fisk '+ytdLbl+' hvert år – samme periode som siste tilgjengelige måned ('+MND_K[L.m-1]+' '+L.y+')';
+    $('bio-po').innerHTML = '<table class="bio-tbl"><thead><tr><th>Produksjonsområde</th>'+poYears.map(function(yy){ return '<th class="num">'+yy+'</th>'; }).join('')+'<th class="num">'+L.y+' vs '+(L.y-1)+'</th><th class="num">vs snitt '+(L.y-3)+'–'+(L.y-1)+'</th></tr></thead><tbody>'+pos.map(function(p){ return poRow('PO'+p+' '+esc((d.po_names||{})[p]||PO_NAMES[p]||''), byPo[p], false); }).join('')+poRow('Hele landet', nat, true)+'</tbody></table>';
     $('bio-foot').textContent = (d.note||'') + ' Tallene rapporteres månedlig av oppdretterne til Fiskeridirektoratet og kan justeres i ettertid.';
     renderBio2();
   }
@@ -2055,6 +2112,70 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
   document.querySelectorAll('#bio-art button').forEach(function(b){ b.addEventListener('click', function(){ BIO.art = b.dataset.v; if(BIO.data) renderBio(); }); });
   document.querySelectorAll('#bio-measure button').forEach(function(b){ b.addEventListener('click', function(){ BIO.measure = b.dataset.v; if(BIO.data) renderBio(); }); });
+  // ---------- salg og service (syklus fra brakkleggingsflagg)
+  var SALES = { loaded:false, list:'empty', hist:null };
+  function isoWeekStart(w){ var m=/^(\d{4})-(\d{2})$/.exec(w||''); if(!m) return null; var d=new Date(Date.UTC(+m[1],0,4)); var day=d.getUTCDay()||7; d.setUTCDate(d.getUTCDate()-day+1+(+m[2]-1)*7); return d; }
+  function addWeeks(d,n){ if(!d) return null; var x=new Date(d.getTime()); x.setUTCDate(x.getUTCDate()+7*n); return x; }
+  function fmtD(d){ return d ? d.getUTCDate()+'. '+MND_K[d.getUTCMonth()]+' '+d.getUTCFullYear() : '–'; }
+  function ssNum(id, def){ var v=parseFloat($(id).value); return isFinite(v)&&v>0 ? v : def; }
+  function loadSales(){
+    SALES.loaded = true; $('sales-count').textContent = 'Laster lokaliteter …';
+    var go = function(){ fetchJson('data/fishhealth/status.json').then(function(st){ SALES.hist = st.weeks_total; renderSales(); }).catch(function(){ renderSales(); }); };
+    if(FISH.idx){ go(); return; }
+    fetchJson('data/fishhealth/index.json').then(function(idx){ FISH.idx = idx; go(); }).catch(function(){ $('sales-count').textContent=''; $('sales-table').querySelector('tbody').innerHTML='<tr><td class="empty">Fiskehelsedata er ikke hentet ennå.</td></tr>'; });
+  }
+  function salesRows(){
+    var idx=FISH.idx, seaW=Math.round(ssNum('ss-sea',18)*4.345), fallW=Math.max(8, ssNum('ss-fallow',12));
+    return (idx.localities||[]).filter(function(l){ return !l.land && !l.slaughter && l.salmonoid && l.cyc; }).map(function(l){
+      var c=l.cyc, since=isoWeekStart(c.since), r={l:l, c:c, since:since};
+      if(c.state==='active'){ var own=c.n_cycles>0 && c.med_active>=40 && c.med_active<=110; r.exp=own?c.med_active:seaW; r.basis=own?'egen historikk':'standard'; }
+      else { var ownF=c.med_fallow && c.med_fallow>=8 && c.med_fallow<=52; r.exp=ownF?c.med_fallow:fallW; r.basis=ownF?'egen historikk':'standard'; }
+      r.rem = r.exp - c.weeks; r.due = addWeeks(since, r.exp); return r; });
+  }
+  var SALES_LISTS = {
+    empty:   { label:'Snart tømming', test:function(r,w){ return r.c.state==='active' && (r.c.trunc ? r.c.weeks>=52 : r.rem<=w); }, sort:function(a,b){ return (a.c.trunc-b.c.trunc) || (a.c.trunc ? b.c.weeks-a.c.weeks : a.rem-b.rem); },
+               help:'Fisk i sjøen som nærmer seg forventet slakt: aktuelt for slakteservice, avlusing før slakt, og planlegging av notvask, inspeksjon og utskifting når anlegget tømmes.' },
+    emptied: { label:'Nylig tømt', test:function(r,w){ return r.c.state==='fallow' && !r.c.trunc && r.c.weeks<=w; }, sort:function(a,b){ return a.c.weeks-b.c.weeks; },
+               help:'Anlegg som har gått i brakk de siste ukene: servicevindu for notvask, reparasjon, sertifisering, fortøyningskontroll og utskifting før neste utsett.' },
+    restock: { label:'Snart nytt utsett', test:function(r,w){ return r.c.state==='fallow' && !r.c.trunc && r.rem<=w && r.rem>=-8; }, sort:function(a,b){ return a.rem-b.rem; },
+               help:'Brakklagte anlegg der forventet brakkleggingstid er nådd eller nås snart: nye nøter, merder, fôringsutstyr og sensorer må være på plass før smolten kommer.' }
+  };
+  function renderSales(){
+    var idx=FISH.idx, w=ssNum('ss-win',8), all=salesRows();
+    $('sales-meta').textContent = 'Beregnet fra brakklegging i ukentlige luserapporter (BarentsWatch) · '+weekLabel(idx.latest_week)+(SALES.hist?' · '+SALES.hist+' uker historikk':'');
+    var counts={}; Object.keys(SALES_LISTS).forEach(function(k){ var rs=all.filter(function(r){ return SALES_LISTS[k].test(r,w); }); counts[k]={n:rs.length, mtb:rs.reduce(function(s,r){ return s+(r.l.cap||0); },0)}; });
+    $('sales-pulse').innerHTML = Object.keys(SALES_LISTS).map(function(k){ return '<div class="cell"><div class="k">'+SALES_LISTS[k].label+'</div><div class="v">'+counts[k].n+'</div><div class="d">'+(counts[k].mtb?nf(counts[k].mtb,0)+' tonn MTB':'MTB fylles på')+' · vindu '+w+' uker</div></div>'; }).join('') + '<div class="cell"><div class="k">Aktive sjølokaliteter</div><div class="v">'+all.filter(function(r){ return r.c.state==='active'; }).length+'</div><div class="d">'+all.filter(function(r){ return r.c.state==='fallow'; }).length+' brakklagt nå</div></div>';
+    $('sales-tabs').innerHTML = Object.keys(SALES_LISTS).map(function(k){ return '<button class="tab" role="tab" aria-selected="'+(SALES.list===k)+'" data-k="'+k+'">'+SALES_LISTS[k].label+' <span class="n">'+counts[k].n+'</span></button>'; }).join('');
+    $('sales-tabs').querySelectorAll('.tab').forEach(function(t){ t.addEventListener('click', function(){ SALES.list=t.dataset.k; renderSales(); }); });
+    var uniq=function(f){ return all.map(f).filter(function(v,i,a){ return v!=null&&v!==''&&a.indexOf(v)===i; }); };
+    fillSelect($('ss-po'), uniq(function(r){ return r.l.po; }).sort(function(a,b){ return a-b; }).map(String), true); $('ss-po').querySelectorAll('option').forEach(function(o){ if(o.value) o.textContent='PO'+o.value+' '+(PO_NAMES[o.value]||''); });
+    fillSelect($('ss-org'), uniq(function(r){ return r.l.org; }).sort(), true); fillSelect($('ss-mun'), uniq(function(r){ return r.l.mun; }).sort(), true);
+    var L=SALES_LISTS[SALES.list], q=($('ss-q').value||'').trim().toLowerCase(), po=$('ss-po').value, org=$('ss-org').value, mun=$('ss-mun').value;
+    var shown=all.filter(function(r){ if(!L.test(r,w)) return false; var l=r.l; if(po&&String(l.po)!==po) return false; if(org&&l.org!==org) return false; if(mun&&l.mun!==mun) return false; if(q&&[l.name,l.org,l.mun,String(l.no)].join(' ').toLowerCase().indexOf(q)<0) return false; return true; }).sort(L.sort);
+    SALES.shown = shown;
+    $('sales-count').textContent = 'Viser '+shown.length+' lokaliteter · '+L.help;
+    $('sales-links').innerHTML = '';
+    var head, rowFn; var mnd=function(wk, tr){ return wk==null?'–':(tr?'≥ ':'')+nf(wk/4.345,1)+' mnd'; };
+    var dueCell=function(r){ if(r.c.state==='active' && r.c.trunc) return '<span class="due soon">ukjent utsett</span><br><span class="basis">i sjø før historikken starter – minst '+nf(r.c.weeks/4.345,0)+' mnd</span>'; var cls=r.rem<0?'over':(r.rem<=4?'soon':''); return '<span class="due '+cls+'">'+fmtD(r.due)+'</span><br><span class="basis">'+(r.rem<0?(-r.rem)+' uker over · ':'om '+r.rem+' uker · ')+r.basis+'</span>'; };
+    var base=function(r){ var l=r.l; return '<td class="t">'+esc(l.name||l.no)+'<small>'+esc(l.org||'–')+' · lok. '+l.no+'</small></td><td>'+esc(l.mun||'–')+(l.po?'<br><span class="basis">PO'+l.po+'</span>':'')+'</td><td class="num">'+(l.cap!=null?nf(l.cap,0):'–')+'</td>'; };
+    if(SALES.list==='empty'){ head='<tr><th>Lokalitet / selskap</th><th>Kommune · PO</th><th class="num">MTB</th><th>Utsatt</th><th class="num">I sjø</th><th>Forventet tømming</th><th class="num">Hunnlus</th><th>Sykdom</th></tr>';
+      rowFn=function(r){ var l=r.l; return '<tr data-no="'+l.no+'">'+base(r)+'<td>'+(r.c.trunc?'før ':'')+fmtD(r.since)+'</td><td class="num">'+(r.c.trunc?'≥ ':'')+mnd(r.c.weeks)+'</td><td>'+dueCell(r)+'</td><td class="num">'+(l.afl!=null&&!l.fallow?nf(l.afl,2):'–')+'</td><td>'+disList(l).map(function(x){ return '<span class="badge" style="--c:#5B2C6F">'+esc(x)+'</span>'; }).join(' ')+'</td></tr>'; }; }
+    else if(SALES.list==='emptied'){ head='<tr><th>Lokalitet / selskap</th><th>Kommune · PO</th><th class="num">MTB</th><th>Tømt (brakklagt fra)</th><th class="num">Brakklagt</th><th class="num">Forrige syklus</th><th>Forventet nytt utsett</th></tr>';
+      rowFn=function(r){ return '<tr data-no="'+r.l.no+'">'+base(r)+'<td>'+fmtD(r.since)+'</td><td class="num">'+r.c.weeks+' uker</td><td class="num">'+mnd(r.c.prev_len, r.c.prev_trunc)+'</td><td>'+dueCell(r)+'</td></tr>'; }; }
+    else { head='<tr><th>Lokalitet / selskap</th><th>Kommune · PO</th><th class="num">MTB</th><th>Tømt</th><th class="num">Brakklagt</th><th>Forventet utsett</th><th class="num">Forrige syklus</th></tr>';
+      rowFn=function(r){ return '<tr data-no="'+r.l.no+'">'+base(r)+'<td>'+fmtD(r.since)+'</td><td class="num">'+r.c.weeks+' uker</td><td>'+dueCell(r)+'</td><td class="num">'+mnd(r.c.prev_len, r.c.prev_trunc)+'</td></tr>'; }; }
+    $('sales-table').querySelector('thead').innerHTML = head;
+    $('sales-table').querySelector('tbody').innerHTML = shown.map(rowFn).join('') || '<tr><td colspan="8" class="empty">Ingen lokaliteter i denne listen med valgte filtre.</td></tr>';
+    $('sales-table').querySelectorAll('tbody tr[data-no]').forEach(function(tr){ tr.addEventListener('click', function(){ var no=parseInt(tr.dataset.no,10); FISH.expanded=no; FISH.selected=no; $('fh-q').value=String(no); showView('fish'); if(FISH.loaded && FISH.agg){ applyFish(); } }); });
+    $('sales-foot').textContent = 'Syklusene leses av brakkleggingsflagget i oppdretternes ukentlige luserapporter: overgang fra brakklagt til aktiv = utsett, fra aktiv til brakklagt = tømming. Brakklegging kortere enn tre uker regnes som rapporteringshull. «Snart nytt utsett» viser anlegg der forventet utsett er innen vinduet eller inntil åtte uker forsinket. Forventet tidspunkt bruker lokalitetens egen median når den har minst én hel syklus i historikken, ellers standardverdiene over (regelverkets minimum for brakklegging er to måneder). Anslagene blir bedre etter hvert som historikken fylles opp til fem år. Klikk på en rad for lusekurve og detaljer.';
+  }
+  ['ss-q','ss-po','ss-org','ss-mun','ss-sea','ss-fallow','ss-win'].forEach(function(id){ $(id).addEventListener('input', function(){ if(FISH.idx && SALES.loaded) renderSales(); }); $(id).addEventListener('change', function(){ if(FISH.idx && SALES.loaded) renderSales(); }); });
+  $('ss-reset').addEventListener('click', function(){ $('ss-q').value=''; $('ss-po').value=''; $('ss-org').value=''; $('ss-mun').value=''; $('ss-sea').value='18'; $('ss-fallow').value='12'; $('ss-win').value='8'; if(FISH.idx) renderSales(); });
+  $('ss-csv').addEventListener('click', function(){
+    var rs=SALES.shown||[]; var cols=['liste','lokalitetsnr','lokalitet','selskap','kommune','PO','MTB_tonn','tilstand','siden','uker','forventet','uker_til_forventet','grunnlag','hunnlus','sykdom'];
+    var lines=[cols.join(';')].concat(rs.map(function(r){ var l=r.l; return [SALES_LISTS[SALES.list].label,l.no,l.name,l.org,l.mun,l.po,l.cap,r.c.state==='active'?'i drift':'brakklagt',r.since?r.since.toISOString().slice(0,10):'',r.c.weeks,r.due?r.due.toISOString().slice(0,10):'',r.rem,r.basis,l.afl,disList(l).join(' ')].map(function(v){ v=(v==null?'':String(v)); return /[;"\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }).join(';'); }));
+    var blob=new Blob(['\ufeff'+lines.join('\n')],{type:'text/csv;charset=utf-8'}); var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='scale-radar-'+SALES.list+'-'+(FISH.idx.latest_week||'')+'.csv'; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  });
   function renderSubscribe(applicant, feeds){
     var box = $('apps-sub');
     if(!applicant || !feeds.applicant_base){ box.hidden = true; box.innerHTML = ''; return; }
@@ -2095,7 +2216,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   var seed = {}; try { seed = JSON.parse($('seed').textContent || '{}'); } catch(e){}
   function boot(){
     var v = null; try { v = localStorage.getItem('scaleradar.view'); } catch(e){}
-    showView(['apps','auctions','fish','bio'].indexOf(v) >= 0 ? v : 'radar');
+    showView(['apps','auctions','fish','bio','sales'].indexOf(v) >= 0 ? v : 'radar');
     fetch('data/data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(){ render(seed); });
