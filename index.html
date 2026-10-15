@@ -1719,7 +1719,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   function disLabel(code){ if(!code) return ''; if(DIS_LABEL[code]) return DIS_LABEL[code]; var t = String(code).replace(/_/g,' ').toLowerCase(); return t.charAt(0).toUpperCase()+t.slice(1); }
   function disList(l){ return (l.dis||[]).map(disLabel); }
   function liceClass(afl){ if(afl == null) return 'none'; return afl > 0.5 ? 'r' : (afl >= 0.2 ? 'y' : 'g'); }
-  function liceColor(l){ var c = l.fallow ? '#7C878E' : (!l.reported || l.afl == null ? '#B8C2CA' : (l.afl > 0.5 ? '#C23B3B' : (l.afl >= 0.2 ? '#FCA51A' : '#46B978'))); return c; }
+  function liceColor(l){ var a = curAfl(l); var c = l.fallow ? '#7C878E' : (!l.reported || a == null ? '#B8C2CA' : (a > 0.5 ? '#C23B3B' : (a >= 0.2 ? '#FCA51A' : '#46B978'))); return c; }
   function weekLabel(w){ if(!w) return ''; var m = /^(\d{4})-(\d{2})$/.exec(w); return m ? 'uke '+parseInt(m[2],10)+' '+m[1] : w; }
   function fetchJson(path){ return fetch(path, {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }); }
   function loadFishSummary(){
@@ -1759,7 +1759,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('fish-map-empty').hidden = false; $('fish-map-empty').textContent = msg;
     $('fish-agg-body').innerHTML = '';
   }
-  function fishStatusOf(l){ if(l.fallow) return 'Brakklagt'; if(!l.reported || l.afl == null) return 'Ikke rapportert'; return l.afl > 0.5 ? 'Over 0,5' : (l.afl >= 0.2 ? '0,2–0,5' : 'Under 0,2'); }
+  function curAfl(l){ if(l.fallow) return null; if(FISH.idx && l.afl_week && l.afl_week !== FISH.idx.latest_week) return null; return l.afl; }
+  function fishStatusOf(l){ if(l.fallow) return 'Brakklagt'; var a = curAfl(l); if(!l.reported || a == null) return 'Ikke rapportert'; return a > 0.5 ? 'Over 0,5' : (a >= 0.2 ? '0,2–0,5' : 'Under 0,2'); }
   var FISH_ORDER = ['Over 0,5','0,2–0,5','Under 0,2','Ikke rapportert','Brakklagt'];
   var FISH_COL = {'Over 0,5':'#C23B3B','0,2–0,5':'#FCA51A','Under 0,2':'#46B978','Ikke rapportert':'#B8C2CA','Brakklagt':'#7C878E'};
   function renderFish(){
@@ -1802,15 +1803,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
       if(q){ var hay=[l.name,l.org,l.mun,String(l.no)].join(' ').toLowerCase(); if(hay.indexOf(q)<0) return false; }
       return true;
     });
-    shown.sort(function(a,b){ if(sort==='name') return (a.name||'').localeCompare(b.name||'','nb'); if(sort==='treat') return (b.treat12||0)-(a.treat12||0); if(sort==='cap') return (b.cap||0)-(a.cap||0); var x=a.afl==null?-1:a.afl, y=b.afl==null?-1:b.afl; return y-x; });
+    shown.sort(function(a,b){ if(sort==='name') return (a.name||'').localeCompare(b.name||'','nb'); if(sort==='treat') return (b.treat12||0)-(a.treat12||0); if(sort==='cap') return (b.cap||0)-(a.cap||0); var x=curAfl(a), y=curAfl(b); x = x==null?-1:x; y = y==null?-1:y; return y-x; });
     var noPo = all.filter(function(l){ return l.po==null; }).length;
     $('fish-count').textContent = 'Viser '+shown.length+' av '+all.length+' sjølokaliteter'+(noPo?' · '+noPo+' mangler produksjonsområde ennå (detaljer hentes fortløpende)':'');
     $('fish-links').innerHTML = '<a href="https://www.barentswatch.no/fiskehelse/" target="_blank" rel="noopener">Åpne BarentsWatch Fiskehelse</a>';
     var tb = $('fish-table').querySelector('tbody');
     tb.innerHTML = shown.slice(0, 400).map(function(l){
-      var st = fishStatusOf(l); var tr = (l.afl!=null && l.afl_prev4!=null) ? (l.afl>l.afl_prev4+0.05?'↑':(l.afl<l.afl_prev4-0.05?'↓':'→')) : '';
+      var st = fishStatusOf(l); var a = curAfl(l); var tr = (a!=null && l.afl_prev4!=null) ? (a>l.afl_prev4+0.05?'↑':(a<l.afl_prev4-0.05?'↓':'→')) : '';
       var dis = disList(l).map(function(d){ return '<span class="badge" style="--c:'+(d==='PD'?'#8E44AD':(d==='ILA'?'#5B2C6F':'#5B6B78'))+'">'+esc(d)+'</span>'; }).join(' ');
-      var row = '<tr data-no="'+l.no+'" aria-selected="'+(FISH.selected===l.no)+'"><td class="t">'+esc(l.name||l.no)+'<small>'+esc(l.org||'–')+' · lok. '+l.no+'</small></td><td>'+esc(l.mun||'–')+(l.po?'<br><span style="color:var(--ink-2);font-size:.78rem">PO'+l.po+'</span>':'')+'</td><td class="num"><span class="dot" style="background:'+liceColor(l)+'"></span>'+(l.afl!=null?nf(l.afl,2):'–')+'<span class="trend">'+tr+'</span></td><td class="num">'+(l.temp!=null?nf(l.temp,1):'–')+'</td><td><span class="badge" style="--c:'+FISH_COL[st]+(st==='Ikke rapportert'?';color:#333':'')+'">'+esc(st)+'</span> '+dis+'</td><td class="num">'+(l.treat12||0)+'</td><td class="num">'+(l.cap!=null?nf(l.cap,0):'–')+'</td></tr>';
+      var row = '<tr data-no="'+l.no+'" aria-selected="'+(FISH.selected===l.no)+'"><td class="t">'+esc(l.name||l.no)+'<small>'+esc(l.org||'–')+' · lok. '+l.no+'</small></td><td>'+esc(l.mun||'–')+(l.po?'<br><span style="color:var(--ink-2);font-size:.78rem">PO'+l.po+'</span>':'')+'</td><td class="num"><span class="dot" style="background:'+liceColor(l)+'"></span>'+(a!=null?nf(a,2):'–')+'<span class="trend">'+tr+'</span></td><td class="num">'+(l.temp!=null?nf(l.temp,1):'–')+'</td><td><span class="badge" style="--c:'+FISH_COL[st]+(st==='Ikke rapportert'?';color:#333':'')+'">'+esc(st)+'</span> '+dis+'</td><td class="num">'+(l.treat12||0)+'</td><td class="num">'+(l.cap!=null?nf(l.cap,0):'–')+'</td></tr>';
       if(FISH.expanded===l.no) row += '<tr class="det" data-for="'+l.no+'"><td colspan="7" id="fish-det-'+l.no+'"><div style="color:var(--ink-2);font-size:.85rem">Laster lokalitetsdata …</div></td></tr>';
       return row;
     }).join('') || '<tr><td colspan="7" class="empty">Ingen lokaliteter matcher filtrene.</td></tr>';
@@ -1826,7 +1827,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     if(!FISH.map){ FISH.map = L.map(el, {scrollWheelZoom:false}).setView([65.5,13],4); L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topograatone/default/webmercator/{z}/{y}/{x}.png',{maxZoom:18,attribution:'© Kartverket'}).addTo(FISH.map); FISH.layer = L.layerGroup().addTo(FISH.map); }
     FISH.layer.clearLayers(); FISH.markers = {}; var pts = [];
     shown.forEach(function(l){ if(l.lat==null||l.lon==null) return; var m = L.circleMarker([l.lat,l.lon],{radius: l.afl!=null && l.afl>0.5 ? 7 : 5, color:'#fff', weight:1, fillColor: liceColor(l), fillOpacity:.9});
-      m.bindPopup('<b>'+esc(l.name||l.no)+'</b><br>'+esc(l.org||'')+'<br>'+esc(l.mun||'')+(l.po?' · PO'+l.po:'')+'<br>'+(l.afl!=null?'Voksne hunnlus: <b>'+nf(l.afl,2)+'</b> ('+esc(weekLabel(l.afl_week))+')':(l.fallow?'Brakklagt':'Ikke rapportert'))+(l.temp!=null?' · '+nf(l.temp,1)+' °C':'')+(disList(l).length?'<br>Sykdom: '+esc(disList(l).join(', ')):'')+(l.cap!=null?'<br>MTB '+nf(l.cap,0)+' tonn':'')+'<br><a href="https://www.barentswatch.no/fiskehelse/locality/'+l.no+'" target="_blank" rel="noopener">BarentsWatch ↗</a>');
+      m.bindPopup('<b>'+esc(l.name||l.no)+'</b><br>'+esc(l.org||'')+'<br>'+esc(l.mun||'')+(l.po?' · PO'+l.po:'')+'<br>'+(curAfl(l)!=null?'Voksne hunnlus: <b>'+nf(curAfl(l),2)+'</b> ('+esc(weekLabel(l.afl_week))+')':(l.fallow?'Brakklagt':'Ikke rapportert'+(l.afl!=null?' (siste: '+nf(l.afl,2)+' '+esc(weekLabel(l.afl_week))+')':'')))+(l.temp!=null?' · '+nf(l.temp,1)+' °C':'')+(disList(l).length?'<br>Sykdom: '+esc(disList(l).join(', ')):'')+(l.cap!=null?'<br>MTB '+nf(l.cap,0)+' tonn':'')+'<br><a href="https://www.barentswatch.no/fiskehelse/locality/'+l.no+'" target="_blank" rel="noopener">BarentsWatch ↗</a>');
       m.on('click', function(){ FISH.expanded = l.no; FISH.selected = l.no; applyFish(); var row = document.querySelector('#fish-table tr[data-no="'+l.no+'"]'); if(row) row.scrollIntoView({block:'nearest'}); });
       m.addTo(FISH.layer); FISH.markers[l.no] = m; pts.push([l.lat,l.lon]); });
     empty.hidden = pts.length>0; if(!pts.length) empty.textContent = 'Ingen av de viste lokalitetene har posisjon.';
