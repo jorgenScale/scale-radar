@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-10-15T01:34:22Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002477",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Møre og Romsdal Fylkeskommune",
+"title": "Ytre Harøy",
+"municipality": "Hustadvika",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002477"
+},
+{
+"at": "2026-10-15T01:34:22Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2024-001673",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Salmar Settefisk AS",
+"title": "45116 Tjuin",
+"municipality": "Steinkjer",
+"county": "Trøndelag",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001673"
+},
+{
+"at": "2026-10-15T01:34:22Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2024-001673",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Salmar Settefisk AS",
+"title": "45116 Tjuin",
+"municipality": "Steinkjer",
+"county": "Trøndelag",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001673"
+},
+{
 "at": "2026-10-14T01:57:04Z",
 "kind": "status",
 "text": "Status: Under behandling → Returnert",
@@ -921,5 +966,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-14T22:20:08Z"
+"updated_at": "2026-10-15T01:34:22Z"
 }

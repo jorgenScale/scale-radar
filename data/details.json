@@ -6875,17 +6875,21 @@
 "title": "Skaftå"
 },
 "SP-2024-001673": {
-"fetched_at": "2026-10-13T09:29:26Z",
+"fetched_at": "2026-10-15T01:31:33Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Ferdigbehandlet": "14.10.2026",
 "Fylke": "Trøndelag",
 "Innsendt": "22.11.2024",
-"Kommune": "Steinkjer"
+"Kommune": "Steinkjer",
+"Resultat": "Innvilget"
 },
 "norm": {
-"case_handler": "Trøndelag fylkeskommune"
+"case_handler": "Trøndelag fylkeskommune",
+"decided": "2026-10-14",
+"result": "Innvilget"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "45116 Tjuin"
 },
 "SP-2024-001674": {
@@ -11855,7 +11859,7 @@
 "title": "Sjølseng"
 },
 "SP-2026-002477": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-10-15T01:31:33Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Laks",
@@ -11867,7 +11871,7 @@
 "case_handler": "Møre og Romsdal fylkeskommune",
 "species": "Laks"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Ytre Harøy"
 },
 "SP-2026-002478": {
