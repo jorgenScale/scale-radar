@@ -134,6 +134,23 @@ def save_loc(doc: dict) -> None:
     (LOC_DIR / f"{doc['no']}.json").write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
+def num(v):
+    """Tall direkte, eller objekt {average, averageOfPreviousWeek, trend} / {value}."""
+    if v is None:
+        return None
+    if isinstance(v, dict):
+        for k in ("average", "value", "avg", "count"):
+            if v.get(k) is not None:
+                v = v[k]
+                break
+        else:
+            return None
+    try:
+        return round(float(v), 3)
+    except (TypeError, ValueError):
+        return None
+
+
 def treat_flags(t: dict | None) -> list[int]:
     if not t:
         return [0, 0, 0, 0, 0, 0]
@@ -159,7 +176,12 @@ def ingest_week(items: list[dict], y: int, w: int, docs: dict) -> int:
             docs[no] = doc
         doc["name"] = loc.get("name") or doc.get("name")
         doc["isOnLand"] = bool(loc.get("isOnLand", doc.get("isOnLand", False)))
-        doc["municipality"] = it.get("municipality") or doc.get("municipality")
+        mun = it.get("municipality")
+        if isinstance(mun, dict):
+            doc["municipality"] = mun.get("name") or doc.get("municipality")
+            doc["municipalityNo"] = mun.get("no") or doc.get("municipalityNo")
+        elif mun:
+            doc["municipality"] = mun
         doc["hasSalmonoidLicense"] = bool(it.get("hasSalmonoidLicense", doc.get("hasSalmonoidLicense", False)))
         doc["isSlaughterHoldingCage"] = bool(it.get("isSlaughterHoldingCage", doc.get("isSlaughterHoldingCage", False)))
         g = it.get("geometry") or {}
@@ -168,7 +190,7 @@ def ingest_week(items: list[dict], y: int, w: int, docs: dict) -> int:
             doc["lon"], doc["lat"] = round(float(coords[0]), 5), round(float(coords[1]), 5)
         lr = it.get("liceReport") or {}
         row = [y, w,
-               lr.get("adultFemaleLice"), lr.get("mobileLice"), lr.get("stationaryLice"), lr.get("seaTemperature"),
+               num(lr.get("adultFemaleLice")), num(lr.get("mobileLice")), num(lr.get("stationaryLice")), num(lr.get("seaTemperature")),
                1 if lr.get("isFallow") else 0, 1 if lr.get("hasReported") else 0] + treat_flags(it.get("liceTreatments"))
         key = wk(y, w)
         if key in doc["weeks"]:
@@ -176,7 +198,14 @@ def ingest_week(items: list[dict], y: int, w: int, docs: dict) -> int:
         else:
             doc["weeks"][key] = len(doc["series"])
             doc["series"].append(row)
+        # ukesbildet gir sykdommer som navn (strenger); detaljkallet gir fulle objekter
+        names = [d for d in (it.get("diseases") or []) if isinstance(d, str)]
+        if (y, w) >= tuple(doc.get("latest_week") or (0, 0)):
+            doc["latest_week"] = [y, w]
+            doc["dis_latest"] = sorted(set(names))
         for d in it.get("diseases") or []:
+            if not isinstance(d, dict):
+                continue
             sig = (d.get("name"), d.get("subType"), d.get("suspicionDate") or d.get("diagnosisDate"))
             existing = next((x for x in doc["diseases"] if (x.get("name"), x.get("subType"), x.get("suspicionDate") or x.get("diagnosisDate")) == sig), None)
             rec = {k: d.get(k) for k in ("name", "subType", "status", "closureType", "suspicionDate", "diagnosisDate", "emptiedDate", "closureDate")}
@@ -232,13 +261,22 @@ def main() -> int:
     for y, w in todo:
         try:
             items = bw.post(f"/v2/geodata/fishhealth/locality/{y}/{w}", {})
+            if isinstance(items, str):
+                items = json.loads(items)
             if isinstance(items, dict):
                 items = items.get("localities") or items.get("items") or []
+            items = [i for i in items if isinstance(i, dict)]
+            if items and fetched_weeks == 0:
+                sample = dict(items[0]); sample.pop("geometry", None)
+                log(f"eksempel på ukesbilde-element: {json.dumps(sample, ensure_ascii=False)[:600]}")
             if not items:
                 # noen varianter krever eksplisitte filterflagg
                 items = bw.post(f"/v2/geodata/fishhealth/locality/{y}/{w}", {"allWithReport": True, "allWithoutReport": True, "allFallowWithoutReport": True, "allReportNotMandatoryWithoutReport": True, "allNotFallowWithoutReport": True})
+                if isinstance(items, str):
+                    items = json.loads(items)
                 if isinstance(items, dict):
                     items = items.get("localities") or items.get("items") or []
+                items = [i for i in items if isinstance(i, dict)]
             n = ingest_week(items, y, w, docs)
             done.add(wk(y, w))
             fetched_weeks += 1
@@ -287,6 +325,16 @@ def main() -> int:
                 doc["weeks"] = {f"{s[0]}-{s[1]:02d}": i for i, s in enumerate(doc["series"])}
             acr = det.get("aquaCultureRegister") or {}
             pa = det.get("productionArea") or {}
+            for d in det.get("diseases") or []:
+                if not isinstance(d, dict):
+                    continue
+                sig = (d.get("name"), d.get("subType"), d.get("suspicionDate") or d.get("diagnosisDate"))
+                existing = next((x for x in doc["diseases"] if (x.get("name"), x.get("subType"), x.get("suspicionDate") or x.get("diagnosisDate")) == sig), None)
+                rec = {k: d.get(k) for k in ("name", "subType", "status", "closureType", "suspicionDate", "diagnosisDate", "emptiedDate", "closureDate")}
+                if existing:
+                    existing.update(rec)
+                else:
+                    doc["diseases"].append(rec)
             doc["detail"] = {
                 "po": pa.get("id"), "po_name": pa.get("name"),
                 "capacity": acr.get("capacity"), "unit": acr.get("unit"),
@@ -334,7 +382,9 @@ def build_index_and_agg(wanted: list[tuple[int, int]]) -> None:
         # siste uke med rapport
         last_rep = next((s for s in reversed(series) if s[7]), None)
         treat12 = sum(1 for s in series if (s[0], s[1]) >= cutoff_12w and any(s[8:14]))
-        active_dis = [d for d in doc.get("diseases") or [] if not d.get("closureDate") and d.get("status") and "avslutt" not in (d.get("status") or "").lower()]
+        active_names = doc.get("dis_latest")
+        if active_names is None:
+            active_names = sorted({d.get("name") for d in doc.get("diseases") or [] if d.get("name") and not d.get("closureDate")})
         # trend: siste rapporterte AFL mot 4 uker før
         prev = None
         if last_rep:
@@ -349,7 +399,7 @@ def build_index_and_agg(wanted: list[tuple[int, int]]) -> None:
             "week": wk(last[0], last[1]), "reported": bool(last[7]), "fallow": bool(last[6]),
             "afl": afl, "afl_prev4": prev[2] if prev else None, "mobile": last_rep[3] if last_rep else None, "temp": last_rep[5] if last_rep else None,
             "afl_week": wk(last_rep[0], last_rep[1]) if last_rep else None,
-            "treat12": treat12, "dis": sorted({d.get("name") for d in active_dis if d.get("name")}),
+            "treat12": treat12, "dis": list(active_names or []),
             "escapes": len(det.get("escapes") or []),
         })
         # aggregat per uke (bare sjølokaliteter med laksefisk)
