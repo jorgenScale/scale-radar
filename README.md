@@ -70,6 +70,18 @@ Når Fiskeridirektoratet publiserer 2026-resultatene, fanges de automatisk og ru
 Søkere i Lokalitetssøknader som matcher en auksjonskjøper på navn får merket «kjøpte X t»; usikre treff (bare
 første navneledd matcher) vises med «~».
 
+## Fiskehelse (BarentsWatch)
+
+`scripts/fetch_fishhealth.py` henter lus, behandlinger, sykdom, sjøtemperatur og brakklegging per lokalitet fra
+BarentsWatch sitt Fiskehelse-API, pluss MTB, selskap og produksjonsområde fra Akvakulturregisteret. Krever to
+secrets i GitHub (Settings → Secrets and variables → Actions): `BW_CLIENT_ID` og `BW_CLIENT_SECRET` fra en
+API-klient på BarentsWatch Min side. Uten secrets hopper steget over, og siden viser hvorfor.
+
+Første kjøring henter inntil 60 ukesbilder (ett kall per uke dekker alle lokaliteter); fem år er inne etter fem
+kjøringer. Detaljer per lokalitet hentes 150 per kjøring og friskes opp månedlig. Skriptet kjører maks én gang
+per 20 timer (sett `BW_FORCE=1` for å overstyre). Filer: `data/fishhealth/index.json` (kart/liste),
+`agg.json` (nasjonalt og per PO per uke), `loc/<lokalitetsnr>.json` (serie per lokalitet), `status.json`.
+
 ## Følg en søker (abonnement)
 
 Skriptet sporer endringer (ny søknad, statusendring, utfall, endret MTB) og publiserer dem som RSS:

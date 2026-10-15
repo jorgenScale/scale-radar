@@ -229,5 +229,17 @@
     "enabled": true,
     "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
     "refresh_hours": 6
+  },
+  "fishhealth": {
+    "_comment": "BarentsWatch Fiskehelse-API. Krever secrets BW_CLIENT_ID og BW_CLIENT_SECRET i GitHub Actions. history_weeks = hvor langt tilbake lusehistorikken hentes (260 = 5 år).",
+    "enabled": true,
+    "token_url": "https://id.barentswatch.no/connect/token",
+    "api_base": "https://www.barentswatch.no/bwapi",
+    "history_weeks": 260,
+    "weeks_per_run": 60,
+    "details_per_run": 150,
+    "details_refresh_days": 30,
+    "pause_seconds": 0.6,
+    "min_hours_between_runs": 20
   }
 }
