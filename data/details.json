@@ -9749,10 +9749,11 @@
 "title": "Myklebust"
 },
 "SP-2025-002057": {
-"fetched_at": "2026-10-13T09:29:26Z",
+"fetched_at": "2026-10-16T01:25:57Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "15.10.2026",
 "Fylke": "Trøndelag",
 "Innsendt": "15.08.2025",
 "Kommune": "Osen",
@@ -9760,18 +9761,21 @@
 "Maksimal tillatt biomasse (MTB)": "4 680 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "5 500 tonn",
 "Planlagt produksjon per produksjonssyklus": "5 000 tonn",
-"Produksjonssykluslengde": "18 mnd"
+"Produksjonssykluslengde": "18 mnd",
+"Resultat": "Avslått"
 },
 "norm": {
 "case_handler": "Trøndelag fylkeskommune",
 "cycle_months": 18,
+"decided": "2026-10-15",
 "feed_per_cycle_tonn": 5500,
 "max_monthly_feed_tonn": 1000,
 "mtb_tonn": 4680,
 "planned_production_tonn": 5000,
+"result": "Avslått",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Levringen"
 },
 "SP-2025-002059": {
@@ -12643,7 +12647,7 @@
 "title": "Uio Lvb Fisk"
 },
 "SP-2026-002534": {
-"fetched_at": "2026-09-21T07:36:03Z",
+"fetched_at": "2026-10-16T01:25:57Z",
 "fields": {
 "Aktive tillatelser": "M-H-0004 , M-MD-0004 , M-SØ-0001 , M-SØ-0004 , M-G-0001 , M-H-0019 , M-SM-0015 , M-H-0007",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -12671,7 +12675,7 @@
 "planned_production_tonn": 6666,
 "species": "Torsk"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Holmskallen"
 },
 "SP-2026-002538": {
@@ -13413,7 +13417,7 @@
 "title": "Vedvika"
 },
 "SP-2026-002770": {
-"fetched_at": "2026-09-30T00:31:32Z",
+"fetched_at": "2026-10-16T01:25:57Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -13435,7 +13439,7 @@
 "planned_production_tonn": 4200,
 "species": "Torsk"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Tamtodden"
 },
 "SP-2026-002780": {

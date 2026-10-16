@@ -6,6 +6,66 @@
 },
 "events": [
 {
+"at": "2026-10-16T01:26:03Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002770",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Norcod AS",
+"title": "Tamtodden",
+"municipality": "Flatanger",
+"county": "Trøndelag",
+"status": "Under behandling",
+"mtb_tonn": 3599,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002770"
+},
+{
+"at": "2026-10-16T01:26:03Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002534",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Ode AS",
+"title": "Holmskallen",
+"municipality": "Ålesund",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002534"
+},
+{
+"at": "2026-10-16T01:26:03Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-002057",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Måsøval Lisens AS",
+"title": "Levringen",
+"municipality": "Osen",
+"county": "Trøndelag",
+"status": "Avslått",
+"mtb_tonn": 4680,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002057"
+},
+{
+"at": "2026-10-16T01:26:03Z",
+"kind": "utfall",
+"text": "Utfall: Avslått",
+"id": "SP-2025-002057",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Måsøval Lisens AS",
+"title": "Levringen",
+"municipality": "Osen",
+"county": "Trøndelag",
+"status": "Avslått",
+"mtb_tonn": 4680,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002057"
+},
+{
 "at": "2026-10-15T01:34:22Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -966,5 +1026,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-15T22:24:18Z"
+"updated_at": "2026-10-16T01:26:03Z"
 }
