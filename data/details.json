@@ -13031,7 +13031,7 @@
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
-"fetched_at": "2026-09-21T12:29:27Z",
+"fetched_at": "2026-10-16T23:41:41Z",
 "fields": {
 "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13059,7 +13059,7 @@
 "planned_production_tonn": 4000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Vindvika"
 },
 "SP-2026-002645": {
@@ -13659,5 +13659,21 @@
 },
 "status": "Under behandling",
 "title": "Storvika"
+},
+"SP-2026-002799": {
+"fetched_at": "2026-10-16T23:41:41Z",
+"fields": {
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Art": "Hummer",
+"Fylke": "Rogaland",
+"Innsendt": "16.10.2026",
+"Kommune": "Stavanger"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"species": "Hummer"
+},
+"status": "Under behandling",
+"title": "Ladstein"
 }
 }

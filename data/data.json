@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T21:15:58Z",
+ "generated_at": "2026-10-16T23:41:31Z",
  "mode": "live",
  "news": [
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-16",
+  "as_of": "2026-10-15",
   "note": null,
   "groups": [
    {
@@ -398,42 +398,42 @@
       "ticker": "MOWI",
       "currency": "NOK",
       "price": 206.0,
-      "change_pct": 0.0
+      "change_pct": -0.68
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 547.0,
-      "change_pct": -0.73
+      "price": 551.0,
+      "change_pct": -0.18
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 41.9,
-      "change_pct": 0.24
+      "price": 41.8,
+      "change_pct": -0.9
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.26,
-      "change_pct": 0.35
+      "price": 23.18,
+      "change_pct": -0.43
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.1,
-      "change_pct": 0.86
+      "price": 81.4,
+      "change_pct": -1.93
      },
      {
       "name": "Måsøval",
       "ticker": "MAS",
       "currency": "NOK",
-      "price": 38.0,
-      "change_pct": 0.8
+      "price": 37.7,
+      "change_pct": 0.0
      }
     ]
    },
@@ -451,36 +451,36 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.2,
-      "change_pct": 3.05
+      "price": 3.11,
+      "change_pct": 0.32
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 28.7,
-      "change_pct": 1.77
+      "price": 28.2,
+      "change_pct": -2.76
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
       "price": 0.43,
-      "change_pct": 1.4
+      "change_pct": -1.83
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 88.4,
-      "change_pct": 0.23
+      "price": 88.2,
+      "change_pct": 0.0
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 5.0,
-      "change_pct": -3.85
+      "price": 5.2,
+      "change_pct": -2.99
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 440.2,
-      "change_pct": -0.14
+      "price": 440.8,
+      "change_pct": -0.32
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 24.6,
-      "change_pct": 2.5
+      "price": 24.0,
+      "change_pct": 3.45
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-16T21:16:09Z",
+  "fetched_at": "2026-10-16T23:41:39Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -11663,7 +11663,7 @@
      {
       "id": "SP-2026-002644",
       "type": "Endring av lokalitet",
-      "status": "Returnert",
+      "status": "Under behandling",
       "title": "Vindvika",
       "applicant": "Mowi Seawater Norway AS",
       "orgnr": "921668236",
@@ -11679,46 +11679,38 @@
       "lon": 15.16172,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002644",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4500,
        "max_monthly_feed_tonn": 500,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-09-21T12:29:27Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-16T23:41:41Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "15.07.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Bodø",
-       "Lokalitet": "Vindvika",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "19235",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Lokalitet": "Vindvika",
        "Plassering": "Sjø",
+       "Kapasitet": "1 560 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "15.07.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
-       "count": 5,
-       "last": "2026-08-28",
-       "steps": {
-        "fiskeridir": {
-         "label": "Fiskeridirektoratet",
-         "first": "2026-07-21",
-         "count": 3,
-         "last": "2026-07-29",
-         "last_title": "Akvakultursøknad SP-2026-002644 - Mowi Seawater Norway AS 921668236 - Tilleggsinformasjon fra søker"
-        }
-       },
-       "fetched_at": "2026-09-21T15:12:04Z",
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-16T23:41:44Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vindvika%22%20Mowi"
       }
      },
@@ -34260,8 +34252,46 @@
      "LAND_BASED_AQUACULTURE"
     ],
     "label": "Landbasert akvakultur",
-    "count": 61,
+    "count": 62,
     "items": [
+     {
+      "id": "SP-2026-002799",
+      "type": "Landbasert akvakultur",
+      "status": "Under behandling",
+      "title": "Ladstein",
+      "applicant": "Feedback Aquaculture AS",
+      "orgnr": "989649698",
+      "submitted": "2026-10-16",
+      "withdrawn": null,
+      "county": "Rogaland",
+      "municipality": "Stavanger",
+      "po": null,
+      "site_no": null,
+      "site": "Ladstein",
+      "species": "Hummer",
+      "lat": 59.14167,
+      "lon": 5.81667,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002799",
+      "details": {
+       "species": "Hummer",
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-10-16T23:41:41Z"
+      },
+      "fields": {
+       "Art": "Hummer",
+       "Kommune": "Stavanger",
+       "Fylke": "Rogaland",
+       "Innsendt": "16.10.2026",
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-16T23:41:44Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22Ladstein%22%20Feedback"
+      }
+     },
      {
       "id": "SP-2026-002783",
       "type": "Landbasert akvakultur",
@@ -37918,18 +37948,18 @@
    }
   },
   "details_summary": {
-   "cached": 490,
+   "cached": 491,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 2
   },
   "einnsyn_summary": {
-   "cached": 490,
+   "cached": 491,
    "pending": 0,
    "fetched_now": 2
   }
  },
  "changes": {
-  "updated_at": "2026-10-16T21:16:14Z",
+  "updated_at": "2026-10-16T23:41:47Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37974,6 +38004,7 @@
     "Elska Austevoll AS": "elska-austevoll-as",
     "Emilsen Havbruk AS": "emilsen-havbruk-as",
     "Erko Seafood AS": "erko-seafood-as",
+    "Feedback Aquaculture AS": "feedback-aquaculture-as",
     "Firda Sjøfarmer AS": "firda-sjoefarmer-as",
     "Fjelberg Fjordbruk  AS": "fjelberg-fjordbruk-as",
     "Flakstadvåg Laks AS": "flakstadvaag-laks-as",
@@ -38094,6 +38125,36 @@
    }
   },
   "events": [
+   {
+    "at": "2026-10-16T23:41:47Z",
+    "kind": "status",
+    "text": "Status: Returnert → Under behandling",
+    "id": "SP-2026-002644",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Mowi Seawater Norway AS",
+    "title": "Vindvika",
+    "municipality": "Bodø",
+    "county": "Nordland",
+    "status": "Under behandling",
+    "mtb_tonn": 3120,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002644"
+   },
+   {
+    "at": "2026-10-16T23:41:47Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002799",
+    "type_key": "land_based",
+    "type": "Landbasert akvakultur",
+    "applicant": "Feedback Aquaculture AS",
+    "title": "Ladstein",
+    "municipality": "Stavanger",
+    "county": "Rogaland",
+    "status": "Under behandling",
+    "mtb_tonn": null,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002799"
+   },
    {
     "at": "2026-10-16T01:26:03Z",
     "kind": "status",
@@ -70745,7 +70806,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-16T21:16:14Z",
+  "updated_at": "2026-10-16T23:41:47Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {

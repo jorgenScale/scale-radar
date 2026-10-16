@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-10-16T23:41:47Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002644",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Vindvika",
+"municipality": "Bodø",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002644"
+},
+{
+"at": "2026-10-16T23:41:47Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002799",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Feedback Aquaculture AS",
+"title": "Ladstein",
+"municipality": "Stavanger",
+"county": "Rogaland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002799"
+},
+{
 "at": "2026-10-16T01:26:03Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1026,5 +1056,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-16T21:16:14Z"
+"updated_at": "2026-10-16T23:41:47Z"
 }
