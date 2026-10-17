@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T13:46:53Z",
+ "generated_at": "2026-10-17T17:15:42Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-17T13:47:06Z",
+  "fetched_at": "2026-10-17T17:15:55Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -759,26 +759,26 @@
       "lon": 12.47566,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
       "details": {
-       "mtb_tonn": 4200,
-       "planned_production_tonn": 7000,
+       "case_handler": "Nordland fylkeskommune",
        "cycle_months": 12,
        "feed_per_cycle_tonn": 8400,
        "max_monthly_feed_tonn": 1800,
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "case_handler": "Nordland fylkeskommune",
        "fetched_at": "2026-10-17T13:47:09Z"
       },
       "fields": {
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Kommune": "Lurøy",
        "Fylke": "Nordland",
-       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "12 mnd",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
-       "Maksimal månedlig fôring": "1 800 tonn",
        "Innsendt": "22.09.2026",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
+       "Kommune": "Lurøy",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "12 mnd"
       },
       "einnsyn": {
        "count": 0,
@@ -37950,16 +37950,16 @@
   "details_summary": {
    "cached": 491,
    "pending": 0,
-   "fetched_now": 1
+   "fetched_now": 0
   },
   "einnsyn_summary": {
    "cached": 491,
    "pending": 0,
-   "fetched_now": 44
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-17T13:48:54Z",
+  "updated_at": "2026-10-17T17:15:58Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70806,7 +70806,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-17T13:48:54Z",
+  "updated_at": "2026-10-17T17:15:58Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
