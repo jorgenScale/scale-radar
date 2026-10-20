@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-10-20T01:52:44Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002800",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Norcod AS",
+"title": "Rabben",
+"municipality": "Flatanger",
+"county": "Trøndelag",
+"status": "Under behandling",
+"mtb_tonn": 3599,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800"
+},
+{
+"at": "2026-10-20T01:52:44Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002801",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Ternskjæret II",
+"municipality": "Namsos",
+"county": "Trøndelag",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801"
+},
+{
+"at": "2026-10-20T01:52:44Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002795",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Cermaq Norway Salmon AS",
+"title": "Hammer",
+"municipality": "Steigen",
+"county": "Nordland",
+"status": "Returnert",
+"mtb_tonn": 4000,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795"
+},
+{
 "at": "2026-10-16T23:41:47Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1056,5 +1101,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-19T22:26:29Z"
+"updated_at": "2026-10-20T01:52:44Z"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T22:24:30Z",
+ "generated_at": "2026-10-20T01:52:18Z",
  "mode": "live",
  "news": [
   {
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-19",
+  "published": "2026-10-20",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-19T22:24:42Z",
+  "fetched_at": "2026-10-20T01:52:30Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -642,8 +642,56 @@
      "OTHER_FISH_SPECIES"
     ],
     "label": "Nye lokaliteter – sjø",
-    "count": 131,
+    "count": 132,
     "items": [
+     {
+      "id": "SP-2026-002800",
+      "type": "Andre fiskearter",
+      "status": "Under behandling",
+      "title": "Rabben",
+      "applicant": "Norcod AS",
+      "orgnr": "821489962",
+      "submitted": "2026-10-19",
+      "withdrawn": null,
+      "county": "Trøndelag",
+      "municipality": "Flatanger",
+      "po": null,
+      "site_no": null,
+      "site": "Rabben",
+      "species": "Torsk",
+      "lat": 64.46157,
+      "lon": 10.5184,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800",
+      "details": {
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4200,
+       "cycle_months": 22,
+       "feed_per_cycle_tonn": 4650,
+       "max_monthly_feed_tonn": 418,
+       "species": "Torsk",
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-10-20T01:52:31Z"
+      },
+      "fields": {
+       "Art": "Torsk",
+       "Kommune": "Flatanger",
+       "Fylke": "Trøndelag",
+       "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "418 tonn",
+       "Innsendt": "19.10.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-20T01:52:37Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22Rabben%22%20Norcod"
+      }
+     },
      {
       "id": "SP-2026-002791",
       "type": "Ny lokalitet",
@@ -736,7 +784,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-18T23:18:21Z",
+       "fetched_at": "2026-10-20T01:52:37Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
       }
      },
@@ -10752,8 +10800,62 @@
      "CHANGE_SITE"
     ],
     "label": "Endring av lokalitet",
-    "count": 298,
+    "count": 299,
     "items": [
+     {
+      "id": "SP-2026-002801",
+      "type": "Endring av lokalitet",
+      "status": "Under behandling",
+      "title": "Ternskjæret II",
+      "applicant": "Salmar Oppdrett AS",
+      "orgnr": "928957489",
+      "submitted": "2026-10-19",
+      "withdrawn": null,
+      "county": "Trøndelag",
+      "municipality": "Namsos",
+      "po": "Nord-Trøndelag med Bindal",
+      "site_no": "12662",
+      "site": "TERNSKJÆRET II",
+      "species": "Laks, Ørret, Regnbueørret",
+      "lat": 64.77844,
+      "lon": 11.66169,
+      "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801",
+      "details": {
+       "mtb_tonn": 6240,
+       "planned_production_tonn": 7000,
+       "cycle_months": 18,
+       "feed_per_cycle_tonn": 8000,
+       "max_monthly_feed_tonn": 900,
+       "species": "Laks, Ørret, Regnbueørret",
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-10-20T01:52:31Z"
+      },
+      "fields": {
+       "Art": "Laks, Ørret, Regnbueørret",
+       "Kommune": "Namsos",
+       "Fylke": "Trøndelag",
+       "Lokalitetsnummer": "12662",
+       "Lokalitet": "Ternskjæret II",
+       "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
+       "Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+       "Aktive tillatelser": "NT-V-0002 , NT-V-0038 , TR-N-0001 , NT-V-0003 , NT-NR-0049 , NT-NR-0014 , TR-N-0002 , NT-V-0035",
+       "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "19.10.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
+      },
+      "einnsyn": {
+       "count": 0,
+       "last": null,
+       "steps": {},
+       "fetched_at": "2026-10-20T01:52:37Z",
+       "search_url": "https://einnsyn.no/sok?searchTerm=%22Ternskj%C3%A6ret%20II%22%20Salmar"
+      }
+     },
      {
       "id": "SP-2026-002797",
       "type": "Endring av lokalitet",
@@ -10869,7 +10971,7 @@
      {
       "id": "SP-2026-002795",
       "type": "Endring av lokalitet",
-      "status": "Under behandling",
+      "status": "Returnert",
       "title": "Hammer",
       "applicant": "Cermaq Norway Salmon AS",
       "orgnr": "930152366",
@@ -10885,32 +10987,32 @@
       "lon": 15.16767,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4000,
+       "planned_production_tonn": 5050,
        "cycle_months": 17,
        "feed_per_cycle_tonn": 6680,
        "max_monthly_feed_tonn": 782,
-       "mtb_tonn": 4000,
-       "planned_production_tonn": 5050,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-19T10:50:38Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-20T01:52:31Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-SG-0027 , N-SG-0007 , N-HM-0002 , N-SG-0016 , N-SG-0028",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "06.10.2026",
-       "Kapasitet": "3 600 tonn",
        "Kommune": "Steigen",
-       "Lokalitet": "Hammer",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "13592",
-       "Maksimal månedlig fôring": "782 tonn",
-       "Maksimal tillatt biomasse (MTB)": "4 000 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 680 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 050 tonn",
+       "Lokalitet": "Hammer",
        "Plassering": "Sjø",
+       "Kapasitet": "3 600 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "17 mnd"
+       "Aktive tillatelser": "N-SG-0027 , N-SG-0007 , N-HM-0002 , N-SG-0016 , N-SG-0028",
+       "Maksimal tillatt biomasse (MTB)": "4 000 tonn",
+       "Planlagt produksjon per produksjonssyklus": "5 050 tonn",
+       "Produksjonssykluslengde": "17 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 680 tonn",
+       "Maksimal månedlig fôring": "782 tonn",
+       "Innsendt": "06.10.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 4,
@@ -10985,7 +11087,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-18T23:18:21Z",
+       "fetched_at": "2026-10-20T01:52:37Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Svartskj%C3%A6r%22%20S%C3%B8rrollnesfisk"
       }
      },
@@ -11679,32 +11781,32 @@
       "lon": 15.16172,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002644",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 4000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 4500,
        "max_monthly_feed_tonn": 500,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 4000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-16T23:41:41Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-20T01:52:31Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "15.07.2026",
-       "Kapasitet": "1 560 tonn",
        "Kommune": "Bodø",
-       "Lokalitet": "Vindvika",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "19235",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
-       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Lokalitet": "Vindvika",
        "Plassering": "Sjø",
+       "Kapasitet": "1 560 tonn",
        "Produksjonsområde": "Vestfjorden og Vesterålen (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
+       "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
+       "Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 500 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "15.07.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -34280,16 +34382,16 @@
       "lon": 5.81667,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002799",
       "details": {
-       "case_handler": "Rogaland fylkeskommune",
        "species": "Hummer",
-       "fetched_at": "2026-10-16T23:41:41Z"
+       "case_handler": "Rogaland fylkeskommune",
+       "fetched_at": "2026-10-20T01:52:31Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
        "Art": "Hummer",
+       "Kommune": "Stavanger",
        "Fylke": "Rogaland",
        "Innsendt": "16.10.2026",
-       "Kommune": "Stavanger"
+       "Ansvarlig saksbehandler": "Rogaland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -37955,18 +38057,18 @@
    }
   },
   "details_summary": {
-   "cached": 491,
+   "cached": 493,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 5
   },
   "einnsyn_summary": {
-   "cached": 491,
+   "cached": 493,
    "pending": 0,
-   "fetched_now": 43
+   "fetched_now": 4
   }
  },
  "changes": {
-  "updated_at": "2026-10-19T22:26:29Z",
+  "updated_at": "2026-10-20T01:52:44Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -38132,6 +38234,51 @@
    }
   },
   "events": [
+   {
+    "at": "2026-10-20T01:52:44Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002800",
+    "type_key": "new_site",
+    "type": "Andre fiskearter",
+    "applicant": "Norcod AS",
+    "title": "Rabben",
+    "municipality": "Flatanger",
+    "county": "Trøndelag",
+    "status": "Under behandling",
+    "mtb_tonn": 3599,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800"
+   },
+   {
+    "at": "2026-10-20T01:52:44Z",
+    "kind": "ny",
+    "text": "Ny søknad – Under behandling",
+    "id": "SP-2026-002801",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Salmar Oppdrett AS",
+    "title": "Ternskjæret II",
+    "municipality": "Namsos",
+    "county": "Trøndelag",
+    "status": "Under behandling",
+    "mtb_tonn": 6240,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801"
+   },
+   {
+    "at": "2026-10-20T01:52:44Z",
+    "kind": "status",
+    "text": "Status: Under behandling → Returnert",
+    "id": "SP-2026-002795",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Cermaq Norway Salmon AS",
+    "title": "Hammer",
+    "municipality": "Steigen",
+    "county": "Nordland",
+    "status": "Returnert",
+    "mtb_tonn": 4000,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795"
+   },
    {
     "at": "2026-10-16T23:41:47Z",
     "kind": "status",
@@ -70813,7 +70960,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-19T22:26:29Z",
+  "updated_at": "2026-10-20T01:52:44Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -71004,7 +71151,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -71044,7 +71191,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": []
     },
     "companies": [
@@ -71369,7 +71516,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -71673,7 +71820,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -71717,7 +71864,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -71809,7 +71956,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-19T17:36:05Z",
+     "fetched_at": "2026-10-20T01:52:44Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",

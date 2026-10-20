@@ -13031,7 +13031,7 @@
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
-"fetched_at": "2026-10-16T23:41:41Z",
+"fetched_at": "2026-10-20T01:52:31Z",
 "fields": {
 "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13569,7 +13569,7 @@
 "title": "Målvika"
 },
 "SP-2026-002795": {
-"fetched_at": "2026-10-19T10:50:38Z",
+"fetched_at": "2026-10-20T01:52:31Z",
 "fields": {
 "Aktive tillatelser": "N-SG-0027 , N-SG-0007 , N-HM-0002 , N-SG-0016 , N-SG-0028",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13597,7 +13597,7 @@
 "planned_production_tonn": 5050,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Hammer"
 },
 "SP-2026-002796": {
@@ -13661,7 +13661,7 @@
 "title": "Storvika"
 },
 "SP-2026-002799": {
-"fetched_at": "2026-10-16T23:41:41Z",
+"fetched_at": "2026-10-20T01:52:31Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Hummer",
@@ -13675,5 +13675,63 @@
 },
 "status": "Under behandling",
 "title": "Ladstein"
+},
+"SP-2026-002800": {
+"fetched_at": "2026-10-20T01:52:31Z",
+"fields": {
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Art": "Torsk",
+"Fylke": "Trøndelag",
+"Innsendt": "19.10.2026",
+"Kommune": "Flatanger",
+"Maksimal månedlig fôring": "418 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 599 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 200 tonn",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 4650,
+"max_monthly_feed_tonn": 418,
+"mtb_tonn": 3599,
+"planned_production_tonn": 4200,
+"species": "Torsk"
+},
+"status": "Under behandling",
+"title": "Rabben"
+},
+"SP-2026-002801": {
+"fetched_at": "2026-10-20T01:52:31Z",
+"fields": {
+"Aktive tillatelser": "NT-V-0002 , NT-V-0038 , TR-N-0001 , NT-V-0003 , NT-NR-0049 , NT-NR-0014 , TR-N-0002 , NT-V-0035",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Trøndelag",
+"Innsendt": "19.10.2026",
+"Kapasitet": "4 680 tonn",
+"Kommune": "Namsos",
+"Lokalitet": "Ternskjæret II",
+"Lokalitetsnummer": "12662",
+"Maksimal månedlig fôring": "900 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 8000,
+"max_monthly_feed_tonn": 900,
+"mtb_tonn": 6240,
+"planned_production_tonn": 7000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Ternskjæret II"
 }
 }
