@@ -12647,7 +12647,7 @@
 "title": "Uio Lvb Fisk"
 },
 "SP-2026-002534": {
-"fetched_at": "2026-10-19T04:48:34Z",
+"fetched_at": "2026-10-22T01:34:11Z",
 "fields": {
 "Aktive tillatelser": "M-H-0004 , M-MD-0004 , M-SØ-0001 , M-SØ-0004 , M-G-0001 , M-H-0019 , M-SM-0015 , M-H-0007",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -12675,7 +12675,7 @@
 "planned_production_tonn": 6666,
 "species": "Torsk"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Holmskallen"
 },
 "SP-2026-002538": {
@@ -13733,5 +13733,34 @@
 },
 "status": "Under behandling",
 "title": "Ternskjæret II"
+},
+"SP-2026-002802": {
+"fetched_at": "2026-10-22T01:34:11Z",
+"fields": {
+"Aktive tillatelser": "NT-F-0034 , ST-F-0071 , NT-F-0035",
+"Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Trøndelag",
+"Innsendt": "20.10.2026",
+"Kapasitet": "780 tonn",
+"Kommune": "Heim",
+"Lokalitet": "Engdal",
+"Lokalitetsnummer": "45130",
+"Maksimal månedlig fôring": "77 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "737 tonn",
+"Planlagt produksjon per produksjonssyklus": "670 tonn",
+"Plassering": "Sjø",
+"Produksjonssykluslengde": "20 mnd"
+},
+"norm": {
+"case_handler": "Trøndelag fylkeskommune",
+"cycle_months": 20,
+"feed_per_cycle_tonn": 737,
+"max_monthly_feed_tonn": 77,
+"planned_production_tonn": 670,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Engdal"
 }
 }
