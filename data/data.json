@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T18:24:55Z",
+ "generated_at": "2026-10-23T22:15:33Z",
  "mode": "live",
  "news": [
   {
@@ -27,7 +27,7 @@
    "source_key": "ilaks",
    "source": "iLaks",
    "published": "2026-10-23",
-   "title": "En sterk krone demper neste ukes laksepriser",
+   "title": "En sterk krone reduserer neste ukes laksepriser",
    "url": "https://ilaks.no/en-sterk-krone-demper-neste-ukes-laksepriser/?mtm_campaign=feed_click&mtm_kwd=en-sterk-krone-demper-neste-ukes-laksepriser&mtm_source=RSS2&mtm_medium=feed"
   },
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-22",
   "note": null,
   "groups": [
    {
@@ -397,43 +397,43 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 216.0,
-      "change_pct": 0.09
+      "price": 215.8,
+      "change_pct": -0.46
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 584.0,
-      "change_pct": 1.04
+      "price": 578.0,
+      "change_pct": -1.11
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.6,
-      "change_pct": 0.05
+      "price": 43.58,
+      "change_pct": -0.5
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 22.78,
-      "change_pct": -0.26
+      "price": 22.84,
+      "change_pct": -2.06
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
       "price": 82.7,
-      "change_pct": 0.0
+      "change_pct": -1.31
      },
      {
       "name": "Måsøval",
       "ticker": "MAS",
       "currency": "NOK",
-      "price": 37.8,
-      "change_pct": -0.53
+      "price": 38.0,
+      "change_pct": 0.0
      }
     ]
    },
@@ -451,36 +451,36 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.1,
-      "change_pct": -1.12
+      "price": 3.13,
+      "change_pct": -2.34
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 26.8,
-      "change_pct": -1.11
+      "price": 27.1,
+      "change_pct": -3.21
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.42,
-      "change_pct": 1.45
+      "price": 0.41,
+      "change_pct": -3.73
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 89.2,
-      "change_pct": 1.13
+      "price": 88.2,
+      "change_pct": -1.12
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
       "price": 5.08,
-      "change_pct": 0.0
+      "change_pct": -1.55
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 459.6,
-      "change_pct": 0.09
+      "price": 459.2,
+      "change_pct": -0.35
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 25.0,
-      "change_pct": 0.81
+      "price": 24.8,
+      "change_pct": 0.0
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-23T18:25:09Z",
+  "fetched_at": "2026-10-23T22:15:47Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -822,26 +822,26 @@
       "lon": 12.47566,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 8400,
        "max_monthly_feed_tonn": 1800,
-       "mtb_tonn": 4200,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-20T18:30:00Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-23T22:15:49Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "22.09.2026",
        "Kommune": "Lurøy",
-       "Maksimal månedlig fôring": "1 800 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
        "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "12 mnd"
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Innsendt": "22.09.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -1017,10 +1017,18 @@
        "Produksjonssykluslengde": "60 mnd"
       },
       "einnsyn": {
-       "count": 0,
-       "last": null,
-       "steps": {},
-       "fetched_at": "2026-09-23T20:26:59Z",
+       "count": 1,
+       "last": "2026-10-01",
+       "steps": {
+        "fiskeridir": {
+         "label": "Fiskeridirektoratet",
+         "first": "2026-10-01",
+         "count": 1,
+         "last": "2026-10-01",
+         "last_title": "Fiskeridirektoratets fråsegn til søknad om dispensasjon frå kommuneplanens arealdel for etablering av fortøyingar for akvakulturanlegg Laupsneset i Hareid kommune"
+        }
+       },
+       "fetched_at": "2026-10-23T22:15:50Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Laupsneset%22%20Nordic"
       }
      },
@@ -37550,16 +37558,16 @@
   "details_summary": {
    "cached": 495,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 1
   },
   "einnsyn_summary": {
    "cached": 495,
    "pending": 0,
-   "fetched_now": 5
+   "fetched_now": 1
   }
  },
  "changes": {
-  "updated_at": "2026-10-23T18:25:19Z",
+  "updated_at": "2026-10-23T22:15:51Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70835,7 +70843,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-23T18:25:19Z",
+  "updated_at": "2026-10-23T22:15:52Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
