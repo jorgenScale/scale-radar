@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-10-23T13:31:08Z",
+"updated_at": "2026-10-23T18:25:46Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -27,7 +27,7 @@
 "relevant": 4,
 "active": 0,
 "candidates": 8,
-"fetched_this_run": 298,
+"fetched_this_run": 300,
 "api_calls": 4
 },
 "items": [
