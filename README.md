@@ -98,20 +98,24 @@ fanen «Anbud» og i et kort på Radar-siden. Krever secret `DOFFIN_API_KEY` i G
 Nøkkelen er gratis: registrer deg på https://dof-notices-prod-api.developer.azure-api.net/, abonner på «Public API» og kopier
 abonnementsnøkkelen. Uten secret hopper steget over, og siden forklarer hvorfor.
 
-Skriptet henter *alle* kunngjøringer for de siste `incremental_days` (3) dagene hver time, og fyller første gang bakover
-`backfill_days` (120) dager, inntil `max_pages_per_run` sider per kjøring (100 treff per side). Relevansen beregnes lokalt og
-regelbasert, så en endring i `content/anbud.json` slår inn på alt som er lagret uten ny henting:
+Skriptet henter *alle* kunngjøringer for de siste `incremental_days` (3) dagene hver time (ca. 75 kunngjøringer per dag), og
+fyller første gang bakover `backfill_days` (120) dager. Doffin-API-et gir maks 1 000 treff per søk, så historikken hentes i biter på
+`backfill_slice_days` (4) dager; en bit som treffer taket deles i to. Inntil `max_pages_per_run` sider (100 treff per side) per
+kjøring, så 120 dager er inne etter tre timer. Relevansen beregnes lokalt og regelbasert, så en endring i `content/anbud.json`
+slår inn på alt som er lagret uten ny henting:
 
-- **Område-ord** (fôrflåte, merd, fôringsanlegg, undervannskamera, vaksineringsmaskin, settefiskanlegg …) gir 45 poeng i
-  tittel / 30 i beskrivelse og setter produktområde. Svake ord («flåte», «kamera») gir 20/12.
-- **Havbruksord** (akvakultur, oppdrett, smolt, lakselus …) gir 35/20, inntil tre ord.
+- **Område-ord** (fôrflåte, merd, fôringsanlegg, undervannskamera, vaksineringsmaskin, settefiskanlegg …) gir 50 poeng i
+  tittel / 30 i beskrivelse og setter produktområde. Svake ord («flåte», «kamera», «sorteringsmaskin») gir 20/12.
+- **Havbruksord** (akvakultur, havbruk, oppdrett, smolt, lakselus …) gir 50/20, inntil tre ord, og matcher også som første ledd i
+  sammensetninger (oppdrettsutstyr, havbruksstasjon).
 - **Kjent offentlig kjøper** (Havforskningsinstituttet, NTNU, Nofima, fylkeskommunene bak skolene med akvakulturlinje …) gir 25.
-- **CPV-kode** mot fisk/båt gir 15. **Negative ord** (bilflåte, redningsflåte, flåtestyring …) trekker 50.
+- **CPV-kode** mot fisk/båt gir 15. **Negative ord** (bilflåte, redningsflåte, flåtestyring, renovasjon …) trekker 50.
 
-Ord matcher ordstart med inntil tre bokstavers bøyning, så «bilflåte» og «flåtestyring» treffer ikke «flåte». Terskelen er 40
-av 100; alt fra 20 lagres som kandidat og kan vises på siden («Også kandidater under terskel») for å justere reglene med fasit.
-Hver rad viser hvilke ord som ga poeng. Filer: `data/anbud/items.json` (alle lagrede med score og begrunnelse),
-`data/anbud/state.json` (hvor langt bakoverfyllingen er kommet), `data/anbud/status.json`.
+Ord matcher ordstart med inntil tre bokstavers bøyning, så «bilflåte» og «flåtestyring» treffer ikke «flåte», og ô skilles fra o
+(«fôring» treffer ikke rørforing, «fôrsystem» ikke IT-ordet forsystem). Terskelen er 50 av 100 – et sterkt ord i tittelen holder
+alene, kjent kjøper gjør det ikke. Alt fra 30 lagres som kandidat og kan vises på siden («Også kandidater under terskel») for å
+justere reglene med fasit. Hver rad viser hvilke ord som ga poeng. Filer: `data/anbud/items.json` (alle lagrede med score og
+begrunnelse), `data/anbud/state.json` (hvor langt bakoverfyllingen er kommet), `data/anbud/status.json`.
 
 RSS: `data/feeds/anbud.xml` (alle relevante, nyeste først) og `data/feeds/anbud/<område>.xml` per produktområde – lenken
 vises på siden når du filtrerer på et område. Legges inn i Outlook («RSS-feeder») eller Power Automate på samme måte som

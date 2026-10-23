@@ -2288,7 +2288,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     return '<span class="due '+cls+'">'+esc(dyear(it.deadline))+'</span><small>'+(n < 0 ? 'utløpt' : (n === 0 ? 'i dag' : 'om '+n+' dager'))+'</small>';
   }
   function anValue(v, cur){ if(v == null || !v) return '–'; var c = cur && cur !== 'NOK' ? ' '+cur : ''; if(v >= 1e9) return nf(v/1e9,2)+' mrd'+c; if(v >= 1e6) return nf(v/1e6, v >= 1e8 ? 0 : 1)+' mill.'+c; return nf(v,0)+(c||' kr'); }
-  function anRel(s){ var cls = s >= 70 ? 'hi' : (s >= 40 ? 'mid' : 'lo'); return '<span class="rel '+cls+'" title="Relevans '+s+' av 100">'+s+'</span>'; }
+  function anRel(s){ var th = (ANBUD.data && ANBUD.data.threshold) || 50; var cls = s >= Math.max(th, 70) ? 'hi' : (s >= th ? 'mid' : 'lo'); return '<span class="rel '+cls+'" title="Relevans '+s+' av 100">'+s+'</span>'; }
   function anAreas(it, labels){ return (it.areas||[]).map(function(a){ return '<span class="badge" style="--c:'+(AN_AREA_COL[a]||'#7C878E')+'">'+esc(labels[a]||a)+'</span>'; }).join(' ') || '<span class="tk">havbruk generelt</span>'; }
   function anType(it){ return '<span class="badge" style="--c:'+(AN_TYPE_COL[it.kind]||'#7C878E')+'">'+esc(it.type_label||it.type)+'</span>'; }
   function anEmptyMsg(st){
