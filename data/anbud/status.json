@@ -1,1 +1,1 @@
-{"status": "auth_failed", "updated_at": "2026-10-23T11:43:14Z", "message": "api.doffin.no: HTTP 400; betaapi.doffin.no: HTTP 401; dof-notices-prod-api.azure-api.net: HTTP 400", "hint": "401 på alle adresser betyr som regel at abonnementet i Doffins API-portal ikke er aktivt ennå, eller at nøkkelen er fra et annet miljø (dev/prod)."}
+{"status": "ok", "updated_at": "2026-10-23T11:52:58Z", "relevant": 4, "active": 2, "fetched": 1294, "api_calls": 14, "backfill_complete": true}

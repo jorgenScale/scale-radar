@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:42:54Z",
+ "generated_at": "2026-10-23T11:52:31Z",
  "mode": "live",
  "news": [
   {
@@ -404,22 +404,22 @@
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 580.0,
-      "change_pct": 0.35
+      "price": 579.5,
+      "change_pct": 0.26
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.58,
-      "change_pct": 0.0
+      "price": 43.62,
+      "change_pct": 0.09
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 22.66,
-      "change_pct": -0.79
+      "price": 22.7,
+      "change_pct": -0.61
      },
      {
       "name": "Austevoll Seafood",
@@ -451,8 +451,8 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.1,
-      "change_pct": -1.12
+      "price": 3.11,
+      "change_pct": -0.8
      },
      {
       "name": "Andfjord Salmon",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-23T11:43:06Z",
+  "fetched_at": "2026-10-23T11:52:41Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37559,7 +37559,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-10-23T11:43:09Z",
+  "updated_at": "2026-10-23T11:52:43Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70835,7 +70835,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-23T11:43:09Z",
+  "updated_at": "2026-10-23T11:52:43Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
