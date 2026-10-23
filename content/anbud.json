@@ -12,7 +12,7 @@
   "incremental_days": 3,
   "page_size": 100,
   "max_pages_per_run": 60,
-  "pause_seconds": 0.4,
+  "pause_seconds": 2.2,
   "threshold": 50,
   "store_min_score": 30,
   "keep_days": 365,
@@ -277,5 +277,6 @@
     }
   },
   "backfill_slice_days": 4,
-  "_backfill_slice_days_comment": "Doffin-API-et gir maks 1 000 treff per søk. Historikken hentes derfor i biter på så mange dager; en bit som treffer taket deles automatisk i to."
+  "_backfill_slice_days_comment": "Doffin-API-et gir maks 1 000 treff per søk. Historikken hentes derfor i biter på så mange dager; en bit som treffer taket deles automatisk i to.",
+  "_pause_seconds_comment": "Doffin-API-et har en ratebegrensning (ca. 30 kall per minutt). 2,2 s mellom kall holder oss under; ved 429 venter skriptet så lenge API-et ber om og fortsetter neste time hvis det ikke slipper til."
 }
