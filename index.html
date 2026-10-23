@@ -2293,7 +2293,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   function anType(it){ return '<span class="badge" style="--c:'+(AN_TYPE_COL[it.type]||'#7C878E')+'">'+esc(it.type_label||it.type)+'</span>'; }
   function anEmptyMsg(st){
     if(st && st.status === 'missing_secrets') return 'Doffin-nøkkelen (DOFFIN_API_KEY) er ikke lagt inn som secret i GitHub ennå. Nøkkelen er gratis: registrer deg på dof-notices-prod-api.developer.azure-api.net, abonner på «Public API» og legg nøkkelen under Settings → Secrets and variables → Actions. Neste kjøring henter de siste 120 dagene.';
-    if(st && st.status === 'auth_failed') return 'Doffin avviste nøkkelen ved siste kjøring ('+(st.message||'')+'). Sjekk at DOFFIN_API_KEY er riktig og at abonnementet på Public API er aktivt.';
+    if(st && st.status === 'auth_failed') return 'Doffin avviste nøkkelen ved siste kjøring ('+(st.message||'')+'). '+(st.hint||'Sjekk at DOFFIN_API_KEY er riktig og at abonnementet på Public API er aktivt.');
     if(st && st.status === 'error') return 'Henting fra Doffin feilet ved siste kjøring: '+(st.message||'')+'.';
     if(st && st.status === 'disabled') return 'Anbud er slått av i content/anbud.json.';
     return 'Anbud fra Doffin hentes ved neste automatiske oppdatering.';
