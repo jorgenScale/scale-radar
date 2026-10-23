@@ -32,6 +32,7 @@ Deretter kjører oppdateringen selv, 17 minutter over hver hele time (UTC).
 | auksjoner og fastpris – eldre runder, 2026-status, kilder | `content/auksjoner.json` (skriptet legger Fiskeridirektoratets tabeller oppå) |
 | justere henting av detaljsider (antall per kjøring, oppfrisking) | `content/config.json` → `applications.details` |
 | justere saksgang fra eInnsyn (antall per kjøring, oppfrisking) | `content/config.json` → `applications.einnsyn` |
+| søkeord, produktområder, kjøpere og terskel for offentlige anbud | `content/anbud.json` (scorer alt lagret på nytt neste time) |
 | endre utseende, tekster, søknadsprosessen  | `index.html`                  |
 
 Skriptet er tolerant: feiler én kilde, beholdes forrige verdi for den kilden og status vises på siden.
@@ -89,6 +90,39 @@ per 20 timer (sett `BW_FORCE=1` for å overstyre). Filer: `data/fishhealth/index
 (to mål: registrert smolt og alle fisk < 500 g), beholdning (antall og tonn), fôrforbruk, uttak til slakt, dødfisk og
 rømming, pluss beholdning per utsettsår (årsklasser) ved siste månedsslutt. Oppdateres hver 12. time; kilden
 oppdateres månedlig. Ingen nøkler nødvendig.
+
+## Offentlige anbud (Doffin)
+
+`scripts/fetch_doffin.py` henter kunngjøringer fra Doffins offentlige API (DFØ) og viser dem som relevante for ScaleAQ på
+fanen «Anbud» og i et kort på Radar-siden. Krever secret `DOFFIN_API_KEY` i GitHub (Settings → Secrets and variables → Actions).
+Nøkkelen er gratis: registrer deg på https://dof-notices-prod-api.developer.azure-api.net/, abonner på «Public API» og kopier
+abonnementsnøkkelen. Uten secret hopper steget over, og siden forklarer hvorfor.
+
+Skriptet henter *alle* kunngjøringer for de siste `incremental_days` (3) dagene hver time, og fyller første gang bakover
+`backfill_days` (120) dager, inntil `max_pages_per_run` sider per kjøring (100 treff per side). Relevansen beregnes lokalt og
+regelbasert, så en endring i `content/anbud.json` slår inn på alt som er lagret uten ny henting:
+
+- **Område-ord** (fôrflåte, merd, fôringsanlegg, undervannskamera, vaksineringsmaskin, settefiskanlegg …) gir 45 poeng i
+  tittel / 30 i beskrivelse og setter produktområde. Svake ord («flåte», «kamera») gir 20/12.
+- **Havbruksord** (akvakultur, oppdrett, smolt, lakselus …) gir 35/20, inntil tre ord.
+- **Kjent offentlig kjøper** (Havforskningsinstituttet, NTNU, Nofima, fylkeskommunene bak skolene med akvakulturlinje …) gir 25.
+- **CPV-kode** mot fisk/båt gir 15. **Negative ord** (bilflåte, redningsflåte, flåtestyring …) trekker 50.
+
+Ord matcher ordstart med inntil tre bokstavers bøyning, så «bilflåte» og «flåtestyring» treffer ikke «flåte». Terskelen er 40
+av 100; alt fra 20 lagres som kandidat og kan vises på siden («Også kandidater under terskel») for å justere reglene med fasit.
+Hver rad viser hvilke ord som ga poeng. Filer: `data/anbud/items.json` (alle lagrede med score og begrunnelse),
+`data/anbud/state.json` (hvor langt bakoverfyllingen er kommet), `data/anbud/status.json`.
+
+RSS: `data/feeds/anbud.xml` (alle relevante, nyeste først) og `data/feeds/anbud/<område>.xml` per produktområde – lenken
+vises på siden når du filtrerer på et område. Legges inn i Outlook («RSS-feeder») eller Power Automate på samme måte som
+søkerfeedene. Tildelinger (hvem vant) beholdes i ett år; konkurranser forsvinner 90 dager etter fristen.
+
+Begrensninger: bare anskaffelser over terskelverdi kunngjøres på Doffin, avrop på rammeavtaler og dynamiske innkjøpsordninger
+er ikke synlige, og konkurransegrunnlaget ligger hos oppdragsgivers KGV (Mercell m.fl.) bak lenken. EØS-anbud (TED) og
+Chile/Vietnam er ikke med. Lokal test uten nøkkel: `DOFFIN_FIXTURE=sti/til/svar.json python scripts/fetch_doffin.py`.
+
+Neste steg (fase 2): la Claude-API-et finlese kandidatene og sette område og én setnings oppsummering, og en fane for
+tildelinger over tid per konkurrent.
 
 ## Følg en søker (abonnement)
 

@@ -38,7 +38,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lightblue);outline-
 .nav{display:flex;gap:.25rem}
 .nav button{background:none;border:0;color:#fff;font:inherit;font-size:.92rem;padding:.55rem .85rem;border-radius:4px;cursor:pointer;opacity:.8;white-space:nowrap}
 .nav{flex-wrap:wrap;justify-content:flex-end}
-@media (max-width:1280px){.nav button{font-size:.84rem;padding:.5rem .6rem}}
+@media (max-width:1400px){.nav button{font-size:.84rem;padding:.5rem .55rem}.nav{gap:.1rem}.stamp{max-width:11rem}.brand .product span{display:none}}
 .nav button[aria-selected="true"]{opacity:1;background:rgba(255,255,255,.1);box-shadow:inset 0 -2px 0 var(--fire)}
 .stamp{font-size:.8rem;opacity:.85;text-align:right;line-height:1.35}
 .stamp b{font-weight:600}
@@ -1034,6 +1034,35 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .filters{grid-template-columns:1fr 1fr}
   .sub{grid-template-columns:1fr}
 }
+/* Offentlige anbud (Doffin) */
+.anbud{display:grid;gap:1.25rem}
+.anbud-filters{grid-template-columns:minmax(12rem,2fr) repeat(4,minmax(8rem,1fr)) auto}
+.anbud-list{max-height:640px;overflow:auto;border:1px solid var(--line);border-radius:4px}
+.anbud-list th{position:sticky;top:0;background:var(--panel);z-index:1}
+.anbud-list tbody tr.row{cursor:pointer}
+.anbud-list tbody tr.row:hover{background:var(--tint)}
+.anbud-list tbody tr.row[aria-expanded="true"]{background:var(--tint);box-shadow:inset 3px 0 0 var(--fire)}
+.anbud-list td.t{font-weight:600;color:var(--head)}
+.anbud-list td.t small{display:block;font-weight:400;color:var(--ink-2)}
+.anbud-list td.f small{display:block;font-weight:400;color:var(--ink-2);font-size:.74rem}
+.anbud-list tr.det td{background:var(--tint);padding:.6rem .8rem .9rem;cursor:default;border-bottom:2px solid var(--line)}
+.anbud-list tr.det .desc{font-size:.86rem;margin:0 0 .5rem;white-space:pre-line;max-width:80ch}
+.anbud-list tr.det .meta-row{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;font-size:.8rem;color:var(--ink-2)}
+.anbud-list tr.det .meta-row b{color:var(--head);font-weight:600}
+.anbud-list tr.det .why{font-size:.78rem;color:var(--ink-2);margin:.45rem 0 0}
+.anbud-list tr.det .why span{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.05em .5em;margin:.15rem .25rem .15rem 0;background:var(--panel)}
+.anbud-list tr.det .why span.neg{text-decoration:line-through}
+.rel{display:inline-block;min-width:2.4rem;text-align:center;font-weight:600;border-radius:999px;padding:.05em .5em;font-variant-numeric:tabular-nums;background:var(--tint);color:var(--ink-2)}
+.rel.hi{background:#46B97826;color:#1e6b43}
+.rel.mid{background:#187CB222;color:var(--ocean)}
+:root[data-theme="dark"] .rel.hi{color:#8fe0b3}
+:root[data-theme="dark"] .rel.mid{color:var(--sky)}
+.an-next{list-style:none;margin:.2rem 0 .6rem;padding:0;font-size:.86rem}
+.an-next li{display:grid;grid-template-columns:5.5rem 1fr;gap:.6rem;padding:.3rem 0;border-bottom:1px dotted var(--line)}
+.an-next li small{display:block;color:var(--ink-2);font-size:.78rem}
+.an-next a{color:var(--head);text-decoration:none;font-weight:600}
+.an-next a:hover{text-decoration:underline;color:var(--link)}
+@media (max-width: 900px){ .anbud-filters{grid-template-columns:1fr 1fr} }
 </style>
 </head>
 <body>
@@ -1051,6 +1080,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <button role="tab" aria-selected="false" data-view="fish">Fiskehelse</button>
       <button role="tab" aria-selected="false" data-view="bio">Smolt og biomasse</button>
       <button role="tab" aria-selected="false" data-view="sales">Salg og service</button>
+      <button role="tab" aria-selected="false" data-view="anbud">Anbud</button>
     </nav>
     <div class="stamp" id="stamp"></div>
   </div>
@@ -1086,6 +1116,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <section class="panel" aria-labelledby="auc-card-h">
         <header><h2 id="auc-card-h">Kjøp av produksjonskapasitet</h2><div class="meta" id="auc-card-meta"></div></header>
         <div class="body" id="auc-card-body"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="anbud-card-h">
+        <header><h2 id="anbud-card-h">Offentlige anbud</h2><div class="meta" id="anbud-card-meta"></div></header>
+        <div class="body" id="anbud-card-body"></div>
       </section>
     </div>
 
@@ -1366,6 +1401,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </main>
 </div>
 
+<!-- ============================ OFFENTLIGE ANBUD ============================ -->
+<div id="view-anbud" hidden>
+  <section class="pulse" aria-label="Offentlige anbud"><div class="wrap" id="anbud-pulse"></div></section>
+  <main class="anbud">
+    <section class="panel" aria-labelledby="anbud-h">
+      <header><h2 id="anbud-h">Offentlige anbud innen havbruk</h2><div class="meta" id="anbud-meta">Kilde: Doffin – Database for offentlige anskaffelser (DFØ)</div></header>
+      <div class="body">
+        <div class="chips" id="anbud-areas" aria-label="Filtrer på produktområde"></div>
+        <div class="filters anbud-filters">
+          <input type="search" id="an-q" placeholder="Søk i tittel, oppdragsgiver, beskrivelse eller vinner" aria-label="Søk">
+          <select id="an-type" aria-label="Type kunngjøring"><option value="">Alle typer</option><option value="COMPETITION">Konkurranser</option><option value="RESULT">Tildelinger</option><option value="PLANNING">Veiledende kunngjøringer</option></select>
+          <select id="an-buyer" aria-label="Oppdragsgiver"><option value="">Alle oppdragsgivere</option></select>
+          <select id="an-rel" aria-label="Relevans"><option value="rel">Relevante</option><option value="all">Også kandidater under terskel</option></select>
+          <select id="an-sort" aria-label="Sortering"><option value="deadline">Sorter: frist</option><option value="pub">Sorter: publisert</option><option value="score">Sorter: relevans</option><option value="value">Sorter: verdi</option></select>
+          <button type="button" id="an-reset">Nullstill</button>
+        </div>
+        <div class="apps-bar"><span id="anbud-count"></span><span id="anbud-links"></span></div>
+        <div class="anbud-list scroll"><table id="anbud-table"><thead><tr><th>Frist</th><th>Kunngjøring</th><th>Type</th><th>Område</th><th class="num">Anslått verdi</th><th class="num">Relevans</th></tr></thead><tbody></tbody></table></div>
+        <div class="sub" id="anbud-sub" hidden></div>
+        <p class="foot" id="anbud-foot"></p>
+      </div>
+    </section>
+  </main>
+</div>
+
 <!-- ============================ AUKSJONER ============================ -->
 <div id="view-auctions" hidden>
   <main class="auc">
@@ -1382,7 +1442,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 </div>
 
 <footer>
-  <p id="foot-sources">Kilder: iLaks, Kyst.no, Intrafish, Fiskeribladet, Statistisk sentralbyrå (tabell 03024), Nærings- og fiskeridepartementet, Fiskeridirektoratet, eInnsyn, Mattilsynet, Yahoo Finance. Overskrifter gjengis med lenke til originalkilden.</p>
+  <p id="foot-sources">Kilder: iLaks, Kyst.no, Intrafish, Fiskeribladet, Statistisk sentralbyrå (tabell 03024), Nærings- og fiskeridepartementet, Fiskeridirektoratet, eInnsyn, Mattilsynet, Doffin (DFØ), Yahoo Finance. Overskrifter gjengis med lenke til originalkilden.</p>
   <p>Scale Radar er et internt verktøy for ScaleAQ. Design etter ScaleAQ Style Guide.</p>
 </footer>
 
@@ -1421,6 +1481,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('view-fish').hidden = v !== 'fish';
     $('view-bio').hidden = v !== 'bio';
     $('view-sales').hidden = v !== 'sales';
+    $('view-anbud').hidden = v !== 'anbud';
+    if(v === 'anbud'){ window.scrollTo(0,0); if(!ANBUD.loaded) loadAnbud(); }
     if(v === 'sales'){ window.scrollTo(0,0); if(!SALES.loaded) loadSales(); }
     if(v === 'bio'){ window.scrollTo(0,0); if(!BIO.loaded) loadBio(); }
     if(v === 'fish'){ window.scrollTo(0,0); if(FISH.map){ setTimeout(function(){ FISH.map.invalidateSize(); if(FISH.bounds) FISH.map.fitBounds(FISH.bounds, {padding:[20,20]}); }, 50); } if(!FISH.loaded) loadFish(); }
@@ -1436,7 +1498,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     $('stamp').innerHTML = (gen ? '<span class="dot'+(stale?' stale':'')+'"></span>Oppdatert <b>'+esc(dlong(d.generated_at))+'</b>' : 'Ingen data') +
       '<br>' + (d.mode === 'live' ? 'Hentes automatisk hver time' : 'Øyeblikksbilde – oppdateres manuelt');
 
-    renderPulse(d); renderNews(d); renderPrice(d.salmon_price || {}); renderStocks(d.stocks || {}); renderLicences(d.licences || {}, d.applications || {}); AUC.data = d.auctions || {}; buildPurchaseIndex(AUC.data); renderApplications(Object.assign({}, d.applications || {}, {changes: d.changes || {}})); renderAuctions(AUC.data); renderAuctionCard(AUC.data); loadFishSummary(); loadBioSummary();
+    renderPulse(d); renderNews(d); renderPrice(d.salmon_price || {}); renderStocks(d.stocks || {}); renderLicences(d.licences || {}, d.applications || {}); AUC.data = d.auctions || {}; buildPurchaseIndex(AUC.data); renderApplications(Object.assign({}, d.applications || {}, {changes: d.changes || {}})); renderAuctions(AUC.data); renderAuctionCard(AUC.data); loadFishSummary(); loadBioSummary(); loadAnbudSummary();
   }
 
   function renderPulse(d){
@@ -2212,11 +2274,177 @@ svg.leaflet-image-layer.leaflet-interactive path {
   ['f-q','f-applicant','f-type','f-county','f-species','f-year'].forEach(function(id){ $(id).addEventListener('input', applyFilters); $(id).addEventListener('change', applyFilters); });
   $('f-reset').addEventListener('click', function(){ $('f-q').value=''; $('f-applicant').value=''; $('f-type').value=''; $('f-county').value=''; $('f-species').value=''; $('f-year').value=''; Object.keys(APPS.status).forEach(function(k){ APPS.status[k]=true; }); APPS.leadOnly=false; renderApplications(APPS.data); });
 
+  // ---------- offentlige anbud (Doffin)
+  var ANBUD = {loaded:false, data:null, area:'', type:'', buyer:'', rel:'rel', sort:'deadline', q:'', open:null};
+  var AN_TYPE_COL = {COMPETITION:'#187CB2', RESULT:'#7C878E', PLANNING:'#FCA51A'};
+  var AN_AREA_COL = {flaate:'#187CB2', merd:'#084875', foring:'#53C1E9', sensor:'#46B978', vaksine:'#FF5000', land:'#7C878E'};
+  function anDays(iso){ if(!iso) return null; var d = new Date(iso); if(isNaN(d)) return null; return Math.ceil((d.getTime() - Date.now())/86400000); }
+  function anToday(){ return new Date().toISOString().slice(0,10); }
+  function anActive(i){ return i.type === 'COMPETITION' && i.deadline && i.deadline.slice(0,10) >= anToday(); }
+  function anDue(it){
+    if(it.type === 'RESULT') return '<span class="tk">tildelt</span><small>'+esc(dshort(it.publication_date))+'</small>';
+    if(!it.deadline) return '<span class="tk">ingen frist</span><small>'+esc(dshort(it.publication_date))+'</small>';
+    var n = anDays(it.deadline); var cls = n < 0 ? 'over' : (n <= 14 ? 'soon' : '');
+    return '<span class="due '+cls+'">'+esc(dyear(it.deadline))+'</span><small>'+(n < 0 ? 'utløpt' : (n === 0 ? 'i dag' : 'om '+n+' dager'))+'</small>';
+  }
+  function anValue(v, cur){ if(v == null || !v) return '–'; var c = cur && cur !== 'NOK' ? ' '+cur : ''; if(v >= 1e9) return nf(v/1e9,2)+' mrd'+c; if(v >= 1e6) return nf(v/1e6, v >= 1e8 ? 0 : 1)+' mill.'+c; return nf(v,0)+(c||' kr'); }
+  function anRel(s){ var cls = s >= 70 ? 'hi' : (s >= 40 ? 'mid' : 'lo'); return '<span class="rel '+cls+'" title="Relevans '+s+' av 100">'+s+'</span>'; }
+  function anAreas(it, labels){ return (it.areas||[]).map(function(a){ return '<span class="badge" style="--c:'+(AN_AREA_COL[a]||'#7C878E')+'">'+esc(labels[a]||a)+'</span>'; }).join(' ') || '<span class="tk">havbruk generelt</span>'; }
+  function anType(it){ return '<span class="badge" style="--c:'+(AN_TYPE_COL[it.type]||'#7C878E')+'">'+esc(it.type_label||it.type)+'</span>'; }
+  function anEmptyMsg(st){
+    if(st && st.status === 'missing_secrets') return 'Doffin-nøkkelen (DOFFIN_API_KEY) er ikke lagt inn som secret i GitHub ennå. Nøkkelen er gratis: registrer deg på dof-notices-prod-api.developer.azure-api.net, abonner på «Public API» og legg nøkkelen under Settings → Secrets and variables → Actions. Neste kjøring henter de siste 120 dagene.';
+    if(st && st.status === 'auth_failed') return 'Doffin avviste nøkkelen ved siste kjøring ('+(st.message||'')+'). Sjekk at DOFFIN_API_KEY er riktig og at abonnementet på Public API er aktivt.';
+    if(st && st.status === 'error') return 'Henting fra Doffin feilet ved siste kjøring: '+(st.message||'')+'.';
+    if(st && st.status === 'disabled') return 'Anbud er slått av i content/anbud.json.';
+    return 'Anbud fra Doffin hentes ved neste automatiske oppdatering.';
+  }
+  function loadAnbudSummary(){
+    fetchJson('data/anbud/items.json').then(function(d){ ANBUD.data = d; renderAnbudCard(d, null); }).catch(function(){
+      fetchJson('data/anbud/status.json').then(function(st){ renderAnbudCard(null, st); }).catch(function(){ renderAnbudCard(null, null); });
+    });
+  }
+  function renderAnbudCard(d, st){
+    var body = $('anbud-card-body'); if(!body) return;
+    $('anbud-card-meta').textContent = 'Kilde: Doffin · ' + (d && d.updated_at ? 'oppdatert '+dshort(d.updated_at) : 'ikke hentet ennå');
+    if(!d || !(d.items||[]).length){ body.innerHTML = '<div class="empty">'+esc(anEmptyMsg(st))+'</div>'; return; }
+    var rel = d.items.filter(function(i){ return i.score >= d.threshold; });
+    var active = rel.filter(anActive).sort(function(a,b){ return a.deadline < b.deadline ? -1 : 1; });
+    var wk = new Date(Date.now()-7*86400000).toISOString().slice(0,10);
+    var fresh = rel.filter(function(i){ return (i.publication_date||'') >= wk; }).length;
+    var awards = rel.filter(function(i){ return i.type === 'RESULT'; }).length;
+    body.innerHTML = '<div class="auc-card"><div><div class="v">'+active.length+'</div><div class="k">aktive konkurranser</div></div>' +
+      '<div><div class="v">'+fresh+'</div><div class="k">nye relevante siste 7 dager</div></div>' +
+      '<div><div class="v">'+awards+'</div><div class="k">tildelinger – hvem vant</div></div></div>' +
+      (active.length ? '<div class="sec-h" style="margin-top:.4rem"><span>Nærmeste frister</span></div><ul class="an-next">'+active.slice(0,3).map(function(i){ var n = anDays(i.deadline); return '<li><span class="due'+(n != null && n <= 14 ? ' soon' : '')+'">'+esc(dshort(i.deadline))+'</span><span><a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.heading)+'</a><small>'+esc((i.buyers||[])[0]||'')+(i.value ? ' · '+esc(anValue(i.value, i.currency)) : '')+'</small></span></li>'; }).join('')+'</ul>' : '<div class="empty" style="padding:.5rem 0">Ingen aktive konkurranser akkurat nå.</div>') +
+      '<button type="button" class="chip" data-goto="anbud" style="opacity:1">Se alle anbud, filtre og RSS →</button>';
+    var go = body.querySelector('[data-goto]'); if(go) go.addEventListener('click', function(){ showView('anbud'); });
+  }
+  function loadAnbud(){
+    ANBUD.loaded = true;
+    if(ANBUD.data){ renderAnbud(); return; }
+    $('anbud-count').textContent = 'Laster kunngjøringer …';
+    fetchJson('data/anbud/items.json').then(function(d){ ANBUD.data = d; renderAnbud(); }).catch(function(){
+      fetchJson('data/anbud/status.json').then(function(st){ renderAnbudEmpty(st); }).catch(function(){ renderAnbudEmpty(null); });
+    });
+  }
+  function renderAnbudEmpty(st){
+    $('anbud-count').textContent = ''; $('anbud-pulse').innerHTML = ''; $('anbud-areas').innerHTML = '';
+    $('anbud-table').querySelector('tbody').innerHTML = '<tr><td colspan="6" class="empty">'+esc(anEmptyMsg(st))+'</td></tr>';
+    $('anbud-foot').textContent = 'Kilde: Doffin – Database for offentlige anskaffelser (DFØ).';
+  }
+  function anCell(k, v, d){ return '<div class="cell"><div class="k">'+esc(k)+'</div><div class="v">'+v+'</div><div class="d">'+esc(d)+'</div></div>'; }
+  function anbudFiltered(){
+    var d = ANBUD.data; var q = ANBUD.q.trim().toLowerCase();
+    return d.items.filter(function(i){
+      if(ANBUD.rel === 'rel' && i.score < d.threshold) return false;
+      if(ANBUD.area && (i.areas||[]).indexOf(ANBUD.area) < 0) return false;
+      if(ANBUD.type && i.type !== ANBUD.type) return false;
+      if(ANBUD.buyer && (i.buyers||[])[0] !== ANBUD.buyer) return false;
+      if(q){ var hay = (i.heading+' '+(i.buyers||[]).join(' ')+' '+(i.description||'')+' '+(i.winners||[]).join(' ')).toLowerCase(); if(hay.indexOf(q) < 0) return false; }
+      return true;
+    });
+  }
+  function anbudSort(list){
+    var s = ANBUD.sort, today = anToday();
+    list.sort(function(a,b){
+      if(s === 'score') return (b.score - a.score) || (b.publication_date||'').localeCompare(a.publication_date||'');
+      if(s === 'value') return (b.value||0) - (a.value||0);
+      if(s === 'pub') return (b.publication_date||'').localeCompare(a.publication_date||'');
+      var ak = anActive(a) ? 0 : (a.deadline ? 2 : 1), bk = anActive(b) ? 0 : (b.deadline ? 2 : 1);
+      if(ak !== bk) return ak - bk;
+      if(ak === 0) return a.deadline.localeCompare(b.deadline);
+      return (b.publication_date||'').localeCompare(a.publication_date||'');
+    });
+    return list;
+  }
+  function renderAnbud(){
+    var d = ANBUD.data; var labels = d.areas || {};
+    $('anbud-meta').textContent = 'Kilde: Doffin (DFØ)'+(d.window && d.window.from ? ' · kunngjøringer fra '+dyear(d.window.from) : '')+(d.window && d.window.backfill_complete === false ? ' (historikk fylles fortsatt)' : '')+' · oppdatert '+dshort(d.updated_at);
+    var rel = d.items.filter(function(i){ return i.score >= d.threshold; });
+    var active = rel.filter(anActive);
+    var soon = active.filter(function(i){ var n = anDays(i.deadline); return n != null && n <= 14; });
+    var sum = active.reduce(function(acc,i){ return acc + (i.value||0); }, 0);
+    var awards = rel.filter(function(i){ return i.type === 'RESULT'; });
+    $('anbud-pulse').innerHTML = anCell('Aktive konkurranser', String(active.length), soon.length ? soon.length+' med frist innen 14 dager' : 'ingen frist innen 14 dager') +
+      anCell('Anslått verdi, aktive', sum ? anValue(sum) : '–', 'summert der oppdragsgiver har oppgitt verdi') +
+      anCell('Tildelinger', String(awards.length), 'hvem vant – beholdes i ett år') +
+      anCell('Kandidater under terskel', String(d.items.length - rel.length), 'vis dem for å justere reglene');
+    var counts = {}; rel.forEach(function(i){ (i.areas||[]).forEach(function(a){ counts[a] = (counts[a]||0)+1; }); });
+    $('anbud-areas').innerHTML = Object.keys(labels).map(function(k){ return '<button type="button" class="chip opt" aria-pressed="'+(ANBUD.area===k)+'" data-area="'+esc(k)+'" style="--c:'+(AN_AREA_COL[k]||'#7C878E')+'"><i></i>'+esc(labels[k])+' <b>'+(counts[k]||0)+'</b></button>'; }).join('');
+    $('anbud-areas').querySelectorAll('[data-area]').forEach(function(b){ b.addEventListener('click', function(){ ANBUD.area = ANBUD.area === b.dataset.area ? '' : b.dataset.area; ANBUD.open = null; renderAnbud(); }); });
+    var buyers = {}; d.items.forEach(function(i){ var b = (i.buyers||[])[0]; if(b) buyers[b] = (buyers[b]||0)+1; });
+    var cur = ANBUD.buyer;
+    $('an-buyer').innerHTML = '<option value="">Alle oppdragsgivere</option>' + Object.keys(buyers).sort(function(a,b){ return a.localeCompare(b,'nb'); }).map(function(b){ return '<option value="'+esc(b)+'"'+(b===cur?' selected':'')+'>'+esc(b)+' ('+buyers[b]+')</option>'; }).join('');
+    renderAnbudTable();
+    renderAnbudSub();
+    $('anbud-foot').innerHTML = 'Kilde: <a href="https://www.doffin.no/" target="_blank" rel="noopener">Doffin</a> (DFØ), offentlig API. Relevansen er regelbasert og forklart per rad: område-ord i tittel eller beskrivelse, havbruksord, kjent offentlig kjøper, CPV-kode og negative ord (bilflåte, redningsflåte). Terskelen er '+d.threshold+' av 100; reglene ligger i <code>content/anbud.json</code> og alt lagret scores på nytt hver time. Bare anskaffelser over terskelverdi kunngjøres – avrop på rammeavtaler og mindre kjøp vises ikke. Konkurransegrunnlaget ligger hos oppdragsgivers konkurransegjennomføringsverktøy bak lenken.';
+  }
+  function renderAnbudTable(){
+    var d = ANBUD.data; var labels = d.areas || {};
+    var list = anbudSort(anbudFiltered());
+    var tb = $('anbud-table').querySelector('tbody');
+    $('anbud-count').textContent = list.length + (list.length === 1 ? ' kunngjøring' : ' kunngjøringer') + (ANBUD.rel === 'rel' ? ' med relevans ≥ '+d.threshold : ' inkl. kandidater');
+    var expLink = d.feeds && d.feeds.all ? '<a href="'+esc(d.feeds.all)+'" target="_blank" rel="noopener">RSS for alle relevante</a>' : '';
+    $('anbud-links').innerHTML = expLink + ' · <a href="https://www.doffin.no/search" target="_blank" rel="noopener">Søk selv på Doffin</a>';
+    if(!list.length){ tb.innerHTML = '<tr><td colspan="6" class="empty">Ingen kunngjøringer passer filteret. Prøv «Også kandidater under terskel» eller nullstill.</td></tr>'; return; }
+    tb.innerHTML = list.map(function(it){
+      var open = ANBUD.open === it.id;
+      var row = '<tr class="row" data-id="'+esc(it.id)+'" aria-expanded="'+open+'">' +
+        '<td class="f">'+anDue(it)+'</td>' +
+        '<td class="t">'+esc(it.heading)+'<small>'+esc((it.buyers||[]).join(', ')||'Ukjent oppdragsgiver')+(it.winners && it.winners.length ? ' · vant: '+esc(it.winners.join(', ')) : '')+'</small></td>' +
+        '<td>'+anType(it)+'</td>' +
+        '<td>'+anAreas(it, labels)+'</td>' +
+        '<td class="num">'+esc(anValue(it.value, it.currency))+'</td>' +
+        '<td class="num">'+anRel(it.score)+'</td></tr>';
+      if(open){
+        var why = (it.reasons||[]).map(function(r){ return '<span class="'+(r.kind==='negative'?'neg':'')+'" title="'+(r.pts>0?'+':'')+r.pts+' poeng">'+esc(r.term)+' <small>'+esc(r.where)+'</small></span>'; }).join('');
+        row += '<tr class="det"><td colspan="6">' +
+          (it.description ? '<p class="desc">'+esc(it.description)+'</p>' : '<p class="desc" style="color:var(--ink-2)">Ingen beskrivelse i kunngjøringen.</p>') +
+          '<div class="meta-row">' +
+            '<span>Publisert <b>'+esc(dyear(it.publication_date))+'</b></span>' +
+            (it.deadline ? '<span>Frist <b>'+esc(dyear(it.deadline))+(/T\d{2}:\d{2}/.test(it.deadline) ? ' kl. '+esc(it.deadline.slice(11,16)) : '')+'</b></span>' : '') +
+            (it.received_tenders != null ? '<span>Mottatte tilbud <b>'+esc(it.received_tenders)+'</b></span>' : '') +
+            (it.cpv && it.cpv.length ? '<span>CPV <b>'+esc(it.cpv.slice(0,6).join(', '))+'</b></span>' : '') +
+            '<span>Doffin-ID <b>'+esc(it.id)+'</b></span>' +
+            '<span><a href="'+esc(it.url)+'" target="_blank" rel="noopener">Åpne kunngjøringen på Doffin →</a></span>' +
+          '</div>' +
+          '<div class="why">Relevans '+it.score+' av 100: '+why+'</div>' +
+          '</td></tr>';
+      }
+      return row;
+    }).join('');
+    tb.querySelectorAll('tr.row').forEach(function(tr){ tr.addEventListener('click', function(e){ if(e.target.closest('a')) return; ANBUD.open = ANBUD.open === tr.dataset.id ? null : tr.dataset.id; renderAnbudTable(); }); });
+  }
+  function renderAnbudSub(){
+    var d = ANBUD.data; var box = $('anbud-sub'); var feeds = d.feeds || {};
+    if(!feeds.all){ box.hidden = true; return; }
+    var label = ANBUD.area ? (d.areas||{})[ANBUD.area] : null;
+    var url = ANBUD.area && feeds.area_base ? feeds.area_base + ANBUD.area + '.xml' : feeds.all;
+    box.hidden = false;
+    box.innerHTML = '<div><h3>Følg '+(label ? 'området «'+esc(label)+'»' : 'alle relevante anbud')+'</h3><p>Nye kunngjøringer over terskelen legges i denne feeden så snart de dukker opp på Doffin (sjekkes hver time). '+(label ? 'Velg et annet område i chipsene over for å få feeden for det.' : 'Velg et område i chipsene over for en smalere feed.')+'</p><div class="url"><code id="an-sub-url">'+esc(url)+'</code><button type="button" id="an-sub-copy">Kopier lenke</button></div></div>' +
+      '<div><details><summary>Slik får du det som e-post</summary><ol>' +
+      '<li><b>Outlook (enklest, kun for deg):</b> Høyreklikk «RSS-feeder» i mappelisten → «Legg til ny RSS-feed» → lim inn lenken.</li>' +
+      '<li><b>Power Automate (kan sende til flere):</b> Ny flyt → utløser «Når et feedelement publiseres» (RSS) → «Send en e-post (V2)» til salg. Ta med tittel og lenke fra feedelementet.</li>' +
+      '</ol></details></div>';
+    $('an-sub-copy').addEventListener('click', function(){ var b = this; try { navigator.clipboard.writeText(url).then(function(){ b.textContent = 'Kopiert ✓'; setTimeout(function(){ b.textContent = 'Kopier lenke'; }, 1800); }); } catch(e){ b.textContent = 'Merk og kopier teksten'; } });
+  }
+  (function(){
+    var q = $('an-q'); if(!q) return;
+    var t = null;
+    q.addEventListener('input', function(){ clearTimeout(t); t = setTimeout(function(){ ANBUD.q = q.value; ANBUD.open = null; if(ANBUD.data) renderAnbudTable(); }, 150); });
+    $('an-type').addEventListener('change', function(){ ANBUD.type = this.value; ANBUD.open = null; if(ANBUD.data) renderAnbudTable(); });
+    $('an-buyer').addEventListener('change', function(){ ANBUD.buyer = this.value; ANBUD.open = null; if(ANBUD.data) renderAnbudTable(); });
+    $('an-rel').addEventListener('change', function(){ ANBUD.rel = this.value; ANBUD.open = null; if(ANBUD.data) renderAnbud(); });
+    $('an-sort').addEventListener('change', function(){ ANBUD.sort = this.value; if(ANBUD.data) renderAnbudTable(); });
+    $('an-reset').addEventListener('click', function(){ ANBUD.area = ''; ANBUD.type = ''; ANBUD.buyer = ''; ANBUD.rel = 'rel'; ANBUD.sort = 'deadline'; ANBUD.q = ''; ANBUD.open = null; q.value = ''; $('an-type').value = ''; $('an-rel').value = 'rel'; $('an-sort').value = 'deadline'; if(ANBUD.data) renderAnbud(); });
+  })();
+
+
   // ---------- last data: data/data.json først, innebygd øyeblikksbilde som reserve
   var seed = {}; try { seed = JSON.parse($('seed').textContent || '{}'); } catch(e){}
   function boot(){
     var v = null; try { v = localStorage.getItem('scaleradar.view'); } catch(e){}
-    showView(['apps','auctions','fish','bio','sales'].indexOf(v) >= 0 ? v : 'radar');
+    showView(['apps','auctions','fish','bio','sales','anbud'].indexOf(v) >= 0 ? v : 'radar');
     fetch('data/data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(){ render(seed); });
