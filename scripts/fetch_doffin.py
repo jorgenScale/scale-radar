@@ -65,10 +65,15 @@ W = dict({"area_heading": 45, "area_text": 30, "weak_area_heading": 20, "weak_ar
           "core_heading": 35, "core_text": 20, "buyer": 25, "cpv": 15, "negative": -50},
          **{k: v for k, v in CFG.get("weights", {}).items() if not k.startswith("_")})
 
-TYPE_LABEL = {"COMPETITION": "Konkurranse", "RESULT": "Tildeling", "PLANNING": "Veiledende",
-              "PRE_ANNOUNCEMENT": "Veiledende", "ANNOUNCEMENT_OF_INTENT": "Intensjon",
-              "DYNAMIC_PURCHASING_SCHEME": "Dynamisk innkjøpsordning", "QUALIFICATION_SCHEME": "Kvalifikasjonsordning",
-              "CONTRACT_CHANGE": "Kontraktsendring", "CORRECTION": "Rettelse"}
+TYPE_LABEL = {"COMPETITION": "Konkurranse", "ANNOUNCEMENT_OF_COMPETITION": "Konkurranse",
+              "RESULT": "Tildeling", "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT": "Kontraktsinngåelse",
+              "PLANNING": "Veiledende", "PRE_ANNOUNCEMENT": "Veiledende", "ADVISORY_NOTICE": "Veiledende",
+              "ANNOUNCEMENT_OF_INTENT": "Intensjon", "DYNAMIC_PURCHASING_SCHEME": "Dynamisk innkjøpsordning",
+              "QUALIFICATION_SCHEME": "Kvalifikasjonsordning", "CHANGE_OF_CONCLUSION_OF_CONTRACT": "Kontraktsendring",
+              "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT": "Avlyst", "NOTICE_ON_BUYER_PROFILE": "Kjøperprofil"}
+TYPE_KIND = {"COMPETITION": "competition", "ANNOUNCEMENT_OF_COMPETITION": "competition",
+             "RESULT": "result", "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT": "result", "ANNOUNCEMENT_OF_INTENT": "result",
+             "PLANNING": "planning", "PRE_ANNOUNCEMENT": "planning", "ADVISORY_NOTICE": "planning"}
 
 
 def log(msg: str) -> None:
@@ -201,36 +206,41 @@ def score_item(it: dict) -> tuple[int, list[str], list[dict]]:
 
 # --------------------------------------------------------------------------- Doffin API
 class DoffinClient:
+    """Doffin-klient som finner ut hvilken gateway og hvilke parametere API-et godtar.
+
+    Doffin har flere gatewayer (api.doffin.no er prod, betaapi.doffin.no er beta). En nøkkel fra prod-portalen gir
+    401 på beta. Et 400-svar betyr derimot at nøkkelen er godtatt, men at forespørselen ble avvist – da prøver vi noen
+    kjente varianter (1-indeksert side, dato som tidspunkt, uten datofilter) og husker den som virker. Avvises alt,
+    tas API-ets egen feilmelding med i statusfilen så den kan leses på siden."""
+
     def __init__(self, key: str | None, fixture: Path | None = None):
         self.key = key
         self.fixture = fixture
         self.calls = 0
         self.base: str | None = None
+        self.page_offset = 0          # 0 = sider telles fra 0, 1 = fra 1
+        self.date_mode = "date"       # "date" = YYYY-MM-DD, "datetime" = ...T00:00:00Z, "none" = ingen datofilter
+        self.page_size = PAGE_SIZE
         self.s = requests.Session()
         self.s.headers.update({"Accept": "application/json", "User-Agent": "ScaleRadar/1.0 (+github.com/jorgenScale/scale-radar)"})
         if key:
             self.s.headers["Ocp-Apim-Subscription-Key"] = key
 
-    def pick_base(self) -> str:
-        """Doffin har flere API-gatewayer (prod/beta). Prøv kandidatene i rekkefølge og bruk den første som godtar nøkkelen.
-        Gir PermissionError med status per adresse hvis ingen gjør det, så feilen kan leses rett av statusfilen."""
-        if self.base:
-            return self.base
-        tried = []
-        for base in API_BASES:
-            host = base.split("//", 1)[-1].split("/", 1)[0]
-            try:
-                self.calls += 1
-                r = self.s.get(f"{base}/search", params={"numHitsPerPage": 1, "page": 0}, timeout=30)
-            except requests.RequestException as exc:  # DNS, TLS, timeout
-                tried.append(f"{host}: {type(exc).__name__}"); continue
-            if r.status_code == 200:
-                log(f"bruker {base}")
-                self.base = base
-                return base
-            tried.append(f"{host}: HTTP {r.status_code}")
-            time.sleep(PAUSE)
-        raise PermissionError("; ".join(tried))
+    def _params(self, date_from: date, date_to: date, page: int, offset: int, date_mode: str, size: int) -> dict:
+        p = {"numHitsPerPage": size, "page": page + offset, "sortBy": "PUBLICATION_DATE_DESC"}
+        if date_mode == "date":
+            p["issueDateFrom"], p["issueDateTo"] = date_from.isoformat(), date_to.isoformat()
+        elif date_mode == "datetime":
+            p["issueDateFrom"], p["issueDateTo"] = date_from.isoformat() + "T00:00:00Z", date_to.isoformat() + "T23:59:59Z"
+        return p
+
+    def _get(self, base: str, params: dict):
+        self.calls += 1
+        return self.s.get(f"{base}/search", params=params, timeout=40)
+
+    @staticmethod
+    def _host(base: str) -> str:
+        return base.split("//", 1)[-1].split("/", 1)[0]
 
     def search(self, date_from: date, date_to: date, page: int) -> dict:
         if self.fixture:
@@ -238,21 +248,48 @@ class DoffinClient:
             if page > 0:
                 return {"numHitsTotal": d.get("numHitsTotal", 0), "hits": []}
             return d
-        base = self.pick_base()
-        params = {"numHitsPerPage": PAGE_SIZE, "page": page, "sortBy": "PUBLICATION_DATE_DESC",
-                  "issueDateFrom": date_from.isoformat(), "issueDateTo": date_to.isoformat()}
-        for attempt in range(4):
-            self.calls += 1
-            r = self.s.get(f"{base}/search", params=params, timeout=40)
+        bases = [self.base] if self.base else API_BASES
+        denied: list[str] = []
+        for base in bases:
+            host = self._host(base)
+            params = self._params(date_from, date_to, page, self.page_offset, self.date_mode, self.page_size)
+            r = None
+            for attempt in range(4):
+                try:
+                    r = self._get(base, params)
+                except requests.RequestException as exc:
+                    denied.append(f"{host}: {type(exc).__name__}"); r = None; break
+                if r.status_code == 429 or r.status_code >= 500:
+                    wait = min(30, 2 ** attempt * 2)
+                    log(f"HTTP {r.status_code} fra {host} – venter {wait}s"); time.sleep(wait); continue
+                break
+            if r is None:
+                continue
             if r.status_code in (401, 403):
-                raise PermissionError(f"HTTP {r.status_code}: {r.text[:200]}")
-            if r.status_code == 429 or r.status_code >= 500:
-                wait = min(30, 2 ** attempt * 2)
-                log(f"HTTP {r.status_code} – venter {wait}s"); time.sleep(wait); continue
-            r.raise_for_status()
-            time.sleep(PAUSE)
-            return r.json()
-        raise RuntimeError("Doffin svarte ikke etter fire forsøk")
+                denied.append(f"{host}: HTTP {r.status_code}")
+                time.sleep(PAUSE)
+                continue
+            if r.status_code == 200:
+                if not self.base:
+                    log(f"bruker {base}")
+                self.base = base
+                time.sleep(PAUSE)
+                return r.json()
+            if r.status_code == 400 and not self.base:
+                # nøkkelen er godtatt – finn parametervarianten API-et vil ha
+                first_msg = r.text.strip()[:220]
+                variants = [(1, "date", PAGE_SIZE), (0, "datetime", PAGE_SIZE), (1, "datetime", PAGE_SIZE),
+                            (0, "none", PAGE_SIZE), (1, "none", PAGE_SIZE), (0, "date", 50), (0, "date", 20)]
+                for offset, mode, size in variants:
+                    time.sleep(PAUSE)
+                    r2 = self._get(base, self._params(date_from, date_to, page, offset, mode, size))
+                    if r2.status_code == 200:
+                        self.base, self.page_offset, self.date_mode, self.page_size = base, offset, mode, size
+                        log(f"bruker {base} (sider fra {offset}, dato={mode}, {size} per side)")
+                        return r2.json()
+                raise RuntimeError(f"HTTP 400 fra {host}: {first_msg}")
+            raise RuntimeError(f"HTTP {r.status_code} fra {host}: {r.text.strip()[:200]}")
+        raise PermissionError("; ".join(denied) or "ingen gateway svarte")
 
 
 def normalize_hit(h: dict) -> dict:
@@ -267,7 +304,8 @@ def normalize_hit(h: dict) -> dict:
         "heading": (h.get("heading") or "").strip(),
         "buyers": buyers,
         "type": typ,
-        "type_label": TYPE_LABEL.get(typ, typ.title()),
+        "kind": TYPE_KIND.get(typ, "other"),
+        "type_label": TYPE_LABEL.get(typ, typ.replace("_", " ").title()),
         "all_types": h.get("allTypes") or [],
         "status": h.get("status"),
         "issue_date": (h.get("issueDate") or "")[:10] or None,
@@ -284,18 +322,19 @@ def normalize_hit(h: dict) -> dict:
     }
 
 
-def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, label: str) -> tuple[list[dict], bool, date | None]:
+def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, label: str, start_page: int = 0) -> tuple[list[dict], bool, date | None, int]:
     """Henter sider for et datointervall til det er tomt eller budsjettet er brukt.
-    Returnerer (treff, ferdig, eldste issueDate sett)."""
+    Returnerer (treff, ferdig, eldste issueDate sett, neste side). Når API-et ikke tar datofilter
+    (client.date_mode == "none") leses det nyeste først og stoppes når vi har passert date_from."""
     hits: list[dict] = []
     oldest: date | None = None
-    page = 0
+    page = start_page
     total = None
     fetched = 0
-    while page < budget:
+    while page < start_page + budget:
         d = client.search(date_from, date_to, page)
         page_hits = d.get("hits") or []
-        if total is None:
+        if total is None and client.date_mode != "none":
             total = d.get("numHitsAccessible") or d.get("numHitsTotal")
         fetched += len(page_hits)
         for h in page_hits:
@@ -310,12 +349,15 @@ def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, lab
                 pass
         # stopp på tom side eller når vi har hentet alt API-et sier finnes – ikke på sidestørrelse, i tilfelle API-et
         # gir færre per side enn vi ba om
+        if client.date_mode == "none" and oldest is not None and oldest < date_from:
+            log(f"{label}: {len(hits)} treff ned til {oldest} (datokutt lokalt, side {start_page}–{page})")
+            return hits, True, oldest, page + 1
         if not page_hits or (total is not None and fetched >= int(total)):
-            log(f"{label}: {len(hits)} treff på {page + 1} side(r), {date_from}–{date_to}, totalt {total}")
-            return hits, True, oldest
+            log(f"{label}: {len(hits)} treff på {page - start_page + 1} side(r), {date_from}–{date_to}, totalt {total}")
+            return hits, True, oldest, page + 1
         page += 1
     log(f"{label}: budsjett brukt ({budget} sider), {len(hits)} treff, eldste {oldest} – fortsetter neste kjøring")
-    return hits, False, oldest
+    return hits, False, oldest, page
 
 
 # --------------------------------------------------------------------------- RSS
@@ -415,9 +457,9 @@ def main() -> int:
     try:
         # 1) siste dager – alltid
         inc_from = today - timedelta(days=INCREMENTAL_DAYS)
-        hits, _, _ = sweep(client, inc_from, today, MAX_PAGES, "siste dager")
+        hits, _, _, next_page = sweep(client, inc_from, today, MAX_PAGES, "siste dager")
         new_hits += hits
-        pages_used = max(1, (len(hits) + PAGE_SIZE - 1) // PAGE_SIZE)
+        pages_used = max(1, (len(hits) + client.page_size - 1) // client.page_size)
 
         # 2) bakoverfylling til vi har dekket backfill_days
         target_from = today - timedelta(days=BACKFILL_DAYS)
@@ -426,8 +468,19 @@ def main() -> int:
                 state.pop("resume_to", None)  # ny horisont – start bakoverfyllingen på nytt
             resume_to = date.fromisoformat(state["resume_to"]) if state.get("resume_to") else inc_from - timedelta(days=1)
             budget = max(1, MAX_PAGES - pages_used)
-            if resume_to >= target_from:
-                hits, done, oldest = sweep(client, target_from, resume_to, budget, "bakoverfylling")
+            if resume_to >= target_from and client.date_mode == "none":
+                # ingen datofilter i API-et: les videre side for side fra der forrige kjøring slapp
+                start = int(state.get("resume_page") or next_page)
+                hits, done, oldest, nxt = sweep(client, target_from, today, budget, "bakoverfylling", start_page=start)
+                new_hits += hits
+                if done:
+                    state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
+                    state.pop("resume_to", None); state.pop("resume_page", None)
+                else:
+                    state.update({"backfill_complete": False, "backfill_days": BACKFILL_DAYS, "resume_page": nxt,
+                                  "covered_from": (oldest or today).isoformat()})
+            elif resume_to >= target_from:
+                hits, done, oldest, _ = sweep(client, target_from, resume_to, budget, "bakoverfylling")
                 new_hits += hits
                 if done:
                     state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
@@ -443,7 +496,7 @@ def main() -> int:
                 state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
     except PermissionError as exc:
         log(f"autentisering feilet: {exc}")
-        write_status("auth_failed", message=str(exc)[:240], hint="401 på alle adresser betyr som regel at abonnementet i Doffins API-portal ikke er aktivt ennå, eller at nøkkelen er fra et annet miljø (dev/prod).")
+        write_status("auth_failed", message=str(exc)[:240], hint="401 på alle adresser betyr som regel at abonnementet i Doffins API-portal ikke er aktivt ennå (står som Submitted i stedet for Active).")
         return 0
     except Exception as exc:  # noqa: BLE001
         log(f"henting feilet: {exc}")
@@ -470,14 +523,14 @@ def main() -> int:
         pub = it.get("publication_date") or it.get("issue_date") or ""
         if pub and pub < keep_cut:
             continue
-        if it.get("deadline") and it["deadline"][:10] < dl_cut and it.get("type") != "RESULT":
+        if it.get("deadline") and it["deadline"][:10] < dl_cut and it.get("kind") != "result":
             continue
         if score >= STORE_MIN:
             items.append(it)
     items.sort(key=lambda i: (i.get("publication_date") or i.get("issue_date") or ""), reverse=True)
 
     relevant = [i for i in items if i["score"] >= THRESHOLD]
-    active = [i for i in relevant if i.get("type") == "COMPETITION" and i.get("deadline") and i["deadline"][:10] >= today.isoformat()]
+    active = [i for i in relevant if i.get("kind") == "competition" and i.get("deadline") and i["deadline"][:10] >= today.isoformat()]
     feeds = write_feeds(items, area_labels)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
