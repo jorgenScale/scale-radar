@@ -1,1 +1,1 @@
-{"backfill_complete": true, "backfill_days": 120, "covered_from": "2026-06-25", "last_run": "2026-10-23T11:52:58Z"}
+{"backfill_days": 120, "backfill_version": 2, "backfill_complete": false, "resume_to": "2026-09-05", "covered_from": "2026-09-06", "last_run": "2026-10-23T12:04:06Z"}
