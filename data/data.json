@@ -1,7 +1,21 @@
 {
- "generated_at": "2026-10-23T12:09:50Z",
+ "generated_at": "2026-10-23T13:30:42Z",
  "mode": "live",
  "news": [
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-23",
+   "title": "Betalingsstopp for Isfjord Norway",
+   "url": "https://ilaks.no/betalingsstopp-for-isfjord-norway/?mtm_campaign=feed_click&mtm_kwd=betalingsstopp-for-isfjord-norway&mtm_source=RSS2&mtm_medium=feed"
+  },
+  {
+   "source_key": "ilaks",
+   "source": "iLaks",
+   "published": "2026-10-23",
+   "title": "En sterk krone demper neste ukes laksepriser",
+   "url": "https://ilaks.no/en-sterk-krone-demper-neste-ukes-laksepriser/?mtm_campaign=feed_click&mtm_kwd=en-sterk-krone-demper-neste-ukes-laksepriser&mtm_source=RSS2&mtm_medium=feed"
+  },
   {
    "source_key": "ilaks",
    "source": "iLaks",
@@ -108,37 +122,23 @@
    "url": "https://ilaks.no/dnb-oppdretterne-klarer-ikke-a-sende-forregningen-videre-til-kundene/?mtm_campaign=feed_click&mtm_kwd=dnb-oppdretterne-klarer-ikke-a-sende-forregningen-videre-til-kundene&mtm_source=RSS2&mtm_medium=feed"
   },
   {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-22",
-   "title": "Den første smolten er satt ut i tankene hos Arctic Seafarm på Nesna",
-   "url": "https://ilaks.no/den-forste-smolten-er-satt-ut-i-tankene-hos-arctic-seafarm-pa-nesna/?mtm_campaign=feed_click&mtm_kwd=den-forste-smolten-er-satt-ut-i-tankene-hos-arctic-seafarm-pa-nesna&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "source_key": "ilaks",
-   "source": "iLaks",
-   "published": "2026-10-22",
-   "title": "Hofseths nye fjelloppdrettsplan kan kutte kostnadene med inntil 15 milliarder kroner",
-   "url": "https://ilaks.no/hofseths-nye-fjelloppdrettsplan-kan-kutte-kostnadene-med-inntil-15-milliarder-kroner/?mtm_campaign=feed_click&mtm_kwd=hofseths-nye-fjelloppdrettsplan-kan-kutte-kostnadene-med-inntil-15-milliarder-kroner&mtm_source=RSS2&mtm_medium=feed"
-  },
-  {
-   "title": "Krever stans i ny oppdrettslokalitet",
-   "url": "https://www.kyst.no/cermaq-hasvik-lokalitet/krever-stans-i-ny-oppdrettslokalitet/2199947",
-   "published": "2026-10-22",
+   "title": "Hva skjer når tekniske systemer stopper?",
+   "url": "https://www.kyst.no/guard-automation/hva-skjer-nar-tekniske-systemer-stopper/2194577",
+   "published": "2026-10-19",
    "source_key": "kyst",
    "source": "Kyst.no"
   },
   {
-   "title": "Den første fisken er på plass",
-   "url": "https://www.kyst.no/aktuelt-artic-seafarm-matfisk/den-forste-fisken-er-pa-plass/2199937",
-   "published": "2026-10-22",
+   "title": "Her får Myrseth Kongens fortjenstmedalje",
+   "url": "https://www.kyst.no/bjorn-myrseth-kongens-fortjenstmedalje/her-far-myrseth-kongens-fortjenstmedalje/2187470",
+   "published": "2026-10-13",
    "source_key": "kyst",
    "source": "Kyst.no"
   },
   {
-   "title": "Kamera avslørte mulig sabotasje",
-   "url": "https://www.kyst.no/chile-sabotasje/kamera-avslorte-mulig-sabotasje/2199886",
-   "published": "2026-10-22",
+   "title": "Optimalisering av landbasert oppdrett",
+   "url": "https://www.kyst.no/reeldata/smarte-kamerasystemer-for-landbasert-oppdrett/2191478",
+   "published": "2026-10-06",
    "source_key": "kyst",
    "source": "Kyst.no"
   },
@@ -213,6 +213,13 @@
    "url": "https://www.fiskeridir.no/nyheter/romming-av-oppdrettslaks-i-nordland"
   },
   {
+   "title": "Uvær på Vestlandet, valuta og halloi i Paris kan påvirke lakseprisene",
+   "url": "https://www.intrafish.no/arbeidsliv/uvar-pa-vestlandet-valuta-og-halloi-i-paris-kan-pavirke-lakseprisene/2-1-2063344",
+   "published": null,
+   "source_key": "intrafish",
+   "source": "Intrafish"
+  },
+  {
    "title": "Sundnes over i ny rolle i First Seafood – Romuld overtar",
    "url": "https://www.intrafish.no/arbeidsliv/sundnes-over-i-ny-rolle-i-first-seafood-romuld-overtar/2-1-2063215",
    "published": null,
@@ -271,13 +278,6 @@
   {
    "title": "Den første fisken er på plass hos Arctic Seafarm",
    "url": "https://www.intrafish.no/okonomi/den-forste-fisken-er-pa-plass-hos-arctic-seafarm-pa-nesna/2-1-2062790",
-   "published": null,
-   "source_key": "intrafish",
-   "source": "Intrafish"
-  },
-  {
-   "title": "Lakseluslarver omtrent på nivå som i fjor",
-   "url": "https://www.intrafish.no/fiskehelse/lakseluslarver-omtrent-pa-niva-som-i-fjor/2-1-2062342",
    "published": null,
    "source_key": "intrafish",
    "source": "Intrafish"
@@ -397,22 +397,22 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 215.6,
-      "change_pct": -0.09
+      "price": 215.8,
+      "change_pct": 0.0
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 579.0,
-      "change_pct": 0.17
+      "price": 582.0,
+      "change_pct": 0.69
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.64,
-      "change_pct": 0.14
+      "price": 43.56,
+      "change_pct": -0.05
      },
      {
       "name": "Grieg Seafood",
@@ -425,8 +425,8 @@
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 82.5,
-      "change_pct": -0.24
+      "price": 82.4,
+      "change_pct": -0.36
      },
      {
       "name": "Måsøval",
@@ -451,8 +451,8 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.09,
-      "change_pct": -1.59
+      "price": 3.13,
+      "change_pct": -0.16
      },
      {
       "name": "Andfjord Salmon",
@@ -465,8 +465,8 @@
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.41,
-      "change_pct": 0.0
+      "price": 0.42,
+      "change_pct": 1.94
      },
      {
       "name": "Nordic Aqua Partners",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 461.0,
-      "change_pct": 0.39
+      "price": 461.8,
+      "change_pct": 0.57
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-23T12:09:59Z",
+  "fetched_at": "2026-10-23T13:30:52Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37559,7 +37559,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-10-23T12:10:00Z",
+  "updated_at": "2026-10-23T13:30:56Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70835,7 +70835,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-23T12:10:00Z",
+  "updated_at": "2026-10-23T13:30:56Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
