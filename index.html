@@ -1411,7 +1411,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <div class="chips" id="anbud-areas" aria-label="Filtrer på produktområde"></div>
         <div class="filters anbud-filters">
           <input type="search" id="an-q" placeholder="Søk i tittel, oppdragsgiver, beskrivelse eller vinner" aria-label="Søk">
-          <select id="an-type" aria-label="Type kunngjøring"><option value="">Alle typer</option><option value="COMPETITION">Konkurranser</option><option value="RESULT">Tildelinger</option><option value="PLANNING">Veiledende kunngjøringer</option></select>
+          <select id="an-type" aria-label="Type kunngjøring"><option value="">Alle typer</option><option value="competition">Konkurranser</option><option value="result">Tildelinger og kontrakter</option><option value="planning">Veiledende kunngjøringer</option><option value="other">Annet</option></select>
           <select id="an-buyer" aria-label="Oppdragsgiver"><option value="">Alle oppdragsgivere</option></select>
           <select id="an-rel" aria-label="Relevans"><option value="rel">Relevante</option><option value="all">Også kandidater under terskel</option></select>
           <select id="an-sort" aria-label="Sortering"><option value="deadline">Sorter: frist</option><option value="pub">Sorter: publisert</option><option value="score">Sorter: relevans</option><option value="value">Sorter: verdi</option></select>
@@ -2276,13 +2276,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
   // ---------- offentlige anbud (Doffin)
   var ANBUD = {loaded:false, data:null, area:'', type:'', buyer:'', rel:'rel', sort:'deadline', q:'', open:null};
-  var AN_TYPE_COL = {COMPETITION:'#187CB2', RESULT:'#7C878E', PLANNING:'#FCA51A'};
+  var AN_TYPE_COL = {competition:'#187CB2', result:'#7C878E', planning:'#FCA51A', other:'#B8C2CA'};
   var AN_AREA_COL = {flaate:'#187CB2', merd:'#084875', foring:'#53C1E9', sensor:'#46B978', vaksine:'#FF5000', land:'#7C878E'};
   function anDays(iso){ if(!iso) return null; var d = new Date(iso); if(isNaN(d)) return null; return Math.ceil((d.getTime() - Date.now())/86400000); }
   function anToday(){ return new Date().toISOString().slice(0,10); }
-  function anActive(i){ return i.type === 'COMPETITION' && i.deadline && i.deadline.slice(0,10) >= anToday(); }
+  function anActive(i){ return i.kind === 'competition' && i.deadline && i.deadline.slice(0,10) >= anToday(); }
   function anDue(it){
-    if(it.type === 'RESULT') return '<span class="tk">tildelt</span><small>'+esc(dshort(it.publication_date))+'</small>';
+    if(it.kind === 'result') return '<span class="tk">tildelt</span><small>'+esc(dshort(it.publication_date))+'</small>';
     if(!it.deadline) return '<span class="tk">ingen frist</span><small>'+esc(dshort(it.publication_date))+'</small>';
     var n = anDays(it.deadline); var cls = n < 0 ? 'over' : (n <= 14 ? 'soon' : '');
     return '<span class="due '+cls+'">'+esc(dyear(it.deadline))+'</span><small>'+(n < 0 ? 'utløpt' : (n === 0 ? 'i dag' : 'om '+n+' dager'))+'</small>';
@@ -2290,7 +2290,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   function anValue(v, cur){ if(v == null || !v) return '–'; var c = cur && cur !== 'NOK' ? ' '+cur : ''; if(v >= 1e9) return nf(v/1e9,2)+' mrd'+c; if(v >= 1e6) return nf(v/1e6, v >= 1e8 ? 0 : 1)+' mill.'+c; return nf(v,0)+(c||' kr'); }
   function anRel(s){ var cls = s >= 70 ? 'hi' : (s >= 40 ? 'mid' : 'lo'); return '<span class="rel '+cls+'" title="Relevans '+s+' av 100">'+s+'</span>'; }
   function anAreas(it, labels){ return (it.areas||[]).map(function(a){ return '<span class="badge" style="--c:'+(AN_AREA_COL[a]||'#7C878E')+'">'+esc(labels[a]||a)+'</span>'; }).join(' ') || '<span class="tk">havbruk generelt</span>'; }
-  function anType(it){ return '<span class="badge" style="--c:'+(AN_TYPE_COL[it.type]||'#7C878E')+'">'+esc(it.type_label||it.type)+'</span>'; }
+  function anType(it){ return '<span class="badge" style="--c:'+(AN_TYPE_COL[it.kind]||'#7C878E')+'">'+esc(it.type_label||it.type)+'</span>'; }
   function anEmptyMsg(st){
     if(st && st.status === 'missing_secrets') return 'Doffin-nøkkelen (DOFFIN_API_KEY) er ikke lagt inn som secret i GitHub ennå. Nøkkelen er gratis: registrer deg på dof-notices-prod-api.developer.azure-api.net, abonner på «Public API» og legg nøkkelen under Settings → Secrets and variables → Actions. Neste kjøring henter de siste 120 dagene.';
     if(st && st.status === 'auth_failed') return 'Doffin avviste nøkkelen ved siste kjøring ('+(st.message||'')+'). '+(st.hint||'Sjekk at DOFFIN_API_KEY er riktig og at abonnementet på Public API er aktivt.');
@@ -2311,7 +2311,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     var active = rel.filter(anActive).sort(function(a,b){ return a.deadline < b.deadline ? -1 : 1; });
     var wk = new Date(Date.now()-7*86400000).toISOString().slice(0,10);
     var fresh = rel.filter(function(i){ return (i.publication_date||'') >= wk; }).length;
-    var awards = rel.filter(function(i){ return i.type === 'RESULT'; }).length;
+    var awards = rel.filter(function(i){ return i.kind === 'result'; }).length;
     body.innerHTML = '<div class="auc-card"><div><div class="v">'+active.length+'</div><div class="k">aktive konkurranser</div></div>' +
       '<div><div class="v">'+fresh+'</div><div class="k">nye relevante siste 7 dager</div></div>' +
       '<div><div class="v">'+awards+'</div><div class="k">tildelinger – hvem vant</div></div></div>' +
@@ -2338,7 +2338,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     return d.items.filter(function(i){
       if(ANBUD.rel === 'rel' && i.score < d.threshold) return false;
       if(ANBUD.area && (i.areas||[]).indexOf(ANBUD.area) < 0) return false;
-      if(ANBUD.type && i.type !== ANBUD.type) return false;
+      if(ANBUD.type && i.kind !== ANBUD.type) return false;
       if(ANBUD.buyer && (i.buyers||[])[0] !== ANBUD.buyer) return false;
       if(q){ var hay = (i.heading+' '+(i.buyers||[]).join(' ')+' '+(i.description||'')+' '+(i.winners||[]).join(' ')).toLowerCase(); if(hay.indexOf(q) < 0) return false; }
       return true;
@@ -2364,7 +2364,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     var active = rel.filter(anActive);
     var soon = active.filter(function(i){ var n = anDays(i.deadline); return n != null && n <= 14; });
     var sum = active.reduce(function(acc,i){ return acc + (i.value||0); }, 0);
-    var awards = rel.filter(function(i){ return i.type === 'RESULT'; });
+    var awards = rel.filter(function(i){ return i.kind === 'result'; });
     $('anbud-pulse').innerHTML = anCell('Aktive konkurranser', String(active.length), soon.length ? soon.length+' med frist innen 14 dager' : 'ingen frist innen 14 dager') +
       anCell('Anslått verdi, aktive', sum ? anValue(sum) : '–', 'summert der oppdragsgiver har oppgitt verdi') +
       anCell('Tildelinger', String(awards.length), 'hvem vant – beholdes i ett år') +
