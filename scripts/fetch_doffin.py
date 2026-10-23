@@ -49,7 +49,7 @@ STATUS_PATH = OUT_DIR / "status.json"
 FEEDS_DIR = ROOT / "data" / "feeds"
 AREA_FEED_DIR = FEEDS_DIR / "anbud"
 
-API = CFG.get("api_base", "https://betaapi.doffin.no/public/v2").rstrip("/")
+API_BASES = [b.rstrip("/") for b in (CFG.get("api_bases") or ([CFG["api_base"]] if CFG.get("api_base") else ["https://api.doffin.no/public/v2", "https://betaapi.doffin.no/public/v2"]))]
 NOTICE_URL = CFG.get("notice_url", "https://doffin.no/notice/")
 PAGE_SIZE = int(CFG.get("page_size", 100))
 MAX_PAGES = int(CFG.get("max_pages_per_run", 60))
@@ -205,10 +205,32 @@ class DoffinClient:
         self.key = key
         self.fixture = fixture
         self.calls = 0
+        self.base: str | None = None
         self.s = requests.Session()
         self.s.headers.update({"Accept": "application/json", "User-Agent": "ScaleRadar/1.0 (+github.com/jorgenScale/scale-radar)"})
         if key:
             self.s.headers["Ocp-Apim-Subscription-Key"] = key
+
+    def pick_base(self) -> str:
+        """Doffin har flere API-gatewayer (prod/beta). Prøv kandidatene i rekkefølge og bruk den første som godtar nøkkelen.
+        Gir PermissionError med status per adresse hvis ingen gjør det, så feilen kan leses rett av statusfilen."""
+        if self.base:
+            return self.base
+        tried = []
+        for base in API_BASES:
+            host = base.split("//", 1)[-1].split("/", 1)[0]
+            try:
+                self.calls += 1
+                r = self.s.get(f"{base}/search", params={"numHitsPerPage": 1, "page": 0}, timeout=30)
+            except requests.RequestException as exc:  # DNS, TLS, timeout
+                tried.append(f"{host}: {type(exc).__name__}"); continue
+            if r.status_code == 200:
+                log(f"bruker {base}")
+                self.base = base
+                return base
+            tried.append(f"{host}: HTTP {r.status_code}")
+            time.sleep(PAUSE)
+        raise PermissionError("; ".join(tried))
 
     def search(self, date_from: date, date_to: date, page: int) -> dict:
         if self.fixture:
@@ -216,11 +238,12 @@ class DoffinClient:
             if page > 0:
                 return {"numHitsTotal": d.get("numHitsTotal", 0), "hits": []}
             return d
+        base = self.pick_base()
         params = {"numHitsPerPage": PAGE_SIZE, "page": page, "sortBy": "PUBLICATION_DATE_DESC",
                   "issueDateFrom": date_from.isoformat(), "issueDateTo": date_to.isoformat()}
         for attempt in range(4):
             self.calls += 1
-            r = self.s.get(f"{API}/search", params=params, timeout=40)
+            r = self.s.get(f"{base}/search", params=params, timeout=40)
             if r.status_code in (401, 403):
                 raise PermissionError(f"HTTP {r.status_code}: {r.text[:200]}")
             if r.status_code == 429 or r.status_code >= 500:
@@ -420,7 +443,7 @@ def main() -> int:
                 state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
     except PermissionError as exc:
         log(f"autentisering feilet: {exc}")
-        write_status("auth_failed", message=str(exc)[:200])
+        write_status("auth_failed", message=str(exc)[:240], hint="401 på alle adresser betyr som regel at abonnementet i Doffins API-portal ikke er aktivt ennå, eller at nøkkelen er fra et annet miljø (dev/prod).")
         return 0
     except Exception as exc:  # noqa: BLE001
         log(f"henting feilet: {exc}")
