@@ -10319,7 +10319,7 @@
 "title": "Esøya"
 },
 "SP-2025-002106": {
-"fetched_at": "2026-10-22T18:35:17Z",
+"fetched_at": "2026-10-23T01:34:40Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -10345,7 +10345,7 @@
 "result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Breivik"
 },
 "SP-2025-002107": {
@@ -13004,7 +13004,7 @@
 "title": "Helsøya II"
 },
 "SP-2026-002637": {
-"fetched_at": "2026-10-22T13:50:46Z",
+"fetched_at": "2026-10-23T01:34:40Z",
 "fields": {
 "Aktive tillatelser": "M-EE-0009 , M-EE-0008",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -13031,7 +13031,7 @@
 "planned_production_tonn": 1600,
 "species": "Kveite"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
@@ -13489,7 +13489,7 @@
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
-"fetched_at": "2026-10-22T13:50:46Z",
+"fetched_at": "2026-10-23T01:34:40Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0011 , T-I-0017 , T-SK-0001 , T-I-0016 , T-SK-0007 , T-KN-0010 , T-I-0003",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13517,7 +13517,7 @@
 "planned_production_tonn": 8000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
@@ -13665,7 +13665,7 @@
 "title": "Storvika"
 },
 "SP-2026-002799": {
-"fetched_at": "2026-10-20T01:52:31Z",
+"fetched_at": "2026-10-23T01:34:40Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Hummer",
@@ -13677,7 +13677,7 @@
 "case_handler": "Rogaland fylkeskommune",
 "species": "Hummer"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Ladstein"
 },
 "SP-2026-002800": {
@@ -13766,5 +13766,21 @@
 },
 "status": "Under behandling",
 "title": "Engdal"
+},
+"SP-2026-002804": {
+"fetched_at": "2026-10-23T01:34:40Z",
+"fields": {
+"Ansvarlig saksbehandler": "Rogaland fylkeskommune",
+"Art": "Hummer",
+"Fylke": "Rogaland",
+"Innsendt": "22.10.2026",
+"Kommune": "Stavanger"
+},
+"norm": {
+"case_handler": "Rogaland fylkeskommune",
+"species": "Hummer"
+},
+"status": "Under behandling",
+"title": "Ladstein"
 }
 }

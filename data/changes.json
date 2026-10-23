@@ -6,6 +6,81 @@
 },
 "events": [
 {
+"at": "2026-10-23T01:34:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002637",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Nordic Halibut AS",
+"title": "Krekvikbogen",
+"municipality": "Hustadvika",
+"county": "Møre og Romsdal",
+"status": "Returnert",
+"mtb_tonn": 1560,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002637"
+},
+{
+"at": "2026-10-23T01:34:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-002106",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Breivik",
+"municipality": "Hjelmeland",
+"county": "Rogaland",
+"status": "Godkjent",
+"mtb_tonn": 3600,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002106"
+},
+{
+"at": "2026-10-23T01:34:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002787",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sørrollnesfisk AS",
+"title": "Svartskjær",
+"municipality": "Ibestad",
+"county": "Troms",
+"status": "Returnert",
+"mtb_tonn": 6800,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
+},
+{
+"at": "2026-10-23T01:34:49Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002804",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Norwegian Lobster Farm AS",
+"title": "Ladstein",
+"municipality": "Stavanger",
+"county": "Rogaland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002804"
+},
+{
+"at": "2026-10-23T01:34:49Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002799",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Feedback Aquaculture AS",
+"title": "Ladstein",
+"municipality": "Stavanger",
+"county": "Rogaland",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002799"
+},
+{
 "at": "2026-10-22T18:37:03Z",
 "kind": "utfall",
 "text": "Utfall: Innvilget",
@@ -1146,5 +1221,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-22T22:27:29Z"
+"updated_at": "2026-10-23T01:34:49Z"
 }
