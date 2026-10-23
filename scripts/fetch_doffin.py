@@ -79,6 +79,10 @@ TYPE_KIND = {"COMPETITION": "competition", "ANNOUNCEMENT_OF_COMPETITION": "compe
              "PLANNING": "planning", "PRE_ANNOUNCEMENT": "planning", "ADVISORY_NOTICE": "planning"}
 
 
+class RateLimited(Exception):
+    """API-et sier nei akkurat nå – vi avslutter hentingen pent og fortsetter neste time."""
+
+
 def log(msg: str) -> None:
     print(f"[anbud] {msg}", file=sys.stderr)
 
@@ -225,6 +229,7 @@ class DoffinClient:
         self.page_offset = 0          # 0 = sider telles fra 0, 1 = fra 1
         self.date_mode = "date"       # "date" = YYYY-MM-DD, "datetime" = ...T00:00:00Z, "none" = ingen datofilter
         self.page_size = PAGE_SIZE
+        self.rate_limited = False
         self.s = requests.Session()
         self.s.headers.update({"Accept": "application/json", "User-Agent": "ScaleRadar/1.0 (+github.com/jorgenScale/scale-radar)"})
         if key:
@@ -243,6 +248,17 @@ class DoffinClient:
         return self.s.get(f"{base}/search", params=params, timeout=40)
 
     @staticmethod
+    def _retry_after(r, attempt: int) -> float:
+        """Ventetid etter 429/5xx: Retry-After-header, ellers «Try again in N seconds» i meldingen, ellers økende."""
+        ra = r.headers.get("Retry-After") if hasattr(r, "headers") and r.headers else None
+        if ra and str(ra).strip().isdigit():
+            return min(90, int(ra) + 1)
+        m = re.search(r"in (\d+) second", r.text or "")
+        if m:
+            return min(90, int(m.group(1)) + 1)
+        return min(60, 5 * (attempt + 1))
+
+    @staticmethod
     def _host(base: str) -> str:
         return base.split("//", 1)[-1].split("/", 1)[0]
 
@@ -258,17 +274,19 @@ class DoffinClient:
             host = self._host(base)
             params = self._params(date_from, date_to, page, self.page_offset, self.date_mode, self.page_size)
             r = None
-            for attempt in range(4):
+            for attempt in range(6):
                 try:
                     r = self._get(base, params)
                 except requests.RequestException as exc:
                     denied.append(f"{host}: {type(exc).__name__}"); r = None; break
                 if r.status_code == 429 or r.status_code >= 500:
-                    wait = min(30, 2 ** attempt * 2)
-                    log(f"HTTP {r.status_code} fra {host} – venter {wait}s"); time.sleep(wait); continue
+                    wait = self._retry_after(r, attempt)
+                    log(f"HTTP {r.status_code} fra {host} – venter {wait}s ({attempt + 1}/6)"); time.sleep(wait); continue
                 break
             if r is None:
                 continue
+            if r.status_code == 429:
+                raise RateLimited(f"ratebegrenset av {host}: {r.text.strip()[:120]}")
             if r.status_code in (401, 403):
                 denied.append(f"{host}: HTTP {r.status_code}")
                 time.sleep(PAUSE)
@@ -336,7 +354,12 @@ def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, lab
     total = None
     fetched = 0
     while page < start_page + budget:
-        d = client.search(date_from, date_to, page)
+        try:
+            d = client.search(date_from, date_to, page)
+        except RateLimited as exc:
+            log(f"{label}: {exc} – {len(hits)} treff beholdes, resten tas neste kjøring")
+            client.rate_limited = True
+            return hits, False, oldest, page, total
         page_hits = d.get("hits") or []
         if total is None and client.date_mode != "none":
             total = d.get("numHitsAccessible") or d.get("numHitsTotal")
@@ -459,12 +482,13 @@ def main() -> int:
 
     new_hits: list[dict] = []
     pages_left = MAX_PAGES
+    run_warning: str | None = None
 
     def fetch_range(d_from: date, d_to: date, label: str) -> bool:
         """Henter et datointervall komplett. Treffer intervallet API-ets tak på 1 000, deles det i to.
         Returnerer False hvis sidebudsjettet tok slutt før intervallet var ferdig."""
         nonlocal pages_left
-        if pages_left <= 0:
+        if pages_left <= 0 or client.rate_limited:
             return False
         hits, done, oldest, nxt, total = sweep(client, d_from, d_to, pages_left, label)
         pages_left -= max(1, nxt)
@@ -516,10 +540,9 @@ def main() -> int:
         return 0
     except Exception as exc:  # noqa: BLE001
         log(f"henting feilet: {exc}")
-        write_status("error", message=str(exc)[:200])
-        # vi fortsetter med det vi har lagret, slik at nye regler fortsatt scorer gamle treff
-        if not stored:
-            return 0
+        run_warning = f"Henting avbrutt: {str(exc)[:160]} – det som ble hentet er tatt vare på, resten tas neste kjøring."
+    if client.rate_limited and not run_warning:
+        run_warning = "Doffin ratebegrenset forrige kjøring – hentingen fortsetter neste time."
 
     # 3) slå sammen, score, beskjær
     for it in new_hits:
@@ -556,6 +579,7 @@ def main() -> int:
         "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
         "source_url": "https://www.doffin.no/",
         "window": {"from": state.get("covered_from"), "to": today.isoformat(), "backfill_complete": bool(state.get("backfill_complete"))},
+        "warning": run_warning,
         "threshold": THRESHOLD,
         "store_min_score": STORE_MIN,
         "areas": area_labels,
@@ -566,7 +590,7 @@ def main() -> int:
     }, ensure_ascii=False, indent=0), encoding="utf-8")
     STATE_PATH.write_text(json.dumps(dict(state, last_run=now_iso()), ensure_ascii=False), encoding="utf-8")
     write_status("ok", relevant=len(relevant), active=len(active), fetched=len(new_hits), api_calls=client.calls,
-                 backfill_complete=bool(state.get("backfill_complete")))
+                 backfill_complete=bool(state.get("backfill_complete")), warning=run_warning)
     log(f"ferdig: {len(new_hits)} hentet, {len(items)} lagret, {len(relevant)} relevante, {len(active)} aktive konkurranser, {client.calls} API-kall")
     return 0
 
