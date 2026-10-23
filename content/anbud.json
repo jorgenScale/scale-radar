@@ -1,5 +1,5 @@
 {
-  "_comment": "Offentlige anbud fra Doffin (DFØ). Krever secret DOFFIN_API_KEY i GitHub Actions (gratis nøkkel fra https://dof-notices-prod-api.developer.azure-api.net/). Alt under 'areas', 'core', 'buyers', 'negative' og 'cpv' kan redigeres fritt – skriptet scorer alle lagrede kunngjøringer på nytt ved hver kjøring, så endringer slår inn uten ny henting. Søkeord matcher ordstart (ikke inni ord: «bilflåte» treffer ikke «flåte») og tillater inntil tre bokstavers bøyning (flåte, flåten, flåter).",
+  "_comment": "Offentlige anbud fra Doffin (DFØ). Krever secret DOFFIN_API_KEY i GitHub Actions (gratis nøkkel fra https://dof-notices-prod-api.developer.azure-api.net/). Alt under 'areas', 'core', 'buyers', 'negative' og 'cpv' kan redigeres fritt – skriptet scorer alle lagrede kunngjøringer på nytt ved hver kjøring, så endringer slår inn uten ny henting. Søkeord matcher ordstart (ikke inni ord: «bilflåte» treffer ikke «flåte»), tillater inntil tre bokstavers bøyning (flåte, flåten, flåter) og skiller på ô/o: «fôring» treffer ikke «foring» (rørforing) og «fôrsystem» ikke «forsystem» (IT). Skriv begge varianter der det er trygt.",
   "enabled": true,
   "api_bases": [
     "https://api.doffin.no/public/v2",
@@ -7,24 +7,24 @@
     "https://dof-notices-prod-api.azure-api.net/public/v2"
   ],
   "_api_bases_comment": "Skriptet prøver disse i rekkefølge ved oppstart og bruker den første som godtar nøkkelen. Står adressen i API-portalen (under «Try it»), legg den først.",
-  "notice_url": "https://doffin.no/notice/",
+  "notice_url": "https://www.doffin.no/notices/",
   "backfill_days": 120,
   "incremental_days": 3,
   "page_size": 100,
   "max_pages_per_run": 60,
   "pause_seconds": 0.4,
-  "threshold": 40,
-  "store_min_score": 20,
+  "threshold": 50,
+  "store_min_score": 30,
   "keep_days": 365,
   "keep_days_after_deadline": 90,
   "description_max_chars": 1500,
   "weights": {
-    "_comment": "Poeng per treff. Område-ord i tittel teller mest; svake område-ord («flåte», «kamera») trenger noe mer for å nå terskelen. Kjent kjøper alene er ikke nok – fylkeskommuner kjøper også asfalt.",
-    "area_heading": 45,
+    "_comment": "Poeng per treff. Et sterkt område-ord eller et havbruksord i tittelen holder alene (50 = terskelen). Treff i beskrivelsen og kjent kjøper må kombineres: kjøper (25) + ord i beskrivelse (30) passerer, kjøper alene gjør det ikke – fylkeskommuner kjøper også asfalt.",
+    "area_heading": 50,
     "area_text": 30,
     "weak_area_heading": 20,
     "weak_area_text": 12,
-    "core_heading": 35,
+    "core_heading": 50,
     "core_text": 20,
     "buyer": 25,
     "cpv": 15,
@@ -75,14 +75,15 @@
         "fôringsanlegg",
         "foringsanlegg",
         "fôringssystem",
-        "foringssystem",
         "fôrsystem",
         "fôrautomat",
-        "forautomat",
         "fôrspreder",
         "fôrblåser",
+        "fôrslange",
+        "fôringsslange",
         "feeding system",
-        "feed system"
+        "feed system",
+        "fish feeding"
       ],
       "weak": [
         "fôring"
@@ -98,9 +99,10 @@
         "lusekamera",
         "fiskehelseovervåking",
         "miljøovervåking i merd",
-        "oksygenmåling",
+        "oksygenmåling i merd",
         "fôringskamera",
-        "fiskevelferdsovervåking"
+        "fiskevelferdsovervåking",
+        "merdkamera"
       ],
       "weak": [
         "kamera",
@@ -110,22 +112,30 @@
       ]
     },
     "vaksine": {
-      "label": "Vaksinering og sortering",
+      "label": "Vaksinering og sortering (Maskon)",
       "strong": [
         "vaksinering av fisk",
+        "vaksinering av smolt",
         "vaksinasjonsmaskin",
         "vaksineringsmaskin",
         "fiskevaksinering",
-        "sorteringsmaskin",
+        "vaksinemaskin for fisk",
         "fiskesortering",
-        "fisketeller",
+        "fiskesorterer",
         "smoltsortering",
+        "smoltsorterer",
+        "sortering av fisk",
+        "sortering av smolt",
+        "sorteringsmaskin for fisk",
+        "fisketeller",
         "kjønnssortering",
-        "fish vaccination"
+        "fish vaccination",
+        "fish grading",
+        "fish counter"
       ],
       "weak": [
-        "vaksinering",
-        "sortering"
+        "sorteringsmaskin",
+        "vaksinering"
       ]
     },
     "land": {
@@ -148,21 +158,26 @@
     }
   },
   "core": {
-    "_comment": "Ord som plasserer kunngjøringen i havbruk. Tittel-treff gir mer enn treff i beskrivelsen.",
+    "_comment": "Ord som plasserer kunngjøringen i havbruk. Tittel-treff holder alene. compound=true: ordene matcher også som første ledd i sammensetninger (oppdrettsutstyr, havbruksnæring, akvakulturanlegg).",
+    "compound": true,
     "terms": [
       "akvakultur",
       "havbruk",
+      "havbruksstasjon",
       "oppdrett",
       "fiskeoppdrett",
       "oppdrettsanlegg",
       "oppdrettsnæring",
       "oppdrettsfisk",
+      "oppdrettslaks",
+      "oppdrettstorsk",
       "lakseoppdrett",
       "laksefisk",
       "regnbueørret",
       "torskeoppdrett",
       "rensefisk",
       "sjøanlegg",
+      "forsøksanlegg for fisk",
       "fiskehelse",
       "fiskevelferd",
       "lakselus",
@@ -174,13 +189,9 @@
       "salmon farming",
       "salmonid",
       "marin fisk",
-      "marine arter",
       "forsøksfisk",
       "fiskeforsøk",
-      "akvakulturlinje",
-      "naturbruk",
-      "oppdrettslaks",
-      "oppdrettstorsk"
+      "akvakulturlinje"
     ]
   },
   "buyers": {
@@ -242,7 +253,14 @@
       "brannbåt",
       "havnebasseng",
       "flytebrygge",
-      "småbåthavn"
+      "småbåthavn",
+      "renovasjon",
+      "gjenvinning",
+      "husholdningsavfall",
+      "restavfall",
+      "avfallssortering",
+      "kildesortering",
+      "overløpskum"
     ]
   },
   "cpv": {
@@ -257,5 +275,7 @@
       "15711000": "Fiskefôr",
       "33651690": "Veterinærvaksiner"
     }
-  }
+  },
+  "backfill_slice_days": 4,
+  "_backfill_slice_days_comment": "Doffin-API-et gir maks 1 000 treff per søk. Historikken hentes derfor i biter på så mange dager; en bit som treffer taket deles automatisk i to."
 }
