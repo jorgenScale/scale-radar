@@ -1,0 +1,256 @@
+{
+  "_comment": "Offentlige anbud fra Doffin (DFØ). Krever secret DOFFIN_API_KEY i GitHub Actions (gratis nøkkel fra https://dof-notices-prod-api.developer.azure-api.net/). Alt under 'areas', 'core', 'buyers', 'negative' og 'cpv' kan redigeres fritt – skriptet scorer alle lagrede kunngjøringer på nytt ved hver kjøring, så endringer slår inn uten ny henting. Søkeord matcher ordstart (ikke inni ord: «bilflåte» treffer ikke «flåte») og tillater inntil tre bokstavers bøyning (flåte, flåten, flåter).",
+  "enabled": true,
+  "api_base": "https://betaapi.doffin.no/public/v2",
+  "notice_url": "https://doffin.no/notice/",
+  "backfill_days": 120,
+  "incremental_days": 3,
+  "page_size": 100,
+  "max_pages_per_run": 60,
+  "pause_seconds": 0.4,
+  "threshold": 40,
+  "store_min_score": 20,
+  "keep_days": 365,
+  "keep_days_after_deadline": 90,
+  "description_max_chars": 1500,
+  "weights": {
+    "_comment": "Poeng per treff. Område-ord i tittel teller mest; svake område-ord («flåte», «kamera») trenger noe mer for å nå terskelen. Kjent kjøper alene er ikke nok – fylkeskommuner kjøper også asfalt.",
+    "area_heading": 45,
+    "area_text": 30,
+    "weak_area_heading": 20,
+    "weak_area_text": 12,
+    "core_heading": 35,
+    "core_text": 20,
+    "buyer": 25,
+    "cpv": 15,
+    "negative": -50
+  },
+  "areas": {
+    "flaate": {
+      "label": "Flåter",
+      "strong": [
+        "fôrflåte",
+        "forflåte",
+        "fôringsflåte",
+        "foringsflåte",
+        "oppdrettsflåte",
+        "havbruksflåte",
+        "akvakulturflåte",
+        "feed barge",
+        "feeding barge"
+      ],
+      "weak": [
+        "flåte"
+      ]
+    },
+    "merd": {
+      "label": "Merder, nøter og fortøyning",
+      "strong": [
+        "merd",
+        "oppdrettsmerd",
+        "merdanlegg",
+        "nøter",
+        "notpose",
+        "oppdrettsnot",
+        "notvask",
+        "fortøyning",
+        "fortøyningssystem",
+        "fortøyningsanalyse",
+        "flytekrage",
+        "flytering",
+        "net pen",
+        "sea cage",
+        "mooring system"
+      ],
+      "weak": []
+    },
+    "foring": {
+      "label": "Fôring",
+      "strong": [
+        "fôringsanlegg",
+        "foringsanlegg",
+        "fôringssystem",
+        "foringssystem",
+        "fôrsystem",
+        "fôrautomat",
+        "forautomat",
+        "fôrspreder",
+        "fôrblåser",
+        "feeding system",
+        "feed system"
+      ],
+      "weak": [
+        "fôring"
+      ]
+    },
+    "sensor": {
+      "label": "Sensorikk, kamera og programvare",
+      "strong": [
+        "undervannskamera",
+        "biomassemåling",
+        "biomassekamera",
+        "lusetelling",
+        "lusekamera",
+        "fiskehelseovervåking",
+        "miljøovervåking i merd",
+        "oksygenmåling",
+        "fôringskamera",
+        "fiskevelferdsovervåking"
+      ],
+      "weak": [
+        "kamera",
+        "sensor",
+        "overvåkingssystem",
+        "driftskontroll"
+      ]
+    },
+    "vaksine": {
+      "label": "Vaksinering og sortering",
+      "strong": [
+        "vaksinering av fisk",
+        "vaksinasjonsmaskin",
+        "vaksineringsmaskin",
+        "fiskevaksinering",
+        "sorteringsmaskin",
+        "fiskesortering",
+        "fisketeller",
+        "smoltsortering",
+        "kjønnssortering",
+        "fish vaccination"
+      ],
+      "weak": [
+        "vaksinering",
+        "sortering"
+      ]
+    },
+    "land": {
+      "label": "Settefisk og landbasert",
+      "strong": [
+        "settefisk",
+        "settefiskanlegg",
+        "smoltanlegg",
+        "resirkuleringsanlegg",
+        "ras-anlegg",
+        "postsmolt",
+        "klekkeri",
+        "landbasert oppdrett",
+        "fiskekar",
+        "oppdrettskar",
+        "karanlegg",
+        "forsøksanlegg for fisk"
+      ],
+      "weak": []
+    }
+  },
+  "core": {
+    "_comment": "Ord som plasserer kunngjøringen i havbruk. Tittel-treff gir mer enn treff i beskrivelsen.",
+    "terms": [
+      "akvakultur",
+      "havbruk",
+      "oppdrett",
+      "fiskeoppdrett",
+      "oppdrettsanlegg",
+      "oppdrettsnæring",
+      "oppdrettsfisk",
+      "lakseoppdrett",
+      "laksefisk",
+      "regnbueørret",
+      "torskeoppdrett",
+      "rensefisk",
+      "sjøanlegg",
+      "fiskehelse",
+      "fiskevelferd",
+      "lakselus",
+      "avlusing",
+      "smolt",
+      "aquaculture",
+      "fish farm",
+      "fish farming",
+      "salmon farming",
+      "salmonid",
+      "marin fisk",
+      "marine arter",
+      "forsøksfisk",
+      "fiskeforsøk",
+      "akvakulturlinje",
+      "naturbruk",
+      "oppdrettslaks",
+      "oppdrettstorsk"
+    ]
+  },
+  "buyers": {
+    "_comment": "Offentlige virksomheter som kjøper havbruksutstyr. Fylkeskommunene står bak de videregående skolene med akvakulturlinje (undervisningstillatelser).",
+    "names": [
+      "Havforskningsinstituttet",
+      "Institute of Marine Research",
+      "NTNU",
+      "Norges teknisk-naturvitenskapelige universitet",
+      "SINTEF",
+      "Nofima",
+      "Nord universitet",
+      "UiT",
+      "Universitetet i Tromsø",
+      "Norges arktiske universitet",
+      "Universitetet i Bergen",
+      "Veterinærinstituttet",
+      "Mattilsynet",
+      "Fiskeridirektoratet",
+      "NIVA",
+      "Norsk institutt for vannforskning",
+      "Akvaplan",
+      "Trøndelag fylkeskommune",
+      "Nordland fylkeskommune",
+      "Troms fylkeskommune",
+      "Finnmark fylkeskommune",
+      "Vestland fylkeskommune",
+      "Møre og Romsdal fylkeskommune",
+      "Rogaland fylkeskommune",
+      "Agder fylkeskommune",
+      "Statsforvalteren",
+      "Norges forskningsråd",
+      "Innovasjon Norge",
+      "Siva",
+      "Kystverket",
+      "Forsvarets forskningsinstitutt"
+    ]
+  },
+  "negative": {
+    "_comment": "Treff på disse trekker 50 poeng – typisk «flåte» i betydningen bilpark eller redningsflåte.",
+    "terms": [
+      "flåtestyring",
+      "bilflåte",
+      "kjøretøyflåte",
+      "bilpark",
+      "redningsflåte",
+      "redningsflåter",
+      "flåteforvaltning",
+      "fleet management",
+      "leasing av biler",
+      "elbil",
+      "tjenestebiler",
+      "varebiler",
+      "lastebiler",
+      "flåtekort",
+      "drivstoffkort",
+      "ferge",
+      "hurtigbåt",
+      "brannbåt",
+      "havnebasseng",
+      "flytebrygge",
+      "småbåthavn"
+    ]
+  },
+  "cpv": {
+    "_comment": "CPV-koder som peker mot havbruk eller båter. Gir 15 poeng, holder ikke alene.",
+    "codes": {
+      "03300000": "Jordbruks-, jakt- og fiskeprodukter",
+      "03310000": "Fisk, krepsdyr og akvatiske produkter",
+      "03311000": "Fisk",
+      "77700000": "Tjenester tilknyttet fiske",
+      "34520000": "Båter",
+      "34521000": "Spesialbåter",
+      "15711000": "Fiskefôr",
+      "33651690": "Veterinærvaksiner"
+    }
+  }
+}
