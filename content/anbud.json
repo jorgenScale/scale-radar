@@ -1,7 +1,12 @@
 {
   "_comment": "Offentlige anbud fra Doffin (DFØ). Krever secret DOFFIN_API_KEY i GitHub Actions (gratis nøkkel fra https://dof-notices-prod-api.developer.azure-api.net/). Alt under 'areas', 'core', 'buyers', 'negative' og 'cpv' kan redigeres fritt – skriptet scorer alle lagrede kunngjøringer på nytt ved hver kjøring, så endringer slår inn uten ny henting. Søkeord matcher ordstart (ikke inni ord: «bilflåte» treffer ikke «flåte») og tillater inntil tre bokstavers bøyning (flåte, flåten, flåter).",
   "enabled": true,
-  "api_base": "https://betaapi.doffin.no/public/v2",
+  "api_bases": [
+    "https://api.doffin.no/public/v2",
+    "https://betaapi.doffin.no/public/v2",
+    "https://dof-notices-prod-api.azure-api.net/public/v2"
+  ],
+  "_api_bases_comment": "Skriptet prøver disse i rekkefølge ved oppstart og bruker den første som godtar nøkkelen. Står adressen i API-portalen (under «Try it»), legg den først.",
   "notice_url": "https://doffin.no/notice/",
   "backfill_days": 120,
   "incremental_days": 3,
