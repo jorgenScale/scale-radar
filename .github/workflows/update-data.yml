@@ -40,6 +40,11 @@ jobs:
           BW_CLIENT_SECRET: ${{ secrets.BW_CLIENT_SECRET }}
         run: python scripts/fetch_fishhealth.py
 
+      - name: Hent offentlige anbud fra Doffin (krever DOFFIN_API_KEY)
+        env:
+          DOFFIN_API_KEY: ${{ secrets.DOFFIN_API_KEY }}
+        run: python scripts/fetch_doffin.py
+
       - name: Send e-postvarsler (kjører bare når SMTP-secrets er satt)
         if: env.SMTP_HOST != ''
         run: python scripts/notify.py
