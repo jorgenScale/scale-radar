@@ -50,11 +50,14 @@ FEEDS_DIR = ROOT / "data" / "feeds"
 AREA_FEED_DIR = FEEDS_DIR / "anbud"
 
 API_BASES = [b.rstrip("/") for b in (CFG.get("api_bases") or ([CFG["api_base"]] if CFG.get("api_base") else ["https://api.doffin.no/public/v2", "https://betaapi.doffin.no/public/v2"]))]
-NOTICE_URL = CFG.get("notice_url", "https://doffin.no/notice/")
+NOTICE_URL = CFG.get("notice_url", "https://www.doffin.no/notices/")
 PAGE_SIZE = int(CFG.get("page_size", 100))
 MAX_PAGES = int(CFG.get("max_pages_per_run", 60))
 PAUSE = float(CFG.get("pause_seconds", 0.4))
 BACKFILL_DAYS = int(CFG.get("backfill_days", 120))
+SLICE_DAYS = max(1, int(CFG.get("backfill_slice_days", 4)))
+API_CAP = 1000          # Doffin returnerer aldri mer enn 1 000 treff per søk (numHitsTotal stopper på 1000)
+BACKFILL_VERSION = 2    # bump når hentelogikken endres slik at historikken må hentes på nytt
 INCREMENTAL_DAYS = int(CFG.get("incremental_days", 3))
 THRESHOLD = int(CFG.get("threshold", 40))
 STORE_MIN = int(CFG.get("store_min_score", 20))
@@ -98,31 +101,32 @@ def load_json(path: Path, default):
 
 # --------------------------------------------------------------------------- tekst og scoring
 def norm(s: str) -> str:
-    """Småbokstaver, ô/ò/ó → o-varianter beholdes, men vi normaliserer «fôr»/«for» ved å fjerne diakritiske tegn
-    på o (ô) så «fôrflåte» og «forflåte» matcher samme mønster. æøå beholdes."""
-    s = (s or "").lower()
-    s = s.replace("ô", "o").replace("ó", "o").replace("ò", "o").replace("ö", "o")
-    return s
+    """Småbokstaver. ô beholdes med vilje: «fôring» (fisk) og «foring» (rør) er ulike ord, og «fôrsystem» er ikke
+    «forsystem» (IT). Ordlistene oppgir begge skrivemåter der det er trygt."""
+    return (s or "").lower()
 
 
-LETTER = "a-zæøåäöü"
+LETTER = "a-zæøåäöüô"
 
 
-def term_rx(term: str, inflect: int = 3) -> re.Pattern:
+def term_rx(term: str, inflect: int = 3, compound: bool = False) -> re.Pattern:
     """Mønster for ett søkeord: må starte på ordgrense (ikke inni «bilflåte»), tillater inntil
     `inflect` bokstavers bøyning etter ordet (flåte → flåten/flåter) og krever ordslutt deretter
-    («flåtestyring» treffer ikke). Mellomrom i ordet matcher også bindestrek og flere mellomrom."""
+    («flåtestyring» treffer ikke). Med compound=True godtas sammensetninger som fortsetter ordet
+    (oppdrett → oppdrettsutstyr, havbruk → havbruksnæring) – brukes for havbruksordene, som sjelden
+    inngår i urelaterte ord. Mellomrom i ordet matcher også bindestrek og flere mellomrom."""
     t = norm(term).strip()
     parts = [re.escape(p) for p in re.split(r"\s+", t) if p]
     body = r"[\s\-]+".join(parts)
-    return re.compile(rf"(?<![{LETTER}0-9]){body}[{LETTER}]{{0,{inflect}}}(?![{LETTER}])", re.IGNORECASE)
+    tail = rf"[{LETTER}]*" if compound else rf"[{LETTER}]{{0,{inflect}}}(?![{LETTER}])"
+    return re.compile(rf"(?<![{LETTER}0-9]){body}{tail}", re.IGNORECASE)
 
 
-def compile_terms(terms: list[str], inflect: int = 3) -> list[tuple[str, re.Pattern]]:
-    """Ett mønster per ulikt ord – «fôrflåte» og «forflåte» normaliseres likt og telles én gang."""
+def compile_terms(terms: list[str], inflect: int = 3, compound: bool = False) -> list[tuple[str, re.Pattern]]:
+    """Ett mønster per ulikt ord – like ord telles én gang."""
     out, seen = [], set()
     for t in terms:
-        rx = term_rx(t, inflect)
+        rx = term_rx(t, inflect, compound)
         if rx.pattern in seen:
             continue
         seen.add(rx.pattern)
@@ -140,7 +144,7 @@ def compile_rules() -> dict:
             "strong": compile_terms(a.get("strong", [])),
             "weak": compile_terms(a.get("weak", [])),
         }
-    rules["core"] = compile_terms((CFG.get("core") or {}).get("terms", []))
+    rules["core"] = compile_terms((CFG.get("core") or {}).get("terms", []), compound=bool((CFG.get("core") or {}).get("compound", True)))
     rules["buyers"] = compile_terms((CFG.get("buyers") or {}).get("names", []), inflect=0)
     rules["negative"] = compile_terms((CFG.get("negative") or {}).get("terms", []))
     rules["cpv"] = {k: v for k, v in ((CFG.get("cpv") or {}).get("codes") or {}).items()}
@@ -322,9 +326,9 @@ def normalize_hit(h: dict) -> dict:
     }
 
 
-def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, label: str, start_page: int = 0) -> tuple[list[dict], bool, date | None, int]:
+def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, label: str, start_page: int = 0) -> tuple[list[dict], bool, date | None, int, int | None]:
     """Henter sider for et datointervall til det er tomt eller budsjettet er brukt.
-    Returnerer (treff, ferdig, eldste issueDate sett, neste side). Når API-et ikke tar datofilter
+    Returnerer (treff, ferdig, eldste issueDate sett, neste side, numHitsTotal). Når API-et ikke tar datofilter
     (client.date_mode == "none") leses det nyeste først og stoppes når vi har passert date_from."""
     hits: list[dict] = []
     oldest: date | None = None
@@ -351,13 +355,13 @@ def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, lab
         # gir færre per side enn vi ba om
         if client.date_mode == "none" and oldest is not None and oldest < date_from:
             log(f"{label}: {len(hits)} treff ned til {oldest} (datokutt lokalt, side {start_page}–{page})")
-            return hits, True, oldest, page + 1
+            return hits, True, oldest, page + 1, total
         if not page_hits or (total is not None and fetched >= int(total)):
             log(f"{label}: {len(hits)} treff på {page - start_page + 1} side(r), {date_from}–{date_to}, totalt {total}")
-            return hits, True, oldest, page + 1
+            return hits, True, oldest, page + 1, total
         page += 1
     log(f"{label}: budsjett brukt ({budget} sider), {len(hits)} treff, eldste {oldest} – fortsetter neste kjøring")
-    return hits, False, oldest, page
+    return hits, False, oldest, page, total
 
 
 # --------------------------------------------------------------------------- RSS
@@ -454,46 +458,58 @@ def main() -> int:
     area_labels = {k: a["label"] for k, a in RULES["areas"].items()}
 
     new_hits: list[dict] = []
+    pages_left = MAX_PAGES
+
+    def fetch_range(d_from: date, d_to: date, label: str) -> bool:
+        """Henter et datointervall komplett. Treffer intervallet API-ets tak på 1 000, deles det i to.
+        Returnerer False hvis sidebudsjettet tok slutt før intervallet var ferdig."""
+        nonlocal pages_left
+        if pages_left <= 0:
+            return False
+        hits, done, oldest, nxt, total = sweep(client, d_from, d_to, pages_left, label)
+        pages_left -= max(1, nxt)
+        capped = total is not None and int(total) >= API_CAP
+        if capped and (d_to - d_from).days >= 1:
+            mid = d_from + (d_to - d_from) // 2
+            log(f"{label}: {d_from}–{d_to} traff taket på {API_CAP} – deler i to")
+            return fetch_range(mid + timedelta(days=1), d_to, label) and fetch_range(d_from, mid, label)
+        new_hits.extend(hits)
+        if capped:
+            log(f"{label}: {d_from} alene har over {API_CAP} kunngjøringer – tar de nyeste {len(hits)}")
+        return done
+
     try:
         # 1) siste dager – alltid
         inc_from = today - timedelta(days=INCREMENTAL_DAYS)
-        hits, _, _, next_page = sweep(client, inc_from, today, MAX_PAGES, "siste dager")
-        new_hits += hits
-        pages_used = max(1, (len(hits) + client.page_size - 1) // client.page_size)
+        if not fetch_range(inc_from, today, "siste dager"):
+            log("siste dager: budsjettet tok slutt – resten tas neste time")
 
-        # 2) bakoverfylling til vi har dekket backfill_days
+        # 2) bakoverfylling i biter til vi har dekket backfill_days
         target_from = today - timedelta(days=BACKFILL_DAYS)
-        if not state.get("backfill_complete") or state.get("backfill_days") != BACKFILL_DAYS:
-            if state.get("backfill_days") != BACKFILL_DAYS:
-                state.pop("resume_to", None)  # ny horisont – start bakoverfyllingen på nytt
+        if state.get("backfill_days") != BACKFILL_DAYS or state.get("backfill_version") != BACKFILL_VERSION:
+            state = {"backfill_days": BACKFILL_DAYS, "backfill_version": BACKFILL_VERSION, "backfill_complete": False}
+        if client.date_mode == "none":
+            # API-et tok ikke datofilter: les nyeste først, side for side, til vi har passert target_from
+            if not state.get("backfill_complete"):
+                start = int(state.get("resume_page") or 0)
+                hits, done, oldest, nxt, _ = sweep(client, target_from, today, max(1, pages_left), "bakoverfylling", start_page=start)
+                new_hits.extend(hits)
+                if done:
+                    state.update({"backfill_complete": True, "covered_from": target_from.isoformat()}); state.pop("resume_page", None)
+                else:
+                    state.update({"resume_page": nxt, "covered_from": (oldest or today).isoformat()})
+        elif not state.get("backfill_complete"):
             resume_to = date.fromisoformat(state["resume_to"]) if state.get("resume_to") else inc_from - timedelta(days=1)
-            budget = max(1, MAX_PAGES - pages_used)
-            if resume_to >= target_from and client.date_mode == "none":
-                # ingen datofilter i API-et: les videre side for side fra der forrige kjøring slapp
-                start = int(state.get("resume_page") or next_page)
-                hits, done, oldest, nxt = sweep(client, target_from, today, budget, "bakoverfylling", start_page=start)
-                new_hits += hits
-                if done:
-                    state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
-                    state.pop("resume_to", None); state.pop("resume_page", None)
-                else:
-                    state.update({"backfill_complete": False, "backfill_days": BACKFILL_DAYS, "resume_page": nxt,
-                                  "covered_from": (oldest or today).isoformat()})
-            elif resume_to >= target_from:
-                hits, done, oldest, _ = sweep(client, target_from, resume_to, budget, "bakoverfylling")
-                new_hits += hits
-                if done:
-                    state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
-                    state.pop("resume_to", None)
-                else:
-                    # sortert på publiseringsdato, filtrert på issueDate – to dagers overlapp så ingenting faller mellom
-                    nxt = min(resume_to, (oldest + timedelta(days=2)) if oldest else resume_to)
-                    if nxt >= resume_to and oldest:
-                        nxt = oldest  # unngå å stå stille
-                    state.update({"backfill_complete": False, "backfill_days": BACKFILL_DAYS,
-                                  "resume_to": nxt.isoformat(), "covered_from": (oldest or resume_to).isoformat()})
+            while resume_to >= target_from and pages_left > 0:
+                slice_from = max(target_from, resume_to - timedelta(days=SLICE_DAYS - 1))
+                if not fetch_range(slice_from, resume_to, "bakoverfylling"):
+                    break
+                resume_to = slice_from - timedelta(days=1)
+                state.update({"resume_to": resume_to.isoformat(), "covered_from": slice_from.isoformat()})
+            if resume_to < target_from:
+                state.update({"backfill_complete": True, "covered_from": target_from.isoformat()}); state.pop("resume_to", None)
             else:
-                state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
+                log(f"bakoverfylling: dekket til {state.get('covered_from')} – fortsetter neste kjøring")
     except PermissionError as exc:
         log(f"autentisering feilet: {exc}")
         write_status("auth_failed", message=str(exc)[:240], hint="401 på alle adresser betyr som regel at abonnementet i Doffins API-portal ikke er aktivt ennå (står som Submitted i stedet for Active).")
@@ -518,6 +534,7 @@ def main() -> int:
     keep_cut = (today - timedelta(days=KEEP_DAYS)).isoformat()
     dl_cut = (today - timedelta(days=KEEP_AFTER_DEADLINE)).isoformat()
     for it in stored.values():
+        it["url"] = NOTICE_URL + str(it["id"])   # bygges på nytt hver gang, så en rettet adresse slår inn på alt lagret
         score, areas, reasons = score_item(it)
         it["score"], it["areas"], it["reasons"] = score, areas, reasons
         pub = it.get("publication_date") or it.get("issue_date") or ""
