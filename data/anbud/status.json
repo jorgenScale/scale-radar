@@ -1,1 +1,1 @@
-{"status": "ok", "updated_at": "2026-10-23T12:04:06Z", "relevant": 1, "active": 0, "fetched": 2250, "api_calls": 34, "backfill_complete": false}
+{"status": "ok", "updated_at": "2026-10-23T12:11:49Z", "relevant": 4, "active": 0, "fetched": 2739, "api_calls": 38, "backfill_complete": true, "warning": null}

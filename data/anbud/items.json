@@ -1,12 +1,13 @@
 {
-"updated_at": "2026-10-23T12:04:06Z",
+"updated_at": "2026-10-23T12:11:49Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
-"from": "2026-09-06",
+"from": "2026-06-25",
 "to": "2026-10-23",
-"backfill_complete": false
+"backfill_complete": true
 },
+"warning": null,
 "threshold": 50,
 "store_min_score": 30,
 "areas": {
@@ -22,12 +23,12 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 2,
-"relevant": 1,
+"stored": 12,
+"relevant": 4,
 "active": 0,
-"candidates": 1,
-"fetched_this_run": 2250,
-"api_calls": 34
+"candidates": 8,
+"fetched_this_run": 2739,
+"api_calls": 38
 },
 "items": [
 {
@@ -161,6 +162,698 @@
 "term": "Troms fylkeskommune",
 "where": "oppdragsgiver",
 "pts": 25
+}
+]
+},
+{
+"id": "2026-113531",
+"url": "https://www.doffin.no/notices/2026-113531",
+"heading": "Samarbeidspartnar til drift av undervisningsløyve ved Måløy vgs",
+"buyers": [
+"Vestland fylkeskommune"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": null,
+"issue_date": "2026-08-26",
+"publication_date": "2026-08-27",
+"deadline": null,
+"value": null,
+"currency": null,
+"cpv": [
+"80000000",
+"77800000",
+"77000000",
+"80212000",
+"80200000",
+"80210000"
+],
+"location": [
+"NO0A2"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Samarbeidspartnar til drift av undervisningsløyve ved Måløy vgs",
+"description": "Det skal inngås samarbeidsavtale med oppdrettar om undervisningsløyve for lakseoppdrett ved Måløy vgs"
+}
+],
+"description": "Det skal inngås samarbeidsavtale med oppdrettar om undervisningsløyve for lakseoppdrett ved Måløy vgs",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 65,
+"areas": [],
+"reasons": [
+{
+"kind": "core",
+"term": "oppdrett",
+"where": "beskrivelse",
+"pts": 20
+},
+{
+"kind": "core",
+"term": "lakseoppdrett",
+"where": "beskrivelse",
+"pts": 20
+},
+{
+"kind": "buyer",
+"term": "Vestland fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
+{
+"id": "2026-113423",
+"url": "https://www.doffin.no/notices/2026-113423",
+"heading": "Kvalifikasjonsfasen - Anskaffelse av satellittbasert og optisk SAR (ny konkurranse)",
+"buyers": [
+"KYSTVERKET"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-08-24",
+"publication_date": "2026-08-26",
+"deadline": "2026-09-23T10:00:00Z",
+"value": 15000000.0,
+"currency": "NOK",
+"cpv": [
+"48900000",
+"63700000",
+"35000000",
+"63712000",
+"63710000",
+"35120000",
+"48000000",
+"63712710",
+"63000000",
+"63712700",
+"48951000",
+"35100000",
+"48950000"
+],
+"location": [
+"anyw"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Kvalifikasjonsfasen - Anskaffelse av satellittbasert og optisk SAR (ny konkurranse)",
+"description": "Denne konkurransen erstatter tidligere kunngjort konkurranse 2026/2237 som ble avlyst 14.08.2026.Formålet med anskaffelsen er å supplere eksisterende overvåkingskapasitet med satellittbaserte, ikke-kooperative sensordata. Løsningen skal bidra til å styrke situasjonsforståelsen i norske havområder gjennom bruk av bildedannende sensorer (optiske og SAR – Synthetic Aperture Radar). Dette skal muliggj"
+}
+],
+"description": "Denne konkurransen erstatter tidligere kunngjort konkurranse 2026/2237 som ble avlyst 14.08.2026.Formålet med anskaffelsen er å supplere eksisterende overvåkingskapasitet med satellittbaserte, ikke-kooperative sensordata. Løsningen skal bidra til å styrke situasjonsforståelsen i norske havområder gjennom bruk av bildedannende sensorer (optiske og SAR – Synthetic Aperture Radar). Dette skal muliggjøre:verifikasjon av AIS-datadeteksjon av fartøy som ikke sender AIS (såkalte «dark vessels»)forbedret situasjonsforståelse og beslutningsstøtte i operative sammenhengerKystverket har prøvet ut bruk av ikke-kooperative sensordata fra satellitter sommeren og høsten 2025 gjennom selskapet Vake AS sitt presentasjon- oganalysesystem (vake.ai.). Utprøvingen av data i Vake baserte seg på optiske og SAR sensordata fra Sentinel-1 og 2 satellittene i EUs Copernicus-program og på AIS-data fra Kystverket.Kystverket ønsker å inngå avtale om tilgang til en allerede etablert og operativ løsning for satellittbasert deteksjon og analyse. Det er ikke aktuelt med utviklingsløp i denne anskaffelsen.Leverandøren skal dokumentere at den tilbudte løsningen var etablert og operativ ved tilbudsfristens utløp.Dokumentasjonen skal minimum bestå av:En teknisk beskrivelse av den tilbudte løsningen, herunder hovedfunksjonalitet, benyttede datakilder og sentrale analysefunksjoner.Skjermbilder som viser sentrale funksjoner i løsningen, herunder visualisering av satellittdata, objektdeteksjon og analysefunksjonalite…",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 37,
+"areas": [
+"sensor"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "sensor",
+"term": "sensor",
+"where": "beskrivelse",
+"pts": 12
+},
+{
+"kind": "buyer",
+"term": "Kystverket",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
+{
+"id": "2026-113066",
+"url": "https://www.doffin.no/notices/2026-113066",
+"heading": "Anskaffelse av av satellittbasert og optisk SAR",
+"buyers": [
+"KYSTVERKET"
+],
+"type": "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+"kind": "other",
+"type_label": "Avlyst",
+"all_types": [
+"RESULT",
+"CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT"
+],
+"status": null,
+"issue_date": "2026-08-14",
+"publication_date": "2026-08-17",
+"deadline": null,
+"value": null,
+"currency": null,
+"cpv": [
+"72000000",
+"48900000",
+"72260000",
+"72268000",
+"35000000",
+"72230000",
+"72224000",
+"35120000",
+"48000000",
+"72220000",
+"72223000",
+"72200000",
+"48950000",
+"48951000",
+"35100000"
+],
+"location": [
+"anyw"
+],
+"received_tenders": 3,
+"winners": [],
+"lots": [
+{
+"heading": "Anskaffelse av av satellittbasert og optisk SAR",
+"description": "Kystverket er en transportetat under Nærings- og fiskeridepartementet med ansvar for sikker og effektiv ferdsel i norske farleder. Etaten har også et nasjonalt ansvar for beredskap mot akutt forurensning. Som en del av dette samfunnsoppdraget har Kystverket ansvar for sivil maritim overvåking, herunder overvåking av skipstrafikk, samt å støtte andre etaters sektoransvar innenfor maritim sikkerhet "
+}
+],
+"description": "Kystverket er en transportetat under Nærings- og fiskeridepartementet med ansvar for sikker og effektiv ferdsel i norske farleder. Etaten har også et nasjonalt ansvar for beredskap mot akutt forurensning. Som en del av dette samfunnsoppdraget har Kystverket ansvar for sivil maritim overvåking, herunder overvåking av skipstrafikk, samt å støtte andre etaters sektoransvar innenfor maritim sikkerhet og beredskap.Dagens overvåkingskapasitet er i stor grad basert på maritime meldesystemer, hvor AIS (Automatic Identification System) utgjør en sentral bærebjelke. Selv om AIS gir omfattende informasjon om skipstrafikken, forekommer det situasjoner hvor posisjonsdata ikke mottas, er mangelfulle eller bevisst undertrykkes. Dette skaper behov for komplementære overvåkingsmetoder.Formålet med anskaffelsen er derfor å supplere eksisterende overvåkingskapasitet med satellittbaserte, ikke-kooperative sensordata. Løsningen skal bidra til å styrke situasjonsforståelsen i norske havområder gjennom bruk av bildedannende sensorer (optiske og SAR – Synthetic Aperture Radar). Dette skal muliggjøre:verifikasjon av AIS-datadeteksjon av fartøy som ikke sender AIS (såkalte «dark vessels»)forbedret situasjonsforståelse og beslutningsstøtte i operative sammenhengerKystverket ønsker å inngå avtale om tilgang til en allerede etablert og operativ løsning for satellittbasert deteksjon og analyse. Det er ikke aktuelt med utviklingsløp i denne anskaffelsen. Avtalen vil ha en varighet på ett (1) år, med opsjon…",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 37,
+"areas": [
+"sensor"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "sensor",
+"term": "sensor",
+"where": "beskrivelse",
+"pts": 12
+},
+{
+"kind": "buyer",
+"term": "Kystverket",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
+{
+"id": "2026-112919",
+"url": "https://www.doffin.no/notices/2026-112919",
+"heading": "Næringsmiddelavtale for Rogaland fylkeskommune",
+"buyers": [
+"Rogaland fylkeskommune"
+],
+"type": "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT",
+"kind": "result",
+"type_label": "Kontraktsinngåelse",
+"all_types": [
+"RESULT",
+"CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+"ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT"
+],
+"status": null,
+"issue_date": "2026-08-12",
+"publication_date": "2026-08-13",
+"deadline": "2028-08-01T00:00:00Z",
+"value": null,
+"currency": null,
+"cpv": [
+"15500000",
+"03200000",
+"15800000",
+"03221000",
+"15000000",
+"03221200",
+"03310000",
+"15890000",
+"03300000",
+"03000000",
+"03220000",
+"15100000"
+],
+"location": [
+"anyw"
+],
+"received_tenders": 0,
+"winners": [
+"Bama Storkjøkken AS",
+"Nortura",
+"Servicegrossistene AS",
+"Tine SA"
+],
+"lots": [
+{
+"heading": "Delkontrakt 1 - Mat og kolonial",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Delkontrakt 2 - Frukt og grønt",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Delkontrakt 3 - Meierivarer",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Delkontrakt 4 - Kjøtt- og kjøttprodukt",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Delkontrakt 5 - Fersk fisk",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Konkurransebetingelser Del III",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+},
+{
+"heading": "Spesielle og generelle kontraktsvilkår",
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag."
+}
+],
+"description": "Rogaland fylkeskommune skal med anskaffelsen inngå rammeavtale med delkontrakter for mat- og kolonialvarer, kjøtt og kjøttprodukt, fersk fisk, frukt og grønt, samt meieriprodukt. Denne rammeavtalen skal omfatte, men er ikke begrenset til, levering til fylkesadministrasjonens kantiner og fylkeskommunens videregående skoler i Rogaland som driver egne kantiner og restaurant- og matfag.",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 40,
+"areas": [],
+"reasons": [
+{
+"kind": "buyer",
+"term": "Rogaland fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+},
+{
+"kind": "cpv",
+"term": "03310000 Fisk, krepsdyr og akvatiske produkter",
+"where": "CPV",
+"pts": 15
+}
+]
+},
+{
+"id": "2026-112945",
+"url": "https://www.doffin.no/notices/2026-112945",
+"heading": "Konsekvensutgreiing og ROS-analyse av akvakultur i KPA",
+"buyers": [
+"Bjørnafjorden kommune"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-08-12",
+"publication_date": "2026-08-13",
+"deadline": "2026-09-02T10:00:58Z",
+"value": null,
+"currency": null,
+"cpv": [
+"71410000",
+"71241000",
+"71200000",
+"71240000",
+"71400000",
+"71000000"
+],
+"location": [
+"NO0A2"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Konsekvensutgreiing og ROS-analyse av akvakultur i KPA",
+"description": "Anskaffinga sitt føremål er å inngå kontrakt om kjøp av konsekvensutgreiing og ROS-analyse av akvakultur i kommuneplanen sin arealdel (KPA) for Bjørnafjorden kommune."
+}
+],
+"description": "Anskaffinga sitt føremål er å inngå kontrakt om kjøp av konsekvensutgreiing og ROS-analyse av akvakultur i kommuneplanen sin arealdel (KPA) for Bjørnafjorden kommune.",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 50,
+"areas": [],
+"reasons": [
+{
+"kind": "core",
+"term": "akvakultur",
+"where": "tittel",
+"pts": 50
+}
+]
+},
+{
+"id": "2026-112452",
+"url": "https://www.doffin.no/notices/2026-112452",
+"heading": "Leie av radar - Blåbærtindens skredvarsllingsanlegg - fv.87 Tamokdalen-Troms fylke",
+"buyers": [
+"Troms Fylkeskommune"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-07-27",
+"publication_date": "2026-07-27",
+"deadline": "2026-09-04T10:00:00Z",
+"value": 11000000.0,
+"currency": "NOK",
+"cpv": [
+"38115100",
+"90710000",
+"38115000",
+"79700000",
+"71300000",
+"75200000",
+"71350000",
+"71356100",
+"71356000",
+"35000000",
+"90720000",
+"71000000",
+"35121900",
+"90721000",
+"90700000",
+"63712000",
+"38100000",
+"63710000",
+"90721800",
+"35121000",
+"38110000",
+"79711000",
+"63712700",
+"35100000",
+"34000000",
+"90711000",
+"90711100",
+"63700000",
+"79000000",
+"90000000",
+"34900000",
+"75241000",
+"75240000",
+"75000000",
+"79714000",
+"34930000",
+"34932000",
+"35120000",
+"38000000",
+"63712710",
+"79710000",
+"63000000"
+],
+"location": [
+"NO072"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Leie av radar - Blåbærtindens skredvarsllingsanlegg - fv.87 Tamokdalen-Troms fylke",
+"description": "Bakgrunn og formål\n\nTroms fylkeskommune (heretter omtalt som Oppdragsgiver) ønsker å sikre et skredutsatt punkt på fylkesvei 87 ved Olsrud i Balsfjord kommune gjennom etablering av et skredvarslingsanlegg.\n\nDenne anskaffelsen omfatter levering av selve skreddeteksjonssystemet, basert på radarteknologi. SRO- anlegget vil bli kunngjort som en egen anskaffelse.\n\nOppdragsgiver inviterer med dette til "
+}
+],
+"description": "Bakgrunn og formål\n\nTroms fylkeskommune (heretter omtalt som Oppdragsgiver) ønsker å sikre et skredutsatt punkt på fylkesvei 87 ved Olsrud i Balsfjord kommune gjennom etablering av et skredvarslingsanlegg.\n\nDenne anskaffelsen omfatter levering av selve skreddeteksjonssystemet, basert på radarteknologi. SRO- anlegget vil bli kunngjort som en egen anskaffelse.\n\nOppdragsgiver inviterer med dette til tilbud på levering av skredovervåking for Blåbærfjellet langs Fv87 i Balsfjord kommune.\n\n Overvåkingssystemet skal kunne detektere skred og bidra til varsling og stenging av veien ved skred fra Blåbærtinden, ved skredpunktet Olsrud (se figur 1).\n\nFormålet med anskaffelsen er å redusere risikoen for person- og materielle skader som følge av snøskred mot vei.",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 37,
+"areas": [
+"sensor"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "sensor",
+"term": "overvåkingssystem",
+"where": "beskrivelse",
+"pts": 12
+},
+{
+"kind": "buyer",
+"term": "Troms fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
+{
+"id": "2026-112248",
+"url": "https://www.doffin.no/notices/2026-112248",
+"heading": "Arbeids- og inspeksjonsbåter i aluminium for bruk  på Svalbard - Kvalifikasjonsfase",
+"buyers": [
+"KYSTVERKET"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-07-13",
+"publication_date": "2026-07-14",
+"deadline": "2026-08-31T10:00:00Z",
+"value": 6000000.0,
+"currency": "NOK",
+"cpv": [
+"42100000",
+"34000000",
+"34522000",
+"42111100",
+"42110000",
+"42000000",
+"42111000",
+"34522300",
+"34500000",
+"34520000"
+],
+"location": [
+"NO0B2"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Arbeids- og inspeksjonsbåter i aluminium for bruk  på Svalbard - Kvalifikasjonsfase",
+"description": "Kystverket skal kjøpe 2 stk. arbeids og inspeksjonsbåter for bruk i oljevernaksjoner og øvelser på Svalbard. Båtene skal bygges i aluminium og leveres godkjent i henhold til Nordisk Båtstandard (NB)."
+}
+],
+"description": "Kystverket skal kjøpe 2 stk. arbeids og inspeksjonsbåter for bruk i oljevernaksjoner og øvelser på Svalbard. Båtene skal bygges i aluminium og leveres godkjent i henhold til Nordisk Båtstandard (NB).",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 40,
+"areas": [],
+"reasons": [
+{
+"kind": "buyer",
+"term": "Kystverket",
+"where": "oppdragsgiver",
+"pts": 25
+},
+{
+"kind": "cpv",
+"term": "34520000 Båter",
+"where": "CPV",
+"pts": 15
+}
+]
+},
+{
+"id": "2026-112175",
+"url": "https://www.doffin.no/notices/2026-112175",
+"heading": "Potensialstudie for energieffektivisering i norsk fastlandsindustri",
+"buyers": [
+"Enova SF"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-07-09",
+"publication_date": "2026-07-10",
+"deadline": "2026-09-15T11:00:00Z",
+"value": null,
+"currency": null,
+"cpv": [
+"79310000",
+"79000000",
+"79300000"
+],
+"location": [
+"anyw"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Potensialstudie for energieffektivisering i norsk fastlandsindustri",
+"description": "Tilgang på kraft og sikring av et velfungerende energisystem i stort er en forutsetning for grønn omstilling og for å nå klimamålene. Norsk fastlandsindustri bruker årlig om lag 76 TWh energi, hvor elektrisitet utgjør rundt 45 TWh, tilsvarende om lag 40 prosent av Norges kraftforbruk. I tillegg til dette står bergverks- og oppdrettsnæringen for et betydelig energiforbruk. Effektiv bruk av energi e"
+}
+],
+"description": "Tilgang på kraft og sikring av et velfungerende energisystem i stort er en forutsetning for grønn omstilling og for å nå klimamålene. Norsk fastlandsindustri bruker årlig om lag 76 TWh energi, hvor elektrisitet utgjør rundt 45 TWh, tilsvarende om lag 40 prosent av Norges kraftforbruk. I tillegg til dette står bergverks- og oppdrettsnæringen for et betydelig energiforbruk. Effektiv bruk av energi er sentralt for en kostnadseffektiv utvikling av energisystemet. Flere studier og utredninger knyttet til energieffektivisering og utnyttelse av overskuddsenergi har blitt gjennomført de siste 20 årene. Likevel har ikke en komplett kartlegging av energieffektiviseringspotensialet i norsk fastlandsindustri blitt gjennomført siden 2009. Målet med denne anskaffelsen er å kartlegge hvor stort potensial som finnes for energieffektivisering av fastlandsindustriprosesser i Norge, samt å kartlegge barrierer og kostnader knyttet til disse tiltakene.  Oppdraget omfatter en oppdatert kartlegging av energibruk og energieffektiviserings-potensialet i norsk fastlandsindustri, med formål å etablere et robust og oppdatert kunnskapsgrunnlag for videre virkemiddelutvikling og prioritering av tiltak. Kartleggingen skal omfatte virksomheter innen NACE kodene 03.2, 05, 07-33 og være representativ for norsk fastlandsindustri samlet sett. Leverandøren skal gjennomføre en omfattende datainnsamling basert på intervjuer og spørreundersøkelser rettet mot et tilstrekkelig stort utvalg virksomheter innen relevant…",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 40,
+"areas": [],
+"reasons": [
+{
+"kind": "core",
+"term": "oppdrett",
+"where": "beskrivelse",
+"pts": 20
+},
+{
+"kind": "core",
+"term": "oppdrettsnæring",
+"where": "beskrivelse",
+"pts": 20
+}
+]
+},
+{
+"id": "2026-111835",
+"url": "https://www.doffin.no/notices/2026-111835",
+"heading": "2026-045 Stand- og prosjektledelse, havbruksmesse 2027",
+"buyers": [
+"Møre og Romsdal Fylkeskommune"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION",
+"NOTICE_ON_BUYER_PROFILE",
+"PLANNING"
+],
+"status": null,
+"issue_date": "2026-07-03",
+"publication_date": "2026-07-04",
+"deadline": "2026-08-31T10:00:00Z",
+"value": 3450000.0,
+"currency": "NOK",
+"cpv": [
+"72000000",
+"85312300",
+"79400000",
+"85312000",
+"79000000",
+"85312320",
+"85310000",
+"79421000",
+"85000000",
+"79956000",
+"72224000",
+"85300000",
+"79420000",
+"79950000",
+"79900000",
+"72220000",
+"72200000"
+],
+"location": [
+"NO0A3"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "2026-045 Stand- og prosjektledelse, havbruksmesse 2027",
+"description": "Bakgrunn\n\nMøre og Romsdal fylkeskommune inviterer til en konkurranse om anskaffelse av «prosjektledelse for en fylkespaviljong for Møre og Romsdal på en marin messe i 2027». Formålet er å profilere det varierte og omfattende næringslivet relatert til marine næringer i fylket.\n\nNæringsavdelingen i Møre og Romsdal fylkeskommune har lang erfaring med å legge til rette for en fylkespaviljong på ledend"
+}
+],
+"description": "Bakgrunn\n\nMøre og Romsdal fylkeskommune inviterer til en konkurranse om anskaffelse av «prosjektledelse for en fylkespaviljong for Møre og Romsdal på en marin messe i 2027». Formålet er å profilere det varierte og omfattende næringslivet relatert til marine næringer i fylket.\n\nNæringsavdelingen i Møre og Romsdal fylkeskommune har lang erfaring med å legge til rette for en fylkespaviljong på ledende fiskeri- og havbruksmesser, i hovedsak Nor-Fishing og Aqua Nor. Disse messene er viktig nasjonale og internasjonale møtesteder for fiskeri- og havbruksnæringen, og er en arena der marint næringsliv både får viser seg frem, få kunnskap om nyvinninger, nettverker med mer.\n\nMøre og Romsdal fylkeskommune ønsker å legge til rette for en fylkespaviljong for marine bedrifter, kommuner, organisasjoner med flere på en marin messe i 2027. I forbindelse med dette søkes det etter en ekstern prosjektleder som skal stå for planlegging, koordinering, bygging av paviljongen og praktisk gjennomføring av fylkespaviljongen til Møre og Romsdal i 2027.\n\nDen som får oppdraget vil stå ansvarlig for koordinering av underleverandører, prosjektledelse og gjennomføring av fylkespaviljong for Møre og Romsdal. Dette inkluderer ansvar for alle tekniske løsninger, tidsfrister for skjema, kataloger, tillatelser og andre formalkrav ved gjennomføring av messen. NB! Koordinering av hotellrom og overnattinger under messen er ikke en del av oppdraget.\n\nMøre og Romsdal fylkeskommune er prosjektansvarlig, og fylkeskommu…",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 75,
+"areas": [],
+"reasons": [
+{
+"kind": "core",
+"term": "havbruk",
+"where": "tittel",
+"pts": 50
+},
+{
+"kind": "buyer",
+"term": "Møre og Romsdal fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
+{
+"id": "2026-111797",
+"url": "https://www.doffin.no/notices/2026-111797",
+"heading": "Anskaffelse av undervisningsfartøy til Nordkapp videregående skole",
+"buyers": [
+"FINNMARK FYLKESKOMMUNE"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "EXPIRED",
+"issue_date": "2026-07-02",
+"publication_date": "2026-07-03",
+"deadline": "2026-09-01T10:00:00Z",
+"value": 15000000.0,
+"currency": "NOK",
+"cpv": [
+"34513100",
+"34513000",
+"34000000",
+"34510000",
+"34500000",
+"34520000",
+"45000000"
+],
+"location": [
+"NO073"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Anskaffelse av undervisningsfartøy til Nordkapp videregående skole",
+"description": "Finnmark fylkeskommune (FFK) har til hensikt å anskaffe et nytt opplæringsfartøy til Nordkapp videregående skole. Båten skal primært benyttes til opplæring av skolens elever på Vg1, Vg2 og Vg3, samt ta opp skolens kvote av torsk og kongekrabbe. Båten skal imidlertid også være anvendelig til andre formål.Behovet er nærmere beskrevet i vedlegg 3 Teknisk kravspesifikasjon.Andregangsutlysning med endr"
+}
+],
+"description": "Finnmark fylkeskommune (FFK) har til hensikt å anskaffe et nytt opplæringsfartøy til Nordkapp videregående skole. Båten skal primært benyttes til opplæring av skolens elever på Vg1, Vg2 og Vg3, samt ta opp skolens kvote av torsk og kongekrabbe. Båten skal imidlertid også være anvendelig til andre formål.Behovet er nærmere beskrevet i vedlegg 3 Teknisk kravspesifikasjon.Andregangsutlysning med endringer i kravspesifikasjonen angående universell utforming.",
+"first_seen": "2026-10-23T12:11:41Z",
+"score": 40,
+"areas": [],
+"reasons": [
+{
+"kind": "buyer",
+"term": "Finnmark fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+},
+{
+"kind": "cpv",
+"term": "34520000 Båter",
+"where": "CPV",
+"pts": 15
 }
 ]
 }

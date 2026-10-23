@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:02:48Z",
+ "generated_at": "2026-10-23T12:09:50Z",
  "mode": "live",
  "news": [
   {
@@ -451,8 +451,8 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.11,
-      "change_pct": -0.8
+      "price": 3.09,
+      "change_pct": -1.59
      },
      {
       "name": "Andfjord Salmon",
@@ -491,8 +491,8 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 461.2,
-      "change_pct": 0.44
+      "price": 461.0,
+      "change_pct": 0.39
      },
      {
       "name": "Arctic Fish (Island)",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-23T12:03:00Z",
+  "fetched_at": "2026-10-23T12:09:59Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37559,7 +37559,7 @@
   }
  },
  "changes": {
-  "updated_at": "2026-10-23T12:03:02Z",
+  "updated_at": "2026-10-23T12:10:00Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70835,7 +70835,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-23T12:03:02Z",
+  "updated_at": "2026-10-23T12:10:00Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
