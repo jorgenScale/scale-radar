@@ -2359,7 +2359,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
   function renderAnbud(){
     var d = ANBUD.data; var labels = d.areas || {};
-    $('anbud-meta').textContent = 'Kilde: Doffin (DFØ)'+(d.window && d.window.from ? ' · kunngjøringer fra '+dyear(d.window.from) : '')+(d.window && d.window.backfill_complete === false ? ' (historikk fylles fortsatt)' : '')+' · oppdatert '+dshort(d.updated_at);
+    $('anbud-meta').textContent = 'Kilde: Doffin (DFØ)'+(d.window && d.window.from ? ' · kunngjøringer fra '+dyear(d.window.from) : '')+(d.window && d.window.backfill_complete === false ? ' (historikk fylles fortsatt)' : '')+' · oppdatert '+dshort(d.updated_at)+(d.warning ? ' · '+d.warning : '');
     var rel = d.items.filter(function(i){ return i.score >= d.threshold; });
     var active = rel.filter(anActive);
     var soon = active.filter(function(i){ var n = anDays(i.deadline); return n != null && n <= 14; });

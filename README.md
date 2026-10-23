@@ -100,8 +100,9 @@ abonnementsnøkkelen. Uten secret hopper steget over, og siden forklarer hvorfor
 
 Skriptet henter *alle* kunngjøringer for de siste `incremental_days` (3) dagene hver time (ca. 75 kunngjøringer per dag), og
 fyller første gang bakover `backfill_days` (120) dager. Doffin-API-et gir maks 1 000 treff per søk, så historikken hentes i biter på
-`backfill_slice_days` (4) dager; en bit som treffer taket deles i to. Inntil `max_pages_per_run` sider (100 treff per side) per
-kjøring, så 120 dager er inne etter tre timer. Relevansen beregnes lokalt og regelbasert, så en endring i `content/anbud.json`
+`backfill_slice_days` (4) dager; en bit som treffer taket deles i to. API-et er også ratebegrenset (ca. 30 kall per minutt), så
+skriptet venter `pause_seconds` (2,2 s) mellom kall og tar inntil `max_pages_per_run` sider (100 treff per side) per kjøring –
+120 dager er inne etter to–tre timer. Blir det likevel 429, beholdes det som er hentet og resten tas neste time. Relevansen beregnes lokalt og regelbasert, så en endring i `content/anbud.json`
 slår inn på alt som er lagret uten ny henting:
 
 - **Område-ord** (fôrflåte, merd, fôringsanlegg, undervannskamera, vaksineringsmaskin, settefiskanlegg …) gir 50 poeng i
