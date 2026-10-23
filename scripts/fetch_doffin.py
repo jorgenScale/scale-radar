@@ -1,0 +1,482 @@
+#!/usr/bin/env python3
+"""
+Scale Radar – offentlige anbud fra Doffin (DFØ sin kunngjøringsdatabase).
+
+Kjøres av GitHub Actions etter fetch_data.py. Krever secret DOFFIN_API_KEY (gratis nøkkel fra
+Doffins API-portal, https://dof-notices-prod-api.developer.azure-api.net/). Uten nøkkel skriver
+skriptet en statusfil og avslutter uten feil.
+
+Prinsipp:
+  1. Henting: GET {api_base}/search med issueDateFrom/To, sortert nyeste først, 100 treff per side.
+     Hver kjøring henter de siste `incremental_days` dagene. Første gang (og til det er ferdig) fylles
+     også `backfill_days` bakover, begrenset av `max_pages_per_run` per kjøring. Vi henter ALT og
+     filtrerer lokalt – da styrer vi relevansen selv, og en endring i content/anbud.json slår inn
+     på alt som er lagret uten ny henting.
+  2. Scoring: regelbasert, forklarbar. Område-ord (fôrflåte, merd, fôringsanlegg …), havbruksord
+     (akvakultur, oppdrett, settefisk …), kjent offentlig kjøper (Havforskningsinstituttet,
+     fylkeskommunene …), CPV-koder og negative ord (bilflåte, redningsflåte …) gir poeng. Terskel
+     for «relevant» er `threshold`; alt over `store_min_score` lagres som kandidat så filteret
+     kan justeres med fasit i hånden.
+  3. Lagring: data/anbud/items.json (alle lagrede kunngjøringer med score og begrunnelse),
+     data/anbud/state.json (hvor langt tilbake vi har hentet), data/anbud/status.json.
+     RSS: data/feeds/anbud.xml (alle relevante) og data/feeds/anbud/<område>.xml.
+
+Lokal test uten nøkkel: DOFFIN_FIXTURE=sti/til/svar.json python scripts/fetch_doffin.py
+(fila er ett API-svar: {"numHitsTotal": n, "hits": [...]}).
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+import sys
+import time
+import unicodedata
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+import requests
+
+ROOT = Path(__file__).resolve().parent.parent
+CFG = json.loads((ROOT / "content" / "anbud.json").read_text(encoding="utf-8"))
+SITE = json.loads((ROOT / "content" / "config.json").read_text(encoding="utf-8")).get("site", {})
+SITE_URL = SITE.get("url", "https://jorgenscale.github.io/scale-radar/").rstrip("/") + "/"
+
+OUT_DIR = ROOT / "data" / "anbud"
+ITEMS_PATH = OUT_DIR / "items.json"
+STATE_PATH = OUT_DIR / "state.json"
+STATUS_PATH = OUT_DIR / "status.json"
+FEEDS_DIR = ROOT / "data" / "feeds"
+AREA_FEED_DIR = FEEDS_DIR / "anbud"
+
+API = CFG.get("api_base", "https://betaapi.doffin.no/public/v2").rstrip("/")
+NOTICE_URL = CFG.get("notice_url", "https://doffin.no/notice/")
+PAGE_SIZE = int(CFG.get("page_size", 100))
+MAX_PAGES = int(CFG.get("max_pages_per_run", 60))
+PAUSE = float(CFG.get("pause_seconds", 0.4))
+BACKFILL_DAYS = int(CFG.get("backfill_days", 120))
+INCREMENTAL_DAYS = int(CFG.get("incremental_days", 3))
+THRESHOLD = int(CFG.get("threshold", 40))
+STORE_MIN = int(CFG.get("store_min_score", 20))
+KEEP_DAYS = int(CFG.get("keep_days", 365))
+KEEP_AFTER_DEADLINE = int(CFG.get("keep_days_after_deadline", 90))
+DESC_MAX = int(CFG.get("description_max_chars", 1500))
+W = dict({"area_heading": 45, "area_text": 30, "weak_area_heading": 20, "weak_area_text": 12,
+          "core_heading": 35, "core_text": 20, "buyer": 25, "cpv": 15, "negative": -50},
+         **{k: v for k, v in CFG.get("weights", {}).items() if not k.startswith("_")})
+
+TYPE_LABEL = {"COMPETITION": "Konkurranse", "RESULT": "Tildeling", "PLANNING": "Veiledende",
+              "PRE_ANNOUNCEMENT": "Veiledende", "ANNOUNCEMENT_OF_INTENT": "Intensjon",
+              "DYNAMIC_PURCHASING_SCHEME": "Dynamisk innkjøpsordning", "QUALIFICATION_SCHEME": "Kvalifikasjonsordning",
+              "CONTRACT_CHANGE": "Kontraktsendring", "CORRECTION": "Rettelse"}
+
+
+def log(msg: str) -> None:
+    print(f"[anbud] {msg}", file=sys.stderr)
+
+
+def now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def write_status(status: str, **extra) -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    STATUS_PATH.write_text(json.dumps(dict({"status": status, "updated_at": now_iso()}, **extra), ensure_ascii=False), encoding="utf-8")
+
+
+def load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return default
+
+
+# --------------------------------------------------------------------------- tekst og scoring
+def norm(s: str) -> str:
+    """Småbokstaver, ô/ò/ó → o-varianter beholdes, men vi normaliserer «fôr»/«for» ved å fjerne diakritiske tegn
+    på o (ô) så «fôrflåte» og «forflåte» matcher samme mønster. æøå beholdes."""
+    s = (s or "").lower()
+    s = s.replace("ô", "o").replace("ó", "o").replace("ò", "o").replace("ö", "o")
+    return s
+
+
+LETTER = "a-zæøåäöü"
+
+
+def term_rx(term: str, inflect: int = 3) -> re.Pattern:
+    """Mønster for ett søkeord: må starte på ordgrense (ikke inni «bilflåte»), tillater inntil
+    `inflect` bokstavers bøyning etter ordet (flåte → flåten/flåter) og krever ordslutt deretter
+    («flåtestyring» treffer ikke). Mellomrom i ordet matcher også bindestrek og flere mellomrom."""
+    t = norm(term).strip()
+    parts = [re.escape(p) for p in re.split(r"\s+", t) if p]
+    body = r"[\s\-]+".join(parts)
+    return re.compile(rf"(?<![{LETTER}0-9]){body}[{LETTER}]{{0,{inflect}}}(?![{LETTER}])", re.IGNORECASE)
+
+
+def compile_terms(terms: list[str], inflect: int = 3) -> list[tuple[str, re.Pattern]]:
+    """Ett mønster per ulikt ord – «fôrflåte» og «forflåte» normaliseres likt og telles én gang."""
+    out, seen = [], set()
+    for t in terms:
+        rx = term_rx(t, inflect)
+        if rx.pattern in seen:
+            continue
+        seen.add(rx.pattern)
+        out.append((t, rx))
+    return out
+
+
+def compile_rules() -> dict:
+    rules = {"areas": {}, "core": [], "buyers": [], "negative": [], "cpv": {}}
+    for key, a in (CFG.get("areas") or {}).items():
+        if key.startswith("_"):
+            continue
+        rules["areas"][key] = {
+            "label": a.get("label", key),
+            "strong": compile_terms(a.get("strong", [])),
+            "weak": compile_terms(a.get("weak", [])),
+        }
+    rules["core"] = compile_terms((CFG.get("core") or {}).get("terms", []))
+    rules["buyers"] = compile_terms((CFG.get("buyers") or {}).get("names", []), inflect=0)
+    rules["negative"] = compile_terms((CFG.get("negative") or {}).get("terms", []))
+    rules["cpv"] = {k: v for k, v in ((CFG.get("cpv") or {}).get("codes") or {}).items()}
+    return rules
+
+
+RULES = compile_rules()
+
+
+def score_item(it: dict) -> tuple[int, list[str], list[dict]]:
+    """Returnerer (score 0–100, områder, begrunnelser). Hvert søkeord teller én gang per felt."""
+    heading = norm(it.get("heading") or "")
+    text = norm(" ".join(filter(None, [it.get("description") or ""] + [f"{l.get('heading','')} {l.get('description','')}" for l in it.get("lots") or []])))
+    buyer = " ".join(it.get("buyers") or [])
+    reasons: list[dict] = []
+    score = 0
+    areas: list[str] = []
+
+    for key, a in RULES["areas"].items():
+        hit_area = False
+        n_area = 0
+        for strength, pairs in (("strong", a["strong"]), ("weak", a["weak"])):
+            for term, rx in pairs:
+                if n_area >= 3:
+                    break
+                if rx.search(heading):
+                    pts = W["area_heading"] if strength == "strong" else W["weak_area_heading"]
+                    reasons.append({"kind": "area", "area": key, "term": term, "where": "tittel", "pts": pts}); score += pts; hit_area = True; n_area += 1
+                elif rx.search(text):
+                    pts = W["area_text"] if strength == "strong" else W["weak_area_text"]
+                    reasons.append({"kind": "area", "area": key, "term": term, "where": "beskrivelse", "pts": pts}); score += pts; hit_area = True; n_area += 1
+        if hit_area:
+            areas.append(key)
+
+    core_hits = 0
+    for term, rx in RULES["core"]:
+        if core_hits >= 3:
+            break
+        if rx.search(heading):
+            reasons.append({"kind": "core", "term": term, "where": "tittel", "pts": W["core_heading"]}); score += W["core_heading"]; core_hits += 1
+        elif rx.search(text):
+            reasons.append({"kind": "core", "term": term, "where": "beskrivelse", "pts": W["core_text"]}); score += W["core_text"]; core_hits += 1
+
+    for name, rx in RULES["buyers"]:
+        if rx.search(norm(buyer)):
+            reasons.append({"kind": "buyer", "term": name, "where": "oppdragsgiver", "pts": W["buyer"]}); score += W["buyer"]
+            break
+
+    for code in it.get("cpv") or []:
+        c = str(code).split("-")[0].strip()
+        label = RULES["cpv"].get(c)
+        if label:
+            reasons.append({"kind": "cpv", "term": f"{c} {label}", "where": "CPV", "pts": W["cpv"]}); score += W["cpv"]
+            break
+
+    for term, rx in RULES["negative"]:
+        if rx.search(heading) or rx.search(text):
+            reasons.append({"kind": "negative", "term": term, "where": "tittel/beskrivelse", "pts": W["negative"]}); score += W["negative"]
+            break
+
+    return max(0, min(100, score)), areas, reasons
+
+
+# --------------------------------------------------------------------------- Doffin API
+class DoffinClient:
+    def __init__(self, key: str | None, fixture: Path | None = None):
+        self.key = key
+        self.fixture = fixture
+        self.calls = 0
+        self.s = requests.Session()
+        self.s.headers.update({"Accept": "application/json", "User-Agent": "ScaleRadar/1.0 (+github.com/jorgenScale/scale-radar)"})
+        if key:
+            self.s.headers["Ocp-Apim-Subscription-Key"] = key
+
+    def search(self, date_from: date, date_to: date, page: int) -> dict:
+        if self.fixture:
+            d = load_json(self.fixture, {"numHitsTotal": 0, "hits": []})
+            if page > 0:
+                return {"numHitsTotal": d.get("numHitsTotal", 0), "hits": []}
+            return d
+        params = {"numHitsPerPage": PAGE_SIZE, "page": page, "sortBy": "PUBLICATION_DATE_DESC",
+                  "issueDateFrom": date_from.isoformat(), "issueDateTo": date_to.isoformat()}
+        for attempt in range(4):
+            self.calls += 1
+            r = self.s.get(f"{API}/search", params=params, timeout=40)
+            if r.status_code in (401, 403):
+                raise PermissionError(f"HTTP {r.status_code}: {r.text[:200]}")
+            if r.status_code == 429 or r.status_code >= 500:
+                wait = min(30, 2 ** attempt * 2)
+                log(f"HTTP {r.status_code} – venter {wait}s"); time.sleep(wait); continue
+            r.raise_for_status()
+            time.sleep(PAUSE)
+            return r.json()
+        raise RuntimeError("Doffin svarte ikke etter fire forsøk")
+
+
+def normalize_hit(h: dict) -> dict:
+    buyers = [b.get("name", "") for b in (h.get("buyer") or []) if isinstance(b, dict) and b.get("name")]
+    ev = h.get("estimatedValue") or {}
+    winners = sorted({w.get("name", "") for l in (h.get("lots") or []) for w in (l.get("winner") or []) if isinstance(w, dict) and w.get("name")})
+    desc = (h.get("description") or "").strip()
+    typ = (h.get("type") or (h.get("allTypes") or ["?"])[0] or "?").upper()
+    return {
+        "id": h.get("id"),
+        "url": NOTICE_URL + str(h.get("id", "")),
+        "heading": (h.get("heading") or "").strip(),
+        "buyers": buyers,
+        "type": typ,
+        "type_label": TYPE_LABEL.get(typ, typ.title()),
+        "all_types": h.get("allTypes") or [],
+        "status": h.get("status"),
+        "issue_date": (h.get("issueDate") or "")[:10] or None,
+        "publication_date": (h.get("publicationDate") or "")[:10] or None,
+        "deadline": h.get("deadline"),
+        "value": ev.get("amount"),
+        "currency": ev.get("currencyCode"),
+        "cpv": h.get("cpvCodes") or [],
+        "location": h.get("locationId") or [],
+        "received_tenders": h.get("receivedTenders"),
+        "winners": winners,
+        "lots": [{"heading": l.get("heading", ""), "description": (l.get("description") or "")[:400]} for l in (h.get("lots") or [])][:10],
+        "description": desc[:DESC_MAX] + ("…" if len(desc) > DESC_MAX else ""),
+    }
+
+
+def sweep(client: DoffinClient, date_from: date, date_to: date, budget: int, label: str) -> tuple[list[dict], bool, date | None]:
+    """Henter sider for et datointervall til det er tomt eller budsjettet er brukt.
+    Returnerer (treff, ferdig, eldste issueDate sett)."""
+    hits: list[dict] = []
+    oldest: date | None = None
+    page = 0
+    total = None
+    fetched = 0
+    while page < budget:
+        d = client.search(date_from, date_to, page)
+        page_hits = d.get("hits") or []
+        if total is None:
+            total = d.get("numHitsAccessible") or d.get("numHitsTotal")
+        fetched += len(page_hits)
+        for h in page_hits:
+            it = normalize_hit(h)
+            if not it["id"]:
+                continue
+            hits.append(it)
+            try:
+                dd = date.fromisoformat(it["issue_date"] or it["publication_date"])
+                oldest = dd if oldest is None or dd < oldest else oldest
+            except Exception:  # noqa: BLE001
+                pass
+        # stopp på tom side eller når vi har hentet alt API-et sier finnes – ikke på sidestørrelse, i tilfelle API-et
+        # gir færre per side enn vi ba om
+        if not page_hits or (total is not None and fetched >= int(total)):
+            log(f"{label}: {len(hits)} treff på {page + 1} side(r), {date_from}–{date_to}, totalt {total}")
+            return hits, True, oldest
+        page += 1
+    log(f"{label}: budsjett brukt ({budget} sider), {len(hits)} treff, eldste {oldest} – fortsetter neste kjøring")
+    return hits, False, oldest
+
+
+# --------------------------------------------------------------------------- RSS
+def rfc822(iso: str | None) -> str:
+    try:
+        dt = datetime.fromisoformat((iso or "").replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+    except Exception:  # noqa: BLE001
+        dt = datetime.now(timezone.utc)
+    return dt.astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+
+def x(v) -> str:
+    from xml.sax.saxutils import escape
+    return escape(str(v if v is not None else ""))
+
+
+def fmt_value(it: dict) -> str:
+    v = it.get("value")
+    if not v:
+        return ""
+    cur = it.get("currency") or "NOK"
+    if v >= 1e6:
+        return f"{v / 1e6:,.1f} mill. {cur}".replace(",", " ").replace(".", ",")
+    return f"{v:,.0f} {cur}".replace(",", " ")
+
+
+def rss(title: str, desc: str, link: str, items: list[dict], area_labels: dict) -> str:
+    out = []
+    for it in items[:100]:
+        areas = ", ".join(area_labels.get(a, a) for a in it.get("areas") or []) or "Havbruk generelt"
+        why = "; ".join(f"{r['term']} ({r['where']})" for r in it.get("reasons") or [] if r["kind"] != "negative")
+        body = (f"<b>{x(it.get('type_label'))}</b> fra {x(', '.join(it.get('buyers') or []) or 'ukjent oppdragsgiver')}<br>"
+                f"Område: {x(areas)} · Relevans {it.get('score')}/100<br>")
+        if it.get("deadline"):
+            body += f"Frist: {x(it['deadline'][:16].replace('T', ' '))}<br>"
+        if fmt_value(it):
+            body += f"Anslått verdi: {x(fmt_value(it))}<br>"
+        if it.get("winners"):
+            body += f"Vinner: {x(', '.join(it['winners']))}<br>"
+        if why:
+            body += f"Treff på: {x(why)}<br>"
+        if it.get("description"):
+            body += "<br>" + x(it["description"][:600])
+        out.append(
+            "<item>"
+            f"<title>{x(it.get('type_label'))}: {x(it.get('heading'))} – {x((it.get('buyers') or ['?'])[0])}</title>"
+            f"<link>{x(it.get('url'))}</link>"
+            f"<guid isPermaLink=\"false\">doffin-{x(it['id'])}</guid>"
+            f"<pubDate>{rfc822(it.get('publication_date') or it.get('issue_date'))}</pubDate>"
+            f"<description><![CDATA[{body}]]></description>"
+            "</item>"
+        )
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+            f"<title>{x(title)}</title><link>{x(link)}</link><description>{x(desc)}</description>"
+            f"<language>nb</language><lastBuildDate>{rfc822(now_iso())}</lastBuildDate>"
+            + "".join(out) + "</channel></rss>\n")
+
+
+def write_feeds(items: list[dict], area_labels: dict) -> dict:
+    FEEDS_DIR.mkdir(parents=True, exist_ok=True)
+    AREA_FEED_DIR.mkdir(parents=True, exist_ok=True)
+    relevant = [i for i in items if i["score"] >= THRESHOLD]
+    relevant.sort(key=lambda i: (i.get("publication_date") or i.get("issue_date") or ""), reverse=True)
+    link = SITE_URL + "#anbud"
+    (FEEDS_DIR / "anbud.xml").write_text(
+        rss("Scale Radar – offentlige anbud (Doffin)", "Kunngjøringer på Doffin som er relevante for ScaleAQ: konkurranser, tildelinger og veiledende kunngjøringer innen havbruk",
+            link, relevant, area_labels), encoding="utf-8")
+    for key, label in area_labels.items():
+        mine = [i for i in relevant if key in (i.get("areas") or [])]
+        (AREA_FEED_DIR / f"{key}.xml").write_text(
+            rss(f"Scale Radar – anbud: {label}", f"Doffin-kunngjøringer innen {label.lower()}", link, mine, area_labels), encoding="utf-8")
+    log(f"rss: anbud.xml ({len(relevant)}) + {len(area_labels)} områdefeeder")
+    return {"all": SITE_URL + "data/feeds/anbud.xml", "area_base": SITE_URL + "data/feeds/anbud/"}
+
+
+# --------------------------------------------------------------------------- main
+def main() -> int:
+    if not CFG.get("enabled", True):
+        write_status("disabled"); return 0
+    key = os.environ.get("DOFFIN_API_KEY", "").strip()
+    fixture = Path(os.environ["DOFFIN_FIXTURE"]) if os.environ.get("DOFFIN_FIXTURE") else None
+    if not key and not fixture:
+        log("DOFFIN_API_KEY mangler – hopper over")
+        write_status("missing_secrets", message="Secret DOFFIN_API_KEY er ikke satt i GitHub Actions")
+        return 0
+
+    today = date.today()
+    prev = load_json(ITEMS_PATH, {})
+    state = load_json(STATE_PATH, {})
+    stored: dict[str, dict] = {i["id"]: i for i in prev.get("items", []) if i.get("id")}
+    client = DoffinClient(key, fixture)
+    area_labels = {k: a["label"] for k, a in RULES["areas"].items()}
+
+    new_hits: list[dict] = []
+    try:
+        # 1) siste dager – alltid
+        inc_from = today - timedelta(days=INCREMENTAL_DAYS)
+        hits, _, _ = sweep(client, inc_from, today, MAX_PAGES, "siste dager")
+        new_hits += hits
+        pages_used = max(1, (len(hits) + PAGE_SIZE - 1) // PAGE_SIZE)
+
+        # 2) bakoverfylling til vi har dekket backfill_days
+        target_from = today - timedelta(days=BACKFILL_DAYS)
+        if not state.get("backfill_complete") or state.get("backfill_days") != BACKFILL_DAYS:
+            if state.get("backfill_days") != BACKFILL_DAYS:
+                state.pop("resume_to", None)  # ny horisont – start bakoverfyllingen på nytt
+            resume_to = date.fromisoformat(state["resume_to"]) if state.get("resume_to") else inc_from - timedelta(days=1)
+            budget = max(1, MAX_PAGES - pages_used)
+            if resume_to >= target_from:
+                hits, done, oldest = sweep(client, target_from, resume_to, budget, "bakoverfylling")
+                new_hits += hits
+                if done:
+                    state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
+                    state.pop("resume_to", None)
+                else:
+                    # sortert på publiseringsdato, filtrert på issueDate – to dagers overlapp så ingenting faller mellom
+                    nxt = min(resume_to, (oldest + timedelta(days=2)) if oldest else resume_to)
+                    if nxt >= resume_to and oldest:
+                        nxt = oldest  # unngå å stå stille
+                    state.update({"backfill_complete": False, "backfill_days": BACKFILL_DAYS,
+                                  "resume_to": nxt.isoformat(), "covered_from": (oldest or resume_to).isoformat()})
+            else:
+                state.update({"backfill_complete": True, "backfill_days": BACKFILL_DAYS, "covered_from": target_from.isoformat()})
+    except PermissionError as exc:
+        log(f"autentisering feilet: {exc}")
+        write_status("auth_failed", message=str(exc)[:200])
+        return 0
+    except Exception as exc:  # noqa: BLE001
+        log(f"henting feilet: {exc}")
+        write_status("error", message=str(exc)[:200])
+        # vi fortsetter med det vi har lagret, slik at nye regler fortsatt scorer gamle treff
+        if not stored:
+            return 0
+
+    # 3) slå sammen, score, beskjær
+    for it in new_hits:
+        old = stored.get(it["id"])
+        if old:
+            it["first_seen"] = old.get("first_seen") or now_iso()
+        else:
+            it["first_seen"] = now_iso()
+        stored[it["id"]] = it
+
+    items: list[dict] = []
+    keep_cut = (today - timedelta(days=KEEP_DAYS)).isoformat()
+    dl_cut = (today - timedelta(days=KEEP_AFTER_DEADLINE)).isoformat()
+    for it in stored.values():
+        score, areas, reasons = score_item(it)
+        it["score"], it["areas"], it["reasons"] = score, areas, reasons
+        pub = it.get("publication_date") or it.get("issue_date") or ""
+        if pub and pub < keep_cut:
+            continue
+        if it.get("deadline") and it["deadline"][:10] < dl_cut and it.get("type") != "RESULT":
+            continue
+        if score >= STORE_MIN:
+            items.append(it)
+    items.sort(key=lambda i: (i.get("publication_date") or i.get("issue_date") or ""), reverse=True)
+
+    relevant = [i for i in items if i["score"] >= THRESHOLD]
+    active = [i for i in relevant if i.get("type") == "COMPETITION" and i.get("deadline") and i["deadline"][:10] >= today.isoformat()]
+    feeds = write_feeds(items, area_labels)
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    ITEMS_PATH.write_text(json.dumps({
+        "updated_at": now_iso(),
+        "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
+        "source_url": "https://www.doffin.no/",
+        "window": {"from": state.get("covered_from"), "to": today.isoformat(), "backfill_complete": bool(state.get("backfill_complete"))},
+        "threshold": THRESHOLD,
+        "store_min_score": STORE_MIN,
+        "areas": area_labels,
+        "feeds": feeds,
+        "counts": {"stored": len(items), "relevant": len(relevant), "active": len(active),
+                   "candidates": len(items) - len(relevant), "fetched_this_run": len(new_hits), "api_calls": client.calls},
+        "items": items,
+    }, ensure_ascii=False, indent=0), encoding="utf-8")
+    STATE_PATH.write_text(json.dumps(dict(state, last_run=now_iso()), ensure_ascii=False), encoding="utf-8")
+    write_status("ok", relevant=len(relevant), active=len(active), fetched=len(new_hits), api_calls=client.calls,
+                 backfill_complete=bool(state.get("backfill_complete")))
+    log(f"ferdig: {len(new_hits)} hentet, {len(items)} lagret, {len(relevant)} relevante, {len(active)} aktive konkurranser, {client.calls} API-kall")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
