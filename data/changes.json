@@ -6,6 +6,96 @@
 },
 "events": [
 {
+"at": "2026-10-24T00:52:08Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002808",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Telavåg Fiskeoppdrett AS",
+"title": "Skjelevika",
+"municipality": "Øygarden",
+"county": "Vestland",
+"status": "Under behandling",
+"mtb_tonn": 300,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002808"
+},
+{
+"at": "2026-10-24T00:52:08Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002637",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Nordic Halibut AS",
+"title": "Krekvikbogen",
+"municipality": "Hustadvika",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 1560,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002637"
+},
+{
+"at": "2026-10-24T00:52:08Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002534",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Ode AS",
+"title": "Holmskallen",
+"municipality": "Ålesund",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002534"
+},
+{
+"at": "2026-10-24T00:52:08Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002795",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Cermaq Norway Salmon AS",
+"title": "Hammer",
+"municipality": "Steigen",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 4000,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795"
+},
+{
+"at": "2026-10-24T00:52:08Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2026-002616",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Ryfylke Rensefisk AS",
+"title": "Hinderåvåg",
+"municipality": null,
+"county": null,
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002616"
+},
+{
+"at": "2026-10-24T00:52:08Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2026-002616",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Ryfylke Rensefisk AS",
+"title": "Hinderåvåg",
+"municipality": null,
+"county": null,
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002616"
+},
+{
 "at": "2026-10-23T01:34:49Z",
 "kind": "status",
 "text": "Status: Under behandling → Returnert",
@@ -1221,5 +1311,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-23T22:15:51Z"
+"updated_at": "2026-10-24T00:52:08Z"
 }
