@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T20:54:37Z",
+ "generated_at": "2026-10-24T23:19:15Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-24T20:54:48Z",
+  "fetched_at": "2026-10-24T23:19:30Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -37600,11 +37600,11 @@
   "einnsyn_summary": {
    "cached": 496,
    "pending": 0,
-   "fetched_now": 5
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-10-24T20:54:55Z",
+  "updated_at": "2026-10-24T23:19:33Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70926,7 +70926,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-24T20:54:55Z",
+  "updated_at": "2026-10-24T23:19:33Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
