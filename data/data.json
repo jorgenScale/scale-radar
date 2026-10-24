@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T18:11:46Z",
+ "generated_at": "2026-10-24T20:54:37Z",
  "mode": "live",
  "news": [
   {
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-24T18:12:00Z",
+  "fetched_at": "2026-10-24T20:54:48Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -734,7 +734,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-23T18:25:11Z",
+       "fetched_at": "2026-10-24T20:54:49Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Rabben%22%20Norcod"
       }
      },
@@ -845,7 +845,7 @@
          "last_title": "Nordic Halibut AS org.nr.974526441 – Akvakultursøknad for etablering av ny sjølokalitet for kveite - Steinholmen - Aure kommune - Oversendelse for høring av behov for supplerende opplysninger samt til orientering - SP-2026-002970"
         }
        },
-       "fetched_at": "2026-10-23T18:25:11Z",
+       "fetched_at": "2026-10-24T20:54:49Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
       }
      },
@@ -949,7 +949,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-23T18:25:11Z",
+       "fetched_at": "2026-10-24T20:54:49Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tamtodden%22%20Norcod"
       }
      },
@@ -10760,7 +10760,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-23T18:25:11Z",
+       "fetched_at": "2026-10-24T20:54:49Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ternskj%C3%A6ret%20II%22%20Salmar"
       }
      },
@@ -11749,7 +11749,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-23T18:25:11Z",
+       "fetched_at": "2026-10-24T20:54:49Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vindvika%22%20Mowi"
       }
      },
@@ -37600,11 +37600,11 @@
   "einnsyn_summary": {
    "cached": 496,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 5
   }
  },
  "changes": {
-  "updated_at": "2026-10-24T18:12:02Z",
+  "updated_at": "2026-10-24T20:54:55Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -70926,7 +70926,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-24T18:12:02Z",
+  "updated_at": "2026-10-24T20:54:55Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
