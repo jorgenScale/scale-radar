@@ -746,24 +746,34 @@
     {
       "key": "2026",
       "label": "Tildelingsrunden 2026",
-      "auction_label": "Auksjon senere i høst 2026 – dato ikke fastsatt",
+      "auction_label": "Simultan klokkeauksjon med exit-bud 11. november 2026 – registreringsfrist 5. november kl. 23.59, prøveauksjon 10. november",
       "page_match": "2026",
       "upcoming": true,
       "totals": {
         "tonn": null,
         "nok": null,
         "buyers": null,
-        "growth_tonn": 8200
+        "growth_tonn": 8200,
+        "offered_tonn": 7755,
+        "min_price_per_tonn": 270000,
+        "areas": "PO 1, 12, 13",
+        "auction_date": "2026-11-11",
+        "registration_deadline": "2026-11-05",
+        "test_auction": "2026-11-10"
       },
       "fixed_price": {
         "price_per_tonn": 270000,
         "tonn": null,
         "nok": null,
         "deadline": "2026-09-28",
-        "note": "1 % vekst til fastpris og unntaksvekst – søknadsfrist 28. september 2026"
+        "note": "1 % vekst til fastpris og unntaksvekst – søknadsfristen var 28. september 2026"
       },
-      "notes": "Forskrift om kapasitetsjustering fastsatt 10. september 2026. Grønne områder: PO1, PO12, PO13. Usolgt fastpriskapasitet går til auksjonen.",
+      "notes": "Auksjonsforskriften 2026 er fastsatt. 7 755 tonn MTB tilbys i de grønne områdene PO1, PO12 og PO13, alle med minstepris 270 000 kr per tonn. Formatet er i hovedsak som i 2024. Selskap i samme konsern kan ikke registreres hver for seg.",
       "sources": [
+        {
+          "title": "Fiskeridirektoratet: Auksjon av nye tillatelser 2026 (dato, tilbudt kapasitet, minstepris, registrering)",
+          "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2026"
+        },
         {
           "title": "Regjeringen: Nå er forskriften som regulerer produksjonskapasitet fastsatt (10.9.2026)",
           "url": "https://www.regjeringen.no/no/aktuelt/ny-side8/id3172358/"
@@ -771,6 +781,26 @@
         {
           "title": "Regjeringen: Forslag til forskrift om auksjon 2026 (høring)",
           "url": "https://www.regjeringen.no/no/dokumenter/forslag-til-forskrift-om-auksjon-av-tillatelser-til-lakseoppdrett-i-2026/id3168004/"
+        }
+      ],
+      "min_prices": [
+        {
+          "po": 1,
+          "name": "Svenskegrensen til Jæren",
+          "min_price_per_tonn": 270000,
+          "available_tonn": 1191
+        },
+        {
+          "po": 12,
+          "name": "Vest-Finnmark",
+          "min_price_per_tonn": 270000,
+          "available_tonn": 5691
+        },
+        {
+          "po": 13,
+          "name": "Øst-Finnmark",
+          "min_price_per_tonn": 270000,
+          "available_tonn": 873
         }
       ]
     },
