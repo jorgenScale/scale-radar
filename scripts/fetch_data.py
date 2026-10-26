@@ -692,7 +692,7 @@ def enrich_einnsyn(apps: dict) -> None:
 
 # --------------------------------------------------------------------------- kapasitetsauksjoner (Fiskeridirektoratet)
 AUCTION_CACHE = ROOT / "data" / "auctions_cache.json"
-AUCTION_PARSER_VERSION = 3   # bump når parse_auction_page endres, så cachede sider leses på nytt
+AUCTION_PARSER_VERSION = 4   # bump når parse_auction_page endres, så cachede sider leses på nytt
 
 
 def _num(v: str) -> float | None:
@@ -794,7 +794,7 @@ def parse_auction_page(html: str, url: str) -> dict:
                     out["companies"].append({"name": name, "tonn": int(round(tonn)), "nok": int(round(nok * mult)) if nok is not None else None})
         elif "minstepris" in hjoined:
             pi = col(header, "minstepris", "pris", default=None)
-            ai = col(header, "tilgjengelig", default=None)
+            ai = col(header, "tilgjengelig", "tilbys", "tilbudt", default=None)
             for r in body:
                 m = po_rx.match(r[0].strip().strip("*"))
                 if not m:
@@ -855,6 +855,9 @@ def parse_auction_page(html: str, url: str) -> dict:
     m = re.search(r"minstepris(?:en)? (?:var |ble )?(?:fastsatt )?til\s*([\d\s]+)\s*kr", text, re.I)
     if m and _num(m.group(1)) is not None:
         out["text_totals"]["min_price_per_tonn"] = int(_num(m.group(1)))
+    m = re.search(r"Tidspunktet for auksjonen er fastsatt til (\d{1,2}\. \w+ \d{4})", text)
+    if m:
+        out["text_totals"]["held"] = m.group(1).strip()
     m = re.search(r"Auksjonen (?:ble|blir) holdt ([^.]{3,60})\.", text)
     if m:
         out["text_totals"]["held"] = m.group(1).strip()
