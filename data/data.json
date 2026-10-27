@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T20:33:13Z",
+ "generated_at": "2026-10-27T00:30:30Z",
  "mode": "live",
  "news": [
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-23",
   "note": null,
   "groups": [
    {
@@ -397,29 +397,29 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 216.6,
-      "change_pct": 0.28
+      "price": 216.0,
+      "change_pct": 0.09
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 588.0,
-      "change_pct": 0.68
+      "price": 584.0,
+      "change_pct": 1.04
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.78,
-      "change_pct": 0.41
+      "price": 43.6,
+      "change_pct": 0.05
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 23.14,
-      "change_pct": 1.58
+      "price": 22.78,
+      "change_pct": -0.26
      },
      {
       "name": "Austevoll Seafood",
@@ -432,8 +432,8 @@
       "name": "Måsøval",
       "ticker": "MAS",
       "currency": "NOK",
-      "price": 37.9,
-      "change_pct": 0.26
+      "price": 37.8,
+      "change_pct": -0.53
      }
     ]
    },
@@ -451,36 +451,36 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 3.09,
-      "change_pct": -0.32
+      "price": 3.1,
+      "change_pct": -1.12
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 26.7,
-      "change_pct": -0.37
+      "price": 26.8,
+      "change_pct": -1.11
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.43,
-      "change_pct": 2.86
+      "price": 0.42,
+      "change_pct": 1.45
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 88.0,
-      "change_pct": -1.35
+      "price": 89.2,
+      "change_pct": 1.13
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 5.22,
-      "change_pct": 2.76
+      "price": 5.08,
+      "change_pct": 0.0
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 463.6,
-      "change_pct": 0.87
+      "price": 459.6,
+      "change_pct": 0.09
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 25.8,
-      "change_pct": 3.2
+      "price": 25.0,
+      "change_pct": 0.81
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-26",
+  "published": "2026-10-27",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-26T20:33:26Z",
+  "fetched_at": "2026-10-27T00:30:39Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -693,7 +693,7 @@
      {
       "id": "SP-2026-002800",
       "type": "Andre fiskearter",
-      "status": "Under behandling",
+      "status": "Returnert",
       "title": "Rabben",
       "applicant": "Norcod AS",
       "orgnr": "821489962",
@@ -709,26 +709,26 @@
       "lon": 10.5184,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 3599,
+       "planned_production_tonn": 4200,
        "cycle_months": 22,
        "feed_per_cycle_tonn": 4650,
        "max_monthly_feed_tonn": 418,
-       "mtb_tonn": 3599,
-       "planned_production_tonn": 4200,
        "species": "Torsk",
-       "fetched_at": "2026-10-26T13:52:40Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-10-27T00:30:41Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Torsk",
-       "Fylke": "Trøndelag",
-       "Innsendt": "19.10.2026",
        "Kommune": "Flatanger",
-       "Maksimal månedlig fôring": "418 tonn",
+       "Fylke": "Trøndelag",
        "Maksimal tillatt biomasse (MTB)": "3 599 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
        "Planlagt produksjon per produksjonssyklus": "4 200 tonn",
-       "Produksjonssykluslengde": "22 mnd"
+       "Produksjonssykluslengde": "22 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "4 650 tonn",
+       "Maksimal månedlig fôring": "418 tonn",
+       "Innsendt": "19.10.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -845,7 +845,7 @@
          "last_title": "Nordic Halibut AS org.nr.974526441 – Akvakultursøknad for etablering av ny sjølokalitet for kveite - Steinholmen - Aure kommune - Oversendelse for høring av behov for supplerende opplysninger samt til orientering - SP-2026-002970"
         }
        },
-       "fetched_at": "2026-10-25T21:52:34Z",
+       "fetched_at": "2026-10-27T00:30:46Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Steinholmen%22%20Nordic"
       }
      },
@@ -868,26 +868,26 @@
       "lon": 12.47566,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "mtb_tonn": 4200,
+       "planned_production_tonn": 7000,
        "cycle_months": 12,
        "feed_per_cycle_tonn": 8400,
        "max_monthly_feed_tonn": 1800,
-       "mtb_tonn": 4200,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-23T22:15:49Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-27T00:30:41Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "22.09.2026",
        "Kommune": "Lurøy",
-       "Maksimal månedlig fôring": "1 800 tonn",
+       "Fylke": "Nordland",
        "Maksimal tillatt biomasse (MTB)": "4 200 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
        "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
-       "Produksjonssykluslengde": "12 mnd"
+       "Produksjonssykluslengde": "12 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 400 tonn",
+       "Maksimal månedlig fôring": "1 800 tonn",
+       "Innsendt": "22.09.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 1,
@@ -949,7 +949,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-25T21:52:34Z",
+       "fetched_at": "2026-10-27T00:30:46Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Tamtodden%22%20Norcod"
       }
      },
@@ -10706,7 +10706,7 @@
      {
       "id": "SP-2026-002801",
       "type": "Endring av lokalitet",
-      "status": "Under behandling",
+      "status": "Returnert",
       "title": "Ternskjæret II",
       "applicant": "Salmar Oppdrett AS",
       "orgnr": "928957489",
@@ -10722,32 +10722,32 @@
       "lon": 11.66169,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801",
       "details": {
-       "case_handler": "Trøndelag fylkeskommune",
+       "mtb_tonn": 6240,
+       "planned_production_tonn": 7000,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 8000,
        "max_monthly_feed_tonn": 900,
-       "mtb_tonn": 6240,
-       "planned_production_tonn": 7000,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-26T13:52:40Z"
+       "case_handler": "Trøndelag fylkeskommune",
+       "fetched_at": "2026-10-27T00:30:41Z"
       },
       "fields": {
-       "Aktive tillatelser": "NT-V-0002 , NT-V-0038 , TR-N-0001 , NT-V-0003 , NT-NR-0049 , NT-NR-0014 , TR-N-0002 , NT-V-0035",
-       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Trøndelag",
-       "Innsendt": "19.10.2026",
-       "Kapasitet": "4 680 tonn",
        "Kommune": "Namsos",
-       "Lokalitet": "Ternskjæret II",
+       "Fylke": "Trøndelag",
        "Lokalitetsnummer": "12662",
-       "Maksimal månedlig fôring": "900 tonn",
-       "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Lokalitet": "Ternskjæret II",
        "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
        "Produksjonsområde": "Nord-Trøndelag med Bindal (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "NT-V-0002 , NT-V-0038 , TR-N-0001 , NT-V-0003 , NT-NR-0049 , NT-NR-0014 , TR-N-0002 , NT-V-0035",
+       "Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+       "Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "8 000 tonn",
+       "Maksimal månedlig fôring": "900 tonn",
+       "Innsendt": "19.10.2026",
+       "Ansvarlig saksbehandler": "Trøndelag fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
@@ -11739,10 +11739,18 @@
        "Produksjonssykluslengde": "18 mnd"
       },
       "einnsyn": {
-       "count": 0,
-       "last": null,
-       "steps": {},
-       "fetched_at": "2026-10-25T21:52:34Z",
+       "count": 5,
+       "last": "2026-08-28",
+       "steps": {
+        "fiskeridir": {
+         "label": "Fiskeridirektoratet",
+         "first": "2026-07-21",
+         "count": 3,
+         "last": "2026-07-29",
+         "last_title": "Akvakultursøknad SP-2026-002644 - Mowi Seawater Norway AS 921668236 - Tilleggsinformasjon fra søker"
+        }
+       },
+       "fetched_at": "2026-10-27T00:30:46Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Vindvika%22%20Mowi"
       }
      },
@@ -37560,16 +37568,16 @@
   "details_summary": {
    "cached": 496,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 3
   },
   "einnsyn_summary": {
    "cached": 496,
    "pending": 0,
-   "fetched_now": 43
+   "fetched_now": 3
   }
  },
  "changes": {
-  "updated_at": "2026-10-26T20:35:25Z",
+  "updated_at": "2026-10-27T00:30:50Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37737,6 +37745,36 @@
    }
   },
   "events": [
+   {
+    "at": "2026-10-27T00:30:50Z",
+    "kind": "status",
+    "text": "Status: Under behandling → Returnert",
+    "id": "SP-2026-002800",
+    "type_key": "new_site",
+    "type": "Andre fiskearter",
+    "applicant": "Norcod AS",
+    "title": "Rabben",
+    "municipality": "Flatanger",
+    "county": "Trøndelag",
+    "status": "Returnert",
+    "mtb_tonn": 3599,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800"
+   },
+   {
+    "at": "2026-10-27T00:30:50Z",
+    "kind": "status",
+    "text": "Status: Under behandling → Returnert",
+    "id": "SP-2026-002801",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Salmar Oppdrett AS",
+    "title": "Ternskjæret II",
+    "municipality": "Namsos",
+    "county": "Trøndelag",
+    "status": "Returnert",
+    "mtb_tonn": 6240,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801"
+   },
    {
     "at": "2026-10-24T00:52:08Z",
     "kind": "ny",
@@ -70756,7 +70794,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-26T20:35:25Z",
+  "updated_at": "2026-10-27T00:30:50Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {

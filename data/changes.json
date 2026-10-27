@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-10-27T00:30:50Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002800",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Norcod AS",
+"title": "Rabben",
+"municipality": "Flatanger",
+"county": "Trøndelag",
+"status": "Returnert",
+"mtb_tonn": 3599,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002800"
+},
+{
+"at": "2026-10-27T00:30:50Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002801",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Ternskjæret II",
+"municipality": "Namsos",
+"county": "Trøndelag",
+"status": "Returnert",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801"
+},
+{
 "at": "2026-10-24T00:52:08Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1311,5 +1341,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-26T20:35:25Z"
+"updated_at": "2026-10-27T00:30:50Z"
 }

@@ -13451,7 +13451,7 @@
 "title": "Tamtodden"
 },
 "SP-2026-002780": {
-"fetched_at": "2026-10-23T22:15:49Z",
+"fetched_at": "2026-10-27T00:30:41Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13685,7 +13685,7 @@
 "title": "Ladstein"
 },
 "SP-2026-002800": {
-"fetched_at": "2026-10-26T13:52:40Z",
+"fetched_at": "2026-10-27T00:30:41Z",
 "fields": {
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
 "Art": "Torsk",
@@ -13707,11 +13707,11 @@
 "planned_production_tonn": 4200,
 "species": "Torsk"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Rabben"
 },
 "SP-2026-002801": {
-"fetched_at": "2026-10-26T13:52:40Z",
+"fetched_at": "2026-10-27T00:30:41Z",
 "fields": {
 "Aktive tillatelser": "NT-V-0002 , NT-V-0038 , TR-N-0001 , NT-V-0003 , NT-NR-0049 , NT-NR-0014 , TR-N-0002 , NT-V-0035",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -13739,7 +13739,7 @@
 "planned_production_tonn": 7000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Ternskjæret II"
 },
 "SP-2026-002802": {
