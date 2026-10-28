@@ -12635,19 +12635,23 @@
 "title": "Rundreimstranda"
 },
 "SP-2026-002533": {
-"fetched_at": "2026-10-25T14:25:14Z",
+"fetched_at": "2026-10-28T05:50:01Z",
 "fields": {
 "Ansvarlig saksbehandler": "Oslo kommune",
 "Art": "Gullfisk",
+"Ferdigbehandlet": "27.10.2026",
 "Fylke": "Oslo",
 "Innsendt": "14.06.2026",
-"Kommune": "Oslo"
+"Kommune": "Oslo",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Oslo kommune",
+"decided": "2026-10-27",
+"result": "Innvilget",
 "species": "Gullfisk"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Uio Lvb Fisk"
 },
 "SP-2026-002534": {
@@ -13451,7 +13455,7 @@
 "title": "Tamtodden"
 },
 "SP-2026-002780": {
-"fetched_at": "2026-10-27T00:30:41Z",
+"fetched_at": "2026-10-28T05:50:01Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13473,7 +13477,7 @@
 "planned_production_tonn": 7000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
@@ -13743,7 +13747,7 @@
 "title": "Ternskjæret II"
 },
 "SP-2026-002802": {
-"fetched_at": "2026-10-25T04:49:36Z",
+"fetched_at": "2026-10-28T05:50:01Z",
 "fields": {
 "Aktive tillatelser": "NT-F-0034 , ST-F-0071 , NT-F-0035",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
