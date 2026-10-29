@@ -6,6 +6,66 @@
 },
 "events": [
 {
+"at": "2026-10-29T02:32:50Z",
+"kind": "status",
+"text": "Status: Under behandling → Trukket",
+"id": "SP-2024-001553",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Nordly Innovation AS",
+"title": "Torshaugen",
+"municipality": "Moskenes",
+"county": "Nordland",
+"status": "Trukket",
+"mtb_tonn": 1660,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001553"
+},
+{
+"at": "2026-10-29T02:32:50Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002813",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Engesund Fiskeoppdrett AS",
+"title": "Kverhelleskjeret",
+"municipality": "Solund",
+"county": "Vestland",
+"status": "Under behandling",
+"mtb_tonn": 2340,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002813"
+},
+{
+"at": "2026-10-29T02:32:50Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002806",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Korsnes",
+"municipality": null,
+"county": null,
+"status": "Under behandling",
+"mtb_tonn": 10500,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002806"
+},
+{
+"at": "2026-10-29T02:32:50Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002797",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Nova Sea Havbruk AS",
+"title": "Storvika",
+"municipality": "Meløy",
+"county": "Nordland",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002797"
+},
+{
 "at": "2026-10-28T05:50:11Z",
 "kind": "status",
 "text": "Status: Under behandling → Returnert",
@@ -1386,5 +1446,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-28T23:17:14Z"
+"updated_at": "2026-10-29T02:32:50Z"
 }

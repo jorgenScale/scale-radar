@@ -6077,7 +6077,7 @@
 "title": "Vindsnes"
 },
 "SP-2024-001553": {
-"fetched_at": "2026-10-28T23:15:44Z",
+"fetched_at": "2026-10-29T02:31:00Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -6088,7 +6088,8 @@
 "Maksimal tillatt biomasse (MTB)": "1 660 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "2 000 tonn",
 "Planlagt produksjon per produksjonssyklus": "1 660 tonn",
-"Produksjonssykluslengde": "15 mnd"
+"Produksjonssykluslengde": "15 mnd",
+"Trukket": "28.10.2026"
 },
 "norm": {
 "case_handler": "Nordland fylkeskommune",
@@ -6097,9 +6098,10 @@
 "max_monthly_feed_tonn": 277,
 "mtb_tonn": 1660,
 "planned_production_tonn": 1660,
-"species": "Laks, Ørret, Regnbueørret"
+"species": "Laks, Ørret, Regnbueørret",
+"withdrawn": "2026-10-28"
 },
-"status": "Under behandling",
+"status": "Trukket",
 "title": "Torshaugen"
 },
 "SP-2024-001554": {
@@ -13643,7 +13645,7 @@
 "title": "Salvågvika"
 },
 "SP-2026-002797": {
-"fetched_at": "2026-10-26T13:52:40Z",
+"fetched_at": "2026-10-29T02:31:00Z",
 "fields": {
 "Aktive tillatelser": "N-HR-0013 , N-SA-0007 , N-ME-0008 , N-SA-0006",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13669,7 +13671,7 @@
 "planned_production_tonn": 5500,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Storvika"
 },
 "SP-2026-002799": {
@@ -13791,6 +13793,36 @@
 "status": "Under behandling",
 "title": "Ladstein"
 },
+"SP-2026-002806": {
+"fetched_at": "2026-10-29T02:31:00Z",
+"fields": {
+"Aktive tillatelser": "T-K-0036 , T-T-0079 , T-T-0082 , T-T-0083 , F-A-0067 , F-HV-0015 , T-T-0084 , T-T-0078 , T-K-0037 , T-K-0033 , T-T-0080 , T-T-0085 , T-K-0038 , F-KD-0034 , F-M-0043 , T-T-0081 , F-HV-0014",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Innsendt": "23.10.2026",
+"Kapasitet": "7 200 tonn",
+"Lokalitet": "Korsnes",
+"Lokalitetsnummer": "36797",
+"Maksimal månedlig fôring": "1 800 tonn",
+"Maksimal tillatt biomasse (MTB)": "10 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "12 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "11 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Kvaløya til Loppa (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 12000,
+"max_monthly_feed_tonn": 1800,
+"mtb_tonn": 10500,
+"planned_production_tonn": 11500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Korsnes"
+},
 "SP-2026-002808": {
 "fetched_at": "2026-10-27T06:21:52Z",
 "fields": {
@@ -13814,5 +13846,37 @@
 },
 "status": "Under behandling",
 "title": "Skjelevika"
+},
+"SP-2026-002813": {
+"fetched_at": "2026-10-29T02:31:00Z",
+"fields": {
+"Aktive tillatelser": "H-FJ-0010 , SF-SU-0008 , SF-SU-0001 , SF-SU-0023 , SF-FL-0008 , H-AV-0093 , SF-SU-0009 , SF-SU-0030",
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Vestland",
+"Innsendt": "28.10.2026",
+"Kapasitet": "1 560 tonn",
+"Kommune": "Solund",
+"Lokalitet": "Kverhelleskjeret",
+"Lokalitetsnummer": "39197",
+"Maksimal månedlig fôring": "200 tonn",
+"Maksimal tillatt biomasse (MTB)": "2 340 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "2 700 tonn",
+"Planlagt produksjon per produksjonssyklus": "2 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Nordhordland til Stadt (Gul)",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 2700,
+"max_monthly_feed_tonn": 200,
+"mtb_tonn": 2340,
+"planned_production_tonn": 2500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Kverhelleskjeret"
 }
 }
