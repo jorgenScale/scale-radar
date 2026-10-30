@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-10-30T01:59:29Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002729",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Nordic Halibut AS",
+"title": "Laupsneset",
+"municipality": "Hareid",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002729"
+},
+{
+"at": "2026-10-30T01:59:29Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002797",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Nova Sea Havbruk AS",
+"title": "Storvika",
+"municipality": "Meløy",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002797"
+},
+{
 "at": "2026-10-29T02:32:50Z",
 "kind": "status",
 "text": "Status: Under behandling → Trukket",
@@ -1446,5 +1476,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-29T21:50:14Z"
+"updated_at": "2026-10-30T01:59:29Z"
 }

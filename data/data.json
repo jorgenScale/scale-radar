@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T21:49:51Z",
+ "generated_at": "2026-10-30T01:59:04Z",
  "mode": "live",
  "news": [
   {
@@ -387,7 +387,7 @@
  ],
  "stocks": {
   "status": "ok",
-  "as_of": "2026-10-29",
+  "as_of": "2026-10-28",
   "note": null,
   "groups": [
    {
@@ -397,43 +397,43 @@
       "name": "Mowi",
       "ticker": "MOWI",
       "currency": "NOK",
-      "price": 214.6,
-      "change_pct": -1.2
+      "price": 217.2,
+      "change_pct": 0.0
      },
      {
       "name": "SalMar",
       "ticker": "SALM",
       "currency": "NOK",
-      "price": 575.0,
-      "change_pct": -0.78
+      "price": 579.5,
+      "change_pct": -1.53
      },
      {
       "name": "Lerøy Seafood Group",
       "ticker": "LSG",
       "currency": "NOK",
-      "price": 43.0,
-      "change_pct": -1.1
+      "price": 43.48,
+      "change_pct": -0.73
      },
      {
       "name": "Grieg Seafood",
       "ticker": "GSF",
       "currency": "NOK",
-      "price": 22.96,
-      "change_pct": 0.35
+      "price": 22.88,
+      "change_pct": -1.55
      },
      {
       "name": "Austevoll Seafood",
       "ticker": "AUSS",
       "currency": "NOK",
-      "price": 81.4,
-      "change_pct": -0.85
+      "price": 82.1,
+      "change_pct": -0.36
      },
      {
       "name": "Måsøval",
       "ticker": "MAS",
       "currency": "NOK",
-      "price": 38.1,
-      "change_pct": 0.26
+      "price": 38.0,
+      "change_pct": 0.0
      }
     ]
    },
@@ -451,36 +451,36 @@
       "name": "Salmon Evolution",
       "ticker": "SALME",
       "currency": "NOK",
-      "price": 2.65,
-      "change_pct": -7.34
+      "price": 2.86,
+      "change_pct": -7.44
      },
      {
       "name": "Andfjord Salmon",
       "ticker": "ANDF",
       "currency": "NOK",
-      "price": 26.0,
-      "change_pct": 0.39
+      "price": 25.9,
+      "change_pct": -1.89
      },
      {
       "name": "Proximar Seafood",
       "ticker": "PROXI",
       "currency": "NOK",
-      "price": 0.04,
-      "change_pct": -14.78
+      "price": 0.05,
+      "change_pct": -7.63
      },
      {
       "name": "Nordic Aqua Partners",
       "ticker": "NOAP",
       "currency": "NOK",
-      "price": 90.2,
-      "change_pct": 1.12
+      "price": 89.2,
+      "change_pct": 0.0
      },
      {
       "name": "Gigante Salmon",
       "ticker": "GIGA",
       "currency": "NOK",
-      "price": 5.04,
-      "change_pct": -0.79
+      "price": 5.08,
+      "change_pct": 1.6
      }
     ]
    },
@@ -491,15 +491,15 @@
       "name": "Bakkafrost (Færøyene)",
       "ticker": "BAKKA",
       "currency": "NOK",
-      "price": 459.4,
-      "change_pct": -1.16
+      "price": 464.8,
+      "change_pct": -0.26
      },
      {
       "name": "Arctic Fish (Island)",
       "ticker": "AFISH",
       "currency": "NOK",
-      "price": 24.0,
-      "change_pct": 3.45
+      "price": 23.2,
+      "change_pct": -10.08
      },
      {
       "name": "Salmones Camanchaca (Chile)",
@@ -538,7 +538,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-10-29",
+  "published": "2026-10-30",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -633,7 +633,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-10-29T21:50:04Z",
+  "fetched_at": "2026-10-30T01:59:14Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -1040,7 +1040,7 @@
      {
       "id": "SP-2026-002729",
       "type": "Andre fiskearter",
-      "status": "Returnert",
+      "status": "Under behandling",
       "title": "Laupsneset",
       "applicant": "Nordic Halibut AS",
       "orgnr": "974526441",
@@ -1056,26 +1056,26 @@
       "lon": 5.95916,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002729",
       "details": {
-       "case_handler": "Møre og Romsdal fylkeskommune",
+       "mtb_tonn": 3120,
+       "planned_production_tonn": 3200,
        "cycle_months": 60,
        "feed_per_cycle_tonn": 3800,
        "max_monthly_feed_tonn": 250,
-       "mtb_tonn": 3120,
-       "planned_production_tonn": 3200,
        "species": "Kveite",
-       "fetched_at": "2026-09-23T23:45:32Z"
+       "case_handler": "Møre og Romsdal fylkeskommune",
+       "fetched_at": "2026-10-30T01:59:16Z"
       },
       "fields": {
-       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
        "Art": "Kveite",
-       "Fylke": "Møre og Romsdal",
-       "Innsendt": "19.08.2026",
        "Kommune": "Hareid",
-       "Maksimal månedlig fôring": "250 tonn",
+       "Fylke": "Møre og Romsdal",
        "Maksimal tillatt biomasse (MTB)": "3 120 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
        "Planlagt produksjon per produksjonssyklus": "3 200 tonn",
-       "Produksjonssykluslengde": "60 mnd"
+       "Produksjonssykluslengde": "60 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "3 800 tonn",
+       "Maksimal månedlig fôring": "250 tonn",
+       "Innsendt": "19.08.2026",
+       "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune"
       },
       "einnsyn": {
        "count": 1,
@@ -1089,7 +1089,7 @@
          "last_title": "Fiskeridirektoratets fråsegn til søknad om dispensasjon frå kommuneplanens arealdel for etablering av fortøyingar for akvakulturanlegg Laupsneset i Hareid kommune"
         }
        },
-       "fetched_at": "2026-10-23T22:15:50Z",
+       "fetched_at": "2026-10-30T01:59:18Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Laupsneset%22%20Nordic"
       }
      },
@@ -10830,7 +10830,7 @@
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-28T23:17:01Z",
+       "fetched_at": "2026-10-30T01:59:18Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Engdal%22%20Ler%C3%B8y"
       }
      },
@@ -10891,7 +10891,7 @@
      {
       "id": "SP-2026-002797",
       "type": "Endring av lokalitet",
-      "status": "Returnert",
+      "status": "Under behandling",
       "title": "Storvika",
       "applicant": "Nova Sea Havbruk AS",
       "orgnr": "827248312",
@@ -10907,36 +10907,36 @@
       "lon": 13.24372,
       "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002797",
       "details": {
-       "case_handler": "Nordland fylkeskommune",
+       "planned_production_tonn": 5500,
        "cycle_months": 18,
        "feed_per_cycle_tonn": 6000,
        "max_monthly_feed_tonn": 500,
-       "planned_production_tonn": 5500,
        "species": "Laks, Ørret, Regnbueørret",
-       "fetched_at": "2026-10-29T02:31:00Z"
+       "case_handler": "Nordland fylkeskommune",
+       "fetched_at": "2026-10-30T01:59:16Z"
       },
       "fields": {
-       "Aktive tillatelser": "N-HR-0013 , N-SA-0007 , N-ME-0008 , N-SA-0006",
-       "Ansvarlig saksbehandler": "Nordland fylkeskommune",
        "Art": "Laks, Ørret, Regnbueørret",
-       "Fylke": "Nordland",
-       "Innsendt": "13.10.2026",
-       "Kapasitet": "4 680 tonn",
        "Kommune": "Meløy",
-       "Lokalitet": "Storvika",
+       "Fylke": "Nordland",
        "Lokalitetsnummer": "13125",
-       "Maksimal månedlig fôring": "500 tonn",
-       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
-       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Lokalitet": "Storvika",
        "Plassering": "Sjø",
+       "Kapasitet": "4 680 tonn",
        "Produksjonsområde": "Helgeland til Bodø (Gul)",
-       "Produksjonssykluslengde": "18 mnd"
+       "Aktive tillatelser": "N-HR-0013 , N-SA-0007 , N-ME-0008 , N-SA-0006",
+       "Planlagt produksjon per produksjonssyklus": "5 500 tonn",
+       "Produksjonssykluslengde": "18 mnd",
+       "Planlagt fôrforbruk per produksjonssyklus": "6 000 tonn",
+       "Maksimal månedlig fôring": "500 tonn",
+       "Innsendt": "13.10.2026",
+       "Ansvarlig saksbehandler": "Nordland fylkeskommune"
       },
       "einnsyn": {
        "count": 0,
        "last": null,
        "steps": {},
-       "fetched_at": "2026-10-28T13:03:32Z",
+       "fetched_at": "2026-10-30T01:59:18Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Storvika%22%20Nova"
       }
      },
@@ -24186,36 +24186,29 @@
        "Trukket": "30.09.2026"
       },
       "einnsyn": {
-       "count": 51,
-       "last": "2026-06-02",
+       "count": 44,
+       "last": "2026-10-01",
        "steps": {
+        "mattilsynet": {
+         "label": "Mattilsynet",
+         "first": "2025-04-04",
+         "count": 12,
+         "last": "2026-10-01",
+         "last_title": "Akvakultursøknad SP-2024-001160 - Isqueen AS 952217860 - Trukket søknad"
+        },
         "klage": {
          "label": "Klage",
-         "first": "2025-10-14",
-         "count": 2,
+         "first": "2025-05-08",
+         "count": 5,
          "last": "2025-10-14",
-         "last_title": "Orientering om oversendelse av klagesak til klagesaksenheten"
+         "last_title": "Oversendelse av klage til klagesaksenheten"
         },
         "statsforvalter": {
          "label": "Statsforvalteren",
-         "first": "2025-10-21",
-         "count": 14,
-         "last": "2026-04-10",
-         "last_title": "Orientering - trekker søknad - akvakultur - Vestvågøy - Isqueen AS - lokalitet Sandholman - 20096"
-        },
-        "mattilsynet": {
-         "label": "Mattilsynet",
-         "first": "2025-10-22",
-         "count": 14,
-         "last": "2026-05-21",
-         "last_title": "KOPI - Fiskeridirektoratets uttalelse til søknad om dispensasjon - Akvakulturlokaliteter Isqueen AS - 30977 Æsøya - 11193 Gamskjæran - 20096 Sandholman og 34717 Eidisholman - Vestvågøy kommune"
-        },
-        "fiskeridir": {
-         "label": "Fiskeridirektoratet",
-         "first": "2026-01-21",
-         "count": 3,
-         "last": "2026-05-28",
-         "last_title": "Fiskeridirektoratets uttalelse til søknad om dispensasjon - Akvakulturlokaliteter, Isqueen - 30977 Æsøya, 11193 Gamskjæran, 20096 Sandholman og 34717 Eidisholman - Vestvågøy kommune - kopi"
+         "first": "2025-09-01",
+         "count": 16,
+         "last": "2026-10-01",
+         "last_title": "Trukket søknad - Akvakultursøknad SP-2024-001160 - Vestvågøy - Isqueen AS - lokalitet Sandholman - 20096"
         },
         "kystverket": {
          "label": "Kystverket",
@@ -24224,15 +24217,15 @@
          "last": "2026-05-21",
          "last_title": "Kopi - Fiskeridirektoratets uttalelse til søknad om dispensasjon - Akvakulturlokaliteter, Isqueen - 30977 Æsøya, 11193 Gamskjæran, 20096 Sandholman og 34717 Eidisholman - Vestvågøy kommune - Nordland fylke"
         },
-        "kommune": {
-         "label": "Kommunen",
-         "first": "2026-04-22",
-         "count": 4,
-         "last": "2026-06-02",
-         "last_title": "Dispensasjonsvedtak - akvakulturlokalitet Isqueen - Sandholman 20096 - kopi"
+        "fiskeridir": {
+         "label": "Fiskeridirektoratet",
+         "first": "2026-05-21",
+         "count": 1,
+         "last": "2026-05-21",
+         "last_title": "Fiskeridirektoratets uttalelse til søknad om dispensasjon - Akvakulturlokaliteter, Isqueen - 30977 Æsøya, 11193 Gamskjæran, 20096 Sandholman og 34717 Eidisholman - Vestvågøy kommune"
         }
        },
-       "fetched_at": "2026-09-30T00:31:45Z",
+       "fetched_at": "2026-10-30T01:59:18Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Sandholman%22%20Isqueen"
       }
      },
@@ -33928,8 +33921,8 @@
        "Kommune": "Stavanger"
       },
       "einnsyn": {
-       "count": 1,
-       "last": "2026-10-23",
+       "count": 2,
+       "last": "2026-10-26",
        "steps": {
         "mattilsynet": {
          "label": "Mattilsynet",
@@ -33937,9 +33930,16 @@
          "count": 1,
          "last": "2026-10-23",
          "last_title": "KOMMUNAL HØRING - NORWEGIAN LOBSTER FARM AS - SØKNAD OM TILLATELSE TIL ETABLERING AV NY LOKALITET FOR PRODUKSJON AV HUMMER - LADSTEIN - STAVANGER KOMMUNE"
+        },
+        "kommune": {
+         "label": "Kommunen",
+         "first": "2026-10-26",
+         "count": 1,
+         "last": "2026-10-26",
+         "last_title": "Kommunal høring - Norwegian Lobster Farm AS - søknad om tillatelse etablering av ny lokalitet for produksjon av hummer - Ladstein"
         }
        },
-       "fetched_at": "2026-10-28T23:17:01Z",
+       "fetched_at": "2026-10-30T01:59:18Z",
        "search_url": "https://einnsyn.no/sok?searchTerm=%22Ladstein%22%20Norwegian"
       }
      },
@@ -37676,16 +37676,16 @@
   "details_summary": {
    "cached": 498,
    "pending": 0,
-   "fetched_now": 0
+   "fetched_now": 2
   },
   "einnsyn_summary": {
    "cached": 498,
    "pending": 0,
-   "fetched_now": 4
+   "fetched_now": 5
   }
  },
  "changes": {
-  "updated_at": "2026-10-29T21:50:14Z",
+  "updated_at": "2026-10-30T01:59:29Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -37854,6 +37854,36 @@
    }
   },
   "events": [
+   {
+    "at": "2026-10-30T01:59:29Z",
+    "kind": "status",
+    "text": "Status: Returnert → Under behandling",
+    "id": "SP-2026-002729",
+    "type_key": "new_site",
+    "type": "Andre fiskearter",
+    "applicant": "Nordic Halibut AS",
+    "title": "Laupsneset",
+    "municipality": "Hareid",
+    "county": "Møre og Romsdal",
+    "status": "Under behandling",
+    "mtb_tonn": 3120,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002729"
+   },
+   {
+    "at": "2026-10-30T01:59:29Z",
+    "kind": "status",
+    "text": "Status: Returnert → Under behandling",
+    "id": "SP-2026-002797",
+    "type_key": "change_site",
+    "type": "Endring av lokalitet",
+    "applicant": "Nova Sea Havbruk AS",
+    "title": "Storvika",
+    "municipality": "Meløy",
+    "county": "Nordland",
+    "status": "Under behandling",
+    "mtb_tonn": null,
+    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002797"
+   },
    {
     "at": "2026-10-29T02:32:50Z",
     "kind": "status",
@@ -38588,351 +38618,6 @@
     "status": "Returnert",
     "mtb_tonn": null,
     "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002783"
-   },
-   {
-    "at": "2026-09-30T23:56:02Z",
-    "kind": "ny",
-    "text": "Ny søknad – Under behandling",
-    "id": "SP-2026-002787",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Sørrollnesfisk AS",
-    "title": "Svartskjær",
-    "municipality": "Ibestad",
-    "county": "Troms",
-    "status": "Under behandling",
-    "mtb_tonn": 6800,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
-   },
-   {
-    "at": "2026-09-30T23:56:02Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Trukket",
-    "id": "SP-2024-001160",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Isqueen AS",
-    "title": "Sandholman",
-    "municipality": "Vestvågøy",
-    "county": "Nordland",
-    "status": "Trukket",
-    "mtb_tonn": 1560,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001160"
-   },
-   {
-    "at": "2026-09-30T23:56:02Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Trukket",
-    "id": "SP-2023-000322",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Isqueen AS",
-    "title": "Æsøya",
-    "municipality": "Vestvågøy",
-    "county": "Nordland",
-    "status": "Trukket",
-    "mtb_tonn": 3120,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2023-000322"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Returnert",
-    "id": "SP-2026-002770",
-    "type_key": "new_site",
-    "type": "Andre fiskearter",
-    "applicant": "Norcod AS",
-    "title": "Tamtodden",
-    "municipality": "Flatanger",
-    "county": "Trøndelag",
-    "status": "Returnert",
-    "mtb_tonn": 3599,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002770"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2026-002484",
-    "type_key": "new_site",
-    "type": "Ny lokalitet",
-    "applicant": "Kvarøy Fiskeoppdrett A/S",
-    "title": "Lille Bjørnøya",
-    "municipality": "Rødøy",
-    "county": "Nordland",
-    "status": "Avslått",
-    "mtb_tonn": 3120,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002484"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Avslått",
-    "id": "SP-2026-002484",
-    "type_key": "new_site",
-    "type": "Ny lokalitet",
-    "applicant": "Kvarøy Fiskeoppdrett A/S",
-    "title": "Lille Bjørnøya",
-    "municipality": "Rødøy",
-    "county": "Nordland",
-    "status": "Avslått",
-    "mtb_tonn": 3120,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002484"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2025-002103",
-    "type_key": "new_site",
-    "type": "Ny lokalitet",
-    "applicant": "Torghatten Farming AS",
-    "title": "Esøya",
-    "municipality": "Vevelstad",
-    "county": "Nordland",
-    "status": "Avslått",
-    "mtb_tonn": 3599,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002103"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Avslått",
-    "id": "SP-2025-002103",
-    "type_key": "new_site",
-    "type": "Ny lokalitet",
-    "applicant": "Torghatten Farming AS",
-    "title": "Esøya",
-    "municipality": "Vevelstad",
-    "county": "Nordland",
-    "status": "Avslått",
-    "mtb_tonn": 3599,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002103"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2026-002582",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Organic Seafarm AS",
-    "title": "Kjølvika i",
-    "municipality": "Gildeskål",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 2576,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002582"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2026-002582",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Organic Seafarm AS",
-    "title": "Kjølvika i",
-    "municipality": "Gildeskål",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 2576,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002582"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2026-002453",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Lovundlaks Sjø AS",
-    "title": "Store Bukkøy N",
-    "municipality": "Lurøy",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002453"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2026-002453",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Lovundlaks Sjø AS",
-    "title": "Store Bukkøy N",
-    "municipality": "Lurøy",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002453"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2025-002155",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Nova Sea Havbruk AS",
-    "title": "Kalvøya",
-    "municipality": "Lurøy",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002155"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2025-002155",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Nova Sea Havbruk AS",
-    "title": "Kalvøya",
-    "municipality": "Lurøy",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002155"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2025-002090",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Cermaq Norway Salmon AS",
-    "title": "Gisløy S",
-    "municipality": "Øksnes",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 3600,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002090"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2025-002090",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Cermaq Norway Salmon AS",
-    "title": "Gisløy S",
-    "municipality": "Øksnes",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 3600,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002090"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2024-001632",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Mowi Seawater Norway AS",
-    "title": "Olderbakken",
-    "municipality": "Sømna",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001632"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2024-001632",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Mowi Seawater Norway AS",
-    "title": "Olderbakken",
-    "municipality": "Sømna",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001632"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2024-001063",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Holmøy Havbruk AS",
-    "title": "Fiskefjorden",
-    "municipality": "Lødingen",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 2608,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001063"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2024-001063",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Holmøy Havbruk AS",
-    "title": "Fiskefjorden",
-    "municipality": "Lødingen",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": 2608,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001063"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2024-000695",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Mowi Seawater Norway AS",
-    "title": "Bukkholmen",
-    "municipality": "Alstahaug",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000695"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2024-000695",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Mowi Seawater Norway AS",
-    "title": "Bukkholmen",
-    "municipality": "Alstahaug",
-    "county": "Nordland",
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-000695"
-   },
-   {
-    "at": "2026-09-30T00:33:40Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Trukket",
-    "id": "SP-2025-002158",
-    "type_key": "land_based",
-    "type": "Landbasert akvakultur",
-    "applicant": "Letsea AS",
-    "title": "Leines",
-    "municipality": "Leirfjord",
-    "county": "Nordland",
-    "status": "Trukket",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002158"
    }
   ]
  },
@@ -70858,7 +70543,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-10-29T21:50:14Z",
+  "updated_at": "2026-10-30T01:59:29Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
@@ -70925,7 +70610,7 @@
     "page": {
      "title": "Her finner du registreringsskjema og mer informasjon",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2026",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Last ned detaljert auksjonsregelverk (pdf, 442.1 kB) (åpnes i ny fane)",
@@ -71091,7 +70776,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2024",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-av-nye-tillatelser-til-laks-orret-og-regnbueorret-2024",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Vunnet kapasitet fordelt på klokke og exitbud (xlsx, 16.4 kB) (åpnes i ny fane)",
@@ -71131,7 +70816,7 @@
     "page": {
      "title": "Restauksjon tillatelser 2023",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/restauksjon-tillatelser-2023",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": []
     },
     "companies": [
@@ -71456,7 +71141,7 @@
     "page": {
      "title": "Auksjon av tillatelser 2022",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/auksjon-2022",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Detaljert auksjonsregelverk (pdf, 151.7 kB)",
@@ -71760,7 +71445,7 @@
     "page": {
      "title": "Auksjon august 2020",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-august-2020",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Flere detaljer (pdf, 92.1 kB)",
@@ -71804,7 +71489,7 @@
     "page": {
      "title": "Auksjon, lukket budrunde 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-Lukket-budrunde-september-2018",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Forskrift om tildeling av nye tillatelser til akvakultur med matfisk i sjø av laks, ørret og regnbueørret i 2018 – auksj",
@@ -71896,7 +71581,7 @@
     "page": {
      "title": "Auksjon juni 2018",
      "url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet/Auksjon-juni-2018",
-     "fetched_at": "2026-10-29T16:59:41Z",
+     "fetched_at": "2026-10-30T01:59:29Z",
      "files": [
       {
        "title": "Fastsettelse av tillatelseskapasitet til auksjonstildeling (brev fra NFD 11.06.2018) (pdf, 803.8 kB)",
