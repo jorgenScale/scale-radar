@@ -13499,7 +13499,7 @@
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
-"fetched_at": "2026-10-23T01:34:40Z",
+"fetched_at": "2026-10-31T00:50:53Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0011 , T-I-0017 , T-SK-0001 , T-I-0016 , T-SK-0007 , T-KN-0010 , T-I-0003",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13527,7 +13527,7 @@
 "planned_production_tonn": 8000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
@@ -13793,6 +13793,38 @@
 "status": "Under behandling",
 "title": "Ladstein"
 },
+"SP-2026-002805": {
+"fetched_at": "2026-10-31T00:50:53Z",
+"fields": {
+"Aktive tillatelser": "T-S-0001 , T-KN-0007 , T-KF-0001 , T-H-0014 , T-T-0019 , T-BK-0003 , T-H-0012 , T-K-0029",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "23.10.2026",
+"Kapasitet": "5 670 tonn",
+"Kommune": "Harstad",
+"Lokalitet": "Toppsund V",
+"Lokalitetsnummer": "30236",
+"Maksimal månedlig fôring": "1 000 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 000 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 000 tonn",
+"Planlagt produksjon per produksjonssyklus": "10 000 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "17 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 17,
+"feed_per_cycle_tonn": 11000,
+"max_monthly_feed_tonn": 1000,
+"mtb_tonn": 8000,
+"planned_production_tonn": 10000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Toppsund V"
+},
 "SP-2026-002806": {
 "fetched_at": "2026-10-29T02:31:00Z",
 "fields": {
@@ -13878,5 +13910,31 @@
 },
 "status": "Under behandling",
 "title": "Kverhelleskjeret"
+},
+"SP-2026-002815": {
+"fetched_at": "2026-10-31T00:50:53Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "30.10.2026",
+"Kommune": "Sørfold",
+"Maksimal månedlig fôring": "600 tonn",
+"Maksimal tillatt biomasse (MTB)": "5 460 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 7500,
+"max_monthly_feed_tonn": 600,
+"mtb_tonn": 5460,
+"planned_production_tonn": 7000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Skarvflåget"
 }
 }

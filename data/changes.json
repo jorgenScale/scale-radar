@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-10-31T00:51:01Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002815",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Skarvflåget",
+"municipality": "Sørfold",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 5460,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002815"
+},
+{
+"at": "2026-10-31T00:51:01Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002805",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Nordlaks Havbruk AS",
+"title": "Toppsund V",
+"municipality": "Harstad",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": 8000,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002805"
+},
+{
+"at": "2026-10-31T00:51:01Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002787",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sørrollnesfisk AS",
+"title": "Svartskjær",
+"municipality": "Ibestad",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": 6800,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
+},
+{
 "at": "2026-10-30T01:59:29Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1476,5 +1521,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-10-30T20:53:26Z"
+"updated_at": "2026-10-31T00:51:01Z"
 }
