@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-03T01:40:42Z",
+"updated_at": "2026-11-03T09:38:38Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -23,14 +23,101 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 12,
+"stored": 13,
 "relevant": 4,
 "active": 0,
-"candidates": 8,
-"fetched_this_run": 79,
-"api_calls": 2
+"candidates": 9,
+"fetched_this_run": 150,
+"api_calls": 3
 },
 "items": [
+{
+"id": "2026-117036",
+"url": "https://www.doffin.no/notices/2026-117036",
+"heading": "Rammeavtale for datamaskiner og IT-brukerutstyr, og Teams Rooms-enheter med tilhørende møteromsutstyr",
+"buyers": [
+"Troms Fylkeskommune"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "ACTIVE",
+"issue_date": "2026-11-02",
+"publication_date": "2026-11-03",
+"deadline": "2026-12-07T11:00:00Z",
+"value": 65000000.0,
+"currency": "NOK",
+"cpv": [
+"30231000",
+"38650000",
+"38600000",
+"32322000",
+"30200000",
+"32320000",
+"32232000",
+"30213100",
+"30213000",
+"30237410",
+"32350000",
+"30213300",
+"30230000",
+"30232000",
+"38651000",
+"32000000",
+"32300000",
+"32230000",
+"32321200",
+"32321000",
+"30237460",
+"30237220",
+"30237000",
+"30000000",
+"30237200",
+"38000000",
+"30237400",
+"32351000",
+"32200000",
+"32351200",
+"30210000",
+"30231300"
+],
+"location": [
+"NO072"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Rammeavtale for datamaskiner og IT-brukerutstyr, og Teams Rooms-enheter med tilhørende møteromsutstyr",
+"description": "Om anskaffelsen\n\nFormålet med anskaffelsen er å etablere en helhetlig rammeavtale for kjøp av PC-er, IT-brukerutstyr og Teams Rooms-enheter som dekker Troms fylkeskommunes behov for standardisert, sikkert og effektivt utstyr i arbeidshverdagen, møter og undervisningssituasjoner. Rammeavtalen skal sikre forutsigbar tilgang på relevante enheter, samtidig som den støtter planlagt utskifting av utstyr"
+}
+],
+"description": "Om anskaffelsen\n\nFormålet med anskaffelsen er å etablere en helhetlig rammeavtale for kjøp av PC-er, IT-brukerutstyr og Teams Rooms-enheter som dekker Troms fylkeskommunes behov for standardisert, sikkert og effektivt utstyr i arbeidshverdagen, møter og undervisningssituasjoner. Rammeavtalen skal sikre forutsigbar tilgang på relevante enheter, samtidig som den støtter planlagt utskifting av utstyr og utrulling av møteromsløsninger.\n\nRammeavtalen skal bidra til forenklet forvaltning og drift gjennom standardisering av modeller, tilbehør og møteromspakker, samt sikre at utstyret fungerer sømløst med fylkeskommunens IT-plattform. Videre skal rammeavtalen legge til rette for effektiv logistikk, klargjøring og idriftsettelse, slik at enheter og møteromsløsninger kan tas i bruk med høy kvalitet og lav administrativ belastning.\n\nOppdraget omfatter levering av PC-er og annet IT-brukerutstyr, herunder blant annet dokker, skjermer, tastatur og mus. I tillegg omfatter leveransen møteromsutstyr og AV-utstyr, inkludert Teams Rooms-enheter med tilhørende kamera, lydplanke, møteromsskjermer og utstyr til undervisningsrom.\n\nDet skal legges til rette for et bredt sortiment, samtidig som det etableres et standardisert kjernesortiment som dekker ulike roller og bruksbehov i organisasjonen. Fylkeskommunen ønsker få standardmodeller per rolle, felles standarder for skjermer, dokker og tilbehør, samt standardiserte Teams Rooms-pakker per romtype. Dette skal bidra til enklere bestilling, mer effekt…",
+"first_seen": "2026-11-03T09:38:38Z",
+"score": 37,
+"areas": [
+"sensor"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "sensor",
+"term": "kamera",
+"where": "beskrivelse",
+"pts": 12
+},
+{
+"kind": "buyer",
+"term": "Troms fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
 {
 "id": "2026-114999",
 "url": "https://www.doffin.no/notices/2026-114999",
