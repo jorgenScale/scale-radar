@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-11-03T01:40:29Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002816",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Denvo Property AS",
+"title": "Tovikskjæret",
+"municipality": "Dielddanuorri",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002816"
+},
+{
 "at": "2026-10-31T00:51:01Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1521,5 +1536,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-02T18:30:22Z"
+"updated_at": "2026-11-03T01:40:29Z"
 }

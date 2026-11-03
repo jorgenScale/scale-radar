@@ -13483,7 +13483,7 @@
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
-"fetched_at": "2026-10-30T20:50:45Z",
+"fetched_at": "2026-11-03T01:37:34Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -13499,7 +13499,7 @@
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
-"fetched_at": "2026-10-31T00:50:53Z",
+"fetched_at": "2026-11-03T01:37:34Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0011 , T-I-0017 , T-SK-0001 , T-I-0016 , T-SK-0007 , T-KN-0010 , T-I-0003",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13531,7 +13531,7 @@
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
-"fetched_at": "2026-10-30T20:50:45Z",
+"fetched_at": "2026-11-03T01:37:34Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -13794,7 +13794,7 @@
 "title": "Ladstein"
 },
 "SP-2026-002805": {
-"fetched_at": "2026-10-31T00:50:53Z",
+"fetched_at": "2026-11-03T01:37:34Z",
 "fields": {
 "Aktive tillatelser": "T-S-0001 , T-KN-0007 , T-KF-0001 , T-H-0014 , T-T-0019 , T-BK-0003 , T-H-0012 , T-K-0029",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13912,7 +13912,7 @@
 "title": "Kverhelleskjeret"
 },
 "SP-2026-002815": {
-"fetched_at": "2026-10-31T00:50:53Z",
+"fetched_at": "2026-11-03T01:37:34Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13936,5 +13936,21 @@
 },
 "status": "Under behandling",
 "title": "Skarvflåget"
+},
+"SP-2026-002816": {
+"fetched_at": "2026-11-03T01:37:34Z",
+"fields": {
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Flekksteinbit",
+"Fylke": "Troms",
+"Innsendt": "02.11.2026",
+"Kommune": "Dielddanuorri"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"species": "Flekksteinbit"
+},
+"status": "Under behandling",
+"title": "Tovikskjæret"
 }
 }
