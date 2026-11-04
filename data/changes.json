@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-11-04T06:37:36Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002791",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Vega Sjøfarm Drift AS",
+"title": "Målvika",
+"municipality": "Vega",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 3120,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002791"
+},
+{
+"at": "2026-11-04T06:37:36Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002819",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Bjørøya AS",
+"title": "Drevflesa",
+"municipality": "Åfjord",
+"county": "Trøndelag",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002819"
+},
+{
+"at": "2026-11-04T06:37:36Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002802",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Lerøy Midt AS",
+"title": "Engdal",
+"municipality": "Heim",
+"county": "Trøndelag",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002802"
+},
+{
 "at": "2026-11-03T01:40:29Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1536,5 +1581,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-03T23:30:59Z"
+"updated_at": "2026-11-04T06:37:36Z"
 }
