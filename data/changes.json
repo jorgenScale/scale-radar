@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-11-05T02:32:34Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002802",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Lerøy Midt AS",
+"title": "Engdal",
+"municipality": "Heim",
+"county": "Trøndelag",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002802"
+},
+{
 "at": "2026-11-04T06:37:36Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1581,5 +1596,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-04T21:55:43Z"
+"updated_at": "2026-11-05T02:32:34Z"
 }
