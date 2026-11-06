@@ -6105,7 +6105,7 @@
 "title": "Torshaugen"
 },
 "SP-2024-001554": {
-"fetched_at": "2026-11-04T06:33:30Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Aktive tillatelser": "R-B-0005 , R-F-0002 , R-B-0003 , R-SD-0002 , R-R-0002",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
@@ -6131,7 +6131,7 @@
 "planned_production_tonn": 2500,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Eime"
 },
 "SP-2024-001555": {
@@ -7692,10 +7692,11 @@
 "title": "Løypingneset"
 },
 "SP-2025-001824": {
-"fetched_at": "2026-11-04T06:33:30Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Kveite",
+"Ferdigbehandlet": "05.11.2026",
 "Fylke": "Rogaland",
 "Innsendt": "11.02.2025",
 "Kommune": "Hjelmeland",
@@ -7703,18 +7704,21 @@
 "Maksimal tillatt biomasse (MTB)": "3 900 tonn",
 "Planlagt fôrforbruk per produksjonssyklus": "5 400 tonn",
 "Planlagt produksjon per produksjonssyklus": "4 150 tonn",
-"Produksjonssykluslengde": "33 mnd"
+"Produksjonssykluslengde": "33 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Rogaland fylkeskommune",
 "cycle_months": 33,
+"decided": "2026-11-05",
 "feed_per_cycle_tonn": 5400,
 "max_monthly_feed_tonn": 370,
 "mtb_tonn": 3900,
 "planned_production_tonn": 4150,
+"result": "Innvilget",
 "species": "Kveite"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Sigmundstadneset"
 },
 "SP-2025-001825": {
@@ -7732,11 +7736,12 @@
 "title": "Kleivi"
 },
 "SP-2025-001826": {
-"fetched_at": "2026-11-04T06:33:30Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Aktive tillatelser": "R-HM-0035 , R-HM-0031 , R-HM-0018",
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Kveite",
+"Ferdigbehandlet": "05.11.2026",
 "Fylke": "Rogaland",
 "Innsendt": "12.02.2025",
 "Kapasitet": "2 340 tonn",
@@ -7748,18 +7753,21 @@
 "Planlagt fôrforbruk per produksjonssyklus": "3 000 tonn",
 "Planlagt produksjon per produksjonssyklus": "2 400 tonn",
 "Plassering": "Sjø",
-"Produksjonssykluslengde": "33 mnd"
+"Produksjonssykluslengde": "33 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Rogaland fylkeskommune",
 "cycle_months": 33,
+"decided": "2026-11-05",
 "feed_per_cycle_tonn": 3000,
 "max_monthly_feed_tonn": 220,
 "mtb_tonn": 2340,
 "planned_production_tonn": 2400,
+"result": "Innvilget",
 "species": "Kveite"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Vassvik"
 },
 "SP-2025-001827": {
@@ -13483,7 +13491,7 @@
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks",
@@ -13499,7 +13507,7 @@
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0011 , T-I-0017 , T-SK-0001 , T-I-0016 , T-SK-0007 , T-KN-0010 , T-I-0003",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13527,11 +13535,11 @@
 "planned_production_tonn": 8000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
 "Art": "Kveite",
@@ -13794,7 +13802,7 @@
 "title": "Ladstein"
 },
 "SP-2026-002805": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Aktive tillatelser": "T-S-0001 , T-KN-0007 , T-KF-0001 , T-H-0014 , T-T-0019 , T-BK-0003 , T-H-0012 , T-K-0029",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13912,7 +13920,7 @@
 "title": "Kverhelleskjeret"
 },
 "SP-2026-002815": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13938,7 +13946,7 @@
 "title": "Skarvflåget"
 },
 "SP-2026-002816": {
-"fetched_at": "2026-11-03T01:37:34Z",
+"fetched_at": "2026-11-06T07:57:43Z",
 "fields": {
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
 "Art": "Flekksteinbit",
@@ -13984,5 +13992,17 @@
 },
 "status": "Under behandling",
 "title": "Drevflesa"
+},
+"SP-2026-002820": {
+"fetched_at": "2026-11-06T07:57:43Z",
+"fields": {
+"Ansvarlig saksbehandler": "Vestland fylkeskommune",
+"Innsendt": "05.11.2026"
+},
+"norm": {
+"case_handler": "Vestland fylkeskommune"
+},
+"status": "Under behandling",
+"title": "Sagvåg"
 }
 }

@@ -6,6 +6,111 @@
 },
 "events": [
 {
+"at": "2026-11-06T07:59:54Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-001826",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Sterling White Halibut AS",
+"title": "Vassvik",
+"municipality": "Hjelmeland",
+"county": "Rogaland",
+"status": "Godkjent",
+"mtb_tonn": 2340,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001826"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-001826",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Sterling White Halibut AS",
+"title": "Vassvik",
+"municipality": "Hjelmeland",
+"county": "Rogaland",
+"status": "Godkjent",
+"mtb_tonn": 2340,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001826"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-001824",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Sterling White Halibut AS",
+"title": "Sigmundstadneset",
+"municipality": "Hjelmeland",
+"county": "Rogaland",
+"status": "Godkjent",
+"mtb_tonn": 3900,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001824"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-001824",
+"type_key": "new_site",
+"type": "Andre fiskearter",
+"applicant": "Sterling White Halibut AS",
+"title": "Sigmundstadneset",
+"municipality": "Hjelmeland",
+"county": "Rogaland",
+"status": "Godkjent",
+"mtb_tonn": 3900,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001824"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002787",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sørrollnesfisk AS",
+"title": "Svartskjær",
+"municipality": "Ibestad",
+"county": "Troms",
+"status": "Returnert",
+"mtb_tonn": 6800,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2024-001554",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Grieg Seafood Finnmark Sjø AS",
+"title": "Eime",
+"municipality": "Kvitsøy",
+"county": "Rogaland",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001554"
+},
+{
+"at": "2026-11-06T07:59:54Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002820",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Erko Settefisk AS",
+"title": "Sagvåg",
+"municipality": null,
+"county": null,
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002820"
+},
+{
 "at": "2026-11-05T02:32:34Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1596,5 +1701,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-06T00:21:01Z"
+"updated_at": "2026-11-06T07:59:54Z"
 }
