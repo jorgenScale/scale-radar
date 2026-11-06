@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-06T08:00:16Z",
+"updated_at": "2026-11-06T16:01:36Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -23,14 +23,76 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 13,
+"stored": 14,
 "relevant": 4,
 "active": 0,
-"candidates": 9,
-"fetched_this_run": 235,
+"candidates": 10,
+"fetched_this_run": 267,
 "api_calls": 4
 },
 "items": [
+{
+"id": "2026-117273",
+"url": "https://www.doffin.no/notices/2026-117273",
+"heading": "Fortøyningstjenester - Rammeavtale",
+"buyers": [
+"Harstad Kommune",
+"Harstad Havn KF"
+],
+"type": "ANNOUNCEMENT_OF_COMPETITION",
+"kind": "competition",
+"type_label": "Konkurranse",
+"all_types": [
+"ANNOUNCEMENT_OF_COMPETITION",
+"COMPETITION"
+],
+"status": "ACTIVE",
+"issue_date": "2026-11-05",
+"publication_date": "2026-11-06",
+"deadline": "2026-11-20T11:00:00Z",
+"value": 3200000.0,
+"currency": "NOK",
+"cpv": [
+"63523000",
+"63500000",
+"63726000",
+"98360000",
+"63700000",
+"63720000",
+"98361000",
+"63721000",
+"98000000",
+"63000000",
+"98300000",
+"63520000"
+],
+"location": [
+"NO072"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Fortøyningstjenester - Rammeavtale",
+"description": "Bakgrunn og formål\n\nOppdragsgiver ønsker å inngå avtale med en tilbyder som besitter kunnskap og tilstrekkelig kapasitet til å dekke Harstad Havn KF`s behov for «døgnet-rundt-tjenester» for fortøyning av skip. Oppdrag må derfor også forventes i helger, ferier, helligdager, nattestid etc.\n\nOppdragsgiver skal anskaffe leverandør av fortøyningstjenester på alle kaiavsnitt driftet av Oppdragsgiver.\n\nD"
+}
+],
+"description": "Bakgrunn og formål\n\nOppdragsgiver ønsker å inngå avtale med en tilbyder som besitter kunnskap og tilstrekkelig kapasitet til å dekke Harstad Havn KF`s behov for «døgnet-rundt-tjenester» for fortøyning av skip. Oppdrag må derfor også forventes i helger, ferier, helligdager, nattestid etc.\n\nOppdragsgiver skal anskaffe leverandør av fortøyningstjenester på alle kaiavsnitt driftet av Oppdragsgiver.\n\nDe sentrale terminalene er:\n\nGangsås tank\n\nKai Larsneset\n\nKai Seljestad\n\nStangnes kai 1/2/3\n\nKai Rødskjær\n\nOmsetning på avtalen er ca 800 000 – 1 000 000 NOK per år. Aktivitetsnivået er forventet å være økende. Estimatene er ikke bindende for oppdragsgiver, og vil variere ut fra det faktiske aktivitetsnivået.\n\nDet stilles dermed ingen garanti for minste eller største oppdragsmengde.\n\nFullstendig beskrivelse av leveransen følger av kravspesifikasjonen",
+"first_seen": "2026-11-06T16:01:35Z",
+"score": 30,
+"areas": [
+"merd"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "merd",
+"term": "fortøyning",
+"where": "beskrivelse",
+"pts": 30
+}
+]
+},
 {
 "id": "2026-117036",
 "url": "https://www.doffin.no/notices/2026-117036",
