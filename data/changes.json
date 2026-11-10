@@ -6,6 +6,51 @@
 },
 "events": [
 {
+"at": "2026-11-10T04:43:42Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002807",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Reiråklakken",
+"municipality": "Smøla",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 9360,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002807"
+},
+{
+"at": "2026-11-10T04:43:42Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2026-002521",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Rakkenes",
+"municipality": "Kvænangen",
+"county": "Troms",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002521"
+},
+{
+"at": "2026-11-10T04:43:42Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2026-002521",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Rakkenes",
+"municipality": "Kvænangen",
+"county": "Troms",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002521"
+},
+{
 "at": "2026-11-06T07:59:54Z",
 "kind": "status",
 "text": "Status: Under behandling → Ferdigbehandlet",
@@ -1701,5 +1746,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-09T22:28:53Z"
+"updated_at": "2026-11-10T04:43:42Z"
 }
