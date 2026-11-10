@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-11-10T13:33:17Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-001968",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Furneset",
+"municipality": "Vestnes",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001968"
+},
+{
 "at": "2026-11-10T04:43:42Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1746,5 +1761,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-10T04:43:42Z"
+"updated_at": "2026-11-10T13:33:17Z"
 }
