@@ -6,6 +6,66 @@
 },
 "events": [
 {
+"at": "2026-11-11T01:18:37Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002823",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Setevika",
+"municipality": "Molde",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002823"
+},
+{
+"at": "2026-11-11T01:18:37Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-002296",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Eide Brandasund AS",
+"title": "Kastevika",
+"municipality": "Bømlo",
+"county": "Vestland",
+"status": "Godkjent",
+"mtb_tonn": 1200,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002296"
+},
+{
+"at": "2026-11-11T01:18:37Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2025-002296",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Eide Brandasund AS",
+"title": "Kastevika",
+"municipality": "Bømlo",
+"county": "Vestland",
+"status": "Godkjent",
+"mtb_tonn": 1200,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-002296"
+},
+{
+"at": "2026-11-11T01:18:37Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2025-001968",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Furneset",
+"municipality": "Vestnes",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2025-001968"
+},
+{
 "at": "2026-11-10T13:33:17Z",
 "kind": "utfall",
 "text": "Utfall: Innvilget",
@@ -1761,5 +1821,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-10T20:52:05Z"
+"updated_at": "2026-11-11T01:18:37Z"
 }

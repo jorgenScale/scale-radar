@@ -9252,7 +9252,7 @@
 "title": "Ræstad"
 },
 "SP-2025-001968": {
-"fetched_at": "2026-11-10T13:31:46Z",
+"fetched_at": "2026-11-11T01:16:06Z",
 "fields": {
 "Aktive tillatelser": "M-SJ-0003 , M-SJ-0005 , M-VS-0017 , M-VS-0018 , M-MD-0003",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -9282,7 +9282,7 @@
 "result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Furneset"
 },
 "SP-2025-001969": {
@@ -10806,11 +10806,12 @@
 "title": "Brukstomta"
 },
 "SP-2025-002296": {
-"fetched_at": "2026-11-10T04:39:16Z",
+"fetched_at": "2026-11-11T01:16:06Z",
 "fields": {
 "Aktive tillatelser": "VL-B-0015 , H-B-0040",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
+"Ferdigbehandlet": "10.11.2026",
 "Fylke": "Vestland",
 "Innsendt": "26.11.2025",
 "Kapasitet": "780 tonn",
@@ -10822,18 +10823,21 @@
 "Planlagt fôrforbruk per produksjonssyklus": "0 tonn",
 "Planlagt produksjon per produksjonssyklus": "0 tonn",
 "Plassering": "Sjø",
-"Produksjonssykluslengde": "12 mnd"
+"Produksjonssykluslengde": "12 mnd",
+"Resultat": "Innvilget"
 },
 "norm": {
 "case_handler": "Vestland fylkeskommune",
 "cycle_months": 12,
+"decided": "2026-11-10",
 "feed_per_cycle_tonn": 0,
 "max_monthly_feed_tonn": 0,
 "mtb_tonn": 1200,
 "planned_production_tonn": 0,
+"result": "Innvilget",
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Under behandling",
+"status": "Ferdigbehandlet",
 "title": "Kastevika"
 },
 "SP-2025-002298": {
@@ -13061,7 +13065,7 @@
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
-"fetched_at": "2026-11-07T23:41:43Z",
+"fetched_at": "2026-11-11T01:16:06Z",
 "fields": {
 "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13631,7 +13635,7 @@
 "title": "Hammer"
 },
 "SP-2026-002796": {
-"fetched_at": "2026-11-07T23:41:43Z",
+"fetched_at": "2026-11-11T01:16:06Z",
 "fields": {
 "Aktive tillatelser": "VA-F-0013 , VA-F-0014 , R-V-0016 , VA-F-0010 , R-V-0018 , R-HM-0005 , R-V-0017 , AG-F-0006 , R-HM-0007 , VA-F-0015",
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
@@ -13794,7 +13798,7 @@
 "title": "Engdal"
 },
 "SP-2026-002804": {
-"fetched_at": "2026-11-07T23:41:43Z",
+"fetched_at": "2026-11-11T01:16:06Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Hummer",
@@ -14048,5 +14052,37 @@
 },
 "status": "Under behandling",
 "title": "Sagvåg"
+},
+"SP-2026-002823": {
+"fetched_at": "2026-11-11T01:16:06Z",
+"fields": {
+"Aktive tillatelser": "M-H-0006 , M-M-0008 , M-RA-0016 , M-MD-0019 , M-VS-0017 , M-VS-0018 , M-MD-0005",
+"Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Møre og Romsdal",
+"Innsendt": "10.11.2026",
+"Kapasitet": "3 120 tonn",
+"Kommune": "Molde",
+"Lokalitet": "Setevika",
+"Lokalitetsnummer": "12244",
+"Maksimal månedlig fôring": "900 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "10 800 tonn",
+"Planlagt produksjon per produksjonssyklus": "8 800 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Stadt til Hustadvika (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Møre og Romsdal fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 10800,
+"max_monthly_feed_tonn": 900,
+"mtb_tonn": 6240,
+"planned_production_tonn": 8800,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Setevika"
 }
 }
