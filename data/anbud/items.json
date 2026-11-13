@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-13T01:52:59Z",
+"updated_at": "2026-11-13T09:41:46Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -23,14 +23,82 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 14,
-"relevant": 4,
+"stored": 15,
+"relevant": 5,
 "active": 0,
 "candidates": 10,
-"fetched_this_run": 231,
+"fetched_this_run": 291,
 "api_calls": 4
 },
 "items": [
+{
+"id": "2026-117651",
+"url": "https://www.doffin.no/notices/2026-117651",
+"heading": "Leie og drift av undervisningstillatelse i akvakultur",
+"buyers": [
+"Troms Fylkeskommune"
+],
+"type": "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+"kind": "other",
+"type_label": "Avlyst",
+"all_types": [
+"RESULT",
+"CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT"
+],
+"status": null,
+"issue_date": "2026-11-12",
+"publication_date": "2026-11-13",
+"deadline": "2036-06-28T22:00:00Z",
+"value": 10000000.0,
+"currency": "NOK",
+"cpv": [
+"80530000",
+"77850000",
+"80000000",
+"77800000",
+"77000000",
+"80500000",
+"80590000",
+"80200000",
+"80212000",
+"80210000"
+],
+"location": [
+"NO072"
+],
+"received_tenders": 1,
+"winners": [],
+"lots": [
+{
+"heading": "Leie og drift av undervisningstillatelse i akvakultur",
+"description": "Bakgrunn\n\nTroms fylkeskommune har som skoleeier ansvar for å tilby videregående opplæring som er relevant for arbeidslivets kompetansebehov. Akvakulturnæringen er en viktig næring i regionen og har et vedvarende behov for kvalifisert arbeidskraft. Oppdragsgiver ønsker derfor å styrke rekrutteringen til næringen gjennom et helhetlig og praksisnært opplæringstilbud ved Stangnes Rå videregående skole"
+}
+],
+"description": "Bakgrunn\n\nTroms fylkeskommune har som skoleeier ansvar for å tilby videregående opplæring som er relevant for arbeidslivets kompetansebehov. Akvakulturnæringen er en viktig næring i regionen og har et vedvarende behov for kvalifisert arbeidskraft. Oppdragsgiver ønsker derfor å styrke rekrutteringen til næringen gjennom et helhetlig og praksisnært opplæringstilbud ved Stangnes Rå videregående skole.\n\nFor elever på naturbruksutdanningen er det avgjørende at opplæringen gir god sammenheng mellom fellesfag, programfag og yrkesfaglig fordypning. Oppdragsgiver ser behov for at en vesentlig del av den praktiske opplæringen gjennomføres i reelle driftsmiljøer, slik at elevene får erfaring med arbeidsoppgaver, utstyr og rammevilkår som er representative for akvakulturnæringen.\n\nSom et sentralt virkemiddel ønsker Oppdragsgiver å søke om undervisningstillatelse for oppdrett av matfisk av laks og ørret. Dersom tillatelse innvilges, skal denne leies ut til og driftes av valgt leverandør på vegne av Oppdragsgiver. Anskaffelsen skal legge til rette for at skolen fra skoleåret 2026–2027 kan tilby opplæring med høy faglig kvalitet, relevant praksis og tett kobling mellom skole og arbeidsliv.\n\nOppdragsgiver har det overordnede ansvaret for elevenes opplæring. For å oppnå formålet med anskaffelsen er det nødvendig med tett samhandling mellom skolen og leverandøren, slik at undervisning, praksis og drift ses i sammenheng og understøtter gjeldende læreplanmål.\n\nBeskrivelse av oppdraget\n\nAnskaffel…",
+"first_seen": "2026-11-13T09:41:45Z",
+"score": 95,
+"areas": [],
+"reasons": [
+{
+"kind": "core",
+"term": "akvakultur",
+"where": "tittel",
+"pts": 50
+},
+{
+"kind": "core",
+"term": "oppdrett",
+"where": "beskrivelse",
+"pts": 20
+},
+{
+"kind": "buyer",
+"term": "Troms fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
 {
 "id": "2026-117273",
 "url": "https://www.doffin.no/notices/2026-117273",
