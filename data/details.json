@@ -13065,7 +13065,7 @@
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
-"fetched_at": "2026-11-11T01:16:06Z",
+"fetched_at": "2026-11-14T06:33:38Z",
 "fields": {
 "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13477,7 +13477,7 @@
 "title": "Tamtodden"
 },
 "SP-2026-002780": {
-"fetched_at": "2026-10-28T05:50:01Z",
+"fetched_at": "2026-11-14T06:33:38Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13499,7 +13499,7 @@
 "planned_production_tonn": 7000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Seiongultaren"
 },
 "SP-2026-002783": {
@@ -13635,7 +13635,7 @@
 "title": "Hammer"
 },
 "SP-2026-002796": {
-"fetched_at": "2026-11-11T01:16:06Z",
+"fetched_at": "2026-11-14T06:33:38Z",
 "fields": {
 "Aktive tillatelser": "VA-F-0013 , VA-F-0014 , R-V-0016 , VA-F-0010 , R-V-0018 , R-HM-0005 , R-V-0017 , AG-F-0006 , R-HM-0007 , VA-F-0015",
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
@@ -13798,7 +13798,7 @@
 "title": "Engdal"
 },
 "SP-2026-002804": {
-"fetched_at": "2026-11-11T01:16:06Z",
+"fetched_at": "2026-11-14T06:33:38Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Hummer",
@@ -14054,7 +14054,7 @@
 "title": "Sagvåg"
 },
 "SP-2026-002823": {
-"fetched_at": "2026-11-11T01:16:06Z",
+"fetched_at": "2026-11-14T06:33:38Z",
 "fields": {
 "Aktive tillatelser": "M-H-0006 , M-M-0008 , M-RA-0016 , M-MD-0019 , M-VS-0017 , M-VS-0018 , M-MD-0005",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
