@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-16T11:34:46Z",
+"updated_at": "2026-11-16T22:15:27Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -27,7 +27,7 @@
 "relevant": 5,
 "active": 0,
 "candidates": 10,
-"fetched_this_run": 168,
+"fetched_this_run": 169,
 "api_calls": 3
 },
 "items": [
@@ -42,8 +42,8 @@
 "kind": "other",
 "type_label": "Avlyst",
 "all_types": [
-"CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
-"RESULT"
+"RESULT",
+"CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT"
 ],
 "status": null,
 "issue_date": "2026-11-12",
