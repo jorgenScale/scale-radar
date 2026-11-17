@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-11-17T04:36:17Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002825",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Mollvika",
+"municipality": "Harstad",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": 8500,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002825"
+},
+{
+"at": "2026-11-17T04:36:17Z",
+"kind": "status",
+"text": "Status: Under behandling → Returnert",
+"id": "SP-2026-002816",
+"type_key": "land_based",
+"type": "Landbasert akvakultur",
+"applicant": "Denvo Property AS",
+"title": "Tovikskjæret",
+"municipality": "Dielddanuorri",
+"county": "Troms",
+"status": "Returnert",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002816"
+},
+{
 "at": "2026-11-14T06:33:49Z",
 "kind": "status",
 "text": "Status: Returnert → Under behandling",
@@ -1836,5 +1866,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-16T22:15:13Z"
+"updated_at": "2026-11-17T04:36:17Z"
 }

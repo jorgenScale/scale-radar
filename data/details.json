@@ -13846,7 +13846,7 @@
 "title": "Toppsund V"
 },
 "SP-2026-002806": {
-"fetched_at": "2026-11-13T23:37:58Z",
+"fetched_at": "2026-11-17T04:33:40Z",
 "fields": {
 "Aktive tillatelser": "T-K-0036 , T-T-0079 , T-T-0082 , T-T-0083 , F-A-0067 , F-HV-0015 , T-T-0084 , T-T-0078 , T-K-0037 , T-K-0033 , T-T-0080 , T-T-0085 , T-K-0038 , F-KD-0034 , F-M-0043 , T-T-0081 , F-HV-0014",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13932,7 +13932,7 @@
 "title": "Skjelevika"
 },
 "SP-2026-002813": {
-"fetched_at": "2026-11-13T23:37:58Z",
+"fetched_at": "2026-11-17T04:33:40Z",
 "fields": {
 "Aktive tillatelser": "H-FJ-0010 , SF-SU-0008 , SF-SU-0001 , SF-SU-0023 , SF-FL-0008 , H-AV-0093 , SF-SU-0009 , SF-SU-0030",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -13990,7 +13990,7 @@
 "title": "Skarvflåget"
 },
 "SP-2026-002816": {
-"fetched_at": "2026-11-15T17:46:36Z",
+"fetched_at": "2026-11-17T04:33:40Z",
 "fields": {
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
 "Art": "Flekksteinbit",
@@ -14002,7 +14002,7 @@
 "case_handler": "Troms fylkeskommune",
 "species": "Flekksteinbit"
 },
-"status": "Under behandling",
+"status": "Returnert",
 "title": "Tovikskjæret"
 },
 "SP-2026-002819": {
@@ -14084,5 +14084,37 @@
 },
 "status": "Under behandling",
 "title": "Setevika"
+},
+"SP-2026-002825": {
+"fetched_at": "2026-11-17T04:33:40Z",
+"fields": {
+"Aktive tillatelser": "T-D-0010 , T-D-0009 , T-D-0011 , T-D-0013 , T-D-0012 , T-TN-0005 , T-TN-0001 , T-G-0008",
+"Ansvarlig saksbehandler": "Troms fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Troms",
+"Innsendt": "16.11.2026",
+"Kapasitet": "5 780 tonn",
+"Kommune": "Harstad",
+"Lokalitet": "Mollvika",
+"Lokalitetsnummer": "36077",
+"Maksimal månedlig fôring": "1 450 tonn",
+"Maksimal tillatt biomasse (MTB)": "8 500 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "11 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "9 500 tonn",
+"Plassering": "Sjø",
+"Produksjonsområde": "Andøya til Senja (Gul)",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Troms fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 11500,
+"max_monthly_feed_tonn": 1450,
+"mtb_tonn": 8500,
+"planned_production_tonn": 9500,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Mollvika"
 }
 }
