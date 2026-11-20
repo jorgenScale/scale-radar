@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-11-20T03:27:23Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2024-001687",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Arnøy Laks AS",
+"title": "Skjervøy V",
+"municipality": "Skjervøy",
+"county": "Troms",
+"status": "Godkjent",
+"mtb_tonn": 5400,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001687"
+},
+{
+"at": "2026-11-20T03:27:23Z",
+"kind": "utfall",
+"text": "Utfall: Innvilget",
+"id": "SP-2024-001687",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Arnøy Laks AS",
+"title": "Skjervøy V",
+"municipality": "Skjervøy",
+"county": "Troms",
+"status": "Godkjent",
+"mtb_tonn": 5400,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2024-001687"
+},
+{
 "at": "2026-11-17T04:36:17Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1866,5 +1896,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-19T22:15:01Z"
+"updated_at": "2026-11-20T03:27:23Z"
 }
