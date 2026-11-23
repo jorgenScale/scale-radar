@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T21:51:17Z",
+ "generated_at": "2026-11-23T02:51:09Z",
  "mode": "live",
  "news": [
   {
@@ -539,7 +539,7 @@
  "salmon_price": {
   "status": "ok",
   "unit": "kr/kg",
-  "published": "2026-11-22",
+  "published": "2026-11-23",
   "source": "SSB tabell 03024",
   "source_url": "https://www.ssb.no/statbank/table/03024",
   "note": "Ukentlig gjennomsnittlig eksportpris for fersk laks (alle vektklasser, inkl. kontrakt). Publiseres av SSB onsdag for foregående uke.",
@@ -634,7 +634,7 @@
  "applications": {
   "status": "ok",
   "source_url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader",
-  "fetched_at": "2026-11-22T21:51:28Z",
+  "fetched_at": "2026-11-23T02:51:19Z",
   "types": {
    "new_site": {
     "apptype": "NEW_SITE",
@@ -38747,11 +38747,11 @@
   "einnsyn_summary": {
    "cached": 506,
    "pending": 0,
-   "fetched_now": 46
+   "fetched_now": 0
   }
  },
  "changes": {
-  "updated_at": "2026-11-22T21:53:14Z",
+  "updated_at": "2026-11-23T02:51:21Z",
   "baselines": {
    "new_site": "2026-09-21T12:31:20Z",
    "change_site": "2026-09-21T12:31:20Z",
@@ -39521,96 +39521,6 @@
     "status": "Returnert",
     "mtb_tonn": 6240,
     "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002801"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "ny",
-    "text": "Ny søknad – Under behandling",
-    "id": "SP-2026-002808",
-    "type_key": "new_site",
-    "type": "Ny lokalitet",
-    "applicant": "Telavåg Fiskeoppdrett AS",
-    "title": "Skjelevika",
-    "municipality": "Øygarden",
-    "county": "Vestland",
-    "status": "Under behandling",
-    "mtb_tonn": 300,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002808"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "status",
-    "text": "Status: Returnert → Under behandling",
-    "id": "SP-2026-002637",
-    "type_key": "new_site",
-    "type": "Andre fiskearter",
-    "applicant": "Nordic Halibut AS",
-    "title": "Krekvikbogen",
-    "municipality": "Hustadvika",
-    "county": "Møre og Romsdal",
-    "status": "Under behandling",
-    "mtb_tonn": 1560,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002637"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "status",
-    "text": "Status: Returnert → Under behandling",
-    "id": "SP-2026-002534",
-    "type_key": "new_site",
-    "type": "Andre fiskearter",
-    "applicant": "Ode AS",
-    "title": "Holmskallen",
-    "municipality": "Ålesund",
-    "county": "Møre og Romsdal",
-    "status": "Under behandling",
-    "mtb_tonn": 6240,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002534"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "status",
-    "text": "Status: Returnert → Under behandling",
-    "id": "SP-2026-002795",
-    "type_key": "change_site",
-    "type": "Endring av lokalitet",
-    "applicant": "Cermaq Norway Salmon AS",
-    "title": "Hammer",
-    "municipality": "Steigen",
-    "county": "Nordland",
-    "status": "Under behandling",
-    "mtb_tonn": 4000,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002795"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "status",
-    "text": "Status: Under behandling → Ferdigbehandlet",
-    "id": "SP-2026-002616",
-    "type_key": "land_based",
-    "type": "Landbasert akvakultur",
-    "applicant": "Ryfylke Rensefisk AS",
-    "title": "Hinderåvåg",
-    "municipality": null,
-    "county": null,
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002616"
-   },
-   {
-    "at": "2026-10-24T00:52:08Z",
-    "kind": "utfall",
-    "text": "Utfall: Innvilget",
-    "id": "SP-2026-002616",
-    "type_key": "land_based",
-    "type": "Landbasert akvakultur",
-    "applicant": "Ryfylke Rensefisk AS",
-    "title": "Hinderåvåg",
-    "municipality": null,
-    "county": null,
-    "status": "Godkjent",
-    "mtb_tonn": null,
-    "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002616"
    }
   ]
  },
@@ -71836,7 +71746,7 @@
   "note": "UTSETT_SMOLT_STK og UTSETT_SMOLT_STK_MINDRE_ENN_500G er Fiskeridirektoratets to utsettsmål; det siste (alle fisk satt ut under 500 g) ligger nærmest tallene Havforskningsinstituttet bruker i risikorapporten."
  },
  "auctions": {
-  "updated_at": "2026-11-22T21:53:14Z",
+  "updated_at": "2026-11-23T02:51:21Z",
   "index_url": "https://www.fiskeridir.no/akvakultur/auksjon-av-produksjonskapasitet",
   "rounds": [
    {
