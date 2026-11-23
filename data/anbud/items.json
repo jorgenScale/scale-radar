@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-23T02:51:29Z",
+"updated_at": "2026-11-23T13:03:27Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -23,14 +23,77 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 15,
+"stored": 16,
 "relevant": 5,
 "active": 0,
-"candidates": 10,
-"fetched_this_run": 115,
+"candidates": 11,
+"fetched_this_run": 161,
 "api_calls": 3
 },
 "items": [
+{
+"id": "2026-118160",
+"url": "https://www.doffin.no/notices/2026-118160",
+"heading": "Invitasjon til markedsdialog - Hurtigbåtanbud 2030",
+"buyers": [
+"FINNMARK FYLKESKOMMUNE"
+],
+"type": "ADVISORY_NOTICE",
+"kind": "planning",
+"type_label": "Veiledende",
+"all_types": [
+"PLANNING",
+"ADVISORY_NOTICE"
+],
+"status": null,
+"issue_date": "2026-11-20",
+"publication_date": "2026-11-23",
+"deadline": null,
+"value": null,
+"currency": null,
+"cpv": [
+"34000000",
+"60000000",
+"63700000",
+"63721300",
+"63720000",
+"34500000",
+"63721000",
+"34520000",
+"60610000",
+"63000000",
+"60600000"
+],
+"location": [
+"NO073"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Invitasjon til markedsdialog - Hurtigbåtanbud 2030",
+"description": "Finnmark fylkeskommune (FFK) inviterer med dette potensielle tilbydere/leverandører til markedsdialog i forbindelse med den kommende anskaffelsen av hurtigbåttjenester i Finnmark med oppstart i mai 2030.Fristen for påmelding til markedsdialogen og innsending av skriftlige innspill er 3. desember 2026.De individuelle dialogmøtene planlegges gjennomført i uke 51 i 2026."
+}
+],
+"description": "Finnmark fylkeskommune (FFK) inviterer med dette potensielle tilbydere/leverandører til markedsdialog i forbindelse med den kommende anskaffelsen av hurtigbåttjenester i Finnmark med oppstart i mai 2030.Fristen for påmelding til markedsdialogen og innsending av skriftlige innspill er 3. desember 2026.De individuelle dialogmøtene planlegges gjennomført i uke 51 i 2026.",
+"first_seen": "2026-11-23T13:03:27Z",
+"score": 40,
+"areas": [],
+"reasons": [
+{
+"kind": "buyer",
+"term": "Finnmark fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+},
+{
+"kind": "cpv",
+"term": "34520000 Båter",
+"where": "CPV",
+"pts": 15
+}
+]
+},
 {
 "id": "2026-117651",
 "url": "https://www.doffin.no/notices/2026-117651",
