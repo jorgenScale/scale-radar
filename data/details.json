@@ -13069,7 +13069,7 @@
 "title": "Krekvikbogen"
 },
 "SP-2026-002644": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "N-SF-0009 , N-SF-0012 , N-SF-0011 , N-SF-0008 , N-SF-0013",
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
@@ -13481,7 +13481,7 @@
 "title": "Tamtodden"
 },
 "SP-2026-002780": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Ansvarlig saksbehandler": "Nordland fylkeskommune",
 "Art": "Laks, Ørret, Regnbueørret",
@@ -13639,7 +13639,7 @@
 "title": "Hammer"
 },
 "SP-2026-002796": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "VA-F-0013 , VA-F-0014 , R-V-0016 , VA-F-0010 , R-V-0018 , R-HM-0005 , R-V-0017 , AG-F-0006 , R-HM-0007 , VA-F-0015",
 "Ansvarlig saksbehandler": "Agder fylkeskommune",
@@ -13773,7 +13773,7 @@
 "title": "Ternskjæret II"
 },
 "SP-2026-002802": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "NT-F-0034 , ST-F-0071 , NT-F-0035",
 "Ansvarlig saksbehandler": "Trøndelag fylkeskommune",
@@ -13802,7 +13802,7 @@
 "title": "Engdal"
 },
 "SP-2026-002804": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Ansvarlig saksbehandler": "Rogaland fylkeskommune",
 "Art": "Hummer",
@@ -13850,7 +13850,7 @@
 "title": "Toppsund V"
 },
 "SP-2026-002806": {
-"fetched_at": "2026-11-20T13:00:11Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "T-K-0036 , T-T-0079 , T-T-0082 , T-T-0083 , F-A-0067 , F-HV-0015 , T-T-0084 , T-T-0078 , T-K-0037 , T-K-0033 , T-T-0080 , T-T-0085 , T-K-0038 , F-KD-0034 , F-M-0043 , T-T-0081 , F-HV-0014",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13936,7 +13936,7 @@
 "title": "Skjelevika"
 },
 "SP-2026-002813": {
-"fetched_at": "2026-11-20T13:00:11Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "H-FJ-0010 , SF-SU-0008 , SF-SU-0001 , SF-SU-0023 , SF-FL-0008 , H-AV-0093 , SF-SU-0009 , SF-SU-0030",
 "Ansvarlig saksbehandler": "Vestland fylkeskommune",
@@ -14058,7 +14058,7 @@
 "title": "Sagvåg"
 },
 "SP-2026-002823": {
-"fetched_at": "2026-11-20T21:12:02Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "M-H-0006 , M-M-0008 , M-RA-0016 , M-MD-0019 , M-VS-0017 , M-VS-0018 , M-MD-0005",
 "Ansvarlig saksbehandler": "Møre og Romsdal fylkeskommune",
@@ -14090,7 +14090,7 @@
 "title": "Setevika"
 },
 "SP-2026-002825": {
-"fetched_at": "2026-11-20T13:00:11Z",
+"fetched_at": "2026-11-24T00:57:41Z",
 "fields": {
 "Aktive tillatelser": "T-D-0010 , T-D-0009 , T-D-0011 , T-D-0013 , T-D-0012 , T-TN-0005 , T-TN-0001 , T-G-0008",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -14120,5 +14120,57 @@
 },
 "status": "Under behandling",
 "title": "Mollvika"
+},
+"SP-2026-002860": {
+"fetched_at": "2026-11-24T00:57:41Z",
+"fields": {
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Art": "Torsk",
+"Fylke": "Finnmark",
+"Innsendt": "23.11.2026",
+"Kommune": "Alta",
+"Maksimal månedlig fôring": "400 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 4400,
+"max_monthly_feed_tonn": 400,
+"mtb_tonn": 3600,
+"planned_production_tonn": 4000,
+"species": "Torsk"
+},
+"status": "Under behandling",
+"title": "Indre Lokkarfjord"
+},
+"SP-2026-002861": {
+"fetched_at": "2026-11-24T00:57:41Z",
+"fields": {
+"Ansvarlig saksbehandler": "Finnmark fylkeskommune",
+"Art": "Torsk",
+"Fylke": "Finnmark",
+"Innsendt": "23.11.2026",
+"Kommune": "Alta",
+"Maksimal månedlig fôring": "400 tonn",
+"Maksimal tillatt biomasse (MTB)": "3 600 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "4 400 tonn",
+"Planlagt produksjon per produksjonssyklus": "4 000 tonn",
+"Produksjonssykluslengde": "22 mnd"
+},
+"norm": {
+"case_handler": "Finnmark fylkeskommune",
+"cycle_months": 22,
+"feed_per_cycle_tonn": 4400,
+"max_monthly_feed_tonn": 400,
+"mtb_tonn": 3600,
+"planned_production_tonn": 4000,
+"species": "Torsk"
+},
+"status": "Under behandling",
+"title": "Ytre Lokkarfjord"
 }
 }
