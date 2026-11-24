@@ -1,1 +1,1 @@
-{"status": "ok", "updated_at": "2026-11-24T01:00:24Z", "relevant": 5, "active": 0, "fetched": 75, "api_calls": 2, "backfill_complete": true, "warning": null}
+{"status": "ok", "updated_at": "2026-11-24T11:02:43Z", "relevant": 5, "active": 0, "fetched": 0, "api_calls": 6, "backfill_complete": true, "warning": "Henting avbrutt: HTTP 503 fra api.doffin.no:  – det som ble hentet er tatt vare på, resten tas neste kjøring."}
