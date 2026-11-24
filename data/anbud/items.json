@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-24T11:02:43Z",
+"updated_at": "2026-11-24T21:22:09Z",
 "source": "Doffin – Database for offentlige anskaffelser (DFØ), Public API v2",
 "source_url": "https://www.doffin.no/",
 "window": {
@@ -7,7 +7,7 @@
 "to": "2026-11-24",
 "backfill_complete": true
 },
-"warning": "Henting avbrutt: HTTP 503 fra api.doffin.no:  – det som ble hentet er tatt vare på, resten tas neste kjøring.",
+"warning": null,
 "threshold": 50,
 "store_min_score": 30,
 "areas": {
@@ -23,14 +23,91 @@
 "area_base": "https://jorgenscale.github.io/scale-radar/data/feeds/anbud/"
 },
 "counts": {
-"stored": 16,
+"stored": 17,
 "relevant": 5,
 "active": 0,
-"candidates": 11,
-"fetched_this_run": 0,
-"api_calls": 6
+"candidates": 12,
+"fetched_this_run": 139,
+"api_calls": 3
 },
 "items": [
+{
+"id": "2026-118236",
+"url": "https://www.doffin.no/notices/2026-118236",
+"heading": "Innspill på intelligent trafikkstyringssystem for fv86 Torsken-Torskenskaret",
+"buyers": [
+"Troms fylkeskommune"
+],
+"type": "ADVISORY_NOTICE",
+"kind": "planning",
+"type_label": "Veiledende",
+"all_types": [
+"PLANNING",
+"ADVISORY_NOTICE"
+],
+"status": null,
+"issue_date": "2026-11-23",
+"publication_date": "2026-11-24",
+"deadline": null,
+"value": null,
+"currency": null,
+"cpv": [
+"45316210",
+"72000000",
+"45316211",
+"45316200",
+"45317300",
+"45233200",
+"45315100",
+"45317000",
+"45316000",
+"45315000",
+"45311000",
+"45316213",
+"45311100",
+"45310000",
+"45000000",
+"45200000",
+"45300000",
+"45233290",
+"45233294",
+"72200000",
+"45230000",
+"45233000"
+],
+"location": [
+"NO072"
+],
+"received_tenders": null,
+"winners": [],
+"lots": [
+{
+"heading": "Innspill på intelligent trafikkstyringssystem for fv86 Torsken-Torskenskaret",
+"description": "Velkommen til markedsdialog med Troms fylkeskommune, Samferdselsetaten. \n\nFylkeskommunen har til hensikt å anskaffe et intelligent trafikkstyringssystem for en delstrekning på fv86 fra Torsken til toppen av Torskenskaret i Senja kommune. ITS-anlegget skal bidra til økt trafikksikkerhet, bedre fremkommelighet og mer effektiv trafikkavvikling på en smal og krevende fylkesvegstrekning med krappe kurv"
+}
+],
+"description": "Velkommen til markedsdialog med Troms fylkeskommune, Samferdselsetaten. \n\nFylkeskommunen har til hensikt å anskaffe et intelligent trafikkstyringssystem for en delstrekning på fv86 fra Torsken til toppen av Torskenskaret i Senja kommune. ITS-anlegget skal bidra til økt trafikksikkerhet, bedre fremkommelighet og mer effektiv trafikkavvikling på en smal og krevende fylkesvegstrekning med krappe kurvaturer og stigning. Løsningen skal benytte sanntidsdeteksjon av kjøretøy, automatisert trafikkstyring og dynamisk trafikantinformasjon på skilt for å håndtere møteproblematikk mellom tunge-/brede kjøretøy og øvrig trafikk.\n\nSystemet skal overvåke trafikkforholdene langs strekningen, følge tunge kjøretøy gjennom strekningen, beregne forventede ankomst- og ventetider, og automatisk styre skilt, varsling og informasjon til trafikantene basert på tilgjengelig kapasitet ved møteplasser og kjøretøyenes posisjon. Løsningen skal kunne håndtere flere samtidige kjøretøy og opprettholde sikker drift også ved usikre data, kommunikasjonsfeil eller bortfall av forbindelser.\n\nAnskaffelsen omfatter en komplett løsning for styring, overvåking og kommunikasjon, inkludert lokal redundant styringsprogramvare, kameraer, VMS-skilt, OPC UA-baserte grensesnitt, overvåkings- og dashbordløsning, kommunikasjon over privat mobilnett, logging, alarmering og sikker fjernadministrasjon. Løsningen er tenkt kunne operere autonomt lokalt uten avhengighet til sentrale systemer eller eksterne nettverk.\n\nFormålet med di…",
+"first_seen": "2026-11-24T21:22:08Z",
+"score": 37,
+"areas": [
+"sensor"
+],
+"reasons": [
+{
+"kind": "area",
+"area": "sensor",
+"term": "kamera",
+"where": "beskrivelse",
+"pts": 12
+},
+{
+"kind": "buyer",
+"term": "Troms fylkeskommune",
+"where": "oppdragsgiver",
+"pts": 25
+}
+]
+},
 {
 "id": "2026-118160",
 "url": "https://www.doffin.no/notices/2026-118160",
