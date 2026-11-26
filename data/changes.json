@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-11-26T09:39:43Z",
+"kind": "status",
+"text": "Status: Under behandling → Ferdigbehandlet",
+"id": "SP-2026-002482",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Aukrasanden",
+"municipality": "Aukra",
+"county": "Møre og Romsdal",
+"status": "Godkjent",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002482"
+},
+{
 "at": "2026-11-25T15:43:11Z",
 "kind": "utfall",
 "text": "Utfall: Innvilget",
@@ -1956,5 +1971,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-26T00:31:10Z"
+"updated_at": "2026-11-26T09:39:43Z"
 }
