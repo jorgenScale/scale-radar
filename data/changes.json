@@ -6,6 +6,21 @@
 },
 "events": [
 {
+"at": "2026-11-27T02:58:03Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002863",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Salmar Oppdrett AS",
+"title": "Gjerde",
+"municipality": "Aure",
+"county": "Møre og Romsdal",
+"status": "Under behandling",
+"mtb_tonn": null,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002863"
+},
+{
 "at": "2026-11-26T09:39:43Z",
 "kind": "status",
 "text": "Status: Under behandling → Ferdigbehandlet",
@@ -1971,5 +1986,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-26T19:41:38Z"
+"updated_at": "2026-11-27T02:58:03Z"
 }
