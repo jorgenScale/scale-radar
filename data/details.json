@@ -13527,7 +13527,7 @@
 "title": "Mølnarodden"
 },
 "SP-2026-002787": {
-"fetched_at": "2026-11-06T07:57:43Z",
+"fetched_at": "2026-11-28T03:57:16Z",
 "fields": {
 "Aktive tillatelser": "T-KN-0011 , T-I-0017 , T-SK-0001 , T-I-0016 , T-SK-0007 , T-KN-0010 , T-I-0003",
 "Ansvarlig saksbehandler": "Troms fylkeskommune",
@@ -13555,7 +13555,7 @@
 "planned_production_tonn": 8000,
 "species": "Laks, Ørret, Regnbueørret"
 },
-"status": "Returnert",
+"status": "Under behandling",
 "title": "Svartskjær"
 },
 "SP-2026-002790": {
@@ -14204,5 +14204,31 @@
 },
 "status": "Under behandling",
 "title": "Gjerde"
+},
+"SP-2026-002864": {
+"fetched_at": "2026-11-28T03:57:16Z",
+"fields": {
+"Ansvarlig saksbehandler": "Nordland fylkeskommune",
+"Art": "Laks, Ørret, Regnbueørret",
+"Fylke": "Nordland",
+"Innsendt": "27.11.2026",
+"Kommune": "Gildeskål",
+"Maksimal månedlig fôring": "600 tonn",
+"Maksimal tillatt biomasse (MTB)": "6 240 tonn",
+"Planlagt fôrforbruk per produksjonssyklus": "7 500 tonn",
+"Planlagt produksjon per produksjonssyklus": "7 000 tonn",
+"Produksjonssykluslengde": "18 mnd"
+},
+"norm": {
+"case_handler": "Nordland fylkeskommune",
+"cycle_months": 18,
+"feed_per_cycle_tonn": 7500,
+"max_monthly_feed_tonn": 600,
+"mtb_tonn": 6240,
+"planned_production_tonn": 7000,
+"species": "Laks, Ørret, Regnbueørret"
+},
+"status": "Under behandling",
+"title": "Litlevika"
 }
 }

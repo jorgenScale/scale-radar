@@ -6,6 +6,36 @@
 },
 "events": [
 {
+"at": "2026-11-28T04:00:38Z",
+"kind": "ny",
+"text": "Ny søknad – Under behandling",
+"id": "SP-2026-002864",
+"type_key": "new_site",
+"type": "Ny lokalitet",
+"applicant": "Mowi Seawater Norway AS",
+"title": "Litlevika",
+"municipality": "Gildeskål",
+"county": "Nordland",
+"status": "Under behandling",
+"mtb_tonn": 6240,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002864"
+},
+{
+"at": "2026-11-28T04:00:38Z",
+"kind": "status",
+"text": "Status: Returnert → Under behandling",
+"id": "SP-2026-002787",
+"type_key": "change_site",
+"type": "Endring av lokalitet",
+"applicant": "Sørrollnesfisk AS",
+"title": "Svartskjær",
+"municipality": "Ibestad",
+"county": "Troms",
+"status": "Under behandling",
+"mtb_tonn": 6800,
+"url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002787"
+},
+{
 "at": "2026-11-27T02:58:03Z",
 "kind": "ny",
 "text": "Ny søknad – Under behandling",
@@ -1986,5 +2016,5 @@
 "url": "https://www.fiskeridir.no/akvakultur/akvakultursoknader/sp-2026-002780"
 }
 ],
-"updated_at": "2026-11-27T22:01:57Z"
+"updated_at": "2026-11-28T04:00:38Z"
 }
